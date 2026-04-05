@@ -1,0 +1,189 @@
+{
+  "scraped_at": "2026-04-05 20:56:53.350206",
+  "markets": {
+    "US": {
+      "index": "^GSPC",
+      "index_daily_count": 251,
+      "stocks": {
+        "NVDA": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        },
+        "AAPL": {
+          "ohlcv_1m_count": 0,
+          "ohlcv_daily_count": 62
+        },
+        "GOOGL": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        },
+        "MSFT": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        },
+        "AMZN": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        },
+        "META": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        },
+        "TSLA": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        },
+        "BRK-B": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        },
+        "LLY": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        },
+        "JPM": {
+          "ohlcv_1m_count": 2728,
+          "ohlcv_daily_count": 62
+        }
+      }
+    },
+    "ID": {
+      "index": "^JKLQ45",
+      "index_daily_count": 235,
+      "stocks": {
+        "BBCA.JK": {
+          "ohlcv_1m_count": 2277,
+          "ohlcv_daily_count": 57
+        },
+        "BBRI.JK": {
+          "ohlcv_1m_count": 2278,
+          "ohlcv_daily_count": 57
+        },
+        "BMRI.JK": {
+          "ohlcv_1m_count": 2273,
+          "ohlcv_daily_count": 57
+        },
+        "TLKM.JK": {
+          "ohlcv_1m_count": 2258,
+          "ohlcv_daily_count": 57
+        },
+        "ASII.JK": {
+          "ohlcv_1m_count": 2245,
+          "ohlcv_daily_count": 57
+        },
+        "BBNI.JK": {
+          "ohlcv_1m_count": 2276,
+          "ohlcv_daily_count": 57
+        },
+        "PGAS.JK": {
+          "ohlcv_1m_count": 2259,
+          "ohlcv_daily_count": 57
+        },
+        "ADRO.JK": {
+          "ohlcv_1m_count": 2277,
+          "ohlcv_daily_count": 57
+        },
+        "UNVR.JK": {
+          "ohlcv_1m_count": 2231,
+          "ohlcv_daily_count": 57
+        },
+        "KLBF.JK": {
+          "ohlcv_1m_count": 2162,
+          "ohlcv_daily_count": 57
+        }
+      }
+    },
+    "JP": {
+      "index": "^N225",
+      "index_daily_count": 245,
+      "stocks": {
+        "7203.T": {
+          "ohlcv_1m_count": 2248,
+          "ohlcv_daily_count": 61
+        },
+        "8306.T": {
+          "ohlcv_1m_count": 2249,
+          "ohlcv_daily_count": 61
+        },
+        "6758.T": {
+          "ohlcv_1m_count": 0,
+          "ohlcv_daily_count": 0
+        },
+        "9984.T": {
+          "ohlcv_1m_count": 2240,
+          "ohlcv_daily_count": 61
+        },
+        "6501.T": {
+          "ohlcv_1m_count": 0,
+          "ohlcv_daily_count": 0
+        },
+        "8316.T": {
+          "ohlcv_1m_count": 0,
+          "ohlcv_daily_count": 0
+        },
+        "9983.T": {
+          "ohlcv_1m_count": 2220,
+          "ohlcv_daily_count": 61
+        },
+        "6857.T": {
+          "ohlcv_1m_count": 0,
+          "ohlcv_daily_count": 0
+        },
+        "8035.T": {
+          "ohlcv_1m_count": 0,
+          "ohlcv_daily_count": 61
+        },
+        "8058.T": {
+          "ohlcv_1m_count": 2251,
+          "ohlcv_daily_count": 61
+        }
+      }
+    },
+    "GB": {
+      "index": "^FTSE",
+      "index_daily_count": 254,
+      "stocks": {
+        "AZN.L": {
+          "ohlcv_1m_count": 3568,
+          "ohlcv_daily_count": 65
+        },
+        "HSBA.L": {
+          "ohlcv_1m_count": 3568,
+          "ohlcv_daily_count": 65
+        },
+        "SHEL.L": {
+          "ohlcv_1m_count": 3568,
+          "ohlcv_daily_count": 65
+        },
+        "BATS.L": {
+          "ohlcv_1m_count": 3557,
+          "ohlcv_daily_count": 65
+        },
+        "GSK.L": {
+          "ohlcv_1m_count": 3546,
+          "ohlcv_daily_count": 65
+        },
+        "BP.L": {
+          "ohlcv_1m_count": 3568,
+          "ohlcv_daily_count": 65
+        },
+        "BARC.L": {
+          "ohlcv_1m_count": 3563,
+          "ohlcv_daily_count": 65
+        },
+        "LLOY.L": {
+          "ohlcv_1m_count": 3568,
+          "ohlcv_daily_count": 65
+        },
+        "NG.L": {
+          "ohlcv_1m_count": 3564,
+          "ohlcv_daily_count": 65
+        },
+        "REL.L": {
+          "ohlcv_1m_count": 3535,
+          "ohlcv_daily_count": 65
+        }
+      }
+    }
+  }
+}
