@@ -1,0 +1,298 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Macro Export" id="macro">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Macro Data Export - JSON Structure" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="400" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="t1" value="us_macro.json" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="360" height="210" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1r1" value="" style="shape=tableRow" vertex="1" parent="t1">
+          <mxGeometry y="30" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1f1" value="country : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t1r1">
+          <mxGeometry width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1v1" value="&quot;US&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t1r1">
+          <mxGeometry x="180" width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1r2" value="" style="shape=tableRow" vertex="1" parent="t1">
+          <mxGeometry y="60" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1f2" value="name : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t1r2">
+          <mxGeometry width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1v2" value="&quot;United States&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t1r2">
+          <mxGeometry x="180" width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1r3" value="" style="shape=tableRow" vertex="1" parent="t1">
+          <mxGeometry y="90" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1f3" value="currency : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t1r3">
+          <mxGeometry width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1v3" value="&quot;USD&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t1r3">
+          <mxGeometry x="180" width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1r4" value="" style="shape=tableRow" vertex="1" parent="t1">
+          <mxGeometry y="120" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1f4" value="scraped_at : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t1r4">
+          <mxGeometry width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1v4" value="&quot;2026-04-06 08:30:29&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t1r4">
+          <mxGeometry x="180" width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1r5" value="" style="shape=tableRow" vertex="1" parent="t1">
+          <mxGeometry y="150" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1f5" value="event_count : int" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t1r5">
+          <mxGeometry width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1v5" value="8" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t1r5">
+          <mxGeometry x="180" width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1r6" value="" style="shape=tableRow" vertex="1" parent="t1">
+          <mxGeometry y="180" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t1f6" value="events : Event[]" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6;fontStyle=1" vertex="1" parent="t1r6">
+          <mxGeometry width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t1v6" value="[...]" style="shape=partialRectangle;connectable=0;fillColor=#d5e8d4;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t1r6">
+          <mxGeometry x="180" width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="t2" value="Event Object" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#ffe6cc;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="460" y="80" width="400" height="270" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2r1" value="" style="shape=tableRow" vertex="1" parent="t2">
+          <mxGeometry y="30" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2f1" value="name : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t2r1">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2v1" value="&quot;ISM Non-Manufacturing PMI&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t2r1">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2r2" value="" style="shape=tableRow" vertex="1" parent="t2">
+          <mxGeometry y="60" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2f2" value="date : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t2r2">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2v2" value="&quot;2026-04-06&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t2r2">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2r3" value="" style="shape=tableRow" vertex="1" parent="t2">
+          <mxGeometry y="90" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2f3" value="time : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t2r3">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2v3" value="&quot;21:00&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t2r3">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2r4" value="" style="shape=tableRow" vertex="1" parent="t2">
+          <mxGeometry y="120" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2f4" value="impact : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t2r4">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2v4" value="&quot;low&quot; | &quot;medium&quot; | &quot;high&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t2r4">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2r5" value="" style="shape=tableRow" vertex="1" parent="t2">
+          <mxGeometry y="150" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2f5" value="actual : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t2r5">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2v5" value="&quot;54.8&quot; | &quot;-&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f9f;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t2r5">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2r6" value="" style="shape=tableRow" vertex="1" parent="t2">
+          <mxGeometry y="180" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2f6" value="forecast : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t2r6">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2v6" value="&quot;53.5&quot; | &quot;-&quot;" style="shape=partialRectangle;connectable=0;fillColor=#9f9;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t2r6">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2r7" value="" style="shape=tableRow" vertex="1" parent="t2">
+          <mxGeometry y="210" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2f7" value="previous : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t2r7">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2v7" value="&quot;56.1&quot; | &quot;-&quot;" style="shape=partialRectangle;connectable=0;fillColor=#9ff;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t2r7">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2r8" value="" style="shape=tableRow" vertex="1" parent="t2">
+          <mxGeometry y="240" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2f8" value="currency : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t2r8">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2v8" value="&quot;USD&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t2r8">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="t3" value="_summary.json" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="40" y="380" width="360" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="t3r1" value="" style="shape=tableRow" vertex="1" parent="t3">
+          <mxGeometry y="30" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t3f1" value="scraped_at : string" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t3r1">
+          <mxGeometry width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t3v1" value="&quot;2026-04-06 08:30:29&quot;" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t3r1">
+          <mxGeometry x="180" width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t3r2" value="" style="shape=tableRow" vertex="1" parent="t3">
+          <mxGeometry y="60" width="360" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t3f2" value="countries : object" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t3r2">
+          <mxGeometry width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t3v2" value="{US:{name,count},...}" style="shape=partialRectangle;connectable=0;fillColor=#d5e8d4;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t3r2">
+          <mxGeometry x="180" width="180" height="30" as="geometry">
+            <mxRectangle width="180" height="30"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="t4" value="Countries Object" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=#fff2cc;strokeColor=#d6b656" vertex="1" parent="1">
+          <mxGeometry x="460" y="380" width="400" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="t4r1" value="" style="shape=tableRow" vertex="1" parent="t4">
+          <mxGeometry y="30" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t4f1" value="US : CountryInfo" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t4r1">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t4v1" value="&quot;United States&quot;, 8" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t4r1">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t4r2" value="" style="shape=tableRow" vertex="1" parent="t4">
+          <mxGeometry y="60" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="t4f2" value="GB : CountryInfo" style="shape=partialRectangle;connectable=0;fillColor=none;align=left;spacingLeft=6" vertex="1" parent="t4r2">
+          <mxGeometry width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t4v2" value="&quot;United Kingdom&quot;, 0" style="shape=partialRectangle;connectable=0;fillColor=#f5f5f5;align=left;spacingLeft=6;fontStyle=2" vertex="1" parent="t4r2">
+          <mxGeometry x="200" width="200" height="30" as="geometry">
+            <mxRectangle width="200" height="30"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="leg1" value="Legend" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="510" width="60" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2" value="JSON File" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="40" y="540" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3" value="Object" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="130" y="540" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4" value="Nested" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="220" y="540" width="80" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg5" value="Array" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="310" y="540" width="60" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg6" value="Actual" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="40" y="575" width="60" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg7" value="Forecast" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9f9;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="110" y="575" width="70" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg8" value="Previous" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#9ff;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="190" y="575" width="70" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="note" value="* actual, forecast, previous dapat bernilai &quot;-&quot; jika data belum dirilis" style="text;html=1;strokeColor=#d79b00;fillColor=#fff2cc;align=left;fontSize=10;fontStyle=2" vertex="1" parent="1">
+          <mxGeometry x="40" y="620" width="350" height="25" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" edge="1" parent="1" source="t1v6" target="t2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="rel2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6c8ebf;strokeWidth=2;endArrow=block;endFill=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0" edge="1" parent="1" source="t3v2" target="t4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
