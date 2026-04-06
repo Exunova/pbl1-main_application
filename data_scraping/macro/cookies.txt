@@ -1,0 +1,56 @@
+# Netscape HTTP Cookie File
+# https://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file! Do not edit.
+
+.investing.com	TRUE	/	FALSE	1775437998	gcc	ID
+.investing.com	TRUE	/	FALSE	1775437998	gsc
+.investing.com	TRUE	/	FALSE	1806972198	udid	8659789a6a8c079a8567993ee39d8990
+.investing.com	TRUE	/	FALSE	1806972198	inudid	8659789a6a8c079a8567993ee39d8990
+.investing.com	TRUE	/	FALSE	1775437998	smd	8659789a6a8c079a8567993ee39d8990-1775434448
+.investing.com	TRUE	/	FALSE	1806972198	invab	alladsnewd_0|chalngtnbe_0|chlngsurlb_0|invideapp_1|invidearev_1|mwebi_2|navbarcta_1|navbarctac_0|newsrevamp_1|onboc_2|outvideo_1|regwallid_0
+.investing.com	TRUE	/	FALSE	1775437998	fs_marker	1
+.investing.com	TRUE	/	TRUE	1775436249	__cf_bm	tdDkq6KTWb_jAWT24lxQWbO8jVfur4sOfHQ9GcVC60Q-1775434449-1.0.1.1-NH8D.cEXqtyjNZGsdX00nQDnJ4rLDFAM6BrmXx4.U7B..yEhn0tlq5DheTWdcf_5.kLPiSUEntsshnHXPBFqYFVLWNFXLdhRQHrrdobGmuAStsuQkERppSQC2GshUDRT
+www.investing.com	FALSE	/	TRUE	1775517249	__cflb	02DiuGRugds2TUWHMkkPGro65dgYiP188F49JcG1scBbJ
+www.investing.com	FALSE	/	FALSE	1775520851	_imntz_error	0
+.investing.com	TRUE	/	FALSE	1783210451	im_sharedid	1318b6e6-3a55-42a6-8a3c-aca5411068ab
+.investing.com	TRUE	/	FALSE	1783210451	im_sharedid_cst	znv0HA%3D%3D
+www.investing.com	FALSE	/	FALSE	1775438051	_lr_retry_request	true
+www.investing.com	FALSE	/	FALSE	1778026451	_lr_env_src_ats	false
+.investing.com	TRUE	/	FALSE	1806970453	ses_num	1
+.investing.com	TRUE	/	FALSE	1806970453	last_smd	8659789a6a8c079a8567993ee39d8990-1775434448
+.investing.com	TRUE	/	FALSE	1806970453	adBlockerNewUserDomains	1775434453
+.investing.com	TRUE	/	TRUE	1809996175	__eventn_id	8659789a6a8c079a8567993ee39d8990
+.investing.com	TRUE	/	FALSE	1775520851	panoramaId_expiry	1775520851312
+.investing.com	TRUE	/	FALSE	1798762455	_cc_id	9a93e3a924a57b52d468450a6f2f4944
+.investing.com	TRUE	/	TRUE	1775437483	_hjSession_174945	eyJpZCI6IjBmMTNjZWE4LWZjYmMtNDNiOC04NzcxLTA2YTE1YTczZGY1YSIsImMiOjE3NzU0MzQ0NTU1MDksInMiOjAsInIiOjAsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjoxLCJzcCI6MH0=
+.investing.com	TRUE	/	FALSE	1783210456	_gcl_au	1.1.1037404493.1775434456
+.investing.com	TRUE	/	FALSE	1809996176	_ga	GA1.1.1893409994.1775434456
+www.investing.com	FALSE	/	FALSE	1778028176	hb_insticator_uid	0b693335-4f3d-4c83-95ef-e9814eac9c47
+.investing.com	TRUE	/	TRUE	1806970457	connectId	{"ttl":86400000,"lastUsed":1775434457259,"lastSynced":1775434457259}
+.investing.com	TRUE	/	FALSE	1776039260	reg_trk_ep	on%20mouse%20exit%20sign%20up
+www.investing.com	FALSE	/	FALSE	1775463345	geoC	ID
+.investing.com	TRUE	/	TRUE	1806970545	ses_id	Yy00dWJtNj42cjs9ZTQ5PGQ9P2JiZjo8Z2ZuZGRgMyVlcWRqYzQ%2FeTU6OnRmZWZ6MzA2ZD9uYDQ3NGBoZ2A0MGMzNDJiNjZrNjM7PmU3OThkNT9tYjE6bmdnbm1kZzNrZWtkNGNiPzo1NzpuZm1mOTMhNio%2Fe2BxN2VgMGcmNHNjbDR1YjI2YzY0OzVlYDlpZDY%2FZGJjOj1nYG5rZDYzK2Uu
+.investing.com	TRUE	/	FALSE	1775438145	new_reg	yes
+.investing.com	TRUE	/	FALSE	1775438158	accessToken	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NzU0MzgxNTgsImp0aSI6IjI3ODYzNDA5MyIsImlhdCI6MTc3NTQzNDU1OCwiaXNzIjoiaW52ZXN0aW5nLmNvbSIsInVzZXJfaWQiOjI3ODYzNDA5MywicHJpbWFyeV9kb21haW5faWQiOiIxIiwiQXV0aG5TeXN0ZW1Ub2tlbiI6IiIsIkF1dGhuU2Vzc2lvblRva2VuIjoiIiwiRGV2aWNlVG9rZW4iOiIiLCJVYXBpVG9rZW4iOiJZeTAwZFdKdE5qNDJjanM5WlRRNVBHUTlQMkppWmpvOFoyWnVaR1JnTXlWbGNXUnFZelElMkZlVFU2T25SbVpXWjZNekEyWkQ5dVlEUTNOR0JvWjJBME1HTXpOREppTmpack5qTTdQbVUzT1Roa05UOXRZakU2Ym1kbmJtMWtaek5yWld0a05HTmlQem8xTnpwdVptMW1PVE1oTmlvJTJGZTJCeE4yVmdNR2NtTkhOamJEUjFZakkyWXpZME96VmxZRGxwWkRZJTJGWkdKak9qMW5ZRzVyWkRZeksyVXUiLCJBdXRobklkIjoiIiwiSXNEb3VibGVFbmNyeXB0ZWQiOmZhbHNlLCJEZXZpY2VJZCI6IiIsIlJlZnJlc2hFeHBpcmVkQXQiOjE3Nzc5NTQ1NTh9.30eEq3AHvtHU6etTHqLOWsAnPTSVaU3r3SbsCVGyIq0
+.investing.com	TRUE	/	FALSE	1783210568	_fbp	fb.1.1775434568858.53404079581514705
+.investing.com	TRUE	/	TRUE	1806972176	_hjSessionUser_174945	eyJpZCI6Ijg0MjZiZmM0LTM1M2MtNTA0OS05ZTMyLTNmZmU0NTdiOWIwNiIsImNyZWF0ZWQiOjE3NzU0MzQ0NTU1MDYsImV4aXN0aW5nIjp0cnVlfQ==
+www.investing.com	FALSE	/	FALSE	1791245772	mm-user-id	rVwEh6bbXsQwkFxB
+www.investing.com	FALSE	/	FALSE	1775436372	mm-session-id	AZAOzFHr685jFR59
+.investing.com	TRUE	/	FALSE	1775522051	identify_sent	278634093|1775522051710
+.investing.com	TRUE	/	TRUE	1809995654	__eventn_uid	278634093
+.investing.com	TRUE	/	TRUE	1809995654	__eventn_id_usr	%7B%22adFreeUser%22%3A0%2C%22investingProUser%22%3A0%2C%22investingProPremiumUser%22%3A0%7D
+.investing.com	TRUE	/	TRUE	1809130458	__gads	ID=d283a8e036b782dc:T=1775434458:RT=1775435963:S=ALNI_MYpaWxooJNgOMtodiTgUr2x1lhxUg
+.investing.com	TRUE	/	TRUE	1809130458	__gpi	UID=0000123cb7497fc2:T=1775434458:RT=1775435963:S=ALNI_MalfEaoiVaB9h6Htst2e3YOimgCaw
+.investing.com	TRUE	/	TRUE	1790986458	__eoi	ID=f4b80fce6abbc40f:T=1775434458:RT=1775435963:S=AA-AfjYKVQD1vIxUmrb-H1F6oSFX
+.investing.com	TRUE	/	FALSE	1806972173	user-browser-sessions	4
+.investing.com	TRUE	/	FALSE	0	browser-session-counted	true
+.investing.com	TRUE	/	FALSE	0	top_strip_variant	%7B%22user_type%22%3A%22loggedin%22%2C%22variant_id%22%3A4%2C%22variant_name%22%3A%22Free%20users%204%2C%20FairValue%20(Undervalued)%2C%20Insider%20Edge%22%7D
+www.investing.com	FALSE	/	FALSE	1790988175	g_state	{"i_l":0,"i_ll":1775436175521,"i_e":{"enable_itp_optimization":0},"i_b":"2iaBkjamHLg0T7uMIue8o6xjXBOwVFbUAAvh1OE8r+Y"}
+www.investing.com	FALSE	/	TRUE	0	_hjHasCachedUserAttributes	true
+.investing.com	TRUE	/	FALSE	1809996178	_ga_C4NDLGKVMK	GS2.1.s1775434456$o1$g1$t1775436177$j57$l0$h0$dHpQlJ47dUe7_tTlPO1QD8tHuDjCpT8TLAg
+.investing.com	TRUE	/	FALSE	1809132183	cto_bundle	cvcOu19KQW9jMjVFcWY2RGl1YlpnMnE2MDRLZGI4M0dyVlltNW9TUjFuakU1VkczdkslMkJJMUNlOEF0WiUyRkFWNUZrOExMU1NGSDZFRlNPZHEwNnVPM0g1Zmk1eEpvOUVEUVBaMEMzUDNGWXVrOWY5c0dLcTZUYkVOV2F3NFJTMnV0cElPcXFGQkpiVXliVVJFT1Bzd2JQY29wVlpRJTNEJTNE
+.investing.com	TRUE	/	FALSE	0	invpc	2
+.investing.com	TRUE	/	FALSE	0	page_view_count	2
+.investing.com	TRUE	/	FALSE	1806972203	lifetime_page_view_count	6
+www.investing.com	FALSE	/	FALSE	1806972205	_dd_s	aid=301eea69-a3b0-4929-932a-13ed8ee0346d&logs=1&id=a973b979-4c65-48bc-91d7-5ef97be94e29&created=1775435649695&expire=1775437105108
+.investing.com	TRUE	/	TRUE	1806971653	cf_clearance	LbgMEcsyp68Wpa2_q702p2P06G1DODo4E0YmoGZ5YRA-1775435652-1.2.1.1-zGhJ4_5YZ0DbjV2l_RvvIk69vWS9QcRob6WdIRwM4waM0ZTp5F69WqG2rUR52nBtB8JEJxlK6ftNYWDbmDNvyAoI_.tQ4hjtPZ.7JiJ.iqKbsnENXLW7FTJXJSZKz7qkI9aRx4vRZnRjANEDYCSiVGvjTI7E.FP.QwMgOqmsrUlqztG0XI_dVEZXbt1NdjWBQ5xPXYQEZ4Pcgu8IllYwGHhKA2ODRkvLEcPmePTe9bKViIYRkM9tziJpU3QpwFfVVu2IBKSy0k3ijq_7zdI4VZPgs3RfnfRJGGp5WYANA0AysJsb2Tvcj2_i3De3T0PsZqm7CcUlVJkJ0T1xW73pAQ

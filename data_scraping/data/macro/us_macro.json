@@ -1,0 +1,89 @@
+{
+  "country": "US",
+  "name": "United States",
+  "currency": "USD",
+  "scraped_at": "2026-04-06 08:25:48.028482",
+  "event_count": 8,
+  "events": [
+    {
+      "name": "ISM Non-Manufacturing Prices (Mar)",
+      "date": "2026-04-06",
+      "time": "21:00",
+      "impact": "high",
+      "actual": "",
+      "forecast": "",
+      "previous": "63.0",
+      "currency": "USD"
+    },
+    {
+      "name": "ISM Non-Manufacturing PMI (Mar)",
+      "date": "2026-04-06",
+      "time": "21:00",
+      "impact": "high",
+      "actual": "",
+      "forecast": "54.8",
+      "previous": "56.1",
+      "currency": "USD"
+    },
+    {
+      "name": "ISM Non-Manufacturing Employment (Mar)",
+      "date": "2026-04-06",
+      "time": "21:00",
+      "impact": "high",
+      "actual": "",
+      "forecast": "",
+      "previous": "51.8",
+      "currency": "USD"
+    },
+    {
+      "name": "ISM Non-Manufacturing New Orders (Mar)",
+      "date": "2026-04-06",
+      "time": "21:00",
+      "impact": "high",
+      "actual": "",
+      "forecast": "",
+      "previous": "58.6",
+      "currency": "USD"
+    },
+    {
+      "name": "ISM Non-Manufacturing Business Activity (Mar)",
+      "date": "2026-04-06",
+      "time": "21:00",
+      "impact": "high",
+      "actual": "",
+      "forecast": "",
+      "previous": "59.9",
+      "currency": "USD"
+    },
+    {
+      "name": "CB Employment Trends Index (Mar)",
+      "date": "2026-04-06",
+      "time": "21:00",
+      "impact": "high",
+      "actual": "",
+      "forecast": "",
+      "previous": "105.37",
+      "currency": "USD"
+    },
+    {
+      "name": "3-Month Bill Auction",
+      "date": "2026-04-06",
+      "time": "22:30",
+      "impact": "high",
+      "actual": "",
+      "forecast": "",
+      "previous": "3.620%",
+      "currency": "USD"
+    },
+    {
+      "name": "6-Month Bill Auction",
+      "date": "2026-04-06",
+      "time": "22:30",
+      "impact": "high",
+      "actual": "",
+      "forecast": "",
+      "previous": "3.605%",
+      "currency": "USD"
+    }
+  ]
+}

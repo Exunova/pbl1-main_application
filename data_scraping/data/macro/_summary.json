@@ -1,0 +1,21 @@
+{
+  "scraped_at": "2026-04-06 08:24:53.388444",
+  "countries": {
+    "US": {
+      "name": "United States",
+      "event_count": 8
+    },
+    "ID": {
+      "name": "Indonesia",
+      "event_count": 0
+    },
+    "JP": {
+      "name": "Japan",
+      "event_count": 0
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "event_count": 0
+    }
+  }
+}
