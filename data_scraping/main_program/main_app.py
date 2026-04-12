@@ -13,7 +13,7 @@ from datetime import datetime
 from PyQt5.QtWidgets import (
     QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout,
     QHBoxLayout, QLabel, QTableWidget, QTableWidgetItem, QScrollArea,
-    QFrame, QGroupBox, QHeaderView
+    QFrame, QGroupBox, QHeaderView, QDialog, QPushButton
 )
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFont, QColor
@@ -89,6 +89,66 @@ def set_cell(table, row, col, text, fg=None):
     table.setItem(row, col, item)
 
 
+# ─── Dialog: OHLCV Candle List ─────────────────────────────────────────────
+
+class OHLCVCandleDialog(QDialog):
+    def __init__(self, ticker, candles, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle(f"OHLCV — {ticker}")
+        self.setMinimumSize(900, 600)
+        self.setStyleSheet("""
+            QDialog { background-color: #0d0f14; color: #e2e8f0; }
+            QLabel { color: #e2e8f0; }
+            QPushButton { background: #2d3748; color: #e2e8f0; border: none; padding: 6px 16px; border-radius: 4px; }
+            QPushButton:hover { background: #3d4758; }
+            QTableWidget { background: #141720; gridline-color: #1e2433; }
+            QHeaderView::section { background: #1c2030; padding: 6px; color: #94a3b8; }
+            QScrollBar:vertical { width: 6px; background: #1c2030; }
+            QScrollBar::handle:vertical { background: #374151; border-radius: 3px; }
+        """)
+
+        layout = QVBoxLayout(self)
+
+        # Header
+        header = QHBoxLayout()
+        header.addWidget(lbl(f"{ticker} — {len(candles)} Candles", bold=True, size=13))
+        header.addStretch()
+        close_btn = QPushButton("✕ Close")
+        close_btn.clicked.connect(self.close)
+        header.addWidget(close_btn)
+        layout.addLayout(header)
+
+        # Table
+        table = make_table(["Timestamp", "Open", "High", "Low", "Close", "Volume", "Change"])
+        table.setRowCount(len(candles))
+
+        for r, candle in enumerate(candles):
+            ts    = candle.get("timestamp") or candle.get("date", "")
+            open_ = candle.get("open")
+            high  = candle.get("high")
+            low   = candle.get("low")
+            close = candle.get("close")
+            vol   = candle.get("volume")
+
+            set_cell(table, r, 0, ts, fg=QColor("#94a3b8"))
+            set_cell(table, r, 1, fmt(open_, 2))
+            set_cell(table, r, 2, fmt(high, 2))
+            set_cell(table, r, 3, fmt(low, 2))
+            set_cell(table, r, 4, fmt(close, 2))
+            set_cell(table, r, 5, fmt(vol, 0) if vol else "—")
+
+            # Calculate change
+            if open_ and close:
+                chg = close - open_
+                chg_pct = (chg / open_) * 100
+                color = QColor("#22c55e") if chg >= 0 else QColor("#ef4444")
+                set_cell(table, r, 6, f"{chg:+.2f} ({chg_pct:+.2f}%)", fg=color)
+            else:
+                set_cell(table, r, 6, "—")
+
+        layout.addWidget(table)
+
+
 # ─── Tab 1: OHLCV ────────────────────────────────────────────────────────────
 
 class OHLCVTab(QWidget):
@@ -114,11 +174,27 @@ class OHLCVTab(QWidget):
         for ticker in tickers:
             fname = ticker.replace(".", "_").replace("^", "IDX_").replace("-", "_") + ".json"
             data  = load_json(os.path.join(DATA_DIR, "ohlcv", fname))
-            box   = QGroupBox(ticker)
+
+            box   = QGroupBox()
+            box.setStyleSheet("QGroupBox { border: 1px solid #1e2433; border-radius: 6px; margin-top: 6px; padding: 6px; } QGroupBox::title { color: #60a5fa; }")
             bl    = QVBoxLayout(box)
 
+            ticker_lbl = QLabel(f'<span style="color: #60a5fa; font-size: 12px; font-weight: bold; text-decoration: underline; cursor: pointer;">{ticker}</span>')
+            ticker_lbl.setTextInteractionFlags(Qt.TextSelectableByMouse)
+            ticker_lbl.setCursor(Qt.PointingHandCursor)
+
             daily = data.get("ohlcv_daily", [])
-            m1    = data.get("ohlcv_1m", [])
+            m1    = data.get("ohlcv_15m", [])
+
+            candles = m1 if m1 else daily
+
+            def open_dialog(t=ticker, c=candles):
+                dialog = OHLCVCandleDialog(t, c, self)
+                dialog.exec_()
+
+            ticker_lbl.mousePressEvent = lambda e, t=ticker, c=candles: open_dialog(t, c)
+
+            bl.addWidget(ticker_lbl)
 
             if daily:
                 last = daily[-1]
@@ -130,7 +206,7 @@ class OHLCVTab(QWidget):
             else:
                 bl.addWidget(lbl("Tidak ada data daily", color="#ef4444", size=10))
 
-            bl.addWidget(lbl(f"Data 1m: {len(m1)} candles (7 hari terakhir)", color="#94a3b8", size=9))
+            bl.addWidget(lbl(f"Data 15m: {len(m1)} candles (7 hari terakhir)", color="#94a3b8", size=9))
             layout.addWidget(box)
 
         scroll = QScrollArea()

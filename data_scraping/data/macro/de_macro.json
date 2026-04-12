@@ -1,0 +1,27 @@
+{
+  "country": "DE",
+  "name": "Germany",
+  "currency": "EUR",
+  "scraped_at": "2026-04-12 17:27:25.836081",
+  "event_count": 2,
+  "events": [
+    {
+      "name": "HCOB Germany Services PMI (Mar)",
+      "date": "04/07/2026",
+      "time": "14:55DE",
+      "impact": "high",
+      "actual": "50.9",
+      "forecast": "51.2",
+      "previous": "53.5"
+    },
+    {
+      "name": "HCOB Germany Composite PMI (Mar)",
+      "date": "04/07/2026",
+      "time": "14:55DE",
+      "impact": "high",
+      "actual": "51.9",
+      "forecast": "51.9",
+      "previous": "53.2"
+    }
+  ]
+}
