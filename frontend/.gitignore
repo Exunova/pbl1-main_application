@@ -1,0 +1,41 @@
+node_modules/
+out/
+dist/
+.env
+
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+.DS_Store
+
+# Scraped data cache
+data/*.json
+!data/*/.gitkeep
+
+# Electron user data
+*.db
+
+# Resources
+resources/world-atlas/*.json

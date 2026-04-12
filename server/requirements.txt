@@ -1,6 +1,0 @@
-flask>=3.0
-flask-cors
-yfinance>=0.2
-feedparser>=6.0
-playwright>=1.40
-requests>=2.31

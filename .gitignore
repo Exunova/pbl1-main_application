@@ -1,41 +1,41 @@
+# Dependencies
 node_modules/
-out/
-dist/
-.env
+frontend/node_modules/
 
-*.pyc
+# Build outputs
+frontend/out/
+frontend/dist/
+frontend/.vite/
+
+# Python
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
+*.pyc
+*.pyo
+*.pyd
 .Python
-env/
-venv/
-.venv/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
+*.so
 *.egg
+*.egg-info/
+dist/
+build/
 
+# Virtual environments
+backend/venv/
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
 
-# Scraped data cache
-data/*.json
-!data/*/.gitkeep
+# Planning / dev artifacts
+.sisyphus/
 
-# Electron user data
+# Runtime data (do not commit cache)
 *.db
-
-# Resources
-resources/world-atlas/*.json
+*.db-journal
+*.db-wal
+*.db-shm

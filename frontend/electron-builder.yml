@@ -1,0 +1,29 @@
+appId: com.mapro.app
+productName: MAPRO
+directories:
+  buildResources: build
+files:
+  - out/**
+extraResources:
+  - from: ../backend
+    to: backend
+    filter:
+      - "**/*"
+  - from: dist/backend-venv
+    to: backend-venv
+    filter:
+      - "**/*"
+asar: true
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+linux:
+  target:
+    - target: AppImage
