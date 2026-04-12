@@ -1,8 +1,14 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
-import { Globe, LayoutGrid, BarChart3, PieChart, Minus, Square, X, MoreHorizontal } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Globe, LayoutGrid, BarChart3, PieChart, Minus, Square, X, MoreHorizontal, Settings } from 'lucide-react'
+import GlobeView from './pages/GlobeView'
+import ScreenerView from './pages/ScreenerView'
+import CompareView from './pages/CompareView'
+import PortfolioView from './pages/PortfolioView'
 
-const Titlebar = () => (
+const THEMES = ['dark', 'light', 'auto']
+
+const Titlebar = ({ theme, onThemeToggle }) => (
   <div className="h-10 bg-[#141720] border-b border-white/5 flex items-center justify-between px-3 drag-header shrink-0">
     <div className="flex items-center gap-4 no-drag">
       <div className="flex items-center gap-2">
@@ -13,6 +19,10 @@ const Titlebar = () => (
       </div>
     </div>
     <div className="flex items-center gap-0 no-drag">
+      <button onClick={onThemeToggle} title={`Theme: ${theme}`}
+        className="p-2 hover:bg-white/5 text-white/40 hover:text-white/70 transition-colors text-xs">
+        <Settings size={14} />
+      </button>
       <button onClick={() => window.api?.minimize()} className="p-2 hover:bg-white/5 text-white/40 transition-colors">
         <Minus size={14} />
       </button>
@@ -61,10 +71,23 @@ const Sidebar = ({ isExtended, onToggle }) => {
 
 export default function App() {
   const [isSidebarExtended, setIsSidebarExtended] = useState(false)
+  const [theme, setTheme] = useState(() => localStorage.getItem('mapro-theme') || 'dark')
+
+  useEffect(() => {
+    localStorage.setItem('mapro-theme', theme)
+    document.documentElement.classList.remove('dark', 'light')
+    if (theme === 'dark') document.documentElement.classList.add('dark')
+    else if (theme === 'light') document.documentElement.classList.add('light')
+  }, [theme])
+
+  const nextTheme = () => {
+    const idx = THEMES.indexOf(theme)
+    setTheme(THEMES[(idx + 1) % THEMES.length])
+  }
 
   return (
     <div className="flex flex-col h-screen w-screen bg-[#0d0f14] overflow-hidden relative">
-      <Titlebar />
+      <Titlebar theme={theme} onThemeToggle={nextTheme} />
       <div className="flex flex-1 overflow-hidden relative">
         <Sidebar isExtended={isSidebarExtended} onToggle={() => setIsSidebarExtended(!isSidebarExtended)} />
         <main className="flex-1 overflow-hidden relative">
@@ -72,10 +95,10 @@ export default function App() {
             <div className="absolute inset-0 bg-black/60 z-40 transition-opacity cursor-pointer" onClick={() => setIsSidebarExtended(false)} />
           )}
           <Routes>
-            <Route path="/" element={<div className="p-4 text-white/50">GlobeView - D3.js 2D choropleth coming soon</div>} />
-            <Route path="/screener" element={<div className="p-4 text-white/50">ScreenerView - stock grid coming soon</div>} />
-            <Route path="/compare" element={<div className="p-4 text-white/50">CompareView - index comparison coming soon</div>} />
-            <Route path="/portfolio" element={<div className="p-4 text-white/50">PortfolioView - position management coming soon</div>} />
+            <Route path="/" element={<GlobeView />} />
+            <Route path="/screener" element={<ScreenerView />} />
+            <Route path="/compare" element={<CompareView />} />
+            <Route path="/portfolio" element={<PortfolioView />} />
           </Routes>
         </main>
       </div>

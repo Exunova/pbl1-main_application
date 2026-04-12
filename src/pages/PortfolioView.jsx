@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react'
 import { MARKETS } from '../data/mockData'
+import Sparkline from '../components/Sparkline'
 
 export default function PortfolioView() {
   const [positions, setPositions] = useState([])
+  const [pnlData, setPnlData] = useState(null)
   const [showAdd, setShowAdd] = useState(false)
   const [form, setForm] = useState({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' })
 
   useEffect(() => {
     if (!window.api) return
     window.api.getPositions().then(setPositions).catch(() => {})
+    window.api.fetchPnL().then(setPnlData).catch(() => {})
   }, [])
 
   const handleAdd = async () => {
@@ -27,11 +30,6 @@ export default function PortfolioView() {
     setPositions(updated)
   }
 
-  const totalValue = positions.reduce((sum, p) => {
-    const currency = p.currency || 'USD'
-    return sum
-  }, 0)
-
   return (
     <div className="flex flex-col h-full p-4 gap-4 overflow-auto">
       <div className="flex items-center justify-between">
@@ -42,6 +40,23 @@ export default function PortfolioView() {
         </button>
       </div>
 
+      {pnlData && (
+        <div className="grid grid-cols-3 gap-3">
+          <div className="bg-surface rounded p-3">
+            <div className="text-xs text-white/40">Total P&L</div>
+            <div className="text-lg font-bold text-success">{pnlData.total.totalPnL.toLocaleString('en-US', {style:'currency', currency:'USD'})}</div>
+          </div>
+          <div className="bg-surface rounded p-3">
+            <div className="text-xs text-white/40">Stock Return</div>
+            <div className="text-lg font-bold text-accent">+{pnlData.total.stockReturn.toLocaleString('en-US', {style:'currency', currency:'USD'})}</div>
+          </div>
+          <div className="bg-surface rounded p-3">
+            <div className="text-xs text-white/40">Forex Return</div>
+            <div className="text-lg font-bold text-accent">+{pnlData.total.forexReturn.toLocaleString('en-US', {style:'currency', currency:'USD'})}</div>
+          </div>
+        </div>
+      )}
+
       <div className="bg-surface rounded-lg overflow-hidden">
         <table className="w-full text-xs">
           <thead>
@@ -50,26 +65,35 @@ export default function PortfolioView() {
               <th className="text-left p-2 font-medium">Company</th>
               <th className="text-right p-2 font-medium">Shares</th>
               <th className="text-right p-2 font-medium">Buy Price</th>
-              <th className="text-right p-2 font-medium">Currency</th>
+              <th className="text-right p-2 font-medium">Cur</th>
+              <th className="text-right p-2 font-medium">PnL</th>
               <th className="text-right p-2 font-medium">Actions</th>
             </tr>
           </thead>
           <tbody>
-            {positions.map(p => (
-              <tr key={p.id} className="border-b border-white/5 hover:bg-white/5">
-                <td className="p-2 font-bold text-accent">{p.ticker}</td>
-                <td className="p-2 text-white/70">{p.company}</td>
-                <td className="p-2 text-right text-white/70">{p.shares}</td>
-                <td className="p-2 text-right text-white/70">{p.buyPrice?.toFixed(2)}</td>
-                <td className="p-2 text-right text-white/50">{p.currency}</td>
-                <td className="p-2 text-right">
-                  <button onClick={() => handleDelete(p.id)}
-                    className="text-danger hover:text-danger/70 text-xs">Delete</button>
-                </td>
-              </tr>
-            ))}
+            {positions.map(p => {
+              const cur = pnlData?.positions?.find(x => x.ticker === p.ticker)
+              const curPrice = cur?.currentPrice || 186.2
+              const pnl = (curPrice - p.buyPrice) * p.shares
+              const pnlPct = (pnl / (p.buyPrice * p.shares)) * 100
+              return (
+                <tr key={p.id} className="border-b border-white/5 hover:bg-white/5">
+                  <td className="p-2 font-bold text-accent">{p.ticker}</td>
+                  <td className="p-2 text-white/70">{p.company}</td>
+                  <td className="p-2 text-right text-white/70">{p.shares}</td>
+                  <td className="p-2 text-right text-white/70">{p.buyPrice?.toFixed(2)}</td>
+                  <td className="p-2 text-right text-white/50">{p.currency}</td>
+                  <td className="p-2 text-right">
+                    <span className={pnl >= 0 ? 'text-success' : 'text-danger'}>{pnl >= 0 ? '+' : ''}{pnl.toFixed(2)} ({pnlPct.toFixed(1)}%)</span>
+                  </td>
+                  <td className="p-2 text-right">
+                    <button onClick={() => handleDelete(p.id)} className="text-danger hover:text-danger/70 text-xs">Delete</button>
+                  </td>
+                </tr>
+              )
+            })}
             {positions.length === 0 && (
-              <tr><td colSpan={6} className="p-4 text-center text-white/30">No positions yet</td></tr>
+              <tr><td colSpan={7} className="p-4 text-center text-white/30">No positions yet</td></tr>
             )}
           </tbody>
         </table>

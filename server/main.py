@@ -1,110 +1,132 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-import json, os
+import json, os, threading
+from datetime import datetime
 
 app = Flask(__name__)
 CORS(app)
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(os.path.dirname(BASE_DIR), 'data')
+os.makedirs(DATA_DIR, exist_ok=True)
 
-# GET /api/ohlcv/:ticker
+scrape_status = {"ohlcv": None, "news": None, "macro": None, "forex": None, "company_info": None}
+scrape_lock = threading.Lock()
+
+def get_data_path(category, filename):
+    d = os.path.join(DATA_DIR, category)
+    os.makedirs(d, exist_ok=True)
+    return os.path.join(d, filename)
+
+def read_cache(category, filename):
+    path = get_data_path(category, filename)
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except:
+            pass
+    return None
+
+def trigger_scrape_in_bg(scraper_fn, key, output_dir):
+    def run():
+        with scrape_lock:
+            try:
+                result = scraper_fn(output_dir)
+                scrape_status[key] = result.get("scraped_at") if isinstance(result, dict) else datetime.now().isoformat()
+            except Exception as e:
+                app.logger.error(f"Scrape error {key}: {e}")
+    t = threading.Thread(target=run, daemon=True)
+    t.start()
+
 @app.route('/api/ohlcv/<ticker>')
 def ohlcv(ticker):
-    return jsonify({
-        "ticker": ticker,
-        "market": "US",
-        "scraped_at": "2026-04-12T10:00:00Z",
-        "ohlcv_15m": [
-            { "timestamp": "2026-04-11 09:30:00", "open": 185.0, "high": 186.5, "low": 184.8, "close": 186.2, "volume": 45230000 },
-            { "timestamp": "2026-04-11 09:45:00", "open": 186.2, "high": 187.0, "low": 185.9, "close": 186.8, "volume": 42100000 },
-            { "timestamp": "2026-04-11 10:00:00", "open": 186.8, "high": 186.9, "low": 185.5, "close": 185.7, "volume": 38900000 },
-            { "timestamp": "2026-04-11 10:15:00", "open": 185.7, "high": 186.2, "low": 185.1, "close": 185.9, "volume": 35600000 },
-            { "timestamp": "2026-04-11 10:30:00", "open": 185.9, "high": 187.5, "low": 185.8, "close": 187.1, "volume": 41200000 },
-        ]
-    })
+    fname = ticker.replace(".", "_").replace("^", "IDX_").replace("-", "_") + ".json"
+    data = read_cache("ohlcv", fname)
+    if not data:
+        from . import ohlcv_scraper
+        ohlcv_scraper.run(os.path.join(DATA_DIR, "ohlcv"))
+        data = read_cache("ohlcv", fname)
+    if not data:
+        return jsonify({"ticker": ticker, "ohlcv_15m": []})
+    return jsonify(data)
 
-# GET /api/news/:region
 @app.route('/api/news/<region>')
 def news(region):
-    labels = {"US": "S&P 500 / Wall Street", "ID": "LQ45 / IHSG", "JP": "Nikkei 225", "GB": "FTSE 100"}
-    return jsonify({
-        "region": region.upper(),
-        "label": labels.get(region.upper(), region),
-        "scraped_at": "2026-04-12T10:00:00Z",
-        "articles": [
-            { "title": f"Market update: {region} equities rally on strong earnings", "link": "https://example.com/article1", "publisher": "Reuters", "published": "2026-04-12 08:30:00", "thumbnail": { "type": "og", "url": "https://placehold.co/120x63/1c2030/60a5fa?text=Market" } },
-            { "title": f"Fed signals patience on rate cuts as {region} inflation cools", "link": "https://example.com/article2", "publisher": "Bloomberg", "published": "2026-04-12 07:15:00", "thumbnail": { "type": "og", "url": "https://placehold.co/120x63/1c2030/60a5fa?text=Fed" } },
-            { "title": f"{region} stocks close higher on consumer spending boost", "link": "https://example.com/article3", "publisher": "CNBC", "published": "2026-04-11 16:00:00", "thumbnail": { "type": "og", "url": "https://placehold.co/120x63/1c2030/60a5fa?text=Stocks" } },
-        ]
-    })
+    data = read_cache("news", f"{region.lower()}_news.json")
+    if not data:
+        from . import news_scraper
+        news_scraper.run(os.path.join(DATA_DIR, "news"))
+        data = read_cache("news", f"{region.lower()}_news.json")
+    if not data:
+        labels = {"US": "S&P 500 / Wall Street", "ID": "LQ45 / IHSG", "JP": "Nikkei 225", "GB": "FTSE 100"}
+        return jsonify({"region": region.upper(), "label": labels.get(region.upper(), region), "articles": []})
+    return jsonify(data)
 
-# GET /api/macro/:cc
 @app.route('/api/macro/<cc>')
 def macro(cc):
-    return jsonify({
-        "country": cc.upper(),
-        "name": {"US": "United States", "ID": "Indonesia", "JP": "Japan", "GB": "United Kingdom"}.get(cc.upper(), cc.upper()),
-        "scraped_at": "2026-04-12T06:00:00Z",
-        "events": [
-            { "name": "Core CPI", "date": "2026-04-12", "time": "08:30", "impact": "high", "actual": "3.1%", "forecast": "3.0%", "previous": "2.9%" },
-            { "name": "Retail Sales", "date": "2026-04-12", "time": "10:00", "impact": "medium", "actual": "0.5%", "forecast": "0.4%", "previous": "0.3%" },
-            { "name": "Industrial Production", "date": "2026-04-13", "time": "09:00", "impact": "low", "actual": "—", "forecast": "0.2%", "previous": "-0.1%" },
-        ]
-    })
+    data = read_cache("macro", f"{cc.lower()}_macro.json")
+    if not data:
+        from . import macro_scraper
+        macro_scraper.run(os.path.join(DATA_DIR, "macro"))
+        data = read_cache("macro", f"{cc.lower()}_macro.json")
+    if not data:
+        return jsonify({"country": cc.upper(), "name": cc.upper(), "events": []})
+    return jsonify(data)
 
-# GET /api/forex/:pair
 @app.route('/api/forex/<pair>')
 def forex(pair):
-    rates = {"IDR_USD": 15650.0, "JPY_USD": 149.5, "GBP_USD": 0.79, "USD_IDR": 0.000064, "USD_JPY": 0.0067, "USD_GBP": 1.27}
-    rate = rates.get(pair.upper().replace('-', '_'), 1.0)
-    return jsonify({
-        "pair": pair.upper(),
-        "label": pair.upper().replace('_', '/'),
-        "current_rate": rate,
-        "prev_close": rate * 0.998,
-        "change_pct": 0.19,
-        "scraped_at": "2026-04-12T10:00:00Z"
-    })
+    data = read_cache("forex", f"{pair.lower()}.json")
+    if not data:
+        from . import forex_scraper
+        forex_scraper.run(os.path.join(DATA_DIR, "forex"))
+        data = read_cache("forex", f"{pair.lower()}.json")
+    if not data:
+        return jsonify({"pair": pair.upper(), "current_rate": None, "change_pct": 0})
+    return jsonify(data)
 
-# GET /api/company/:ticker
 @app.route('/api/company/<ticker>')
 def company(ticker):
-    return jsonify({
-        "ticker": ticker,
-        "scraped_at": "2026-04-12T10:00:00Z",
-        "info": {
-            "identity": { "longName": f"{ticker} Inc.", "sector": "Technology", "industry": "Software" },
-            "price": { "currentPrice": 186.2, "marketCap": 2900000000000, "beta": 1.24 },
-            "valuation": { "trailingPE": 28.5, "priceToBook": 45.2 },
-            "profitability": { "profitMargins": 0.24, "returnOnEquity": 1.52 },
-            "dividend": { "dividendRate": 0.96, "dividendYield": 0.0052, "payoutRatio": 0.16 },
-            "analyst": { "recommendationKey": "buy", "targetMeanPrice": 210.0 }
-        }
-    })
+    fname = ticker.replace(".", "_").replace("-", "_") + ".json"
+    data = read_cache("company_info", fname)
+    if not data:
+        from . import company_info_scraper
+        company_info_scraper.run(os.path.join(DATA_DIR, "company_info"))
+        data = read_cache("company_info", fname)
+    if not data:
+        return jsonify({"ticker": ticker, "info": {}})
+    return jsonify(data)
 
-# GET /api/index/:idx
 @app.route('/api/index/<idx>')
 def index(idx):
-    indices = {
-        "^GSPC": {"name": "S&P 500", "country": "US", "current_price": 5234.5, "prev_close": 5200.0, "change_pct": 0.66},
-        "^JKLQ45": {"name": "LQ45", "country": "ID", "current_price": 1820.0, "prev_close": 1810.0, "change_pct": 0.55},
-        "^N225": {"name": "Nikkei 225", "country": "JP", "current_price": 39500.0, "prev_close": 39200.0, "change_pct": 0.77},
-        "^FTSE": {"name": "FTSE 100", "country": "GB", "current_price": 7950.0, "prev_close": 7980.0, "change_pct": -0.38},
-    }
-    data = indices.get(idx, {"name": idx, "country": "XX", "current_price": 1000.0, "prev_close": 990.0, "change_pct": 1.0})
-    return jsonify({**data, "index": idx, "scraped_at": "2026-04-12T10:00:00Z"})
+    fname = idx.replace(".", "_").replace("^", "IDX_").replace("-", "_") + ".json"
+    data = read_cache("ohlcv", fname)
+    indices_map = {"^GSPC": {"name": "S&P 500", "country": "US"}, "^JKLQ45": {"name": "LQ45", "country": "ID"}, "^N225": {"name": "Nikkei 225", "country": "JP"}, "^FTSE": {"name": "FTSE 100", "country": "GB"}}
+    meta = indices_map.get(idx, {"name": idx, "country": "XX"})
+    if data and data.get("ohlcv_15m"):
+        candles = data["ohlcv_15m"]
+        cur = candles[-1].get("close")
+        prv = candles[0].get("close")
+        chg = ((cur - prv) / prv * 100) if cur and prv else 0
+        return jsonify({**meta, "index": idx, "current_price": cur, "prev_close": prv, "change_pct": chg, "scraped_at": data.get("scraped_at", "")})
+    return jsonify({**meta, "index": idx, "current_price": None, "prev_close": None, "change_pct": 0})
 
-# GET /api/indices
 @app.route('/api/indices')
 def indices():
-    return jsonify([
-        {"index": "^GSPC", "name": "S&P 500", "country": "US", "current_price": 5234.5, "prev_close": 5200.0, "change_pct": 0.66},
-        {"index": "^JKLQ45", "name": "LQ45", "country": "ID", "current_price": 1820.0, "prev_close": 1810.0, "change_pct": 0.55},
-        {"index": "^N225", "name": "Nikkei 225", "country": "JP", "current_price": 39500.0, "prev_close": 39200.0, "change_pct": 0.77},
-        {"index": "^FTSE", "name": "FTSE 100", "country": "GB", "current_price": 7950.0, "prev_close": 7980.0, "change_pct": -0.38},
-    ])
+    results = []
+    for idx, meta in [("^GSPC",{"name":"S&P 500","country":"US"}),("^JKLQ45",{"name":"LQ45","country":"ID"}),("^N225",{"name":"Nikkei 225","country":"JP"}),("^FTSE",{"name":"FTSE 100","country":"GB"})]:
+        fname = idx.replace(".", "_").replace("^", "IDX_").replace("-", "_") + ".json"
+        data = read_cache("ohlcv", fname)
+        if data and data.get("ohlcv_15m"):
+            candles = data["ohlcv_15m"]
+            cur = candles[-1].get("close")
+            prv = candles[0].get("close")
+            chg = ((cur - prv) / prv * 100) if cur and prv else 0
+            results.append({"index": idx, **meta, "current_price": cur, "prev_close": prv, "change_pct": chg})
+        else:
+            results.append({"index": idx, **meta, "current_price": None, "prev_close": None, "change_pct": 0})
+    return jsonify(results)
 
-# Portfolio mock storage (in-memory for mock phase)
 positions = [
     {"id": 1, "ticker": "AAPL", "company": "Apple Inc.", "shares": 10, "buyPrice": 175.0, "buyDate": "2026-01-15", "currency": "USD"},
     {"id": 2, "ticker": "BBCA.JK", "company": "Bank Central Asia", "shares": 100, "buyPrice": 8900.0, "buyDate": "2026-02-20", "currency": "IDR"},
@@ -138,9 +160,7 @@ def portfolio_delete(pid):
 @app.route('/api/portfolio/pnl')
 def portfolio_pnl():
     return jsonify({
-        "positions": [
-            {"ticker": "AAPL", "shares": 10, "buyPrice": 175.0, "currentPrice": 186.2, "currency": "USD", "fxRate": 15650.0, "fxRateAtBuy": 15500.0}
-        ],
+        "positions": [{"ticker": p["ticker"], "shares": p["shares"], "buyPrice": p["buyPrice"], "currentPrice": 186.2, "currency": p["currency"], "fxRate": 15650.0, "fxRateAtBuy": 15500.0} for p in positions],
         "total": {"totalPnL": 1865000, "stockReturn": 112000, "forexReturn": 1753000}
     })
 
@@ -161,20 +181,26 @@ def portfolio_import():
             added += 1
     return jsonify({"imported": added, "total": len(positions)})
 
-# POST /api/scrape/:type
 @app.route('/api/scrape/<stype>', methods=['POST'])
 def scrape(stype):
-    return jsonify({"status": "started", "type": stype, "scraped_at": "2026-04-12T10:00:00Z"})
+    dirs = {"ohlcv": os.path.join(DATA_DIR,"ohlcv"), "news": os.path.join(DATA_DIR,"news"), "macro": os.path.join(DATA_DIR,"macro"), "forex": os.path.join(DATA_DIR,"forex"), "company_info": os.path.join(DATA_DIR,"company_info")}
+    scraper_mods = {
+        "ohlcv": ("scrapers.ohlcv_scraper", "ohlcv_scraper"),
+        "news": ("scrapers.news_scraper", "news_scraper"),
+        "macro": ("scrapers.macro_scraper", "macro_scraper"),
+        "forex": ("scrapers.forex_scraper", "forex_scraper"),
+        "company_info": ("scrapers.company_info_scraper", "company_info_scraper"),
+    }
+    if stype in scraper_mods:
+        mod_path, mod_name = scraper_mods[stype]
+        mod = __import__(mod_path, fromlist=[mod_name])
+        trigger_scrape_in_bg(getattr(mod, mod_name).run, stype, dirs[stype])
+        return jsonify({"status": "started", "type": stype})
+    return jsonify({"error": "unknown type"}), 400
 
 @app.route('/api/scrape/status')
-def scrape_status():
-    return jsonify({
-        "ohlcv": "2026-04-12T10:00:00Z",
-        "news": "2026-04-12T10:00:00Z",
-        "macro": "2026-04-12T06:00:00Z",
-        "forex": "2026-04-12T10:00:00Z",
-        "company_info": "2026-04-12T10:00:00Z"
-    })
+def scrape_status_route():
+    return jsonify(scrape_status)
 
 @app.route('/health')
 def health():

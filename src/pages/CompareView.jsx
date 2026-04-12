@@ -1,30 +1,36 @@
 import { useState, useEffect } from 'react'
 import { MARKETS } from '../data/mockData'
 import MarketHeatmap from '../components/MarketHeatmap'
+import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 
 export default function CompareView() {
   const [idx1, setIdx1] = useState('US')
   const [idx2, setIdx2] = useState('ID')
   const [normalize, setNormalize] = useState(true)
   const [chartData, setChartData] = useState([])
+  const [loading, setLoading] = useState(false)
 
   const regions = Object.keys(MARKETS)
 
   useEffect(() => {
     if (!window.api) return
+    setLoading(true)
     Promise.all([
       window.api.fetchOHLCV(MARKETS[idx1].index),
       window.api.fetchOHLCV(MARKETS[idx2].index),
     ]).then(([d1, d2]) => {
-      const candles1 = d1.ohlcv_15m || []
-      const candles2 = d2.ohlcv_15m || []
-      const merged = candles1.map((c, i) => ({
-        ts: c.timestamp,
-        v1: normalize && candles1[0]?.close ? (c.close / candles1[0].close) * 100 : c.close,
-        v2: normalize && candles2[0]?.close && candles2[i] ? (candles2[i].close / candles2[0].close) * 100 : (candles2[i]?.close || 0),
-      }))
+      const c1 = d1.ohlcv_15m || []
+      const c2 = d2.ohlcv_15m || []
+      const base1 = normalize && c1[0]?.close ? c1[0].close : 1
+      const base2 = normalize && c2[0]?.close ? c2[0].close : 1
+      const merged = c1.map((c, i) => ({
+        ts: c.timestamp?.slice(11, 16) || '',
+        v1: c.close / base1 * 100,
+        v2: c2[i]?.close ? c2[i].close / base2 * 100 : null,
+      })).filter(d => d.v2 != null)
       setChartData(merged)
-    })
+      setLoading(false)
+    }).catch(() => setLoading(false))
   }, [idx1, idx2, normalize])
 
   return (
@@ -41,17 +47,28 @@ export default function CompareView() {
         </select>
         <label className="flex items-center gap-1.5 text-xs text-white/50 ml-auto">
           <input type="checkbox" checked={normalize} onChange={e => setNormalize(e.target.checked)} />
-          Normalize
+          Normalize (rebased to 100)
         </label>
       </div>
 
-      <div className="bg-surface rounded-lg p-3 h-48">
-        {chartData.length > 0 ? (
-          <div className="flex items-center justify-center h-full text-white/30 text-xs">
-            Chart ({chartData.length} candles) — {MARKETS[idx1].label} vs {MARKETS[idx2].label}
-          </div>
-        ) : (
+      <div className="bg-surface rounded-lg p-3 h-56">
+        {loading ? (
           <div className="flex items-center justify-center h-full text-white/30 text-xs">Loading...</div>
+        ) : chartData.length > 0 ? (
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={chartData}>
+              <XAxis dataKey="ts" tick={{ fill: '#94a3b8', fontSize: 9 }} tickLine={false} axisLine={{ stroke: '#1e2433' }} />
+              <YAxis tick={{ fill: '#94a3b8', fontSize: 9 }} tickLine={false} axisLine={{ stroke: '#1e2433' }} domain={['auto', 'auto']} />
+              <Tooltip contentStyle={{ background: '#141720', border: '1px solid #1e2433', borderRadius: 6, color: '#e2e8f0', fontSize: 10 }}
+                labelStyle={{ color: '#94a3b8' }}
+                formatter={(val, name) => [typeof val === 'number' ? val.toFixed(2) : val, name]} />
+              <Legend wrapperStyle={{ fontSize: 10, color: '#94a3b8' }} />
+              <Line type="monotone" dataKey="v1" name={MARKETS[idx1].label} stroke="#3b82f6" strokeWidth={2} dot={false} />
+              <Line type="monotone" dataKey="v2" name={MARKETS[idx2].label} stroke="#f59e0b" strokeWidth={2} dot={false} />
+            </LineChart>
+          </ResponsiveContainer>
+        ) : (
+          <div className="flex items-center justify-center h-full text-white/30 text-xs">No data — trigger scrape first</div>
         )}
       </div>
 
