@@ -1,0 +1,17 @@
+{
+  "name": "mapro",
+  "version": "1.0.0",
+  "description": "MAPRO - Multimarket Analytics Portfolio Tracker",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && PYTHONPATH=./src ./venv/bin/pytest ../tests/backend/ -v --tb=short",
+    "test:frontend": "cd frontend && npx vitest run",
+    "test:e2e": "cd frontend && npx playwright test --config=../tests/e2e/playwright.config.mjs",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}
