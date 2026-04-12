@@ -282,11 +282,11 @@ export default function GlobeView() {
                 <>
                   <div className="p-4">
                     <h3 className="text-sm font-medium text-gray-300 mb-3">Economic Calendar</h3>
-                    <EconomicCalendar events={calendarEvents} />
+                    <EconomicCalendar events={calendarEvents} loading={panelLoading} />
                   </div>
                   <div className="p-4 border-t border-gray-800">
                     <h3 className="text-sm font-medium text-gray-300 mb-3">Macro News</h3>
-                    <MacroNewsPanel articles={newsArticles} />
+                    <MacroNewsPanel articles={newsArticles} loading={panelLoading} />
                   </div>
                 </>
               )}

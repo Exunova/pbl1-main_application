@@ -9,8 +9,27 @@ export default function CompareView() {
   const [normalize, setNormalize] = useState(true)
   const [chartData, setChartData] = useState([])
   const [loading, setLoading] = useState(false)
+  const [tickerData, setTickerData] = useState({})
 
   const regions = Object.keys(MARKETS)
+
+  useEffect(() => {
+    if (!window.api) return
+    // Fetch all tickers from all markets for heatmap
+    const allTickers = Object.values(MARKETS).flatMap(m => m.tickers)
+    Promise.all(allTickers.map(t => window.api.fetchCompany(t).catch(() => null)))
+      .then(results => {
+        const td = {}
+        results.forEach((d, i) => {
+          const t = allTickers[i]
+          if (!d?.info?.price) return
+          const cur = d.info.price.currentPrice
+          const prv = d.info.price.previousClose
+          td[t] = { change_pct: (cur && prv) ? ((cur - prv) / prv * 100) : 0 }
+        })
+        setTickerData(td)
+      }).catch(() => {})
+  }, [])
 
   useEffect(() => {
     if (!window.api) return
@@ -76,7 +95,7 @@ export default function CompareView() {
         {[idx1, idx2].map(region => (
           <div key={region} className="bg-surface rounded-lg p-3">
             <h3 className="text-xs font-bold text-white/50 mb-2">{MARKETS[region].label} Heatmap</h3>
-            <MarketHeatmap tickers={MARKETS[region].tickers} />
+            <MarketHeatmap tickers={MARKETS[region].tickers} data={tickerData} />
           </div>
         ))}
       </div>
