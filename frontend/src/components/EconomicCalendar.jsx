@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export default function EconomicCalendar({ country, events: propEvents }) {
+export default function EconomicCalendar({ country, events: propEvents, loading = false }) {
   const [events, setEvents] = useState(propEvents || [])
 
   useEffect(() => {
@@ -15,6 +15,10 @@ export default function EconomicCalendar({ country, events: propEvents }) {
   }, [country, propEvents])
 
   const IMPACT_COLORS = { high: '#ef4444', medium: '#f59e0b', low: '#94a3b8' }
+
+  if (loading) return (
+    <div className="p-3 text-xs text-white/40">Loading calendar...</div>
+  )
 
   if (!events.length) return (
     <div className="p-3 text-xs text-white/40">No economic events</div>

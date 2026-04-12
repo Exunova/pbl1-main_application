@@ -13,11 +13,11 @@ contextBridge.exposeInMainWorld('api', {
   scrapeStatus: () => ipcRenderer.invoke('scrapeStatus'),
 
   // Portfolio (via IPC → Python backend)
-  getPositions: () => ipcRenderer.invoke('get-positions'),
-  addPosition: (pos) => ipcRenderer.invoke('add-position', pos),
-  deletePosition: (id) => ipcRenderer.invoke('delete-position', id),
-  editPosition: (id, fields) => ipcRenderer.invoke('edit-position', id, fields),
-  fetchPnL: () => ipcRenderer.invoke('fetchPnL'),
+  getPositions: () => ipcRenderer.invoke('portfolio-list'),
+  addPosition: (pos) => ipcRenderer.invoke('portfolio-add', pos),
+  deletePosition: (id) => ipcRenderer.invoke('portfolio-delete', id),
+  editPosition: (id, fields) => ipcRenderer.invoke('portfolio-edit', id, fields),
+  fetchPnL: () => ipcRenderer.invoke('portfolio-pnl'),
   portfolioExport: () => ipcRenderer.invoke('portfolio-export'),
   portfolioImport: (positions) => ipcRenderer.invoke('portfolio-import', positions),
 

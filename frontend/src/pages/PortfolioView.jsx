@@ -10,7 +10,7 @@ export default function PortfolioView() {
 
   useEffect(() => {
     if (!window.api) return
-    window.api.getPositions().then(setPositions).catch(() => {})
+    window.api.getPositions().then(r => setPositions(r?.positions || [])).catch(() => {})
     window.api.fetchPnL().then(setPnlData).catch(() => {})
   }, [])
 
@@ -19,7 +19,7 @@ export default function PortfolioView() {
     const pos = { ...form, shares: parseFloat(form.shares), buyPrice: parseFloat(form.buyPrice) }
     await window.api.addPosition(pos)
     const updated = await window.api.getPositions()
-    setPositions(updated)
+    setPositions(updated?.positions || [])
     setShowAdd(false)
     setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' })
   }
@@ -27,7 +27,7 @@ export default function PortfolioView() {
   const handleDelete = async (id) => {
     await window.api.deletePosition(id)
     const updated = await window.api.getPositions()
-    setPositions(updated)
+    setPositions(updated?.positions || [])
   }
 
   return (

@@ -89,7 +89,7 @@ def parse_feed(market, config):
             })
 
             # Sleep 1 second between thumbnail fetches to avoid rate limiting
-            time.sleep(1)
+            time.sleep(3)
 
         return articles
     except Exception as e:

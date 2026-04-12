@@ -59,6 +59,11 @@ export default function GlobeView() {
   }, [])
 
   const fetchIndexData = useCallback(async () => {
+    if (!window.api) {
+      console.warn('window.api not available yet')
+      setIndicesData([])
+      return []
+    }
     try {
       const indices = await window.api.fetchIndices()
       setIndicesData(indices || [])
@@ -71,6 +76,13 @@ export default function GlobeView() {
   }, [])
 
   const loadCountryData = useCallback(async (countryCode) => {
+    if (!window.api) {
+      console.warn('window.api not available yet')
+      setCalendarEvents([])
+      setNewsArticles([])
+      setPanelLoading(false)
+      return
+    }
     setPanelLoading(true)
     try {
       if (countryCode) {

@@ -13,6 +13,8 @@ import sqlite3
 from datetime import datetime
 from contextlib import contextmanager
 
+import yfinance as yf
+
 # =============================================================================
 # PATH SETUP
 # =============================================================================
@@ -37,6 +39,7 @@ if APP_DIR not in sys.path:
 def get_db_conn():
     """Get a connection to the cache SQLite database."""
     conn = sqlite3.connect(CACHE_DB, check_same_thread=False)
+    conn.execute("PRAGMA journal_mode=WAL")
     conn.row_factory = sqlite3.Row
     return conn
 
@@ -46,7 +49,7 @@ def init_db():
         conn.execute("""
             CREATE TABLE IF NOT EXISTS cache (
                 key TEXT PRIMARY KEY,
-                data TEXT,
+                data TEXT NOT NULL,
                 updated_at TEXT
             )
         """)
@@ -482,31 +485,94 @@ def handle_portfolio_pnl():
                 }
                 for row in rows
             ]
-        
-        # For now, return mock PnL data matching Flask behavior
-        # In production, this would fetch current prices and calculate real PnL
+
+        if not positions:
+            return {"positions": [], "total": {"totalPnL": 0, "stockReturn": 0, "forexReturn": 0}}
+
+        tickers = [p['ticker'] for p in positions]
+        try:
+            prices = yf.download(tickers, period="1d", auto_adjust=True, threads=True)
+        except Exception as e:
+            sys.stderr.write(f"yfinance batch download failed: {e}\n")
+            prices = None
+
+        fx_tickers = {"USD_IDR": "USDIDR=X", "USD_JPY": "USDJPY=X", "USD_GBP": "USDGBP=X"}
+        fx_rates = {}
+        for key, ticker in fx_tickers.items():
+            try:
+                info = yf.Ticker(ticker).info
+                fx_rates[key] = info.get("currentPrice") or info.get("regularMarketPrice") or 1.0
+            except Exception:
+                fx_rates[key] = 1.0
+
+        def get_hist_avg_approx(pair_ticker):
+            try:
+                hist = yf.Ticker(pair_ticker).history(period="1mo")
+                return float(hist['Close'].iloc[-1]) if not hist.empty else None
+            except Exception:
+                return None
+
+        current_fx = {c: fx_rates.get(k, 1.0) for c, k in [("IDR", "USD_IDR"), ("JPY", "USD_JPY"), ("GBP", "USD_GBP")]}
+
+        def get_buy_fx(currency):
+            if currency == "USD":
+                return 1.0
+            pair = {"IDR": "USDIDR=X", "JPY": "USDJPY=X", "GBP": "USDGBP=X"}.get(currency)
+            return get_hist_avg_approx(pair) if pair else (15650.0 if currency == "IDR" else 1.0)
+
         pnl_positions = []
+        total_pnl_idr = 0.0
+        total_stock_idr = 0.0
+        total_forex_idr = 0.0
+
         for p in positions:
-            current_price = 186.2 if p['currency'] == 'USD' else 9000.0
-            fx_rate = 15650.0 if p['currency'] == 'IDR' else 1.0
-            fx_rate_at_buy = 15500.0 if p['currency'] == 'IDR' else 1.0
+            ticker = p['ticker']
+            currency = p['currency']
+            shares = p['shares']
+            buy_price = p['buyPrice']
+            buy_fx = get_buy_fx(currency)
+            curr_fx = current_fx.get(currency, 1.0 if currency == "USD" else 15650.0)
+
+            current_price = None
+            if prices is not None and not prices.empty:
+                try:
+                    current_price = float(prices['Close'].iloc[-1]) if len(tickers) == 1 else float(prices['Close'][ticker].iloc[-1])
+                except Exception:
+                    pass
+
+            if current_price is None:
+                try:
+                    info = yf.Ticker(ticker).info
+                    current_price = info.get("currentPrice") or info.get("regularMarketPrice")
+                except Exception:
+                    current_price = None
+
+            if current_price is None:
+                current_price = buy_price
+
+            stock_return = (current_price - buy_price) * shares
+            stock_return_idr = stock_return * curr_fx
+            forex_return_idr = shares * buy_price * (curr_fx - buy_fx)
+
+            total_pnl_idr += stock_return_idr + forex_return_idr
+            total_stock_idr += stock_return_idr
+            total_forex_idr += forex_return_idr
+
             pnl_positions.append({
-                "ticker": p['ticker'],
-                "shares": p['shares'],
-                "buyPrice": p['buyPrice'],
+                "ticker": ticker,
+                "shares": shares,
+                "buyPrice": buy_price,
                 "currentPrice": current_price,
-                "currency": p['currency'],
-                "fxRate": fx_rate,
-                "fxRateAtBuy": fx_rate_at_buy
+                "currency": currency,
+                "fxRate": curr_fx,
+                "fxRateAtBuy": buy_fx,
+                "stockReturn": stock_return_idr,
+                "forexReturn": forex_return_idr,
             })
-        
+
         return {
             "positions": pnl_positions,
-            "total": {
-                "totalPnL": 1865000,
-                "stockReturn": 112000,
-                "forexReturn": 1753000
-            }
+            "total": {"totalPnL": total_pnl_idr, "stockReturn": total_stock_idr, "forexReturn": total_forex_idr}
         }
     except Exception as e:
         return {"error": str(e)}

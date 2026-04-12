@@ -1,4 +1,5 @@
 import sys, os
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from cache_db import cache_get, cache_set, set_scrape_status
 
@@ -38,18 +39,35 @@ ALL_COUNTRIES = {
 }
 
 COUNTRY_CODES = {
-    "Australia": "AU", "Canada": "CA", "Switzerland": "CH", "China": "CN",
-    "Germany": "DE", "France": "FR", "HongKong": "HK", "Indonesia": "ID",
-    "India": "IN", "Italy": "IT", "Japan": "JP", "SouthKorea": "KR",
-    "Mexico": "MX", "NewZealand": "NZ", "Russia": "RU", "Singapore": "SG",
-    "Spain": "ES", "UnitedKingdom": "UK", "UnitedStates": "US",
-    "SouthAfrica": "ZA", "Brazil": "BR", "EuroZone": "EU",
+    "Australia": "AU",
+    "Canada": "CA",
+    "Switzerland": "CH",
+    "China": "CN",
+    "Germany": "DE",
+    "France": "FR",
+    "HongKong": "HK",
+    "Indonesia": "ID",
+    "India": "IN",
+    "Italy": "IT",
+    "Japan": "JP",
+    "SouthKorea": "KR",
+    "Mexico": "MX",
+    "NewZealand": "NZ",
+    "Russia": "RU",
+    "Singapore": "SG",
+    "Spain": "ES",
+    "UnitedKingdom": "UK",
+    "UnitedStates": "US",
+    "SouthAfrica": "ZA",
+    "Brazil": "BR",
+    "EuroZone": "EU",
 }
 
 COUNTRY_CONFIG = {
     "US": {"name": "United States", "currency": "USD"},
     "ID": {"name": "Indonesia", "currency": "IDR"},
     "JP": {"name": "Japan", "currency": "JPY"},
+    "UK": {"name": "United Kingdom", "currency": "GBP"},
     "DE": {"name": "Germany", "currency": "EUR"},
 }
 
@@ -70,13 +88,15 @@ def load_cookies():
             parts = line.split("\t")
             if len(parts) >= 7:
                 domain, _, path, secure, expiration, name, value = parts[:7]
-                cookies.append({
-                    "domain": domain,
-                    "path": path,
-                    "secure": secure == "TRUE",
-                    "name": name,
-                    "value": value,
-                })
+                cookies.append(
+                    {
+                        "domain": domain,
+                        "path": path,
+                        "secure": secure == "TRUE",
+                        "name": name,
+                        "value": value,
+                    }
+                )
     logger.info(f"Loaded {len(cookies)} cookies")
     return cookies
 
@@ -177,11 +197,17 @@ def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
         output_dir = OUTPUT_DIR
 
     with sync_playwright() as p:
-        # Try /usr/bin/chromium first, fallback to default
-        executable_path = "/usr/bin/chromium" if os.path.exists("/usr/bin/chromium") else None
+        executable_path = (
+            "/usr/bin/chromium" if os.path.exists("/usr/bin/chromium") else None
+        )
         browser = p.chromium.launch(
             headless=True,
             executable_path=executable_path,
+            args=[
+                "--no-sandbox",
+                "--disable-setuid-sandbox",
+                "--disable-dev-shm-usage",
+            ],
         )
         context = browser.new_context(
             user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -193,7 +219,11 @@ def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
         page = context.new_page()
 
         logger.info("Loading economic calendar...")
-        page.goto("https://www.investing.com/economic-calendar/", timeout=120000, wait_until="domcontentloaded")
+        page.goto(
+            "https://www.investing.com/economic-calendar/",
+            timeout=120000,
+            wait_until="domcontentloaded",
+        )
         time.sleep(10)
 
         logger.info("Opening filters and setting dates...")
@@ -261,16 +291,18 @@ def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
                 impact = parse_impact(row)
                 cfg = ALL_COUNTRIES.get(country_code, {"currency": "UNK"})
 
-                events.append({
-                    "name": name,
-                    "date": from_date,
-                    "time": time_text,
-                    "impact": impact,
-                    "actual": actual,
-                    "forecast": forecast,
-                    "previous": previous,
-                    "currency": cfg.get("currency", "UNK"),
-                })
+                events.append(
+                    {
+                        "name": name,
+                        "date": from_date,
+                        "time": time_text,
+                        "impact": impact,
+                        "actual": actual,
+                        "forecast": forecast,
+                        "previous": previous,
+                        "currency": cfg.get("currency", "UNK"),
+                    }
+                )
                 logger.info(f"  [{country_code}] {time_text} - {name}")
 
             except Exception as e:
@@ -320,9 +352,11 @@ def run(output_dir):
     logger.info(f"Started: {datetime.now()}")
     logger.info("=" * 50)
 
-    target_countries = ["US", "ID", "JP", "DE"]
-    from_date = "04/07/2026"
-    to_date = "04/07/2026"
+    target_countries = ["US", "ID", "JP", "UK", "DE"]
+
+    today = datetime.now()
+    from_date = today.strftime("%m/%d/%Y")
+    to_date = (today + timedelta(days=7)).strftime("%m/%d/%Y")
 
     logger.info(f"Scraping {from_date} to {to_date} for: {target_countries}")
 

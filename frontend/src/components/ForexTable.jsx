@@ -5,8 +5,9 @@ export default function ForexTable() {
 
   useEffect(() => {
     if (!window.api) return
-    const pairs = ['IDR_USD', 'JPY_USD', 'GBP_USD']
+    const pairs = ['IDR_USD', 'JPY_USD', 'GBP_USD', 'USD_IDR', 'USD_JPY', 'USD_GBP']
     Promise.all(pairs.map(p => window.api.fetchForex(p)))
+      .then(results => results.filter(Boolean))
       .then(setForexData)
       .catch(() => {})
   }, [])

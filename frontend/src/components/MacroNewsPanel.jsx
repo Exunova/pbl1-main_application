@@ -1,4 +1,8 @@
-export default function MacroNewsPanel({ articles = [], region }) {
+export default function MacroNewsPanel({ articles = [], region, loading = false }) {
+  if (loading) return (
+    <div className="p-3 text-xs text-white/40">Loading news...</div>
+  )
+
   if (!articles.length) return (
     <div className="p-3 text-xs text-white/40">No news available</div>
   )

@@ -21,6 +21,8 @@ MARKETS = {
 
 OHLCV_TTL_SECONDS = 3600  # 1 hour
 
+MAX_RETRIES = 3
+
 
 def safe_float(val):
     """Round a value to 4 decimal places, returning None on failure."""
@@ -54,26 +56,34 @@ def is_cache_fresh(key, ttl_seconds):
 
 
 def scrape_15m(ticker):
-    """Fetch 30 days of 15-minute OHLCV data for a ticker."""
-    try:
-        df = yf.Ticker(ticker).history(period="30d", interval="15m")
-        if df.empty:
-            print(f"  [WARN] No 15m data: {ticker}")
+    for attempt in range(MAX_RETRIES):
+        try:
+            df = yf.Ticker(ticker).history(period="30d", interval="15m")
+            if df.empty:
+                print(f"  [WARN] No 15m data: {ticker}")
+                return []
+            return [
+                {
+                    "timestamp": str(ts),
+                    "open":   safe_float(row["Open"]),
+                    "high":   safe_float(row["High"]),
+                    "low":    safe_float(row["Low"]),
+                    "close":  safe_float(row["Close"]),
+                    "volume": int(row["Volume"]),
+                }
+                for ts, row in df.iterrows()
+            ]
+        except Exception as e:
+            err_str = str(e).lower()
+            if "429" in err_str or "rate" in err_str or "too many" in err_str:
+                wait = (2 ** attempt) * 30
+                print(f"  [RATE LIMIT] {ticker} attempt {attempt+1}, waiting {wait}s...")
+                time.sleep(wait)
+                continue
+            print(f"  [ERROR] {ticker} 15m: {e}")
             return []
-        return [
-            {
-                "timestamp": str(ts),
-                "open":   safe_float(row["Open"]),
-                "high":   safe_float(row["High"]),
-                "low":    safe_float(row["Low"]),
-                "close":  safe_float(row["Close"]),
-                "volume": int(row["Volume"]),
-            }
-            for ts, row in df.iterrows()
-        ]
-    except Exception as e:
-        print(f"  [ERROR] {ticker} 15m: {e}")
-        return []
+    print(f"  [FAIL] {ticker} exceeded retries after {MAX_RETRIES} attempts")
+    return []
 
 
 def save_json(data, path):
@@ -170,7 +180,7 @@ def run(output_dir):
             summary["markets"][market]["stocks"][ticker] = {
                 "ohlcv_15m_count": len(ohlcv_15m),
             }
-            time.sleep(2)  # 2-second delay to avoid rate limiting
+            time.sleep(5)
 
     # --- Summary ---
     summary_path = os.path.join(output_dir, "_summary.json")

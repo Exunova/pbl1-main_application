@@ -6,6 +6,7 @@ CACHE_DB = os.path.join(APP_DIR, 'cache.db')
 
 def get_conn():
     conn = sqlite3.connect(CACHE_DB)
+    conn.execute("PRAGMA journal_mode=WAL")
     conn.row_factory = sqlite3.Row
     return conn
 

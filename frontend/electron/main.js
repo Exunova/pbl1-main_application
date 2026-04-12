@@ -63,7 +63,7 @@ function startPythonBackend() {
           if (response.error) {
             pending.reject(new Error(response.error))
           } else {
-            pending.resolve(response.result)
+            pending.resolve(response.data)
           }
         }
       } catch (e) {
@@ -161,10 +161,15 @@ app.whenReady().then(() => {
 
   startPythonBackend()
 
-  ipcMain.handle('get-positions', () => sendToPython('portfolio_list', {}))
-  ipcMain.handle('add-position', (_, pos) => sendToPython('portfolio_add', pos))
-  ipcMain.handle('edit-position', (_, id, fields) => sendToPython('portfolio_edit', { id, ...fields }))
-  ipcMain.handle('delete-position', (_, id) => sendToPython('portfolio_delete', { id }))
+  ipcMain.handle('portfolio-list', () => sendToPython('portfolio_list', {}))
+  ipcMain.handle('portfolio-add', (_, pos) => sendToPython('portfolio_add', pos))
+  ipcMain.handle('portfolio-edit', (_, id, fields) => sendToPython('portfolio_edit', { id, ...fields }))
+  ipcMain.handle('portfolio-delete', (_, id) => sendToPython('portfolio_delete', { id }))
+  ipcMain.handle('portfolio-pnl', () => sendToPython('portfolio_pnl', {}))
+  ipcMain.handle('portfolio-export', () => sendToPython('portfolio_export', {}))
+  ipcMain.handle('portfolio-import', (_, data) => sendToPython('portfolio_import', data))
+
+  // Data fetching handlers — route to Python backend commands
   ipcMain.handle('fetchOHLCV', (_, ticker) => sendToPython('ohlcv', { ticker }))
   ipcMain.handle('fetchNews', (_, region) => sendToPython('news', { region }))
   ipcMain.handle('fetchMacro', (_, cc) => sendToPython('macro', { cc }))
@@ -174,10 +179,7 @@ app.whenReady().then(() => {
   ipcMain.handle('fetchIndices', () => sendToPython('indices', {}))
   ipcMain.handle('triggerScrape', (_, type) => sendToPython('scrape', { type }))
   ipcMain.handle('scrapeStatus', () => sendToPython('scrape_status', {}))
-  ipcMain.handle('fetchPnL', () => sendToPython('portfolio_pnl', {}))
   ipcMain.handle('flask-health', () => sendToPython('health', {}))
-  ipcMain.handle('portfolio-export', () => sendToPython('portfolio_export', {}))
-  ipcMain.handle('portfolio-import', (_, data) => sendToPython('portfolio_import', data))
 
   ipcMain.on('window-minimize', (e) => BrowserWindow.fromWebContents(e.sender)?.minimize())
   ipcMain.on('window-maximize', (e) => {
