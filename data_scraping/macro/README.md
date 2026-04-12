@@ -127,44 +127,44 @@ Investing.com membutuhkan authentication agar bisa mengakses data penuh. Scraper
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    MULAI SCRAPER                         │
+│                    MULAI SCRAPER                        │
 └─────────────────────┬───────────────────────────────────┘
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│ 1. LOAD COOKIES                                          │
-│    Baca cookies dari cookies.txt                         │
+│ 1. LOAD COOKIES                                         │
+│    Baca cookies dari cookies.txt                        │
 └─────────────────────┬───────────────────────────────────┘
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│ 2. LAUNCH BROWSER                                        │
-│    Buka Chromium dengan cookies (tersimpan login)        │
+│ 2. LAUNCH BROWSER                                       │
+│    Buka Chromium dengan cookies (tersimpan login)       │
 └─────────────────────┬───────────────────────────────────┘
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│ 3. NAVIGASI KE WEBSITE                                   │
-│    Buka investing.com/economic-calendar                  │
+│ 3. NAVIGASI KE WEBSITE                                  │
+│    Buka investing.com/economic-calendar                 │
 └─────────────────────┬───────────────────────────────────┘
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│ 4. SET FILTER                                            │
-│    - Klik "Show Filters"                                 │
-│    - Klik "Custom dates"                                 │
-│    - Isi tanggal mulai & selesai                         │
-│    - Klik "Apply"                                        │
+│ 4. SET FILTER                                           │
+│    - Klik "Show Filters"                                │
+│    - Klik "Custom dates"                                │
+│    - Isi tanggal mulai & selesai                        │
+│    - Klik "Apply"                                       │
 └─────────────────────┬───────────────────────────────────┘
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│ 5. PARSE DATA                                            │
-│    Untuk setiap baris tabel:                             │
-│    - Ambil nama peristiwa                                │
-│    - Ambil waktu                                         │
-│    - Hitung impact (stars)                               │
-│    - Ambil actual/forecast/previous                      │
+│ 5. PARSE DATA                                           │
+│    Untuk setiap baris tabel:                            │
+│    - Ambil nama peristiwa                               │
+│    - Ambil waktu                                        │
+│    - Hitung impact (stars)                              │
+│    - Ambil actual/forecast/previous                     │
 │    - Filter berdasarkan negara (US/ID/JP/DE)            │
 └─────────────────────┬───────────────────────────────────┘
                       ▼
 ┌─────────────────────────────────────────────────────────┐
-│ 6. SIMPAN HASIL                                          │
+│ 6. SIMPAN HASIL                                         │
 │    Export ke JSON files: us_macro.json, dll.            │
 └─────────────────────────────────────────────────────────┘
 ```
