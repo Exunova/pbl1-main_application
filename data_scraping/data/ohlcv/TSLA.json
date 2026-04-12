@@ -2,7 +2,7 @@
   "ticker": "TSLA",
   "type": "stock",
   "market": "US",
-  "scraped_at": "2026-04-12 17:26:43.077606",
+  "scraped_at": "2026-04-12 18:15:23.196145",
   "ohlcv_15m": [
     {
       "timestamp": "2026-02-27 09:30:00-05:00",

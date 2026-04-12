@@ -18,19 +18,19 @@ from urllib3.util.retry import Retry
 NEWS_FEEDS = {
     "US": {
         "label": "S&P 500",
-        "url":   "https://news.google.com/rss/search?q=%22S%26P+500%22+OR+%22SPX%22&hl=en-US&gl=US&ceid=US:en"
+        "url":   "https://news.google.com/rss/search?q=%22S%26P+500%22+OR+%22SPX%22+when:1d&hl=en-US&gl=US&ceid=US:en"
     },
     "ID": {
         "label": "LQ45 / IHSG",
-        "url":   "https://news.google.com/rss/search?q=%22LQ45%22+OR+%22IHSG%22&hl=id&gl=ID&ceid=ID:id"
+        "url":   "https://news.google.com/rss/search?q=%22LQ45%22+OR+%22IHSG%22+when:1d&hl=id&gl=ID&ceid=ID:id"
     },
     "JP": {
         "label": "Nikkei 225",
-        "url":   "https://news.google.com/rss/search?q=%22Nikkei+225%22+OR+%22Nikkei+index%22&hl=en&gl=JP&ceid=JP:en"
+        "url":   "https://news.google.com/rss/search?q=%22Nikkei+225%22+OR+%22Nikkei+index%22+when:1d&hl=en&gl=JP&ceid=JP:en"
     },
     "GB": {
         "label": "FTSE 100",
-        "url":   "https://news.google.com/rss/search?q=%22FTSE+100%22&hl=en-GB&gl=GB&ceid=GB:en"
+        "url":   "https://news.google.com/rss/search?q=%22FTSE+100%22+when:1d&hl=en-GB&gl=GB&ceid=GB:en"
     }
 }
 

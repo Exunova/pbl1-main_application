@@ -69,27 +69,6 @@ def scrape_15m(ticker):
         return []
 
 
-def scrape_daily(ticker, period="1y"):
-    try:
-        df = yf.Ticker(ticker).history(period=period, interval="1d")
-        if df.empty:
-            return []
-        return [
-            {
-                "date":   str(ts.date()),
-                "open":   safe_float(row["Open"]),
-                "high":   safe_float(row["High"]),
-                "low":    safe_float(row["Low"]),
-                "close":  safe_float(row["Close"]),
-                "volume": int(row["Volume"])
-            }
-            for ts, row in df.iterrows()
-        ]
-    except Exception as e:
-        print(f"  [ERROR] {ticker} daily: {e}")
-        return []
-
-
 def to_filename(ticker):
     return ticker.replace(".", "_").replace("^", "IDX_").replace("-", "_")
 
@@ -105,23 +84,23 @@ def main():
     for market, config in MARKETS.items():
         print(f"\n[Market: {market}]")
 
-        # Index — daily 1 tahun
+        # Index — 15m (30 hari)
         idx = config["index"]
         print(f"  Index: {idx}")
-        idx_daily = scrape_daily(idx, period="1y")
+        idx_15m = scrape_15m(idx)
         save_json({
             "ticker": idx, "type": "index", "market": market,
             "scraped_at": str(datetime.now()),
-            "ohlcv_daily": idx_daily
-        }, f"{to_filename(idx)}_daily.json")
+            "ohlcv_15m": idx_15m
+        }, f"{to_filename(idx)}.json")
 
         summary["markets"][market] = {
             "index": idx,
-            "index_daily_count": len(idx_daily),
+            "index_15m_count": len(idx_15m),
             "stocks": {}
         }
 
-        # Stocks — 1m (7 hari) + daily (3 bulan)
+        # Stocks — 15m (30 hari)
         for ticker in config["tickers"]:
             print(f"  Stock: {ticker}")
             ohlcv_15m = scrape_15m(ticker)

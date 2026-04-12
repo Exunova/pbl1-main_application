@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-06 07:28:25.927957",
+  "scraped_at": "2026-04-12 18:15:01.063414",
   "markets": {
     "US": {
       "label": "S&P 500",
@@ -7,15 +7,15 @@
     },
     "ID": {
       "label": "LQ45 / IHSG",
-      "article_count": 100
+      "article_count": 81
     },
     "JP": {
       "label": "Nikkei 225",
-      "article_count": 100
+      "article_count": 35
     },
     "GB": {
       "label": "FTSE 100",
-      "article_count": 100
+      "article_count": 41
     }
   }
 }

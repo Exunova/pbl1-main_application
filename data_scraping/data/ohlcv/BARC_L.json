@@ -2,7 +2,7 @@
   "ticker": "BARC.L",
   "type": "stock",
   "market": "GB",
-  "scraped_at": "2026-04-12 17:28:21.664787",
+  "scraped_at": "2026-04-12 18:17:05.953201",
   "ohlcv_15m": [
     {
       "timestamp": "2026-02-26 08:00:00+00:00",

@@ -2,7 +2,7 @@
   "ticker": "BRK-B",
   "type": "stock",
   "market": "US",
-  "scraped_at": "2026-04-12 17:26:46.342603",
+  "scraped_at": "2026-04-12 18:15:26.566733",
   "ohlcv_15m": [
     {
       "timestamp": "2026-02-27 09:30:00-05:00",

@@ -1,15 +1,15 @@
 {
   "market": "JP",
   "label": "Nikkei 225",
-  "scraped_at": "2026-04-06 07:34:25.164070",
-  "article_count": 100,
+  "scraped_at": "2026-04-12 18:19:18.469976",
+  "article_count": 35,
   "articles": [
     {
-      "title": "Japan, South Korea stocks open higher as investors assess Trump's Iran war comments, extended deadline - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcFhzY2N3TEhLd0tIT01VZXhVTUhFQmctQTVtbEJNRXQ4U2N0Q1ppNG9Fa0hIaWl4R1l0YUs1WnNuWkdzY01sRklfek9TWkh3bFBEcFA4c1JCSF9Fb283R3dNLWR4RVhmOWY5WXBaZnh3SlBWVldhUDlGQ05oWF9uWEVEeEhmai02TUdSZDRwMm42Z9IBlwFBVV95cUxNNnhSeUxjdmQ4YjU2MVppSjVrakh3RHRvdUtkUUdZeFI1Rzh5dGttSjY1WFdjbHhIWDFYZmFzbkJrT2s3TmxMTE5tUGhXZ0J3NXVPSVZDcmwzUzlEOFVWQ01PRW43V3JxZ2tDM2hfX0lKUXJnR1lqSWE4UHMxTEo3aHdhcHRMeVA1c2c5b2hncXhUcXpnQVpJ?oc=5",
-      "publisher": "CNBC",
-      "published": "Mon, 06 Apr 2026 00:01:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNcFhzY2N3TEhLd0tIT01VZXhVTUhFQmctQTVtbEJNRXQ4U2N0Q1ppNG9Fa0hIaWl4R1l0YUs1WnNuWkdzY01sRklfek9TWkh3bFBEcFA4c1JCSF9Fb283R3dNLWR4RVhmOWY5WXBaZnh3SlBWVldhUDlGQ05oWF9uWEVEeEhmai02TUdSZDRwMm42Z9IBlwFBVV95cUxNNnhSeUxjdmQ4YjU2MVppSjVrakh3RHRvdUtkUUdZeFI1Rzh5dGttSjY1WFdjbHhIWDFYZmFzbkJrT2s3TmxMTE5tUGhXZ0J3NXVPSVZDcmwzUzlEOFVWQ01PRW43V3JxZ2tDM2hfX0lKUXJnR1lqSWE4UHMxTEo3aHdhcHRMeVA1c2c5b2hncXhUcXpnQVpJ?oc=5\" target=\"_blank\">Japan, South Korea stocks open higher as investors assess Trump's Iran war comments, extended deadline</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
+      "title": "Bell For Better - Bay Of Fundy Nikkei 225 (iZwtpMs9FN) - Mshale",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5tVklsc1dXWHhpbDVudDRycnh5MnpMMk5LMld2V2cxUUY5dXBMTlNNNmo2c3BUWWJDejJ4NEFHUDNzci1ZM1BFYnpaY1BLbVd2Y1pYaFZDX2xqYmQ4UWFnX0pDWQ?oc=5",
+      "publisher": "Mshale",
+      "published": "Sat, 11 Apr 2026 21:28:40 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE5tVklsc1dXWHhpbDVudDRycnh5MnpMMk5LMld2V2cxUUY5dXBMTlNNNmo2c3BUWWJDejJ4NEFHUDNzci1ZM1BFYnpaY1BLbVd2Y1pYaFZDX2xqYmQ4UWFnX0pDWQ?oc=5\" target=\"_blank\">Bell For Better - Bay Of Fundy Nikkei 225 (iZwtpMs9FN)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mshale</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -17,11 +17,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Japan stocks higher at close of trade; Nikkei 225 up 1.21% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQTzNubWZGaUtQWWp3TTVoMTJDbVBwdEtVNFlERU9sZ0s0MldCUUdsZU5HLWYwRGR4M3RFZV9uZ0l0R2YyNng4RVdpelFYQ2QtTHR1QkU0blUwNGNnc09TVU82NEp1TWdEbk5WRGlfWktCYUVkTmpnelptNG5yenR4QlppOEwwMWlCMC1lOFI2RnZNTFRaQUhkMDl3Q1ZLQmc4WkpxWmoxZHZYMGdYQXIzd2dn?oc=5",
-      "publisher": "Investing.com",
-      "published": "Fri, 03 Apr 2026 07:44:22 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQTzNubWZGaUtQWWp3TTVoMTJDbVBwdEtVNFlERU9sZ0s0MldCUUdsZU5HLWYwRGR4M3RFZV9uZ0l0R2YyNng4RVdpelFYQ2QtTHR1QkU0blUwNGNnc09TVU82NEp1TWdEbk5WRGlfWktCYUVkTmpnelptNG5yenR4QlppOEwwMWlCMC1lOFI2RnZNTFRaQUhkMDl3Q1ZLQmc4WkpxWmoxZHZYMGdYQXIzd2dn?oc=5\" target=\"_blank\">Japan stocks higher at close of trade; Nikkei 225 up 1.21%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
+      "title": "JP Movers | Shift Rose 4.28%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List - 富途牛牛",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOGd4eWhRYWRhOHd2RmtJZk1pay1udl9NYlhJaXg1OERLakhFcUYwSVNxY0lXYWZlb3NhMUFwRVdoZ2FCc3VxSnJjNW1QWk9zSllhUVlZZ21jbTBJcEtHdnhER05lY3RPejA3NXBXQVR1UDFmTXBYMnREdV9lcUVCdjJQN1R1clBJbjBBMzVEMnFLc2RJWVRjY09hMlA?oc=5",
+      "publisher": "富途牛牛",
+      "published": "Sun, 12 Apr 2026 08:20:05 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPOGd4eWhRYWRhOHd2RmtJZk1pay1udl9NYlhJaXg1OERLakhFcUYwSVNxY0lXYWZlb3NhMUFwRVdoZ2FCc3VxSnJjNW1QWk9zSllhUVlZZ21jbTBJcEtHdnhER05lY3RPejA3NXBXQVR1UDFmTXBYMnREdV9lcUVCdjJQN1R1clBJbjBBMzVEMnFLc2RJWVRjY09hMlA?oc=5\" target=\"_blank\">JP Movers | Shift Rose 4.28%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">富途牛牛</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -29,95 +29,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "The Nikkei 225 Index Closes 1.35% Higher - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNa0xDeGVvWEtYWnVzMGM5ZjZsMi10dkJTMDFTU0hFMENIVk13VmcxcGFtOXFCTnJMS2JsTjJKek1tcE5BS2k3ZFhVUzY0a1dYX1VQRjhYbjdzaTJfRUFNanJZN2wyV01tSWRzdld6T01uZ1ZJWXI2Uy1JM01ZUWdlTkxVOHh1NUdFRjRjQXhJVGJ2WUlz?oc=5",
-      "publisher": "TradingView",
-      "published": "Fri, 03 Apr 2026 06:30:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNa0xDeGVvWEtYWnVzMGM5ZjZsMi10dkJTMDFTU0hFMENIVk13VmcxcGFtOXFCTnJMS2JsTjJKek1tcE5BS2k3ZFhVUzY0a1dYX1VQRjhYbjdzaTJfRUFNanJZN2wyV01tSWRzdld6T01uZ1ZJWXI2Uy1JM01ZUWdlTkxVOHh1NUdFRjRjQXhJVGJ2WUlz?oc=5\" target=\"_blank\">The Nikkei 225 Index Closes 1.35% Higher</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Index Price - Japan 225 - FOREX.com",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE10Zi1qa2dyem5MR0lKZ2o2RlFiYjBYUDg0OEVMU3pheFJrdzAtV1R6VlRZUzUzODBEdUw2a3NuRDk3NktWTUR3ZDVIcVNGYlhtcVUxYVRHODBTZ1NwUnJtVThn?oc=5",
-      "publisher": "FOREX.com",
-      "published": "Fri, 03 Apr 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE10Zi1qa2dyem5MR0lKZ2o2RlFiYjBYUDg0OEVMU3pheFJrdzAtV1R6VlRZUzUzODBEdUw2a3NuRDk3NktWTUR3ZDVIcVNGYlhtcVUxYVRHODBTZ1NwUnJtVThn?oc=5\" target=\"_blank\">Nikkei 225 Index Price - Japan 225</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FOREX.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei drops nearly 1,000 yen after Trump speech rattles markets - upi.com",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMXN1clFXQkJ4WXFKV094cXI0eHpUMlhhYWxmVnZONVFQV1VUeFhyUVpwTmhyUUZma284NDZqcVM5bXBUN284emFvTmhVN0l0Y05DQ3BTRXh4WjZVZlRISjM1cHczZExOa3Fmazh6OHRnd1lZcXR6UWJlVGRKVTNJd1dndVJFcmFQRkNuSGF6bTJqNmvSAZgBQVVfeXFMTTBWdnFlWUhrbXgwR0dxbWFkUXA0cS1wSlBtcGkzQ25EZVFCWnctbmhqYlRIQ29YX2owMTdqdzRGVGJCRUhJM1hGZXpuUFo5ZmtOVnk5ZlBEMDhiMEp3dVE4R1k1MlhEck9ZMWR5UVgwTkxobzVHd2V5NUcxd05EaURtSGs5Wnk3bnIwcktEWDNFMU1yR2Z0Ykw?oc=5",
-      "publisher": "upi.com",
-      "published": "Thu, 02 Apr 2026 21:51:11 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxQMXN1clFXQkJ4WXFKV094cXI0eHpUMlhhYWxmVnZONVFQV1VUeFhyUVpwTmhyUUZma284NDZqcVM5bXBUN284emFvTmhVN0l0Y05DQ3BTRXh4WjZVZlRISjM1cHczZExOa3Fmazh6OHRnd1lZcXR6UWJlVGRKVTNJd1dndVJFcmFQRkNuSGF6bTJqNmvSAZgBQVVfeXFMTTBWdnFlWUhrbXgwR0dxbWFkUXA0cS1wSlBtcGkzQ25EZVFCWnctbmhqYlRIQ29YX2owMTdqdzRGVGJCRUhJM1hGZXpuUFo5ZmtOVnk5ZlBEMDhiMEp3dVE4R1k1MlhEck9ZMWR5UVgwTkxobzVHd2V5NUcxd05EaURtSGs5Wnk3bnIwcktEWDNFMU1yR2Z0Ykw?oc=5\" target=\"_blank\">Nikkei drops nearly 1,000 yen after Trump speech rattles markets</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">upi.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Stocks recover most early losses as volatility again hits Wall Street. US oil tops $110 a barrel - KSN.com",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFU0ZlQzY0JUak9qUUxuNHlHOVVKUmpmNW95WmJoeU4yLURnVm1JU2hhX3phSFRFc1c0OWZHbzRqd3p2NkpmSE9JNHczeTdCRTg4cnJoWFJoX3oyU2tFUGNWdk5wa25XRVZNWTlGSnVxVFJIMHpuYVVTZXhHeklIT3NNVkY5WkgyVWIxNTdUWHVOczU0WTlLTHhUbWs0YUdvX0tPSFdoRDFSYVoxbUJwVUZLQ3VfaGtlREVad1BhYm81T0pQRVHSAcsBQVVfeXFMTVVzdkE4NzFCY21qaGpmbXluQ3IxQmFKMDJPaGFQckxQT1ppcy1tNFpHRnlfOUc0X2Z3dnJMWDZqVlNTUVdXa0YyUW40R2xqMFc5d251eTlkX05KS2VNTy1TMUFwRlI4TGxsV1JWU2w1TzRJR3dNb2hHNDZwN1hPQ2VSMnBOeTFGZVRHWlpWZlByOVpGLU15d0p3QUhRY2o3THRKRHMxSTVFXzVpTWtvV0hrcVY0T2xKVjM1R2xfNWtuU1IweXJJS18yWGM?oc=5",
-      "publisher": "KSN.com",
-      "published": "Thu, 02 Apr 2026 18:17:43 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxQTFU0ZlQzY0JUak9qUUxuNHlHOVVKUmpmNW95WmJoeU4yLURnVm1JU2hhX3phSFRFc1c0OWZHbzRqd3p2NkpmSE9JNHczeTdCRTg4cnJoWFJoX3oyU2tFUGNWdk5wa25XRVZNWTlGSnVxVFJIMHpuYVVTZXhHeklIT3NNVkY5WkgyVWIxNTdUWHVOczU0WTlLTHhUbWs0YUdvX0tPSFdoRDFSYVoxbUJwVUZLQ3VfaGtlREVad1BhYm81T0pQRVHSAcsBQVVfeXFMTVVzdkE4NzFCY21qaGpmbXluQ3IxQmFKMDJPaGFQckxQT1ppcy1tNFpHRnlfOUc0X2Z3dnJMWDZqVlNTUVdXa0YyUW40R2xqMFc5d251eTlkX05KS2VNTy1TMUFwRlI4TGxsV1JWU2w1TzRJR3dNb2hHNDZwN1hPQ2VSMnBOeTFGZVRHWlpWZlByOVpGLU15d0p3QUhRY2o3THRKRHMxSTVFXzVpTWtvV0hrcVY0T2xKVjM1R2xfNWtuU1IweXJJS18yWGM?oc=5\" target=\"_blank\">Stocks recover most early losses as volatility again hits Wall Street. US oil tops $110 a barrel</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">KSN.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Oil rises and Asian stocks fall after Trump says US will hit Iran hard and ‘finish the job’ - MyNorthwest.com",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNc1Qtcnl5cXBLRkJjVlE5QmlOLTY3anlkNzhnWjdOd0gtYUxYbmdDd0JnV1BkN1dXWnpTTF8tLXRCQmRacllKNUNLSERUd3p5anQ1RWVsTVJJTjdtaDVmY2RNS25yenl0ZHRsUkFWdWo0Ty1sZUs5UzNUSGFBRC1xX05kN2s3OU9QMVVSWEw5ZW9xVGE4b2xvQ29JOGlYRDdBd1FlSUtwamNtLWFFSGUtdC1md05tRmhpbF9KUHZjaGNUNnlGN1E?oc=5",
-      "publisher": "MyNorthwest.com",
-      "published": "Thu, 02 Apr 2026 02:46:53 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxNc1Qtcnl5cXBLRkJjVlE5QmlOLTY3anlkNzhnWjdOd0gtYUxYbmdDd0JnV1BkN1dXWnpTTF8tLXRCQmRacllKNUNLSERUd3p5anQ1RWVsTVJJTjdtaDVmY2RNS25yenl0ZHRsUkFWdWo0Ty1sZUs5UzNUSGFBRC1xX05kN2s3OU9QMVVSWEw5ZW9xVGE4b2xvQ29JOGlYRDdBd1FlSUtwamNtLWFFSGUtdC1md05tRmhpbF9KUHZjaGNUNnlGN1E?oc=5\" target=\"_blank\">Oil rises and Asian stocks fall after Trump says US will hit Iran hard and ‘finish the job’</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MyNorthwest.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Index is rising: here’s why gains could be brief - Invezz",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMnJVb0pCZ0UzV015bFFEbHVBOUtNSGRDZlI5VU1obWlyX0NIS0ZLVzJRX2lrc3U2eUxoaVBUNUdSQ3pVQXQ1TlV1X0tEaHZuVWl1ZlA4WEN1TEs2R3ZKeDlOd3UyRHNvS1pQLVotS3lQUlU3NGlwRVFtdS1RbnRkbmd5OENZenl1djVyajBlUjA3TnM2dkdEcA?oc=5",
-      "publisher": "Invezz",
-      "published": "Wed, 01 Apr 2026 04:14:47 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxOMnJVb0pCZ0UzV015bFFEbHVBOUtNSGRDZlI5VU1obWlyX0NIS0ZLVzJRX2lrc3U2eUxoaVBUNUdSQ3pVQXQ1TlV1X0tEaHZuVWl1ZlA4WEN1TEs2R3ZKeDlOd3UyRHNvS1pQLVotS3lQUlU3NGlwRVFtdS1RbnRkbmd5OENZenl1djVyajBlUjA3TnM2dkdEcA?oc=5\" target=\"_blank\">Nikkei 225 Index is rising: here’s why gains could be brief</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Invezz</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Wave Analysis - Action Forex",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPZHkwbDZ5YXVucTBoQzF4QlYxMU5qVGkzZjYzMm45d0Y4cy14c3NjcHZZNUc0aVF5V0M3TW4tZlpEdWVKekhLcjRMMU5zSzV0Y0QzSmtRdXZyTFBJcnFzZ2h5Sm5DTi0tam5kbHpGVF9STGZKd1VreW5aNjNpWm1GNTZNS2hPS3RRdGZ0T2dER0Jwa0tHT3hpWnh5cw?oc=5",
-      "publisher": "Action Forex",
-      "published": "Wed, 01 Apr 2026 01:42:42 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPZHkwbDZ5YXVucTBoQzF4QlYxMU5qVGkzZjYzMm45d0Y4cy14c3NjcHZZNUc0aVF5V0M3TW4tZlpEdWVKekhLcjRMMU5zSzV0Y0QzSmtRdXZyTFBJcnFzZ2h5Sm5DTi0tam5kbHpGVF9STGZKd1VreW5aNjNpWm1GNTZNS2hPS3RRdGZ0T2dER0Jwa0tHT3hpWnh5cw?oc=5\" target=\"_blank\">Nikkei 225 Wave Analysis</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Action Forex</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Soars 5.24% as Advantest Corp. Leads with 10.67% Gain! - Markets Mojo",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNVGRKSzR3blVvS2JmNEhsZUVyc1JLTEJSM2RDU19PV3hCUjEyU0c4U1RMaFgxamd4RGtYTnR3TEItVHZaRGNxdHRsUVhhRElnZDFJZ1VRMGxITnNkX2MtS2M3cFB3MElZQUJoRGlzSzRYZE9ER0M4MUU3ZnRWYm9SSTZUTHZ4SkxuRVpDWGJUekh5MHF3VmZmY2dWd1QxUVZ6bS15Y3pDc0hOUXhHd3ZacWNVNWQySFJOLWc?oc=5",
+      "title": "Nikkei 225 Edges Up 0.03% as S-Science Soars 34% Amid Positive Market Trends - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQTdLRXNBUXM2TS05M3Jvb2hWOFFjeTROQVdWOTBhUk9ZN20zWjV4UXFXUG1wc2NkNDEtRHF5VlZMTlYyU0ZkbExvcmpPNnNndl9vSTV2emV1SlZlZGVUekVJb1Z3WG5aR1cyT3EwdTM1U2hQVk5NU0hJalJvTV8wLW0tRGEyU2d3ZDdzWHczbnE5b3UzbEhidzg3OHgxbGtTUXBpMVU1RmlQYy1pZVRvUVdBMkx1aV84OHd3d3Btb1NlVjR3TWhEQzROT1o?oc=5",
       "publisher": "Markets Mojo",
-      "published": "Sun, 05 Apr 2026 09:31:45 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNVGRKSzR3blVvS2JmNEhsZUVyc1JLTEJSM2RDU19PV3hCUjEyU0c4U1RMaFgxamd4RGtYTnR3TEItVHZaRGNxdHRsUVhhRElnZDFJZ1VRMGxITnNkX2MtS2M3cFB3MElZQUJoRGlzSzRYZE9ER0M4MUU3ZnRWYm9SSTZUTHZ4SkxuRVpDWGJUekh5MHF3VmZmY2dWd1QxUVZ6bS15Y3pDc0hOUXhHd3ZacWNVNWQySFJOLWc?oc=5\" target=\"_blank\">Nikkei 225 Soars 5.24% as Advantest Corp. Leads with 10.67% Gain!</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "published": "Sat, 11 Apr 2026 21:18:15 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOQTdLRXNBUXM2TS05M3Jvb2hWOFFjeTROQVdWOTBhUk9ZN20zWjV4UXFXUG1wc2NkNDEtRHF5VlZMTlYyU0ZkbExvcmpPNnNndl9vSTV2emV1SlZlZGVUekVJb1Z3WG5aR1cyT3EwdTM1U2hQVk5NU0hJalJvTV8wLW0tRGEyU2d3ZDdzWHczbnE5b3UzbEhidzg3OHgxbGtTUXBpMVU1RmlQYy1pZVRvUVdBMkx1aV84OHd3d3Btb1NlVjR3TWhEQzROT1o?oc=5\" target=\"_blank\">Nikkei 225 Edges Up 0.03% as S-Science Soars 34% Amid Positive Market Trends</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -125,659 +41,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 2.40% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPS2tVMllZMm5QeFdkX2g0LUxvRnVUYndYdW9WdXpiSGVZb0tjT3NOZVpQamZGNXRvd2wyYkNVS3RWYUtuYWVXTk81RDhDLWlTNkJQVWNhMlZJU0x3Uml6dTNCXzJIbUVlR0M5cVZJd2FKNHlyWkp2VjI0U2FtYkFQNk4tbjBxd2dFRGJXTUd5YVlHblFFT1h5YXY5d3lWcEVjQXhJQ2hyckxuRlY1MGNOODBwUQ?oc=5",
-      "publisher": "Investing.com",
-      "published": "Thu, 02 Apr 2026 09:13:53 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxPS2tVMllZMm5QeFdkX2g0LUxvRnVUYndYdW9WdXpiSGVZb0tjT3NOZVpQamZGNXRvd2wyYkNVS3RWYUtuYWVXTk81RDhDLWlTNkJQVWNhMlZJU0x3Uml6dTNCXzJIbUVlR0M5cVZJd2FKNHlyWkp2VjI0U2FtYkFQNk4tbjBxd2dFRGJXTUd5YVlHblFFT1h5YXY5d3lWcEVjQXhJQ2hyckxuRlY1MGNOODBwUQ?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 2.40%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "The Nikkei 225 Index Closes 2.61% Lower - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRmpSTHo3WnVjZnVZaFhEeW1vRVg4QzFkU2d5a1UxQjEyTzlpQy0yZWppNTFpLV8yVGRQNEhGVEF5ZGlNMXdfWmpldEtxTnNSSDl6RWhvNDBEX0RtQUVsakszT2lqaW1ORzNTUmZRRzFJdzl5emIzbURWOXpPdlItR1dCQVJ3QjhoTGZwemdSSWFjcHM?oc=5",
-      "publisher": "TradingView",
-      "published": "Thu, 02 Apr 2026 06:30:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNRmpSTHo3WnVjZnVZaFhEeW1vRVg4QzFkU2d5a1UxQjEyTzlpQy0yZWppNTFpLV8yVGRQNEhGVEF5ZGlNMXdfWmpldEtxTnNSSDl6RWhvNDBEX0RtQUVsakszT2lqaW1ORzNTUmZRRzFJdzl5emIzbURWOXpPdlItR1dCQVJ3QjhoTGZwemdSSWFjcHM?oc=5\" target=\"_blank\">The Nikkei 225 Index Closes 2.61% Lower</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asia-Pacific stocks rise as Trump comments signal de-escalation in Iran conflict - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNY2tXNDMtNlRTMzlScHR2ZjlDaWI2S3dFcnZFTXJ0NkRndVN3dXVlWWx1Z3BTblU0eV9mQ2ViMmRRckE3TEJZaVktYnJadnRUQmR3b3JYVDkzWW5pTkwzUVAxUFJYTFB3cEdISUd3WGtZZHp6NUtIdmg2bjZ2Unh5TERjLXFKamlMdGNjanNYc3V5Z9IBlwFBVV95cUxQNTVxVmRubFZ1MXhxc2VIejU1bVhpbnQxdmpKMThHVllMS3NQVWZ1ZlViUnZfUTRPSF9UZF9zeGU2TGJrQWh4Uzg1ZjVhZ29XSHZ0U1dJRVMzQVNiQmdKTmYyLVk2V2N1aWxrdVRPUXIwdC0xcXZpeFRPN1ljeDJUSjBfcUdvNkxxb0JQdVhxMVBVY2pPbndV?oc=5",
-      "publisher": "CNBC",
-      "published": "Tue, 24 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNY2tXNDMtNlRTMzlScHR2ZjlDaWI2S3dFcnZFTXJ0NkRndVN3dXVlWWx1Z3BTblU0eV9mQ2ViMmRRckE3TEJZaVktYnJadnRUQmR3b3JYVDkzWW5pTkwzUVAxUFJYTFB3cEdISUd3WGtZZHp6NUtIdmg2bjZ2Unh5TERjLXFKamlMdGNjanNYc3V5Z9IBlwFBVV95cUxQNTVxVmRubFZ1MXhxc2VIejU1bVhpbnQxdmpKMThHVllMS3NQVWZ1ZlViUnZfUTRPSF9UZF9zeGU2TGJrQWh4Uzg1ZjVhZ29XSHZ0U1dJRVMzQVNiQmdKTmYyLVk2V2N1aWxrdVRPUXIwdC0xcXZpeFRPN1ljeDJUSjBfcUdvNkxxb0JQdVhxMVBVY2pPbndV?oc=5\" target=\"_blank\">Asia-Pacific stocks rise as Trump comments signal de-escalation in Iran conflict</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 3.70% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQldMU194QkhxTkJueFk0UFNuN2ctSVVrRUcwN0puOTVnRVU1Vjg3ZFZyX3RpY2I5QkFVUkg1WW16bFpPVDQxWnE2Z3BYOG1aV0FNQTNOWENaZnNjTnAyWExma2lmZFRGQS1PUzU5N0NOMzlyWFB2a0xYVEhLU3JRMmtOVENMVjVkWFNnUTJ0cnhiRk00UG1QeXVObkhOMHFaM0xpTUhySkJsOU5OTmgxRE1HYw?oc=5",
-      "publisher": "Investing.com",
-      "published": "Fri, 03 Apr 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOQldMU194QkhxTkJueFk0UFNuN2ctSVVrRUcwN0puOTVnRVU1Vjg3ZFZyX3RpY2I5QkFVUkg1WW16bFpPVDQxWnE2Z3BYOG1aV0FNQTNOWENaZnNjTnAyWExma2lmZFRGQS1PUzU5N0NOMzlyWFB2a0xYVEhLU3JRMmtOVENMVjVkWFNnUTJ0cnhiRk00UG1QeXVObkhOMHFaM0xpTUhySkJsOU5OTmgxRE1HYw?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 3.70%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Here’s why the Nikkei 225 Index moved into a correction - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUlBJWng3MjN4RGRSWEZ5ZEVyeTUwUVJ3dUlXMW9CdTVfTVVhc0dGbER5aEtVenoxWl9oYTRNMHJXVmdUYVpMVnV4Ul9GRVR0UzI1ckhTcmx5aW9ReUlWNG8wT296VENKdXVvVWpCVTJKS1NfM1NBQnJLdjBrVG5XY3VWRGpwa21wLTNTV29wOUItMkEyQzd2WFkxV3ZmQWlqZjgtckJCUmlsZFlBam93WmJn?oc=5",
-      "publisher": "TradingView",
-      "published": "Thu, 19 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQUlBJWng3MjN4RGRSWEZ5ZEVyeTUwUVJ3dUlXMW9CdTVfTVVhc0dGbER5aEtVenoxWl9oYTRNMHJXVmdUYVpMVnV4Ul9GRVR0UzI1ckhTcmx5aW9ReUlWNG8wT296VENKdXVvVWpCVTJKS1NfM1NBQnJLdjBrVG5XY3VWRGpwa21wLTNTV29wOUItMkEyQzd2WFkxV3ZmQWlqZjgtckJCUmlsZFlBam93WmJn?oc=5\" target=\"_blank\">Here’s why the Nikkei 225 Index moved into a correction</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asia-Pacific markets pare gains as oil rebounds on Iran war-linked uncertainty - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQaGlEYkZVRFMteS1ic0Zjb1g2ZlRhR2lkVHoyRHJ6VlFxbkJYdERmTXlpYUE5TXltSGhZWXNnRzdvcmRIUWMzQ2diWE5zZ0dROE5JbnhvZFEzNHlRUVl1dTAwNjJ6ZDBsb0JfNDVMTkhLN2lYdEdhYnFGdUNMWm14NTlTZndVSC1uelRWLUd6QU9ZcXp3bXVGMzJGeThkRnZR0gGmAUFVX3lxTE93TUhNQjVOWUpLWTBkdXpVd2kwQUc5QmljS3ZIX3llY2lVZTJtTlZBcXBWTU5fT244Ty1lTHRnTUhSaWNPS3V3MXdZdWE1R3RZUTNrNVE5YjNKU1g3VUd2c0Jubk9yZExNb1hPU2UwN1RfaXp4WmVSaUhkSG5QSUQ3c25iSGxJc0huVlpaM1YtWld1NzJ6dFlzdklnX2t5OTVtSjMwa3c?oc=5",
-      "publisher": "CNBC",
-      "published": "Mon, 23 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQaGlEYkZVRFMteS1ic0Zjb1g2ZlRhR2lkVHoyRHJ6VlFxbkJYdERmTXlpYUE5TXltSGhZWXNnRzdvcmRIUWMzQ2diWE5zZ0dROE5JbnhvZFEzNHlRUVl1dTAwNjJ6ZDBsb0JfNDVMTkhLN2lYdEdhYnFGdUNMWm14NTlTZndVSC1uelRWLUd6QU9ZcXp3bXVGMzJGeThkRnZR0gGmAUFVX3lxTE93TUhNQjVOWUpLWTBkdXpVd2kwQUc5QmljS3ZIX3llY2lVZTJtTlZBcXBWTU5fT244Ty1lTHRnTUhSaWNPS3V3MXdZdWE1R3RZUTNrNVE5YjNKU1g3VUd2c0Jubk9yZExNb1hPU2UwN1RfaXp4WmVSaUhkSG5QSUQ3c25iSGxJc0huVlpaM1YtWld1NzJ6dFlzdklnX2t5OTVtSjMwa3c?oc=5\" target=\"_blank\">Asia-Pacific markets pare gains as oil rebounds on Iran war-linked uncertainty</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "The Nikkei 225 Index Closes 4.82% Higher - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT2pjT1RwUHlLQ2JTZjdaNl9Zejk5SXBkOWNDOHFQekpSUDZCam10LVl6NmJlY01UYTZ0V2FsckFHeXZERTBvWTE2ZEM5NkIzajB5NklfWHlPNUVOZm42bGR4SXdIeVFTTDhUcWRFTHJXNEl3QjFySWswNWU4eDM1THRiVS16UW5uWmU2U3U1OE9tVXRa?oc=5",
-      "publisher": "TradingView",
-      "published": "Wed, 01 Apr 2026 06:30:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxOT2pjT1RwUHlLQ2JTZjdaNl9Zejk5SXBkOWNDOHFQekpSUDZCam10LVl6NmJlY01UYTZ0V2FsckFHeXZERTBvWTE2ZEM5NkIzajB5NklfWHlPNUVOZm42bGR4SXdIeVFTTDhUcWRFTHJXNEl3QjFySWswNWU4eDM1THRiVS16UW5uWmU2U3U1OE9tVXRa?oc=5\" target=\"_blank\">The Nikkei 225 Index Closes 4.82% Higher</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 1.27% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU0Q1bGtHSGVHLW43UHhGcWxvNlFiUDFhVWlFQ2ZHTmJxTUpSUEhhRTlsQUZwUG5KcjhPdGYyZFRvcV9IcFJOM2JRWTAxSnYwUVJhY2hBZGY4UXRNYlE1ZTVOYWtDdFNlTC0zdmk1Z1JCNWdHSVJ6MTlGQkZnbWdfd2tlMXhtQ1I1XzlBRnRESDlGX25aM0VsTFFKWEx4Z3ZlR3Zwa2JuTHFtUW5MaGtwSWhRRQ?oc=5",
-      "publisher": "Investing.com",
-      "published": "Tue, 31 Mar 2026 07:17:37 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQU0Q1bGtHSGVHLW43UHhGcWxvNlFiUDFhVWlFQ2ZHTmJxTUpSUEhhRTlsQUZwUG5KcjhPdGYyZFRvcV9IcFJOM2JRWTAxSnYwUVJhY2hBZGY4UXRNYlE1ZTVOYWtDdFNlTC0zdmk1Z1JCNWdHSVJ6MTlGQkZnbWdfd2tlMXhtQ1I1XzlBRnRESDlGX25aM0VsTFFKWEx4Z3ZlR3Zwa2JuTHFtUW5MaGtwSWhRRQ?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 1.27%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "The Nikkei 225 Index Closes 0.77% Lower - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNQ3JwOWN0bjdYWVAxY3VJeW9QM3B1TXI3Rl9WRG5rSHV0a2pYZTN1Z1NadXlIVWNWUEh5WVJuM2R5cXNPbndWUU5tZlVtbW9XOEJfYjdHQ1BXdXRlN3c0U1NMbkRlQ0VJNU5VdzU2SjV3dVh6SUwta0dlWEluWGxodXE4UFBEVWkxempfZzdSbC1jY2M?oc=5",
-      "publisher": "TradingView",
-      "published": "Tue, 31 Mar 2026 06:30:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxNQ3JwOWN0bjdYWVAxY3VJeW9QM3B1TXI3Rl9WRG5rSHV0a2pYZTN1Z1NadXlIVWNWUEh5WVJuM2R5cXNPbndWUU5tZlVtbW9XOEJfYjdHQ1BXdXRlN3c0U1NMbkRlQ0VJNU5VdzU2SjV3dVh6SUwta0dlWEluWGxodXE4UFBEVWkxempfZzdSbC1jY2M?oc=5\" target=\"_blank\">The Nikkei 225 Index Closes 0.77% Lower</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "The Nikkei 225 Index Closes 3.24% Lower - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTk1FYUE2WXliV0R1bTdQeUlzVzFYdzlZaXhqd2xOMU80ZmVrMUFaWWdjc0hINWNlblYxWUxnY20yZzNzWU5jeGJ4NjI4TVgzeTk2UHozVXBHYlA4U0NxS0pzMmF3WDBPb3MwVlZoYVpIek05OE5neGwzMDNONUFkSVlpeTdlNWdMYmtnd2FYTkFDcnM?oc=5",
-      "publisher": "TradingView",
-      "published": "Mon, 30 Mar 2026 06:30:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxOTk1FYUE2WXliV0R1bTdQeUlzVzFYdzlZaXhqd2xOMU80ZmVrMUFaWWdjc0hINWNlblYxWUxnY20yZzNzWU5jeGJ4NjI4TVgzeTk2UHozVXBHYlA4U0NxS0pzMmF3WDBPb3MwVlZoYVpIek05OE5neGwzMDNONUFkSVlpeTdlNWdMYmtnd2FYTkFDcnM?oc=5\" target=\"_blank\">The Nikkei 225 Index Closes 3.24% Lower</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "JP Movers | Shift Rose 3.42%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List - Moomoo",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNNmZkdHgtNVUwamEtamRrbHlJS2tKY2Z4Q2FPb18zTl91R3BYVmhwWVhBUFA5UmZ0cHdraXV6WVJYYklWUEdFZmxyY2l5TW82ajZsM2VDclB6NHVLemVCZmVIZzZFa20tLVB4cHIxSUxLR1Y3dm1oVmw2YXpORHRXeS1wc2ZuMTFTUS1NeXMzU0Z4cm5OZmZqSHFmMHBoQQ?oc=5",
-      "publisher": "Moomoo",
-      "published": "Tue, 31 Mar 2026 06:50:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxNNmZkdHgtNVUwamEtamRrbHlJS2tKY2Z4Q2FPb18zTl91R3BYVmhwWVhBUFA5UmZ0cHdraXV6WVJYYklWUEdFZmxyY2l5TW82ajZsM2VDclB6NHVLemVCZmVIZzZFa20tLVB4cHIxSUxLR1Y3dm1oVmw2YXpORHRXeS1wc2ZuMTFTUS1NeXMzU0Z4cm5OZmZqSHFmMHBoQQ?oc=5\" target=\"_blank\">JP Movers | Shift Rose 3.42%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Moomoo</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Jumps as Falling Oil Lifts Stocks - vtmarkets.com",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPRWZDY2JrVm1aYnAyd0tpZlYwSldYWWVBQkR6RFpkUkRld01tR09WZWtJQ3RjTndneU9KZi14Q1NTWTFybElwN2prVk5ndWtOVEd1X1lBUHF0UFlRb0ZnUW50cU9tTmZjWFcwbTJjXzQ3R2RBc0pEVE15VHFjaWZ4ekRTQXUwMjA?oc=5",
-      "publisher": "vtmarkets.com",
-      "published": "Wed, 01 Apr 2026 03:55:31 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxPRWZDY2JrVm1aYnAyd0tpZlYwSldYWWVBQkR6RFpkUkRld01tR09WZWtJQ3RjTndneU9KZi14Q1NTWTFybElwN2prVk5ndWtOVEd1X1lBUHF0UFlRb0ZnUW50cU9tTmZjWFcwbTJjXzQ3R2RBc0pEVE15VHFjaWZ4ekRTQXUwMjA?oc=5\" target=\"_blank\">Nikkei 225 Jumps as Falling Oil Lifts Stocks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">vtmarkets.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 2.92% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNLUhnVlJXNlJyWWRuNFkwSTM5RUFsS00wYU9fUmQ5ZWNYWVhPTzJrWjNhR0FnU2lmbzZvenVCZ0d0TkN0ODliNUE5ekU5MlMteEZPYnZxYWh0Tkh5YWNYX1V6RHJTRVNaUVJmamhZTEhQUU9MX3F4OXFtSmxGcTd5UGFpRFd6U3hudkwwR3hCQjUzalRHbkQtQ3NvaDRCTmNheHRLQndYX0ZmXy1BN2Uzb3RkSQ?oc=5",
-      "publisher": "Investing.com",
-      "published": "Mon, 30 Mar 2026 07:06:30 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNLUhnVlJXNlJyWWRuNFkwSTM5RUFsS00wYU9fUmQ5ZWNYWVhPTzJrWjNhR0FnU2lmbzZvenVCZ0d0TkN0ODliNUE5ekU5MlMteEZPYnZxYWh0Tkh5YWNYX1V6RHJTRVNaUVJmamhZTEhQUU9MX3F4OXFtSmxGcTd5UGFpRFd6U3hudkwwR3hCQjUzalRHbkQtQ3NvaDRCTmNheHRLQndYX0ZmXy1BN2Uzb3RkSQ?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 2.92%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 0.08% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOU29NUGVZMUhZWjd4UVFhaWRLVkVTYURabEVMNWZnWnI4d0hfSnVNY1k3akVxMG4tQ3pnWUVDM01PcHdGTDBFbnFvUEZqSVVJVXlxOExTR0liRV9kNUFIVXNfTi1XVHY2YTIwbEx6QTVQcDVaOUs1a3BuUEZNWjNKUi0wRmVVWnR5c3IxYzRhVldzOWxaa2NqUUcxeU9sZjNNUVY4aXRnNmwxTUtlaWo5REYySQ?oc=5",
-      "publisher": "Investing.com",
-      "published": "Fri, 27 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOU29NUGVZMUhZWjd4UVFhaWRLVkVTYURabEVMNWZnWnI4d0hfSnVNY1k3akVxMG4tQ3pnWUVDM01PcHdGTDBFbnFvUEZqSVVJVXlxOExTR0liRV9kNUFIVXNfTi1XVHY2YTIwbEx6QTVQcDVaOUs1a3BuUEZNWjNKUi0wRmVVWnR5c3IxYzRhVldzOWxaa2NqUUcxeU9sZjNNUVY4aXRnNmwxTUtlaWo5REYySQ?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 0.08%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Analysis 31/03: Price – Nikkei 225 Continues to R - DailyForex",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQYlhuSjV1UWtEdDJGcVExRWdsWjFBWlduM0ZEcXI3TXU5RTNUeDk5al9ZcHZoQ3FNcFQ5alkwdUJXNTRicW1QVy1XaWhLeDR0X3h3ZjE3c0R4RnZmcXRiMVBQdUhDLTc2Rk1kRjQyUnVnR0c3cnlULVl6NkdGbkFTVEl1TVdtM3NneGFVRHFoU3dzakEzdWFTaHZ2Y3dKZmQ0?oc=5",
-      "publisher": "DailyForex",
-      "published": "Tue, 31 Mar 2026 07:39:41 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQYlhuSjV1UWtEdDJGcVExRWdsWjFBWlduM0ZEcXI3TXU5RTNUeDk5al9ZcHZoQ3FNcFQ5alkwdUJXNTRicW1QVy1XaWhLeDR0X3h3ZjE3c0R4RnZmcXRiMVBQdUhDLTc2Rk1kRjQyUnVnR0c3cnlULVl6NkdGbkFTVEl1TVdtM3NneGFVRHFoU3dzakEzdWFTaHZ2Y3dKZmQ0?oc=5\" target=\"_blank\">Nikkei 225 Analysis 31/03: Price – Nikkei 225 Continues to R</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DailyForex</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan shares higher at close of trade; Nikkei 225 up 1.21% - Investing.com UK",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPaGZKbEFkbEwydmVUMXh2aG9ZVDR0bnlsNVFLMGN0TndEY1NwM2dRcFhUalJVdFNSakw3cXhWZEhuYnJSS3JMUURkZHF1aTIxeXczOVJXQWhOSTY3c0MyekxTSTFuSmFwdjczTy1sTTNEbHNITFlMRjdsakNtcnYzY1FSbmRfbWxHRkJ3MXBGdTJvNzBSNG01bnNJQzBrek9jSFcxYWI4ck80bVEtT08waQ?oc=5",
-      "publisher": "Investing.com UK",
-      "published": "Fri, 03 Apr 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisAFBVV95cUxPaGZKbEFkbEwydmVUMXh2aG9ZVDR0bnlsNVFLMGN0TndEY1NwM2dRcFhUalJVdFNSakw3cXhWZEhuYnJSS3JMUURkZHF1aTIxeXczOVJXQWhOSTY3c0MyekxTSTFuSmFwdjczTy1sTTNEbHNITFlMRjdsakNtcnYzY1FSbmRfbWxHRkJ3MXBGdTJvNzBSNG01bnNJQzBrek9jSFcxYWI4ck80bVEtT08waQ?oc=5\" target=\"_blank\">Japan shares higher at close of trade; Nikkei 225 up 1.21%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com UK</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 and TOPIX: Already bottomed or further downside ahead? - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXc3aFBtV0xzQk9rRjQ4Tmc0bENxNGItUEU1LXNFNzlHVmxFekVVeXdmd2xXMXk0ZFVucGJfYnVUZnZybFV3YjNfLWVMcFZya1hTdWtSbUZTUmhvQUp4X1c4NjJ2UXByeXZBTFUtR281eVhGZEZ2X044aWVvSF9Ecy1qbVo4R0k1b0RPcUtDYUZNVUYwSVlHSm9hQlFRdFJtQ242ZXRaOWotTDgzY3hCaFVHcEh6dFk?oc=5",
-      "publisher": "Investing.com",
-      "published": "Sun, 22 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxNcXc3aFBtV0xzQk9rRjQ4Tmc0bENxNGItUEU1LXNFNzlHVmxFekVVeXdmd2xXMXk0ZFVucGJfYnVUZnZybFV3YjNfLWVMcFZya1hTdWtSbUZTUmhvQUp4X1c4NjJ2UXByeXZBTFUtR281eVhGZEZ2X044aWVvSF9Ecy1qbVo4R0k1b0RPcUtDYUZNVUYwSVlHSm9hQlFRdFJtQ242ZXRaOWotTDgzY3hCaFVHcEh6dFk?oc=5\" target=\"_blank\">Nikkei 225 and TOPIX: Already bottomed or further downside ahead?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asia-Pacific markets tumble as investors brace for a prolonged war in Middle East - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb211Wm83enZOTGllemdDRml3QkNfUWNKX0pha21mZ2xPd1ZKazI1U0V5VGo4YV9Nb0owc3hSdHBGODdpMFFtY3ZlSnBjdjA2djJpZTFiNWhiXzlTVUxqQU5yOXlqLVNySTU0N2tlZjhKWm1Mc0pldlRuN1pvVWJoV0hDalJ0QlVib1VoOGRaRElVS1JuaUc0bXltNHZGd9IBowFBVV95cUxQNlpuWU02UkRXaFB2VC1zbUJzdjF5WUJEZFlkTzZWczBBYnpHdVRVNmUtTnRrU1RQdUNSbTZ1ckQxdkZidm5qcEJVdTJ2Z0YwQ3FzcjlvVzc5UVBVVnh1cXd1M1pQbjNUb3VrcWJwRnFZNXRzclFzY0pNLW1ibXNrS25vWGhJb1g1UXh3TXpBN2ViVGliQkF4azBIR2JKdEJ3Rjhr?oc=5",
-      "publisher": "CNBC",
-      "published": "Thu, 12 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxNb211Wm83enZOTGllemdDRml3QkNfUWNKX0pha21mZ2xPd1ZKazI1U0V5VGo4YV9Nb0owc3hSdHBGODdpMFFtY3ZlSnBjdjA2djJpZTFiNWhiXzlTVUxqQU5yOXlqLVNySTU0N2tlZjhKWm1Mc0pldlRuN1pvVWJoV0hDalJ0QlVib1VoOGRaRElVS1JuaUc0bXltNHZGd9IBowFBVV95cUxQNlpuWU02UkRXaFB2VC1zbUJzdjF5WUJEZFlkTzZWczBBYnpHdVRVNmUtTnRrU1RQdUNSbTZ1ckQxdkZidm5qcEJVdTJ2Z0YwQ3FzcjlvVzc5UVBVVnh1cXd1M1pQbjNUb3VrcWJwRnFZNXRzclFzY0pNLW1ibXNrS25vWGhJb1g1UXh3TXpBN2ViVGliQkF4azBIR2JKdEJ3Rjhr?oc=5\" target=\"_blank\">Asia-Pacific markets tumble as investors brace for a prolonged war in Middle East</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 3.68% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQR1JMRG9kNEhMaWxBRklDNG82MkNzMy0wV2pkV2dZM2NYblkyZ2xVNGctZWtzald1bDlIY2RnZmFUUGtMU280N05xM0RKcXpOWHhmTkF2X1FlaXNUYjU2eXpzb2haRDc3THl2R1VnUU9MZkFubnJsa2FfbUJfb1pmYThteTRwc0szR04wdXI5N251UmF0SlhPY0R6Njd4eGRQeU5FZ3ozWVJhUlByYmdkUVl3WQ?oc=5",
-      "publisher": "Investing.com",
-      "published": "Mon, 23 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQR1JMRG9kNEhMaWxBRklDNG82MkNzMy0wV2pkV2dZM2NYblkyZ2xVNGctZWtzald1bDlIY2RnZmFUUGtMU280N05xM0RKcXpOWHhmTkF2X1FlaXNUYjU2eXpzb2haRDc3THl2R1VnUU9MZkFubnJsa2FfbUJfb1pmYThteTRwc0szR04wdXI5N251UmF0SlhPY0R6Njd4eGRQeU5FZ3ozWVJhUlByYmdkUVl3WQ?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 3.68%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 3.38% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeFJtQUhfdFRZWnlpdHBOWGFGVEZoRTM2dFNIdExyUEVFTU9NTHJJU2NvRG1iV0tyemZRb2pZc2FpeHBtUnNjbzBMUWZJWkoxak9Nb2NFQzd5SV9HUFA2SkFtanQwSGJ2VFl4eEhVZTdiV3FyZlZGZ1dRNFIyV0RRRVlsR2ZsaUV0cDFocDBJUHNqVDJjVF9qaFJNRGtJVGhFYVp6ZEVqMG16eUZ2R3hTRW05WQ?oc=5",
-      "publisher": "Investing.com",
-      "published": "Fri, 20 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOeFJtQUhfdFRZWnlpdHBOWGFGVEZoRTM2dFNIdExyUEVFTU9NTHJJU2NvRG1iV0tyemZRb2pZc2FpeHBtUnNjbzBMUWZJWkoxak9Nb2NFQzd5SV9HUFA2SkFtanQwSGJ2VFl4eEhVZTdiV3FyZlZGZ1dRNFIyV0RRRVlsR2ZsaUV0cDFocDBJUHNqVDJjVF9qaFJNRGtJVGhFYVp6ZEVqMG16eUZ2R3hTRW05WQ?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 3.38%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "South Korea's Kospi leads declines in Asia as Middle East war enters fifth week - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOOWwyRVVJcTZaRDJWZHV3V2Y3MGpuVFdRVlg0TzBMNVkwMWh1T1hYbVN1VnNtbGUwOG9BQktsMXNTZ004MWZOWEVPbC1ULV9pSS0xQWgxVm5Sc092ZjBJa2tZSmIxVXM5TDV2UmVBZF9FLVoxYjJHZzVjQlhGNUFlSExnZ2xLc1BkWDQ1MlZmWmYwSXkyYlEtdjFn0gGfAUFVX3lxTE1QMG8yV0szRFl6TWhKdHpZUlFwWnJVdFNYMzVsclNMaXA5Z3VDQ3ZQcnpadDJRVzNnenRuM0Q2SFdydWRsNlFGaGo5dG55akdDTlp4QXdrYjdVTnU4STE3d0RXYUozVVIxc2VsR21BZkV6MjhCdFl1OTFkZWlydFVlNjJwb1N1QnpKUXlkTjV0QlZNZlBWdk41aHVPMVgyTQ?oc=5",
-      "publisher": "CNBC",
-      "published": "Sun, 29 Mar 2026 23:31:30 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxOOWwyRVVJcTZaRDJWZHV3V2Y3MGpuVFdRVlg0TzBMNVkwMWh1T1hYbVN1VnNtbGUwOG9BQktsMXNTZ004MWZOWEVPbC1ULV9pSS0xQWgxVm5Sc092ZjBJa2tZSmIxVXM5TDV2UmVBZF9FLVoxYjJHZzVjQlhGNUFlSExnZ2xLc1BkWDQ1MlZmWmYwSXkyYlEtdjFn0gGfAUFVX3lxTE1QMG8yV0szRFl6TWhKdHpZUlFwWnJVdFNYMzVsclNMaXA5Z3VDQ3ZQcnpadDJRVzNnenRuM0Q2SFdydWRsNlFGaGo5dG55akdDTlp4QXdrYjdVTnU4STE3d0RXYUozVVIxc2VsR21BZkV6MjhCdFl1OTFkZWlydFVlNjJwb1N1QnpKUXlkTjV0QlZNZlBWdk41aHVPMVgyTQ?oc=5\" target=\"_blank\">South Korea's Kospi leads declines in Asia as Middle East war enters fifth week</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "JP Movers | Taiyo Yuden Rose 12.92%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List - 富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNeGttZlpCRHJ4SmZlb2Ixa3pyU29PNVdmNUc2LVh5ZE02cHhZYmFTLXBGTDBVZ2xiVF9FYzZtak5paWdaa3M3UldVTDdkR0paZnJnLTRaTWs0c0ZSaW1YOTNsU2JPUkcwOURWNHpmc1c5NzRCVm5hS19MOHo4MG05NXV6Qm16SHZrMVJ2ZDIyM0tSMF9hZkFF?oc=5",
-      "publisher": "富途牛牛",
-      "published": "Fri, 03 Apr 2026 06:50:01 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNeGttZlpCRHJ4SmZlb2Ixa3pyU29PNVdmNUc2LVh5ZE02cHhZYmFTLXBGTDBVZ2xiVF9FYzZtak5paWdaa3M3UldVTDdkR0paZnJnLTRaTWs0c0ZSaW1YOTNsU2JPUkcwOURWNHpmc1c5NzRCVm5hS19MOHo4MG05NXV6Qm16SHZrMVJ2ZDIyM0tSMF9hZkFF?oc=5\" target=\"_blank\">JP Movers | Taiyo Yuden Rose 12.92%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">富途牛牛</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "NIKKEI 225, HANGSENG 50 and NIFTY 50 Forecasts – Asian Indices Trying to Recover, Minus India - FXEmpire",
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWVhqMjNrbmdhbm5hbUI3UTZxcmdkY3JuMDFNRlVxd25nbW5zWVlVZW9ILXl6cDVnTk1venZSU1RuX0dhOVE1QVZRTGwwRHRpekU5YVY0THlhaEdRd3RnUDdtZmJJNm04X3BtSklyeDlBU24wSHJEbzd5cGdwcS02RGgyeWRKaXdDLUE0S0NLZ3I2NzdZOFAxX2JObEh2ME5TbUcwNzhnbUxjVTNpRTRpQkUtYTNIYzNfcEhxQ3dQZy10QnBLZFlob1FMcWJaYVVNdFQ2UktGMA?oc=5",
-      "publisher": "FXEmpire",
-      "published": "Mon, 30 Mar 2026 14:07:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWVhqMjNrbmdhbm5hbUI3UTZxcmdkY3JuMDFNRlVxd25nbW5zWVlVZW9ILXl6cDVnTk1venZSU1RuX0dhOVE1QVZRTGwwRHRpekU5YVY0THlhaEdRd3RnUDdtZmJJNm04X3BtSklyeDlBU24wSHJEbzd5cGdwcS02RGgyeWRKaXdDLUE0S0NLZ3I2NzdZOFAxX2JObEh2ME5TbUcwNzhnbUxjVTNpRTRpQkUtYTNIYzNfcEhxQ3dQZy10QnBLZFlob1FMcWJaYVVNdFQ2UktGMA?oc=5\" target=\"_blank\">NIKKEI 225, HANGSENG 50 and NIFTY 50 Forecasts – Asian Indices Trying to Recover, Minus India</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FXEmpire</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asian markets today: Kospi, Nikkei 225 rebound up to 5% on hopes of an end to the US-Iran war - Mint",
-      "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPeXRXZGlCNS1vUUREMDBuR1Q4WGwwemtyaVpOM3owcjc5N1ZtVlg4eVd1WGFZU1BEUTBENkNtcEM1NHMxaHpWQmhweGFqbG5qaElOQmlKeVdERmEyY1k4bUYwVkh4d0lqT2tRYzFtQVg2dEVSejc3ejF1c1ZleUJlcmdTakNwYkNLaGY2dVR4bmlBLWlfbVQ3OC1ld0huTGY4OEJoSlNiSW82eW9weUZ2clAtSjFHa3BwS1NOZWlnYXN6WHVocHh1eC12amxIYmVpUWs2dHE5V1dfbXAwSnRQTW9ZUnNzbGlaZlpENWlMSjhSUdIB9wFBVV95cUxQcDF3U29lblBJYlExaVpqRElvRjBkSlJvSlM0YURxYnhOdGE3WE1Yam5xdEY5QmxUdkRVOWh0VDlRYVdwMHhKRUdPQUc2ZF9GR1RTYzJfelFhNjJ1aWI3OVZycmthbFJ6dDhBV3gteWJyQXY3X21lRGdEZlU0X2hUQ01yY0FLZ0hBb290RUdRcnZNbW5ScHpJZXk4bERWSUlVR2dqWG5obmRyWWZzSi00V0JnQWxQSDRNRDhFa3RNTTJhODRFdXU0ZXV1TzZqRUpnVmRqcW1vdHNJamZtbjVHMll6ZG9fX2dHRkEwWEk3YWJwUm1BdC1N?oc=5",
-      "publisher": "Mint",
-      "published": "Wed, 01 Apr 2026 02:14:33 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8gFBVV95cUxPeXRXZGlCNS1vUUREMDBuR1Q4WGwwemtyaVpOM3owcjc5N1ZtVlg4eVd1WGFZU1BEUTBENkNtcEM1NHMxaHpWQmhweGFqbG5qaElOQmlKeVdERmEyY1k4bUYwVkh4d0lqT2tRYzFtQVg2dEVSejc3ejF1c1ZleUJlcmdTakNwYkNLaGY2dVR4bmlBLWlfbVQ3OC1ld0huTGY4OEJoSlNiSW82eW9weUZ2clAtSjFHa3BwS1NOZWlnYXN6WHVocHh1eC12amxIYmVpUWs2dHE5V1dfbXAwSnRQTW9ZUnNzbGlaZlpENWlMSjhSUdIB9wFBVV95cUxQcDF3U29lblBJYlExaVpqRElvRjBkSlJvSlM0YURxYnhOdGE3WE1Yam5xdEY5QmxUdkRVOWh0VDlRYVdwMHhKRUdPQUc2ZF9GR1RTYzJfelFhNjJ1aWI3OVZycmthbFJ6dDhBV3gteWJyQXY3X21lRGdEZlU0X2hUQ01yY0FLZ0hBb290RUdRcnZNbW5ScHpJZXk4bERWSUlVR2dqWG5obmRyWWZzSi00V0JnQWxQSDRNRDhFa3RNTTJhODRFdXU0ZXV1TzZqRUpnVmRqcW1vdHNJamZtbjVHMll6ZG9fX2dHRkEwWEk3YWJwUm1BdC1N?oc=5\" target=\"_blank\">Asian markets today: Kospi, Nikkei 225 rebound up to 5% on hopes of an end to the US-Iran war</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mint</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Today, April 3: Foreign Outflows Surge on Iran, Oil, Yen Slump - Meyka",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZlNlSE5mSlU5U1ZUY1M1cUFwbHdyRFJLT1NITmhiM0NZYmRyYTk3WEpaYWJpLXEzTFhSSks2eVdSaHo3OHRRcU9OdUFMc210YW5QNjBDdjIxOXBEZ0tlQlFvR2hUQjBHZWxmbXp4TV9ZcF9Pd1BhT3NHamZVV21RSml1aFc4VlRBMzhkLWZGQm93Q3hfVzZYU2pNaTB1azQ?oc=5",
-      "publisher": "Meyka",
-      "published": "Fri, 03 Apr 2026 03:05:43 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxNZlNlSE5mSlU5U1ZUY1M1cUFwbHdyRFJLT1NITmhiM0NZYmRyYTk3WEpaYWJpLXEzTFhSSks2eVdSaHo3OHRRcU9OdUFMc210YW5QNjBDdjIxOXBEZ0tlQlFvR2hUQjBHZWxmbXp4TV9ZcF9Pd1BhT3NHamZVV21RSml1aFc4VlRBMzhkLWZGQm93Q3hfVzZYU2pNaTB1azQ?oc=5\" target=\"_blank\">Nikkei 225 Today, April 3: Foreign Outflows Surge on Iran, Oil, Yen Slump</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Meyka</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks higher at close of trade; Nikkei 225 up 3.15% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQQW13YUJmNjFRNnVlTFI4TjVYZVhDYUZJOWhxdHU4bE9UcHZLNUh6dm9WMWo2OUswcXJUS3k5ZWNRRVh2M0NaUmJEQUVFaHJEc1YyOEVVSk56QzVCS2J6UV8tYi0tel93WTlDOTU0cGhmeVFzWjBNMTdKZXdTQUVlNVBFTUNEWW1sOHI0Z2RWUDFXQ3dWcy0tZGFTMnRVTkE1VllEZUI5WERYS2JVbHFzQ2N3?oc=5",
-      "publisher": "Investing.com",
-      "published": "Wed, 18 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQQW13YUJmNjFRNnVlTFI4TjVYZVhDYUZJOWhxdHU4bE9UcHZLNUh6dm9WMWo2OUswcXJUS3k5ZWNRRVh2M0NaUmJEQUVFaHJEc1YyOEVVSk56QzVCS2J6UV8tYi0tel93WTlDOTU0cGhmeVFzWjBNMTdKZXdTQUVlNVBFTUNEWW1sOHI0Z2RWUDFXQ3dWcy0tZGFTMnRVTkE1VllEZUI5WERYS2JVbHFzQ2N3?oc=5\" target=\"_blank\">Japan stocks higher at close of trade; Nikkei 225 up 3.15%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei 225 has biggest gain of year on Iran hopes - nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1lYkJ3a09zd3JaQXpFZTFJM0w2dmhBTkFaTXgwQlozVzkwRWlnMkl3VWQ3Zy0tMmp0dkJEWXhmRW9YZHRxcW1nSW8xOXpCd2E3QTNjZ2Q5MkdIZ2VkYWtLNFp3?oc=5",
-      "publisher": "nhk.or.jp",
-      "published": "Tue, 31 Mar 2026 16:56:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE1lYkJ3a09zd3JaQXpFZTFJM0w2dmhBTkFaTXgwQlozVzkwRWlnMkl3VWQ3Zy0tMmp0dkJEWXhmRW9YZHRxcW1nSW8xOXpCd2E3QTNjZ2Q5MkdIZ2VkYWtLNFp3?oc=5\" target=\"_blank\">Japan's Nikkei 225 has biggest gain of year on Iran hopes</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">nhk.or.jp</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Revisions to the Method of Setting the Contract Months of Nikkei 225 mini Options - jpx.co.jp",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kalNJYUU3em9SVGkya1BWc2lRck1JSU9QdEhiTUpRdHNNaV94bUZvWXJBeGZxZ0ZuMk1HNE8ySENNLS1qQ1cwVmxoeFVXX2pwMzQ5aXliZVpZYzBSWUh2WTE2RDhRekk?oc=5",
-      "publisher": "jpx.co.jp",
-      "published": "Thu, 26 Mar 2026 07:17:46 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5kalNJYUU3em9SVGkya1BWc2lRck1JSU9QdEhiTUpRdHNNaV94bUZvWXJBeGZxZ0ZuMk1HNE8ySENNLS1qQ1cwVmxoeFVXX2pwMzQ5aXliZVpZYzBSWUh2WTE2RDhRekk?oc=5\" target=\"_blank\">Revisions to the Method of Setting the Contract Months of Nikkei 225 mini Options</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">jpx.co.jp</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "JP Movers | Furukawa Electric Rose 12.87%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List - 富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZFFXYjVGSkcwd29KSE5zRFY5UDZQbVZUTWxweXhMMVZ0QWdrVzRyYXJ5SkpUTFAwRUszRWdfMUhFVm1qRmZlYTdOMHgtU00yZzlrbGtGOElNSExteXVYSnZ4SHlsS0ZEVmxEWGt1R25qMGN6ZXFUSzNQZTZ6Z1JaTm56Q3YyQ212cXpQQmc1bkx4aVhxdWhJNFdET29MVlU?oc=5",
-      "publisher": "富途牛牛",
-      "published": "Wed, 01 Apr 2026 06:55:40 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxQZFFXYjVGSkcwd29KSE5zRFY5UDZQbVZUTWxweXhMMVZ0QWdrVzRyYXJ5SkpUTFAwRUszRWdfMUhFVm1qRmZlYTdOMHgtU00yZzlrbGtGOElNSExteXVYSnZ4SHlsS0ZEVmxEWGt1R25qMGN6ZXFUSzNQZTZ6Z1JaTm56Q3YyQ212cXpQQmc1bkx4aVhxdWhJNFdET29MVlU?oc=5\" target=\"_blank\">JP Movers | Furukawa Electric Rose 12.87%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">富途牛牛</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Here’s why the Nikkei 225 Index is at risk of falling to ¥50,000 - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbnpBZGxwVld2Yy0yTVVFdEZrYzc0NTZXNS1FMnVOaS04MkRjZTVMc0dIa3g3ekNIeXRPMHoyM1NVS1pNUUUwNk5mMTVVMG1zYWZLUXhmdzdiUjRKSHd5MU11aV9DTmJvTUNGMWRXb2xValhyUURkXzhNNDctYVk1QzBlNl9oUmpZWEFzMFkwTmszTjlEVk9GdEV6eDRmSEtENmg3ZXZndW1CMGphNlc0WEVKXzBuWU5LX1VYLQ?oc=5",
-      "publisher": "TradingView",
-      "published": "Tue, 24 Mar 2026 04:11:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPbnpBZGxwVld2Yy0yTVVFdEZrYzc0NTZXNS1FMnVOaS04MkRjZTVMc0dIa3g3ekNIeXRPMHoyM1NVS1pNUUUwNk5mMTVVMG1zYWZLUXhmdzdiUjRKSHd5MU11aV9DTmJvTUNGMWRXb2xValhyUURkXzhNNDctYVk1QzBlNl9oUmpZWEFzMFkwTmszTjlEVk9GdEV6eDRmSEtENmg3ZXZndW1CMGphNlc0WEVKXzBuWU5LX1VYLQ?oc=5\" target=\"_blank\">Here’s why the Nikkei 225 Index is at risk of falling to ¥50,000</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 falls for 4th day after volatile trading - nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BUk1oY2xxTTVKRERodXJjTlFDTFJta2diWnFzX1AzdExrcnhZMjU2SWpob3lWaTdFV0wxSUdOd29iVVVSM3JvRGdlMnJfUzQxb0ViQ01saWpiQkxaZ3VoS1Zn?oc=5",
-      "publisher": "nhk.or.jp",
-      "published": "Mon, 30 Mar 2026 17:03:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE1BUk1oY2xxTTVKRERodXJjTlFDTFJta2diWnFzX1AzdExrcnhZMjU2SWpob3lWaTdFV0wxSUdOd29iVVVSM3JvRGdlMnJfUzQxb0ViQ01saWpiQkxaZ3VoS1Zn?oc=5\" target=\"_blank\">Nikkei 225 falls for 4th day after volatile trading</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">nhk.or.jp</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Tokyo stocks surge, Nikkei index up 5%, on hopes for end to Iran war - 毎日新聞",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9nWU4zQ1Z0eXYzZjJGR3Y5M0tucERaX1pXOERLZHlaellELTBuYmt3YldhX25LbmlyenNBbUI3eC1WM2Y1NW95Qnk5NTc5ZFp5cTdZeW1heHd6SHptYUkzM2NMUUdSb1ZYbUFfV3BYM2Z0UkE?oc=5",
-      "publisher": "毎日新聞",
-      "published": "Wed, 01 Apr 2026 08:31:34 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9nWU4zQ1Z0eXYzZjJGR3Y5M0tucERaX1pXOERLZHlaellELTBuYmt3YldhX25LbmlyenNBbUI3eC1WM2Y1NW95Qnk5NTc5ZFp5cTdZeW1heHd6SHptYUkzM2NMUUdSb1ZYbUFfV3BYM2Z0UkE?oc=5\" target=\"_blank\">Tokyo stocks surge, Nikkei index up 5%, on hopes for end to Iran war</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">毎日新聞</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 0.10% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa1N0U0V3RmV6a21lSGJSR2hDeWtpSGxMWjZRVnRkNFk1OXEzSWhaYjFldmxtb2pYVDVMc19FcnFjS0s4OTF1b0Raa2FkVFVmYnRqcUtsX3B0TDVtUnA4X2Vsc09kUXBDWjFGWEVKd1R5Y3VFd0JQRGFVY2VJNUhyWnpzVlVjbVJiTUlFZFBSMlMxaVliM3NWT0IwLU5vOHNvS3lhODVJQ0I1VlBrQ0t2bkhuVQ?oc=5",
-      "publisher": "Investing.com",
-      "published": "Mon, 16 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQa1N0U0V3RmV6a21lSGJSR2hDeWtpSGxMWjZRVnRkNFk1OXEzSWhaYjFldmxtb2pYVDVMc19FcnFjS0s4OTF1b0Raa2FkVFVmYnRqcUtsX3B0TDVtUnA4X2Vsc09kUXBDWjFGWEVKd1R5Y3VFd0JQRGFVY2VJNUhyWnpzVlVjbVJiTUlFZFBSMlMxaVliM3NWT0IwLU5vOHNvS3lhODVJQ0I1VlBrQ0t2bkhuVQ?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 0.10%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 0.22% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNYUgwbDdEVGJFbHdLY2pyQXUxM0RDTHJRZExFNVE2em1UbFZ1LU4yYW1mN2dZSHQ0Q3JFajJxRVVhQ0lXZmluWTVJX09XejlxZU5mQ09QN0RTZkExSzY0eEwzUUFaS1FRYmxveDNDS0pOWmV1YkU2aWpRaVp1cjN4dG1MYkJvaE9MM29nWjdDamMtNk5OYUE5R3YwbG1aRmxnMmN4WDM2RnNpMmcxaUVmbkVUcw?oc=5",
-      "publisher": "Investing.com",
-      "published": "Tue, 17 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNYUgwbDdEVGJFbHdLY2pyQXUxM0RDTHJRZExFNVE2em1UbFZ1LU4yYW1mN2dZSHQ0Q3JFajJxRVVhQ0lXZmluWTVJX09XejlxZU5mQ09QN0RTZkExSzY0eEwzUUFaS1FRYmxveDNDS0pOWmV1YkU2aWpRaVp1cjN4dG1MYkJvaE9MM29nWjdDamMtNk5OYUE5R3YwbG1aRmxnMmN4WDM2RnNpMmcxaUVmbkVUcw?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 0.22%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei Index Closes Down 822 Points or 1.6%; Semiconductor, Metal, and Wire Stocks Weaker - AASTOCKS.com",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPN0czNlE3RHU2ZzcxS1kzdjRTSk5uTUE2RktzSm5ZaVpXYmJqelE4NHF3Wnlnb2RISlNWbG01UnRlWTNDd0lRb1N4aWxNZkJPVk5iWWhzV1o1N2ZHUzE5TXY5b2hTdFd5V05oUEZxbklrc2x3TzJzSTExRDM2THhFUEU3MW4?oc=5",
-      "publisher": "AASTOCKS.com",
-      "published": "Tue, 31 Mar 2026 07:11:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxPN0czNlE3RHU2ZzcxS1kzdjRTSk5uTUE2RktzSm5ZaVpXYmJqelE4NHF3Wnlnb2RISlNWbG01UnRlWTNDd0lRb1N4aWxNZkJPVk5iWWhzV1o1N2ZHUzE5TXY5b2hTdFd5V05oUEZxbklrc2x3TzJzSTExRDM2THhFUEU3MW4?oc=5\" target=\"_blank\">Nikkei Index Closes Down 822 Points or 1.6%; Semiconductor, Metal, and Wire Stocks Weaker</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AASTOCKS.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 3.57% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTUpsV0ZMVnhuVGc3NFBPWm1heDhsbFVoNHMzYXg5NDVONUFRYnlSUlJELU5VSmJRRi1zbVEyd2ZHeFFBRzNkeU80NzRzX0JzOGJxdXRiLXBwMElQaXVLRmljRXFOdjB3ZFJjeGhvaC1RVk1iOUJPaVdHVkRfSEd4RF9vV1pwQmcxYUp6bnRSZGlpVDlqOGxOam05MVEtcllZcXhBanVsd09NOTlyY1JVSXJSSQ?oc=5",
-      "publisher": "Investing.com",
-      "published": "Thu, 19 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxOTUpsV0ZMVnhuVGc3NFBPWm1heDhsbFVoNHMzYXg5NDVONUFRYnlSUlJELU5VSmJRRi1zbVEyd2ZHeFFBRzNkeU80NzRzX0JzOGJxdXRiLXBwMElQaXVLRmljRXFOdjB3ZFJjeGhvaC1RVk1iOUJPaVdHVkRfSEd4RF9vV1pwQmcxYUp6bnRSZGlpVDlqOGxOam05MVEtcllZcXhBanVsd09NOTlyY1JVSXJSSQ?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 3.57%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei Index Falls - www.saba.ye",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE55MnRrTVh4LUtHUk56b3dBOFcxTnpLUkE5elplQ19USXExZUlkS0E1czd0U2xiVzF3MWZfQzV4R3NJb0EwUmhFTUJPcFBkeVU?oc=5",
-      "publisher": "www.saba.ye",
-      "published": "Thu, 02 Apr 2026 10:46:24 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiT0FVX3lxTE55MnRrTVh4LUtHUk56b3dBOFcxTnpLUkE5elplQ19USXExZUlkS0E1czd0U2xiVzF3MWZfQzV4R3NJb0EwUmhFTUJPcFBkeVU?oc=5\" target=\"_blank\">Japan's Nikkei Index Falls</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">www.saba.ye</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asian markets today: Kospi, Nikkei 225 reverse gains, fall up to 3% after Donald Trump's address on Iran war - Mint",
-      "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNVlBvd1Z5V2lzSVgzSk5UOENKVVgtWl9BbG1XZENNX2h1cjExNDhPV0VUZHV5UWNabnltLWgwRnVjUEkxY1NJUUNESG5mNURQOG5fdlNkMUhxXzAySGJmVlk5TjVVTzdmVVJJd2h5S09zaUVLTEJPM2VjUjlkS2lyRG1mckdldUMwQzJFRWdzMUttclBBbDh1M2N4WGp6ZUN2dVptdXJlczNadHU1TzhIUWNQUG4tUXhXRlNHZzNQZENQWklfdzhxOWdLZEVzZUZ5UUlxMmNTWWk1U1RPeHhLRE1VUjN3NkJMZlkxdlZvRHNWNy1yVThWRDBXZ00xOURDckhF0gGIAkFVX3lxTE5WaTdYdEpGd1Y5RzhGRmhqaGF2b2NoaGUwYlVEWXd0ZGROYmlZbm1zVWhFZ3lMZFd2UWVGS0Rwdm5rS0VPeEVxOXVaS21GeWt4SjhqV3Q5QndxR0R5enJqTkp6VDgzT25QY1lhSlRuUUk3bHJuOTZTMG9XNEltaEYzU3h2bFNQTzR0eTZDUmw3ZDkzVWFQM3VqN1hZX3RZMW9ySl91ZERkS0hZbDhEZlZlVFRjYlQ3eVN0WUFYa0lYd3gwSEs5NVk1bWJ4WWIzeUx2OWpUYzFTeHVPV2ExbmpnU2F3V1JZVFg5X0tUQTlRc1VKM0xYUWQydjBkOTRHa3NfVWJYa3Y2Mg?oc=5",
-      "publisher": "Mint",
-      "published": "Thu, 02 Apr 2026 02:18:51 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwJBVV95cUxNVlBvd1Z5V2lzSVgzSk5UOENKVVgtWl9BbG1XZENNX2h1cjExNDhPV0VUZHV5UWNabnltLWgwRnVjUEkxY1NJUUNESG5mNURQOG5fdlNkMUhxXzAySGJmVlk5TjVVTzdmVVJJd2h5S09zaUVLTEJPM2VjUjlkS2lyRG1mckdldUMwQzJFRWdzMUttclBBbDh1M2N4WGp6ZUN2dVptdXJlczNadHU1TzhIUWNQUG4tUXhXRlNHZzNQZENQWklfdzhxOWdLZEVzZUZ5UUlxMmNTWWk1U1RPeHhLRE1VUjN3NkJMZlkxdlZvRHNWNy1yVThWRDBXZ00xOURDckhF0gGIAkFVX3lxTE5WaTdYdEpGd1Y5RzhGRmhqaGF2b2NoaGUwYlVEWXd0ZGROYmlZbm1zVWhFZ3lMZFd2UWVGS0Rwdm5rS0VPeEVxOXVaS21GeWt4SjhqV3Q5QndxR0R5enJqTkp6VDgzT25QY1lhSlRuUUk3bHJuOTZTMG9XNEltaEYzU3h2bFNQTzR0eTZDUmw3ZDkzVWFQM3VqN1hZX3RZMW9ySl91ZERkS0hZbDhEZlZlVFRjYlQ3eVN0WUFYa0lYd3gwSEs5NVk1bWJ4WWIzeUx2OWpUYzFTeHVPV2ExbmpnU2F3V1JZVFg5X0tUQTlRc1VKM0xYUWQydjBkOTRHa3NfVWJYa3Y2Mg?oc=5\" target=\"_blank\">Asian markets today: Kospi, Nikkei 225 reverse gains, fall up to 3% after Donald Trump's address on Iran war</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mint</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asian markets today: Kospi falls 4%, Nikkei 225 down 2.2% on US-Iran war escalation - Mint",
-      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOMHRiMlNURm14R1dlVng4SXhyYmpnQXc3N0NIQmhJb1Z1ejJzSzN1TFc5TzRXUUttZDNUQjFxd0NaR1FMdDB3WGhxQjc0eml4U3F4eHVVWFROR09Wd21kS1poWWZEQWZpbk5JTWR0NWRMSlRVcklobTA0dlktWVRjYUc4eUJwWDdlU0JVVkFncnBiQ0FlcHRzTFNTXzZkeHJOX1BYRWp3b0RSX0V4XzUzMmdVTDkwVk80YlVnRUN3WFBvMElIYWZ4MnZqX0hQaFplbWFOdndHLVVwekxmWEVzU3FmZ9IB6AFBVV95cUxQRnRSbVJRdVZ0Mno5SGVfYjdocTA5cHFud01xUzRkbGl2QTBKSS1IUEV3aHJsVDRvQ2FLQ2VMMnhBdUQ4YW5aT3czcXUxS3NiZnBVNzZGcktyQzQtUVZlLXZzSWtidk5kMUoyNmNLRmt0MEx4M3ZxWG10bFZsMFExbHFadGRkZVFpTlYyeW1HeEU1aGYySmplNW1vVlExaTF1UkNUOUJpM0poTGZ3MkdrQXZ2Z2s5aDRZVWJSWkFyLU5GYUlvSE5DRkVzU196RWtoZDBDcEVOSWJsS0JyQ1N4Qy1adG9OSlN4?oc=5",
-      "publisher": "Mint",
-      "published": "Tue, 31 Mar 2026 02:24:55 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOMHRiMlNURm14R1dlVng4SXhyYmpnQXc3N0NIQmhJb1Z1ejJzSzN1TFc5TzRXUUttZDNUQjFxd0NaR1FMdDB3WGhxQjc0eml4U3F4eHVVWFROR09Wd21kS1poWWZEQWZpbk5JTWR0NWRMSlRVcklobTA0dlktWVRjYUc4eUJwWDdlU0JVVkFncnBiQ0FlcHRzTFNTXzZkeHJOX1BYRWp3b0RSX0V4XzUzMmdVTDkwVk80YlVnRUN3WFBvMElIYWZ4MnZqX0hQaFplbWFOdndHLVVwekxmWEVzU3FmZ9IB6AFBVV95cUxQRnRSbVJRdVZ0Mno5SGVfYjdocTA5cHFud01xUzRkbGl2QTBKSS1IUEV3aHJsVDRvQ2FLQ2VMMnhBdUQ4YW5aT3czcXUxS3NiZnBVNzZGcktyQzQtUVZlLXZzSWtidk5kMUoyNmNLRmt0MEx4M3ZxWG10bFZsMFExbHFadGRkZVFpTlYyeW1HeEU1aGYySmplNW1vVlExaTF1UkNUOUJpM0poTGZ3MkdrQXZ2Z2s5aDRZVWJSWkFyLU5GYUlvSE5DRkVzU196RWtoZDBDcEVOSWJsS0JyQ1N4Qy1adG9OSlN4?oc=5\" target=\"_blank\">Asian markets today: Kospi falls 4%, Nikkei 225 down 2.2% on US-Iran war escalation</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mint</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "JP Movers | Nippon Yusen Kabushiki Kaisha Rose 2.97%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List - 富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRkwtdE1ONkxCc0dyYVlCVHhlY2RKTEF4NkJiZjlVZjFIYjE0eXpweVJnUVppSTZsMWc4d2lHLWtmSFBGQXgwazFwbFlVMFdfNXZyQ1R3MVJiQ29aR2pLZHFHc2tTMDNhNW1kRFZSaGUzWmlFeG9oNkhTaDJzSmRxMEg4NzJxeGlrZUN2SEFWWUVPZ2o2Rkt4Zm5Lekx2T0E?oc=5",
-      "publisher": "富途牛牛",
-      "published": "Thu, 02 Apr 2026 06:50:01 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxQRkwtdE1ONkxCc0dyYVlCVHhlY2RKTEF4NkJiZjlVZjFIYjE0eXpweVJnUVppSTZsMWc4d2lHLWtmSFBGQXgwazFwbFlVMFdfNXZyQ1R3MVJiQ29aR2pLZHFHc2tTMDNhNW1kRFZSaGUzWmlFeG9oNkhTaDJzSmRxMEg4NzJxeGlrZUN2SEFWWUVPZ2o2Rkt4Zm5Lekx2T0E?oc=5\" target=\"_blank\">JP Movers | Nippon Yusen Kabushiki Kaisha Rose 2.97%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">富途牛牛</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Index at risk as US-Iran war takes a new twist - Invezz",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHNNMTB5djZyOVI0QW9MRGxSNGVfaE1xakxLb05wU2d0dTJHNmdGNVBqS0k0c09QMzlrcy1TWlBrczl2SHZSMmFya0Jsa1JzR2NYMTV5M3kzQVQ3STN3NEQ2ZkJDcVRwRmtqMl9TeTF4THVsWFZjdUlZMldYY092Wi1SZDdCbFNxck4yWmVmekpUVTJLVVdrMQ?oc=5",
-      "publisher": "Invezz",
-      "published": "Mon, 30 Mar 2026 05:22:15 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNVHNNMTB5djZyOVI0QW9MRGxSNGVfaE1xakxLb05wU2d0dTJHNmdGNVBqS0k0c09QMzlrcy1TWlBrczl2SHZSMmFya0Jsa1JzR2NYMTV5M3kzQVQ3STN3NEQ2ZkJDcVRwRmtqMl9TeTF4THVsWFZjdUlZMldYY092Wi1SZDdCbFNxck4yWmVmekpUVTJLVVdrMQ?oc=5\" target=\"_blank\">Nikkei 225 Index at risk as US-Iran war takes a new twist</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Invezz</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei 225 crosses 57,000 for the first time as Takaichi secures historic mandate - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYW1FVUJBMEhkaW44cHdtczEyMGdxbXJqSXJjZU1rS3dWbGxzOUZveE1SVlB6dG54ZzYwVF9zTTlULXo3ZXJMTWhqS3YxRkRLczVoSFNJRFVHUnlWSHVPUGZnMTliamNQNG0tbXA2QmUyXzNDNjU3T05tdVczMWEzTUlCUFd1WEV4bWtlbzhJOUptVk9mVi1WbFNmYUR2OEFMcThF0gGoAUFVX3lxTE1PaUhwSWJJWFphNllfdVhwWkpvUVQ3MDAzM0plSkpPYlFYUkpKcGE3eTZrbENnQkxudG9rLTB1eEhTV0xqQURvR25xQ1FmclJPbmhLTmQzVkQ2NHhfYVJCSFptQ0ExN1ZfUmV0dlR1cElEdkViZnZVMVhTT2FXTDBIWlJzUENLcGRTWVZ5a1R2NGlnUzlYdnQ2cXlrNnhwQUFFaHN1c0R2QQ?oc=5",
-      "publisher": "CNBC",
-      "published": "Sun, 08 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxQYW1FVUJBMEhkaW44cHdtczEyMGdxbXJqSXJjZU1rS3dWbGxzOUZveE1SVlB6dG54ZzYwVF9zTTlULXo3ZXJMTWhqS3YxRkRLczVoSFNJRFVHUnlWSHVPUGZnMTliamNQNG0tbXA2QmUyXzNDNjU3T05tdVczMWEzTUlCUFd1WEV4bWtlbzhJOUptVk9mVi1WbFNmYUR2OEFMcThF0gGoAUFVX3lxTE1PaUhwSWJJWFphNllfdVhwWkpvUVQ3MDAzM0plSkpPYlFYUkpKcGE3eTZrbENnQkxudG9rLTB1eEhTV0xqQURvR25xQ1FmclJPbmhLTmQzVkQ2NHhfYVJCSFptQ0ExN1ZfUmV0dlR1cElEdkViZnZVMVhTT2FXTDBIWlJzUENLcGRTWVZ5a1R2NGlnUzlYdnQ2cXlrNnhwQUFFaHN1c0R2QQ?oc=5\" target=\"_blank\">Japan's Nikkei 225 crosses 57,000 for the first time as Takaichi secures historic mandate</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Index is pumping today: Here's why gains may be short-lived - Invezz",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeUFya2RYZ2dGd01nbTgyN1NkOXdQYjdUVXNiaDdGTTFodllyTzlzenFzMFhnU2xNZFVOMF9FdkU1MlQ0VFNhekVnTGtaeG9XY18tQ3ZkUDdyd0FxUVpGbzU5ZTdNcTdhMGVMTWltM0hvcDZ5bWw1RjZZXzV5WGRXdzhZQVdVb2xjc1I2WUhPODAwbjJkLXROR2NSNVh1Sks2SVJlbGt3?oc=5",
-      "publisher": "Invezz",
-      "published": "Wed, 25 Mar 2026 04:07:32 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxNeUFya2RYZ2dGd01nbTgyN1NkOXdQYjdUVXNiaDdGTTFodllyTzlzenFzMFhnU2xNZFVOMF9FdkU1MlQ0VFNhekVnTGtaeG9XY18tQ3ZkUDdyd0FxUVpGbzU5ZTdNcTdhMGVMTWltM0hvcDZ5bWw1RjZZXzV5WGRXdzhZQVdVb2xjc1I2WUhPODAwbjJkLXROR2NSNVh1Sks2SVJlbGt3?oc=5\" target=\"_blank\">Nikkei 225 Index is pumping today: Here's why gains may be short-lived</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Invezz</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei 225 index closes down 5.2% and South Korea's benchmark Kospi falls 6% as higher oil prices spur selling - kare11.com",
-      "link": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxPaThLVmlWMDk0bU1COUwwVnp2U01FdUZIMW14LW0wRHEzX2gtWkxPLTh5dUxuWjhQTmtFQlUyeGlDNnBxTjlGbFBWeEk3RlZ5Nk5qMml6UWRJQ1R5MXhaRVdhVjFqVy1iMzNqZ2V1NWhSNkJURWExWDJNaVlqVzhEUTBwRDlnaUZJTFRxM1pKYnNIWVZ1SXdVZExoZ01VOS12Z2FRNWV6YUE5b0d3ZXhMNGpoc1B0Z0kwYjJWbGR6R3ZYbUdhSlpoa2w3RHhsYUhwbmg2S2FwZmhKM0tiTEgxSFUxaGpWMFNuSUNjWUdZQXEzQk5Da1hFSmtrdlpRTjd1b3ZwVVhxTUppOW1BcDIzSUpPMGQyS003aTRWWmdlRjBSWHhKTGRzaW1YUVFra012TDRZd1hEY0c?oc=5",
-      "publisher": "kare11.com",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAJBVV95cUxPaThLVmlWMDk0bU1COUwwVnp2U01FdUZIMW14LW0wRHEzX2gtWkxPLTh5dUxuWjhQTmtFQlUyeGlDNnBxTjlGbFBWeEk3RlZ5Nk5qMml6UWRJQ1R5MXhaRVdhVjFqVy1iMzNqZ2V1NWhSNkJURWExWDJNaVlqVzhEUTBwRDlnaUZJTFRxM1pKYnNIWVZ1SXdVZExoZ01VOS12Z2FRNWV6YUE5b0d3ZXhMNGpoc1B0Z0kwYjJWbGR6R3ZYbUdhSlpoa2w3RHhsYUhwbmg2S2FwZmhKM0tiTEgxSFUxaGpWMFNuSUNjWUdZQXEzQk5Da1hFSmtrdlpRTjd1b3ZwVVhxTUppOW1BcDIzSUpPMGQyS003aTRWWmdlRjBSWHhKTGRzaW1YUVFra012TDRZd1hEY0c?oc=5\" target=\"_blank\">Japan's Nikkei 225 index closes down 5.2% and South Korea's benchmark Kospi falls 6% as higher oil prices spur selling</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">kare11.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Here’s why the Nikkei 225 Index is at risk of falling to ¥50,000 - Invezz",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPR2RaWW56S196c2QyQ05wUVE2VERaQkpYZlFyc2ZzRmZqYi1FWmNjTVpObjFQUEk4bUdvZGxtQjRsWkVsaVFyUDRnNlFuUjIxVk9TRExoRi1Sb3ZNLTNQQjJPdVhXajNUWVNPN1prcm84cTZKaVJmdVZoR3QyaGRNT0czTGVUR0Y0NjFLSWhfbjRBTnR0WU1LTHZVY2RuOTJVRXZQcHVB?oc=5",
-      "publisher": "Invezz",
-      "published": "Tue, 24 Mar 2026 04:13:21 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxPR2RaWW56S196c2QyQ05wUVE2VERaQkpYZlFyc2ZzRmZqYi1FWmNjTVpObjFQUEk4bUdvZGxtQjRsWkVsaVFyUDRnNlFuUjIxVk9TRExoRi1Sb3ZNLTNQQjJPdVhXajNUWVNPN1prcm84cTZKaVJmdVZoR3QyaGRNT0czTGVUR0Y0NjFLSWhfbjRBTnR0WU1LTHZVY2RuOTJVRXZQcHVB?oc=5\" target=\"_blank\">Here’s why the Nikkei 225 Index is at risk of falling to ¥50,000</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Invezz</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 1.40% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTm0xUnBJUFNXWXJHaC1jdVljOUEzTXN2YlZkUjlHQXRMaUVGVHBfZHE2eTFBYkdNN2Z2Wk9uelo4TDlBYzU4d0Z2VndqNXZ4eFdvcHBRaVoxZVlBUmdKVm4wV3JFZ2pCc1VmUTVtblJiaXhhOGxEbFdmWmd3eUFMU1puUGxsa2tyVUVuOFNIMUFZX2lLWk5BMnFzR3BIV2xIT0NSUWVmNy04LVBOUWExT01IYw?oc=5",
-      "publisher": "Investing.com",
-      "published": "Fri, 13 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNTm0xUnBJUFNXWXJHaC1jdVljOUEzTXN2YlZkUjlHQXRMaUVGVHBfZHE2eTFBYkdNN2Z2Wk9uelo4TDlBYzU4d0Z2VndqNXZ4eFdvcHBRaVoxZVlBUmdKVm4wV3JFZ2pCc1VmUTVtblJiaXhhOGxEbFdmWmd3eUFMU1puUGxsa2tyVUVuOFNIMUFZX2lLWk5BMnFzR3BIV2xIT0NSUWVmNy04LVBOUWExT01IYw?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 1.40%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan shares lower at close of trade; Nikkei 225 down 2.92% - in.investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPQkR4ZmRRQm1qTGxMQ2dJNjZZMllyWHZvcC14ZlJnR0xwdXJtSElwZW8tZms0LTI0cTI1RmVyYmc3UEF1VXRocURmcDVxcHQ3bWx3VFlxUnd1UEtvZlFuMGdDSGo3MHFWaG1oV3pRVFE2cGhGeEdfa0Z5eFZKX2JGaHVtdUd4bFRSSy1mMUtRN3FPb3V2X29JUG1Qa3c2eWhHZ3BhVUJ2Z0VuZUVLVFFyemp3?oc=5",
-      "publisher": "in.investing.com",
-      "published": "Mon, 30 Mar 2026 07:23:27 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxPQkR4ZmRRQm1qTGxMQ2dJNjZZMllyWHZvcC14ZlJnR0xwdXJtSElwZW8tZms0LTI0cTI1RmVyYmc3UEF1VXRocURmcDVxcHQ3bWx3VFlxUnd1UEtvZlFuMGdDSGo3MHFWaG1oV3pRVFE2cGhGeEdfa0Z5eFZKX2JGaHVtdUd4bFRSSy1mMUtRN3FPb3V2X29JUG1Qa3c2eWhHZ3BhVUJ2Z0VuZUVLVFFyemp3?oc=5\" target=\"_blank\">Japan shares lower at close of trade; Nikkei 225 down 2.92%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">in.investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Here’s why the Nikkei 225 Index moved into a correction - Invezz",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSWNHVkpTR2hZenh1blZKSG53amlVOVBSNHBGdml2VVZ1V1FhbURSZTdoMW1lRVhSMVNpeHZrMjMzbDM5dnBsd1VDYkl6bDl5V0NteUhsTzNsZWJFbnhfMDBHS2JsNml0d1oyRmh0SFVLU29fZF9MLU11LTI0VktQcDIzbEpnaFNjTk5FaDNNNmhqcE42?oc=5",
-      "publisher": "Invezz",
-      "published": "Fri, 20 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxQSWNHVkpTR2hZenh1blZKSG53amlVOVBSNHBGdml2VVZ1V1FhbURSZTdoMW1lRVhSMVNpeHZrMjMzbDM5dnBsd1VDYkl6bDl5V0NteUhsTzNsZWJFbnhfMDBHS2JsNml0d1oyRmh0SFVLU29fZF9MLU11LTI0VktQcDIzbEpnaFNjTk5FaDNNNmhqcE42?oc=5\" target=\"_blank\">Here’s why the Nikkei 225 Index moved into a correction</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Invezz</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei 225 stock index plunges more than 7% and other Asian markets also tumble as oil surges to $114 a barrel - kare11.com",
-      "link": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQMjdQWUVDeGRROUI2bnJoY1g2R2dmYVV6cDFkZHhWUXhqLXFLWkwwMkVDQ3NyM2UwQ2xtdW5TVHB2UWNPekkyWFR1alFOZTQ5WHJqVktENnVETnRTV1hFNVItWlVLMm5uRVN5TF81M2p0d2Z5ZnJHbTRaaU9qWFJaRlFMNDJEcGVGT3ZHUm5YeVN4cEpSN2QxcGh4ekJubkJYR0JXM2ZLUVJxeGZZUE14Y1pWVHl3MWN3RUlfMDAzNzRIRkx0eDU4TTIxZy1XVi1aTlQwcU9uZEhDbVdvOFpObVNZVVpsR0NzaGJxcXdYUnNvSy10a0paM1h6TEJPMDlTN011NzNIZ012S25CU1MzMFg4a2JBSW1DZlNieU14TjM0d21aYW0xS2l2bWxEZl9GNUVEbU5xMWtZWDQ?oc=5",
-      "publisher": "kare11.com",
-      "published": "Sun, 08 Mar 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwJBVV95cUxQMjdQWUVDeGRROUI2bnJoY1g2R2dmYVV6cDFkZHhWUXhqLXFLWkwwMkVDQ3NyM2UwQ2xtdW5TVHB2UWNPekkyWFR1alFOZTQ5WHJqVktENnVETnRTV1hFNVItWlVLMm5uRVN5TF81M2p0d2Z5ZnJHbTRaaU9qWFJaRlFMNDJEcGVGT3ZHUm5YeVN4cEpSN2QxcGh4ekJubkJYR0JXM2ZLUVJxeGZZUE14Y1pWVHl3MWN3RUlfMDAzNzRIRkx0eDU4TTIxZy1XVi1aTlQwcU9uZEhDbVdvOFpObVNZVVpsR0NzaGJxcXdYUnNvSy10a0paM1h6TEJPMDlTN011NzNIZ012S25CU1MzMFg4a2JBSW1DZlNieU14TjM0d21aYW0xS2l2bWxEZl9GNUVEbU5xMWtZWDQ?oc=5\" target=\"_blank\">Japan's Nikkei 225 stock index plunges more than 7% and other Asian markets also tumble as oil surges to $114 a barrel</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">kare11.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei 225 share index falls more than 6% as oil soars over $100 a barrel - KSAT",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZ2Mtb29SR1ZQZkZ5OWxwMC1MWnFUT0ZlbG5SMlkxSmxjV0JvUHoxbmVsZzJnZFFvTzFkWm5wb3h3VnZKdlNGTW5XYXdvOEdQaFJmOHVCUG5rZXlwX01PdlRyMGQ1blJXckVxSXpnb3hJaFB1VUE1X1JqMmZoUHZjQ1pQQ0xOSWVkVWhpTi1oNXhvR1prMXk3Qzh3ZFpKYmlCRkhzSFlmc1NMeVNQTkZCN2p6Q2xCaE1SZkhWUkZpcW1ZUQ?oc=5",
-      "publisher": "KSAT",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQZ2Mtb29SR1ZQZkZ5OWxwMC1MWnFUT0ZlbG5SMlkxSmxjV0JvUHoxbmVsZzJnZFFvTzFkWm5wb3h3VnZKdlNGTW5XYXdvOEdQaFJmOHVCUG5rZXlwX01PdlRyMGQ1blJXckVxSXpnb3hJaFB1VUE1X1JqMmZoUHZjQ1pQQ0xOSWVkVWhpTi1oNXhvR1prMXk3Qzh3ZFpKYmlCRkhzSFlmc1NMeVNQTkZCN2p6Q2xCaE1SZkhWUkZpcW1ZUQ?oc=5\" target=\"_blank\">Japan's Nikkei 225 share index falls more than 6% as oil soars over $100 a barrel</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">KSAT</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei 225 plunges 6.3% as oil prices soar to over $100 a barrel due to the war with Iran - kare11.com",
-      "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxQUXBtTmtndmx3R0NVSmRHZm85dm5zclhxNU1kUWxUQlppUHBxZWpOejQ0U0V1MERTVGkwcjRUZURuXzhnWU5UWnNwWWo4RC1NOXUwdVdFTUtEZHhtMnVOQkZ2NFY1cElPcGZ5cmotZ0pGVHJCZXN1clRQdmdNMXhmRGRCS1pmaHhZcDZGQkdENTJwS2IyWXR3WVNYcDlFZU5ydjlNQ0IzWjNiVlQwNTdxUkVHV1M2ZWNESnRnX1FKMG9yYnhpeG1ORHo3NUd4WkpYZDl5UlFPbVR6UV9EZE03WXIzQVJDck5Uenh3WGFTUzh3YlZPOE9fS1NWWC1XNkdjTU1vdXM4ejdadTdiTGE3TFhGRFVNUE1USHhTVTl3?oc=5",
-      "publisher": "kare11.com",
-      "published": "Sun, 08 Mar 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingJBVV95cUxQUXBtTmtndmx3R0NVSmRHZm85dm5zclhxNU1kUWxUQlppUHBxZWpOejQ0U0V1MERTVGkwcjRUZURuXzhnWU5UWnNwWWo4RC1NOXUwdVdFTUtEZHhtMnVOQkZ2NFY1cElPcGZ5cmotZ0pGVHJCZXN1clRQdmdNMXhmRGRCS1pmaHhZcDZGQkdENTJwS2IyWXR3WVNYcDlFZU5ydjlNQ0IzWjNiVlQwNTdxUkVHV1M2ZWNESnRnX1FKMG9yYnhpeG1ORHo3NUd4WkpYZDl5UlFPbVR6UV9EZE03WXIzQVJDck5Uenh3WGFTUzh3YlZPOE9fS1NWWC1XNkdjTU1vdXM4ejdadTdiTGE3TFhGRFVNUE1USHhTVTl3?oc=5\" target=\"_blank\">Japan's Nikkei 225 plunges 6.3% as oil prices soar to over $100 a barrel due to the war with Iran</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">kare11.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 plunges over 5% on oil supply concerns - nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBOR2dQN2RTYk9mcWZUTFBPMVMwX0FiRVRZNXVUVlJjalZHMnlqekE0YXU5NFI3SU9YOVJTdEpHNDhZWlE3VGpzUW5HZFFFdTh2X1JWLVBjSF9hcHRnQ2h3eG13?oc=5",
-      "publisher": "nhk.or.jp",
-      "published": "Sun, 29 Mar 2026 10:50:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTFBOR2dQN2RTYk9mcWZUTFBPMVMwX0FiRVRZNXVUVlJjalZHMnlqekE0YXU5NFI3SU9YOVJTdEpHNDhZWlE3VGpzUW5HZFFFdTh2X1JWLVBjSF9hcHRnQ2h3eG13?oc=5\" target=\"_blank\">Nikkei 225 plunges over 5% on oil supply concerns</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">nhk.or.jp</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei 225 plunges 6.3% as oil prices soar to over $100 a barrel due to the war with Iran - WKYC",
-      "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOVXJiRnNjWGNBcHpPVnM4bUpnVk5IUklGM2RrQTFIS29kVHVFZ2gzV2pTOUFxSkVYTzMzOTZTUEt1THc2Mk9tdnFuNUpUcS1GLUFDendoeE5sejJkaDhNeFYzV2Zpd210YXZRU2liZHY2R0hpaEtxdldPNGdSR3d2ZEZrMGRYeDYwaXk2a1MxbFEtQUN4QllqbkxfcXN5enRuT0JZdmxVZEphV1p0ZVJkaW10SG9yTWlXQjcyOXQzYkFBeDJKcDdVYW1ZV1FQRHAwN0NhQ01wVVl3MjNBRkktWExhalVBa2dRdnRER3hrT2U5dE1NZ1Z2eFgzV3hlRHFXV0lnQTRWbGtTekRxWGZScDhtbkJTaU9iNTRN?oc=5",
-      "publisher": "WKYC",
-      "published": "Sun, 08 Mar 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwJBVV95cUxOVXJiRnNjWGNBcHpPVnM4bUpnVk5IUklGM2RrQTFIS29kVHVFZ2gzV2pTOUFxSkVYTzMzOTZTUEt1THc2Mk9tdnFuNUpUcS1GLUFDendoeE5sejJkaDhNeFYzV2Zpd210YXZRU2liZHY2R0hpaEtxdldPNGdSR3d2ZEZrMGRYeDYwaXk2a1MxbFEtQUN4QllqbkxfcXN5enRuT0JZdmxVZEphV1p0ZVJkaW10SG9yTWlXQjcyOXQzYkFBeDJKcDdVYW1ZV1FQRHAwN0NhQ01wVVl3MjNBRkktWExhalVBa2dRdnRER3hrT2U5dE1NZ1Z2eFgzV3hlRHFXV0lnQTRWbGtTekRxWGZScDhtbkJTaU9iNTRN?oc=5\" target=\"_blank\">Japan's Nikkei 225 plunges 6.3% as oil prices soar to over $100 a barrel due to the war with Iran</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">WKYC</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "JP Movers | JGC Holdings Rose 2.35%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List - 富途牛牛",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOMkpjYk5pb25QUmt2dHJRNkpJekprQ2hfYmttZFoyZkh2Q3dMSGJtbU9WQzBwMjJQY1kzZW5SZUREclV2dUJsaWJsNmY0VDV4eUVnZVgyY01QV21KdzUwcWU5UUV0UlE4MWtUTXZ4NnM5eThLcHhPXzdadW9uQjFzVDdhMjJBZnlUbEhSN3BabXFYUmpXdWFR?oc=5",
-      "publisher": "富途牛牛",
-      "published": "Mon, 30 Mar 2026 06:58:05 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxOMkpjYk5pb25QUmt2dHJRNkpJekprQ2hfYmttZFoyZkh2Q3dMSGJtbU9WQzBwMjJQY1kzZW5SZUREclV2dUJsaWJsNmY0VDV4eUVnZVgyY01QV21KdzUwcWU5UUV0UlE4MWtUTXZ4NnM5eThLcHhPXzdadW9uQjFzVDdhMjJBZnlUbEhSN3BabXFYUmpXdWFR?oc=5\" target=\"_blank\">JP Movers | JGC Holdings Rose 2.35%, Leading Nikkei 225 Components, Kioxia Holdings Topped Turnover List</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">富途牛牛</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei index falls as stagflation fears deepen amid Iran war - صحيفة مال",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE14S0p5LTZlRXdzWlZ2OUtIamZJSFZtQk84aVFVWHhDMzlHc3dfd3NxTDktTTJuV0U4eE5za295ODVQUkVVN3VBdUpCYjJEbUVPdDU3VzcyUW1XcnA4WFh5RjdUcFRBcmFTbzZIMlNn?oc=5",
+      "title": "Nikkei Index Falls as Optimism Fades After Iran War Ceasefire Announcement - صحيفة مال",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8tVVpiaERCUm5RRXhKNzI0ZENXYUZQYmpwMF9tS0tCNkF6QWgyQkd3d25oTGh1SFFmWndoNWxKZDUzVllEblYxaG8xcG5ndzk0V1BNWUx2WTF6cFBIZUxFdHJPY1NORmF0enN6dA?oc=5",
       "publisher": "صحيفة مال",
-      "published": "Mon, 16 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE14S0p5LTZlRXdzWlZ2OUtIamZJSFZtQk84aVFVWHhDMzlHc3dfd3NxTDktTTJuV0U4eE5za295ODVQUkVVN3VBdUpCYjJEbUVPdDU3VzcyUW1XcnA4WFh5RjdUcFRBcmFTbzZIMlNn?oc=5\" target=\"_blank\">Japan's Nikkei index falls as stagflation fears deepen amid Iran war</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">صحيفة مال</font>",
+      "published": "Sat, 11 Apr 2026 14:16:51 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE8tVVpiaERCUm5RRXhKNzI0ZENXYUZQYmpwMF9tS0tCNkF6QWgyQkd3d25oTGh1SFFmWndoNWxKZDUzVllEblYxaG8xcG5ndzk0V1BNWUx2WTF6cFBIZUxFdHJPY1NORmF0enN6dA?oc=5\" target=\"_blank\">Nikkei Index Falls as Optimism Fades After Iran War Ceasefire Announcement</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">صحيفة مال</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -785,263 +53,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Chart alert: Why Japan’s Nikkei 225 can stage a minor recovery after its 4-day plunge - marketpulse.com",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPT2xiaHNDczZiaXZRZ3YxaVRoUUlWMFp3UnRUSHBsQVF2eWx3VDdKSFdIeTREZFh4Q1YxNENZakl4ZmVoLU5iTEFRSklVTkJyUG1KQVVnQUNrVnRpQWVleGtvbmFNVFVqbGM2d1p6TExtZGhYdGtZVGJ4VWt4MFRQLVE4WXJ4U1ZIM1NqeHhmOTh1NkM5SDVUMDQ2RS1zeHBTWV8wUExKRkZPWFdOQXZpa1BYdjdpdDFkdENEOQ?oc=5",
-      "publisher": "marketpulse.com",
-      "published": "Fri, 06 Mar 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxPT2xiaHNDczZiaXZRZ3YxaVRoUUlWMFp3UnRUSHBsQVF2eWx3VDdKSFdIeTREZFh4Q1YxNENZakl4ZmVoLU5iTEFRSklVTkJyUG1KQVVnQUNrVnRpQWVleGtvbmFNVFVqbGM2d1p6TExtZGhYdGtZVGJ4VWt4MFRQLVE4WXJ4U1ZIM1NqeHhmOTh1NkM5SDVUMDQ2RS1zeHBTWV8wUExKRkZPWFdOQXZpa1BYdjdpdDFkdENEOQ?oc=5\" target=\"_blank\">Chart alert: Why Japan’s Nikkei 225 can stage a minor recovery after its 4-day plunge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">marketpulse.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan stocks lower at close of trade; Nikkei 225 down 5.24% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON3E5T3A4aVZZTUsxNTVveFNxMG82d0xyejF5cnRlM1lDUS1FN2JveE9hYXNTaDFWamZJcWhHVkg5bzlsTXVnbkNrWnpJNG5vQW16ejZKQmVMV293cVgyY3JxSnhKTC1mWU4tLWJNelFxMk5WdFExSVlBaUJfZmprVEs3bFlMeWxnQ1NlU0prV2loSExKWjN6ak5yQVVPSWEwemZZdEp6ZzlwMEpXNmZwVzBUYw?oc=5",
-      "publisher": "Investing.com",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxON3E5T3A4aVZZTUsxNTVveFNxMG82d0xyejF5cnRlM1lDUS1FN2JveE9hYXNTaDFWamZJcWhHVkg5bzlsTXVnbkNrWnpJNG5vQW16ejZKQmVMV293cVgyY3JxSnhKTC1mWU4tLWJNelFxMk5WdFExSVlBaUJfZmprVEs3bFlMeWxnQ1NlU0prV2loSExKWjN6ak5yQVVPSWEwemZZdEp6ZzlwMEpXNmZwVzBUYw?oc=5\" target=\"_blank\">Japan stocks lower at close of trade; Nikkei 225 down 5.24%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 falls more than 4% on Iran concerns - nhk.or.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jWVlkNlJRVTRQX1ctVTF2bGRYcG5kSUVZTGJDbWZJay1CVTlnSG8wbWdITDdOaGhHRzZkQ3p6dXFWVDkzbndLNmhSZTZoQjFZY0g0TEhKZjlCQkNCbWlvWUJR?oc=5",
-      "publisher": "nhk.or.jp",
-      "published": "Sun, 29 Mar 2026 08:20:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYkFVX3lxTE1jWVlkNlJRVTRQX1ctVTF2bGRYcG5kSUVZTGJDbWZJay1CVTlnSG8wbWdITDdOaGhHRzZkQ3p6dXFWVDkzbndLNmhSZTZoQjFZY0g0TEhKZjlCQkNCbWlvWUJR?oc=5\" target=\"_blank\">Nikkei 225 falls more than 4% on Iran concerns</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">nhk.or.jp</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Tokyo stocks end down on Iran conflict, Nikkei index temporarily loses 2% - Japan Wire by Kyodo News",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44aU5haThfUWQ1VnNuVUtpR0hBb1VyNmlYSWRJWUNpU1JCelBfbzBRYmtYLWxUYVJxXzBQNG5YUjAxZDY1ajhETXZaZjVlNlByOHRzRVQ5VWJCdw?oc=5",
-      "publisher": "Japan Wire by Kyodo News",
-      "published": "Mon, 02 Mar 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTE44aU5haThfUWQ1VnNuVUtpR0hBb1VyNmlYSWRJWUNpU1JCelBfbzBRYmtYLWxUYVJxXzBQNG5YUjAxZDY1ajhETXZaZjVlNlByOHRzRVQ5VWJCdw?oc=5\" target=\"_blank\">Tokyo stocks end down on Iran conflict, Nikkei index temporarily loses 2%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Japan Wire by Kyodo News</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asian markets today: Nikkei 225, Kospi fall up to 5% as US-Iran war enters fifth week - Mint",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOaGtyMFAtWVdFZGJGQlBDektNeGtMTkpvckhTcTB1cTFFOFpCUU04UzlQSXM5UDhKNWJkS0RnRU94LUpjR3o0YmVoTU1yN1djRUhodWFsZjdISVFVRlEtdldSUldlWFlsd2xTU0lqTFlGY1VMbGRicEtkNW1EZ1BFUWI3R3k1aTNkMHl5enpUSUVVbWRzdEhxdURqTTR3UDg3NXFyRl8wYjM4Z0dwcFJITUNIZWxpcFZiLTNtaFlwZFpEZWRITmtBVWgwd2J3ZVJCQzRzbVZvcGRhNERiVWVUODYzd0ppa1XSAewBQVVfeXFMUC1NUlVwLThDN2xQd3k2eVprSFFFWjVyNm9GVTZoaEpnU3FMcDZ2THZ6VFl0eDVCdlFwM1NTNldkaUhNMFB4dGhEVVliRzZoUkpUVlBNekM4dUc4Y3RWYnY3UGhHeUJfSThsUlhsSVIwYUo4Y2NPdTRGZ0dsdHNyazRwbmpaVGktZWxUVlhxaFZuT1N3NHk1MGdnYlV1RnFVbmJzSzBCQVJxQUpuVGdTTEhBOGpudWliQU5TQkxfNmoyajhYWGlJaGprQWpOeWp1Mkk3TVRjcW1ySmNielJ3NkJ3dXNlSkc5U01BaHU?oc=5",
-      "publisher": "Mint",
-      "published": "Mon, 30 Mar 2026 02:10:25 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5wFBVV95cUxOaGtyMFAtWVdFZGJGQlBDektNeGtMTkpvckhTcTB1cTFFOFpCUU04UzlQSXM5UDhKNWJkS0RnRU94LUpjR3o0YmVoTU1yN1djRUhodWFsZjdISVFVRlEtdldSUldlWFlsd2xTU0lqTFlGY1VMbGRicEtkNW1EZ1BFUWI3R3k1aTNkMHl5enpUSUVVbWRzdEhxdURqTTR3UDg3NXFyRl8wYjM4Z0dwcFJITUNIZWxpcFZiLTNtaFlwZFpEZWRITmtBVWgwd2J3ZVJCQzRzbVZvcGRhNERiVWVUODYzd0ppa1XSAewBQVVfeXFMUC1NUlVwLThDN2xQd3k2eVprSFFFWjVyNm9GVTZoaEpnU3FMcDZ2THZ6VFl0eDVCdlFwM1NTNldkaUhNMFB4dGhEVVliRzZoUkpUVlBNekM4dUc4Y3RWYnY3UGhHeUJfSThsUlhsSVIwYUo4Y2NPdTRGZ0dsdHNyazRwbmpaVGktZWxUVlhxaFZuT1N3NHk1MGdnYlV1RnFVbmJzSzBCQVJxQUpuVGdTTEhBOGpudWliQU5TQkxfNmoyajhYWGlJaGprQWpOeWp1Mkk3TVRjcW1ySmNielJ3NkJ3dXNlSkc5U01BaHU?oc=5\" target=\"_blank\">Asian markets today: Nikkei 225, Kospi fall up to 5% as US-Iran war enters fifth week</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mint</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "US stocks erase a big early loss and rise after oil prices whip from nearly $120 back below $90 - Yahoo! Finance Canada",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWS0xOE5jc24zbkk0dDJveHlvbjlUOFdDY3lyU0M3U1dhaUJ5djMzeFJGWWpmM0I3N0JTcWptUk9QeDdReEFYRWR1Y0lYcUlINzZzZkVDSUU4dHRTb1F5Vmp4cE41akpUejd4TEFNSUc5VmFhR05tU2hweXAxZElTTXBVU0M?oc=5",
-      "publisher": "Yahoo! Finance Canada",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAFBVV95cUxOWS0xOE5jc24zbkk0dDJveHlvbjlUOFdDY3lyU0M3U1dhaUJ5djMzeFJGWWpmM0I3N0JTcWptUk9QeDdReEFYRWR1Y0lYcUlINzZzZkVDSUU4dHRTb1F5Vmp4cE41akpUejd4TEFNSUc5VmFhR05tU2hweXAxZElTTXBVU0M?oc=5\" target=\"_blank\">US stocks erase a big early loss and rise after oil prices whip from nearly $120 back below $90</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo! Finance Canada</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan's Nikkei 225 index closes down 5.2% and South Korea's benchmark Kospi falls 6% as higher oil prices spur selling - wwltv.com",
-      "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNQVhSU0V1dTFqQ0I4T2hhSDBYLU9sR2xMNkF5ZkJwM0FhRDRzcnVqd2JNbWd4ZG5ocFdzT1BnSGNVaW5GLVMtMjZpQm82Qzh4elJIV0hpTlBLQUprYVRxU2FBWDNsUHJ3dDRBUUxrVzIzOVFDSFcxSGxEdWEtbDdSYTNCQVpyU0pQXy1oa3Y2SlRUaEhNY3lKMXNMQ1dxMTFzZ0xrcE9meHZvTkgxQ1R1c290aXpEZjhNeWxhclBsR2NrblNSN3U3WlRfaUdlcnc3WVhEVzh1NzZVNXdzT1E5cGpva0RUTmJ2WmQtaUJSOHdOX2xmMlk5MWhnOVJYZkJHcTR4T3owaHFHTXFId0JxRlZHaTBhRUVjYjBXLUhFZkFJY19ITFBwVzN4WUxyUTljdEhkY1J1Zw?oc=5",
-      "publisher": "wwltv.com",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitwJBVV95cUxNQVhSU0V1dTFqQ0I4T2hhSDBYLU9sR2xMNkF5ZkJwM0FhRDRzcnVqd2JNbWd4ZG5ocFdzT1BnSGNVaW5GLVMtMjZpQm82Qzh4elJIV0hpTlBLQUprYVRxU2FBWDNsUHJ3dDRBUUxrVzIzOVFDSFcxSGxEdWEtbDdSYTNCQVpyU0pQXy1oa3Y2SlRUaEhNY3lKMXNMQ1dxMTFzZ0xrcE9meHZvTkgxQ1R1c290aXpEZjhNeWxhclBsR2NrblNSN3U3WlRfaUdlcnc3WVhEVzh1NzZVNXdzT1E5cGpva0RUTmJ2WmQtaUJSOHdOX2xmMlk5MWhnOVJYZkJHcTR4T3owaHFHTXFId0JxRlZHaTBhRUVjYjBXLUhFZkFJY19ITFBwVzN4WUxyUTljdEhkY1J1Zw?oc=5\" target=\"_blank\">Japan's Nikkei 225 index closes down 5.2% and South Korea's benchmark Kospi falls 6% as higher oil prices spur selling</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">wwltv.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Chart alert: Nikkei 225 bullish acceleration intact towards 60,000 in the first step - marketpulse.com",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOUF1VlhYY0psY1A3RUFsaVFpcDFHbzJGSUhvR0NpVnBrZlg2a19iajBYbnRfcEFadWNyMzN3MGtNWS1vQ01RU1lHNU5IRUg2LWtZenluUzIwNXZER0JUSWZNVE55ZWQtZl92bzNKYnI1VXNMTnJPbWlWN29HblBkaHNBdmlBWDZuaEZnZWlCMzFiMjRlVDdqT1VDM0lGdHBFVmcyeHF4enlOV3dTYmk1NHc3cERYSG1pZlNF?oc=5",
-      "publisher": "marketpulse.com",
-      "published": "Wed, 11 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxNOUF1VlhYY0psY1A3RUFsaVFpcDFHbzJGSUhvR0NpVnBrZlg2a19iajBYbnRfcEFadWNyMzN3MGtNWS1vQ01RU1lHNU5IRUg2LWtZenluUzIwNXZER0JUSWZNVE55ZWQtZl92bzNKYnI1VXNMTnJPbWlWN29HblBkaHNBdmlBWDZuaEZnZWlCMzFiMjRlVDdqT1VDM0lGdHBFVmcyeHF4enlOV3dTYmk1NHc3cERYSG1pZlNF?oc=5\" target=\"_blank\">Chart alert: Nikkei 225 bullish acceleration intact towards 60,000 in the first step</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">marketpulse.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei Index Rises 2,064 Points or 4% at Midday, Led by Semiconductor and Optical Fiber Stocks - AASTOCKS.com",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1LUHZQSGgtWjJYTWcySjM4OTUwYmNkV0NXSnJqTDRfRmxyVVRpd0NHOTJpQ3NITzlLbk5POHVYRVM0MTdkN1dIajRpTXkzUWxMMU50YllFQ1pZck5VNzlacXJ0am5Zanp3dldmNTlmallHVTRKRkVqUXdTVFlIQQ?oc=5",
-      "publisher": "AASTOCKS.com",
-      "published": "Wed, 01 Apr 2026 03:13:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE1LUHZQSGgtWjJYTWcySjM4OTUwYmNkV0NXSnJqTDRfRmxyVVRpd0NHOTJpQ3NITzlLbk5POHVYRVM0MTdkN1dIajRpTXkzUWxMMU50YllFQ1pZck5VNzlacXJ0am5Zanp3dldmNTlmallHVTRKRkVqUXdTVFlIQQ?oc=5\" target=\"_blank\">Nikkei Index Rises 2,064 Points or 4% at Midday, Led by Semiconductor and Optical Fiber Stocks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AASTOCKS.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japanese ETFs to Buy as Nikkei 225 Crosses New Record High - Zacks Investment Research",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ1NXcS0zVGs5aEZyOTJVSHlKdmR3ejhOTUxTY2tnQjR1S2NhQ1N4QjNVVXFucDdBQ1h2RmhiY01PZGhwaENRUGVPb25rb0lMY1hnNXR6UHdrVko0ckdCZXJMMV9yOHBySExIaEhyWFhSLWpXM01sak0xOXFRSDU3TUl4VHhmb0R1NHltS004aG1JcjlXSWtKOXRaZDh6endT?oc=5",
-      "publisher": "Zacks Investment Research",
-      "published": "Thu, 26 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ1NXcS0zVGs5aEZyOTJVSHlKdmR3ejhOTUxTY2tnQjR1S2NhQ1N4QjNVVXFucDdBQ1h2RmhiY01PZGhwaENRUGVPb25rb0lMY1hnNXR6UHdrVko0ckdCZXJMMV9yOHBySExIaEhyWFhSLWpXM01sak0xOXFRSDU3TUl4VHhmb0R1NHltS004aG1JcjlXSWtKOXRaZDh6endT?oc=5\" target=\"_blank\">Japanese ETFs to Buy as Nikkei 225 Crosses New Record High</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Zacks Investment Research</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Futures Climb 0.3% at Start of Trading Session - Meyka",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYTk2YS1wQjZKU2c0SHpRMk1qVkZhamtjSjVOaTBId1daX014NEthUjdhVHpiU2F4OGFBdWpCLTdXVWdYRnVMVzRQSmVVb2hPU0p3OWM4RGhBclhwNHkyaV9OeUE2T3B4T2M3TmRJOVQ2QjdhWW5sMUVya2FoNzg3WWFOLVNfLVVKV1BNMGhn?oc=5",
-      "publisher": "Meyka",
-      "published": "Thu, 02 Apr 2026 06:47:51 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxQYTk2YS1wQjZKU2c0SHpRMk1qVkZhamtjSjVOaTBId1daX014NEthUjdhVHpiU2F4OGFBdWpCLTdXVWdYRnVMVzRQSmVVb2hPU0p3OWM4RGhBclhwNHkyaV9OeUE2T3B4T2M3TmRJOVQ2QjdhWW5sMUVya2FoNzg3WWFOLVNfLVVKV1BNMGhn?oc=5\" target=\"_blank\">Nikkei 225 Futures Climb 0.3% at Start of Trading Session</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Meyka</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225: Breakdown Risk Rising Fast - FOREX.com",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNT21GRHpqZ2ZkYWVvTHR5UzU0VHdVWFRLZlpLTkxRbEhvUFBvVFd6TkJxekt4bi1lMkdWYWRkOVZFcm4wOVEtUldXaWgwLV9FX0IyVVozTU11QWM4Yld0am1BVm0tZmdmWUNtUDJ3RWs4WXF3eWg4YjBMb3pzUzNuTy11OWxZVXJpX0RMS9IBmAFBVV95cUxQTXJsS1d5ajR3V2R6VFdNcXdnV1ZLbE1YWU03RVdZSjI3UFNwdW40S09fZDZ5VnY0WjktRFJueEZMQUFwNU9ZTTE4ZWxhN2U2QkdkcTNkV3FEckVTeVF1dFBHNzJkUDlHUjh1NEtVNThUb3lDSndQUDVfbE9paVZqTGNTZGZUd2pmRzUxcERyQzFEQ3JiOG9vZw?oc=5",
-      "publisher": "FOREX.com",
-      "published": "Wed, 04 Mar 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNT21GRHpqZ2ZkYWVvTHR5UzU0VHdVWFRLZlpLTkxRbEhvUFBvVFd6TkJxekt4bi1lMkdWYWRkOVZFcm4wOVEtUldXaWgwLV9FX0IyVVozTU11QWM4Yld0am1BVm0tZmdmWUNtUDJ3RWs4WXF3eWg4YjBMb3pzUzNuTy11OWxZVXJpX0RMS9IBmAFBVV95cUxQTXJsS1d5ajR3V2R6VFdNcXdnV1ZLbE1YWU03RVdZSjI3UFNwdW40S09fZDZ5VnY0WjktRFJueEZMQUFwNU9ZTTE4ZWxhN2U2QkdkcTNkV3FEckVTeVF1dFBHNzJkUDlHUjh1NEtVNThUb3lDSndQUDVfbE9paVZqTGNTZGZUd2pmRzUxcERyQzFEQ3JiOG9vZw?oc=5\" target=\"_blank\">Nikkei 225: Breakdown Risk Rising Fast</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FOREX.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan’s Nikkei 225 index closes down 5.2% as higher oil prices spur selling - 朝日新聞",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjWEZ6VzZTS1JDak5xc2xYOGFLNTYzN2xseEtDLThYODVSRXRmcEQ2MkVLTG1KalhVVXU1T3EyLS1iQVRCMWE3cDFtX3JhcFIwOWdtVFFn?oc=5",
-      "publisher": "朝日新聞",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjWEZ6VzZTS1JDak5xc2xYOGFLNTYzN2xseEtDLThYODVSRXRmcEQ2MkVLTG1KalhVVXU1T3EyLS1iQVRCMWE3cDFtX3JhcFIwOWdtVFFn?oc=5\" target=\"_blank\">Japan’s Nikkei 225 index closes down 5.2% as higher oil prices spur selling</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">朝日新聞</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Stocks erase a big early loss and rise after oil prices drop from nearly $120 back below $90 - Los Angeles Times",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSm8wVURiU1V3T09WekZHUDA3ZThoVlpnZWJwNWdQWk5rUmJyNXIyb3ZjN2lsQ3dMbVE5RG9LX3gwMWZ3OVcyLWRsd2hCakg5QzlWVUw4UURLakI2d1V1RlJmcHFUV2ZFUWFLbjd5aHpJeVNzemNLeXhWWWpjdUdLc2pXYUxRNUg0dDJ1SHpwNDh6c3dyOXJyVklkRmRLQ19RM3ZjdzdDRjFKMVFmZkpjdWpONTAwMFlFSmc?oc=5",
-      "publisher": "Los Angeles Times",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxOSm8wVURiU1V3T09WekZHUDA3ZThoVlpnZWJwNWdQWk5rUmJyNXIyb3ZjN2lsQ3dMbVE5RG9LX3gwMWZ3OVcyLWRsd2hCakg5QzlWVUw4UURLakI2d1V1RlJmcHFUV2ZFUWFLbjd5aHpJeVNzemNLeXhWWWpjdUdLc2pXYUxRNUg0dDJ1SHpwNDh6c3dyOXJyVklkRmRLQ19RM3ZjdzdDRjFKMVFmZkpjdWpONTAwMFlFSmc?oc=5\" target=\"_blank\">Stocks erase a big early loss and rise after oil prices drop from nearly $120 back below $90</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Los Angeles Times</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Japan’s Nikkei 225 share index falls more than 7% as oil soars to $114 a barrel - arabnews.jp",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hNjhwUHhGMTlIZzdTYy1zTVU3M3NZblhCci1EQTlyQmM1ckVUQVJ3a2FYUktKemtTMzdyUHo3TUZOWGxWT2RhN01HT3Y1b2xSMGNqUm9YaG0xczdPRXdBZA?oc=5",
-      "publisher": "arabnews.jp",
-      "published": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hNjhwUHhGMTlIZzdTYy1zTVU3M3NZblhCci1EQTlyQmM1ckVUQVJ3a2FYUktKemtTMzdyUHo3TUZOWGxWT2RhN01HT3Y1b2xSMGNqUm9YaG0xczdPRXdBZA?oc=5\" target=\"_blank\">Japan’s Nikkei 225 share index falls more than 7% as oil soars to $114 a barrel</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">arabnews.jp</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 rises 3.89% and hits record after Takaichi's big win on Sunday - The Japan Times",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWDZES0dGNFNmWk13bGFBell5OWR5aTh5UEhXYmZYTnJsUjVHdFpySHNjN1plTXJNMkFyMUoxR2RzRFJURDZ0Z0toYVhUYXJTTi11ZFoxazZzdk5PRXM2dkpfRlVkSURtSnlMMDhMQnBCV29nWUJkNC1XZHNLTE44LXFDbnNxMUE?oc=5",
-      "publisher": "The Japan Times",
-      "published": "Mon, 09 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxQWDZES0dGNFNmWk13bGFBell5OWR5aTh5UEhXYmZYTnJsUjVHdFpySHNjN1plTXJNMkFyMUoxR2RzRFJURDZ0Z0toYVhUYXJTTi11ZFoxazZzdk5PRXM2dkpfRlVkSURtSnlMMDhMQnBCV29nWUJkNC1XZHNLTE44LXFDbnNxMUE?oc=5\" target=\"_blank\">Nikkei 225 rises 3.89% and hits record after Takaichi's big win on Sunday</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Japan Times</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 Dips 0.43% Despite Strong Advance-Decline Ratio; Olympus Corp. Soars 6.84% - Markets Mojo",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNd3R1RE5wdzdZcUZQeDNKLVBjd2lYd01WLUdaMjBjV3pRdEYxNWdLOXdtaWV6ZGk0RGpRMjFUSEhxc3RQNHR2ZW0xZjd3OHFGVERPWjVyUUFaZ0dMVUhGUERaMWhBZzdlSE1qcUI4ZTZnQW1DSHZZZk9pTEJNNU1SSVVBWTNlbW4taFJRMFl4TWFJN21PeTlJRmtaWmxRTk13M3lLbnJfeDVIVXIwcjNsV0NhTV9RUG43dE5yMl90azNaSmMxc1NNM2ZIelFjU1lsRjlpSw?oc=5",
-      "publisher": "Markets Mojo",
-      "published": "Mon, 30 Mar 2026 13:57:58 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNd3R1RE5wdzdZcUZQeDNKLVBjd2lYd01WLUdaMjBjV3pRdEYxNWdLOXdtaWV6ZGk0RGpRMjFUSEhxc3RQNHR2ZW0xZjd3OHFGVERPWjVyUUFaZ0dMVUhGUERaMWhBZzdlSE1qcUI4ZTZnQW1DSHZZZk9pTEJNNU1SSVVBWTNlbW4taFJRMFl4TWFJN21PeTlJRmtaWmxRTk13M3lLbnJfeDVIVXIwcjNsV0NhTV9RUG43dE5yMl90azNaSmMxc1NNM2ZIelFjU1lsRjlpSw?oc=5\" target=\"_blank\">Nikkei 225 Dips 0.43% Despite Strong Advance-Decline Ratio; Olympus Corp. Soars 6.84%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Advantest’s Nikkei 225 Weight Cut Looms After 15% Rally - Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONTQxTnJKQS11aE1EVS1qRzFrR3FsdUF6RUlTWTVCck83Y0NRT0dxVFpDY1JKeXA3bFFIVV9WaGpSak9QdlJaUG5VaXhndnBSTW04clZjaWpzd01hSktKTTZERUxnMXVYZDdLbXJHbjJ1SDhOYkRrWHJHV2lncEE0elpMdXAwYm9pUGlpTmw4UHhDbmpQU20tQkxnaUNYY0QxSC1rU3FDWnY?oc=5",
-      "publisher": "Bloomberg.com",
-      "published": "Wed, 28 Jan 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqAFBVV95cUxONTQxTnJKQS11aE1EVS1qRzFrR3FsdUF6RUlTWTVCck83Y0NRT0dxVFpDY1JKeXA3bFFIVV9WaGpSak9QdlJaUG5VaXhndnBSTW04clZjaWpzd01hSktKTTZERUxnMXVYZDdLbXJHbjJ1SDhOYkRrWHJHV2lncEE0elpMdXAwYm9pUGlpTmw4UHhDbmpQU20tQkxnaUNYY0QxSC1rU3FDWnY?oc=5\" target=\"_blank\">Advantest’s Nikkei 225 Weight Cut Looms After 15% Rally</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bloomberg.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Nikkei 225 and TOPIX: Already bottomed or further downside ahead? By Investing.com - Investing.com UK",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQVEoxampIa0FJZV96ZFhaWlZ5VUFrbjRDUUpLUjNtSC1kYVdKSV9xWlgteml2eXVLek1wOUM0a1VSNFlUdS1nclJNcWJUdi1MYnhGemo4eHVwa1RMcTVEU3gyN3VyWmNQZGZ1c013M3BCRVlMOE45MTQxd2pjNTlqNXJTTVdJa2otbjB4Mk5DMi1WQTE2UFRKY05uaElWSDNPLS1HQWlIakJxamlXdHpmbDd4bDBrdw?oc=5",
-      "publisher": "Investing.com UK",
-      "published": "Sun, 22 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQVEoxampIa0FJZV96ZFhaWlZ5VUFrbjRDUUpLUjNtSC1kYVdKSV9xWlgteml2eXVLek1wOUM0a1VSNFlUdS1nclJNcWJUdi1MYnhGemo4eHVwa1RMcTVEU3gyN3VyWmNQZGZ1c013M3BCRVlMOE45MTQxd2pjNTlqNXJTTVdJa2otbjB4Mk5DMi1WQTE2UFRKY05uaElWSDNPLS1HQWlIakJxamlXdHpmbDd4bDBrdw?oc=5\" target=\"_blank\">Nikkei 225 and TOPIX: Already bottomed or further downside ahead? By Investing.com</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com UK</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "CNBC Daily Open: Takaichi's victory sends Japan's Nikkei 225 to new highs - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYmJ3c0NObEIybXFWSEFNUTRoVHhNSVRwbVVUVk9yWVJqUzNmejdveEY2UEJjdGltRU5RcGVUbW5pb2xPT3V5SW5STV9SNF9FYV9wcmxJV3Y0T1VnRG1lVEh0VVBaRnV3ZVRGbE9CS2tlcTVOelF3R1FNbmVwa0pXV1VnOEdzODQyLWt3Y0owQ2tKWS1rd25EYW9iTXdKWUNuVWxtY3diUWhBNEHSAbABQVVfeXFMTTFZcWNTOElJV0ZwWDNtOFplZ0dzRGw3Qks2RjhZUGlTTDI0NTYybjBYbXZaa0RIWEEwUmtaaGJlbE1CV1hRNi04ZGJteEJqdkt3VExSWWxDNWIzeGMtMllzMDVXa2ZkcnZpczNPSzN0R1NRS0gzTG16UEpKOFVQeTY1WFNWZDczNWtLamZDa1RTb0VqVGl2V0JjWDEzQjNNaERKUzIwemJ5S2tyTXdLOGU?oc=5",
-      "publisher": "CNBC",
-      "published": "Mon, 09 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNYmJ3c0NObEIybXFWSEFNUTRoVHhNSVRwbVVUVk9yWVJqUzNmejdveEY2UEJjdGltRU5RcGVUbW5pb2xPT3V5SW5STV9SNF9FYV9wcmxJV3Y0T1VnRG1lVEh0VVBaRnV3ZVRGbE9CS2tlcTVOelF3R1FNbmVwa0pXV1VnOEdzODQyLWt3Y0owQ2tKWS1rd25EYW9iTXdKWUNuVWxtY3diUWhBNEHSAbABQVVfeXFMTTFZcWNTOElJV0ZwWDNtOFplZ0dzRGw3Qks2RjhZUGlTTDI0NTYybjBYbXZaa0RIWEEwUmtaaGJlbE1CV1hRNi04ZGJteEJqdkt3VExSWWxDNWIzeGMtMllzMDVXa2ZkcnZpczNPSzN0R1NRS0gzTG16UEpKOFVQeTY1WFNWZDczNWtLamZDa1RTb0VqVGl2V0JjWDEzQjNNaERKUzIwemJ5S2tyTXdLOGU?oc=5\" target=\"_blank\">CNBC Daily Open: Takaichi's victory sends Japan's Nikkei 225 to new highs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asian markets today: Japan's Nikkei 225, South Korea's KOSPI, others plunge up to 6% as tension escalates in US-Iran war - Mint",
-      "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxNZkJrRDJNRjA4R1pHVjZRS2h4bkVyVWM2NElNWF9WQXRjaUxTdnE1M29ldjNoYjFoaG1heXdVYkV3NEdqM2JxVlIwNTRScUt2eHc5MVNRdjZJdFpRM1RNSkNKWW5NS1hxY0pSZWd5cmtkMVktUW9KOUIyR2hPUW9HNzRZZnZkTzhpa1hsWmFiSlJ6M2RZSkJyZ2NYeDRscS1EWTNCakhuMjhlYkJqUU5XbnYxbDI2Wlh2UGg5QWw2a1pienhpVzlkQWlFSXAxTEcxb21hQWZqQ0RPTlNSOHNveGtXS21YaDdkS3JOb3BjbVdXOWpkVDRXYk5tUDdJODZhQVk0eFdmOTRrYXhHX29QRjNn0gGXAkFVX3lxTFBlVGFZeHJWMmdveE5rNDNqNG9OU0FITXp6T19SR3pJYlNVcEZJNmxJN1N2V2VhdGtrTUJETzhXWVpSZU5ObXBlX2kxZFBMX29HY2F6TXIzQWFlM1BQcXFhRUNYM0RaSFA4QVJBakU4UVgzMlFSNlg2b201OHlTdnpSQnVWaHNqSjRkMVJKR3ZVNlNKbFYySXcwVk5HSjByNkJaV0xRSUFnX3pXZFZqS3JfVjJVcWRyYXREemphekE0UDlmdFN5RlhYUHBZai14ck42OXFYQzVqWHB0NVc5cUJCejJDVmZnUlBidGxZYTk4SU91eUlrNG4zTFRYb2hmaEowNWQtUlhFbE54N2hxMy02cV9GWm1Tdw?oc=5",
-      "publisher": "Mint",
-      "published": "Mon, 23 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgJBVV95cUxNZkJrRDJNRjA4R1pHVjZRS2h4bkVyVWM2NElNWF9WQXRjaUxTdnE1M29ldjNoYjFoaG1heXdVYkV3NEdqM2JxVlIwNTRScUt2eHc5MVNRdjZJdFpRM1RNSkNKWW5NS1hxY0pSZWd5cmtkMVktUW9KOUIyR2hPUW9HNzRZZnZkTzhpa1hsWmFiSlJ6M2RZSkJyZ2NYeDRscS1EWTNCakhuMjhlYkJqUU5XbnYxbDI2Wlh2UGg5QWw2a1pienhpVzlkQWlFSXAxTEcxb21hQWZqQ0RPTlNSOHNveGtXS21YaDdkS3JOb3BjbVdXOWpkVDRXYk5tUDdJODZhQVk0eFdmOTRrYXhHX29QRjNn0gGXAkFVX3lxTFBlVGFZeHJWMmdveE5rNDNqNG9OU0FITXp6T19SR3pJYlNVcEZJNmxJN1N2V2VhdGtrTUJETzhXWVpSZU5ObXBlX2kxZFBMX29HY2F6TXIzQWFlM1BQcXFhRUNYM0RaSFA4QVJBakU4UVgzMlFSNlg2b201OHlTdnpSQnVWaHNqSjRkMVJKR3ZVNlNKbFYySXcwVk5HSjByNkJaV0xRSUFnX3pXZFZqS3JfVjJVcWRyYXREemphekE0UDlmdFN5RlhYUHBZai14ck42OXFYQzVqWHB0NVc5cUJCejJDVmZnUlBidGxZYTk4SU91eUlrNG4zTFRYb2hmaEowNWQtUlhFbE54N2hxMy02cV9GWm1Tdw?oc=5\" target=\"_blank\">Asian markets today: Japan's Nikkei 225, South Korea's KOSPI, others plunge up to 6% as tension escalates in US-Iran war</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mint</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Asian markets today: Kospi falls 4%, Nikkei 225 down 2.2% on US-Iran war escalation - MSN",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcmM0Z3Etdjd6UDNKX29CYVluT2s4T2JGUjhVRDdiY3VubkVtc3paeXVqd2pZdzBKUnJXOHBLaV9sSGtnTmhvdkxaa3FsS2pPQ2syMlh0aW1VUnREakxVZVI3R2ppaE00cDBNU2V1b3VoTHROR0h0VVdNWVNOM0tCcHFiQWFfSjNqdVhrLVExUEd4X2tlRjJtamE0ejc3aGVrYnVSTHBZVkVVbnNfVXdvMC1RamFnOFp5ZFI2SDFsOHY1U2VGYXU3aThlVQ?oc=5",
+      "title": "Asian stocks mostly higher and oil gains ahead of planned US.-Iran ceasefire talks - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPR0tzLUh4QS1FdTY3OHk2d0RwRzAtZXNVdmRRNlJTX0RuN2daMEVrQTQzUmhfS3VFeFpET05lYmNZLUg1MmVxRE51YlNsUzRheUlWeHdDTHBXSkt5SWkzWm14U2VodjUzSUhNaEQtTEZBY01qc3ZYZmNKUk1QbG11TEpWNUgzQUdnak5rRVhHeUhpemR6ZEduMjRlSTBZOUVPS2ZUWGVndVNhNFdjUmN3bjVtQ2k5TUZnaXo1OHc2MnBGVFNHRjB6N2JRNA?oc=5",
       "publisher": "MSN",
-      "published": "Tue, 31 Mar 2026 06:38:32 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxNcmM0Z3Etdjd6UDNKX29CYVluT2s4T2JGUjhVRDdiY3VubkVtc3paeXVqd2pZdzBKUnJXOHBLaV9sSGtnTmhvdkxaa3FsS2pPQ2syMlh0aW1VUnREakxVZVI3R2ppaE00cDBNU2V1b3VoTHROR0h0VVdNWVNOM0tCcHFiQWFfSjNqdVhrLVExUEd4X2tlRjJtamE0ejc3aGVrYnVSTHBZVkVVbnNfVXdvMC1RamFnOFp5ZFI2SDFsOHY1U2VGYXU3aThlVQ?oc=5\" target=\"_blank\">Asian markets today: Kospi falls 4%, Nikkei 225 down 2.2% on US-Iran war escalation</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "published": "Sun, 12 Apr 2026 08:27:52 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxPR0tzLUh4QS1FdTY3OHk2d0RwRzAtZXNVdmRRNlJTX0RuN2daMEVrQTQzUmhfS3VFeFpET05lYmNZLUg1MmVxRE51YlNsUzRheUlWeHdDTHBXSkt5SWkzWm14U2VodjUzSUhNaEQtTEZBY01qc3ZYZmNKUk1QbG11TEpWNUgzQUdnak5rRVhHeUhpemR6ZEduMjRlSTBZOUVPS2ZUWGVndVNhNFdjUmN3bjVtQ2k5TUZnaXo1OHc2MnBGVFNHRjB6N2JRNA?oc=5\" target=\"_blank\">Asian stocks mostly higher and oil gains ahead of planned US.-Iran ceasefire talks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1049,11 +65,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Japan stocks extend post-election rally with Nikkei 225 breaching 58,000 for the first time - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNWjF3OXlBMV92VU9INWFqSHBtV0VJdkZyUlk2dkQ0YlQ2aHVwSzY5U3V1UHhSSmdkRDBKY0kya2xLOVZCSFBGMVVyOS1Cak52Mk1DX0ZxYlJEMTZ1dGRsQUlKZlpSbXFVQTFvdGdtUDFwWnN6M2lKNUdLa0JpRXZ4TzZuREF2anFvYlE2MEx5V1V1Vngw0gGaAUFVX3lxTE9LQ29qUzNiRFhxMjdyZlY0X1Z0SWFIMGFGWDA5OTUwLXo3cG91b0Y3TFdmOF8tMG1jQjlQR0twMmZXSkFKVGE2SmwwQTlpckY2dGdTNmhRVlNfYmF5RzJhS2lJTnVBa2MtNHd1M2pvQkZJc1VYaWFyTUY4M2lYVVp4NE5PUXhxMmpoRHRIb182VnB6ZGRQUllHVnc?oc=5",
-      "publisher": "CNBC",
-      "published": "Wed, 11 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxNWjF3OXlBMV92VU9INWFqSHBtV0VJdkZyUlk2dkQ0YlQ2aHVwSzY5U3V1UHhSSmdkRDBKY0kya2xLOVZCSFBGMVVyOS1Cak52Mk1DX0ZxYlJEMTZ1dGRsQUlKZlpSbXFVQTFvdGdtUDFwWnN6M2lKNUdLa0JpRXZ4TzZuREF2anFvYlE2MEx5V1V1Vngw0gGaAUFVX3lxTE9LQ29qUzNiRFhxMjdyZlY0X1Z0SWFIMGFGWDA5OTUwLXo3cG91b0Y3TFdmOF8tMG1jQjlQR0twMmZXSkFKVGE2SmwwQTlpckY2dGdTNmhRVlNfYmF5RzJhS2lJTnVBa2MtNHd1M2pvQkZJc1VYaWFyTUY4M2lYVVp4NE5PUXhxMmpoRHRIb182VnB6ZGRQUllHVnc?oc=5\" target=\"_blank\">Japan stocks extend post-election rally with Nikkei 225 breaching 58,000 for the first time</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
+      "title": "Why Are Japanese Retail Investors Rapidly Selling? Understanding the Psychological Factors Driving Unprecedented Withdrawals - Bitget",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UYzZCNHExcU9jNXA0STNyckotMWU5SEtNaVlndENqWGpFODYyOHNvU2h5RlRJSzlVOFkza2ZRTW40S2Z3a2MtVW83V2pGMVE0UVZKd3JBa0stbFdHTDF4NHM3WdIBY0FVX3lxTE5UYzZCNHExcU9jNXA0STNyckotMWU5SEtNaVlndENqWGpFODYyOHNvU2h5RlRJSzlVOFkza2ZRTW40S2Z3a2MtVW83V2pGMVE0UVZKd3JBa0stbFdHTDF4NHM3WQ?oc=5",
+      "publisher": "Bitget",
+      "published": "Sat, 11 Apr 2026 21:01:11 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UYzZCNHExcU9jNXA0STNyckotMWU5SEtNaVlndENqWGpFODYyOHNvU2h5RlRJSzlVOFkza2ZRTW40S2Z3a2MtVW83V2pGMVE0UVZKd3JBa0stbFdHTDF4NHM3WdIBY0FVX3lxTE5UYzZCNHExcU9jNXA0STNyckotMWU5SEtNaVlndENqWGpFODYyOHNvU2h5RlRJSzlVOFkza2ZRTW40S2Z3a2MtVW83V2pGMVE0UVZKd3JBa0stbFdHTDF4NHM3WQ?oc=5\" target=\"_blank\">Why Are Japanese Retail Investors Rapidly Selling? Understanding the Psychological Factors Driving Unprecedented Withdrawals</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bitget</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1061,11 +77,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Japan shares lower at close of trade; Nikkei 225 down 3.68% - in.investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORVltZ0Z5eGJvNnRRaExmNnBLSXVZMjFiaU5rN3ZKaFFHTHBhZWtZZWVmbWpoYmxjTzhTOVhhUVV1d3k5bVdKdnVjU1VKMmVIX1VBSXdOVXV0TVVTTmN1aWh4cm5MMHJBTVNGSllRRF9oeGlBSEV3bnozUHpjcHN6ckFWY0Mzd1VwOV83VS02LV94b3pMMExtVURwUWUxSndETFc4QnJ5VTMtQm01dko2T013?oc=5",
-      "publisher": "in.investing.com",
-      "published": "Mon, 23 Mar 2026 07:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxORVltZ0Z5eGJvNnRRaExmNnBLSXVZMjFiaU5rN3ZKaFFHTHBhZWtZZWVmbWpoYmxjTzhTOVhhUVV1d3k5bVdKdnVjU1VKMmVIX1VBSXdOVXV0TVVTTmN1aWh4cm5MMHJBTVNGSllRRF9oeGlBSEV3bnozUHpjcHN6ckFWY0Mzd1VwOV83VS02LV94b3pMMExtVURwUWUxSndETFc4QnJ5VTMtQm01dko2T013?oc=5\" target=\"_blank\">Japan shares lower at close of trade; Nikkei 225 down 3.68%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">in.investing.com</font>",
+      "title": "Tsugami Corp. Hits Day High with 9.51% Surge, Outperforming Nikkei 225 - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdjF5cVQ3M0FicmdlbzVGLUdUYUxUSjBqUS1KUWR1a1ZKZjY4dVJqTmRpVEFpWlc3QmZtTHM3TDJJdllieENnLXdrWEZOaW1QbGFkY3dpekZCcjlaN3NFYWdGWmM2blRVTElyeXpmWHdyVERaWU9NRng1Q18wZFhwQkRZZllLclZmSGF1aGItd1l6a01LYUppaTdlZlpZYzAyUnlndVlQZFRfMk1QNUdvNWFxeGtZcV9BQXJfMTNGYVVOZw?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 00:34:22 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdjF5cVQ3M0FicmdlbzVGLUdUYUxUSjBqUS1KUWR1a1ZKZjY4dVJqTmRpVEFpWlc3QmZtTHM3TDJJdllieENnLXdrWEZOaW1QbGFkY3dpekZCcjlaN3NFYWdGWmM2blRVTElyeXpmWHdyVERaWU9NRng1Q18wZFhwQkRZZllLclZmSGF1aGItd1l6a01LYUppaTdlZlpZYzAyUnlndVlQZFRfMk1QNUdvNWFxeGtZcV9BQXJfMTNGYVVOZw?oc=5\" target=\"_blank\">Tsugami Corp. Hits Day High with 9.51% Surge, Outperforming Nikkei 225</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1073,11 +89,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Japan's Nikkei 225 jumps over 3% as expectations that ruling party will opt for a snap vote rise - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVnRteE9LMHlla2pkbjlzR2lPUFh1Yl81a3RXeldLeFdBNGxYSTVsTk1NWFZEZ2FvMHoyV1lfWUJsNHRWQWI5eGRYWWh3SU9paWE0R3FJbmFxZnZNb2gydGhHWUY3NHBPdVRyVEsxb2VCVnBDNUc0Qkg0VDVLd1pFb0tQVHRJMUJpS1pWNlNVVTRQdTBNTVZnY0NzalNWQ2dpeE5nRdIBqgFBVV95cUxONFpING9LNEVlaFkzcEtvY0s2dDNKcEt1cmxkOFpuX3owaTRTTVVPZXpTNWNhUmVhakdVQUlGam9JWG5nbkNMWVhnWjdfdEJKR3JUTXZHcURkbmRmOVZoYTF4SlZhVWRWOVBBMWtyN1Ftc3A0cEVXeHlISTU0c19yRDBVT3RzeGJOZE02bUZHWjEzZldRQ2xBWGlfNU1uREdoRnFIOXZKVkpOZw?oc=5",
-      "publisher": "CNBC",
-      "published": "Mon, 12 Jan 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxPVnRteE9LMHlla2pkbjlzR2lPUFh1Yl81a3RXeldLeFdBNGxYSTVsTk1NWFZEZ2FvMHoyV1lfWUJsNHRWQWI5eGRYWWh3SU9paWE0R3FJbmFxZnZNb2gydGhHWUY3NHBPdVRyVEsxb2VCVnBDNUc0Qkg0VDVLd1pFb0tQVHRJMUJpS1pWNlNVVTRQdTBNTVZnY0NzalNWQ2dpeE5nRdIBqgFBVV95cUxONFpING9LNEVlaFkzcEtvY0s2dDNKcEt1cmxkOFpuX3owaTRTTVVPZXpTNWNhUmVhakdVQUlGam9JWG5nbkNMWVhnWjdfdEJKR3JUTXZHcURkbmRmOVZoYTF4SlZhVWRWOVBBMWtyN1Ftc3A0cEVXeHlISTU0c19yRDBVT3RzeGJOZE02bUZHWjEzZldRQ2xBWGlfNU1uREdoRnFIOXZKVkpOZw?oc=5\" target=\"_blank\">Japan's Nikkei 225 jumps over 3% as expectations that ruling party will opt for a snap vote rise</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
+      "title": "Nikkei Posts Best Weekly Performance Since 2024 - صحيفة مال",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAxZk5CV3R2c1JJR2x1WlhYRU1WbTJNb1F6Ymxzb3FkYXYwZmxZb3VIUU80U3RncENVMEJ4Sks4NTkybHBxYy1BT2dXcExGbEFRVXVlVXlIZFh6R0ZPdFlvaGF2M1EyRFNXcnR3?oc=5",
+      "publisher": "صحيفة مال",
+      "published": "Sun, 12 Apr 2026 06:58:28 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTFAxZk5CV3R2c1JJR2x1WlhYRU1WbTJNb1F6Ymxzb3FkYXYwZmxZb3VIUU80U3RncENVMEJ4Sks4NTkybHBxYy1BT2dXcExGbEFRVXVlVXlIZFh6R0ZPdFlvaGF2M1EyRFNXcnR3?oc=5\" target=\"_blank\">Nikkei Posts Best Weekly Performance Since 2024</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">صحيفة مال</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1085,11 +101,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Japan: Nikkei 225 highs each year 2025 - Statista",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNV2JRY2pIaHgxUDFUeEZLYkt2Z2RUSmJLWWZ4TFdNTlhQMlNRaGFxdWtuSDlnV1F0UTNqcGIwZW9yeDMyMlJlb2gwaVZzdEliUTRIR1RuWHI1UW9DNG5vTGQxNHBITVNuRWVsUXE0cTVLUU9LaXpZMmhwNW1BclZfODlJMXpGNEZp?oc=5",
-      "publisher": "Statista",
-      "published": "Tue, 03 Mar 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxNV2JRY2pIaHgxUDFUeEZLYkt2Z2RUSmJLWWZ4TFdNTlhQMlNRaGFxdWtuSDlnV1F0UTNqcGIwZW9yeDMyMlJlb2gwaVZzdEliUTRIR1RuWHI1UW9DNG5vTGQxNHBITVNuRWVsUXE0cTVLUU9LaXpZMmhwNW1BclZfODlJMXpGNEZp?oc=5\" target=\"_blank\">Japan: Nikkei 225 highs each year 2025</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Statista</font>",
+      "title": "New Government Report Proves Canadians Are Struggling & Wrote It So Nobody Would Notice Nikkei 225 (43doemqETw) - Mshale",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFByR1hlTEc2d0NsTWtES1RlbEtVRDVkYTctQWprZTU3TFhjZWNrOEgwcm90NFVTUUhVWEdkZlRFcy1jb1I1c0otMWhYYVhnZVNPOGlxUEFkUWUwdEd5NDFJaFdfRQ?oc=5",
+      "publisher": "Mshale",
+      "published": "Sat, 11 Apr 2026 20:42:35 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFByR1hlTEc2d0NsTWtES1RlbEtVRDVkYTctQWprZTU3TFhjZWNrOEgwcm90NFVTUUhVWEdkZlRFcy1jb1I1c0otMWhYYVhnZVNPOGlxUEFkUWUwdEd5NDFJaFdfRQ?oc=5\" target=\"_blank\">New Government Report Proves Canadians Are Struggling & Wrote It So Nobody Would Notice Nikkei 225 (43doemqETw)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mshale</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1097,11 +113,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Nikkei index ends at record high - Japan Today",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZFpTSnFaUVhUaHExcEppSFFtMjJrYm9IMVJHeFF0M25pdEo1MUhvMU9NNXZVOTVvc0w2dkFTLWZDMDl1UlNCZEg1X0R6ZmZLV2J1Y3VwZ0ZYS0Z4XzhpWEEtdm4tdHVqZUVfanV5V0hzWjlKS1ViV1dFUmVYVkE5TndNX3B1R1N3aC1yZnNqcXlKbXhrNjU1MGFSMWg3ejBSaW5IVVVEVG1OVUFEWi1vdlZRdzQ?oc=5",
-      "publisher": "Japan Today",
-      "published": "Wed, 25 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxPZFpTSnFaUVhUaHExcEppSFFtMjJrYm9IMVJHeFF0M25pdEo1MUhvMU9NNXZVOTVvc0w2dkFTLWZDMDl1UlNCZEg1X0R6ZmZLV2J1Y3VwZ0ZYS0Z4XzhpWEEtdm4tdHVqZUVfanV5V0hzWjlKS1ViV1dFUmVYVkE5TndNX3B1R1N3aC1yZnNqcXlKbXhrNjU1MGFSMWg3ejBSaW5IVVVEVG1OVUFEWi1vdlZRdzQ?oc=5\" target=\"_blank\">Nikkei index ends at record high</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Japan Today</font>",
+      "title": "Nikkei 225 Soars 5.39% as Advantest Corp. Leads with 13.6% Surge! - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQckxweVp6XzVXb2FYWkhJNFA1eU1QeXFmWVl6ZkRCM1VDT2dsUm1rWnpoZWxHOUlySThKbmpoNEtqcUlNRUF5LTNUU3phaWgwOGttRkFwbG9jdE9BSlVlUFNkVU96N1F5di0zT2NBUW1oa25hcFM2aW5YRlNaNmk2bXdHbDRpNG1uOGFXN3VPdktoUzVsYVpYVHVZSFQ1WWpjcmZhTGtwdTV6cEExT0NvTEh1RHh2SVk5c3c?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 20:57:58 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQckxweVp6XzVXb2FYWkhJNFA1eU1QeXFmWVl6ZkRCM1VDT2dsUm1rWnpoZWxHOUlySThKbmpoNEtqcUlNRUF5LTNUU3phaWgwOGttRkFwbG9jdE9BSlVlUFNkVU96N1F5di0zT2NBUW1oa25hcFM2aW5YRlNaNmk2bXdHbDRpNG1uOGFXN3VPdktoUzVsYVpYVHVZSFQ1WWpjcmZhTGtwdTV6cEExT0NvTEh1RHh2SVk5c3c?oc=5\" target=\"_blank\">Nikkei 225 Soars 5.39% as Advantest Corp. Leads with 13.6% Surge!</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1109,11 +125,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Tokyo benchmark Nikkei 225 jumps after PM Takaichi's ruling party wins a super majority in election - NY1",
-      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNX1haajB0N21KX3F2cFZrcHl0V0w0Rjh0VERnZ0J2dXMxMUdUcW1oRnZocGthQ0xVUFRvTU96X0I1d05hcEpqME9ENDhZMXktejdBZ3hYSVJMS3dHbUxMZ2UyQTVwelIzWHlOejJkdEZVcEJla1NiMU9wN205TjIyWlJBMzM3R0tZQ1NOSm9PR2dWRnlrZDhRZkVwTEpsQndRRU9wZlhjSjl6ZUc2MnRqUEJ0YWM1UGZ3RXctZXdobTlPZ3dURXFBVHVwdWsxVzdhQ0VpbUxYZnZaUlF5c3d2Tl9pOW9FOEl2OUE?oc=5",
-      "publisher": "NY1",
-      "published": "Sun, 08 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6gFBVV95cUxNX1haajB0N21KX3F2cFZrcHl0V0w0Rjh0VERnZ0J2dXMxMUdUcW1oRnZocGthQ0xVUFRvTU96X0I1d05hcEpqME9ENDhZMXktejdBZ3hYSVJMS3dHbUxMZ2UyQTVwelIzWHlOejJkdEZVcEJla1NiMU9wN205TjIyWlJBMzM3R0tZQ1NOSm9PR2dWRnlrZDhRZkVwTEpsQndRRU9wZlhjSjl6ZUc2MnRqUEJ0YWM1UGZ3RXctZXdobTlPZ3dURXFBVHVwdWsxVzdhQ0VpbUxYZnZaUlF5c3d2Tl9pOW9FOEl2OUE?oc=5\" target=\"_blank\">Tokyo benchmark Nikkei 225 jumps after PM Takaichi's ruling party wins a super majority in election</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">NY1</font>",
+      "title": "Nissei ASB Machine Co. Achieves 101% Return, Establishing It as a Multibagger Stock - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQWDVza0FJR1JHdUh0NUlpMmxEbHhTTU1vR3dKS2FRV2dLaENSQlBoUkM0RUVrZjUyeVc1U3dEWXJBQUlyRjd0UUlRb1J1cm5IQl80dUNkTDhqOWRGZ0M4Q0xIMlgtd0ZiM0pTZ3p0TjgtQkpqOXBtdk44aENZcmZQWUV6TE00bUphZ1BQNHRZQlhTb1RqeTVKSGNXcDkxQUkyalkwWVlpTHdjWjllWVhPRDN0c19XV2tteWxXN096NFN5Yk1xcE40RWY1a2xTSlZhUkNndQ?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 07:31:09 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxQWDVza0FJR1JHdUh0NUlpMmxEbHhTTU1vR3dKS2FRV2dLaENSQlBoUkM0RUVrZjUyeVc1U3dEWXJBQUlyRjd0UUlRb1J1cm5IQl80dUNkTDhqOWRGZ0M4Q0xIMlgtd0ZiM0pTZ3p0TjgtQkpqOXBtdk44aENZcmZQWUV6TE00bUphZ1BQNHRZQlhTb1RqeTVKSGNXcDkxQUkyalkwWVlpTHdjWjllWVhPRDN0c19XV2tteWxXN096NFN5Yk1xcE40RWY1a2xTSlZhUkNndQ?oc=5\" target=\"_blank\">Nissei ASB Machine Co. Achieves 101% Return, Establishing It as a Multibagger Stock</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1121,11 +137,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Nikkei 225 Futures Trading Data: January 23, 2026 Session Review - News and Statistics - IndexBox",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZGtxQXlXNWF4UzNQT1gtQ2tOQWMxVkM0bm5ZRVlOTFFMVlhMREtvQ0hfWGpNMUFBU0ZnTzF5Q3dPZkFqV0JqSWdtLUx0X25xMFE2ZVVuQmdFX1RaSWNCY1F2WVZXYTFTT1JXRkwtRTdBRkx0eElxd2cxUXZtdU1YczM3dEJjWm5tdS1yanNhWFE?oc=5",
-      "publisher": "IndexBox",
-      "published": "Sat, 24 Jan 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxNZGtxQXlXNWF4UzNQT1gtQ2tOQWMxVkM0bm5ZRVlOTFFMVlhMREtvQ0hfWGpNMUFBU0ZnTzF5Q3dPZkFqV0JqSWdtLUx0X25xMFE2ZVVuQmdFX1RaSWNCY1F2WVZXYTFTT1JXRkwtRTdBRkx0eElxd2cxUXZtdU1YczM3dEJjWm5tdS1yanNhWFE?oc=5\" target=\"_blank\">Nikkei 225 Futures Trading Data: January 23, 2026 Session Review - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "title": "Asahi Kasei Corp. Hits Day High with 6.8% Surge in Stock Price - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRC12NkZOSWUtQVplTVBOV1BvWTdzWHNaT2l6ZnRvaUNQNERUM3pUUVVDNndnOGNJQmFwc0JlckV6TWVPa0ZYYkFKNTlyMTVURDZKV0lCM3NYeldFaTJoQ01XYWhXSTdaMVRhZVdFVlJGNzI5bUJnV1Y5NzVuQUk4SWZ1NXJYNUV2eEdDR0ZQcHpTcUtjdjd4c3U1WWJkNnZaNnExdlVKbFhDVXZNU0RMRkpvd04zNkJz?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 07:31:09 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRC12NkZOSWUtQVplTVBOV1BvWTdzWHNaT2l6ZnRvaUNQNERUM3pUUVVDNndnOGNJQmFwc0JlckV6TWVPa0ZYYkFKNTlyMTVURDZKV0lCM3NYeldFaTJoQ01XYWhXSTdaMVRhZVdFVlJGNzI5bUJnV1Y5NzVuQUk4SWZ1NXJYNUV2eEdDR0ZQcHpTcUtjdjd4c3U1WWJkNnZaNnExdlVKbFhDVXZNU0RMRkpvd04zNkJz?oc=5\" target=\"_blank\">Asahi Kasei Corp. Hits Day High with 6.8% Surge in Stock Price</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1133,11 +149,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Japan's Nikkei 225 crosses 59,000 first the first time as central bank board picks fuel 'Takaichi trade' - CNBC",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQU0ttV0xEcWNTOVNvQVJKdW43UWFrQnNtbTlCZDJJMXJSZHFQbmFqZEJtN3ljdGJveWZVVVpmcWd3QlVnZlcwTGVqYVdOMko2Nnd5Nm1zenREU2RzQUxCRXZWNzR0TzNaRS1laWJvM2NfaWtaSWFPY1doVU1iMUR6d0E1QlNsRTc0dlVvUmRoc1VRWkdCTElQVEY0RFpzUdIBowFBVV95cUxQeVlPQkFEYWIycTAyZHEtbFdxbGo1dHJ3OEd1NG5PZUtMWUNlUlYxQXVIOUJpX2EyMkZ5UVptMVBYa0lDSVZ1RVZMVDdYYVlaakVEZmdVUzNRWmEtRmYxdnVmX2MtQWJ5NHpuVlZKeUxGbktFRy1Hd1phc01ua21EYjU0aXo5cGtGU1h3Tm43NS1UNW5vaWg3RkpBMVRtdF91Ulkw?oc=5",
-      "publisher": "CNBC",
-      "published": "Wed, 25 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxQU0ttV0xEcWNTOVNvQVJKdW43UWFrQnNtbTlCZDJJMXJSZHFQbmFqZEJtN3ljdGJveWZVVVpmcWd3QlVnZlcwTGVqYVdOMko2Nnd5Nm1zenREU2RzQUxCRXZWNzR0TzNaRS1laWJvM2NfaWtaSWFPY1doVU1iMUR6d0E1QlNsRTc0dlVvUmRoc1VRWkdCTElQVEY0RFpzUdIBowFBVV95cUxQeVlPQkFEYWIycTAyZHEtbFdxbGo1dHJ3OEd1NG5PZUtMWUNlUlYxQXVIOUJpX2EyMkZ5UVptMVBYa0lDSVZ1RVZMVDdYYVlaakVEZmdVUzNRWmEtRmYxdnVmX2MtQWJ5NHpuVlZKeUxGbktFRy1Hd1phc01ua21EYjU0aXo5cGtGU1h3Tm43NS1UNW5vaWg3RkpBMVRtdF91Ulkw?oc=5\" target=\"_blank\">Japan's Nikkei 225 crosses 59,000 first the first time as central bank board picks fuel 'Takaichi trade'</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">CNBC</font>",
+      "title": "TOKYO OHKA KOGYO Hits Day High with 12.59% Surge in Stock Price - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ2NPd3l4NVl5ZTUwMkprdE9hRm5uQTRoR2tFb0xrZ2lIUTZaRkVvbTQwVGtKUENuX2NUSms0XzV0SGtaRXlvY2NKLWlXMF9nUEE1YXI4bHNDWW15S1BoU0pCRnpER1g3aFljOTlTVEo3WmhkUkNGdGhKR3FYUVpuU052MldJaEFYdDBiVFFObWg2MkhxRmVtRUQ1REVjbWlpWXBiS1RRQ243cGdybGRhNWlhNmRjcVd3azNR?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 01:28:51 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZ2NPd3l4NVl5ZTUwMkprdE9hRm5uQTRoR2tFb0xrZ2lIUTZaRkVvbTQwVGtKUENuX2NUSms0XzV0SGtaRXlvY2NKLWlXMF9nUEE1YXI4bHNDWW15S1BoU0pCRnpER1g3aFljOTlTVEo3WmhkUkNGdGhKR3FYUVpuU052MldJaEFYdDBiVFFObWg2MkhxRmVtRUQ1REVjbWlpWXBiS1RRQ243cGdybGRhNWlhNmRjcVd3azNR?oc=5\" target=\"_blank\">TOKYO OHKA KOGYO Hits Day High with 12.59% Surge in Stock Price</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1145,11 +161,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Nikkei 225 Forecast: Bullish acceleration above 53,370 key support - marketpulse.com",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdC1GWVRJaEtTTDFnVUpsMWVTUW9ZaGxLMmZ6YWxwYkNVcXlxNFI1NlJGX1BUNnNueU1lWFpSd2ZpczU2N1RROTk3Z25uTk80bXZTZURTa3NPd1dXNEh4VHpoOGRRWXZqNFNnNDA0bnVNSzh0aDNnc3B0TGlaX29SN05ZN1JKcFl1eURiM0M4YlRkSzBYblo5TEVhM2NVWkV4MEU4?oc=5",
-      "publisher": "marketpulse.com",
-      "published": "Thu, 15 Jan 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxPdC1GWVRJaEtTTDFnVUpsMWVTUW9ZaGxLMmZ6YWxwYkNVcXlxNFI1NlJGX1BUNnNueU1lWFpSd2ZpczU2N1RROTk3Z25uTk80bXZTZURTa3NPd1dXNEh4VHpoOGRRWXZqNFNnNDA0bnVNSzh0aDNnc3B0TGlaX29SN05ZN1JKcFl1eURiM0M4YlRkSzBYblo5TEVhM2NVWkV4MEU4?oc=5\" target=\"_blank\">Nikkei 225 Forecast: Bullish acceleration above 53,370 key support</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">marketpulse.com</font>",
+      "title": "Kawasaki Heavy Industries Hits Day High with 9.35% Surge in Stock Price - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFlocHh4OUhWNUJXbWllMFU4Sk16c0Fqc2lGaDZfVzJUb2ZQNURIRlFtd2IxUHZsMWstT2x1aDNkOUp0Mk1BVVZ3WnI1RjJpaWo2UGhERm85RHpYcGpfNXVJOG55RGZqY3NtTTRQczhOR0NNZy1oVmtubVlTMDY1NEhKOC14RHlGb0RBVV9tZ05ydjNycmo2TU5yMERsLW1iNkU3WGVmUVA0UDl2dEpMSFNIWWVTMERrNWdWTkc3WjhDNnlwQ0E?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 07:25:53 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOWFlocHh4OUhWNUJXbWllMFU4Sk16c0Fqc2lGaDZfVzJUb2ZQNURIRlFtd2IxUHZsMWstT2x1aDNkOUp0Mk1BVVZ3WnI1RjJpaWo2UGhERm85RHpYcGpfNXVJOG55RGZqY3NtTTRQczhOR0NNZy1oVmtubVlTMDY1NEhKOC14RHlGb0RBVV9tZ05ydjNycmo2TU5yMERsLW1iNkU3WGVmUVA0UDl2dEpMSFNIWWVTMERrNWdWTkc3WjhDNnlwQ0E?oc=5\" target=\"_blank\">Kawasaki Heavy Industries Hits Day High with 9.35% Surge in Stock Price</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1157,11 +173,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Nikkei 225 index forecasts revised upward after LDP’s big win - The Japan Times",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNVpUNVNKNFdybEZkaUlNTVNhclFZcFdURXNRNi1WUDVWTm5QR3p0UlpiUUFRZmNERVlTak43M0lmQ092NnVXS3ZLT1JSdnJPWDR2c19uYXRPZ2ZuMzJHeGk5MmJnWVowbV8tS1dJRHk4R3l0MVJVV3JWREpjZEN1Ml9Rekdjdw?oc=5",
-      "publisher": "The Japan Times",
-      "published": "Thu, 26 Feb 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihgFBVV95cUxQNVpUNVNKNFdybEZkaUlNTVNhclFZcFdURXNRNi1WUDVWTm5QR3p0UlpiUUFRZmNERVlTak43M0lmQ092NnVXS3ZLT1JSdnJPWDR2c19uYXRPZ2ZuMzJHeGk5MmJnWVowbV8tS1dJRHk4R3l0MVJVV3JWREpjZEN1Ml9Rekdjdw?oc=5\" target=\"_blank\">Nikkei 225 index forecasts revised upward after LDP’s big win</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Japan Times</font>",
+      "title": "Furukawa Electric Emerges as Multibagger with 905.62% Return Over Past Year - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNjB5Z090dmdBQ2ZRYUxRdnZFRkcwN0NLVWMwUDUxeUE4enN1YTktS1BKazAybXBYSEphaWx5UkwtUDNZU1Vfc2tJdzlFWU5EeWdiaVB2YUlNajhBdXlQd0xySloweGVsTzhNWHhNVXgzUGhYT3FGdmU1VVRDc3M0bHJVQkdtUWdFdWQybmhRUlpQVURPUk5MMTV1Ymw0YjVDbzlyczNOd09ibnNoVHVDZEhrYXo4SUcyVWxMVWNBSHUzX1Rtc0E1ai04aw?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 06:31:32 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxNNjB5Z090dmdBQ2ZRYUxRdnZFRkcwN0NLVWMwUDUxeUE4enN1YTktS1BKazAybXBYSEphaWx5UkwtUDNZU1Vfc2tJdzlFWU5EeWdiaVB2YUlNajhBdXlQd0xySloweGVsTzhNWHhNVXgzUGhYT3FGdmU1VVRDc3M0bHJVQkdtUWdFdWQybmhRUlpQVURPUk5MMTV1Ymw0YjVDbzlyczNOd09ibnNoVHVDZEhrYXo4SUcyVWxMVWNBSHUzX1Rtc0E1ai04aw?oc=5\" target=\"_blank\">Furukawa Electric Emerges as Multibagger with 905.62% Return Over Past Year</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1169,11 +185,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Nikkei index ends up nearly 3% at 2-month high on 1st trading day of 2026 - Japan Wire by Kyodo News",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBmV01XaEhjVmZzU3piYVp5bjdySmdqSU1BN2MzazV6VTBmc0JTc1ljMWFUZTlzVmlubUlpU291dF9sQ2hiYnctbDFiRmVaY3g0ckg4VVRCTTdiQQ?oc=5",
-      "publisher": "Japan Wire by Kyodo News",
-      "published": "Mon, 05 Jan 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWkFVX3lxTFBmV01XaEhjVmZzU3piYVp5bjdySmdqSU1BN2MzazV6VTBmc0JTc1ljMWFUZTlzVmlubUlpU291dF9sQ2hiYnctbDFiRmVaY3g0ckg4VVRCTTdiQQ?oc=5\" target=\"_blank\">Nikkei index ends up nearly 3% at 2-month high on 1st trading day of 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Japan Wire by Kyodo News</font>",
+      "title": "HPC Systems Stock Hits Day Low Amid Price Pressure, Now at JPY 2,626.00 - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQS2dtTUxRamRpTmpNVFNZOUVQWDVtR2dkcmlfajlVRlVVWVBrMlVXT2s1NWZjX3VCVXRCa2hCTWVFdldQX0FNcEt2VVp1bHpjQ1d3Y2RjWUhSU2dyOExIMmtScFNGRUQ0Qy1pclNzcFVvVzZiaW9rS3FNMUI5SWxYbllGTWNjTFIybWtoU2k5amNhWTFIaXRIdW9odkdYSmI3UWlIdm9NTmQ1Ql93cllaYUYxSlAwa1FDQ19JY0Z5ek9CWU1U?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 01:29:39 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxQS2dtTUxRamRpTmpNVFNZOUVQWDVtR2dkcmlfajlVRlVVWVBrMlVXT2s1NWZjX3VCVXRCa2hCTWVFdldQX0FNcEt2VVp1bHpjQ1d3Y2RjWUhSU2dyOExIMmtScFNGRUQ0Qy1pclNzcFVvVzZiaW9rS3FNMUI5SWxYbllGTWNjTFIybWtoU2k5amNhWTFIaXRIdW9odkdYSmI3UWlIdm9NTmQ1Ql93cllaYUYxSlAwa1FDQ19JY0Z5ek9CWU1U?oc=5\" target=\"_blank\">HPC Systems Stock Hits Day Low Amid Price Pressure, Now at JPY 2,626.00</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1181,11 +197,11 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Nikkei 225 Index Price - Japan 225 | FOREX.com Europe - FOREX.com",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9KSDc1Q3dLWDd4ajRDNG9pMlJjLUxOckdPUGxvQ3lDZ2w4YWhBVWlXTEppbVBVUWs0c2pMNGJMekhjTDdvNm85STZFVE9SLUJGVnJMRXZ4N2xhcXFiLVE?oc=5",
-      "publisher": "FOREX.com",
-      "published": "Wed, 04 Mar 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiXkFVX3lxTE9KSDc1Q3dLWDd4ajRDNG9pMlJjLUxOckdPUGxvQ3lDZ2w4YWhBVWlXTEppbVBVUWs0c2pMNGJMekhjTDdvNm85STZFVE9SLUJGVnJMRXZ4N2xhcXFiLVE?oc=5\" target=\"_blank\">Nikkei 225 Index Price - Japan 225 | FOREX.com Europe</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FOREX.com</font>",
+      "title": "Furuya Metal Soars to Day High with 11.47% Intraday Surge - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNmhTMld0RVlYR3B0Nlh1NHlmQkxhaWtHQXNOTlVMcDVVRVJmbXFkRFJYeWlRcF9RaGR4RkNzTlF2NHZDdVA1bHA4TGtXWnZMd0U5VTAtdWJkWE1UUHRMUzFfbWo3WkNNandfZ1JxZEt5YlprN29Wck9tUmc1ZkFwRmREX3FFT21yWTVpSjZwUEpGWW1EVndDUHRmWVZLT05PRl9xSGdsWVl0WEd2REZ2OU5ESQ?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 06:31:23 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxPNmhTMld0RVlYR3B0Nlh1NHlmQkxhaWtHQXNOTlVMcDVVRVJmbXFkRFJYeWlRcF9RaGR4RkNzTlF2NHZDdVA1bHA4TGtXWnZMd0U5VTAtdWJkWE1UUHRMUzFfbWo3WkNNandfZ1JxZEt5YlprN29Wck9tUmc1ZkFwRmREX3FFT21yWTVpSjZwUEpGWW1EVndDUHRmWVZLT05PRl9xSGdsWVl0WEd2REZ2OU5ESQ?oc=5\" target=\"_blank\">Furuya Metal Soars to Day High with 11.47% Intraday Surge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
@@ -1193,11 +209,215 @@
       "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
     },
     {
-      "title": "Japan stocks higher at close of trade; Nikkei 225 up 1.60% - Investing.com",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQZjNuZl9mdEI5b2gtMm4yUUVkVTBEOEY0dEo0UXRteE1Oa0ZrLTJIY1o4Uk8wZlZuc3MyNFRNcHJjNEJPaFQtNGFac1VEMUNfOEdBRzQzeUVnWkRzMEhROURBeG52YWJqM2puUDdtMjJXZGhhR1p5eElzN2VWX0lwMXcyeGVVcVIyWnpOc0IzVTBMZ0FKdzZFbmRmNWppWEs4SFNpd1JFUGU4aXFkM1dENHJR?oc=5",
-      "publisher": "Investing.com",
-      "published": "Fri, 09 Jan 2026 08:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxQZjNuZl9mdEI5b2gtMm4yUUVkVTBEOEY0dEo0UXRteE1Oa0ZrLTJIY1o4Uk8wZlZuc3MyNFRNcHJjNEJPaFQtNGFac1VEMUNfOEdBRzQzeUVnWkRzMEhROURBeG52YWJqM2puUDdtMjJXZGhhR1p5eElzN2VWX0lwMXcyeGVVcVIyWnpOc0IzVTBMZ0FKdzZFbmRmNWppWEs4SFNpd1JFUGU4aXFkM1dENHJR?oc=5\" target=\"_blank\">Japan stocks higher at close of trade; Nikkei 225 up 1.60%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investing.com</font>",
+      "title": "Sodick Co., Ltd. Hits Day High with 8.09% Surge in Stock Price - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWEVEeHFSR29ZZDEtRGpHYmNaYnhkLVVHellrUFJzV29wdVM3bGRpdUNSMldvMHFFT2haRldYTkdZWGZUeWJlaXI4WXlxb0xWTjFFcURGOXVCX1kxTTVDRDdBSjFkQ0hVZzVyR2pwR05uT2l3M283eUgzREpiWGUtUHM1WGxzRFc4QVFQNkZZMFJOSlM2dHdQZkRMQlVwWUw0a2xBVkRKdWFINGhvd0ZUUGU5SHpyZw?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 00:31:36 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxQWEVEeHFSR29ZZDEtRGpHYmNaYnhkLVVHellrUFJzV29wdVM3bGRpdUNSMldvMHFFT2haRldYTkdZWGZUeWJlaXI4WXlxb0xWTjFFcURGOXVCX1kxTTVDRDdBSjFkQ0hVZzVyR2pwR05uT2l3M283eUgzREpiWGUtUHM1WGxzRFc4QVFQNkZZMFJOSlM2dHdQZkRMQlVwWUw0a2xBVkRKdWFINGhvd0ZUUGU5SHpyZw?oc=5\" target=\"_blank\">Sodick Co., Ltd. Hits Day High with 8.09% Surge in Stock Price</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Musashi Seimitsu Stock Hits Day High with 9.48% Surge - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxONVFUcVhLUkMySTZyajFILXhEend3T283cVB0ME1veDVtMktWazNtTFBMaTRoNl9BUGliUXdwbkJrRlpucTllQXdoUlBjdXVLU1kzU3RNVW4zcVZMb1FyRjNNdHAxY1JacU0zeFdqcjJxVUhYVlZnSUNRaGNNMjdvTDNRVmpCbTBfaDIyWEFsVEEwRWdZdVowNEV3dWs1cUdIM0ttb3VJYnVheXRCQXc?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 23:14:42 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxONVFUcVhLUkMySTZyajFILXhEend3T283cVB0ME1veDVtMktWazNtTFBMaTRoNl9BUGliUXdwbkJrRlpucTllQXdoUlBjdXVLU1kzU3RNVW4zcVZMb1FyRjNNdHAxY1JacU0zeFdqcjJxVUhYVlZnSUNRaGNNMjdvTDNRVmpCbTBfaDIyWEFsVEEwRWdZdVowNEV3dWs1cUdIM0ttb3VJYnVheXRCQXc?oc=5\" target=\"_blank\">Musashi Seimitsu Stock Hits Day High with 9.48% Surge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Kitagawa Seiki Soars 11.21%, Hits Intraday High of JPY 1,890.00 - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPN2FNSC1SQ0hjWUpJVFBsRW4yMUNsUTVBd2J6REhKMDVvWGw2ZUdKWWF4X2lqNVplQ3NBUHl4NHFURmg1VXVNeXRRVjJReW1SUGhwemlVdjlGNWlUSW5rNnlnUFZ6SVBBNzJyMF9ZSWdCNXlnbGhOdmJGcW4yOUxGdklDc2Q3dUc4VzNVblp1TloxdHlmekRhZDNBSXdLNW55eWU4MElHbXoyQVJINl9qT1FfanM2c0E?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 23:18:49 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxPN2FNSC1SQ0hjWUpJVFBsRW4yMUNsUTVBd2J6REhKMDVvWGw2ZUdKWWF4X2lqNVplQ3NBUHl4NHFURmg1VXVNeXRRVjJReW1SUGhwemlVdjlGNWlUSW5rNnlnUFZ6SVBBNzJyMF9ZSWdCNXlnbGhOdmJGcW4yOUxGdklDc2Q3dUc4VzNVblp1TloxdHlmekRhZDNBSXdLNW55eWU4MElHbXoyQVJINl9qT1FfanM2c0E?oc=5\" target=\"_blank\">Kitagawa Seiki Soars 11.21%, Hits Intraday High of JPY 1,890.00</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Kokusai Electric Corp. Hits Day High with Strong Intraday Performance - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNOUVGZFRCTThHM1dzRFJwbUpzTC1uRW5WQzJKdEpCSWNiZXQtR0p1UG1Yc21mbnZHVk02YmJ5OWFtR2RJLVd1ZEswVGozUlRsZTI5UUhBZGpERG1GakpWM0NzZy1CTm1ZMVRtblFnZGFBNlQzV2tvU0dUUjhZdGYtSjYtNlQxLUNqSXpTMy15YUl5MzVCYjhQQ0U2WnpWVVpJQWV6WllZVzZydU5iVXp3ZjhvT000SDhWNXQyT19GTHJNMUtV?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 21:13:13 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxNOUVGZFRCTThHM1dzRFJwbUpzTC1uRW5WQzJKdEpCSWNiZXQtR0p1UG1Yc21mbnZHVk02YmJ5OWFtR2RJLVd1ZEswVGozUlRsZTI5UUhBZGpERG1GakpWM0NzZy1CTm1ZMVRtblFnZGFBNlQzV2tvU0dUUjhZdGYtSjYtNlQxLUNqSXpTMy15YUl5MzVCYjhQQ0U2WnpWVVpJQWV6WllZVzZydU5iVXp3ZjhvT000SDhWNXQyT19GTHJNMUtV?oc=5\" target=\"_blank\">Kokusai Electric Corp. Hits Day High with Strong Intraday Performance</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Microwave Chemical Co. Hits Day High with 7.54% Surge in Stock Price - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN0hrdnFRbWllYjQ2M3JUZFFRVkhlYjlKLTltTE1LTVItaUVVRTZQanBudmlCVXhBLVVBNGkwM0tPajZobDB6eHBmbjhYV3VwUU1pODNCeXBzOExlbnp4U01xR1JTVURJYXFjTk9Jd2kxWEt1NGM5Uy0zRHlmRVlQZUxzaTJ6SU5qTFpBSWxYZ1l5bU4wSXFERXRSOGtaZmxTb0hBcmlMLThyd2RYYU82Y1VrOGR6QllZbzhPSTREQ0w?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 16:03:16 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN0hrdnFRbWllYjQ2M3JUZFFRVkhlYjlKLTltTE1LTVItaUVVRTZQanBudmlCVXhBLVVBNGkwM0tPajZobDB6eHBmbjhYV3VwUU1pODNCeXBzOExlbnp4U01xR1JTVURJYXFjTk9Jd2kxWEt1NGM5Uy0zRHlmRVlQZUxzaTJ6SU5qTFpBSWxYZ1l5bU4wSXFERXRSOGtaZmxTb0hBcmlMLThyd2RYYU82Y1VrOGR6QllZbzhPSTREQ0w?oc=5\" target=\"_blank\">Microwave Chemical Co. Hits Day High with 7.54% Surge in Stock Price</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Japan Display Hits Day High with 6.1% Surge Amid Strong Intraday Performance - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQTHlSb1I0Y0pnODBWTU5FYjF3YmpFSF9nQXlfcXZfVUhwMHFZY2VvRzBxNlQ1SmQyNWxaT21vNXR3RDM1ei1XTzBBSHpxTEY3NVdsUXZJVTFpR0h6bzhkQndyaXluYlFMUmE1REVWX0p1dDR0a2N5akJieUpvVDZ0aGxWbVRpdFl3MzlQd1l0Z29nX0l1Q1k5U1E5RHJJM1hiNDFHNUhySjJreUVoRGV4SHYwOU42LTk4RF95UU1UZ3h2Q2VOWktvSWJLT2o?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 21:23:04 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxQTHlSb1I0Y0pnODBWTU5FYjF3YmpFSF9nQXlfcXZfVUhwMHFZY2VvRzBxNlQ1SmQyNWxaT21vNXR3RDM1ei1XTzBBSHpxTEY3NVdsUXZJVTFpR0h6bzhkQndyaXluYlFMUmE1REVWX0p1dDR0a2N5akJieUpvVDZ0aGxWbVRpdFl3MzlQd1l0Z29nX0l1Q1k5U1E5RHJJM1hiNDFHNUhySjJreUVoRGV4SHYwOU42LTk4RF95UU1UZ3h2Q2VOWktvSWJLT2o?oc=5\" target=\"_blank\">Japan Display Hits Day High with 6.1% Surge Amid Strong Intraday Performance</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Asian stocks today: Markets rallied as Iran-US ceasefire talks eased tensions; Kospi jumps 1.9%, Nikkei rises 1.5% - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRS1ORjdPRjRncVZYWm9BRHZ1dE1oNW5VaG5kNU5yZ0lpMTlzSmhjOUNfTzAyUWpHa3Rla2RUOXlnTHRJS2NZdmlwQzctcFJWb0g1OGVfNGJrVFJ2NnYtQklJWmdESVRreC1KWXV5VldzMEpRVlhGMkttVG56cUlXbEN3SV8tMVBvS0h1UG5reDMzM290bTlWOXpzYkl4WU9VUnFMR2NNRlNwc2NRd3JjNDh5bXBlMzZfVlk5SndzdGhMU2lySmNreFNXOEtYdVNmN1NURDRnVkg2cWxDMzFBWER3TXl0YkM2ZUM4Z0FnRmdVczg?oc=5",
+      "publisher": "MSN",
+      "published": "Sat, 11 Apr 2026 12:02:31 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi8wFBVV95cUxNRS1ORjdPRjRncVZYWm9BRHZ1dE1oNW5VaG5kNU5yZ0lpMTlzSmhjOUNfTzAyUWpHa3Rla2RUOXlnTHRJS2NZdmlwQzctcFJWb0g1OGVfNGJrVFJ2NnYtQklJWmdESVRreC1KWXV5VldzMEpRVlhGMkttVG56cUlXbEN3SV8tMVBvS0h1UG5reDMzM290bTlWOXpzYkl4WU9VUnFMR2NNRlNwc2NRd3JjNDh5bXBlMzZfVlk5SndzdGhMU2lySmNreFNXOEtYdVNmN1NURDRnVkg2cWxDMzFBWER3TXl0YkM2ZUM4Z0FnRmdVczg?oc=5\" target=\"_blank\">Asian stocks today: Markets rallied as Iran-US ceasefire talks eased tensions; Kospi jumps 1.9%, Nikkei rises 1.5%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "QD Laser, Inc. Hits Day High with Strong 7.73% Intraday Surge - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOVnJpY05nLU4wZTF0ZnF2OXJhczN3YnVRZmtXMWlCMDBONDVwYU55a1RtcXJtcnIxYTFrOUo4ZnFVeWg1M2V5dUJ5UjlaNzlleTNtVDA3WlYtRlBUNGhlbWJ3ZmZRcTJyN24xd1VsTkpheFEtNUJieTJxaTg0TUdDMG15N3phZU5LOHBlTnh6WVkybG1qZ0JPcGZrY1BwNlBWbldrVlQxLUlYYmhBOG9vNE44NVBxQQ?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 15:14:24 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxOVnJpY05nLU4wZTF0ZnF2OXJhczN3YnVRZmtXMWlCMDBONDVwYU55a1RtcXJtcnIxYTFrOUo4ZnFVeWg1M2V5dUJ5UjlaNzlleTNtVDA3WlYtRlBUNGhlbWJ3ZmZRcTJyN24xd1VsTkpheFEtNUJieTJxaTg0TUdDMG15N3phZU5LOHBlTnh6WVkybG1qZ0JPcGZrY1BwNlBWbldrVlQxLUlYYmhBOG9vNE44NVBxQQ?oc=5\" target=\"_blank\">QD Laser, Inc. Hits Day High with Strong 7.73% Intraday Surge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Results of The Last Trading Session on The Stock Markets - BM.GE",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPSDQ2Y1EyVm5KSFJYdGwyWE1YZTE1Si1QZ2hoVlBJNzFPQmdxbU5NamFFeEh0NmFMWTlQcW4xVVd4bHlOOFhWRXJoRk4xNnIza05nVnY4SEZGcXZxRWVMWjBtcFVVUXlqTldJcXFDN21iRkE1bF9vOEsyb215anNlU0VrUXgza3IzenJsZUZ3?oc=5",
+      "publisher": "BM.GE",
+      "published": "Sun, 12 Apr 2026 01:42:37 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPSDQ2Y1EyVm5KSFJYdGwyWE1YZTE1Si1QZ2hoVlBJNzFPQmdxbU5NamFFeEh0NmFMWTlQcW4xVVd4bHlOOFhWRXJoRk4xNnIza05nVnY4SEZGcXZxRWVMWjBtcFVVUXlqTldJcXFDN21iRkE1bF9vOEsyb215anNlU0VrUXgza3IzenJsZUZ3?oc=5\" target=\"_blank\">Results of The Last Trading Session on The Stock Markets</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BM.GE</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "TOKYO OHKA KOGYO Achieves 201.67% Return, Establishing It as a Multibagger in Electronics Sector - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOTi0xX2xIY0VxYlI3YThYUFV3blFiR0NZeGhiSC11S0NYLTZSMVM5V2tzd1dHUkNpVnZMR0F0UmVTb0R4ZlczWF9CMm9Ub25mc3loUHJLSDY3eGdrOHVIVTN3N19sdVhkLVdBUFg4b1YwbGR5RGNCel9XZ2d2Yy1leENJWEpxQThXNm82c19LY2kwY3gwSVkzMWl1Tm9BNFd2Uk5JYkMtREl1TF9BaDQ3X2s0ZzVrVGh6REE4bW9iV0E0REswMzBFclVSY2dSWUViYUl2eW5JOWlGcXp4M3RoMUtWeTBFdw?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 06:31:29 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi5gFBVV95cUxOTi0xX2xIY0VxYlI3YThYUFV3blFiR0NZeGhiSC11S0NYLTZSMVM5V2tzd1dHUkNpVnZMR0F0UmVTb0R4ZlczWF9CMm9Ub25mc3loUHJLSDY3eGdrOHVIVTN3N19sdVhkLVdBUFg4b1YwbGR5RGNCel9XZ2d2Yy1leENJWEpxQThXNm82c19LY2kwY3gwSVkzMWl1Tm9BNFd2Uk5JYkMtREl1TF9BaDQ3X2s0ZzVrVGh6REE4bW9iV0E0REswMzBFclVSY2dSWUViYUl2eW5JOWlGcXp4M3RoMUtWeTBFdw?oc=5\" target=\"_blank\">TOKYO OHKA KOGYO Achieves 201.67% Return, Establishing It as a Multibagger in Electronics Sector</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Toyo Tire Corp. Hits Day High with Strong 6.22% Intraday Surge - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOS0RzZ1drOXFSUFNfMnB4Y1R3cm9RQWdnWTZsZ0xJSnp2WXhMM0NlN0tZc2R0RVMtd3hnVGJnZW9uaXVEUWVmU0VvLXMzNGxYRDJSMXFqc28yV3JIZ0d4RUFGRnpmQ1JIclVvNWdKVkJ3UGVxX1lWYks2MTVESlpzUGVzQ0RQZUUyc0NwYjktRmtTMHdkZEhIbmxWVlItb0ZQWktySE45Z29TRWVxb2NGNnBDeExvR3ZR?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 06:31:32 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxOS0RzZ1drOXFSUFNfMnB4Y1R3cm9RQWdnWTZsZ0xJSnp2WXhMM0NlN0tZc2R0RVMtd3hnVGJnZW9uaXVEUWVmU0VvLXMzNGxYRDJSMXFqc28yV3JIZ0d4RUFGRnpmQ1JIclVvNWdKVkJ3UGVxX1lWYks2MTVESlpzUGVzQ0RQZUUyc0NwYjktRmtTMHdkZEhIbmxWVlItb0ZQWktySE45Z29TRWVxb2NGNnBDeExvR3ZR?oc=5\" target=\"_blank\">Toyo Tire Corp. Hits Day High with Strong 6.22% Intraday Surge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "ExaWizards Inc. Hits Day High with 17.83% Surge in Stock Price - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVlBhb3F2aUtyOEpVaFJjV281VHd3dGRFZUVmZjQ2T2U1SjRyYkNUd3NKcTA4YjEzVnBPX0tKRkNBeU84Q3I0QUdNZnFkaWpXb2Vma1F0c01NM2h0aS1qY2pYMDdpTG95RmgtV0lzcWtTV2hQdlhxUFlkSGtEZlc5d0x5R2x0aVN1eUdHV0xoWmg2cEpRdkxCRm9KM1V0cy1Jc0pnYUMyYVBHeXFBcWd4dGRVVG5KSTdW?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 01:29:39 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVlBhb3F2aUtyOEpVaFJjV281VHd3dGRFZUVmZjQ2T2U1SjRyYkNUd3NKcTA4YjEzVnBPX0tKRkNBeU84Q3I0QUdNZnFkaWpXb2Vma1F0c01NM2h0aS1qY2pYMDdpTG95RmgtV0lzcWtTV2hQdlhxUFlkSGtEZlc5d0x5R2x0aVN1eUdHV0xoWmg2cEpRdkxCRm9KM1V0cy1Jc0pnYUMyYVBHeXFBcWd4dGRVVG5KSTdW?oc=5\" target=\"_blank\">ExaWizards Inc. Hits Day High with 17.83% Surge in Stock Price</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Idemitsu Kosan Stock Hits Day Low Amid Price Pressure, Drops to JPY 1,561.50 - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPeS1NSlZRMXROeE83d2lIQThlTldSaWdKVUd1UVl1aWk1UFhmTUlHdDY3RmkxNnpQa1Rvc1FjM044Z2NubmpWNHFfX2FlUV9BT3NMN2xvMnQ4dGVGSXdmeDlRbEdUamo3dVJnbnROSzAyYThYY19Bc0pDSnpjb1lkWVUzUTRLMDZOTHdEQ1JrLWFsQXlTb1RhUGJ0LUhCaFE0VmZYMDFEcldDSkN5NmNxQmNrWnBmaHRpaGVFeFRYMWhRMkxTVFAwWXNiZw?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 06:31:01 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxPeS1NSlZRMXROeE83d2lIQThlTldSaWdKVUd1UVl1aWk1UFhmTUlHdDY3RmkxNnpQa1Rvc1FjM044Z2NubmpWNHFfX2FlUV9BT3NMN2xvMnQ4dGVGSXdmeDlRbEdUamo3dVJnbnROSzAyYThYY19Bc0pDSnpjb1lkWVUzUTRLMDZOTHdEQ1JrLWFsQXlTb1RhUGJ0LUhCaFE0VmZYMDFEcldDSkN5NmNxQmNrWnBmaHRpaGVFeFRYMWhRMkxTVFAwWXNiZw?oc=5\" target=\"_blank\">Idemitsu Kosan Stock Hits Day Low Amid Price Pressure, Drops to JPY 1,561.50</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Toray Industries Hits Day High with Strong 4.45% Intraday Surge - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWnNqVERvR1VaeWFRaUtuUXU4YmRpR1pYM005SjN3ME82MUxBRmVlNTVpSURSMGdrUE5MSmVUU3N6cE96RlhOLUx4NzIyOE5xSmFZWmFRTmp6cDBBc25nRUU4QTU2Mm5lLVhTRmgwNEhGT1Vjckk1emotaFpVaW0zZlV5NWE1V0h3QkFtX0paS0FwUDZLRDl4LVQ3QjhQNFVjeUZhU2NXWFFMcFBPZWY0cUQyLU5POFotYWsw?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 05:31:06 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQWnNqVERvR1VaeWFRaUtuUXU4YmRpR1pYM005SjN3ME82MUxBRmVlNTVpSURSMGdrUE5MSmVUU3N6cE96RlhOLUx4NzIyOE5xSmFZWmFRTmp6cDBBc25nRUU4QTU2Mm5lLVhTRmgwNEhGT1Vjckk1emotaFpVaW0zZlV5NWE1V0h3QkFtX0paS0FwUDZLRDl4LVQ3QjhQNFVjeUZhU2NXWFFMcFBPZWY0cUQyLU5POFotYWsw?oc=5\" target=\"_blank\">Toray Industries Hits Day High with Strong 4.45% Intraday Surge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Rakuten Bank Hits Day High with Strong 5.09% Intraday Surge - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNRWcwRDU5dlhnb1Z2LTJoVG91N2tlaUdXQmw5MUpoRTh2RHQ5R1B2bzFETDhRV0FQcklWSDZGaVItTmxheEU0MFlXSkd3R1VZZzNBczJuaHVDNzlubjJ3Z2ctTHFrUGEwRzdMcDEwdlhfZHNwcjgxYzhzdjNvZXY1ZVFPRC1BWHdhMHMxN1I2LW54T1RLRlR2S0hyRjZ5RC1mQUJ6X3hvRzlhVllhSDNkQWtteWdldw?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sun, 12 Apr 2026 07:31:01 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxNRWcwRDU5dlhnb1Z2LTJoVG91N2tlaUdXQmw5MUpoRTh2RHQ5R1B2bzFETDhRV0FQcklWSDZGaVItTmxheEU0MFlXSkd3R1VZZzNBczJuaHVDNzlubjJ3Z2ctTHFrUGEwRzdMcDEwdlhfZHNwcjgxYzhzdjNvZXY1ZVFPRC1BWHdhMHMxN1I2LW54T1RLRlR2S0hyRjZ5RC1mQUJ6X3hvRzlhVllhSDNkQWtteWdldw?oc=5\" target=\"_blank\">Rakuten Bank Hits Day High with Strong 5.09% Intraday Surge</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Miyakoshi Holdings Hits Day High with 18.18% Surge in Stock Price - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHVVRlJWNk9iak5HR2k1aHFBWDZKUnd6TTVCQlZmY3hNYng5TjFwckZINDNMU25LX1VMcU9vOU96bXdMd1M4ektta1NXTy1IWFBIUHZJVE15RUVCWWhueGZYRko5QUYxRVR4UGJ4QWdvajJiYmVLcEM5RzlyWnlEendDNHJNNzhJdWpsdXNoMEk4b1FiNGpsR2tyd1lSeUdCbDJ5YlJ5WXV6Z3NHclUxbXQ0YUZnT0VUbVBDNWpB?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 17:32:17 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivgFBVV95cUxNTHVVRlJWNk9iak5HR2k1aHFBWDZKUnd6TTVCQlZmY3hNYng5TjFwckZINDNMU25LX1VMcU9vOU96bXdMd1M4ektta1NXTy1IWFBIUHZJVE15RUVCWWhueGZYRko5QUYxRVR4UGJ4QWdvajJiYmVLcEM5RzlyWnlEendDNHJNNzhJdWpsdXNoMEk4b1FiNGpsR2tyd1lSeUdCbDJ5YlJ5WXV6Z3NHclUxbXQ0YUZnT0VUbVBDNWpB?oc=5\" target=\"_blank\">Miyakoshi Holdings Hits Day High with 18.18% Surge in Stock Price</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "KLCI Emerges Top Performer Among MIST Markets In March, JCI Tumbles As Worst - BusinessToday Malaysia",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNM2k1QUVkM3BaTHpWWXBHTnVBTVFJZm51M1dlbTM1elpOTTcyUS1wYzR1dmhhZUpKcHBtMUFUdDZhVFZEVFgwTlM0UTg2bkxqVHBFY3JvbjZ6bU5oaVgwQnBqS09MQ2FtdE5xSlJoN2hzb0JrcHlQNHp6R3drZHhIcUlUU0thakdvN1d3dUVONlBKSXd5bThhYlNPOW85Z0wxamJBckFnbVFuQUlDcGZlX2VDel84SmNKNU04Zw?oc=5",
+      "publisher": "BusinessToday Malaysia",
+      "published": "Sun, 12 Apr 2026 04:41:35 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMivAFBVV95cUxNM2k1QUVkM3BaTHpWWXBHTnVBTVFJZm51M1dlbTM1elpOTTcyUS1wYzR1dmhhZUpKcHBtMUFUdDZhVFZEVFgwTlM0UTg2bkxqVHBFY3JvbjZ6bU5oaVgwQnBqS09MQ2FtdE5xSlJoN2hzb0JrcHlQNHp6R3drZHhIcUlUU0thakdvN1d3dUVONlBKSXd5bThhYlNPOW85Z0wxamJBckFnbVFuQUlDcGZlX2VDel84SmNKNU04Zw?oc=5\" target=\"_blank\">KLCI Emerges Top Performer Among MIST Markets In March, JCI Tumbles As Worst</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BusinessToday Malaysia</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Tri Chemical Laboratories Stock Soars 8.3%, Hits Intraday High of JPY 2,995.00 - Markets Mojo",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQUWx2c1JBZGluT3ZfaVQ2U1ZZWXZiTURUWTNEWVhEZVoyMzZpaWtrclJiNGlUYTlqaTRNRVBRREJSRVdRRGNLdVB6SW9LVW1rSWFuWVhKSnh3NlZ4S1l4V182UV9FblpOT21NNVJoZVlCVk5BX1oxTkxocEpQbEpaai1mWTU2b3lZaEFtbkg1S2hFeUEyOGF5ZTlmOFA2QXpPNWpVZUZhXzB5ZG9wVV9XY2p1dUkzcHJJQ3RGZDlxanFhdlZJalJKbzVGcw?oc=5",
+      "publisher": "Markets Mojo",
+      "published": "Sat, 11 Apr 2026 13:21:56 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxQUWx2c1JBZGluT3ZfaVQ2U1ZZWXZiTURUWTNEWVhEZVoyMzZpaWtrclJiNGlUYTlqaTRNRVBRREJSRVdRRGNLdVB6SW9LVW1rSWFuWVhKSnh3NlZ4S1l4V182UV9FblpOT21NNVJoZVlCVk5BX1oxTkxocEpQbEpaai1mWTU2b3lZaEFtbkg1S2hFeUEyOGF5ZTlmOFA2QXpPNWpVZUZhXzB5ZG9wVV9XY2p1dUkzcHJJQ3RGZDlxanFhdlZJalJKbzVGcw?oc=5\" target=\"_blank\">Tri Chemical Laboratories Stock Soars 8.3%, Hits Intraday High of JPY 2,995.00</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Markets Mojo</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"

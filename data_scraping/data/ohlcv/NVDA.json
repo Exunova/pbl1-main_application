@@ -2,7 +2,7 @@
   "ticker": "NVDA",
   "type": "stock",
   "market": "US",
-  "scraped_at": "2026-04-12 17:26:23.394325",
+  "scraped_at": "2026-04-12 18:15:02.935114",
   "ohlcv_15m": [
     {
       "timestamp": "2026-02-27 09:30:00-05:00",

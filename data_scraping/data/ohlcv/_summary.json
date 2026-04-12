@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-04-12 17:26:22.474431",
+  "scraped_at": "2026-04-12 18:15:01.635605",
   "markets": {
     "US": {
       "index": "^GSPC",
-      "index_daily_count": 250,
+      "index_15m_count": 780,
       "stocks": {
         "NVDA": {
           "ohlcv_15m_count": 780
@@ -39,7 +39,7 @@
     },
     "ID": {
       "index": "^JKLQ45",
-      "index_daily_count": 238,
+      "index_15m_count": 665,
       "stocks": {
         "BBCA.JK": {
           "ohlcv_15m_count": 666
@@ -75,7 +75,7 @@
     },
     "JP": {
       "index": "^N225",
-      "index_daily_count": 245,
+      "index_15m_count": 690,
       "stocks": {
         "7203.T": {
           "ohlcv_15m_count": 690
@@ -111,7 +111,7 @@
     },
     "GB": {
       "index": "^FTSE",
-      "index_daily_count": 252,
+      "index_15m_count": 1020,
       "stocks": {
         "AZN.L": {
           "ohlcv_15m_count": 1020

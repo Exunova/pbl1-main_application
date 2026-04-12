@@ -153,10 +153,10 @@ class OHLCVCandleDialog(QDialog):
 
 class OHLCVTab(QWidget):
     MARKETS = {
-        "US": ["NVDA","AAPL","GOOGL","MSFT","AMZN","META","TSLA","BRK-B","LLY","JPM"],
-        "ID": ["BBCA.JK","BBRI.JK","BMRI.JK","TLKM.JK","ASII.JK","BBNI.JK","PGAS.JK","ADRO.JK","UNVR.JK","KLBF.JK"],
-        "JP": ["7203.T","8306.T","6758.T","9984.T","6501.T","8316.T","9983.T","6857.T","8035.T","8058.T"],
-        "GB": ["AZN.L","HSBA.L","SHEL.L","BATS.L","GSK.L","BP.L","BARC.L","LLOY.L","NG.L","REL.L"],
+        "US": {"index": "^GSPC",   "tickers": ["NVDA","AAPL","GOOGL","MSFT","AMZN","META","TSLA","BRK-B","LLY","JPM"]},
+        "ID": {"index": "^JKLQ45", "tickers": ["BBCA.JK","BBRI.JK","BMRI.JK","TLKM.JK","ASII.JK","BBNI.JK","PGAS.JK","ADRO.JK","UNVR.JK","KLBF.JK"]},
+        "JP": {"index": "^N225",   "tickers": ["7203.T","8306.T","6758.T","9984.T","6501.T","8316.T","9983.T","6857.T","8035.T","8058.T"]},
+        "GB": {"index": "^FTSE",   "tickers": ["AZN.L","HSBA.L","SHEL.L","BATS.L","GSK.L","BP.L","BARC.L","LLOY.L","NG.L","REL.L"]},
     }
 
     def __init__(self):
@@ -164,14 +164,48 @@ class OHLCVTab(QWidget):
         layout = QVBoxLayout(self)
         layout.addWidget(lbl("Harga Historikal Saham & Index", bold=True, size=13))
         tabs = QTabWidget()
-        for market, tickers in self.MARKETS.items():
-            tabs.addTab(self._market_tab(market, tickers), market)
+        for market, config in self.MARKETS.items():
+            tabs.addTab(self._market_tab(market, config), market)
         layout.addWidget(tabs)
 
-    def _market_tab(self, market, tickers):
+    def _market_tab(self, market, config):
         inner  = QWidget()
         layout = QVBoxLayout(inner)
-        for ticker in tickers:
+
+        # 1. Tampilkan Index Terlebih Dahulu
+        idx_ticker = config["index"]
+        idx_fname  = idx_ticker.replace(".", "_").replace("^", "IDX_").replace("-", "_") + ".json"
+        idx_data   = load_json(os.path.join(DATA_DIR, "ohlcv", idx_fname))
+        
+        if idx_data:
+            box = QGroupBox(f"MARKET INDEX: {idx_ticker}")
+            box.setStyleSheet("QGroupBox { border: 2px solid #60a5fa; border-radius: 6px; margin-top: 10px; padding: 8px; font-weight: bold; } QGroupBox::title { color: #60a5fa; subcontrol-origin: margin; left: 10px; }")
+            bl = QVBoxLayout(box)
+
+            candles = idx_data.get("ohlcv_15m", [])
+            if candles:
+                last = candles[-1]
+                row  = QHBoxLayout()
+                row.addWidget(lbl(f"Latest Index: {fmt(last.get('close'))}", bold=True, color="#60a5fa"))
+                row.addWidget(lbl(f"Time: {last.get('timestamp')}", size=9))
+                bl.addLayout(row)
+                
+                def open_idx_dialog(t=idx_ticker, c=candles):
+                    dialog = OHLCVCandleDialog(t, c, self)
+                    dialog.exec_()
+                
+                view_btn = QPushButton(f"View History ({len(candles)} candles)")
+                view_btn.setFixedWidth(180)
+                view_btn.clicked.connect(lambda: open_idx_dialog())
+                bl.addWidget(view_btn)
+            else:
+                bl.addWidget(lbl("Data Index 15m tidak ditemukan", color="#ef4444"))
+            
+            layout.addWidget(box)
+
+        # 2. Tampilkan Daftar Saham
+        layout.addWidget(lbl("Stocks List", bold=True, size=11))
+        for ticker in config["tickers"]:
             fname = ticker.replace(".", "_").replace("^", "IDX_").replace("-", "_") + ".json"
             data  = load_json(os.path.join(DATA_DIR, "ohlcv", fname))
 
@@ -183,31 +217,27 @@ class OHLCVTab(QWidget):
             ticker_lbl.setTextInteractionFlags(Qt.TextSelectableByMouse)
             ticker_lbl.setCursor(Qt.PointingHandCursor)
 
-            daily = data.get("ohlcv_daily", [])
-            m1    = data.get("ohlcv_15m", [])
+            m1 = data.get("ohlcv_15m", [])
 
-            candles = m1 if m1 else daily
-
-            def open_dialog(t=ticker, c=candles):
+            def open_dialog(t=ticker, c=m1):
                 dialog = OHLCVCandleDialog(t, c, self)
                 dialog.exec_()
 
-            ticker_lbl.mousePressEvent = lambda e, t=ticker, c=candles: open_dialog(t, c)
+            ticker_lbl.mousePressEvent = lambda e, t=ticker, c=m1: open_dialog(t, c)
 
             bl.addWidget(ticker_lbl)
 
-            if daily:
-                last = daily[-1]
+            if m1:
+                last = m1[-1]
                 row  = QHBoxLayout()
-                for label, key in [("Date", "date"),("O","open"),("H","high"),("L","low"),("C","close"),("Vol","volume")]:
+                for label, key in [("O","open"),("H","high"),("L","low"),("C","close"),("Vol","volume")]:
                     row.addWidget(lbl(f"{label}: {fmt(last.get(key), 0 if key == 'volume' else 2)}", size=10))
-                row.addWidget(lbl(f"| {len(daily)} hari daily", size=10, color="#94a3b8"))
                 bl.addLayout(row)
             else:
-                bl.addWidget(lbl("Tidak ada data daily", color="#ef4444", size=10))
-
-            bl.addWidget(lbl(f"Data 15m: {len(m1)} candles (7 hari terakhir)", color="#94a3b8", size=9))
+                bl.addWidget(lbl("Tidak ada data 15m", color="#ef4444", size=10))
+            bl.addWidget(lbl(f"Data 15m: {len(m1)} candles", color="#94a3b8", size=9))
             layout.addWidget(box)
+
 
         scroll = QScrollArea()
         scroll.setWidget(inner)
