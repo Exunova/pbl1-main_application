@@ -40,7 +40,7 @@ export default function PortfolioView() {
         </button>
       </div>
 
-      {pnlData && (
+      {pnlData && pnlData.total && (
         <div className="grid grid-cols-3 gap-3">
           <div className="bg-surface rounded p-3">
             <div className="text-xs text-white/40">Total P&L</div>
