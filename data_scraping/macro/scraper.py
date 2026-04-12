@@ -1,7 +1,3 @@
-"""
-MAPRO Scraper — Macroeconomic Events (Investing.com)
-"""
-
 import json
 import os
 import time
@@ -42,7 +38,6 @@ ALL_COUNTRIES = {
     "EU": {"name": "Euro Zone", "currency": "EUR"},
 }
 
-# Match HTML row_id format (no spaces): UnitedStates, UnitedKingdom, NewZealand, SouthAfrica, HongKong
 COUNTRY_CODES = {
     "Australia": "AU", "Canada": "CA", "Switzerland": "CH", "China": "CN",
     "Germany": "DE", "France": "FR", "HongKong": "HK", "Indonesia": "ID",
@@ -119,7 +114,6 @@ def open_custom_dates(page):
 
 
 def set_dates(page, from_date, to_date):
-    """Set both from and to dates in the date picker."""
     month, day, year = from_date.split("/")
     start_input = page.query_selector("#date-picker-start-day")
     if start_input:
@@ -284,7 +278,6 @@ def main():
     logger.info("=" * 50)
     
     target_countries = ["US", "ID", "JP", "DE"]
-    
     from_date = "04/07/2026"
     to_date = "04/07/2026"
     
