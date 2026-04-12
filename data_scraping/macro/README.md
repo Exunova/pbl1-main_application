@@ -1,180 +1,239 @@
 # Macro Data Scraper
 
-Scraper data peristiwa makroekonomi dari [Investing.com](https://www.investing.com/economic-calendar/).
+Scraper untuk mengambil data peristiwa makroekonomi dari [Investing.com](https://www.investing.com/economic-calendar/).
 
-## Setup
+## Apa Itu Scraper Ini?
+
+Scraper adalah program yang secara otomatis mengambil data dari website Investing.com. Data yang diambil meliputi:
+
+- **Nama peristiwa** (misal: "ISM Non-Manufacturing Prices")
+- **Waktu occurrence** (misal: "21:00")
+- **Tingkat impact** (high/medium/low - penting atau tidak)
+- **Nilai actual** (data aktual yang dirilis)
+- **Nilai forecast** (estimasi/catatan konsensus)
+- **Nilai previous** (data dari periode sebelumnya)
+
+Data macro ekonomi ini digunakan untuk analisis fundamental dalam trading.
+
+## Negara yang Ditargetkan
+
+| Kode | Negara | Mata Uang |
+|------|--------|-----------|
+| US | United States | USD |
+| ID | Indonesia | IDR |
+| JP | Japan | JPY |
+| DE | Germany | EUR |
+
+## Cara Penggunaan
+
+### Prerequisites
 
 ```bash
 pip install playwright
 playwright install chromium
 ```
 
-## Cara Pakai
+### Menjalankan Scraper
 
 ```bash
-python scraper.py
+cd /home/reiyo/Project/PBL1/pbl1-main_application/data_scraping
+python -m macro.scraper
 ```
 
-## Output
+Scraper akan:
+1. Membuka browser Chromium
+2. Login ke Investing.com menggunakan cookies
+3. Mengatur filter tanggal
+4. Mengambil semua data peristiwa ekonomi
+5. Menyimpan hasil ke file JSON
+
+### Menggunakan Sebagai Module (untuk programmer)
+
+```python
+from macro import scrape_calendar
+
+events = scrape_calendar("04/07/2026", "04/07/2026", ["US", "ID", "JP", "DE"])
+```
+
+## Format Output
 
 File JSON di `../data/macro/`:
 
-| File | Deskripsi |
-|------|----------|
-| `us_macro.json` | Data peristiwa Amerika Serikat |
-| `gb_macro.json` | Data peristiwa Inggris |
-| `id_macro.json` | Data peristiwa Indonesia |
-| `jp_macro.json` | Data peristiwa Jepang |
-| `_summary.json` | Ringkasan semua negara |
+### `us_macro.json` (Contoh)
 
-## Struktur Data Export JSON
-
-Setiap file JSON memiliki struktur yang sama. Berikut penjelasannya:
-
-```mermaid
-flowchart LR
-    subgraph file["JSON File Export"]
-        direction TB
-        obj["{object}"]
-        obj --> country["country: string"]
-        obj --> name["name: string"]
-        obj --> currency["currency: string"]
-        obj --> scraped_at["scraped_at: string"]
-        obj --> event_count["event_count: int"]
-        obj --> events["events: Event[]"]
-    end
-
-    subgraph event["Event Object"]
-        direction TB
-        ev1["name: string"]
-        ev2["date: string"]
-        ev3["time: string"]
-        ev4["impact: 'low'|'medium'|'high'"]
-        ev5["actual: string"]
-        ev6["forecast: string"]
-        ev7["previous: string"]
-        ev8["currency: string"]
-    end
-
-    events --> event
-```
-
-### Penjelasan Field
-
-| Field | Tipe | Deskripsi |
-|-------|------|-----------|
-| `country` | string | Kode ISO negara: `US`, `GB`, `ID`, `JP` |
-| `name` | string | Nama lengkap negara |
-| `currency` | string | Mata uang negara: `USD`, `GBP`, `IDR`, `JPY` |
-| `scraped_at` | string | Timestamp kapan data di-scrape |
-| `event_count` | int | Jumlah peristiwa yang ditemukan |
-| `events` | array | Array of objek Event |
-
-### Penjelasan Field Event
-
-| Field | Tipe | Deskripsi |
-|-------|------|-----------|
-| `name` | string | Nama peristiwa ekonomi |
-| `date` | string | Tanggal peristiwa (format: YYYY-MM-DD) |
-| `time` | string | Waktu rilis (format: HH:MM) |
-| `impact` | string | Dampak: `low`, `medium`, `high` |
-| `actual` | string | Nilai aktual yang dirilis ( `-` jika belum ada) |
-| `forecast` | string | Nilai forecast/konsensus pasar ( `-` jika belum ada) |
-| `previous` | string | Nilai periode sebelumnya ( `-` jika tidak ada) |
-| `currency` | string | Mata uang terkait peristiwa |
-
-## Contoh JSON
-
-**us_macro.json**
 ```json
 {
   "country": "US",
   "name": "United States",
   "currency": "USD",
-  "scraped_at": "2026-04-06 08:30:29.774286",
-  "event_count": 8,
+  "scraped_at": "2026-04-12 16:59:49",
+  "event_count": 12,
   "events": [
     {
-      "name": "ISM Non-Manufacturing PMI (Mar)",
-      "date": "2026-04-06",
-      "time": "21:00",
+      "name": "Durable Goods Orders (MoM) (Feb)",
+      "date": "04/07/2026",
+      "time": "19:30",
       "impact": "high",
-      "actual": "54.8",
-      "forecast": "53.5",
-      "previous": "56.1",
-      "currency": "USD"
+      "actual": "-1.4%",
+      "forecast": "-1.1%",
+      "previous": "-0.5%"
     }
   ]
 }
 ```
 
-**_summary.json**
-```json
-{
-  "scraped_at": "2026-04-06 08:30:29.774286",
-  "countries": {
-    "US": {"name": "United States", "event_count": 8},
-    "GB": {"name": "United Kingdom", "event_count": 0},
-    "ID": {"name": "Indonesia", "event_count": 2},
-    "JP": {"name": "Japan", "event_count": 0}
-  }
-}
-```
+### File yang Dihasilkan
 
-## Struktur HTML (Investing.com)
+| File | Deskripsi |
+|------|----------|
+| `us_macro.json` | Data peristiwa ekonomi US |
+| `id_macro.json` | Data peristiwa ekonomi Indonesia |
+| `jp_macro.json` | Data peristiwa ekonomi Jepang |
+| `de_macro.json` | Data peristiwa ekonomi Jerman |
+| `_summary.json` | Ringkasan jumlah peristiwa per negara |
 
-Scraper membaca struktur tabel HTML dari Investing.com:
+## Penjelasan Field Data
 
-```mermaid
-flowchart TD
-    subgraph TR["tr.datatable-v2_row__hkEus"]
-        A["td[0]: Waktu"]
-        B["td[1]: Flag + Kode Negara"]
-        C["td[2]: Nama Peristiwa"]
-        D["td[3]: Bintang Dampak"]
-        E["td[4]: Nilai Actual"]
-        F["td[5]: Nilai Forecast"]
-        G["td[6]: Nilai Previous"]
-        H["td[7]: Kolom Optional"]
-    end
+| Field | Contoh | Deskripsi |
+|-------|--------|-----------|
+| `name` | "Durable Goods Orders (MoM) (Feb)" | Nama peristiwa ekonomi |
+| `date` | "04/07/2026" | Tanggal peristiwa (MM/DD/YYYY) |
+| `time` | "19:30" | Waktu rilis (timezone website) |
+| `impact` | "high" | High/Medium/Low - seberapa penting |
+| `actual` | "-1.4%" | Nilai aktual yang dirilis |
+| `forecast` | "-1.1%" | Estimasi konsensus pasar |
+| `previous` | "-0.5%" | Nilai dari periode sebelumnya |
 
-    A --> |"div.text-sm"| T1["21:00"]
-    C --> |"a.text-link"| N1["ISM Non-Manufacturing PMI"]
-    D --> |"svg star-filled opacity-60"| I1["3 bintang = high"]
+### Tentang Impact Level
 
-    style E fill:#f9f
-    style F fill:#9f9
-    style G fill:#9ff
-```
-
-### Penjelasan CSS Selector
-
-- `tr.datatable-v2_row__hkEus` - Selector untuk setiap baris peristiwa
-- `td a.text-link` - Link nama peristiwa
-- `div.text-sm` - Waktu rilis
-- `svg[href*="star-filled"]` - Bintang dampak (impact)
-- `td.datatable-v2_cell--align-end__BtDxO` - Kolom untuk actual/forecast/previous
+- **High** ⭐⭐⭐: Peristiwa sangat penting, bisa menggerakkan market signifikan
+- **Medium** ⭐⭐: Peristiwa moderat, dampak terbatas pada mata uang terkait
+- **Low** ⭐: Peristiwa kurang signifikan, dampak minimal
 
 ## Cookie Authentication
 
-Investing.com mendeteksi automation. Agar bisa scrape, perlu cookie dari browser yang sudah login:
+Investing.com membutuhkan authentication agar bisa mengakses data penuh. Scraper menggunakan sistem cookies yang sudah tersimpan.
 
-1. Buka Chromium ke investing.com/economic-calendar
-2. Login ke akun investing.com
-3. Install extension "EditThisCookie" atau export cookies manual
-4. Export cookies dalam format Netscape ke file `cookies.txt`
-5. Scraper akan load cookies otomatis saat dijalankan
+**Jika cookies expired:**
+1. Buka browser (Chrome/Firefox)
+2. Login ke [investing.com/economic-calendar](https://www.investing.com/economic-calendar/)
+3. Install extension "EditThisCookie"
+4. Export cookies dalam format Netscape
+5. Ganti isi file `cookies.txt` dengan hasil export
 
-### Format cookies.txt
+**Catatan:** Cookies harus di-refresh secara berkala karena akan expire.
 
-```text
-# Netscape HTTP Cookie File
-.investing.com	TRUE	/	FALSE	1775437998	gcc	ID
-.investing.com	TRUE	/	FALSE	1775437998	gsc	...
+## Diagram Alur Kerja
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                    MULAI SCRAPER                         │
+└─────────────────────┬───────────────────────────────────┘
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│ 1. LOAD COOKIES                                          │
+│    Baca cookies dari cookies.txt                         │
+└─────────────────────┬───────────────────────────────────┘
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│ 2. LAUNCH BROWSER                                        │
+│    Buka Chromium dengan cookies (tersimpan login)        │
+└─────────────────────┬───────────────────────────────────┘
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│ 3. NAVIGASI KE WEBSITE                                   │
+│    Buka investing.com/economic-calendar                  │
+└─────────────────────┬───────────────────────────────────┘
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│ 4. SET FILTER                                            │
+│    - Klik "Show Filters"                                 │
+│    - Klik "Custom dates"                                 │
+│    - Isi tanggal mulai & selesai                         │
+│    - Klik "Apply"                                        │
+└─────────────────────┬───────────────────────────────────┘
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│ 5. PARSE DATA                                            │
+│    Untuk setiap baris tabel:                             │
+│    - Ambil nama peristiwa                                │
+│    - Ambil waktu                                         │
+│    - Hitung impact (stars)                               │
+│    - Ambil actual/forecast/previous                      │
+│    - Filter berdasarkan negara (US/ID/JP/DE)            │
+└─────────────────────┬───────────────────────────────────┘
+                      ▼
+┌─────────────────────────────────────────────────────────┐
+│ 6. SIMPAN HASIL                                          │
+│    Export ke JSON files: us_macro.json, dll.            │
+└─────────────────────────────────────────────────────────┘
 ```
 
-## Dependensi
+## Struktur HTML (Untuk Developer)
+
+Bagian ini menjelaskan struktur HTML website untuk keperluan maintenance.
+
+### Row ID Format
+
+Setiap baris peristiwa memiliki ID dengan format:
+
+```
+{event_id}-{internal_number}-{CountryName}-{row_num}
+```
+
+Contoh: `1049-544268-UnitedStates-23`
+
+### Nama Negara di HTML
+
+Spasi dihilangkan dalam ID:
+
+| Negara | Di HTML |
+|--------|---------|
+| United States | `UnitedStates` |
+| United Kingdom | `UnitedKingdom` |
+| Indonesia | `Indonesia` |
+| Japan | `Japan` |
+| Germany | `Germany` |
+
+### Kolom Tabel
+
+| Index | Konten |
+|-------|--------|
+| TD[5] | Nilai Actual |
+| TD[6] | Nilai Forecast |
+| TD[7] | Nilai Previous |
+
+### Impact Stars
+
+Impact ditentukan oleh jumlah star yang terisi:
+- 2-3 star terisi = High
+- 1 star terisi = Medium
+- 0 star terisi = Low
+
+## Troubleshooting
+
+### Scraper mengembalikan 0 events
+
+1. **Cek cookies** - mungkin expired, perlu refresh
+2. **Cek tanggal** - pastikan format MM/DD/YYYY
+3. **Cek network** - koneksi internet stable?
+
+### Error "Could not open filters panel"
+
+1. Kemungkinan website berubah struktur
+2. Cek apakah masih bisa手动 click "Show Filters"
+3. Update selector di code jika perlu
+
+### File JSON kosong
+
+Kemungkinan tidak ada peristiwa ekonomi di tanggal yang dipilih. Coba tanggal lain.
+
+## Dependencies
 
 - Python 3.14+
 - playwright
-- chromium (system atau install via `playwright install`)
+- chromium browser
+
+## Lisensi
+
+Project internal - PBL1 Main Application
