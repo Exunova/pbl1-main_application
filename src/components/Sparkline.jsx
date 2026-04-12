@@ -1,0 +1,1 @@
+export default function Sparkline() { return <div>Sparkline</div> }

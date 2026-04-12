@@ -1,11 +1,17 @@
-<<<<<<< HEAD
-# Python
+node_modules/
+out/
+dist/
+.env
+
+*.pyc
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 env/
+venv/
+.venv/
 build/
 develop-eggs/
 dist/
@@ -22,27 +28,14 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environment
-venv/
-**/venv/
-.venv/
-
-# Environment Variables
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak
-venv.bak
-
-# User requested: requirements.txt from all directories
-**/requirements.txt
-requirements.txt
-
-# OS X
-.DS_Store
-=======
 .DS_Store
 
->>>>>>> 54a3fe4 (add .gitignore)
+# Scraped data cache
+data/*.json
+!data/*/.gitkeep
+
+# Electron user data
+*.db
+
+# Resources
+resources/world-atlas/*.json
