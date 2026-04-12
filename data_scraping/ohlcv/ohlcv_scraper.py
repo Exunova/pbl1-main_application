@@ -47,11 +47,11 @@ def save_json(data, filename):
     print(f"  [OK] Saved: {filename}")
 
 
-def scrape_1m(ticker):
+def scrape_15m(ticker):
     try:
-        df = yf.Ticker(ticker).history(period="7d", interval="1m")
+        df = yf.Ticker(ticker).history(period="30d", interval="15m")
         if df.empty:
-            print(f"  [WARN] No 1m data: {ticker}")
+            print(f"  [WARN] No 15m data: {ticker}")
             return []
         return [
             {
@@ -65,7 +65,7 @@ def scrape_1m(ticker):
             for ts, row in df.iterrows()
         ]
     except Exception as e:
-        print(f"  [ERROR] {ticker} 1m: {e}")
+        print(f"  [ERROR] {ticker} 15m: {e}")
         return []
 
 
@@ -124,19 +124,16 @@ def main():
         # Stocks — 1m (7 hari) + daily (3 bulan)
         for ticker in config["tickers"]:
             print(f"  Stock: {ticker}")
-            ohlcv_1m    = scrape_1m(ticker)
-            ohlcv_daily = scrape_daily(ticker, period="3mo")
+            ohlcv_15m = scrape_15m(ticker)
 
             save_json({
                 "ticker": ticker, "type": "stock", "market": market,
                 "scraped_at": str(datetime.now()),
-                "ohlcv_1m": ohlcv_1m,
-                "ohlcv_daily": ohlcv_daily
+                "ohlcv_15m": ohlcv_15m
             }, f"{to_filename(ticker)}.json")
 
             summary["markets"][market]["stocks"][ticker] = {
-                "ohlcv_1m_count":    len(ohlcv_1m),
-                "ohlcv_daily_count": len(ohlcv_daily)
+                "ohlcv_15m_count": len(ohlcv_15m)
             }
             time.sleep(3)
 
