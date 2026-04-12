@@ -2,7 +2,7 @@ import sqlite3, json, os
 from datetime import datetime
 
 APP_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CACHE_DB = os.path.join(APP_DIR, 'cache.db')
+CACHE_DB = os.environ.get('CACHE_DB', os.path.join(APP_DIR, 'cache.db'))
 
 def get_conn():
     conn = sqlite3.connect(CACHE_DB)

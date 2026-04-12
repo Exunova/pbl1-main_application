@@ -155,10 +155,10 @@ class TestCountryData:
         assert COUNTRY_CODES["UnitedKingdom"] == "UK"
         assert len(COUNTRY_CODES) == 22
 
-    def test_country_config_only_4_entries(self):
-        """COUNTRY_CONFIG has exactly 4 entries: US, ID, JP, DE."""
-        assert len(COUNTRY_CONFIG) == 4
-        assert set(COUNTRY_CONFIG.keys()) == {"US", "ID", "JP", "DE"}
+    def test_country_config_has_required_entries(self):
+        """COUNTRY_CONFIG has entries for US, ID, JP, UK, DE."""
+        assert len(COUNTRY_CONFIG) == 5
+        assert set(COUNTRY_CONFIG.keys()) == {"US", "ID", "JP", "UK", "DE"}
 
 
 class TestRun:

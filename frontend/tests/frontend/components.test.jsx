@@ -305,10 +305,10 @@ describe('StockDetailModal', () => {
     })
   })
 
-  it('shows Loading initially', () => {
+  it('shows Loading while fetching company data', () => {
     window.api.fetchCompany.mockImplementation(() => new Promise(() => {}))
     render(<StockDetailModal ticker="NVDA" onClose={() => {}} />)
-    expect(screen.queryByText(/loading/i)).toBeNull()
+    expect(screen.queryByText(/loading/i)).toBeTruthy()
   })
 
   it.skip('fetchOHLCV called for chart data when chart tab selected - skipped due to jsdom async timing', async () => {

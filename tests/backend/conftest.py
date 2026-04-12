@@ -119,11 +119,16 @@ def mock_feed_and_requests(monkeypatch):
 
 @pytest.fixture
 def clean_cache():
-    """Callable fixture to clear cache table between tests."""
+    """Callable fixture to clear all scraper cache entries between tests."""
     import cache_db
     def _clean():
         conn = cache_db.get_conn()
-        conn.execute("DELETE FROM cache")
+        conn.execute("""
+            DELETE FROM cache WHERE
+            key LIKE 'forex:%' OR key LIKE 'news:%' OR
+            key LIKE 'ohlcv:%' OR key LIKE 'macro:%' OR
+            key LIKE 'company:%'
+        """)
         conn.commit()
         conn.close()
     return _clean
@@ -131,14 +136,22 @@ def clean_cache():
 
 @pytest.fixture
 def ipc_process(tmp_path, monkeypatch):
-    """Spawn ipc_main.py as a subprocess for command testing."""
+    """Spawn ipc_main.py as a subprocess for command testing with isolated temp cache."""
     import subprocess
     import json
     import time
+    import shutil
 
+    # Copy the real cache.db to a temp location so we don't pollute real data
+    real_db = '/home/reiyo/Project/PBL1/pbl1-main_application/backend/cache.db'
     tmp_db = str(tmp_path / "cache.db")
+    if os.path.exists(real_db):
+        shutil.copy(real_db, tmp_db)
+
+    # Set environment so subprocess uses temp cache
     env = os.environ.copy()
     env['PYTHONPATH'] = '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src'
+    env['CACHE_DB'] = tmp_db
 
     proc = subprocess.Popen(
         [sys.executable, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/ipc_main.py'],
