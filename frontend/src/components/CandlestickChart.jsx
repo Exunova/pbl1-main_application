@@ -22,8 +22,9 @@ export default function CandlestickChart({ data = [] }) {
           <YAxis tick={{ fill: '#94a3b8', fontSize: 10 }} tickLine={false} axisLine={{ stroke: '#1e2433' }} domain={['auto', 'auto']} />
           <Tooltip contentStyle={{ background: '#141720', border: '1px solid #1e2433', borderRadius: 6, color: '#e2e8f0', fontSize: 11 }}
             labelStyle={{ color: '#94a3b8' }}
-            formatter={(val, name) => [val?.toFixed ? val.toFixed(2) : val, name]} />
-          <Bar dataKey="bodyY" barWidth={6} radius={[1,1,0,0]}>
+            formatter={(val, name) => [val?.toFixed ? val.toFixed(2) : val, name]}
+            labelFormatter={v => v?.slice(11, 16) || v} />
+          <Bar dataKey="bodyY" barWidth={6} radius={[1,1,0,0]} cursor={{ stroke: '#374151', strokeWidth: 1 }}>
             {candles.map((c, i) => <Cell key={i} fill={c.fill} />)}
           </Bar>
           <Line type="monotone" dataKey="wickY" stroke="#94a3b8" strokeWidth={1} dot={false} />

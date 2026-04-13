@@ -44,12 +44,9 @@ export default function CompareView() {
       const c2 = d2.ohlcv_15m || []
       const base1 = normalize && c1[0]?.close ? c1[0].close : 1
       const base2 = normalize && c2[0]?.close ? c2[0].close : 1
-      // Normalize both arrays to UTC date strings so candles from the same trading day match
-      // regardless of timezone offset differences (DST transitions change offsets between markets)
       const c2ByDay = {}
       c2.forEach(c => {
         if (c?.timestamp) {
-          // "2026-03-30 09:30:00-04:00" or "2026-03-30 14:30:00+01:00" → "2026-03-30"
           c2ByDay[c.timestamp.slice(0, 10)] = c
         }
       })
@@ -99,8 +96,8 @@ export default function CompareView() {
                 labelStyle={{ color: '#94a3b8' }}
                 formatter={(val, name) => [typeof val === 'number' ? val.toFixed(2) : val, name]} />
               <Legend wrapperStyle={{ fontSize: 10, color: '#94a3b8' }} />
-              <Line type="monotone" dataKey="v1" name={MARKETS[idx1].label} stroke="#3b82f6" strokeWidth={2} dot={false} />
-              <Line type="monotone" dataKey="v2" name={MARKETS[idx2].label} stroke="#f59e0b" strokeWidth={2} dot={false} />
+              <Line type="monotone" dataKey="v1" name={MARKETS[idx1].label} stroke="#3b82f6" strokeWidth={2} dot={false} connectNulls />
+              <Line type="monotone" dataKey="v2" name={MARKETS[idx2].label} stroke="#f59e0b" strokeWidth={2} dot={false} connectNulls />
             </LineChart>
           </ResponsiveContainer>
         ) : (
@@ -109,8 +106,8 @@ export default function CompareView() {
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        {[idx1, idx2].map(region => (
-          <div key={region} className="bg-surface rounded-lg p-3">
+        {[idx1, idx2].map((region, i) => (
+          <div key={`${region}-${i}`} className="bg-surface rounded-lg p-3">
             <h3 className="text-xs font-bold text-white/50 mb-2">{MARKETS[region].label} Heatmap</h3>
             <MarketHeatmap tickers={MARKETS[region].tickers} data={tickerData} />
           </div>
