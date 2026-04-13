@@ -13,6 +13,7 @@ Object.defineProperty(globalThis, 'window', {
       fetchMacro: vi.fn(),
       fetchForex: vi.fn(),
       fetchCompany: vi.fn(),
+      fetchCompanies: vi.fn().mockResolvedValue({}),
       fetchIndex: vi.fn(),
       fetchIndices: vi.fn(),
       triggerScrape: vi.fn(),

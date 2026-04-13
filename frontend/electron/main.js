@@ -175,6 +175,7 @@ app.whenReady().then(() => {
   ipcMain.handle('fetchMacro', (_, cc) => sendToPython('macro', { cc }))
   ipcMain.handle('fetchForex', (_, pair) => sendToPython('forex', { pair }))
   ipcMain.handle('fetchCompany', (_, ticker) => sendToPython('company', { ticker }))
+  ipcMain.handle('fetchCompanies', (_, tickers) => sendToPython('companies', { tickers }))
   ipcMain.handle('fetchIndex', (_, idx) => sendToPython('index', { idx }))
   ipcMain.handle('fetchIndices', () => sendToPython('indices', {}))
   ipcMain.handle('triggerScrape', (_, type) => sendToPython('scrape', { type }))

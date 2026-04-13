@@ -302,6 +302,13 @@ def handle_company(ticker):
     cache_set(f"company:{ticker}", data)
     return data
 
+def handle_companies(tickers):
+    """Handle companies command - returns company info for multiple tickers in one call."""
+    results = {}
+    for ticker in tickers:
+        results[ticker] = handle_company(ticker)
+    return results
+
 def handle_index(idx):
     """Handle index command - returns index summary from OHLCV data."""
     fname = to_filename(idx) + ".json"
@@ -668,6 +675,13 @@ def handle_command(req):
             if not ticker:
                 return {"id": req_id, "ok": False, "error": "Missing ticker parameter"}
             data = handle_company(ticker)
+            return {"id": req_id, "ok": True, "data": data}
+
+        elif cmd == "companies":
+            tickers = params.get("tickers", [])
+            if not isinstance(tickers, list):
+                return {"id": req_id, "ok": False, "error": "tickers must be a list"}
+            data = handle_companies(tickers)
             return {"id": req_id, "ok": True, "data": data}
         
         elif cmd == "index":

@@ -7,6 +7,7 @@ contextBridge.exposeInMainWorld('api', {
   fetchMacro: (cc) => ipcRenderer.invoke('fetchMacro', cc),
   fetchForex: (pair) => ipcRenderer.invoke('fetchForex', pair),
   fetchCompany: (ticker) => ipcRenderer.invoke('fetchCompany', ticker),
+  fetchCompanies: (tickers) => ipcRenderer.invoke('fetchCompanies', { tickers }),
   fetchIndex: (idx) => ipcRenderer.invoke('fetchIndex', idx),
   fetchIndices: () => ipcRenderer.invoke('fetchIndices'),
   triggerScrape: (type) => ipcRenderer.invoke('triggerScrape', type),
