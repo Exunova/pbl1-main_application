@@ -219,7 +219,15 @@ def handle_ohlcv(ticker):
     fname = to_filename(ticker) + ".json"
     cached = cache_get(f"ohlcv:{ticker}")
     if cached:
-        return cached
+        updated_at_str = cached.get("updated_at") or cached.get("scraped_at")
+        if updated_at_str:
+            try:
+                updated_at = datetime.fromisoformat(updated_at_str)
+                age = (datetime.now() - updated_at).total_seconds()
+                if age < 3600:
+                    return cached
+            except Exception:
+                pass
     
     data = read_cache_file("ohlcv", fname)
     if not data:

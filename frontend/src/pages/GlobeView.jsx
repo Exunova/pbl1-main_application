@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
 import Globe from 'globe.gl'
+import { ChevronRight, TrendingUp, TrendingDown } from 'lucide-react'
 import EconomicCalendar from '../components/EconomicCalendar'
 import MacroNewsPanel from '../components/MacroNewsPanel'
 
@@ -316,16 +317,21 @@ export default function GlobeView() {
 
       <div
         className={`absolute top-0 right-0 h-full bg-surface border-l border-white/5 shadow-2xl transition-transform duration-300 ease-in-out ${
-          selectedCountry ? 'translate-x-0' : 'translate-x-full'
+          selectedCountry ? 'translate-x-0' : 'translate-x-[320px]'
         }`}
         style={{ width: '320px' }}
       >
         {selectedCountry && (
           <div className="h-full flex flex-col">
             <div className="p-6 border-b border-white/5 bg-gradient-to-br from-accent/10 to-transparent">
-              <h2 className="text-xl font-bold text-white uppercase tracking-tight">
-                {COUNTRY_INDEX_MAP[selectedCountry]?.name || selectedCountry}
-              </h2>
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-bold text-white uppercase tracking-tight">
+                  {COUNTRY_INDEX_MAP[selectedCountry]?.name || selectedCountry}
+                </h2>
+                <button onClick={() => setSelectedCountry(null)} className="text-white/40 hover:text-white transition-colors">
+                  <ChevronRight size={20} />
+                </button>
+              </div>
               <p className="text-sm text-white/40 mt-1">
                 {selectedCountry === 'US' && 'United States'}
                 {selectedCountry === 'ID' && 'Indonesia'}
