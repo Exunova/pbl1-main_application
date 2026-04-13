@@ -30,6 +30,7 @@ body {
 
 .globe-container canvas { outline: none; }
 
-.slide-in {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #374151 #0d0f14;
 }
