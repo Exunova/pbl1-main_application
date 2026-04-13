@@ -217,7 +217,9 @@ def to_filename(ticker):
 def handle_ohlcv(ticker):
     """Handle ohlcv command - returns OHLCV data for a ticker."""
     fname = to_filename(ticker) + ".json"
-    cached = cache_get(f"ohlcv:{ticker}")
+    # Use normalized filename as cache key to match scraper conventions
+    cache_key = f"ohlcv:{to_filename(ticker)}"
+    cached = cache_get(cache_key)
     if cached:
         return cached
     
@@ -229,7 +231,7 @@ def handle_ohlcv(ticker):
     if not data:
         return {"ticker": ticker, "ohlcv_15m": []}
     
-    cache_set(f"ohlcv:{ticker}", data)
+    cache_set(cache_key, data)
     return data
 
 def handle_news(region):
