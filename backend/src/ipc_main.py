@@ -678,8 +678,14 @@ def handle_command(req):
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "companies":
-            tickers = params.get("tickers", [])
-            if not isinstance(tickers, list):
+            raw = params.get("tickers", [])
+            if isinstance(raw, list):
+                tickers = raw
+            elif isinstance(raw, dict) and "tickers" in raw:
+                tickers = raw["tickers"]
+            elif isinstance(raw, dict):
+                return {"id": req_id, "ok": False, "error": "tickers must be a list"}
+            else:
                 return {"id": req_id, "ok": False, "error": "tickers must be a list"}
             data = handle_companies(tickers)
             return {"id": req_id, "ok": True, "data": data}
