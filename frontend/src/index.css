@@ -34,3 +34,32 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #374151 #0d0f14;
 }
+
+/* Resize handle */
+.resize-handle-h {
+  height: 4px;
+  width: 100%;
+  cursor: row-resize;
+  background: transparent;
+  transition: background 0.2s;
+  z-index: 50;
+}
+.resize-handle-h:hover,
+.resize-handle-h.resizing {
+  background: rgba(249, 115, 22, 0.45);
+}
+
+/* Slide-in animation for panels */
+@keyframes slide-in-right {
+  0%   { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0);    opacity: 1; }
+}
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Globe label pulse */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
