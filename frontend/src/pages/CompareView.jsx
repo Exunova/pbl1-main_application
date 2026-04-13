@@ -15,20 +15,22 @@ export default function CompareView() {
 
   useEffect(() => {
     if (!window.api) return
-    // Fetch all tickers from all markets for heatmap
     const allTickers = Object.values(MARKETS).flatMap(m => m.tickers)
-    Promise.all(allTickers.map(t => window.api.fetchCompany(t).catch(() => null)))
-      .then(results => {
-        const td = {}
-        results.forEach((d, i) => {
-          const t = allTickers[i]
-          if (!d?.info?.price) return
-          const cur = d.info.price.currentPrice
-          const prv = d.info.price.previousClose
-          td[t] = { change_pct: (cur && prv) ? ((cur - prv) / prv * 100) : 0 }
-        })
-        setTickerData(td)
-      }).catch(() => {})
+    let cancelled = false
+
+    window.api.fetchCompanies(allTickers).then(results => {
+      if (cancelled) return
+      const td = {}
+      Object.entries(results).forEach(([t, d]) => {
+        if (!d?.info?.price) return
+        const cur = d.info.price.currentPrice
+        const prv = d.info.price.previousClose
+        td[t] = { change_pct: (cur && prv) ? ((cur - prv) / prv * 100) : 0 }
+      })
+      setTickerData(td)
+    }).catch(() => {})
+
+    return () => { cancelled = true }
   }, [])
 
   useEffect(() => {

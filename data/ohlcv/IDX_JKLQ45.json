@@ -1,9 +1,9 @@
 {
-  "ticker": "ASII.JK",
-  "type": "stock",
+  "ticker": "^JKLQ45",
+  "type": "index",
   "market": "ID",
-  "scraped_at": "2026-04-13 07:39:17.877038",
-  "updated_at": "2026-04-13T07:39:17.877061",
+  "scraped_at": "2026-04-13 07:39:17.850787",
+  "updated_at": "2026-04-13T07:39:17.850808",
   "ohlcv_15m": [
     {
       "timestamp": "2024-01-01 09:00:00",

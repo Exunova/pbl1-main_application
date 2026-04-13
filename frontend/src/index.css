@@ -20,11 +20,16 @@ body {
   overflow: hidden;
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-track { background: #0d0f14; }
 ::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4b5563; }
 
-/* Drag regions */
 .drag-header { -webkit-app-region: drag; }
 .no-drag { -webkit-app-region: no-drag; }
+
+.globe-container canvas { outline: none; }
+
+.slide-in {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

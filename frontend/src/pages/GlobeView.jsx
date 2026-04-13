@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
-import * as d3 from 'd3'
-import * as topojson from 'topojson-client'
+import Globe from 'globe.gl'
 import EconomicCalendar from '../components/EconomicCalendar'
 import MacroNewsPanel from '../components/MacroNewsPanel'
 
@@ -11,29 +10,43 @@ const COUNTRY_INDEX_MAP = {
   GB: { index: '^FTSE', name: 'FTSE 100' },
 }
 
-const COUNTRY_ISO_TO_CODE = {
-  840: 'US',
-  360: 'ID',
-  392: 'JP',
-  826: 'GB',
+const ISO2_TO_ISO3 = {
+  US: 'USA',
+  ID: 'IDN',
+  JP: 'JPN',
+  GB: 'GBR',
 }
 
-const COLOR_POSITIVE = '#22c55e'
-const COLOR_NEGATIVE = '#ef4444'
-const COLOR_NEUTRAL = '#374151'
-const OCEAN_COLOR = '#0d1220'
-const BORDER_COLOR = '#1e2433'
+const ISO3_TO_ISO2 = {
+  USA: 'US',
+  IDN: 'ID',
+  JPN: 'JP',
+  GBR: 'GB',
+}
 
-function getColor(changePct, magnitude) {
-  if (changePct === null || changePct === undefined) return COLOR_NEUTRAL
-  const opacity = Math.min(Math.max(Math.abs(magnitude || changePct) / 5, 0.3), 1.0)
-  const color = changePct > 0 ? COLOR_POSITIVE : changePct < 0 ? COLOR_NEGATIVE : COLOR_NEUTRAL
-  const rgb = d3.color(color)
-  return rgb ? rgb.copy({ opacity }) : color
+const GEO_JSON_URL = 'https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson'
+
+const COLOR_LEGEND = {
+  change_gt_1: '#166534',
+  change_gt_0: '#4ade80',
+  change_lt_0: '#f87171',
+  change_lt_neg1: '#991b1b',
+  no_data: '#374151',
+}
+
+function getCountryColor(changePct) {
+  if (changePct === null || changePct === undefined) return COLOR_LEGEND.no_data
+  if (changePct > 1) return COLOR_LEGEND.change_gt_1
+  if (changePct > 0) return COLOR_LEGEND.change_gt_0
+  if (changePct < -1) return COLOR_LEGEND.change_lt_neg1
+  return COLOR_LEGEND.change_lt_0
 }
 
 export default function GlobeView() {
-  const svgRef = useRef(null)
+  const containerRef = useRef(null)
+  const globeRef = useRef(null)
+  const selectedCountryRef = useRef(null)
+  const indexMapRef = useRef({})
   const [worldData, setWorldData] = useState(null)
   const [indicesData, setIndicesData] = useState([])
   const [loading, setLoading] = useState(true)
@@ -46,7 +59,7 @@ export default function GlobeView() {
 
   const fetchMapData = useCallback(async () => {
     try {
-      const response = await fetch('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+      const response = await fetch(GEO_JSON_URL)
       if (!response.ok) throw new Error('Failed to fetch world topology')
       const data = await response.json()
       setWorldData(data)
@@ -106,6 +119,29 @@ export default function GlobeView() {
   }, [])
 
   useEffect(() => {
+    selectedCountryRef.current = selectedCountry
+  }, [selectedCountry])
+
+  useEffect(() => {
+    const newMap = {}
+    indicesData.forEach(idx => {
+      const iso3 = ISO2_TO_ISO3[idx.country]
+      if (iso3) newMap[iso3] = idx
+    })
+    indexMapRef.current = newMap
+
+    if (globeRef.current) {
+      globeRef.current
+        .polygonCapColor(d => {
+          const countryId = d.properties.ISO_A3
+          const idx = indexMapRef.current[countryId]
+          if (!idx) return COLOR_LEGEND.no_data
+          return getCountryColor(idx.change_pct)
+        })
+    }
+  }, [indicesData])
+
+  useEffect(() => {
     let mounted = true
     const init = async () => {
       await Promise.all([fetchMapData(), fetchIndexData()])
@@ -116,102 +152,102 @@ export default function GlobeView() {
   }, [fetchMapData, fetchIndexData])
 
   useEffect(() => {
-    if (!worldData || !svgRef.current || loading) return
+    if (!worldData || !containerRef.current || loading) return
 
-    const svg = d3.select(svgRef.current)
-    svg.selectAll('*').remove()
+    if (globeRef.current) return
 
-    const width = svgRef.current.clientWidth || 1200
-    const height = svgRef.current.clientHeight || 700
+    const globeInstance = Globe()
+      (containerRef.current)
+      .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-dark.jpg')
+      .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+      .backgroundColor('#0d0f14')
+      .atmosphereColor('#3b82f6')
+      .atmosphereAltitude(0.15)
+      .width(containerRef.current.clientWidth)
+      .height(containerRef.current.clientHeight)
 
-    const projection = d3.geoNaturalEarth1().fitSize([width, height], { type: 'Sphere' })
-    const path = d3.geoPath().projection(projection)
+    const controls = globeInstance.controls()
+    if (controls) {
+      controls.autoRotate = true
+      controls.autoRotateSpeed = 0.5
+      controls.enablePan = false
+      controls.minDistance = 200
+      controls.maxDistance = 500
+    }
 
-    const indexMap = {}
-    indicesData.forEach(idx => {
-      const entry = Object.entries(COUNTRY_INDEX_MAP).find(([, v]) => v.index === idx.index)
-      if (entry) indexMap[entry[0]] = idx
-    })
+    const countries = worldData.features.filter(d => d.properties.ISO_A3 !== 'AQ')
 
-    const countries = topojson.feature(worldData, worldData.objects.countries)
-    const borders = topojson.mesh(worldData, worldData.objects.countries, (a, b) => a !== b)
-
-    svg.append('path')
-      .datum({ type: 'Sphere' })
-      .attr('d', path)
-      .attr('fill', OCEAN_COLOR)
-
-    const countryGroup = svg.append('g')
-
-    countryGroup.selectAll('path')
-      .data(countries.features)
-      .join('path')
-      .attr('d', path)
-      .attr('fill', d => {
-        const isoNum = +d.id
-        const code = COUNTRY_ISO_TO_CODE[isoNum]
-        if (!code) return COLOR_NEUTRAL
-        const idx = indexMap[code]
-        if (!idx) return COLOR_NEUTRAL
-        return getColor(idx.change_pct, idx.change_pct)
+    globeInstance
+      .polygonsData(countries)
+      .polygonAltitude(0.01)
+      .polygonCapColor(d => {
+        const countryId = d.properties.ISO_A3
+        const idx = indexMapRef.current[countryId]
+        if (!idx) return COLOR_LEGEND.no_data
+        return getCountryColor(idx.change_pct)
       })
-      .attr('stroke', BORDER_COLOR)
-      .attr('stroke-width', 0.5)
-      .style('cursor', d => {
-        const isoNum = +d.id
-        return COUNTRY_ISO_TO_CODE[isoNum] ? 'pointer' : 'default'
-      })
-      .on('mouseenter', function (event, d) {
-        const isoNum = +d.id
-        const code = COUNTRY_ISO_TO_CODE[isoNum]
-        const idx = code ? indexMap[code] : null
-        const mapEntry = code ? COUNTRY_INDEX_MAP[code] : null
-
-        let content = { country: code || 'Unknown', name: 'No data', current_price: 'N/A', change_pct: null }
-        if (idx && mapEntry) {
-          content = {
-            country: mapEntry.name,
-            name: idx.name,
-            current_price: idx.current_price,
-            change_pct: idx.change_pct,
-          }
-        }
-
-        const rect = svgRef.current.getBoundingClientRect()
-        setTooltip({ visible: true, x: event.clientX - rect.left, y: event.clientY - rect.top, content })
-        d3.select(this).attr('stroke', '#fff').attr('stroke-width', 1)
-      })
-      .on('mousemove', function (event) {
-        const rect = svgRef.current.getBoundingClientRect()
-        setTooltip(prev => ({ ...prev, x: event.clientX - rect.left, y: event.clientY - rect.top }))
-      })
-      .on('mouseleave', function () {
-        setTooltip(prev => ({ ...prev, visible: false }))
-        d3.select(this).attr('stroke', BORDER_COLOR).attr('stroke-width', 0.5)
-      })
-      .on('click', function (event, d) {
-        event.stopPropagation()
-        const isoNum = +d.id
-        const code = COUNTRY_ISO_TO_CODE[isoNum]
-        if (!code) return
-        if (selectedCountry === code) {
+      .polygonSideColor(() => 'rgba(0, 0, 0, 0.1)')
+      .polygonStrokeColor(() => '#111')
+      .onPolygonClick((polygon) => {
+        const iso3 = polygon.properties.ISO_A3
+        const iso2 = ISO3_TO_ISO2[iso3]
+        if (!iso2) return
+        if (selectedCountryRef.current === iso2) {
           setSelectedCountry(null)
         } else {
-          setSelectedCountry(code)
-          loadCountryData(code)
+          setSelectedCountry(iso2)
+          loadCountryData(iso2)
+        }
+      })
+      .onPolygonHover((polygon, event) => {
+        if (controls) controls.autoRotate = !polygon
+        if (containerRef.current) {
+          containerRef.current.style.cursor = polygon ? 'pointer' : 'default'
+        }
+        if (polygon) {
+          const iso3 = polygon.properties.ISO_A3
+          const iso2 = ISO3_TO_ISO2[iso3]
+          const idx = indexMapRef.current[iso3]
+          const mapEntry = iso2 ? COUNTRY_INDEX_MAP[iso2] : null
+
+          let content = { country: iso2 || 'Unknown', name: 'No data', current_price: 'N/A', change_pct: null }
+          if (idx && mapEntry) {
+            content = {
+              country: mapEntry.name,
+              name: idx.name,
+              current_price: idx.current_price,
+              change_pct: idx.change_pct,
+            }
+          }
+
+          const rect = containerRef.current?.getBoundingClientRect()
+          const clientX = event?.clientX ?? 0
+          const clientY = event?.clientY ?? 0
+          setTooltip({ visible: true, x: rect ? clientX - rect.left : 0, y: rect ? clientY - rect.top : 0, content })
+        } else {
+          setTooltip(prev => ({ ...prev, visible: false }))
         }
       })
 
-    svg.append('path')
-      .datum(borders)
-      .attr('d', path)
-      .attr('fill', 'none')
-      .attr('stroke', BORDER_COLOR)
-      .attr('stroke-width', 0.3)
+    globeRef.current = globeInstance
 
-    svg.on('click', () => setSelectedCountry(null))
+    const handleResize = () => {
+      if (globeRef.current && containerRef.current) {
+        globeRef.current.width(containerRef.current.clientWidth)
+        globeRef.current.height(containerRef.current.clientHeight)
+      }
+    }
+    window.addEventListener('resize', handleResize)
 
-  }, [worldData, indicesData, loading, selectedCountry, loadCountryData])
+    return () => {
+      window.removeEventListener('resize', handleResize)
+      if (globeRef.current) {
+        const renderer = globeRef.current.renderer()
+        if (renderer) renderer.dispose()
+        globeRef.current = null
+      }
+    }
+  }, [worldData, indicesData, loading, loadCountryData])
 
   const renderTooltip = () => {
     if (!tooltip.visible || !tooltip.content) return null
@@ -236,56 +272,78 @@ export default function GlobeView() {
 
   if (loading) {
     return (
-      <div className="w-full h-full flex items-center justify-center bg-[#0d0f14]">
-        <div className="text-gray-400 text-lg">Loading map...</div>
+      <div className="w-full h-full flex items-center justify-center bg-background">
+        <div className="text-white/40 text-lg">Loading globe...</div>
       </div>
     )
   }
 
   if (error) {
     return (
-      <div className="w-full h-full flex items-center justify-center bg-[#0d0f14]">
-        <div className="text-red-400 text-lg">Error: {error}</div>
+      <div className="w-full h-full flex items-center justify-center bg-background">
+        <div className="text-danger text-lg">Error: {error}</div>
       </div>
     )
   }
 
   return (
-    <div className="relative w-full h-full bg-[#0d0f14] overflow-hidden">
-      <svg ref={svgRef} className="w-full h-full" style={{ background: OCEAN_COLOR }} />
+    <div className="relative w-full h-full bg-background overflow-hidden">
+      <div ref={containerRef} className="w-full h-full globe-container" />
 
       {renderTooltip()}
 
+      <div className="absolute bottom-6 left-6 flex flex-col gap-2 bg-surface/80 backdrop-blur-md border border-white/5 p-4 rounded-lg z-10">
+        <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Index Performance</span>
+        <div className="flex flex-col gap-1.5 mt-1">
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-[#166534]" />
+            <span className="text-[11px] text-white/70">&gt; +1.0%</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-[#4ade80]" />
+            <span className="text-[11px] text-white/70">0% to +1.0%</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-[#f87171]" />
+            <span className="text-[11px] text-white/70">-1.0% to 0%</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full bg-[#991b1b]" />
+            <span className="text-[11px] text-white/70">&lt; -1.0%</span>
+          </div>
+        </div>
+      </div>
+
       <div
-        className={`absolute top-0 right-0 h-full bg-[#12151c] border-l border-gray-800 transition-transform duration-300 ease-in-out ${
+        className={`absolute top-0 right-0 h-full bg-surface border-l border-white/5 shadow-2xl transition-transform duration-300 ease-in-out ${
           selectedCountry ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{ width: '320px' }}
       >
         {selectedCountry && (
           <div className="h-full flex flex-col">
-            <div className="p-4 border-b border-gray-800">
-              <h2 className="text-lg font-semibold text-white">
+            <div className="p-6 border-b border-white/5 bg-gradient-to-br from-accent/10 to-transparent">
+              <h2 className="text-xl font-bold text-white uppercase tracking-tight">
                 {COUNTRY_INDEX_MAP[selectedCountry]?.name || selectedCountry}
               </h2>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-white/40 mt-1">
                 {selectedCountry === 'US' && 'United States'}
                 {selectedCountry === 'ID' && 'Indonesia'}
                 {selectedCountry === 'JP' && 'Japan'}
                 {selectedCountry === 'GB' && 'United Kingdom'}
               </p>
             </div>
-            <div className="flex-1 overflow-y-auto">
+            <div className="flex-1 overflow-y-auto custom-scrollbar">
               {panelLoading ? (
-                <div className="p-4 text-gray-400 text-center">Loading...</div>
+                <div className="p-4 text-white/40 text-center">Loading...</div>
               ) : (
                 <>
-                  <div className="p-4">
-                    <h3 className="text-sm font-medium text-gray-300 mb-3">Economic Calendar</h3>
+                  <div className="p-6">
+                    <h3 className="text-sm font-medium text-white/60 mb-3">Economic Calendar</h3>
                     <EconomicCalendar events={calendarEvents} loading={panelLoading} />
                   </div>
-                  <div className="p-4 border-t border-gray-800">
-                    <h3 className="text-sm font-medium text-gray-300 mb-3">Macro News</h3>
+                  <div className="p-6 border-t border-white/5">
+                    <h3 className="text-sm font-medium text-white/60 mb-3">Macro News</h3>
                     <MacroNewsPanel articles={newsArticles} loading={panelLoading} />
                   </div>
                 </>
