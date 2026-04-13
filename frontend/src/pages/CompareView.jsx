@@ -44,11 +44,26 @@ export default function CompareView() {
       const c2 = d2.ohlcv_15m || []
       const base1 = normalize && c1[0]?.close ? c1[0].close : 1
       const base2 = normalize && c2[0]?.close ? c2[0].close : 1
-      const merged = c1.map((c, i) => ({
-        ts: c.timestamp?.slice(11, 16) || '',
-        v1: c.close / base1 * 100,
-        v2: c2[i]?.close ? c2[i].close / base2 * 100 : null,
-      })).filter(d => d.v2 != null)
+      // Normalize both arrays to UTC date strings so candles from the same trading day match
+      // regardless of timezone offset differences (DST transitions change offsets between markets)
+      const c2ByDay = {}
+      c2.forEach(c => {
+        if (c?.timestamp) {
+          // "2026-03-30 09:30:00-04:00" or "2026-03-30 14:30:00+01:00" → "2026-03-30"
+          c2ByDay[c.timestamp.slice(0, 10)] = c
+        }
+      })
+      const merged = c1.reduce((acc, c) => {
+        if (!c?.timestamp) return acc
+        const day = c.timestamp.slice(0, 10)
+        const matched = c2ByDay[day]
+        if (!matched) return acc
+        return acc.concat({
+          ts: day,
+          v1: c.close / base1 * 100,
+          v2: matched.close / base2 * 100,
+        })
+      }, [])
       setChartData(merged)
       setLoading(false)
     }).catch(() => setLoading(false))
