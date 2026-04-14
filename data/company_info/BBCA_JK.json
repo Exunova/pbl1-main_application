@@ -1,7 +1,8 @@
 {
   "ticker": "BBCA.JK",
   "market": "ID",
-  "scraped_at": "2026-04-06 07:34:37.004749",
+  "scraped_at": "2026-04-13 10:30:40.054073",
+  "updated_at": "2026-04-13T10:30:40.054088",
   "info": {
     "identity": {
       "longName": "PT Bank Central Asia Tbk",
@@ -104,31 +105,31 @@
       ]
     },
     "price": {
-      "currentPrice": 6575.0,
-      "previousClose": 6500.0,
-      "open": 6550.0,
-      "dayHigh": 6600.0,
-      "dayLow": 6500.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "currentPrice": 6650.0,
+      "previousClose": 6700.0,
+      "open": 6650.0,
+      "dayHigh": 6700.0,
+      "dayLow": 6575.0,
+      "bid": 6650.0,
+      "ask": 6675.0,
       "fiftyTwoWeekHigh": 9800.0,
       "fiftyTwoWeekLow": 6350.0,
-      "fiftyDayAverage": 7113.5,
-      "twoHundredDayAverage": 7933.0,
-      "volume": 72725400,
-      "averageVolume": 207429952,
-      "averageVolume10days": 191747414,
-      "regularMarketChangePercent": 1.1538461,
-      "52WeekChange": -0.22647059
+      "fiftyDayAverage": 7031.5,
+      "twoHundredDayAverage": 7880.875,
+      "volume": 36830000,
+      "averageVolume": 213546544,
+      "averageVolume10days": 151843910,
+      "regularMarketChangePercent": -0.74349445,
+      "52WeekChange": -0.20238096
     },
     "valuation": {
-      "marketCap": 808810658660352,
-      "enterpriseValue": 730468509024256,
-      "trailingPE": 14.084658,
-      "forwardPE": 13.627507,
-      "priceToBook": 2.8735595,
-      "priceToSalesTrailing12Months": 7.4899855,
-      "trailingEps": 466.82,
+      "marketCap": 818036651065344,
+      "enterpriseValue": 745845163032576,
+      "trailingPE": 14.240134,
+      "forwardPE": 13.782954,
+      "priceToBook": 2.9063377,
+      "priceToSalesTrailing12Months": 7.575423,
+      "trailingEps": 466.99,
       "forwardEps": 482.48,
       "bookValue": 2288.103,
       "pegRatio": null
@@ -150,7 +151,7 @@
     },
     "dividend": {
       "dividendRate": 336.0,
-      "dividendYield": 5.11,
+      "dividendYield": 5.01,
       "fiveYearAvgDividendYield": 2.48,
       "payoutRatio": 0.65309995,
       "exDividendDate": 1774828800,
@@ -168,8 +169,8 @@
     "ownership": {
       "sharesOutstanding": 123013033200,
       "floatShares": 48376105436,
-      "heldPercentInsiders": 0.60174,
-      "heldPercentInstitutions": 0.19436,
+      "heldPercentInsiders": 0.60814,
+      "heldPercentInstitutions": 0.1935,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1634083200,
       "beta": 0.112

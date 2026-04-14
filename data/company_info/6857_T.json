@@ -1,7 +1,8 @@
 {
   "ticker": "6857.T",
   "market": "JP",
-  "scraped_at": "2026-04-06 07:35:12.071079",
+  "scraped_at": "2026-04-13 10:31:08.724748",
+  "updated_at": "2026-04-13T10:31:08.724761",
   "info": {
     "identity": {
       "longName": "Advantest Corporation",
@@ -70,7 +71,7 @@
         {
           "maxAge": 1,
           "name": "Kesa  Yorozu",
-          "title": "Global General Counsel & Executive Officer",
+          "title": "Chief Legal Officer & Senior Executive Officer",
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -99,7 +100,7 @@
         {
           "maxAge": 1,
           "name": "Mr. Keith  Hardwick",
-          "title": "Chief Compliance Officer, Chief Human Capital Officer & Senior Executive Officer",
+          "title": "Chief Human Capital Officer & Senior Executive Officer",
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -117,31 +118,31 @@
       ]
     },
     "price": {
-      "currentPrice": 21930.0,
-      "previousClose": 21555.0,
-      "open": 21690.0,
-      "dayHigh": 22100.0,
-      "dayLow": 21625.0,
-      "bid": 21930.0,
-      "ask": 21940.0,
+      "currentPrice": 24715.0,
+      "previousClose": 24990.0,
+      "open": 24650.0,
+      "dayHigh": 25245.0,
+      "dayLow": 24610.0,
+      "bid": 24665.0,
+      "ask": 24675.0,
       "fiftyTwoWeekHigh": 29345.0,
-      "fiftyTwoWeekLow": 4703.0,
-      "fiftyDayAverage": 24694.0,
-      "twoHundredDayAverage": 17856.525,
-      "volume": 1182500,
-      "averageVolume": 10365478,
-      "averageVolume10days": 11022370,
-      "regularMarketChangePercent": 1.7393321,
-      "52WeekChange": 3.2818832
+      "fiftyTwoWeekLow": 5344.0,
+      "fiftyDayAverage": 24743.2,
+      "twoHundredDayAverage": 18219.87,
+      "volume": 3590000,
+      "averageVolume": 10348718,
+      "averageVolume10days": 11285840,
+      "regularMarketChangePercent": -1.1004401,
+      "52WeekChange": 3.2291422
     },
     "valuation": {
-      "marketCap": 15921496195072,
-      "enterpriseValue": 15103190630400,
-      "trailingPE": 61.792057,
-      "forwardPE": 92.24751,
-      "priceToBook": 23.618484,
-      "priceToSalesTrailing12Months": 15.414572,
-      "trailingEps": 354.9,
+      "marketCap": 17943446421504,
+      "enterpriseValue": 17910015721472,
+      "trailingPE": 69.64719,
+      "forwardPE": 103.96248,
+      "priceToBook": 26.617914,
+      "priceToSalesTrailing12Months": 17.372145,
+      "trailingEps": 354.86,
       "forwardEps": 237.73,
       "bookValue": 928.51,
       "pegRatio": null
@@ -163,7 +164,7 @@
     },
     "dividend": {
       "dividendRate": 49.0,
-      "dividendYield": 0.23,
+      "dividendYield": 0.2,
       "fiveYearAvgDividendYield": 0.85,
       "payoutRatio": 0.1377,
       "exDividendDate": 1759104000,
@@ -182,7 +183,7 @@
       "sharesOutstanding": 726014370,
       "floatShares": 716992899,
       "heldPercentInsiders": 0.00279,
-      "heldPercentInstitutions": 0.66639,
+      "heldPercentInstitutions": 0.65366995,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1695859200,
       "beta": 1.054

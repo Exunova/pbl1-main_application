@@ -10,6 +10,7 @@ import os
 import json
 import threading
 import sqlite3
+import builtins
 from datetime import datetime
 from contextlib import contextmanager
 
@@ -27,6 +28,7 @@ CACHE_DB = os.path.join(APP_DIR, 'cache.db')
 
 # Ensure data dir exists
 os.makedirs(DATA_DIR, exist_ok=True)
+sys.stderr.write(f"[Python IPC] DATA_DIR initialized at: {DATA_DIR}\n")
 
 # Ensure sys.path has APP_DIR for scrapers imports
 if APP_DIR not in sys.path:
@@ -136,6 +138,15 @@ SCRAPER_MODULES = {
 }
 
 # =============================================================================
+# REDIRECT PRINT TO STDERR (to keep STDOUT clean for JSON IPC)
+# =============================================================================
+_original_print = builtins.print
+def print_to_stderr(*args, **kwargs):
+    kwargs["file"] = sys.stderr
+    _original_print(*args, **kwargs)
+builtins.print = print_to_stderr
+
+# =============================================================================
 # SCRAPE STATUS (thread-safe)
 # =============================================================================
 
@@ -147,6 +158,7 @@ scrape_status = {
     "company_info": None
 }
 scrape_lock = threading.Lock()
+active_scrapers = set()
 
 def set_scrape_status(key, status):
     """Set scrape status for a scraper type."""
@@ -171,7 +183,12 @@ def get_scrape_status():
 # =============================================================================
 
 def trigger_scrape_in_bg(scraper_key):
-    """Trigger a scraper to run in the background."""
+    """Trigger a scraper to run in the background if not already running."""
+    with scrape_lock:
+        if scraper_key in active_scrapers:
+            return
+        active_scrapers.add(scraper_key)
+
     def run():
         try:
             scraper_mod, output_dir = SCRAPER_MODULES[scraper_key]
@@ -181,6 +198,9 @@ def trigger_scrape_in_bg(scraper_key):
         except Exception as e:
             set_scrape_status(scraper_key, f"error: {str(e)}")
             sys.stderr.write(f"Scrape error {scraper_key}: {e}\n")
+        finally:
+            with scrape_lock:
+                active_scrapers.discard(scraper_key)
 
     t = threading.Thread(target=run, daemon=True)
     t.start()
@@ -231,8 +251,8 @@ def handle_ohlcv(ticker):
     
     data = read_cache_file("ohlcv", fname)
     if not data:
-        ohlcv_scraper.run(os.path.join(DATA_DIR, "ohlcv"))
-        data = read_cache_file("ohlcv", fname)
+        trigger_scrape_in_bg("ohlcv")
+        return {"ticker": ticker, "ohlcv_15m": [], "loading": True}
     
     if not data:
         return {"ticker": ticker, "ohlcv_15m": []}
@@ -248,8 +268,9 @@ def handle_news(region):
     
     data = read_cache_file("news", f"{region.lower()}_news.json")
     if not data:
-        news_scraper.run(os.path.join(DATA_DIR, "news"))
-        data = read_cache_file("news", f"{region.lower()}_news.json")
+        trigger_scrape_in_bg("news")
+        labels = {"US": "S&P 500 / Wall Street", "ID": "LQ45 / IHSG", "JP": "Nikkei 225", "GB": "FTSE 100"}
+        return {"region": region.upper(), "label": labels.get(region.upper(), region), "articles": [], "loading": True}
     
     labels = {"US": "S&P 500 / Wall Street", "ID": "LQ45 / IHSG", "JP": "Nikkei 225", "GB": "FTSE 100"}
     if not data:
@@ -266,8 +287,8 @@ def handle_macro(cc):
     
     data = read_cache_file("macro", f"{cc.lower()}_macro.json")
     if not data:
-        macro_scraper.run(os.path.join(DATA_DIR, "macro"))
-        data = read_cache_file("macro", f"{cc.lower()}_macro.json")
+        trigger_scrape_in_bg("macro")
+        return {"country": cc.upper(), "name": cc.upper(), "events": [], "loading": True}
     
     if not data:
         return {"country": cc.upper(), "name": cc.upper(), "events": []}
@@ -283,8 +304,8 @@ def handle_forex(pair):
     
     data = read_cache_file("forex", f"{pair.lower()}.json")
     if not data:
-        forex_scraper.run(os.path.join(DATA_DIR, "forex"))
-        data = read_cache_file("forex", f"{pair.lower()}.json")
+        trigger_scrape_in_bg("forex")
+        return {"pair": pair.upper(), "current_rate": None, "change_pct": 0, "loading": True}
     
     if not data:
         return {"pair": pair.upper(), "current_rate": None, "change_pct": 0}
@@ -301,8 +322,8 @@ def handle_company(ticker):
     
     data = read_cache_file("company_info", fname)
     if not data:
-        company_info_scraper.run(os.path.join(DATA_DIR, "company_info"))
-        data = read_cache_file("company_info", fname)
+        trigger_scrape_in_bg("company_info")
+        return {"ticker": ticker, "info": {}, "loading": True}
     
     if not data:
         return {"ticker": ticker, "info": {}}
@@ -791,11 +812,14 @@ def main():
         try:
             req = json.loads(line)
             resp = handle_command(req)
-            print(json.dumps(resp), flush=True)
+            sys.stdout.write(json.dumps(resp) + "\n")
+            sys.stdout.flush()
         except json.JSONDecodeError as e:
-            print(json.dumps({"id": "", "ok": False, "error": f"Invalid JSON: {str(e)}"}), flush=True)
+            sys.stdout.write(json.dumps({"id": "", "ok": False, "error": f"Invalid JSON: {str(e)}"}) + "\n")
+            sys.stdout.flush()
         except Exception as e:
-            print(json.dumps({"id": "", "ok": False, "error": str(e)}), flush=True)
+            sys.stdout.write(json.dumps({"id": "", "ok": False, "error": str(e)}) + "\n")
+            sys.stdout.flush()
 
 if __name__ == "__main__":
     main()

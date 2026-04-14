@@ -1,7 +1,8 @@
 {
   "ticker": "6758.T",
   "market": "JP",
-  "scraped_at": "2026-04-06 07:35:02.487628",
+  "scraped_at": "2026-04-13 10:31:02.549792",
+  "updated_at": "2026-04-13T10:31:02.549801",
   "info": {
     "identity": {
       "longName": "Sony Group Corporation",
@@ -19,23 +20,23 @@
       "companyOfficers": [
         {
           "maxAge": 1,
+          "name": "Mr. Kenichiro  Yoshida",
+          "age": 66,
+          "title": "Executive Chairman",
+          "yearBorn": 1959,
+          "fiscalYear": 2025,
+          "totalPay": 636000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
           "name": "Mr. Hiroki  Totoki",
           "age": 61,
           "title": "President, CEO, Director & Representative Corporate Executive Officer",
           "yearBorn": 1964,
           "fiscalYear": 2025,
           "totalPay": 360000000,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Kenichiro  Yoshida",
-          "age": 66,
-          "title": "Chairman & Representative Corporate Executive Officer",
-          "yearBorn": 1959,
-          "fiscalYear": 2025,
-          "totalPay": 636000000,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -98,16 +99,18 @@
         },
         {
           "maxAge": 1,
-          "name": "Mr. Teruo  Hirayama",
-          "title": "President of Device & Material R&D Group, R&D Platform",
+          "name": "Mr. Shoji  Nemoto",
+          "age": 69,
+          "title": "Head of Disc Manufacturing Business",
+          "yearBorn": 1956,
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
         {
           "maxAge": 1,
-          "name": "Mr. Masayuki  Hattori",
-          "title": "President of System R&D Group, R&D Platform",
+          "name": "Yasuhiro  Ueda",
+          "title": "Head of Technology Policy & Relations",
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -115,31 +118,31 @@
       ]
     },
     "price": {
-      "currentPrice": 3298.0,
-      "previousClose": 3324.0,
-      "open": 3327.0,
-      "dayHigh": 3345.0,
-      "dayLow": 3295.0,
-      "bid": 3298.0,
-      "ask": 3303.0,
+      "currentPrice": 3252.0,
+      "previousClose": 3325.0,
+      "open": 3233.0,
+      "dayHigh": 3274.0,
+      "dayLow": 3233.0,
+      "bid": 3233.0,
+      "ask": 3233.0,
       "fiftyTwoWeekHigh": 4776.0,
-      "fiftyTwoWeekLow": 2980.5,
-      "fiftyDayAverage": 3413.36,
-      "twoHundredDayAverage": 3914.3813,
-      "volume": 1001600,
-      "averageVolume": 22200301,
-      "averageVolume10days": 17099050,
-      "regularMarketChangePercent": -0.7819549,
-      "52WeekChange": 0.1046859
+      "fiftyTwoWeekLow": 3136.0,
+      "fiftyDayAverage": 3387.54,
+      "twoHundredDayAverage": 3905.0015,
+      "volume": 6920900,
+      "averageVolume": 21650960,
+      "averageVolume10days": 15110890,
+      "regularMarketChangePercent": -2.1954887,
+      "52WeekChange": 0.009411097
     },
     "valuation": {
-      "marketCap": 19591919042560,
-      "enterpriseValue": 19794069815296,
-      "trailingPE": 15.9786825,
-      "forwardPE": 18.002184,
-      "priceToBook": 2.41118,
-      "priceToSalesTrailing12Months": 1.4875847,
-      "trailingEps": 206.4,
+      "marketCap": 19318653845504,
+      "enterpriseValue": 19770195836928,
+      "trailingPE": 15.74971,
+      "forwardPE": 17.751093,
+      "priceToBook": 2.3775492,
+      "priceToSalesTrailing12Months": 1.4668361,
+      "trailingEps": 206.48,
       "forwardEps": 183.2,
       "bookValue": 1367.795,
       "pegRatio": null
@@ -173,14 +176,14 @@
       "numberOfAnalystOpinions": 23,
       "targetHighPrice": 5900.0,
       "targetLowPrice": 3400.0,
-      "targetMeanPrice": 4903.913,
-      "targetMedianPrice": 4820.0
+      "targetMeanPrice": 4886.522,
+      "targetMedianPrice": 4800.0
     },
     "ownership": {
       "sharesOutstanding": 5906959969,
-      "floatShares": 5965925638,
+      "floatShares": 5965806277,
       "heldPercentInsiders": 0.00071999995,
-      "heldPercentInstitutions": 0.47842997,
+      "heldPercentInstitutions": 0.47841,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1727395200,
       "beta": 0.751

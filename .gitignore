@@ -42,3 +42,8 @@ venv/
 *.db-shm
 
 test-results/
+
+# Local Backups
+pbl_backup/
+docs_scraping/
+kemal.md

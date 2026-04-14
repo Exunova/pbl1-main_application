@@ -1,7 +1,8 @@
 {
   "ticker": "PGAS.JK",
   "market": "ID",
-  "scraped_at": "2026-04-06 07:34:49.194848",
+  "scraped_at": "2026-04-13 10:30:53.958634",
+  "updated_at": "2026-04-13T10:30:53.958650",
   "info": {
     "identity": {
       "longName": "PT Perusahaan Gas Negara Tbk",
@@ -13,7 +14,7 @@
       "currency": "IDR",
       "sector": "Utilities",
       "industry": "Utilities - Regulated Gas",
-      "fullTimeEmployees": null,
+      "fullTimeEmployees": 3336,
       "website": "https://pgn.co.id",
       "longBusinessSummary": "PT Perusahaan Gas Negara Tbk, together with its subsidiaries, engages in the transmission and distribution of natural gas in Indonesia. It operates through three segments: Trading and Transmission, Exploration and Production of Oil and Gas, and Other Operations. The company is involved in the trading and transmission of oil and gas; processing of liquefied natural gas (LNG) to industrial, commercial and household customers; and trading of LNG and natural gas. It also engages in exploration, exploitation, and business development in oil and gas; provision of fiber optic for network services, as well as construction and maintenance services to customers and management; management and leasing buildings and equipment; and distribution of oil and natural gas. In addition, the company provides telecommunication, engineering, consultancy and services. The company was formerly known as PT Perusahaan Gas Negara (Persero) Tbk and changed its name to PT Perusahaan Gas Negara Tbk in June 2018. The company was founded in 1859 and is headquartered in Jakarta, Indonesia. PT Perusahaan Gas Negara Tbk is a subsidiary of PT Pertamina (Persero).",
       "companyOfficers": [
@@ -30,7 +31,7 @@
         },
         {
           "maxAge": 1,
-          "name": "Arief Setiawan Handoko",
+          "name": "Arief Kurnia Risdianto",
           "title": "President Director",
           "fiscalYear": 2021,
           "exercisedValue": 0,
@@ -103,31 +104,31 @@
       ]
     },
     "price": {
-      "currentPrice": 1795.0,
-      "previousClose": 1840.0,
-      "open": 1850.0,
-      "dayHigh": 1850.0,
-      "dayLow": 1790.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "currentPrice": 1850.0,
+      "previousClose": 1820.0,
+      "open": 1830.0,
+      "dayHigh": 1865.0,
+      "dayLow": 1825.0,
+      "bid": 1845.0,
+      "ask": 1850.0,
       "fiftyTwoWeekHigh": 2520.0,
-      "fiftyTwoWeekLow": 1425.0,
-      "fiftyDayAverage": 2122.8,
-      "twoHundredDayAverage": 1833.225,
-      "volume": 47987400,
-      "averageVolume": 58788358,
-      "averageVolume10days": 54835814,
-      "regularMarketChangePercent": -2.4456522,
-      "52WeekChange": 0.15434086
+      "fiftyTwoWeekLow": 1530.0,
+      "fiftyDayAverage": 2084.9,
+      "twoHundredDayAverage": 1839.05,
+      "volume": 13160400,
+      "averageVolume": 58800046,
+      "averageVolume10days": 45962570,
+      "regularMarketChangePercent": 1.6483517,
+      "52WeekChange": 0.10975611
     },
     "valuation": {
-      "marketCap": 43513509052416,
-      "enterpriseValue": 43514138198016,
-      "trailingPE": 11.890567,
-      "forwardPE": 8.824541,
-      "priceToBook": 15884.956,
-      "priceToSalesTrailing12Months": 10944.267,
-      "trailingEps": 150.96,
+      "marketCap": 44846790213632,
+      "enterpriseValue": 44120173182976,
+      "trailingPE": 12.217673,
+      "forwardPE": 9.094932,
+      "priceToBook": 16371.682,
+      "priceToSalesTrailing12Months": 11279.606,
+      "trailingEps": 151.42,
       "forwardEps": 203.41,
       "bookValue": 0.113,
       "pegRatio": null
@@ -149,7 +150,7 @@
     },
     "dividend": {
       "dividendRate": 182.08,
-      "dividendYield": 10.14,
+      "dividendYield": 10.0,
       "fiveYearAvgDividendYield": 3.13,
       "payoutRatio": 1.2596,
       "exDividendDate": 1749686400,
@@ -157,18 +158,18 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 2.5,
-      "numberOfAnalystOpinions": 12,
-      "targetHighPrice": 2653.56,
-      "targetLowPrice": 1530.9,
-      "targetMeanPrice": 2024.1901,
-      "targetMedianPrice": 1947.645
+      "recommendationMean": 2.46154,
+      "numberOfAnalystOpinions": 13,
+      "targetHighPrice": 2668.6921,
+      "targetLowPrice": 1539.63,
+      "targetMeanPrice": 2041.0361,
+      "targetMedianPrice": 2001.5189
     },
     "ownership": {
       "sharesOutstanding": 24241508195,
       "floatShares": 10428454411,
-      "heldPercentInsiders": 0.65154,
-      "heldPercentInstitutions": 0.12283,
+      "heldPercentInsiders": 0.63008,
+      "heldPercentInstitutions": 0.120170005,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1217808000,
       "beta": 0.101

@@ -1,7 +1,8 @@
 {
   "ticker": "KLBF.JK",
   "market": "ID",
-  "scraped_at": "2026-04-06 07:34:56.743807",
+  "scraped_at": "2026-04-13 10:30:58.344687",
+  "updated_at": "2026-04-13T10:30:58.344707",
   "info": {
     "identity": {
       "longName": "PT Kalbe Farma Tbk.",
@@ -13,9 +14,9 @@
       "currency": "IDR",
       "sector": "Healthcare",
       "industry": "Drug Manufacturers - General",
-      "fullTimeEmployees": null,
+      "fullTimeEmployees": 12835,
       "website": "https://www.kalbe.co.id",
-      "longBusinessSummary": "PT Kalbe Farma Tbk., together with its subsidiaries, develops, manufactures, and trades in pharmaceutical products in Indonesia. The company operates through Prescription Pharmaceuticals; Consumer Health; Nutritionals; and Distribution and Logistic segments. The company provides prescription/ethical; consumer health; nutritionals; distribution and logistics; health services; medical devices; biopharma; animal health; international business; and E-health products. It operates Mitrasana Clinics, a health care service. In addition, the company provides health screening services; operates as an agent and representative for biotechnology products; distributes consumer products, medical equipment, cosmetics, and other trading products; and trades in medical and laboratory equipment and supplies, raw materials for pharmaceutical products, and consumable products for hemodialysis therapy, as well as offers advertising services. The company was incorporated in 1966 and is headquartered in Jakarta, Indonesia.",
+      "longBusinessSummary": "PT Kalbe Farma Tbk., together with its subsidiaries, engages in the development, manufacture, and trading of pharmaceutical products in Indonesia. It operates through Prescription Pharmaceuticals; Consumer Health; Nutritionals; and Distribution and Logistic segments. The company provides prescription/ethical; consumer health; nutritionals; distribution and logistics; health services; medical devices; biopharma; animal health; international business, and E-health products. In addition, the company provides health screening services; operates as an agent and representative for biotechnology products; distributes consumer products, medical equipment, cosmetics, and other trading products; and trades in medical and laboratory equipment and supplies, raw materials for pharmaceutical products, and consumable products for hemodialysis therapy, as well as offers advertising services. The company was incorporated in 1966 and is headquartered in Jakarta, Indonesia.",
       "companyOfficers": [
         {
           "maxAge": 1,
@@ -56,31 +57,31 @@
       ]
     },
     "price": {
-      "currentPrice": 970.0,
-      "previousClose": 980.0,
+      "currentPrice": 985.0,
+      "previousClose": 985.0,
       "open": 985.0,
       "dayHigh": 990.0,
-      "dayLow": 965.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "dayLow": 975.0,
+      "bid": 985.0,
+      "ask": 990.0,
       "fiftyTwoWeekHigh": 1600.0,
       "fiftyTwoWeekLow": 935.0,
-      "fiftyDayAverage": 1052.8,
-      "twoHundredDayAverage": 1221.775,
-      "volume": 17965800,
-      "averageVolume": 51626510,
-      "averageVolume10days": 37202228,
-      "regularMarketChangePercent": -1.0204082,
-      "52WeekChange": -0.14537448
+      "fiftyDayAverage": 1035.6,
+      "twoHundredDayAverage": 1208.675,
+      "volume": 5955600,
+      "averageVolume": 50455707,
+      "averageVolume10days": 35626110,
+      "regularMarketChangePercent": 0.0,
+      "52WeekChange": -0.20564514
     },
     "valuation": {
-      "marketCap": 43927931453440,
-      "enterpriseValue": 41157237145600,
-      "trailingPE": 12.048192,
-      "forwardPE": 12.966182,
-      "priceToBook": 1.8843112,
-      "priceToSalesTrailing12Months": 1.2435526,
-      "trailingEps": 80.51,
+      "marketCap": 44607228346368,
+      "enterpriseValue": 41836534038528,
+      "trailingPE": 12.240586,
+      "forwardPE": 13.166689,
+      "priceToBook": 1.91345,
+      "priceToSalesTrailing12Months": 1.2627828,
+      "trailingEps": 80.47,
       "forwardEps": 74.81,
       "bookValue": 514.777,
       "pegRatio": null
@@ -102,7 +103,7 @@
     },
     "dividend": {
       "dividendRate": 36.0,
-      "dividendYield": 3.71,
+      "dividendYield": 3.65,
       "fiveYearAvgDividendYield": 2.27,
       "payoutRatio": 0.44709998,
       "exDividendDate": 1748995200,
@@ -110,18 +111,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.4375,
+      "recommendationMean": 1.3125,
       "numberOfAnalystOpinions": 15,
       "targetHighPrice": 1975.0,
-      "targetLowPrice": 1350.0,
-      "targetMeanPrice": 1651.3334,
+      "targetLowPrice": 1250.0,
+      "targetMeanPrice": 1644.6666,
       "targetMedianPrice": 1620.0
     },
     "ownership": {
       "sharesOutstanding": 45286528610,
-      "floatShares": 18063437667,
-      "heldPercentInsiders": 0.5819,
-      "heldPercentInstitutions": 0.08934,
+      "floatShares": 18045775921,
+      "heldPercentInsiders": 0.64862,
+      "heldPercentInstitutions": 0.11338,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1349654400,
       "beta": 0.105

@@ -1,7 +1,8 @@
 {
   "ticker": "GOOGL",
   "market": "US",
-  "scraped_at": "2026-04-06 07:34:19.753158",
+  "scraped_at": "2026-04-13 10:30:29.496736",
+  "updated_at": "2026-04-13T10:30:29.496757",
   "info": {
     "identity": {
       "longName": "Alphabet Inc.",
@@ -96,16 +97,6 @@
         },
         {
           "maxAge": 1,
-          "name": "Ms. Amie Thuener O'Toole",
-          "age": 50,
-          "title": "Corporate Controller, Chief Accounting Officer & VP",
-          "yearBorn": 1975,
-          "fiscalYear": 2024,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
           "name": "Ms. Ellen  West",
           "title": "Vice President of Investor Relations",
           "fiscalYear": 2024,
@@ -121,36 +112,46 @@
           "fiscalYear": 2024,
           "exercisedValue": 0,
           "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Ms. Ivy  Ross",
+          "age": 69,
+          "title": "VP & Head of Design for all Hardware Products",
+          "yearBorn": 1956,
+          "fiscalYear": 2024,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
         }
       ]
     },
     "price": {
-      "currentPrice": 295.77,
-      "previousClose": 297.38998,
-      "open": 290.69,
-      "dayHigh": 298.08,
-      "dayLow": 289.45,
-      "bid": 295.55,
-      "ask": 311.31,
+      "currentPrice": 317.24,
+      "previousClose": 318.475,
+      "open": 320.25,
+      "dayHigh": 321.83,
+      "dayLow": 316.33,
+      "bid": 303.71,
+      "ask": 323.0,
       "fiftyTwoWeekHigh": 349.0,
-      "fiftyTwoWeekLow": 140.53,
-      "fiftyDayAverage": 310.421,
-      "twoHundredDayAverage": 264.99564,
-      "volume": 21666465,
-      "averageVolume": 34406427,
-      "averageVolume10days": 35335480,
-      "regularMarketChangePercent": -0.5447376,
-      "52WeekChange": 1.0154686
+      "fiftyTwoWeekLow": 146.1,
+      "fiftyDayAverage": 308.3452,
+      "twoHundredDayAverage": 268.5488,
+      "volume": 18914274,
+      "averageVolume": 33724800,
+      "averageVolume10days": 29082240,
+      "regularMarketChangePercent": -0.38779053,
+      "52WeekChange": 0.9943421
     },
     "valuation": {
-      "marketCap": 3577929793536,
-      "enterpriseValue": 3518082580480,
-      "trailingPE": 27.38611,
-      "forwardPE": 22.023607,
-      "priceToBook": 8.609728,
-      "priceToSalesTrailing12Months": 8.881852,
-      "trailingEps": 10.8,
-      "forwardEps": 13.42968,
+      "marketCap": 3837652369408,
+      "enterpriseValue": 3777805156352,
+      "trailingPE": 29.319778,
+      "forwardPE": 23.616993,
+      "priceToBook": 9.23471,
+      "priceToSalesTrailing12Months": 9.5265875,
+      "trailingEps": 10.82,
+      "forwardEps": 13.4327,
       "bookValue": 34.353,
       "pegRatio": null
     },
@@ -171,7 +172,7 @@
     },
     "dividend": {
       "dividendRate": 0.84,
-      "dividendYield": 0.28,
+      "dividendYield": 0.26,
       "fiveYearAvgDividendYield": null,
       "payoutRatio": 0.076799996,
       "exDividendDate": 1773014400,
@@ -179,18 +180,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.35821,
+      "recommendationMean": 1.37313,
       "numberOfAnalystOpinions": 56,
       "targetHighPrice": 443.0,
       "targetLowPrice": 185.0,
-      "targetMeanPrice": 376.28964,
-      "targetMedianPrice": 386.5
+      "targetMeanPrice": 375.9325,
+      "targetMedianPrice": 385.0
     },
     "ownership": {
       "sharesOutstanding": 5822000000,
       "floatShares": 10833589320,
       "heldPercentInsiders": 0.0058,
-      "heldPercentInstitutions": 0.80776,
+      "heldPercentInstitutions": 0.80774003,
       "lastSplitFactor": "20:1",
       "lastSplitDate": 1658102400,
       "beta": 1.128

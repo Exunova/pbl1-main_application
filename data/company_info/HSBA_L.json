@@ -1,7 +1,8 @@
 {
   "ticker": "HSBA.L",
   "market": "GB",
-  "scraped_at": "2026-04-06 07:35:19.767617",
+  "scraped_at": "2026-04-13 10:31:13.441650",
+  "updated_at": "2026-04-13T10:31:13.441664",
   "info": {
     "identity": {
       "longName": "HSBC Holdings plc",
@@ -98,37 +99,57 @@
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Ms. Suzy  White",
+          "age": 48,
+          "title": "Group Chief Operating Officer & Member of Management Board",
+          "yearBorn": 1977,
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Stuart  Riley",
+          "age": 51,
+          "title": "Group Chief Information Officer & Member of Management Board",
+          "yearBorn": 1974,
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
         }
       ]
     },
     "price": {
-      "currentPrice": 1272.8,
-      "previousClose": 1286.6,
-      "open": 1251.0,
-      "dayHigh": 1280.0,
-      "dayLow": 1244.0,
-      "bid": 1272.6,
-      "ask": 1273.0,
+      "currentPrice": 1340.2,
+      "previousClose": 1333.6,
+      "open": 1335.8,
+      "dayHigh": 1348.0,
+      "dayLow": 1328.2,
+      "bid": 1342.0,
+      "ask": 1342.4,
       "fiftyTwoWeekHigh": 1410.6,
-      "fiftyTwoWeekLow": 698.7,
-      "fiftyDayAverage": 1262.712,
-      "twoHundredDayAverage": 1090.392,
-      "volume": 23370685,
-      "averageVolume": 25611506,
-      "averageVolume10days": 35375988,
-      "regularMarketChangePercent": -1.0725888,
-      "52WeekChange": 0.72512877
+      "fiftyTwoWeekLow": 757.9,
+      "fiftyDayAverage": 1267.88,
+      "twoHundredDayAverage": 1103.0945,
+      "volume": 27718165,
+      "averageVolume": 26368850,
+      "averageVolume10days": 26250098,
+      "regularMarketChangePercent": 0.49489918,
+      "52WeekChange": 0.7384875
     },
     "valuation": {
-      "marketCap": 218262192128,
-      "enterpriseValue": -235613536256,
-      "trailingPE": 14.142223,
-      "forwardPE": 9.4351225,
-      "priceToBook": 163.47664,
-      "priceToSalesTrailing12Months": 3.4522047,
-      "trailingEps": 0.9,
-      "forwardEps": 1.3490021,
-      "bookValue": 7.7858224,
+      "marketCap": 229820055552,
+      "enterpriseValue": -224061259776,
+      "trailingPE": 15.058427,
+      "forwardPE": 10.085503,
+      "priceToBook": 170.64384,
+      "priceToSalesTrailing12Months": 3.6350129,
+      "trailingEps": 0.89,
+      "forwardEps": 1.328838,
+      "bookValue": 7.853784,
       "pegRatio": null
     },
     "profitability": {
@@ -148,7 +169,7 @@
     },
     "dividend": {
       "dividendRate": 0.56,
-      "dividendYield": 4.39,
+      "dividendYield": 4.17,
       "fiveYearAvgDividendYield": 4.97,
       "payoutRatio": 0.5345,
       "exDividendDate": 1773273600,
@@ -158,16 +179,16 @@
       "recommendationKey": "buy",
       "recommendationMean": 2.35294,
       "numberOfAnalystOpinions": 17,
-      "targetHighPrice": 1698.1393,
-      "targetLowPrice": 798.54047,
-      "targetMeanPrice": 1360.3184,
-      "targetMedianPrice": 1375.3649
+      "targetHighPrice": 1652.6666,
+      "targetLowPrice": 786.37286,
+      "targetMeanPrice": 1333.6271,
+      "targetMedianPrice": 1354.408
     },
     "ownership": {
       "sharesOutstanding": 17148192022,
       "floatShares": 16935578090,
       "heldPercentInsiders": 0.0021,
-      "heldPercentInstitutions": 0.51168,
+      "heldPercentInstitutions": 0.50997,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 931132800,
       "beta": 0.555

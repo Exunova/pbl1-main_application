@@ -101,12 +101,22 @@ export default function StockDetailPanel({ stock, onClose }) {
 
     if (window.api) {
       window.api.fetchCompany(stock.ticker)
-        .then(d => { if (!cancelled) setCompanyData(d) })
+        .then(d => { 
+          if (!cancelled) {
+            const respData = d?.data || d
+            setCompanyData(respData) 
+          }
+        })
         .catch(() => {})
         .finally(() => { if (!cancelled) setLoading(false) })
 
       window.api.fetchOHLCV(stock.ticker)
-        .then(d => { if (!cancelled) setOhlcvData(d?.ohlcv_15m || []) })
+        .then(d => { 
+          if (!cancelled) {
+            const respData = d?.data || d
+            setOhlcvData(respData?.ohlcv_15m || []) 
+          }
+        })
         .catch(() => {})
         .finally(() => { if (!cancelled) setOhlcvLoading(false) })
     } else {

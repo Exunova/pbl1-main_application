@@ -1,7 +1,8 @@
 {
   "ticker": "AMZN",
   "market": "US",
-  "scraped_at": "2026-04-06 07:34:24.003271",
+  "scraped_at": "2026-04-13 10:30:32.570319",
+  "updated_at": "2026-04-13T10:30:32.570337",
   "info": {
     "identity": {
       "longName": "Amazon.com, Inc.",
@@ -35,7 +36,7 @@
           "title": "President, CEO & Director",
           "yearBorn": 1968,
           "fiscalYear": 2024,
-          "totalPay": 1596889,
+          "totalPay": 2069861,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -46,7 +47,7 @@
           "title": "Senior VP & CFO",
           "yearBorn": 1964,
           "fiscalYear": 2024,
-          "totalPay": 371900,
+          "totalPay": 372000,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -57,7 +58,7 @@
           "title": "Senior VP and Chief Global Affairs & Legal Officer",
           "yearBorn": 1964,
           "fiscalYear": 2024,
-          "totalPay": 371900,
+          "totalPay": 372000,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -68,7 +69,7 @@
           "title": "Chief Executive Officer of Worldwide Amazon Stores",
           "yearBorn": 1967,
           "fiscalYear": 2024,
-          "totalPay": 386435,
+          "totalPay": 425365,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -79,7 +80,7 @@
           "title": "Chief Executive Officer of Amazon Web Series",
           "yearBorn": 1977,
           "fiscalYear": 2024,
-          "totalPay": 384275,
+          "totalPay": 617281,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -121,31 +122,31 @@
       ]
     },
     "price": {
-      "currentPrice": 209.77,
-      "previousClose": 210.57,
-      "open": 206.55,
-      "dayHigh": 212.2125,
-      "dayLow": 204.9,
-      "bid": 209.33,
-      "ask": 209.76,
+      "currentPrice": 238.38,
+      "previousClose": 233.65001,
+      "open": 235.38,
+      "dayHigh": 240.43,
+      "dayLow": 235.21,
+      "bid": 238.02,
+      "ask": 238.9,
       "fiftyTwoWeekHigh": 258.6,
-      "fiftyTwoWeekLow": 161.38,
-      "fiftyDayAverage": 214.998,
-      "twoHundredDayAverage": 224.5496,
-      "volume": 31453039,
-      "averageVolume": 50670081,
-      "averageVolume10days": 46472030,
-      "regularMarketChangePercent": -0.37992263,
-      "52WeekChange": 0.1969074
+      "fiftyTwoWeekLow": 165.29,
+      "fiftyDayAverage": 213.4026,
+      "twoHundredDayAverage": 224.85745,
+      "volume": 56861543,
+      "averageVolume": 51233393,
+      "averageVolume10days": 46570130,
+      "regularMarketChangePercent": 2.0243936,
+      "52WeekChange": 0.30891716
     },
     "valuation": {
-      "marketCap": 2251864408064,
-      "enterpriseValue": 2307382312960,
-      "trailingPE": 29.256624,
-      "forwardPE": 22.332802,
-      "priceToBook": 5.476166,
-      "priceToSalesTrailing12Months": 3.1410086,
-      "trailingEps": 7.17,
+      "marketCap": 2563598712832,
+      "enterpriseValue": 2614508388352,
+      "trailingPE": 33.200558,
+      "forwardPE": 25.378717,
+      "priceToBook": 6.2230463,
+      "priceToSalesTrailing12Months": 3.5758305,
+      "trailingEps": 7.18,
       "forwardEps": 9.39291,
       "bookValue": 38.306,
       "pegRatio": null
@@ -183,10 +184,10 @@
       "targetMedianPrice": 285.0
     },
     "ownership": {
-      "sharesOutstanding": 10734920870,
-      "floatShares": 9754500547,
-      "heldPercentInsiders": 0.09085,
-      "heldPercentInstitutions": 0.67252,
+      "sharesOutstanding": 10754251799,
+      "floatShares": 9754393198,
+      "heldPercentInsiders": 0.089490004,
+      "heldPercentInstitutions": 0.67116,
       "lastSplitFactor": "20:1",
       "lastSplitDate": 1654473600,
       "beta": 1.383

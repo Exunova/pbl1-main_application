@@ -20,9 +20,10 @@ function StockCard({ stock, onClick }) {
 
     // Try to get real price from company_info cache
     window.api.fetchCompany(stock.ticker).then(d => {
-      if (cancelled || !d?.info?.price) return
-      const cur = d.info.price.currentPrice
-      const prv = d.info.price.previousClose
+      const respData = d?.data || d // handle both wrapped and unwrapped for safety
+      if (cancelled || !respData?.info?.price) return
+      const cur = respData.info.price.currentPrice
+      const prv = respData.info.price.previousClose
       if (cur != null) {
         setLiveData({
           price: cur,
@@ -34,7 +35,8 @@ function StockCard({ stock, onClick }) {
     // Sparkline from OHLCV
     window.api.fetchOHLCV(stock.ticker).then(d => {
       if (cancelled) return
-      const candles = d?.ohlcv_15m || []
+      const respData = d?.data || d
+      const candles = respData?.ohlcv_15m || []
       if (candles.length > 0) {
         const last30 = candles.slice(-30).map((c, i) => ({ i, v: c.close }))
         setSparkline(last30)

@@ -1,7 +1,8 @@
 {
   "ticker": "BBRI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-06 07:34:38.730933",
+  "scraped_at": "2026-04-13 10:30:41.823933",
+  "updated_at": "2026-04-13T10:30:41.823960",
   "info": {
     "identity": {
       "longName": "PT Bank Rakyat Indonesia (Persero) Tbk",
@@ -106,31 +107,31 @@
       ]
     },
     "price": {
-      "currentPrice": 3320.0,
-      "previousClose": 3350.0,
-      "open": 3340.0,
-      "dayHigh": 3390.0,
-      "dayLow": 3320.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "currentPrice": 3410.0,
+      "previousClose": 3390.0,
+      "open": 3390.0,
+      "dayHigh": 3410.0,
+      "dayLow": 3350.0,
+      "bid": 3400.0,
+      "ask": 3410.0,
       "fiftyTwoWeekHigh": 4450.0,
-      "fiftyTwoWeekLow": 3290.0,
-      "fiftyDayAverage": 3680.2,
-      "twoHundredDayAverage": 3804.6,
-      "volume": 242569200,
-      "averageVolume": 232473905,
-      "averageVolume10days": 269540257,
-      "regularMarketChangePercent": -0.89552236,
-      "52WeekChange": -0.18024689
+      "fiftyTwoWeekLow": 3220.0,
+      "fiftyDayAverage": 3633.4,
+      "twoHundredDayAverage": 3792.95,
+      "volume": 66927000,
+      "averageVolume": 244326598,
+      "averageVolume10days": 289199040,
+      "regularMarketChangePercent": 0.5899705,
+      "52WeekChange": -0.081300795
     },
     "valuation": {
-      "marketCap": 503175853375488,
-      "enterpriseValue": 613435079393280,
-      "trailingPE": 8.826032,
-      "forwardPE": 7.5421977,
-      "priceToBook": 1.5430276,
-      "priceToSalesTrailing12Months": 3.58876,
-      "trailingEps": 376.16,
+      "marketCap": 516816166191104,
+      "enterpriseValue": 623977143730176,
+      "trailingPE": 9.070354,
+      "forwardPE": 7.746655,
+      "priceToBook": 1.5848567,
+      "priceToSalesTrailing12Months": 3.6860456,
+      "trailingEps": 375.95,
       "forwardEps": 440.19,
       "bookValue": 2151.614,
       "pegRatio": null
@@ -152,7 +153,7 @@
     },
     "dividend": {
       "dividendRate": 345.4,
-      "dividendYield": 10.4,
+      "dividendYield": 10.19,
       "fiveYearAvgDividendYield": 5.74,
       "payoutRatio": 0.9186,
       "exDividendDate": 1767052800,
@@ -170,8 +171,8 @@
     "ownership": {
       "sharesOutstanding": 151559001603,
       "floatShares": 69928283455,
-      "heldPercentInsiders": 0.55836,
-      "heldPercentInstitutions": 0.20886,
+      "heldPercentInsiders": 0.55493,
+      "heldPercentInstitutions": 0.21072,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1510272000,
       "beta": 0.359
