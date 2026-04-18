@@ -1,8 +1,8 @@
 {
   "ticker": "BRK-B",
   "market": "US",
-  "scraped_at": "2026-04-13 10:30:36.578208",
-  "updated_at": "2026-04-13T10:30:36.578227",
+  "scraped_at": "2026-04-18 15:06:15.115431",
+  "updated_at": "2026-04-18T15:06:15.115449",
   "info": {
     "identity": {
       "longName": "Berkshire Hathaway Inc.",
@@ -106,34 +106,34 @@
       ]
     },
     "price": {
-      "currentPrice": 479.9,
-      "previousClose": 485.2,
-      "open": 484.02,
-      "dayHigh": 484.86,
-      "dayLow": 478.92,
-      "bid": 480.0,
-      "ask": 480.81,
+      "currentPrice": 474.58,
+      "previousClose": 475.12,
+      "open": 475.49,
+      "dayHigh": 479.69,
+      "dayLow": 474.15,
+      "bid": 474.88,
+      "ask": 474.69,
       "fiftyTwoWeekHigh": 542.07,
       "fiftyTwoWeekLow": 455.19,
-      "fiftyDayAverage": 489.4626,
-      "twoHundredDayAverage": 490.41885,
-      "volume": 2730871,
-      "averageVolume": 4823263,
-      "averageVolume10days": 4007250,
-      "regularMarketChangePercent": -1.09234,
-      "52WeekChange": -0.0937075
+      "fiftyDayAverage": 488.8344,
+      "twoHundredDayAverage": 490.24,
+      "volume": 6426941,
+      "averageVolume": 4842555,
+      "averageVolume10days": 4177960,
+      "regularMarketChangePercent": -0.113657,
+      "52WeekChange": -0.0627318
     },
     "valuation": {
-      "marketCap": 1035082334208,
-      "enterpriseValue": -234965794816,
-      "trailingPE": 15.455717,
-      "forwardPE": 22.06239,
-      "priceToBook": 0.0009623734,
-      "priceToSalesTrailing12Months": 2.7866445,
-      "trailingEps": 31.05,
+      "marketCap": 1023607767040,
+      "enterpriseValue": -234973446144,
+      "trailingPE": 15.289303,
+      "forwardPE": 21.817814,
+      "priceToBook": 0.00095170486,
+      "priceToSalesTrailing12Months": 2.7557526,
+      "trailingEps": 31.04,
       "forwardEps": 21.75195,
       "bookValue": 498663.0,
-      "pegRatio": null
+      "pegRatio": 10.06
     },
     "profitability": {
       "profitMargins": 0.18029,
@@ -169,9 +169,9 @@
     },
     "ownership": {
       "sharesOutstanding": 1390722404,
-      "floatShares": 1235265,
-      "heldPercentInsiders": 0.0027599998,
-      "heldPercentInstitutions": 0.66120005,
+      "floatShares": 1235251,
+      "heldPercentInsiders": 0.0026699998,
+      "heldPercentInstitutions": 0.66135,
       "lastSplitFactor": "50:1",
       "lastSplitDate": 1264032000,
       "beta": 0.699

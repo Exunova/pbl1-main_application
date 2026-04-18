@@ -1,8 +1,8 @@
 {
   "ticker": "ADRO.JK",
   "market": "ID",
-  "scraped_at": "2026-04-13 10:30:55.417326",
-  "updated_at": "2026-04-13T10:30:55.417348",
+  "scraped_at": "2026-04-18 15:06:30.036310",
+  "updated_at": "2026-04-18T15:06:30.036332",
   "info": {
     "identity": {
       "longName": "PT Alamtri Resources Indonesia Tbk",
@@ -99,34 +99,34 @@
       ]
     },
     "price": {
-      "currentPrice": 2480.0,
-      "previousClose": 2440.0,
-      "open": 2460.0,
-      "dayHigh": 2480.0,
-      "dayLow": 2460.0,
-      "bid": 2470.0,
-      "ask": 2480.0,
+      "currentPrice": 2560.0,
+      "previousClose": 2510.0,
+      "open": 2520.0,
+      "dayHigh": 2580.0,
+      "dayLow": 2510.0,
+      "bid": 2550.0,
+      "ask": 2560.0,
       "fiftyTwoWeekHigh": 2700.0,
       "fiftyTwoWeekLow": 1625.0,
-      "fiftyDayAverage": 2363.8,
-      "twoHundredDayAverage": 1981.4,
-      "volume": 14740200,
-      "averageVolume": 128321477,
-      "averageVolume10days": 76661980,
-      "regularMarketChangePercent": 1.6460905,
-      "52WeekChange": 0.38243628
+      "fiftyDayAverage": 2398.6,
+      "twoHundredDayAverage": 1999.075,
+      "volume": 71416400,
+      "averageVolume": 122027468,
+      "averageVolume10days": 72363130,
+      "regularMarketChangePercent": 1.9920319,
+      "52WeekChange": 0.4182825
     },
     "valuation": {
-      "marketCap": 71425222246400,
-      "enterpriseValue": 70272967245824,
-      "trailingPE": 9.543601,
-      "forwardPE": 4.8028507,
-      "priceToBook": 15897.436,
-      "priceToSalesTrailing12Months": 38123.38,
-      "trailingEps": 259.86,
+      "marketCap": 73729262485504,
+      "enterpriseValue": 73729027604480,
+      "trailingPE": 9.775096,
+      "forwardPE": 4.9577813,
+      "priceToBook": 16410.256,
+      "priceToSalesTrailing12Months": 39353.168,
+      "trailingEps": 261.89,
       "forwardEps": 516.36,
       "bookValue": 0.156,
-      "pegRatio": null
+      "pegRatio": 0.85
     },
     "profitability": {
       "profitMargins": 0.23896,
@@ -145,7 +145,7 @@
     },
     "dividend": {
       "dividendRate": 311.83,
-      "dividendYield": 12.78,
+      "dividendYield": 12.18,
       "fiveYearAvgDividendYield": 12.78,
       "payoutRatio": 1.2408999,
       "exDividendDate": 1767052800,
@@ -153,18 +153,18 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 2.09091,
-      "numberOfAnalystOpinions": 10,
-      "targetHighPrice": 3592.47,
-      "targetLowPrice": 1471.202,
-      "targetMeanPrice": 2702.906,
-      "targetMedianPrice": 2856.869
+      "recommendationMean": 2.2,
+      "numberOfAnalystOpinions": 9,
+      "targetHighPrice": 3608.64,
+      "targetLowPrice": 1477.8241,
+      "targetMeanPrice": 2673.143,
+      "targetMedianPrice": 2680.704
     },
     "ownership": {
       "sharesOutstanding": 28800494200,
-      "floatShares": 10806233429,
-      "heldPercentInsiders": 0.58422,
-      "heldPercentInstitutions": 0.05864,
+      "floatShares": 11630215568,
+      "heldPercentInsiders": 0.65166,
+      "heldPercentInstitutions": 0.09811,
       "lastSplitFactor": null,
       "lastSplitDate": null,
       "beta": -0.229

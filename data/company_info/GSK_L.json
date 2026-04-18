@@ -1,8 +1,8 @@
 {
   "ticker": "GSK.L",
   "market": "GB",
-  "scraped_at": "2026-04-13 10:31:16.721092",
-  "updated_at": "2026-04-13T10:31:16.721107",
+  "scraped_at": "2026-04-18 15:06:55.271420",
+  "updated_at": "2026-04-18T15:06:55.271432",
   "info": {
     "identity": {
       "longName": "GSK plc",
@@ -47,7 +47,7 @@
           "title": "Scientific & Medical Expert",
           "yearBorn": 1951,
           "fiscalYear": 2025,
-          "totalPay": 61683,
+          "totalPay": 61368,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -118,34 +118,34 @@
       ]
     },
     "price": {
-      "currentPrice": 2176.0,
-      "previousClose": 2167.0,
-      "open": 2156.0,
-      "dayHigh": 2196.0,
-      "dayLow": 2156.0,
-      "bid": 2178.0,
-      "ask": 2179.0,
+      "currentPrice": 2144.0,
+      "previousClose": 2123.0,
+      "open": 2122.0,
+      "dayHigh": 2144.0,
+      "dayLow": 2114.0,
+      "bid": 2135.0,
+      "ask": 2136.0,
       "fiftyTwoWeekHigh": 2282.0,
-      "fiftyTwoWeekLow": 1263.5,
-      "fiftyDayAverage": 2104.23,
-      "twoHundredDayAverage": 1751.925,
-      "volume": 8127576,
-      "averageVolume": 9650694,
-      "averageVolume10days": 8542441,
-      "regularMarketChangePercent": 0.41532075,
-      "52WeekChange": 0.6453686
+      "fiftyTwoWeekLow": 1288.605,
+      "fiftyDayAverage": 2113.9,
+      "twoHundredDayAverage": 1766.7975,
+      "volume": 5135546,
+      "averageVolume": 9429475,
+      "averageVolume10days": 6525747,
+      "regularMarketChangePercent": 0.98916626,
+      "52WeekChange": 0.5884774
     },
     "valuation": {
-      "marketCap": 86956908544,
-      "enterpriseValue": 101258092544,
-      "trailingPE": 15.654676,
-      "forwardPE": 11.04081,
-      "priceToBook": 533.20264,
-      "priceToSalesTrailing12Months": 2.6619189,
+      "marketCap": 85636251648,
+      "enterpriseValue": 99974078464,
+      "trailingPE": 15.424461,
+      "forwardPE": 10.9051695,
+      "priceToBook": 5.2536144,
+      "priceToSalesTrailing12Months": 2.6214912,
       "trailingEps": 1.39,
-      "forwardEps": 1.97087,
+      "forwardEps": 1.96604,
       "bookValue": 4.081,
-      "pegRatio": null
+      "pegRatio": 0.5
     },
     "profitability": {
       "profitMargins": 0.17497998,
@@ -164,7 +164,7 @@
     },
     "dividend": {
       "dividendRate": 0.72,
-      "dividendYield": 3.31,
+      "dividendYield": 3.36,
       "fiveYearAvgDividendYield": 4.45,
       "payoutRatio": 0.4611,
       "exDividendDate": 1771459200,
@@ -176,14 +176,14 @@
       "numberOfAnalystOpinions": 20,
       "targetHighPrice": 2750.0,
       "targetLowPrice": 1455.0,
-      "targetMeanPrice": 2043.75,
+      "targetMeanPrice": 2048.5,
       "targetMedianPrice": 1929.9999
     },
     "ownership": {
-      "sharesOutstanding": 3995851619,
-      "floatShares": 3882262813,
-      "heldPercentInsiders": 0.01735,
-      "heldPercentInstitutions": 0.4665,
+      "sharesOutstanding": 3993897939,
+      "floatShares": 3882222688,
+      "heldPercentInsiders": 0.01736,
+      "heldPercentInstitutions": 0.46653,
       "lastSplitFactor": "4:5",
       "lastSplitDate": 1658188800,
       "beta": 0.354

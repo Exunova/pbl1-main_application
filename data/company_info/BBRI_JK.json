@@ -1,8 +1,8 @@
 {
   "ticker": "BBRI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-13 10:30:41.823933",
-  "updated_at": "2026-04-13T10:30:41.823960",
+  "scraped_at": "2026-04-18 15:06:21.985207",
+  "updated_at": "2026-04-18T15:06:21.985211",
   "info": {
     "identity": {
       "longName": "PT Bank Rakyat Indonesia (Persero) Tbk",
@@ -107,34 +107,34 @@
       ]
     },
     "price": {
-      "currentPrice": 3410.0,
-      "previousClose": 3390.0,
-      "open": 3390.0,
-      "dayHigh": 3410.0,
-      "dayLow": 3350.0,
-      "bid": 3400.0,
-      "ask": 3410.0,
+      "currentPrice": 3430.0,
+      "previousClose": 3410.0,
+      "open": 3410.0,
+      "dayHigh": 3450.0,
+      "dayLow": 3410.0,
+      "bid": 3420.0,
+      "ask": 3430.0,
       "fiftyTwoWeekHigh": 4450.0,
       "fiftyTwoWeekLow": 3220.0,
-      "fiftyDayAverage": 3633.4,
-      "twoHundredDayAverage": 3792.95,
-      "volume": 66927000,
-      "averageVolume": 244326598,
-      "averageVolume10days": 289199040,
-      "regularMarketChangePercent": 0.5899705,
-      "52WeekChange": -0.081300795
+      "fiftyDayAverage": 3591.6,
+      "twoHundredDayAverage": 3785.15,
+      "volume": 209108800,
+      "averageVolume": 242868203,
+      "averageVolume10days": 277379150,
+      "regularMarketChangePercent": 0.58651024,
+      "52WeekChange": -0.05248618
     },
     "valuation": {
-      "marketCap": 516816166191104,
-      "enterpriseValue": 623977143730176,
-      "trailingPE": 9.070354,
-      "forwardPE": 7.746655,
-      "priceToBook": 1.5848567,
-      "priceToSalesTrailing12Months": 3.6860456,
-      "trailingEps": 375.95,
+      "marketCap": 519847372914688,
+      "enterpriseValue": 630001103798272,
+      "trailingPE": 9.12404,
+      "forwardPE": 7.79209,
+      "priceToBook": 1.5941521,
+      "priceToSalesTrailing12Months": 3.7076647,
+      "trailingEps": 375.93,
       "forwardEps": 440.19,
       "bookValue": 2151.614,
-      "pegRatio": null
+      "pegRatio": 1.77
     },
     "profitability": {
       "profitMargins": 0.40405998,
@@ -152,12 +152,12 @@
       "totalDebt": 209176617811968
     },
     "dividend": {
-      "dividendRate": 345.4,
-      "dividendYield": 10.19,
+      "dividendRate": 418.0,
+      "dividendYield": 12.19,
       "fiveYearAvgDividendYield": 5.74,
       "payoutRatio": 0.9186,
-      "exDividendDate": 1767052800,
-      "lastDividendValue": 137.0
+      "exDividendDate": 1776729600,
+      "lastDividendValue": 209.0
     },
     "analyst": {
       "recommendationKey": "buy",
@@ -165,14 +165,14 @@
       "numberOfAnalystOpinions": 21,
       "targetHighPrice": 4900.0,
       "targetLowPrice": 3080.0,
-      "targetMeanPrice": 4323.095,
-      "targetMedianPrice": 4500.0
+      "targetMeanPrice": 4294.524,
+      "targetMedianPrice": 4400.0
     },
     "ownership": {
       "sharesOutstanding": 151559001603,
       "floatShares": 69928283455,
-      "heldPercentInsiders": 0.55493,
-      "heldPercentInstitutions": 0.21072,
+      "heldPercentInsiders": 0.56005,
+      "heldPercentInstitutions": 0.19860001,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1510272000,
       "beta": 0.359

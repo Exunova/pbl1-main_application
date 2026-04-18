@@ -1,8 +1,8 @@
 {
   "ticker": "6857.T",
   "market": "JP",
-  "scraped_at": "2026-04-13 10:31:08.724748",
-  "updated_at": "2026-04-13T10:31:08.724761",
+  "scraped_at": "2026-04-18 15:06:45.554953",
+  "updated_at": "2026-04-18T15:06:45.554990",
   "info": {
     "identity": {
       "longName": "Advantest Corporation",
@@ -118,34 +118,34 @@
       ]
     },
     "price": {
-      "currentPrice": 24715.0,
-      "previousClose": 24990.0,
-      "open": 24650.0,
-      "dayHigh": 25245.0,
-      "dayLow": 24610.0,
-      "bid": 24665.0,
-      "ask": 24675.0,
+      "currentPrice": 27870.0,
+      "previousClose": 28625.0,
+      "open": 28900.0,
+      "dayHigh": 29050.0,
+      "dayLow": 27870.0,
+      "bid": 27865.0,
+      "ask": 27890.0,
       "fiftyTwoWeekHigh": 29345.0,
       "fiftyTwoWeekLow": 5344.0,
-      "fiftyDayAverage": 24743.2,
-      "twoHundredDayAverage": 18219.87,
-      "volume": 3590000,
-      "averageVolume": 10348718,
-      "averageVolume10days": 11285840,
-      "regularMarketChangePercent": -1.1004401,
-      "52WeekChange": 3.2291422
+      "fiftyDayAverage": 24897.6,
+      "twoHundredDayAverage": 18648.2,
+      "volume": 9985300,
+      "averageVolume": 10303304,
+      "averageVolume10days": 9884610,
+      "regularMarketChangePercent": -2.6375544,
+      "52WeekChange": 4.1269317
     },
     "valuation": {
-      "marketCap": 17943446421504,
-      "enterpriseValue": 17910015721472,
-      "trailingPE": 69.64719,
-      "forwardPE": 103.96248,
-      "priceToBook": 26.617914,
-      "priceToSalesTrailing12Months": 17.372145,
-      "trailingEps": 354.86,
+      "marketCap": 20234020847616,
+      "enterpriseValue": 20001515896832,
+      "trailingPE": 78.12412,
+      "forwardPE": 117.23384,
+      "priceToBook": 30.015831,
+      "priceToSalesTrailing12Months": 19.58979,
+      "trailingEps": 356.74,
       "forwardEps": 237.73,
       "bookValue": 928.51,
-      "pegRatio": null
+      "pegRatio": 1.29
     },
     "profitability": {
       "profitMargins": 0.27931,
@@ -164,7 +164,7 @@
     },
     "dividend": {
       "dividendRate": 49.0,
-      "dividendYield": 0.2,
+      "dividendYield": 0.18,
       "fiveYearAvgDividendYield": 0.85,
       "payoutRatio": 0.1377,
       "exDividendDate": 1759104000,
@@ -172,18 +172,18 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.95238,
+      "recommendationMean": 1.85714,
       "numberOfAnalystOpinions": 20,
       "targetHighPrice": 35000.0,
       "targetLowPrice": 20500.0,
-      "targetMeanPrice": 28695.0,
+      "targetMeanPrice": 29210.0,
       "targetMedianPrice": 30000.0
     },
     "ownership": {
-      "sharesOutstanding": 726014370,
+      "sharesOutstanding": 725515776,
       "floatShares": 716992899,
       "heldPercentInsiders": 0.00279,
-      "heldPercentInstitutions": 0.65366995,
+      "heldPercentInstitutions": 0.65245,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1695859200,
       "beta": 1.054

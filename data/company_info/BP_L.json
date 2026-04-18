@@ -1,8 +1,8 @@
 {
   "ticker": "BP.L",
   "market": "GB",
-  "scraped_at": "2026-04-13 10:31:17.784199",
-  "updated_at": "2026-04-13T10:31:17.784208",
+  "scraped_at": "2026-04-18 15:06:56.724822",
+  "updated_at": "2026-04-18T15:06:56.724833",
   "info": {
     "identity": {
       "longName": "BP p.l.c.",
@@ -112,34 +112,34 @@
       ]
     },
     "price": {
-      "currentPrice": 574.1,
-      "previousClose": 580.5,
-      "open": 571.0,
-      "dayHigh": 579.4,
-      "dayLow": 566.8,
-      "bid": 571.8,
-      "ask": 571.9,
+      "currentPrice": 541.0,
+      "previousClose": 584.0,
+      "open": 586.3,
+      "dayHigh": 587.1,
+      "dayLow": 531.7,
+      "bid": 537.2,
+      "ask": 537.3,
       "fiftyTwoWeekHigh": 609.4,
       "fiftyTwoWeekLow": 337.65,
-      "fiftyDayAverage": 518.314,
-      "twoHundredDayAverage": 451.76425,
-      "volume": 30572037,
-      "averageVolume": 56300456,
-      "averageVolume10days": 63907028,
-      "regularMarketChangePercent": -1.1025021,
-      "52WeekChange": 0.68259084
+      "fiftyDayAverage": 526.618,
+      "twoHundredDayAverage": 455.62024,
+      "volume": 70369868,
+      "averageVolume": 55782427,
+      "averageVolume10days": 43827774,
+      "regularMarketChangePercent": -7.3630137,
+      "52WeekChange": 0.6249304
     },
     "valuation": {
-      "marketCap": 88691335168,
-      "enterpriseValue": 145121771520,
+      "marketCap": 83577806848,
+      "enterpriseValue": 140032081920,
       "trailingPE": "Infinity",
-      "forwardPE": 11.357419,
-      "priceToBook": 223.96391,
-      "priceToSalesTrailing12Months": 0.47267509,
+      "forwardPE": 10.563467,
+      "priceToBook": 2.119923,
+      "priceToSalesTrailing12Months": 0.44542283,
       "trailingEps": 0.0,
-      "forwardEps": 0.5054845,
-      "bookValue": 2.5633593,
-      "pegRatio": null
+      "forwardEps": 0.5121425,
+      "bookValue": 2.5519793,
+      "pegRatio": 0.09
     },
     "profitability": {
       "profitMargins": 0.00029,
@@ -158,7 +158,7 @@
     },
     "dividend": {
       "dividendRate": 0.25,
-      "dividendYield": 4.28,
+      "dividendYield": 4.54,
       "fiveYearAvgDividendYield": 4.89,
       "payoutRatio": 95.140305,
       "exDividendDate": 1771459200,
@@ -166,18 +166,18 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 2.5,
+      "recommendationMean": 2.42105,
       "numberOfAnalystOpinions": 19,
-      "targetHighPrice": 691.5474,
-      "targetLowPrice": 443.40042,
-      "targetMeanPrice": 575.64624,
-      "targetMedianPrice": 601.6035
+      "targetHighPrice": 705.6683,
+      "targetLowPrice": 450.03693,
+      "targetMeanPrice": 602.8521,
+      "targetMedianPrice": 617.099
     },
     "ownership": {
       "sharesOutstanding": 15448762610,
       "floatShares": 14726135760,
       "heldPercentInsiders": 0.00287,
-      "heldPercentInstitutions": 0.37825,
+      "heldPercentInstitutions": 0.34252,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 938995200,
       "beta": -0.195

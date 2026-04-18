@@ -1,8 +1,8 @@
 {
   "ticker": "6758.T",
   "market": "JP",
-  "scraped_at": "2026-04-13 10:31:02.549792",
-  "updated_at": "2026-04-13T10:31:02.549801",
+  "scraped_at": "2026-04-18 15:06:37.849973",
+  "updated_at": "2026-04-18T15:06:37.850004",
   "info": {
     "identity": {
       "longName": "Sony Group Corporation",
@@ -118,34 +118,34 @@
       ]
     },
     "price": {
-      "currentPrice": 3252.0,
-      "previousClose": 3325.0,
-      "open": 3233.0,
-      "dayHigh": 3274.0,
-      "dayLow": 3233.0,
-      "bid": 3233.0,
-      "ask": 3233.0,
+      "currentPrice": 3395.0,
+      "previousClose": 3407.0,
+      "open": 3414.0,
+      "dayHigh": 3445.0,
+      "dayLow": 3395.0,
+      "bid": 3393.0,
+      "ask": 3408.0,
       "fiftyTwoWeekHigh": 4776.0,
       "fiftyTwoWeekLow": 3136.0,
-      "fiftyDayAverage": 3387.54,
-      "twoHundredDayAverage": 3905.0015,
-      "volume": 6920900,
-      "averageVolume": 21650960,
-      "averageVolume10days": 15110890,
-      "regularMarketChangePercent": -2.1954887,
-      "52WeekChange": 0.009411097
+      "fiftyDayAverage": 3376.92,
+      "twoHundredDayAverage": 3897.3364,
+      "volume": 16015200,
+      "averageVolume": 21195612,
+      "averageVolume10days": 14751960,
+      "regularMarketChangePercent": -0.35221604,
+      "52WeekChange": 0.005330205
     },
     "valuation": {
-      "marketCap": 19318653845504,
-      "enterpriseValue": 19770195836928,
-      "trailingPE": 15.74971,
-      "forwardPE": 17.751093,
-      "priceToBook": 2.3775492,
-      "priceToSalesTrailing12Months": 1.4668361,
-      "trailingEps": 206.48,
+      "marketCap": 20056530485248,
+      "enterpriseValue": 20187961098240,
+      "trailingPE": 16.44705,
+      "forwardPE": 18.53166,
+      "priceToBook": 2.482097,
+      "priceToSalesTrailing12Months": 1.522862,
+      "trailingEps": 206.42,
       "forwardEps": 183.2,
       "bookValue": 1367.795,
-      "pegRatio": null
+      "pegRatio": 2.92
     },
     "profitability": {
       "profitMargins": -0.0161,
@@ -164,7 +164,7 @@
     },
     "dividend": {
       "dividendRate": 25.0,
-      "dividendYield": 0.75,
+      "dividendYield": 0.74,
       "fiveYearAvgDividendYield": 0.58,
       "payoutRatio": 0.109,
       "exDividendDate": 1774828800,
@@ -172,18 +172,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.45455,
+      "recommendationMean": 1.43478,
       "numberOfAnalystOpinions": 23,
       "targetHighPrice": 5900.0,
       "targetLowPrice": 3400.0,
-      "targetMeanPrice": 4886.522,
+      "targetMeanPrice": 4764.7827,
       "targetMedianPrice": 4800.0
     },
     "ownership": {
-      "sharesOutstanding": 5906959969,
+      "sharesOutstanding": 5907667254,
       "floatShares": 5965806277,
       "heldPercentInsiders": 0.00071999995,
-      "heldPercentInstitutions": 0.47841,
+      "heldPercentInstitutions": 0.4783,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1727395200,
       "beta": 0.751

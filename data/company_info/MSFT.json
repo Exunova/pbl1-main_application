@@ -1,8 +1,8 @@
 {
   "ticker": "MSFT",
   "market": "US",
-  "scraped_at": "2026-04-13 10:30:31.143417",
-  "updated_at": "2026-04-13T10:30:31.143435",
+  "scraped_at": "2026-04-18 15:06:09.887093",
+  "updated_at": "2026-04-18T15:06:09.887105",
   "info": {
     "identity": {
       "longName": "Microsoft Corporation",
@@ -120,34 +120,34 @@
       ]
     },
     "price": {
-      "currentPrice": 370.87,
-      "previousClose": 373.07,
-      "open": 372.9,
-      "dayHigh": 375.64,
-      "dayLow": 370.03,
-      "bid": 370.47,
-      "ask": 371.02,
+      "currentPrice": 422.79,
+      "previousClose": 420.26,
+      "open": 424.79,
+      "dayHigh": 431.58,
+      "dayLow": 420.69,
+      "bid": 422.78,
+      "ask": 422.27,
       "fiftyTwoWeekHigh": 555.45,
       "fiftyTwoWeekLow": 355.67,
-      "fiftyDayAverage": 393.8838,
-      "twoHundredDayAverage": 474.1733,
-      "volume": 27933678,
-      "averageVolume": 37068491,
-      "averageVolume10days": 31056910,
-      "regularMarketChangePercent": -0.58970493,
-      "52WeekChange": -0.043681204
+      "fiftyDayAverage": 392.0956,
+      "twoHundredDayAverage": 472.30276,
+      "volume": 47754221,
+      "averageVolume": 37680031,
+      "averageVolume10days": 31325630,
+      "regularMarketChangePercent": 0.602008,
+      "52WeekChange": 0.17024946
     },
     "valuation": {
-      "marketCap": 2756445995008,
-      "enterpriseValue": 2787759095808,
-      "trailingPE": 23.208385,
-      "forwardPE": 19.68536,
-      "priceToBook": 7.04875,
-      "priceToSalesTrailing12Months": 9.024124,
-      "trailingEps": 15.98,
-      "forwardEps": 18.83989,
+      "marketCap": 3142335070208,
+      "enterpriseValue": 3173297684480,
+      "trailingPE": 26.309273,
+      "forwardPE": 22.363321,
+      "priceToBook": 8.035542,
+      "priceToSalesTrailing12Months": 10.287458,
+      "trailingEps": 16.07,
+      "forwardEps": 18.90551,
       "bookValue": 52.615,
-      "pegRatio": null
+      "pegRatio": 1.33
     },
     "profitability": {
       "profitMargins": 0.39044,
@@ -166,7 +166,7 @@
     },
     "dividend": {
       "dividendRate": 3.64,
-      "dividendYield": 0.98,
+      "dividendYield": 0.86,
       "fiveYearAvgDividendYield": 0.79,
       "payoutRatio": 0.21280001,
       "exDividendDate": 1779321600,
@@ -174,18 +174,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.27586,
+      "recommendationMean": 1.28571,
       "numberOfAnalystOpinions": 54,
       "targetHighPrice": 730.0,
       "targetLowPrice": 392.0,
-      "targetMeanPrice": 587.3139,
-      "targetMedianPrice": 600.0
+      "targetMeanPrice": 579.5731,
+      "targetMedianPrice": 587.0
     },
     "ownership": {
       "sharesOutstanding": 7425629076,
-      "floatShares": 7414787658,
-      "heldPercentInsiders": 0.0008,
-      "heldPercentInstitutions": 0.75967,
+      "floatShares": 7414713401,
+      "heldPercentInsiders": 0.00079,
+      "heldPercentInstitutions": 0.76034,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 1045526400,
       "beta": 1.107

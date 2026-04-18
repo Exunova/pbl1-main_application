@@ -1,8 +1,8 @@
 {
   "ticker": "8058.T",
   "market": "JP",
-  "scraped_at": "2026-04-13 10:31:11.221635",
-  "updated_at": "2026-04-13T10:31:11.221645",
+  "scraped_at": "2026-04-18 15:06:48.146935",
+  "updated_at": "2026-04-18T15:06:48.146946",
   "info": {
     "identity": {
       "longName": "Mitsubishi Corporation",
@@ -115,34 +115,34 @@
       ]
     },
     "price": {
-      "currentPrice": 5313.0,
-      "previousClose": 5307.0,
-      "open": 5360.0,
-      "dayHigh": 5433.0,
-      "dayLow": 5312.0,
-      "bid": 5304.0,
-      "ask": 5307.0,
+      "currentPrice": 4952.0,
+      "previousClose": 5086.0,
+      "open": 5079.0,
+      "dayHigh": 5080.0,
+      "dayLow": 4938.0,
+      "bid": 4951.0,
+      "ask": 4953.0,
       "fiftyTwoWeekHigh": 5787.0,
-      "fiftyTwoWeekLow": 2427.0,
-      "fiftyDayAverage": 5098.84,
-      "twoHundredDayAverage": 3859.7324,
-      "volume": 4013800,
-      "averageVolume": 11431758,
-      "averageVolume10days": 11158060,
-      "regularMarketChangePercent": 0.113058224,
-      "52WeekChange": 1.1516318
+      "fiftyTwoWeekLow": 2434.0,
+      "fiftyDayAverage": 5198.1,
+      "twoHundredDayAverage": 3916.9524,
+      "volume": 8716300,
+      "averageVolume": 11324461,
+      "averageVolume10days": 9868410,
+      "regularMarketChangePercent": -2.6346834,
+      "52WeekChange": 1.0345111
     },
     "valuation": {
-      "marketCap": 19513309396992,
-      "enterpriseValue": 25698882289664,
-      "trailingPE": 30.337463,
-      "forwardPE": 25.056593,
-      "priceToBook": 2.1629248,
-      "priceToSalesTrailing12Months": 1.0630842,
-      "trailingEps": 175.13,
+      "marketCap": 18187447959552,
+      "enterpriseValue": 24383248662528,
+      "trailingPE": 28.248716,
+      "forwardPE": 23.354084,
+      "priceToBook": 2.0159616,
+      "priceToSalesTrailing12Months": 0.99085134,
+      "trailingEps": 175.3,
       "forwardEps": 212.04,
       "bookValue": 2456.396,
-      "pegRatio": null
+      "pegRatio": 3.17
     },
     "profitability": {
       "profitMargins": 0.039839998,
@@ -161,7 +161,7 @@
     },
     "dividend": {
       "dividendRate": 110.0,
-      "dividendYield": 2.07,
+      "dividendYield": 2.22,
       "fiveYearAvgDividendYield": 3.22,
       "payoutRatio": 0.5994,
       "exDividendDate": 1774828800,
@@ -177,10 +177,10 @@
       "targetMedianPrice": 5185.0
     },
     "ownership": {
-      "sharesOutstanding": 3672747887,
+      "sharesOutstanding": 3667492292,
       "floatShares": 3706006911,
       "heldPercentInsiders": 0.11302,
-      "heldPercentInstitutions": 0.30967,
+      "heldPercentInstitutions": 0.30981,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1703721600,
       "beta": 0.553

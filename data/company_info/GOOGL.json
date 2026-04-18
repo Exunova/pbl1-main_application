@@ -1,8 +1,8 @@
 {
   "ticker": "GOOGL",
   "market": "US",
-  "scraped_at": "2026-04-13 10:30:29.496736",
-  "updated_at": "2026-04-13T10:30:29.496757",
+  "scraped_at": "2026-04-18 15:06:08.595470",
+  "updated_at": "2026-04-18T15:06:08.595480",
   "info": {
     "identity": {
       "longName": "Alphabet Inc.",
@@ -126,34 +126,34 @@
       ]
     },
     "price": {
-      "currentPrice": 317.24,
-      "previousClose": 318.475,
-      "open": 320.25,
-      "dayHigh": 321.83,
-      "dayLow": 316.33,
-      "bid": 303.71,
-      "ask": 323.0,
+      "currentPrice": 341.68,
+      "previousClose": 336.02,
+      "open": 337.73,
+      "dayHigh": 342.32,
+      "dayLow": 336.24,
+      "bid": 320.66,
+      "ask": 341.74,
       "fiftyTwoWeekHigh": 349.0,
       "fiftyTwoWeekLow": 146.1,
-      "fiftyDayAverage": 308.3452,
-      "twoHundredDayAverage": 268.5488,
-      "volume": 18914274,
-      "averageVolume": 33724800,
-      "averageVolume10days": 29082240,
-      "regularMarketChangePercent": -0.38779053,
-      "52WeekChange": 0.9943421
+      "fiftyDayAverage": 307.6994,
+      "twoHundredDayAverage": 271.6907,
+      "volume": 25487532,
+      "averageVolume": 33086100,
+      "averageVolume10days": 23030440,
+      "regularMarketChangePercent": 1.68442,
+      "52WeekChange": 1.2754791
     },
     "valuation": {
-      "marketCap": 3837652369408,
-      "enterpriseValue": 3777805156352,
-      "trailingPE": 29.319778,
-      "forwardPE": 23.616993,
-      "priceToBook": 9.23471,
-      "priceToSalesTrailing12Months": 9.5265875,
-      "trailingEps": 10.82,
-      "forwardEps": 13.4327,
+      "marketCap": 4133303091200,
+      "enterpriseValue": 4073455878144,
+      "trailingPE": 31.637035,
+      "forwardPE": 25.415812,
+      "priceToBook": 9.946147,
+      "priceToSalesTrailing12Months": 10.26051,
+      "trailingEps": 10.8,
+      "forwardEps": 13.4436,
       "bookValue": 34.353,
-      "pegRatio": null
+      "pegRatio": 2.3
     },
     "profitability": {
       "profitMargins": 0.32810003,
@@ -172,7 +172,7 @@
     },
     "dividend": {
       "dividendRate": 0.84,
-      "dividendYield": 0.26,
+      "dividendYield": 0.25,
       "fiveYearAvgDividendYield": null,
       "payoutRatio": 0.076799996,
       "exDividendDate": 1773014400,
@@ -184,14 +184,14 @@
       "numberOfAnalystOpinions": 56,
       "targetHighPrice": 443.0,
       "targetLowPrice": 185.0,
-      "targetMeanPrice": 375.9325,
+      "targetMeanPrice": 376.0575,
       "targetMedianPrice": 385.0
     },
     "ownership": {
       "sharesOutstanding": 5822000000,
-      "floatShares": 10833589320,
-      "heldPercentInsiders": 0.0058,
-      "heldPercentInstitutions": 0.80774003,
+      "floatShares": 10833468350,
+      "heldPercentInsiders": 0.00575,
+      "heldPercentInstitutions": 0.80924004,
       "lastSplitFactor": "20:1",
       "lastSplitDate": 1658102400,
       "beta": 1.128

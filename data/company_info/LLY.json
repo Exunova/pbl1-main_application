@@ -1,8 +1,8 @@
 {
   "ticker": "LLY",
   "market": "US",
-  "scraped_at": "2026-04-13 10:30:37.698978",
-  "updated_at": "2026-04-13T10:30:37.699064",
+  "scraped_at": "2026-04-18 15:06:17.336466",
+  "updated_at": "2026-04-18T15:06:17.336485",
   "info": {
     "identity": {
       "longName": "Eli Lilly and Company",
@@ -123,34 +123,34 @@
       ]
     },
     "price": {
-      "currentPrice": 939.47,
-      "previousClose": 955.19,
-      "open": 963.69,
-      "dayHigh": 963.94,
-      "dayLow": 935.54,
-      "bid": 940.1,
-      "ask": 941.0,
+      "currentPrice": 927.03,
+      "previousClose": 903.99,
+      "open": 917.8,
+      "dayHigh": 929.99,
+      "dayLow": 918.49,
+      "bid": 925.5,
+      "ask": 926.7,
       "fiftyTwoWeekHigh": 1133.95,
       "fiftyTwoWeekLow": 623.78,
-      "fiftyDayAverage": 985.9058,
-      "twoHundredDayAverage": 902.01263,
-      "volume": 1479834,
-      "averageVolume": 3154298,
-      "averageVolume10days": 2901550,
-      "regularMarketChangePercent": -1.64575,
-      "52WeekChange": 0.24540329
+      "fiftyDayAverage": 976.9496,
+      "twoHundredDayAverage": 904.606,
+      "volume": 3232413,
+      "averageVolume": 3128760,
+      "averageVolume10days": 2499390,
+      "regularMarketChangePercent": 2.54871,
+      "52WeekChange": 0.10509527
     },
     "valuation": {
-      "marketCap": 840843264000,
-      "enterpriseValue": 875937005568,
-      "trailingPE": 40.98909,
-      "forwardPE": 22.330074,
-      "priceToBook": 31.679985,
-      "priceToSalesTrailing12Months": 12.900524,
-      "trailingEps": 22.92,
-      "forwardEps": 42.07196,
+      "marketCap": 829709287424,
+      "enterpriseValue": 864823607296,
+      "trailingPE": 40.323185,
+      "forwardPE": 22.016153,
+      "priceToBook": 31.260496,
+      "priceToSalesTrailing12Months": 12.729702,
+      "trailingEps": 22.99,
+      "forwardEps": 42.10681,
       "bookValue": 29.655,
-      "pegRatio": null
+      "pegRatio": 1.0
     },
     "profitability": {
       "profitMargins": 0.31667,
@@ -169,7 +169,7 @@
     },
     "dividend": {
       "dividendRate": 6.23,
-      "dividendYield": 0.66,
+      "dividendYield": 0.67,
       "fiveYearAvgDividendYield": 0.92,
       "payoutRatio": 0.26139998,
       "exDividendDate": 1770940800,
@@ -181,14 +181,14 @@
       "numberOfAnalystOpinions": 29,
       "targetHighPrice": 1500.0,
       "targetLowPrice": 850.0,
-      "targetMeanPrice": 1209.6897,
+      "targetMeanPrice": 1209.862,
       "targetMedianPrice": 1260.0
     },
     "ownership": {
       "sharesOutstanding": 893357420,
-      "floatShares": 890990023,
+      "floatShares": 890981089,
       "heldPercentInsiders": 0.0017,
-      "heldPercentInstitutions": 0.84571,
+      "heldPercentInstitutions": 0.84638,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 876960000,
       "beta": 0.504

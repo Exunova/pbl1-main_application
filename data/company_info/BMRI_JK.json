@@ -1,8 +1,8 @@
 {
   "ticker": "BMRI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-13 10:30:45.464005",
-  "updated_at": "2026-04-13T10:30:45.464026",
+  "scraped_at": "2026-04-18 15:06:23.240156",
+  "updated_at": "2026-04-18T15:06:23.240169",
   "info": {
     "identity": {
       "longName": "PT Bank Mandiri (Persero) Tbk",
@@ -107,34 +107,34 @@
       ]
     },
     "price": {
-      "currentPrice": 4650.0,
-      "previousClose": 4670.0,
-      "open": 4640.0,
-      "dayHigh": 4660.0,
-      "dayLow": 4600.0,
-      "bid": 4640.0,
-      "ask": 4650.0,
+      "currentPrice": 4620.0,
+      "previousClose": 4640.0,
+      "open": 4670.0,
+      "dayHigh": 4700.0,
+      "dayLow": 4580.0,
+      "bid": 4610.0,
+      "ask": 4620.0,
       "fiftyTwoWeekHigh": 5575.0,
       "fiftyTwoWeekLow": 4010.0,
-      "fiftyDayAverage": 4921.0,
-      "twoHundredDayAverage": 4766.975,
-      "volume": 34787000,
-      "averageVolume": 191319150,
-      "averageVolume10days": 129469120,
-      "regularMarketChangePercent": -0.4282655,
-      "52WeekChange": -0.016842127
+      "fiftyDayAverage": 4895.4,
+      "twoHundredDayAverage": 4763.675,
+      "volume": 125867600,
+      "averageVolume": 185291019,
+      "averageVolume10days": 124329980,
+      "regularMarketChangePercent": -0.43103448,
+      "52WeekChange": 0.0021692514
     },
     "valuation": {
-      "marketCap": 434000002809856,
-      "enterpriseValue": 569391196405760,
-      "trailingPE": 7.706842,
-      "forwardPE": 7.008501,
-      "priceToBook": 1.4761099,
-      "priceToSalesTrailing12Months": 2.9968755,
-      "trailingEps": 603.36,
+      "marketCap": 431199986122752,
+      "enterpriseValue": 564728740970496,
+      "trailingPE": 7.6569934,
+      "forwardPE": 6.9632845,
+      "priceToBook": 1.4665866,
+      "priceToSalesTrailing12Months": 2.9775407,
+      "trailingEps": 603.37,
       "forwardEps": 663.48,
       "bookValue": 3150.172,
-      "pegRatio": null
+      "pegRatio": 1.08
     },
     "profitability": {
       "profitMargins": 0.38872,
@@ -153,7 +153,7 @@
     },
     "dividend": {
       "dividendRate": 100.0,
-      "dividendYield": 2.14,
+      "dividendYield": 2.16,
       "fiveYearAvgDividendYield": 5.14,
       "payoutRatio": 0.9386,
       "exDividendDate": 1767657600,
@@ -165,14 +165,14 @@
       "numberOfAnalystOpinions": 22,
       "targetHighPrice": 7950.0,
       "targetLowPrice": 3600.0,
-      "targetMeanPrice": 5829.5,
-      "targetMedianPrice": 6000.0
+      "targetMeanPrice": 5815.864,
+      "targetMedianPrice": 5960.0
     },
     "ownership": {
       "sharesOutstanding": 93333333331,
       "floatShares": 37572853147,
       "heldPercentInsiders": 0.54123,
-      "heldPercentInstitutions": 0.28294,
+      "heldPercentInstitutions": 0.28379,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 1680566400,
       "beta": 0.096

@@ -1,8 +1,8 @@
 {
   "ticker": "LLOY.L",
   "market": "GB",
-  "scraped_at": "2026-04-13 10:31:19.840968",
-  "updated_at": "2026-04-13T10:31:19.840977",
+  "scraped_at": "2026-04-18 15:06:59.494854",
+  "updated_at": "2026-04-18T15:06:59.494861",
   "info": {
     "identity": {
       "longName": "Lloyds Banking Group plc",
@@ -113,34 +113,34 @@
       ]
     },
     "price": {
-      "currentPrice": 100.9,
-      "previousClose": 100.62,
-      "open": 100.92,
-      "dayHigh": 101.88,
-      "dayLow": 100.662,
-      "bid": 101.12,
-      "ask": 101.14,
+      "currentPrice": 105.12,
+      "previousClose": 102.86,
+      "open": 103.14,
+      "dayHigh": 105.36,
+      "dayLow": 101.78,
+      "bid": 105.02,
+      "ask": 105.04,
       "fiftyTwoWeekHigh": 114.6,
-      "fiftyTwoWeekLow": 66.94,
-      "fiftyDayAverage": 99.5026,
-      "twoHundredDayAverage": 90.91205,
-      "volume": 147791882,
-      "averageVolume": 227688572,
-      "averageVolume10days": 254469553,
-      "regularMarketChangePercent": 0.2782735,
-      "52WeekChange": 0.46784985
+      "fiftyTwoWeekLow": 69.7,
+      "fiftyDayAverage": 98.8606,
+      "twoHundredDayAverage": 91.44975,
+      "volume": 114855212,
+      "averageVolume": 224635741,
+      "averageVolume10days": 204155608,
+      "regularMarketChangePercent": 2.197163,
+      "52WeekChange": 0.46274173
     },
     "valuation": {
-      "marketCap": 59008389120,
-      "enterpriseValue": 36521697280,
-      "trailingPE": 14.414287,
-      "forwardPE": 8.441396,
-      "priceToBook": 142.11269,
-      "priceToSalesTrailing12Months": 3.1678953,
+      "marketCap": 61471076352,
+      "enterpriseValue": 39002992640,
+      "trailingPE": 15.017143,
+      "forwardPE": 8.790033,
+      "priceToBook": 1.4805635,
+      "priceToSalesTrailing12Months": 3.300106,
       "trailingEps": 0.07,
-      "forwardEps": 0.11953,
+      "forwardEps": 0.11959,
       "bookValue": 0.71,
-      "pegRatio": null
+      "pegRatio": 1.08
     },
     "profitability": {
       "profitMargins": 0.25011998,
@@ -159,7 +159,7 @@
     },
     "dividend": {
       "dividendRate": 0.04,
-      "dividendYield": 3.62,
+      "dividendYield": 3.47,
       "fiveYearAvgDividendYield": 4.19,
       "payoutRatio": 0.48259997,
       "exDividendDate": 1775692800,
@@ -171,14 +171,14 @@
       "numberOfAnalystOpinions": 18,
       "targetHighPrice": 130.0,
       "targetLowPrice": 52.999996,
-      "targetMeanPrice": 112.61099,
-      "targetMedianPrice": 117.49999
+      "targetMeanPrice": 112.88901,
+      "targetMedianPrice": 119.00001
     },
     "ownership": {
-      "sharesOutstanding": 58482049737,
-      "floatShares": 55439351012,
+      "sharesOutstanding": 58477049737,
+      "floatShares": 55438763027,
       "heldPercentInsiders": 0.00081,
-      "heldPercentInstitutions": 0.51607,
+      "heldPercentInstitutions": 0.51399,
       "lastSplitFactor": "41:40",
       "lastSplitDate": 1242000000,
       "beta": 0.939

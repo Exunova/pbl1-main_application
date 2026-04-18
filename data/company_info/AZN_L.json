@@ -1,8 +1,8 @@
 {
   "ticker": "AZN.L",
   "market": "GB",
-  "scraped_at": "2026-04-13 10:31:12.396364",
-  "updated_at": "2026-04-13T10:31:12.396379",
+  "scraped_at": "2026-04-18 15:06:49.521813",
+  "updated_at": "2026-04-18T15:06:49.521823",
   "info": {
     "identity": {
       "longName": "AstraZeneca PLC",
@@ -113,34 +113,34 @@
       ]
     },
     "price": {
-      "currentPrice": 15230.0,
-      "previousClose": 15276.0,
-      "open": 15272.0,
-      "dayHigh": 15450.0,
-      "dayLow": 15230.0,
-      "bid": 15260.0,
-      "ask": 15262.0,
+      "currentPrice": 15118.0,
+      "previousClose": 14862.0,
+      "open": 14736.0,
+      "dayHigh": 15118.0,
+      "dayLow": 14736.0,
+      "bid": 15072.0,
+      "ask": 15074.0,
       "fiftyTwoWeekHigh": 15732.0,
       "fiftyTwoWeekLow": 9651.0,
-      "fiftyDayAverage": 14691.8,
-      "twoHundredDayAverage": 13030.5,
-      "volume": 2334666,
-      "averageVolume": 2744912,
-      "averageVolume10days": 2334562,
-      "regularMarketChangePercent": -0.30112594,
-      "52WeekChange": 0.47577524
+      "fiftyDayAverage": 14769.84,
+      "twoHundredDayAverage": 13121.89,
+      "volume": 2861517,
+      "averageVolume": 2656804,
+      "averageVolume10days": 2045786,
+      "regularMarketChangePercent": 1.7225139,
+      "52WeekChange": 0.46799684
     },
     "valuation": {
-      "marketCap": 236191907840,
-      "enterpriseValue": 260239278080,
-      "trailingPE": 31.273102,
-      "forwardPE": 17.591965,
-      "priceToBook": 651.7547,
-      "priceToSalesTrailing12Months": 4.021041,
-      "trailingEps": 4.87,
-      "forwardEps": 8.657362,
-      "bookValue": 23.367687,
-      "pegRatio": null
+      "marketCap": 234454974464,
+      "enterpriseValue": 258502262784,
+      "trailingPE": 31.235535,
+      "forwardPE": 17.532133,
+      "priceToBook": 6.5387034,
+      "priceToSalesTrailing12Months": 3.9914703,
+      "trailingEps": 4.84,
+      "forwardEps": 8.623024,
+      "bookValue": 23.12079,
+      "pegRatio": 1.67
     },
     "profitability": {
       "profitMargins": 0.17408001,
@@ -159,7 +159,7 @@
     },
     "dividend": {
       "dividendRate": 2.36,
-      "dividendYield": 1.55,
+      "dividendYield": 1.56,
       "fiveYearAvgDividendYield": 2.12,
       "payoutRatio": 0.4791,
       "exDividendDate": 1771459200,
@@ -169,16 +169,16 @@
       "recommendationKey": "buy",
       "recommendationMean": 1.625,
       "numberOfAnalystOpinions": 21,
-      "targetHighPrice": 20175.121,
-      "targetLowPrice": 11285.769,
-      "targetMeanPrice": 16436.492,
-      "targetMedianPrice": 16782.918
+      "targetHighPrice": 20004.031,
+      "targetLowPrice": 11190.062,
+      "targetMeanPrice": 16304.082,
+      "targetMedianPrice": 16549.455
     },
     "ownership": {
       "sharesOutstanding": 1550833276,
       "floatShares": 1543370514,
       "heldPercentInsiders": 0.00042,
-      "heldPercentInstitutions": 0.57147,
+      "heldPercentInstitutions": 0.57263,
       "lastSplitFactor": null,
       "lastSplitDate": null,
       "beta": 0.275

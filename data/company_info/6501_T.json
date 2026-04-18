@@ -1,8 +1,8 @@
 {
   "ticker": "6501.T",
   "market": "JP",
-  "scraped_at": "2026-04-13 10:31:05.218472",
-  "updated_at": "2026-04-13T10:31:05.218485",
+  "scraped_at": "2026-04-18 15:06:41.610793",
+  "updated_at": "2026-04-18T15:06:41.610821",
   "info": {
     "identity": {
       "longName": "Hitachi, Ltd.",
@@ -131,34 +131,34 @@
       ]
     },
     "price": {
-      "currentPrice": 4901.0,
-      "previousClose": 4810.0,
-      "open": 4880.0,
-      "dayHigh": 4945.0,
-      "dayLow": 4826.0,
-      "bid": 4877.0,
-      "ask": 4881.0,
+      "currentPrice": 5157.0,
+      "previousClose": 5220.0,
+      "open": 5167.0,
+      "dayHigh": 5210.0,
+      "dayLow": 5109.0,
+      "bid": 5156.0,
+      "ask": 5167.0,
       "fiftyTwoWeekHigh": 6039.0,
-      "fiftyTwoWeekLow": 3206.0,
-      "fiftyDayAverage": 4964.26,
-      "twoHundredDayAverage": 4649.475,
-      "volume": 6074200,
-      "averageVolume": 15438688,
-      "averageVolume10days": 11935640,
-      "regularMarketChangePercent": 1.8918918,
-      "52WeekChange": 0.4951818
+      "fiftyTwoWeekLow": 3323.0,
+      "fiftyDayAverage": 4948.4,
+      "twoHundredDayAverage": 4676.13,
+      "volume": 10437400,
+      "averageVolume": 15490677,
+      "averageVolume10days": 12598730,
+      "regularMarketChangePercent": -1.2068965,
+      "52WeekChange": 0.50789475
     },
     "valuation": {
-      "marketCap": 22171999010816,
-      "enterpriseValue": 21483514494976,
-      "trailingPE": 29.363129,
-      "forwardPE": 27.513613,
-      "priceToBook": 3.4868662,
-      "priceToSalesTrailing12Months": 2.1580806,
-      "trailingEps": 166.91,
+      "marketCap": 23330136522752,
+      "enterpriseValue": 23052775587840,
+      "trailingPE": 30.863607,
+      "forwardPE": 28.950766,
+      "priceToBook": 3.6690001,
+      "priceToSalesTrailing12Months": 2.270806,
+      "trailingEps": 167.09,
       "forwardEps": 178.13,
       "bookValue": 1405.56,
-      "pegRatio": null
+      "pegRatio": 0.13
     },
     "profitability": {
       "profitMargins": 0.08015,
@@ -177,7 +177,7 @@
     },
     "dividend": {
       "dividendRate": 45.0,
-      "dividendYield": 0.94,
+      "dividendYield": 0.87,
       "fiveYearAvgDividendYield": 1.48,
       "payoutRatio": 0.2693,
       "exDividendDate": 1759104000,
@@ -196,7 +196,7 @@
       "sharesOutstanding": 4523974507,
       "floatShares": 4280011910,
       "heldPercentInsiders": 0.01725,
-      "heldPercentInstitutions": 0.48965,
+      "heldPercentInstitutions": 0.48977003,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1719446400,
       "beta": 0.486

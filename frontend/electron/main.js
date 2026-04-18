@@ -16,22 +16,24 @@ function startPythonBackend() {
 
   const candidates = isDev
     ? [
-        '/home/reiyo/Project/PBL1/pbl1-main_application/backend/venv/bin/python3',
+        join(backendDir, '../venv/Scripts/python.exe'), // Windows venv
+        join(backendDir, '../venv/bin/python3'),        // Linux/Mac venv
         '/usr/bin/python3',
-        'python3',
         'python',
+        'python3',
       ]
     : [
-        join(process.resourcesPath, 'backend-venv', 'bin', 'python3'),
+        join(process.resourcesPath, 'backend-venv', 'Scripts', 'python.exe'), // Windows packaged
+        join(process.resourcesPath, 'backend-venv', 'bin', 'python3'),        // Linux/Mac packaged
         '/usr/bin/python3',
-        'python3',
+        'python',
       ]
 
-  let pythonExe = candidates[0]
+  let pythonExe = 'python'
   for (const c of candidates) {
     try {
       const { existsSync } = require('fs')
-      if (c.startsWith('/')) {
+      if (c.includes('/') || c.includes('\\')) {
         if (existsSync(c)) { pythonExe = c; break }
       } else {
         pythonExe = c; break

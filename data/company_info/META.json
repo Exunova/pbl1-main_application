@@ -1,8 +1,8 @@
 {
   "ticker": "META",
   "market": "US",
-  "scraped_at": "2026-04-13 10:30:34.046728",
-  "updated_at": "2026-04-13T10:30:34.046748",
+  "scraped_at": "2026-04-18 15:06:12.553609",
+  "updated_at": "2026-04-18T15:06:12.553625",
   "info": {
     "identity": {
       "longName": "Meta Platforms, Inc.",
@@ -75,25 +75,6 @@
         },
         {
           "maxAge": 1,
-          "name": "Mr. Dana  White",
-          "title": "Independent Director",
-          "fiscalYear": 2024,
-          "totalPay": 272,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Dina  Powell McCormick",
-          "age": 50,
-          "title": "President & Vice Chairman",
-          "yearBorn": 1975,
-          "fiscalYear": 2024,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
           "name": "Mr. Aaron A. Anderson",
           "title": "Chief Accounting Officer",
           "fiscalYear": 2024,
@@ -119,38 +100,56 @@
           "fiscalYear": 2024,
           "exercisedValue": 0,
           "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Alexander P. Schultz",
+          "age": 43,
+          "title": "Chief Marketing Officer & VP of Analytics",
+          "yearBorn": 1982,
+          "fiscalYear": 2024,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Ms. Janelle  Gale",
+          "title": "Head of People",
+          "fiscalYear": 2024,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
         }
       ]
     },
     "price": {
-      "currentPrice": 629.86,
-      "previousClose": 628.39,
-      "open": 634.47,
-      "dayHigh": 638.58,
-      "dayLow": 624.33,
-      "bid": 629.23,
-      "ask": 629.92,
+      "currentPrice": 688.55,
+      "previousClose": 676.87,
+      "open": 678.6,
+      "dayHigh": 691.5,
+      "dayLow": 675.13,
+      "bid": 687.94,
+      "ask": 688.91,
       "fiftyTwoWeekHigh": 796.25,
       "fiftyTwoWeekLow": 479.8,
-      "fiftyDayAverage": 633.608,
-      "twoHundredDayAverage": 682.7142,
-      "volume": 13230997,
-      "averageVolume": 16444271,
-      "averageVolume10days": 20637430,
-      "regularMarketChangePercent": 0.23392649,
-      "52WeekChange": 0.1851058
+      "fiftyDayAverage": 629.459,
+      "twoHundredDayAverage": 681.40906,
+      "volume": 15272657,
+      "averageVolume": 16277273,
+      "averageVolume10days": 14881360,
+      "regularMarketChangePercent": 1.72559,
+      "52WeekChange": 0.39658725
     },
     "valuation": {
-      "marketCap": 1593265750016,
-      "enterpriseValue": 1596754755584,
-      "trailingPE": 26.813963,
-      "forwardPE": 17.622093,
-      "priceToBook": 7.3352976,
-      "priceToSalesTrailing12Months": 7.9280367,
-      "trailingEps": 23.49,
-      "forwardEps": 35.74263,
+      "marketCap": 1747831357440,
+      "enterpriseValue": 1745214373888,
+      "trailingPE": 29.324957,
+      "forwardPE": 19.332428,
+      "priceToBook": 8.018797,
+      "priceToSalesTrailing12Months": 8.697149,
+      "trailingEps": 23.48,
+      "forwardEps": 35.61632,
       "bookValue": 85.867,
-      "pegRatio": null
+      "pegRatio": 1.11
     },
     "profitability": {
       "profitMargins": 0.30084,
@@ -169,7 +168,7 @@
     },
     "dividend": {
       "dividendRate": 2.1,
-      "dividendYield": 0.33,
+      "dividendYield": 0.3,
       "fiveYearAvgDividendYield": null,
       "payoutRatio": 0.08939999,
       "exDividendDate": 1773619200,
@@ -177,18 +176,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.34328,
+      "recommendationMean": 1.35385,
       "numberOfAnalystOpinions": 60,
       "targetHighPrice": 1015.0,
       "targetLowPrice": 614.0,
-      "targetMeanPrice": 855.6793,
+      "targetMeanPrice": 855.9293,
       "targetMedianPrice": 857.5
     },
     "ownership": {
-      "sharesOutstanding": 2187177748,
-      "floatShares": 2183917005,
-      "heldPercentInsiders": 0.00091,
-      "heldPercentInstitutions": 0.78695,
+      "sharesOutstanding": 2196045588,
+      "floatShares": 2183866414,
+      "heldPercentInsiders": 0.00089,
+      "heldPercentInstitutions": 0.78801,
       "lastSplitFactor": null,
       "lastSplitDate": null,
       "beta": 1.309

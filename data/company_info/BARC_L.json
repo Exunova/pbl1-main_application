@@ -1,8 +1,8 @@
 {
   "ticker": "BARC.L",
   "market": "GB",
-  "scraped_at": "2026-04-13 10:31:18.838019",
-  "updated_at": "2026-04-13T10:31:18.838028",
+  "scraped_at": "2026-04-18 15:06:58.351779",
+  "updated_at": "2026-04-18T15:06:58.351787",
   "info": {
     "identity": {
       "longName": "Barclays PLC",
@@ -111,34 +111,34 @@
       ]
     },
     "price": {
-      "currentPrice": 441.0,
-      "previousClose": 433.45,
-      "open": 438.4,
-      "dayHigh": 442.95,
-      "dayLow": 434.5,
-      "bid": 442.1,
-      "ask": 442.15,
+      "currentPrice": 452.85,
+      "previousClose": 437.6,
+      "open": 438.0,
+      "dayHigh": 455.15,
+      "dayLow": 435.25,
+      "bid": 452.35,
+      "ask": 452.45,
       "fiftyTwoWeekHigh": 507.45,
-      "fiftyTwoWeekLow": 262.05,
-      "fiftyDayAverage": 431.431,
-      "twoHundredDayAverage": 410.8395,
-      "volume": 66875747,
-      "averageVolume": 61521217,
-      "averageVolume10days": 60019360,
-      "regularMarketChangePercent": 1.7418358,
-      "52WeekChange": 0.6309172
+      "fiftyTwoWeekLow": 275.35,
+      "fiftyDayAverage": 427.542,
+      "twoHundredDayAverage": 412.9625,
+      "volume": 44703457,
+      "averageVolume": 61508324,
+      "averageVolume10days": 49611853,
+      "regularMarketChangePercent": 3.4849179,
+      "52WeekChange": 0.57807434
     },
     "valuation": {
-      "marketCap": 60406960128,
-      "enterpriseValue": -168512733184,
-      "trailingPE": 10.5,
-      "forwardPE": 7.039668,
-      "priceToBook": 93.869736,
-      "priceToSalesTrailing12Months": 2.2524781,
+      "marketCap": 62030143488,
+      "enterpriseValue": -166871859200,
+      "trailingPE": 10.782144,
+      "forwardPE": 7.213974,
+      "priceToBook": 0.96392083,
+      "priceToSalesTrailing12Months": 2.313004,
       "trailingEps": 0.42,
-      "forwardEps": 0.62645,
+      "forwardEps": 0.62774,
       "bookValue": 4.698,
-      "pegRatio": null
+      "pegRatio": 1.4
     },
     "profitability": {
       "profitMargins": 0.26743,
@@ -157,7 +157,7 @@
     },
     "dividend": {
       "dividendRate": 0.09,
-      "dividendYield": 1.95,
+      "dividendYield": 1.9,
       "fiveYearAvgDividendYield": 3.18,
       "payoutRatio": 0.2009,
       "exDividendDate": 1771459200,
@@ -165,18 +165,18 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.6875,
+      "recommendationMean": 1.75,
       "numberOfAnalystOpinions": 16,
       "targetHighPrice": 590.0,
       "targetLowPrice": 425.0,
-      "targetMeanPrice": 533.625,
-      "targetMedianPrice": 542.5
+      "targetMeanPrice": 529.875,
+      "targetMedianPrice": 540.0
     },
     "ownership": {
-      "sharesOutstanding": 13697723477,
-      "floatShares": 12867324750,
+      "sharesOutstanding": 13692376995,
+      "floatShares": 12866909340,
       "heldPercentInsiders": 0.00315,
-      "heldPercentInstitutions": 0.50641996,
+      "heldPercentInstitutions": 0.49785,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1020038400,
       "beta": 0.86

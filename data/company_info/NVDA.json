@@ -1,8 +1,8 @@
 {
   "ticker": "NVDA",
   "market": "US",
-  "scraped_at": "2026-04-13 10:30:25.867287",
-  "updated_at": "2026-04-13T10:30:25.867313",
+  "scraped_at": "2026-04-18 15:06:06.066783",
+  "updated_at": "2026-04-18T15:06:06.066793",
   "info": {
     "identity": {
       "longName": "NVIDIA Corporation",
@@ -121,34 +121,34 @@
       ]
     },
     "price": {
-      "currentPrice": 188.63,
-      "previousClose": 183.937,
-      "open": 184.42,
-      "dayHigh": 190.0,
-      "dayLow": 184.3,
-      "bid": 188.36,
-      "ask": 190.0,
+      "currentPrice": 201.68,
+      "previousClose": 198.35,
+      "open": 199.88,
+      "dayHigh": 201.7,
+      "dayLow": 199.27,
+      "bid": 201.49,
+      "ask": 201.83,
       "fiftyTwoWeekHigh": 212.19,
       "fiftyTwoWeekLow": 95.04,
-      "fiftyDayAverage": 182.0778,
-      "twoHundredDayAverage": 180.7419,
-      "volume": 159395820,
-      "averageVolume": 179606693,
-      "averageVolume10days": 158365610,
-      "regularMarketChangePercent": 2.5514216,
-      "52WeekChange": 0.7038208
+      "fiftyDayAverage": 182.7468,
+      "twoHundredDayAverage": 181.53175,
+      "volume": 153662565,
+      "averageVolume": 177661085,
+      "averageVolume10days": 142216960,
+      "regularMarketChangePercent": 1.67884,
+      "52WeekChange": 1.0467443
     },
     "valuation": {
-      "marketCap": 4584652144640,
-      "enterpriseValue": 4532565180416,
-      "trailingPE": 38.49592,
-      "forwardPE": 16.968699,
-      "priceToBook": 29.14555,
-      "priceToSalesTrailing12Months": 21.231335,
+      "marketCap": 4901832228864,
+      "enterpriseValue": 4849680252928,
+      "trailingPE": 41.15918,
+      "forwardPE": 17.94437,
+      "priceToBook": 31.161926,
+      "priceToSalesTrailing12Months": 22.700182,
       "trailingEps": 4.9,
-      "forwardEps": 11.11635,
+      "forwardEps": 11.23918,
       "bookValue": 6.472,
-      "pegRatio": null
+      "pegRatio": 0.72
     },
     "profitability": {
       "profitMargins": 0.55603004,
@@ -175,18 +175,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.28333,
+      "recommendationMean": 1.28814,
       "numberOfAnalystOpinions": 56,
       "targetHighPrice": 380.0,
       "targetLowPrice": 140.0,
-      "targetMeanPrice": 268.22195,
+      "targetMeanPrice": 268.6148,
       "targetMedianPrice": 265.0
     },
     "ownership": {
       "sharesOutstanding": 24300000000,
-      "floatShares": 23321925000,
-      "heldPercentInsiders": 0.04212,
-      "heldPercentInstitutions": 0.69736,
+      "floatShares": 23321682000,
+      "heldPercentInsiders": 0.042090002,
+      "heldPercentInstitutions": 0.6973,
       "lastSplitFactor": "10:1",
       "lastSplitDate": 1717977600,
       "beta": 2.335

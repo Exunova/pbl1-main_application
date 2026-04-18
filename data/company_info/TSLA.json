@@ -1,8 +1,8 @@
 {
   "ticker": "TSLA",
   "market": "US",
-  "scraped_at": "2026-04-13 10:30:35.343335",
-  "updated_at": "2026-04-13T10:30:35.343384",
+  "scraped_at": "2026-04-18 15:06:13.889835",
+  "updated_at": "2026-04-18T15:06:13.889847",
   "info": {
     "identity": {
       "longName": "Tesla, Inc.",
@@ -112,34 +112,34 @@
       ]
     },
     "price": {
-      "currentPrice": 348.95,
-      "previousClose": 345.575,
-      "open": 346.285,
-      "dayHigh": 350.36,
-      "dayLow": 342.74,
-      "bid": 344.15,
-      "ask": 348.97,
+      "currentPrice": 400.62,
+      "previousClose": 388.9,
+      "open": 395.92,
+      "dayHigh": 409.28,
+      "dayLow": 391.65,
+      "bid": 400.37,
+      "ask": 400.91,
       "fiftyTwoWeekHigh": 498.83,
       "fiftyTwoWeekLow": 222.79,
-      "fiftyDayAverage": 394.3058,
-      "twoHundredDayAverage": 397.3536,
-      "volume": 50310339,
-      "averageVolume": 61750185,
-      "averageVolume10days": 69153120,
-      "regularMarketChangePercent": 0.9766331,
-      "52WeekChange": 0.38280165
+      "fiftyDayAverage": 390.4404,
+      "twoHundredDayAverage": 398.36786,
+      "volume": 90217327,
+      "averageVolume": 62775052,
+      "averageVolume10days": 71850540,
+      "regularMarketChangePercent": 3.01363,
+      "52WeekChange": 0.7094506
     },
     "valuation": {
-      "marketCap": 1309411115008,
-      "enterpriseValue": 1280799145984,
-      "trailingPE": 323.10184,
-      "forwardPE": 127.69236,
-      "priceToBook": 15.935974,
-      "priceToSalesTrailing12Months": 13.80842,
+      "marketCap": 1503299239936,
+      "enterpriseValue": 1474687270912,
+      "trailingPE": 370.94443,
+      "forwardPE": 144.53424,
+      "priceToBook": 18.295658,
+      "priceToSalesTrailing12Months": 15.853071,
       "trailingEps": 1.08,
-      "forwardEps": 2.73274,
+      "forwardEps": 2.7718,
       "bookValue": 21.897,
-      "pegRatio": null
+      "pegRatio": 5.87
     },
     "profitability": {
       "profitMargins": 0.040009998,
@@ -166,18 +166,18 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 2.4375,
+      "recommendationMean": 2.39583,
       "numberOfAnalystOpinions": 41,
       "targetHighPrice": 600.0,
       "targetLowPrice": 125.0,
-      "targetMeanPrice": 416.15024,
+      "targetMeanPrice": 414.58926,
       "targetMedianPrice": 441.0
     },
     "ownership": {
       "sharesOutstanding": 3752431984,
-      "floatShares": 2812672918,
-      "heldPercentInsiders": 0.111499995,
-      "heldPercentInstitutions": 0.44672,
+      "floatShares": 2812635394,
+      "heldPercentInsiders": 0.1113,
+      "heldPercentInstitutions": 0.44684,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1661385600,
       "beta": 1.915

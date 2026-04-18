@@ -1,8 +1,8 @@
 {
   "ticker": "7203.T",
   "market": "JP",
-  "scraped_at": "2026-04-13 10:30:59.554890",
-  "updated_at": "2026-04-13T10:30:59.554900",
+  "scraped_at": "2026-04-18 15:06:34.842274",
+  "updated_at": "2026-04-18T15:06:34.842294",
   "info": {
     "identity": {
       "longName": "Toyota Motor Corporation",
@@ -120,34 +120,34 @@
       ]
     },
     "price": {
-      "currentPrice": 3322.0,
-      "previousClose": 3319.0,
-      "open": 3295.0,
-      "dayHigh": 3337.0,
-      "dayLow": 3280.0,
-      "bid": 3327.0,
-      "ask": 3327.0,
+      "currentPrice": 3343.0,
+      "previousClose": 3392.0,
+      "open": 3400.0,
+      "dayHigh": 3400.0,
+      "dayLow": 3343.0,
+      "bid": 3342.0,
+      "ask": 3346.0,
       "fiftyTwoWeekHigh": 4000.0,
-      "fiftyTwoWeekLow": 2409.0,
-      "fiftyDayAverage": 3505.6,
-      "twoHundredDayAverage": 3124.115,
-      "volume": 5817400,
-      "averageVolume": 23672620,
-      "averageVolume10days": 20596180,
-      "regularMarketChangePercent": 0.09038867,
-      "52WeekChange": 0.37717843
+      "fiftyTwoWeekLow": 2434.0,
+      "fiftyDayAverage": 3492.26,
+      "twoHundredDayAverage": 3145.905,
+      "volume": 14251500,
+      "averageVolume": 22950654,
+      "averageVolume10days": 17498730,
+      "regularMarketChangePercent": -1.4445754,
+      "52WeekChange": 0.3531674
     },
     "valuation": {
-      "marketCap": 43296906805248,
-      "enterpriseValue": 69811249872896,
-      "trailingPE": 11.692655,
-      "forwardPE": 10.246129,
-      "priceToBook": 1.1108981,
-      "priceToSalesTrailing12Months": 0.85820127,
-      "trailingEps": 284.11,
+      "marketCap": 43570606112768,
+      "enterpriseValue": 70124052676608,
+      "trailingPE": 11.764499,
+      "forwardPE": 10.3109,
+      "priceToBook": 1.1179208,
+      "priceToSalesTrailing12Months": 0.8636263,
+      "trailingEps": 284.16,
       "forwardEps": 324.22,
       "bookValue": 2990.373,
-      "pegRatio": null
+      "pegRatio": 1.56
     },
     "profitability": {
       "profitMargins": 0.073249996,
@@ -166,7 +166,7 @@
     },
     "dividend": {
       "dividendRate": 95.0,
-      "dividendYield": 2.86,
+      "dividendYield": 2.84,
       "fiveYearAvgDividendYield": 2.7,
       "payoutRatio": 0.3343,
       "exDividendDate": 1774828800,
@@ -178,14 +178,14 @@
       "numberOfAnalystOpinions": 17,
       "targetHighPrice": 4500.0,
       "targetLowPrice": 3300.0,
-      "targetMeanPrice": 3992.32,
+      "targetMeanPrice": 3986.4377,
       "targetMedianPrice": 4000.0
     },
     "ownership": {
-      "sharesOutstanding": 13033385148,
+      "sharesOutstanding": 13033384474,
       "floatShares": 9737764559,
       "heldPercentInsiders": 0.14916,
-      "heldPercentInstitutions": 0.25719,
+      "heldPercentInstitutions": 0.25724,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1633046400,
       "beta": 0.357

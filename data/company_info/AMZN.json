@@ -1,8 +1,8 @@
 {
   "ticker": "AMZN",
   "market": "US",
-  "scraped_at": "2026-04-13 10:30:32.570319",
-  "updated_at": "2026-04-13T10:30:32.570337",
+  "scraped_at": "2026-04-18 15:06:11.454355",
+  "updated_at": "2026-04-18T15:06:11.454366",
   "info": {
     "identity": {
       "longName": "Amazon.com, Inc.",
@@ -24,7 +24,7 @@
           "age": 61,
           "title": "Founder & Executive Chairman",
           "yearBorn": 1964,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 1681840,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -35,7 +35,7 @@
           "age": 57,
           "title": "President, CEO & Director",
           "yearBorn": 1968,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 2069861,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -46,7 +46,7 @@
           "age": 61,
           "title": "Senior VP & CFO",
           "yearBorn": 1964,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 372000,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -57,7 +57,7 @@
           "age": 61,
           "title": "Senior VP and Chief Global Affairs & Legal Officer",
           "yearBorn": 1964,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 372000,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -68,7 +68,7 @@
           "age": 58,
           "title": "Chief Executive Officer of Worldwide Amazon Stores",
           "yearBorn": 1967,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 425365,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -79,7 +79,7 @@
           "age": 48,
           "title": "Chief Executive Officer of Amazon Web Series",
           "yearBorn": 1977,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 617281,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -90,7 +90,7 @@
           "age": 60,
           "title": "VP, Worldwide Controller & Principal Accounting Officer",
           "yearBorn": 1965,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 163200,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -99,7 +99,7 @@
           "maxAge": 1,
           "name": "Dr. Werner  Vogels",
           "title": "Chief Technology Officer",
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -107,7 +107,7 @@
           "maxAge": 1,
           "name": "Mr. Dave  Fildes",
           "title": "Vice President of Investor Relations",
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -115,41 +115,41 @@
           "maxAge": 1,
           "name": "Drew  Herdener",
           "title": "Senior Vice President of Communications & Corporate Responsibility",
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
         }
       ]
     },
     "price": {
-      "currentPrice": 238.38,
-      "previousClose": 233.65001,
-      "open": 235.38,
-      "dayHigh": 240.43,
-      "dayLow": 235.21,
-      "bid": 238.02,
-      "ask": 238.9,
+      "currentPrice": 250.56,
+      "previousClose": 249.7,
+      "open": 254.95,
+      "dayHigh": 256.18,
+      "dayLow": 250.11,
+      "bid": 242.08,
+      "ask": 250.55,
       "fiftyTwoWeekHigh": 258.6,
       "fiftyTwoWeekLow": 165.29,
-      "fiftyDayAverage": 213.4026,
-      "twoHundredDayAverage": 224.85745,
-      "volume": 56861543,
-      "averageVolume": 51233393,
-      "averageVolume10days": 46570130,
-      "regularMarketChangePercent": 2.0243936,
-      "52WeekChange": 0.30891716
+      "fiftyDayAverage": 213.8926,
+      "twoHundredDayAverage": 225.434,
+      "volume": 51829799,
+      "averageVolume": 51533832,
+      "averageVolume10days": 45875490,
+      "regularMarketChangePercent": 0.344414,
+      "52WeekChange": 0.49234998
     },
     "valuation": {
-      "marketCap": 2563598712832,
-      "enterpriseValue": 2614508388352,
-      "trailingPE": 33.200558,
-      "forwardPE": 25.378717,
-      "priceToBook": 6.2230463,
-      "priceToSalesTrailing12Months": 3.5758305,
-      "trailingEps": 7.18,
-      "forwardEps": 9.39291,
+      "marketCap": 2694585253888,
+      "enterpriseValue": 2745259786240,
+      "trailingPE": 34.945606,
+      "forwardPE": 26.64639,
+      "priceToBook": 6.541012,
+      "priceToSalesTrailing12Months": 3.7585368,
+      "trailingEps": 7.17,
+      "forwardEps": 9.40315,
       "bookValue": 38.306,
-      "pegRatio": null
+      "pegRatio": 1.81
     },
     "profitability": {
       "profitMargins": 0.108339995,
@@ -176,18 +176,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.33824,
+      "recommendationMean": 1.35294,
       "numberOfAnalystOpinions": 64,
       "targetHighPrice": 360.0,
       "targetLowPrice": 175.0,
-      "targetMeanPrice": 281.27344,
+      "targetMeanPrice": 281.1797,
       "targetMedianPrice": 285.0
     },
     "ownership": {
       "sharesOutstanding": 10754251799,
-      "floatShares": 9754393198,
-      "heldPercentInsiders": 0.089490004,
-      "heldPercentInstitutions": 0.67116,
+      "floatShares": 9756110785,
+      "heldPercentInsiders": 0.089449994,
+      "heldPercentInstitutions": 0.67117,
       "lastSplitFactor": "20:1",
       "lastSplitDate": 1654473600,
       "beta": 1.383

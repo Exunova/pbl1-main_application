@@ -1,8 +1,8 @@
 {
   "ticker": "NG.L",
   "market": "GB",
-  "scraped_at": "2026-04-13 10:31:20.945915",
-  "updated_at": "2026-04-13T10:31:20.945924",
+  "scraped_at": "2026-04-18 15:07:00.853461",
+  "updated_at": "2026-04-18T15:07:00.853471",
   "info": {
     "identity": {
       "longName": "National Grid plc",
@@ -119,34 +119,34 @@
       ]
     },
     "price": {
-      "currentPrice": 1347.6,
-      "previousClose": 1350.6,
-      "open": 1342.2,
-      "dayHigh": 1354.8,
-      "dayLow": 1340.2,
-      "bid": 1351.4,
-      "ask": 1351.8,
+      "currentPrice": 1274.8,
+      "previousClose": 1287.2,
+      "open": 1283.0,
+      "dayHigh": 1286.0,
+      "dayLow": 1258.0,
+      "bid": 1273.8,
+      "ask": 1274.0,
       "fiftyTwoWeekHigh": 1428.5,
       "fiftyTwoWeekLow": 1000.0,
-      "fiftyDayAverage": 1321.224,
-      "twoHundredDayAverage": 1159.771,
-      "volume": 7713848,
-      "averageVolume": 11992850,
-      "averageVolume10days": 9197272,
-      "regularMarketChangePercent": -0.2221235,
-      "52WeekChange": 0.30014467
+      "fiftyDayAverage": 1324.298,
+      "twoHundredDayAverage": 1165.087,
+      "volume": 10193853,
+      "averageVolume": 12065692,
+      "averageVolume10days": 9717576,
+      "regularMarketChangePercent": -0.9633238,
+      "52WeekChange": 0.19295645
     },
     "valuation": {
-      "marketCap": 67021893632,
-      "enterpriseValue": 108265775104,
-      "trailingPE": 22.46,
-      "forwardPE": 15.140722,
-      "priceToBook": 178.49005,
-      "priceToSalesTrailing12Months": 3.8337657,
+      "marketCap": 63401246720,
+      "enterpriseValue": 104679645184,
+      "trailingPE": 21.246666,
+      "forwardPE": 14.337934,
+      "priceToBook": 1.6884769,
+      "priceToSalesTrailing12Months": 3.6266587,
       "trailingEps": 0.6,
-      "forwardEps": 0.89005,
+      "forwardEps": 0.88911,
       "bookValue": 7.55,
-      "pegRatio": null
+      "pegRatio": 1.08
     },
     "profitability": {
       "profitMargins": 0.16428,
@@ -165,7 +165,7 @@
     },
     "dividend": {
       "dividendRate": 0.47,
-      "dividendYield": 3.5,
+      "dividendYield": 3.7,
       "fiveYearAvgDividendYield": 5.02,
       "payoutRatio": 0.78260005,
       "exDividendDate": 1763596800,
@@ -177,14 +177,14 @@
       "numberOfAnalystOpinions": 16,
       "targetHighPrice": 1550.0,
       "targetLowPrice": 1070.0,
-      "targetMeanPrice": 1380.5,
+      "targetMeanPrice": 1377.5,
       "targetMedianPrice": 1405.0
     },
     "ownership": {
       "sharesOutstanding": 4973426832,
       "floatShares": 4872996240,
       "heldPercentInsiders": 0.00169,
-      "heldPercentInstitutions": 0.59981,
+      "heldPercentInstitutions": 0.59871,
       "lastSplitFactor": "11:12",
       "lastSplitDate": 1495411200,
       "beta": 0.638

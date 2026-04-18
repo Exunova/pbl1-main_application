@@ -1,8 +1,8 @@
 {
   "ticker": "9984.T",
   "market": "JP",
-  "scraped_at": "2026-04-13 10:31:04.026722",
-  "updated_at": "2026-04-13T10:31:04.026743",
+  "scraped_at": "2026-04-18 15:06:39.410694",
+  "updated_at": "2026-04-18T15:06:39.410715",
   "info": {
     "identity": {
       "longName": "SoftBank Group Corp.",
@@ -115,34 +115,34 @@
       ]
     },
     "price": {
-      "currentPrice": 3690.0,
-      "previousClose": 3778.0,
-      "open": 3700.0,
-      "dayHigh": 3767.0,
-      "dayLow": 3648.0,
-      "bid": 3688.0,
-      "ask": 3689.0,
+      "currentPrice": 4527.0,
+      "previousClose": 4672.0,
+      "open": 4640.0,
+      "dayHigh": 4689.0,
+      "dayLow": 4493.0,
+      "bid": 4526.0,
+      "ask": 4529.0,
       "fiftyTwoWeekHigh": 6923.75,
       "fiftyTwoWeekLow": 1646.75,
-      "fiftyDayAverage": 3957.0,
-      "twoHundredDayAverage": 4219.266,
-      "volume": 16700000,
-      "averageVolume": 49555825,
-      "averageVolume10days": 46966490,
-      "regularMarketChangePercent": -2.3292747,
-      "52WeekChange": 1.2016318
+      "fiftyDayAverage": 3967.8,
+      "twoHundredDayAverage": 4260.6987,
+      "volume": 47876600,
+      "averageVolume": 51429106,
+      "averageVolume10days": 56358520,
+      "regularMarketChangePercent": -3.103596,
+      "52WeekChange": 1.7225981
     },
     "valuation": {
-      "marketCap": 21028438802432,
-      "enterpriseValue": 44045963362304,
-      "trailingPE": 6.8977118,
-      "forwardPE": 12.49619,
-      "priceToBook": 1.3614659,
-      "priceToSalesTrailing12Months": 2.7450755,
-      "trailingEps": 534.96,
+      "marketCap": 25798304071680,
+      "enterpriseValue": 48314338770944,
+      "trailingPE": 8.4602585,
+      "forwardPE": 15.330691,
+      "priceToBook": 1.6702862,
+      "priceToSalesTrailing12Months": 3.367739,
+      "trailingEps": 535.09,
       "forwardEps": 295.29,
       "bookValue": 2710.314,
-      "pegRatio": null
+      "pegRatio": 976.61
     },
     "profitability": {
       "profitMargins": 0.48167,
@@ -161,7 +161,7 @@
     },
     "dividend": {
       "dividendRate": 11.0,
-      "dividendYield": 0.29,
+      "dividendYield": 0.24,
       "fiveYearAvgDividendYield": 0.6,
       "payoutRatio": 0.020599999,
       "exDividendDate": 1774828800,
@@ -180,7 +180,7 @@
       "sharesOutstanding": 5698763936,
       "floatShares": 3654731287,
       "heldPercentInsiders": 0.34730998,
-      "heldPercentInstitutions": 0.34604,
+      "heldPercentInstitutions": 0.34640998,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1766966400,
       "beta": 0.687

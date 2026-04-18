@@ -1,8 +1,8 @@
 {
   "ticker": "KLBF.JK",
   "market": "ID",
-  "scraped_at": "2026-04-13 10:30:58.344687",
-  "updated_at": "2026-04-13T10:30:58.344707",
+  "scraped_at": "2026-04-18 15:06:33.092270",
+  "updated_at": "2026-04-18T15:06:33.092301",
   "info": {
     "identity": {
       "longName": "PT Kalbe Farma Tbk.",
@@ -57,34 +57,34 @@
       ]
     },
     "price": {
-      "currentPrice": 985.0,
-      "previousClose": 985.0,
-      "open": 985.0,
-      "dayHigh": 990.0,
-      "dayLow": 975.0,
-      "bid": 985.0,
-      "ask": 990.0,
+      "currentPrice": 960.0,
+      "previousClose": 975.0,
+      "open": 975.0,
+      "dayHigh": 980.0,
+      "dayLow": 960.0,
+      "bid": 960.0,
+      "ask": 965.0,
       "fiftyTwoWeekHigh": 1600.0,
       "fiftyTwoWeekLow": 935.0,
-      "fiftyDayAverage": 1035.6,
-      "twoHundredDayAverage": 1208.675,
-      "volume": 5955600,
-      "averageVolume": 50455707,
-      "averageVolume10days": 35626110,
-      "regularMarketChangePercent": 0.0,
-      "52WeekChange": -0.20564514
+      "fiftyDayAverage": 1019.5,
+      "twoHundredDayAverage": 1194.95,
+      "volume": 37100900,
+      "averageVolume": 49340161,
+      "averageVolume10days": 36445510,
+      "regularMarketChangePercent": -1.5384616,
+      "52WeekChange": -0.21632653
     },
     "valuation": {
-      "marketCap": 44607228346368,
-      "enterpriseValue": 41836534038528,
-      "trailingPE": 12.240586,
-      "forwardPE": 13.166689,
-      "priceToBook": 1.91345,
-      "priceToSalesTrailing12Months": 1.2627828,
-      "trailingEps": 80.47,
+      "marketCap": 43475064061952,
+      "enterpriseValue": 40704373948416,
+      "trailingPE": 11.919543,
+      "forwardPE": 12.832509,
+      "priceToBook": 1.8648852,
+      "priceToSalesTrailing12Months": 1.2307324,
+      "trailingEps": 80.54,
       "forwardEps": 74.81,
       "bookValue": 514.777,
-      "pegRatio": null
+      "pegRatio": 1.04
     },
     "profitability": {
       "profitMargins": 0.10375,
@@ -103,7 +103,7 @@
     },
     "dividend": {
       "dividendRate": 36.0,
-      "dividendYield": 3.65,
+      "dividendYield": 3.75,
       "fiveYearAvgDividendYield": 2.27,
       "payoutRatio": 0.44709998,
       "exDividendDate": 1748995200,
@@ -114,15 +114,15 @@
       "recommendationMean": 1.3125,
       "numberOfAnalystOpinions": 15,
       "targetHighPrice": 1975.0,
-      "targetLowPrice": 1250.0,
-      "targetMeanPrice": 1644.6666,
-      "targetMedianPrice": 1620.0
+      "targetLowPrice": 1100.0,
+      "targetMeanPrice": 1604.6666,
+      "targetMedianPrice": 1600.0
     },
     "ownership": {
       "sharesOutstanding": 45286528610,
       "floatShares": 18045775921,
       "heldPercentInsiders": 0.64862,
-      "heldPercentInstitutions": 0.11338,
+      "heldPercentInstitutions": 0.113400005,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1349654400,
       "beta": 0.105

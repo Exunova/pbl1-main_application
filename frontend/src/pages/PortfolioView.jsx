@@ -8,21 +8,36 @@ export default function PortfolioView() {
   const [showAdd, setShowAdd] = useState(false)
   const [form, setForm] = useState({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' })
 
+  // Tambahkan state baru untuk edit
+  const [editingId, setEditingId] = useState(null);
+  const [editForm, setEditForm] = useState({}); // Menyimpan data saat diedit
+  
   useEffect(() => {
     if (!window.api) return
     window.api.getPositions().then(r => setPositions(r?.positions || [])).catch(() => {})
     window.api.fetchPnL().then(setPnlData).catch(() => {})
   }, [])
 
-  const handleAdd = async () => {
-    if (!form.ticker || !form.shares || !form.buyPrice) return
-    const pos = { ...form, shares: parseFloat(form.shares), buyPrice: parseFloat(form.buyPrice) }
-    await window.api.addPosition(pos)
-    const updated = await window.api.getPositions()
-    setPositions(updated?.positions || [])
-    setShowAdd(false)
-    setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' })
+  const handleSave = async () => {
+  if (!form.ticker || !form.shares || !form.buyPrice) return;
+  const pos = { ...form, shares: parseFloat(form.shares), buyPrice: parseFloat(form.buyPrice) };
+  
+  if (editingId) {
+    // Jika mode edit, panggil fungsi IPC untuk edit
+    await window.api.editPosition(editingId, pos);
+  } else {
+    // Jika mode add, panggil fungsi IPC untuk add
+    await window.api.addPosition(pos);
   }
+  
+  // Refresh UI dan reset form
+  const updated = await window.api.getPositions();
+  setPositions(updated?.positions || []);
+  setShowAdd(false);
+  setEditingId(null); // Reset mode edit
+  setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' });
+};
+
 
   const handleDelete = async (id) => {
     await window.api.deletePosition(id)
@@ -30,11 +45,30 @@ export default function PortfolioView() {
     setPositions(updated?.positions || [])
   }
 
+  const handleEditClick = (position) => {
+  // Mengisi form dengan data aset yang dipilih
+  setForm({
+    ticker: position.ticker,
+    company: position.company,
+    shares: position.shares,
+    buyPrice: position.buyPrice,
+    buyDate: position.buyDate,
+    currency: position.currency
+  });
+  setEditingId(position.id); // Set ID yang sedang diedit
+  setShowAdd(true);          // Tampilkan popup form
+};
+
+
   return (
     <div className="flex flex-col h-full p-4 gap-4 overflow-auto">
       <div className="flex items-center justify-between">
         <h2 className="text-sm font-bold text-white/80">Portfolio</h2>
-        <button onClick={() => setShowAdd(true)}
+        <button onClick={() => {
+            setEditingId(null); // Memastikan mode dikembalikan ke mode Tambah (Save)
+            setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); // Kosongkan form
+            setShowAdd(true);   // Tampilkan popup
+          }}
           className="px-3 py-1.5 bg-accent text-white text-xs font-bold rounded hover:bg-accent/80 transition-colors">
           + Add Position
         </button>
@@ -87,6 +121,7 @@ export default function PortfolioView() {
                     <span className={pnl >= 0 ? 'text-success' : 'text-danger'}>{pnl >= 0 ? '+' : ''}{pnl.toFixed(2)} ({pnlPct.toFixed(1)}%)</span>
                   </td>
                   <td className="p-2 text-right">
+                    <button onClick={() => handleEditClick(p)} className="text-accent hover:text-accent/70 text-xs mr-3">Edit</button>
                     <button onClick={() => handleDelete(p.id)} className="text-danger hover:text-danger/70 text-xs">Delete</button>
                   </td>
                 </tr>
@@ -120,8 +155,15 @@ export default function PortfolioView() {
               {['USD','IDR','JPY','GBP'].map(c => <option key={c}>{c}</option>)}
             </select>
             <div className="flex gap-2 pt-1">
-              <button onClick={handleAdd} className="flex-1 bg-accent text-white text-xs font-bold py-1.5 rounded">Save</button>
-              <button onClick={() => setShowAdd(false)} className="flex-1 bg-white/10 text-white/70 text-xs py-1.5 rounded">Cancel</button>
+              <button onClick={handleSave} className="flex-1 bg-accent text-white text-xs font-bold py-1.5 rounded">
+                {editingId ? "Update" : "Save"}
+              </button>
+              <button onClick={() => {
+                  setShowAdd(false); // Tutup popup
+                  setEditingId(null); // Bersihkan mode edit
+                  setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); // Kosongkan form
+                }} className="flex-1 bg-white/10 text-white/70 text-xs py-1.5 rounded">Cancel</button>
+
             </div>
           </div>
         </div>
