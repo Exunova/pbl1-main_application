@@ -1,8 +1,8 @@
 {
   "ticker": "BBNI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-18 15:06:26.973433",
-  "updated_at": "2026-04-18T15:06:26.973443",
+  "scraped_at": "2026-04-19 18:02:02.589533",
+  "updated_at": "2026-04-19T18:02:02.589540",
   "info": {
     "identity": {
       "longName": "PT Bank Negara Indonesia (Persero) Tbk",
@@ -121,7 +121,7 @@
       "fiftyDayAverage": 4177.4,
       "twoHundredDayAverage": 4252.45,
       "volume": 22706000,
-      "averageVolume": 76709233,
+      "averageVolume": 75875517,
       "averageVolume10days": 57287450,
       "regularMarketChangePercent": 0.2702703,
       "52WeekChange": -0.07017541

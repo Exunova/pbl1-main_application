@@ -1,8 +1,8 @@
 {
   "ticker": "PGAS.JK",
   "market": "ID",
-  "scraped_at": "2026-04-18 15:06:28.376090",
-  "updated_at": "2026-04-18T15:06:28.376115",
+  "scraped_at": "2026-04-19 18:02:03.886436",
+  "updated_at": "2026-04-19T18:02:03.886449",
   "info": {
     "identity": {
       "longName": "PT Perusahaan Gas Negara Tbk",
@@ -116,7 +116,7 @@
       "fiftyDayAverage": 2055.4,
       "twoHundredDayAverage": 1846.075,
       "volume": 17245300,
-      "averageVolume": 56984431,
+      "averageVolume": 57571392,
       "averageVolume10days": 39699440,
       "regularMarketChangePercent": 0.2624672,
       "52WeekChange": 0.13690472

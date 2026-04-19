@@ -1,8 +1,8 @@
 {
   "ticker": "BBRI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-18 15:06:21.985207",
-  "updated_at": "2026-04-18T15:06:21.985211",
+  "scraped_at": "2026-04-19 18:01:56.092276",
+  "updated_at": "2026-04-19T18:01:56.092285",
   "info": {
     "identity": {
       "longName": "PT Bank Rakyat Indonesia (Persero) Tbk",
@@ -119,7 +119,7 @@
       "fiftyDayAverage": 3591.6,
       "twoHundredDayAverage": 3785.15,
       "volume": 209108800,
-      "averageVolume": 242868203,
+      "averageVolume": 240782769,
       "averageVolume10days": 277379150,
       "regularMarketChangePercent": 0.58651024,
       "52WeekChange": -0.05248618

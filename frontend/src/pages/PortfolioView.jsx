@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { MARKETS } from '../data/mockData'
 import Sparkline from '../components/Sparkline'
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts'
 
 export default function PortfolioView() {
   const [positions, setPositions] = useState([])
@@ -58,6 +59,18 @@ export default function PortfolioView() {
   setEditingId(position.id); // Set ID yang sedang diedit
   setShowAdd(true);          // Tampilkan popup form
 };
+  // --- MULAI KODE PIE CHART ---
+  // Menggabungkan data PnL untuk Pie Chart
+  const pieData = positions.map(p => {
+    const cur = pnlData?.positions?.find(x => x.ticker === p.ticker);
+    const curPrice = cur?.currentPrice || p.buyPrice;
+    const currentValue = curPrice * p.shares; // Nilai aset riil saat ini (termasuk PnL)
+    return { name: p.ticker, value: currentValue };
+  }).filter(d => d.value > 0); // Hindari nilai <= 0 agar Pie Chart tidak error
+
+  // Daftar warna untuk setiap potongan pie chart
+  const COLORS = ['#00C49F', '#0088FE', '#FFBB28', '#FF8042', '#AF19FF', '#FF19A3', '#FF4560'];
+  // --- AKHIR KODE PIE CHART ---
 
 
   return (
@@ -90,49 +103,85 @@ export default function PortfolioView() {
           </div>
         </div>
       )}
+            {/* --- AWAL PEMBUNGKUS GRID --- */}
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 items-start mb-4">
+        
+        {/* --- SISI KIRI: TABEL (Ambil 3 Kolom) --- */}
+        <div className="lg:col-span-3 bg-surface rounded-lg overflow-hidden h-full">
+          <table className="w-full text-xs">
+            <thead>
+              <tr className="text-white/40 border-b border-white/5">
+                <th className="text-left p-2 font-medium">Ticker</th>
+                <th className="text-left p-2 font-medium">Company</th>
+                <th className="text-right p-2 font-medium">Shares</th>
+                <th className="text-right p-2 font-medium">Buy Price</th>
+                <th className="text-right p-2 font-medium">Cur</th>
+                <th className="text-right p-2 font-medium">PnL</th>
+                <th className="text-right p-2 font-medium">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {positions.map(p => {
+                const cur = pnlData?.positions?.find(x => x.ticker === p.ticker)
+                const curPrice = cur?.currentPrice || 186.2
+                const pnl = (curPrice - p.buyPrice) * p.shares
+                const pnlPct = (pnl / (p.buyPrice * p.shares)) * 100
+                return (
+                  <tr key={p.id} className="border-b border-white/5 hover:bg-white/5">
+                    <td className="p-2 font-bold text-accent">{p.ticker}</td>
+                    <td className="p-2 text-white/70">{p.company}</td>
+                    <td className="p-2 text-right text-white/70">{p.shares}</td>
+                    <td className="p-2 text-right text-white/70">{p.buyPrice?.toFixed(2)}</td>
+                    <td className="p-2 text-right text-white/50">{p.currency}</td>
+                    <td className="p-2 text-right">
+                      <span className={pnl >= 0 ? 'text-success' : 'text-danger'}>{pnl >= 0 ? '+' : ''}{pnl.toFixed(2)} ({pnlPct.toFixed(1)}%)</span>
+                    </td>
+                    <td className="p-2 text-right">
+                      <button onClick={() => handleEditClick(p)} className="text-accent hover:text-accent/70 text-xs mr-3">Edit</button>
+                      <button onClick={() => handleDelete(p.id)} className="text-danger hover:text-danger/70 text-xs">Delete</button>
+                    </td>
+                  </tr>
+                )
+              })}
+              {positions.length === 0 && (
+                <tr><td colSpan={7} className="p-4 text-center text-white/30">No positions yet</td></tr>
+              )}
+            </tbody>
+          </table>
+        </div>
 
-      <div className="bg-surface rounded-lg overflow-hidden">
-        <table className="w-full text-xs">
-          <thead>
-            <tr className="text-white/40 border-b border-white/5">
-              <th className="text-left p-2 font-medium">Ticker</th>
-              <th className="text-left p-2 font-medium">Company</th>
-              <th className="text-right p-2 font-medium">Shares</th>
-              <th className="text-right p-2 font-medium">Buy Price</th>
-              <th className="text-right p-2 font-medium">Cur</th>
-              <th className="text-right p-2 font-medium">PnL</th>
-              <th className="text-right p-2 font-medium">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {positions.map(p => {
-              const cur = pnlData?.positions?.find(x => x.ticker === p.ticker)
-              const curPrice = cur?.currentPrice || 186.2
-              const pnl = (curPrice - p.buyPrice) * p.shares
-              const pnlPct = (pnl / (p.buyPrice * p.shares)) * 100
-              return (
-                <tr key={p.id} className="border-b border-white/5 hover:bg-white/5">
-                  <td className="p-2 font-bold text-accent">{p.ticker}</td>
-                  <td className="p-2 text-white/70">{p.company}</td>
-                  <td className="p-2 text-right text-white/70">{p.shares}</td>
-                  <td className="p-2 text-right text-white/70">{p.buyPrice?.toFixed(2)}</td>
-                  <td className="p-2 text-right text-white/50">{p.currency}</td>
-                  <td className="p-2 text-right">
-                    <span className={pnl >= 0 ? 'text-success' : 'text-danger'}>{pnl >= 0 ? '+' : ''}{pnl.toFixed(2)} ({pnlPct.toFixed(1)}%)</span>
-                  </td>
-                  <td className="p-2 text-right">
-                    <button onClick={() => handleEditClick(p)} className="text-accent hover:text-accent/70 text-xs mr-3">Edit</button>
-                    <button onClick={() => handleDelete(p.id)} className="text-danger hover:text-danger/70 text-xs">Delete</button>
-                  </td>
-                </tr>
-              )
-            })}
-            {positions.length === 0 && (
-              <tr><td colSpan={7} className="p-4 text-center text-white/30">No positions yet</td></tr>
-            )}
-          </tbody>
-        </table>
+        {/* --- SISI KANAN: PIE CHART (Ambil 2 Kolom) --- */}
+        {pieData.length > 0 && (
+          <div className="lg:col-span-2 bg-surface rounded-lg p-4 h-[350px] flex flex-col">
+            <div className="text-xs text-white/40 mb-2">Portfolio Distribution (Current Value)</div>
+            <ResponsiveContainer width="100%" height="100%">
+              <PieChart>
+                <Pie
+                  data={pieData}
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={60}
+                  outerRadius={100}
+                  paddingAngle={2}
+                  dataKey="value"
+                  stroke="none"
+                >
+                  {pieData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
+                <Tooltip 
+                  formatter={(value) => value.toLocaleString('en-US', {style:'currency', currency:'USD'})}
+                  contentStyle={{ backgroundColor: '#1e2128', borderColor: '#ffffff20', borderRadius: '8px' }}
+                  itemStyle={{ color: '#fff', fontSize: '12px' }}
+                />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        )}
+
       </div>
+      {/* --- AKHIR PEMBUNGKUS GRID --- */}
 
       {showAdd && (
         <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center">

@@ -1,41 +1,29 @@
 {
-  "scraped_at": "2026-04-18 15:29:13.116001",
+  "scraped_at": "2026-04-19 18:01:43.233101",
   "tickers": {
     "NVDA": {
       "market": "US",
-      "name": "NVIDIA Corporation",
-      "sector": "Technology",
-      "status": "ok"
+      "status": "error: Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
     },
     "AAPL": {
       "market": "US",
-      "name": "Apple Inc.",
-      "sector": "Technology",
-      "status": "ok"
+      "status": "error: Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
     },
     "GOOGL": {
       "market": "US",
-      "name": "Alphabet Inc.",
-      "sector": "Communication Services",
-      "status": "ok"
+      "status": "error: Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
     },
     "MSFT": {
       "market": "US",
-      "name": "Microsoft Corporation",
-      "sector": "Technology",
-      "status": "ok"
+      "status": "error: Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
     },
     "AMZN": {
       "market": "US",
-      "name": "Amazon.com, Inc.",
-      "sector": "Consumer Cyclical",
-      "status": "ok"
+      "status": "error: Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
     },
     "META": {
       "market": "US",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "status": "ok"
+      "status": "error: Failed to perform, curl: (6) Could not resolve host: query1.finance.yahoo.com. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
     },
     "TSLA": {
       "market": "US",

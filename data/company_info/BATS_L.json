@@ -1,8 +1,8 @@
 {
   "ticker": "BATS.L",
   "market": "GB",
-  "scraped_at": "2026-04-18 15:06:53.661772",
-  "updated_at": "2026-04-18T15:06:53.661779",
+  "scraped_at": "2026-04-19 18:02:23.998148",
+  "updated_at": "2026-04-19T18:02:23.998154",
   "info": {
     "identity": {
       "longName": "British American Tobacco p.l.c.",
@@ -131,13 +131,13 @@
       "ask": 4138.0,
       "fiftyTwoWeekHigh": 4876.92,
       "fiftyTwoWeekLow": 3013.0,
-      "fiftyDayAverage": 4412.26,
-      "twoHundredDayAverage": 4191.565,
+      "fiftyDayAverage": 4402.92,
+      "twoHundredDayAverage": 4193.74,
       "volume": 3205160,
-      "averageVolume": 4778157,
-      "averageVolume10days": 4798217,
+      "averageVolume": 4799090,
+      "averageVolume10days": 4668409,
       "regularMarketChangePercent": -0.2408478,
-      "52WeekChange": 0.312263
+      "52WeekChange": 0.30910242
     },
     "valuation": {
       "marketCap": 89679945728,

@@ -1,8 +1,8 @@
 {
   "ticker": "8306.T",
   "market": "JP",
-  "scraped_at": "2026-04-18 15:06:36.228244",
-  "updated_at": "2026-04-18T15:06:36.228262",
+  "scraped_at": "2026-04-19 18:02:10.092371",
+  "updated_at": "2026-04-19T18:02:10.092383",
   "info": {
     "identity": {
       "longName": "Mitsubishi UFJ Financial Group, Inc.",
@@ -31,8 +31,97 @@
         },
         {
           "maxAge": 1,
-          "name": "Yoshitaka  Sekine",
-          "title": "MD and Head of Documentation & Corporate Secretary Department - Corporate Administration Division",
+          "name": "Mr. Fumitaka  Nakahama",
+          "age": 59,
+          "title": "Sr. Mng. Corporate Exe., Group Head of Global Corporate & Investment Banking Business Group",
+          "yearBorn": 1966,
+          "fiscalYear": 2025,
+          "totalPay": 124000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Hiroyuki  Seki",
+          "age": 57,
+          "title": "Managing Executive Officer",
+          "yearBorn": 1968,
+          "fiscalYear": 2025,
+          "totalPay": 127000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Hideaki  Takase",
+          "age": 57,
+          "title": "Sr. Mng. Corporate Exe., Group Head of Japanese Corporate & Investment Banking Business Grp.",
+          "yearBorn": 1968,
+          "fiscalYear": 2025,
+          "totalPay": 101000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Kenji  Horikawa",
+          "age": 58,
+          "title": "Managing Executive Officer Group, Deputy CSO & Group Deputy CDTO",
+          "yearBorn": 1967,
+          "fiscalYear": 2025,
+          "totalPay": 118000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Tadashi  Yamamoto",
+          "age": 56,
+          "title": "Sr. Mng. Corporate Exe., Group Head of Retail & Digital Bus. Grp. and Grp. CDTO",
+          "yearBorn": 1969,
+          "fiscalYear": 2025,
+          "totalPay": 101000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Katsunori  Yokomaku",
+          "age": 58,
+          "title": "Senior Managing Corporate Executive & Group CRO",
+          "yearBorn": 1967,
+          "fiscalYear": 2025,
+          "totalPay": 101000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Takafumi  Ihara",
+          "age": 58,
+          "title": "Senior Mng. Corporate Exe., Group Head of Asset Management & Investor Services Business Group",
+          "yearBorn": 1967,
+          "fiscalYear": 2025,
+          "totalPay": 105000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Ms. Duangdao  Wongpanitkrit C.P.A.",
+          "age": 56,
+          "title": "Chief Finance & Strategy Officer",
+          "yearBorn": 1969,
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Masatoshi  Komoriya",
+          "age": 56,
+          "title": "Sr. Mng. Corporate Exe., Group COO-I & Grp. Head of Global Commercial Banking Bus. Group",
+          "yearBorn": 1969,
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -52,7 +141,7 @@
       "fiftyDayAverage": 2809.77,
       "twoHundredDayAverage": 2466.5674,
       "volume": 40793100,
-      "averageVolume": 44788116,
+      "averageVolume": 44767973,
       "averageVolume10days": 38019560,
       "regularMarketChangePercent": -2.5963006,
       "52WeekChange": 0.73623717

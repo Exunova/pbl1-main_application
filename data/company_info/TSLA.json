@@ -1,8 +1,8 @@
 {
   "ticker": "TSLA",
   "market": "US",
-  "scraped_at": "2026-04-18 15:06:13.889835",
-  "updated_at": "2026-04-18T15:06:13.889847",
+  "scraped_at": "2026-04-19 18:01:48.258756",
+  "updated_at": "2026-04-19T18:01:48.258763",
   "info": {
     "identity": {
       "longName": "Tesla, Inc.",
@@ -121,23 +121,23 @@
       "ask": 400.91,
       "fiftyTwoWeekHigh": 498.83,
       "fiftyTwoWeekLow": 222.79,
-      "fiftyDayAverage": 390.4404,
-      "twoHundredDayAverage": 398.36786,
+      "fiftyDayAverage": 390.3326,
+      "twoHundredDayAverage": 398.8674,
       "volume": 90217327,
-      "averageVolume": 62775052,
-      "averageVolume10days": 71850540,
+      "averageVolume": 63220429,
+      "averageVolume10days": 72586260,
       "regularMarketChangePercent": 3.01363,
-      "52WeekChange": 0.7094506
+      "52WeekChange": 0.760967
     },
     "valuation": {
       "marketCap": 1503299239936,
       "enterpriseValue": 1474687270912,
       "trailingPE": 370.94443,
-      "forwardPE": 144.53424,
+      "forwardPE": 145.4885,
       "priceToBook": 18.295658,
       "priceToSalesTrailing12Months": 15.853071,
       "trailingEps": 1.08,
-      "forwardEps": 2.7718,
+      "forwardEps": 2.75362,
       "bookValue": 21.897,
       "pegRatio": 5.87
     },

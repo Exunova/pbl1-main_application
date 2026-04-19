@@ -1,8 +1,8 @@
 {
   "ticker": "BP.L",
   "market": "GB",
-  "scraped_at": "2026-04-18 15:06:56.724822",
-  "updated_at": "2026-04-18T15:06:56.724833",
+  "scraped_at": "2026-04-19 18:02:26.536745",
+  "updated_at": "2026-04-19T18:02:26.536756",
   "info": {
     "identity": {
       "longName": "BP p.l.c.",
@@ -121,23 +121,23 @@
       "ask": 537.3,
       "fiftyTwoWeekHigh": 609.4,
       "fiftyTwoWeekLow": 337.65,
-      "fiftyDayAverage": 526.618,
-      "twoHundredDayAverage": 455.62024,
+      "fiftyDayAverage": 527.877,
+      "twoHundredDayAverage": 456.3815,
       "volume": 70369868,
-      "averageVolume": 55782427,
-      "averageVolume10days": 43827774,
+      "averageVolume": 56718877,
+      "averageVolume10days": 46778272,
       "regularMarketChangePercent": -7.3630137,
-      "52WeekChange": 0.6249304
+      "52WeekChange": 0.5052866
     },
     "valuation": {
       "marketCap": 83577806848,
       "enterpriseValue": 140032081920,
       "trailingPE": "Infinity",
-      "forwardPE": 10.563467,
+      "forwardPE": 10.62067,
       "priceToBook": 2.119923,
       "priceToSalesTrailing12Months": 0.44542283,
       "trailingEps": 0.0,
-      "forwardEps": 0.5121425,
+      "forwardEps": 0.50938404,
       "bookValue": 2.5519793,
       "pegRatio": 0.09
     },
@@ -168,10 +168,10 @@
       "recommendationKey": "buy",
       "recommendationMean": 2.42105,
       "numberOfAnalystOpinions": 19,
-      "targetHighPrice": 705.6683,
-      "targetLowPrice": 450.03693,
-      "targetMeanPrice": 602.8521,
-      "targetMedianPrice": 617.099
+      "targetHighPrice": 705.63196,
+      "targetLowPrice": 450.0138,
+      "targetMeanPrice": 602.8211,
+      "targetMedianPrice": 617.0673
     },
     "ownership": {
       "sharesOutstanding": 15448762610,

@@ -1,8 +1,8 @@
 {
   "ticker": "HSBA.L",
   "market": "GB",
-  "scraped_at": "2026-04-18 15:06:50.889171",
-  "updated_at": "2026-04-18T15:06:50.889180",
+  "scraped_at": "2026-04-19 18:02:21.651293",
+  "updated_at": "2026-04-19T18:02:21.651299",
   "info": {
     "identity": {
       "longName": "HSBC Holdings plc",
@@ -132,13 +132,13 @@
       "ask": 1361.6,
       "fiftyTwoWeekHigh": 1410.6,
       "fiftyTwoWeekLow": 788.0,
-      "fiftyDayAverage": 1270.056,
-      "twoHundredDayAverage": 1109.8115,
+      "fiftyDayAverage": 1271.808,
+      "twoHundredDayAverage": 1112.107,
       "volume": 22461728,
-      "averageVolume": 26257140,
-      "averageVolume10days": 22478810,
+      "averageVolume": 26306298,
+      "averageVolume10days": 22438923,
       "regularMarketChangePercent": 2.0176356,
-      "52WeekChange": 0.696071
+      "52WeekChange": 0.7302915
     },
     "valuation": {
       "marketCap": 234107109376,
@@ -179,10 +179,10 @@
       "recommendationKey": "buy",
       "recommendationMean": 2.41176,
       "numberOfAnalystOpinions": 17,
-      "targetHighPrice": 1638.6516,
-      "targetLowPrice": 779.70416,
-      "targetMeanPrice": 1322.8242,
-      "targetMedianPrice": 1366.123
+      "targetHighPrice": 1638.5674,
+      "targetLowPrice": 779.6641,
+      "targetMeanPrice": 1322.7562,
+      "targetMedianPrice": 1366.0529
     },
     "ownership": {
       "sharesOutstanding": 17148192022,

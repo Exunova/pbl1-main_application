@@ -1,8 +1,8 @@
 {
   "ticker": "6857.T",
   "market": "JP",
-  "scraped_at": "2026-04-18 15:06:45.554953",
-  "updated_at": "2026-04-18T15:06:45.554990",
+  "scraped_at": "2026-04-19 18:02:16.484842",
+  "updated_at": "2026-04-19T18:02:16.484847",
   "info": {
     "identity": {
       "longName": "Advantest Corporation",
@@ -130,7 +130,7 @@
       "fiftyDayAverage": 24897.6,
       "twoHundredDayAverage": 18648.2,
       "volume": 9985300,
-      "averageVolume": 10303304,
+      "averageVolume": 10356355,
       "averageVolume10days": 9884610,
       "regularMarketChangePercent": -2.6375544,
       "52WeekChange": 4.1269317

@@ -1,8 +1,8 @@
 {
   "ticker": "LLY",
   "market": "US",
-  "scraped_at": "2026-04-18 15:06:17.336466",
-  "updated_at": "2026-04-18T15:06:17.336485",
+  "scraped_at": "2026-04-19 18:01:51.570515",
+  "updated_at": "2026-04-19T18:01:51.570520",
   "info": {
     "identity": {
       "longName": "Eli Lilly and Company",
@@ -132,13 +132,13 @@
       "ask": 926.7,
       "fiftyTwoWeekHigh": 1133.95,
       "fiftyTwoWeekLow": 623.78,
-      "fiftyDayAverage": 976.9496,
-      "twoHundredDayAverage": 904.606,
+      "fiftyDayAverage": 973.3478,
+      "twoHundredDayAverage": 905.36163,
       "volume": 3232413,
-      "averageVolume": 3128760,
-      "averageVolume10days": 2499390,
+      "averageVolume": 3130643,
+      "averageVolume10days": 2551230,
       "regularMarketChangePercent": 2.54871,
-      "52WeekChange": 0.10509527
+      "52WeekChange": 0.13326085
     },
     "valuation": {
       "marketCap": 829709287424,

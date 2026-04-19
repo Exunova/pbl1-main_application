@@ -1,8 +1,8 @@
 {
   "ticker": "ASII.JK",
   "market": "ID",
-  "scraped_at": "2026-04-18 15:06:25.684706",
-  "updated_at": "2026-04-18T15:06:25.684717",
+  "scraped_at": "2026-04-19 18:02:01.020234",
+  "updated_at": "2026-04-19T18:02:01.020243",
   "info": {
     "identity": {
       "longName": "PT Astra International Tbk",
@@ -111,7 +111,7 @@
       "fiftyDayAverage": 6278.5,
       "twoHundredDayAverage": 6059.8,
       "volume": 25291100,
-      "averageVolume": 54431489,
+      "averageVolume": 54482214,
       "averageVolume10days": 30912330,
       "regularMarketChangePercent": 2.8225806,
       "52WeekChange": 0.3308977
