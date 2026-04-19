@@ -1,8 +1,8 @@
 {
   "ticker": "BBCA.JK",
   "market": "ID",
-  "scraped_at": "2026-04-19 18:01:54.756836",
-  "updated_at": "2026-04-19T18:01:54.756843",
+  "scraped_at": "2026-04-20 05:45:20.642578",
+  "updated_at": "2026-04-20T05:45:20.642589",
   "info": {
     "identity": {
       "longName": "PT Bank Central Asia Tbk",
@@ -110,8 +110,8 @@
       "open": 6500.0,
       "dayHigh": 6550.0,
       "dayLow": 6425.0,
-      "bid": 6425.0,
-      "ask": 6450.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 9800.0,
       "fiftyTwoWeekLow": 6350.0,
       "fiftyDayAverage": 6923.0,
@@ -132,7 +132,7 @@
       "trailingEps": 467.1,
       "forwardEps": 482.48,
       "bookValue": 2288.103,
-      "pegRatio": 1.77
+      "pegRatio": 1.75
     },
     "profitability": {
       "profitMargins": 0.53282,

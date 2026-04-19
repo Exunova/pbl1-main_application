@@ -17,6 +17,14 @@ from contextlib import contextmanager
 import yfinance as yf
 
 # =============================================================================
+# HARDCODE TOGGLE — SCRAPING ON / OFF
+# Set SCRAPING_ENABLED = False to completely disable all background scrapers.
+# The app will still serve existing cached / file data; it just won't fetch
+# any new data from the network.  Flip back to True to re-enable scraping.
+# =============================================================================
+SCRAPING_ENABLED = False   # ← change this to False to turn off all scraping
+
+# =============================================================================
 # PATH SETUP
 # =============================================================================
 
@@ -29,6 +37,7 @@ CACHE_DB = os.path.join(APP_DIR, 'cache.db')
 # Ensure data dir exists
 os.makedirs(DATA_DIR, exist_ok=True)
 sys.stderr.write(f"[Python IPC] DATA_DIR initialized at: {DATA_DIR}\n")
+sys.stderr.write(f"[Python IPC] Scraping is {'ENABLED' if SCRAPING_ENABLED else 'DISABLED'}\n")
 
 # Ensure sys.path has APP_DIR for scrapers imports
 if APP_DIR not in sys.path:
@@ -183,7 +192,14 @@ def get_scrape_status():
 # =============================================================================
 
 def trigger_scrape_in_bg(scraper_key):
-    """Trigger a scraper to run in the background if not already running."""
+    """Trigger a scraper to run in the background if not already running.
+    
+    Scraping is completely skipped when SCRAPING_ENABLED is False.
+    """
+    if not SCRAPING_ENABLED:
+        sys.stderr.write(f"[Python IPC] Scraping is DISABLED — skipping '{scraper_key}'\n")
+        return
+
     with scrape_lock:
         if scraper_key in active_scrapers:
             return
@@ -386,6 +402,8 @@ def handle_indices():
 
 def handle_scrape(stype):
     """Handle scrape command - triggers background scrape."""
+    if not SCRAPING_ENABLED:
+        return {"status": "disabled", "type": stype, "message": "Scraping is currently disabled (SCRAPING_ENABLED=False)"}
     if stype in SCRAPER_MODULES:
         trigger_scrape_in_bg(stype)
         return {"status": "started", "type": stype}

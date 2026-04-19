@@ -1,8 +1,8 @@
 {
   "ticker": "9984.T",
   "market": "JP",
-  "scraped_at": "2026-04-19 18:02:12.163866",
-  "updated_at": "2026-04-19T18:02:12.163873",
+  "scraped_at": "2026-04-20 05:45:43.068411",
+  "updated_at": "2026-04-20T05:45:43.068420",
   "info": {
     "identity": {
       "longName": "SoftBank Group Corp.",
@@ -120,8 +120,8 @@
       "open": 4640.0,
       "dayHigh": 4689.0,
       "dayLow": 4493.0,
-      "bid": 4526.0,
-      "ask": 4529.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 6923.75,
       "fiftyTwoWeekLow": 1646.75,
       "fiftyDayAverage": 3967.8,

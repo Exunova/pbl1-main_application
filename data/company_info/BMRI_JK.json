@@ -1,8 +1,8 @@
 {
   "ticker": "BMRI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-19 18:01:57.272237",
-  "updated_at": "2026-04-19T18:01:57.272244",
+  "scraped_at": "2026-04-20 05:45:23.606525",
+  "updated_at": "2026-04-20T05:45:23.606539",
   "info": {
     "identity": {
       "longName": "PT Bank Mandiri (Persero) Tbk",
@@ -112,8 +112,8 @@
       "open": 4670.0,
       "dayHigh": 4700.0,
       "dayLow": 4580.0,
-      "bid": 4610.0,
-      "ask": 4620.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 5575.0,
       "fiftyTwoWeekLow": 4010.0,
       "fiftyDayAverage": 4895.4,
@@ -165,7 +165,7 @@
       "numberOfAnalystOpinions": 22,
       "targetHighPrice": 7950.0,
       "targetLowPrice": 3600.0,
-      "targetMeanPrice": 5815.864,
+      "targetMeanPrice": 5799.9546,
       "targetMedianPrice": 5960.0
     },
     "ownership": {

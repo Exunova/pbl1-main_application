@@ -1,8 +1,8 @@
 {
   "ticker": "NG.L",
   "market": "GB",
-  "scraped_at": "2026-04-19 18:02:30.183283",
-  "updated_at": "2026-04-19T18:02:30.183289",
+  "scraped_at": "2026-04-20 05:46:06.783606",
+  "updated_at": "2026-04-20T05:46:06.783622",
   "info": {
     "identity": {
       "longName": "National Grid plc",
@@ -146,7 +146,7 @@
       "trailingEps": 0.6,
       "forwardEps": 0.88911,
       "bookValue": 7.55,
-      "pegRatio": 1.08
+      "pegRatio": 1.07
     },
     "profitability": {
       "profitMargins": 0.16428,

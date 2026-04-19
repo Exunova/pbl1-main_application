@@ -1,8 +1,8 @@
 {
   "ticker": "UNVR.JK",
   "market": "ID",
-  "scraped_at": "2026-04-19 18:02:06.066396",
-  "updated_at": "2026-04-19T18:02:06.066403",
+  "scraped_at": "2026-04-20 05:45:33.364925",
+  "updated_at": "2026-04-20T05:45:33.364935",
   "info": {
     "identity": {
       "longName": "PT Unilever Indonesia Tbk",
@@ -100,8 +100,8 @@
       "open": 1860.0,
       "dayHigh": 1895.0,
       "dayLow": 1860.0,
-      "bid": 1865.0,
-      "ask": 1870.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 2840.0,
       "fiftyTwoWeekLow": 1305.0,
       "fiftyDayAverage": 2055.3,

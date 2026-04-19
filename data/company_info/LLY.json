@@ -1,8 +1,8 @@
 {
   "ticker": "LLY",
   "market": "US",
-  "scraped_at": "2026-04-19 18:01:51.570515",
-  "updated_at": "2026-04-19T18:01:51.570520",
+  "scraped_at": "2026-04-20 05:45:17.520917",
+  "updated_at": "2026-04-20T05:45:17.520927",
   "info": {
     "identity": {
       "longName": "Eli Lilly and Company",
@@ -144,11 +144,11 @@
       "marketCap": 829709287424,
       "enterpriseValue": 864823607296,
       "trailingPE": 40.323185,
-      "forwardPE": 22.016153,
+      "forwardPE": 22.005165,
       "priceToBook": 31.260496,
       "priceToSalesTrailing12Months": 12.729702,
       "trailingEps": 22.99,
-      "forwardEps": 42.10681,
+      "forwardEps": 42.12784,
       "bookValue": 29.655,
       "pegRatio": 1.0
     },

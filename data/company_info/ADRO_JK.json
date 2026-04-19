@@ -1,8 +1,8 @@
 {
   "ticker": "ADRO.JK",
   "market": "ID",
-  "scraped_at": "2026-04-19 18:02:05.019962",
-  "updated_at": "2026-04-19T18:02:05.019970",
+  "scraped_at": "2026-04-20 05:45:31.924690",
+  "updated_at": "2026-04-20T05:45:31.924696",
   "info": {
     "identity": {
       "longName": "PT Alamtri Resources Indonesia Tbk",
@@ -104,8 +104,8 @@
       "open": 2520.0,
       "dayHigh": 2580.0,
       "dayLow": 2510.0,
-      "bid": 2550.0,
-      "ask": 2560.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 2700.0,
       "fiftyTwoWeekLow": 1625.0,
       "fiftyDayAverage": 2398.6,

@@ -1,8 +1,8 @@
 {
   "ticker": "8306.T",
   "market": "JP",
-  "scraped_at": "2026-04-19 18:02:10.092371",
-  "updated_at": "2026-04-19T18:02:10.092383",
+  "scraped_at": "2026-04-20 05:45:38.989679",
+  "updated_at": "2026-04-20T05:45:38.989690",
   "info": {
     "identity": {
       "longName": "Mitsubishi UFJ Financial Group, Inc.",
@@ -134,8 +134,8 @@
       "open": 2920.0,
       "dayHigh": 2926.0,
       "dayLow": 2847.0,
-      "bid": 2870.0,
-      "ask": 2870.5,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 3087.0,
       "fiftyTwoWeekLow": 1630.5,
       "fiftyDayAverage": 2809.77,

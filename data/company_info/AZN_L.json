@@ -1,8 +1,8 @@
 {
   "ticker": "AZN.L",
   "market": "GB",
-  "scraped_at": "2026-04-19 18:02:20.469367",
-  "updated_at": "2026-04-19T18:02:20.469376",
+  "scraped_at": "2026-04-20 05:45:54.861172",
+  "updated_at": "2026-04-20T05:45:54.861182",
   "info": {
     "identity": {
       "longName": "AstraZeneca PLC",
@@ -169,10 +169,10 @@
       "recommendationKey": "buy",
       "recommendationMean": 1.625,
       "numberOfAnalystOpinions": 21,
-      "targetHighPrice": 20003.002,
-      "targetLowPrice": 11189.486,
-      "targetMeanPrice": 16303.244,
-      "targetMedianPrice": 16548.605
+      "targetHighPrice": 20047.072,
+      "targetLowPrice": 11214.14,
+      "targetMeanPrice": 16339.164,
+      "targetMedianPrice": 16585.066
     },
     "ownership": {
       "sharesOutstanding": 1550833276,

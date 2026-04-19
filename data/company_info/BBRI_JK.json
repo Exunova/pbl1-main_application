@@ -1,8 +1,8 @@
 {
   "ticker": "BBRI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-19 18:01:56.092276",
-  "updated_at": "2026-04-19T18:01:56.092285",
+  "scraped_at": "2026-04-20 05:45:22.211708",
+  "updated_at": "2026-04-20T05:45:22.211719",
   "info": {
     "identity": {
       "longName": "PT Bank Rakyat Indonesia (Persero) Tbk",
@@ -112,8 +112,8 @@
       "open": 3410.0,
       "dayHigh": 3450.0,
       "dayLow": 3410.0,
-      "bid": 3420.0,
-      "ask": 3430.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 4450.0,
       "fiftyTwoWeekLow": 3220.0,
       "fiftyDayAverage": 3591.6,
@@ -134,7 +134,7 @@
       "trailingEps": 375.93,
       "forwardEps": 440.19,
       "bookValue": 2151.614,
-      "pegRatio": 1.77
+      "pegRatio": 1.78
     },
     "profitability": {
       "profitMargins": 0.40405998,
@@ -165,8 +165,8 @@
       "numberOfAnalystOpinions": 21,
       "targetHighPrice": 4900.0,
       "targetLowPrice": 3080.0,
-      "targetMeanPrice": 4294.524,
-      "targetMedianPrice": 4400.0
+      "targetMeanPrice": 4273.095,
+      "targetMedianPrice": 4300.0
     },
     "ownership": {
       "sharesOutstanding": 151559001603,

@@ -1,8 +1,8 @@
 {
   "ticker": "LLOY.L",
   "market": "GB",
-  "scraped_at": "2026-04-19 18:02:28.964508",
-  "updated_at": "2026-04-19T18:02:28.964515",
+  "scraped_at": "2026-04-20 05:46:05.293551",
+  "updated_at": "2026-04-20T05:46:05.293561",
   "info": {
     "identity": {
       "longName": "Lloyds Banking Group plc",
@@ -140,7 +140,7 @@
       "trailingEps": 0.07,
       "forwardEps": 0.11959,
       "bookValue": 0.71,
-      "pegRatio": 1.08
+      "pegRatio": 1.1
     },
     "profitability": {
       "profitMargins": 0.25011998,

@@ -1,8 +1,8 @@
 {
   "ticker": "BBNI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-19 18:02:02.589533",
-  "updated_at": "2026-04-19T18:02:02.589540",
+  "scraped_at": "2026-04-20 05:45:28.861065",
+  "updated_at": "2026-04-20T05:45:28.861075",
   "info": {
     "identity": {
       "longName": "PT Bank Negara Indonesia (Persero) Tbk",
@@ -114,8 +114,8 @@
       "open": 3690.0,
       "dayHigh": 3740.0,
       "dayLow": 3690.0,
-      "bid": 3700.0,
-      "ask": 3710.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 4730.0,
       "fiftyTwoWeekLow": 3510.0,
       "fiftyDayAverage": 4177.4,
@@ -167,8 +167,8 @@
       "numberOfAnalystOpinions": 21,
       "targetHighPrice": 5700.0,
       "targetLowPrice": 3800.0,
-      "targetMeanPrice": 4993.4287,
-      "targetMedianPrice": 5200.0
+      "targetMeanPrice": 4957.7144,
+      "targetMedianPrice": 5100.0
     },
     "ownership": {
       "sharesOutstanding": 578683733,

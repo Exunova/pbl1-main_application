@@ -1,8 +1,8 @@
 {
   "ticker": "BARC.L",
   "market": "GB",
-  "scraped_at": "2026-04-19 18:02:27.730129",
-  "updated_at": "2026-04-19T18:02:27.730135",
+  "scraped_at": "2026-04-20 05:46:03.802354",
+  "updated_at": "2026-04-20T05:46:03.802362",
   "info": {
     "identity": {
       "longName": "Barclays PLC",
@@ -138,7 +138,7 @@
       "trailingEps": 0.42,
       "forwardEps": 0.62774,
       "bookValue": 4.698,
-      "pegRatio": 1.4
+      "pegRatio": 1.45
     },
     "profitability": {
       "profitMargins": 0.26743,

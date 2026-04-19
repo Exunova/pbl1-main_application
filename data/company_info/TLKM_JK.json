@@ -1,8 +1,8 @@
 {
   "ticker": "TLKM.JK",
   "market": "ID",
-  "scraped_at": "2026-04-19 18:01:58.542911",
-  "updated_at": "2026-04-19T18:01:58.542918",
+  "scraped_at": "2026-04-20 05:45:25.146206",
+  "updated_at": "2026-04-20T05:45:25.146217",
   "info": {
     "identity": {
       "longName": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
@@ -104,8 +104,8 @@
       "open": 3120.0,
       "dayHigh": 3150.0,
       "dayLow": 3080.0,
-      "bid": 3090.0,
-      "ask": 3100.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 3990.0,
       "fiftyTwoWeekLow": 2510.0,
       "fiftyDayAverage": 3242.8,

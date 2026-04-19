@@ -1,8 +1,8 @@
 {
   "ticker": "6758.T",
   "market": "JP",
-  "scraped_at": "2026-04-19 18:02:11.116043",
-  "updated_at": "2026-04-19T18:02:11.116050",
+  "scraped_at": "2026-04-20 05:45:41.089199",
+  "updated_at": "2026-04-20T05:45:41.089210",
   "info": {
     "identity": {
       "longName": "Sony Group Corporation",
@@ -123,8 +123,8 @@
       "open": 3414.0,
       "dayHigh": 3445.0,
       "dayLow": 3395.0,
-      "bid": 3393.0,
-      "ask": 3408.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 4776.0,
       "fiftyTwoWeekLow": 3136.0,
       "fiftyDayAverage": 3376.92,
@@ -176,7 +176,7 @@
       "numberOfAnalystOpinions": 23,
       "targetHighPrice": 5900.0,
       "targetLowPrice": 3400.0,
-      "targetMeanPrice": 4764.7827,
+      "targetMeanPrice": 4808.2607,
       "targetMedianPrice": 4800.0
     },
     "ownership": {
