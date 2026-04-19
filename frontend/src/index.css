@@ -30,6 +30,27 @@ body {
 
 .globe-container canvas { outline: none; }
 
+/*
+ * ── Electron / Chromium Focus Ring Suppression ─────────────────────────────
+ * Electron uses -webkit-focus-ring (yellow/amber) on any element with tabindex.
+ * lightweight-charts sets tabindex="0" on its price-scale div and canvas.
+ * The ONLY reliable kill in Chromium is via :focus and :focus-visible pseudo.
+ * Using both outline AND box-shadow because some Chromium builds use box-shadow
+ * as the focus ring fallback.
+ */
+*:focus,
+*:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+canvas,
+canvas:focus,
+canvas:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: #374151 #0d0f14;

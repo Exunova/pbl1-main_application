@@ -81,11 +81,33 @@ const InfoGrid = ({ rows }) => (
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 
-const TIMEFRAMES = ['15m']
+const TIMEFRAMES = ['15m', '30m', '1h']
+
+// ─── OHLCV aggregation ────────────────────────────────────────────────────────
+
+function aggregateCandles(candles, groupSize) {
+  if (!candles.length || groupSize <= 1) return candles
+  const result = []
+  for (let i = 0; i < candles.length; i += groupSize) {
+    const group = candles.slice(i, i + groupSize)
+    if (!group.length) continue
+    result.push({
+      index: result.length,
+      time:  group[0].time,
+      open:  group[0].open,
+      high:  Math.max(...group.map(c => c.high)),
+      low:   Math.min(...group.map(c => c.low)),
+      close: group[group.length - 1].close,
+    })
+  }
+  return result
+}
 
 export default function StockDetailPanel({ stock, onClose }) {
-  const [tab,       setTab]       = useState('overview')
-  const [chartType, setChartType] = useState('candlestick')
+  const [tab,        setTab]        = useState('overview')
+  const [chartType,  setChartType]  = useState('candlestick')
+  const [timeframe,  setTimeframe]  = useState('15m')
+  const [yScale,     setYScale]     = useState('auto')   // 'auto' | 'tight' | 'full'
   const [companyData, setCompanyData] = useState(null)
   const [ohlcvData,   setOhlcvData]   = useState([])
   const [loading,     setLoading]     = useState(true)
@@ -150,8 +172,8 @@ export default function StockDetailPanel({ stock, onClose }) {
 
   // ── Chart data ─────────────────────────────────────────────────────────────
 
-  // Build candlestick data from real OHLCV or generate mock
-  const candleData = useMemo(() => {
+  // Build base 15m candlestick data from real OHLCV or generate mock
+  const baseCandles = useMemo(() => {
     if (ohlcvData.length > 0) {
       return ohlcvData.map((c, i) => ({
         index: i, time: i,
@@ -172,16 +194,28 @@ export default function StockDetailPanel({ stock, onClose }) {
     })
   }, [ohlcvData, stockPrice, stock.ticker])
 
+  // Aggregate into 30m / 1h when needed
+  const candleData = useMemo(() => {
+    if (timeframe === '30m') return aggregateCandles(baseCandles, 2)
+    if (timeframe === '1h')  return aggregateCandles(baseCandles, 4)
+    return baseCandles
+  }, [baseCandles, timeframe])
+
   // ── Zoom / pan ─────────────────────────────────────────────────────────────
 
-  const [range, setRange]         = useState({ start: 0, end: 80 })
+  const DEFAULT_VISIBLE = 80
+  const [range, setRange]         = useState({ start: 0, end: DEFAULT_VISIBLE })
   const [isPanning, setIsPanning] = useState(false)
   const [lastX, setLastX]         = useState(0)
 
   useEffect(() => {
     const len = candleData.length
-    setRange({ start: Math.max(0, len - 80), end: len })
+    setRange({ start: Math.max(0, len - DEFAULT_VISIBLE), end: len })
   }, [candleData.length])
+
+  const handleZoomOut = () => {
+    setRange({ start: 0, end: candleData.length })
+  }
 
   const visibleData = useMemo(() =>
     candleData.slice(Math.max(0, range.start), Math.min(candleData.length, range.end)),
@@ -213,6 +247,26 @@ export default function StockDetailPanel({ stock, onClose }) {
     }
   }
   const handleMouseUp = () => setIsPanning(false)
+
+  // ── Y-axis domain ──────────────────────────────────────────────────────────
+
+  const yDomain = useMemo(() => {
+    if (yScale === 'tight') {
+      const closes = visibleData.map(d => d.close)
+      if (!closes.length) return ['auto', 'auto']
+      const mn = Math.min(...visibleData.map(d => d.low))
+      const mx = Math.max(...visibleData.map(d => d.high))
+      const pad = (mx - mn) * 0.05
+      return [+(mn - pad).toFixed(2), +(mx + pad).toFixed(2)]
+    }
+    if (yScale === 'full') {
+      const mn = Math.min(...candleData.map(d => d.low))
+      const mx = Math.max(...candleData.map(d => d.high))
+      const pad = (mx - mn) * 0.03
+      return [+(mn - pad).toFixed(2), +(mx + pad).toFixed(2)]
+    }
+    return ['auto', 'auto']  // 'auto'
+  }, [yScale, visibleData, candleData])
 
   // MA50
   const ma50 = useMemo(() => {
@@ -294,34 +348,82 @@ export default function StockDetailPanel({ stock, onClose }) {
         <div style={{ borderRight: '0.5px solid #1e2433', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
           {/* Toolbar */}
-          <div style={{ padding: '7px 14px', borderBottom: '0.5px solid #1e2433', display: 'flex', gap: 3, alignItems: 'center', flexShrink: 0, background: '#0b0d12' }}>
+          <div style={{ padding: '6px 14px', borderBottom: '0.5px solid #1e2433', display: 'flex', gap: 3, alignItems: 'center', flexShrink: 0, background: '#0b0d12', flexWrap: 'wrap' }}>
+
+            {/* Chart type */}
             {['Line', 'Candle'].map(ct => (
               <button key={ct}
                 onClick={() => setChartType(ct.toLowerCase())}
                 style={{
-                  fontSize: 11, padding: '3px 10px', borderRadius: 4, cursor: 'pointer',
+                  fontSize: 11, padding: '3px 9px', borderRadius: 4, cursor: 'pointer',
                   border: 'none', fontFamily: 'inherit',
                   background: chartType === ct.toLowerCase() ? '#1c2a3a' : 'transparent',
                   color: chartType === ct.toLowerCase() ? '#60a5fa' : '#4b5563',
                 }}
               >{ct}</button>
             ))}
+
             <span style={{ width: 1, height: 14, background: '#1e2433', margin: '0 4px' }} />
-            <span style={{ fontSize: 10, color: '#374151', marginLeft: 2 }}>15m</span>
-            <div style={{ marginLeft: 'auto', display: 'flex', gap: 12 }}>
+
+            {/* Timeframe */}
+            {TIMEFRAMES.map(tf => (
+              <button key={tf}
+                onClick={() => setTimeframe(tf)}
+                style={{
+                  fontSize: 11, padding: '3px 9px', borderRadius: 4, cursor: 'pointer',
+                  border: 'none', fontFamily: 'inherit',
+                  background: timeframe === tf ? '#1c2a3a' : 'transparent',
+                  color: timeframe === tf ? '#f59e0b' : '#4b5563',
+                  fontWeight: timeframe === tf ? 700 : 400,
+                }}
+              >{tf}</button>
+            ))}
+
+            <span style={{ width: 1, height: 14, background: '#1e2433', margin: '0 4px' }} />
+
+            {/* Y-scale toggle */}
+            {[{ id: 'auto', label: 'Y:Auto' }, { id: 'tight', label: 'Y:Tight' }, { id: 'full', label: 'Y:Full' }].map(({ id, label }) => (
+              <button key={id}
+                onClick={() => setYScale(id)}
+                title={`Y-axis scale: ${id}`}
+                style={{
+                  fontSize: 10, padding: '2px 8px', borderRadius: 4, cursor: 'pointer',
+                  border: yScale === id ? '0.5px solid #3b82f6' : '0.5px solid transparent',
+                  fontFamily: 'inherit',
+                  background: yScale === id ? '#0f1e33' : 'transparent',
+                  color: yScale === id ? '#60a5fa' : '#374151',
+                }}
+              >{label}</button>
+            ))}
+
+            <span style={{ width: 1, height: 14, background: '#1e2433', margin: '0 4px' }} />
+
+            {/* Zoom-out button */}
+            <button
+              onClick={handleZoomOut}
+              title="Zoom out — show all candles"
+              style={{
+                fontSize: 10, padding: '2px 8px', borderRadius: 4, cursor: 'pointer',
+                border: '0.5px solid #1e2433', fontFamily: 'inherit',
+                background: 'transparent', color: '#4b5563',
+                display: 'flex', alignItems: 'center', gap: 3,
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = '#1e2433'; e.currentTarget.style.color = '#e2e8f0' }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#4b5563' }}
+            >⊖ Zoom Out</button>
+
+            {/* OHLC readout */}
+            <div style={{ marginLeft: 'auto', display: 'flex', gap: 10 }}>
               {[
-                { label: 'O', val: lastCandle.open, color: '#e2e8f0' },
-                { label: 'H', val: lastCandle.high, color: '#22c55e' },
-                { label: 'L', val: lastCandle.low,  color: '#ef4444' },
+                { label: 'O', val: lastCandle.open,  color: '#e2e8f0' },
+                { label: 'H', val: lastCandle.high,  color: '#22c55e' },
+                { label: 'L', val: lastCandle.low,   color: '#ef4444' },
                 { label: 'C', val: lastCandle.close, color: '#e2e8f0' },
               ].map(({ label, val, color }) => (
                 <span key={label} style={{ fontSize: 11, color: '#6b7280' }}>
                   {label} <span style={{ color }}>{val?.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
                 </span>
               ))}
-            </div>
-            <div style={{ marginLeft: 12, fontSize: 10, color: '#374151', opacity: 0.6 }}>
-              Drag · Wheel zoom
             </div>
           </div>
 
@@ -344,7 +446,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 {chartType === 'line' ? (
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
                     <XAxis dataKey="index" hide />
-                    <YAxis domain={['auto', 'auto']} tick={{ fontSize: 9, fill: '#4b5563' }} orientation="right" width={52} tickFormatter={v => v.toLocaleString()} />
+                    <YAxis domain={yDomain} tick={{ fontSize: 9, fill: '#4b5563' }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} />
                     <Tooltip contentStyle={{ background: '#141720', border: '0.5px solid #1e2433', borderRadius: 8, fontSize: 11 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}
                     <Line type="monotone" dataKey="close" stroke="#22c55e" strokeWidth={1.8} dot={false} isAnimationActive={false} />
@@ -352,7 +454,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 ) : (
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
                     <XAxis dataKey="index" hide />
-                    <YAxis domain={['auto', 'auto']} tick={{ fontSize: 9, fill: '#4b5563' }} orientation="right" width={52} tickFormatter={v => v.toLocaleString()} />
+                    <YAxis domain={yDomain} tick={{ fontSize: 9, fill: '#4b5563' }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} />
                     <Tooltip content={<CandleTooltip />} cursor={{ stroke: '#1e2433', strokeWidth: 1 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}
                     <Bar dataKey={d => [d.low, d.high]} shape={<Candlestick />} isAnimationActive={false} />

@@ -53,7 +53,7 @@ export default function StockDetailModal({ ticker, onClose }) {
 
   return (
     <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4">
-      <div className="bg-[#141720] rounded-lg w-[700px] max-h-[80vh] flex flex-col border border-white/10">
+      <div className="bg-[#141720] rounded-lg w-[800px] max-h-[85vh] flex flex-col border border-white/10">
         <div className="flex items-center justify-between p-3 border-b border-white/5">
           <span className="font-bold text-accent text-sm">{ticker}</span>
           <button onClick={onClose} className="text-white/40 hover:text-white text-lg">×</button>
@@ -66,10 +66,11 @@ export default function StockDetailModal({ ticker, onClose }) {
             </button>
           ))}
         </div>
-        <div className="flex-1 overflow-auto p-3">
+        <div className={`flex-1 ${tab === 'chart' ? '' : 'overflow-auto p-3'}`}
+          style={tab === 'chart' ? { minHeight: 0, display: 'flex', flexDirection: 'column' } : {}}>
           {tab === 'chart' ? (
             chartLoading ? (
-              <div className="text-xs text-white/40">Loading chart...</div>
+              <div className="text-xs text-white/40 p-3">Loading chart...</div>
             ) : (
               <CandlestickChart data={chartData} />
             )
