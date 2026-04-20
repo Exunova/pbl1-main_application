@@ -121,6 +121,41 @@ def save_json(data, output_dir, filename):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
+def load_existing_news(output_dir, market):
+    path = os.path.join(output_dir, f"{market.lower()}_news.json")
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            pass
+    return None
+
+
+def merge_articles(existing, new_articles, max_articles=50):
+    if not existing:
+        return new_articles
+    if not new_articles:
+        return existing.get("articles", [])
+
+    seen_links = set()
+    merged = []
+
+    for article in existing.get("articles", []):
+        link = article.get("link", "")
+        if link and link not in seen_links:
+            seen_links.add(link)
+            merged.append(article)
+
+    for article in new_articles:
+        link = article.get("link", "")
+        if link and link not in seen_links:
+            seen_links.add(link)
+            merged.append(article)
+
+    return merged[:max_articles]
+
+
 def run(output_dir):
     os.makedirs(output_dir, exist_ok=True)
 
@@ -129,21 +164,22 @@ def run(output_dir):
     for market, config in NEWS_FEEDS.items():
         print(f"  Fetching: {config['label']}")
 
-        # Check cache first
         news_data = None
         fresh, news_data = is_cache_fresh(f"news:{market}", NEWS_TTL_SECONDS)
 
         if fresh and news_data:
             print(f"    [CACHE] Using cached news for {market}")
         else:
-            articles = parse_feed(market, config)
+            existing_news = load_existing_news(output_dir, market)
+            new_articles = parse_feed(market, config)
+            merged_articles = merge_articles(existing_news, new_articles)
             news_data = {
                 "market": market,
                 "label": config["label"],
                 "scraped_at": str(datetime.now()),
                 "updated_at": datetime.now().isoformat(),
-                "article_count": len(articles),
-                "articles": articles
+                "article_count": len(merged_articles),
+                "articles": merged_articles
             }
             cache_set(f"news:{market}", news_data)
 

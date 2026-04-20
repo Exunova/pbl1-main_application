@@ -156,6 +156,32 @@ export default function GlobeView() {
   const [panelLoading,   setPanelLoading]   = useState(false)
 
   const [tooltip, setTooltip] = useState({ visible: false, x: 0, y: 0, content: null })
+  const [scrapeStatus, setScrapeStatus] = useState({})
+  const [isScraping, setIsScraping] = useState(false)
+
+  const handleScrapeLatest = async () => {
+    if (!window.api) return
+    setIsScraping(true)
+    try {
+      await window.api.scrapeLatest()
+      setTimeout(async () => {
+        const status = await window.api.scrapeStatus()
+        setScrapeStatus(status || {})
+      }, 1000)
+    } catch (err) {
+      console.error('Scrape error:', err)
+    } finally {
+      setTimeout(() => setIsScraping(false), 3000)
+    }
+  }
+
+  const pollScrapeStatus = async () => {
+    if (!window.api) return
+    try {
+      const status = await window.api.scrapeStatus()
+      setScrapeStatus(status || {})
+    } catch {}
+  }
 
   // ── Data fetching ──────────────────────────────────────────────────────────
 
@@ -672,6 +698,37 @@ export default function GlobeView() {
                   </svg>
                 </div>
               </form>
+            )}
+          </div>
+
+          <div className="absolute top-6 right-6 z-50 flex items-center gap-2">
+            <button
+              onClick={handleScrapeLatest}
+              disabled={isScraping}
+              className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium transition-all ${
+                isScraping
+                  ? 'bg-orange-500/20 text-orange-400 border border-orange-500/30 cursor-not-allowed'
+                  : 'bg-black/60 backdrop-blur border border-white/10 text-white/60 hover:text-white hover:bg-white/5 hover:border-white/20'
+              }`}
+            >
+              <svg
+                className={`w-4 h-4 ${isScraping ? 'animate-spin' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              {isScraping ? 'Scraping...' : 'Scrape Latest'}
+            </button>
+            {Object.keys(scrapeStatus).length > 0 && (
+              <div className="text-[10px] text-white/40 flex items-center gap-1">
+                {scrapeStatus.ohlcv && (
+                  <span className={scrapeStatus.ohlcv?.includes('error') ? 'text-red-400' : 'text-green-400'}>
+                    OHLCV {scrapeStatus.ohlcv?.includes('error') ? '✗' : '✓'}
+                  </span>
+                )}
+              </div>
             )}
           </div>
 

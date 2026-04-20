@@ -22,7 +22,7 @@ import yfinance as yf
 # The app will still serve existing cached / file data; it just won't fetch
 # any new data from the network.  Flip back to True to re-enable scraping.
 # =============================================================================
-SCRAPING_ENABLED = False   # ← change this to False to turn off all scraping
+SCRAPING_ENABLED = True   # ← change this to False to turn off all scraping
 
 # =============================================================================
 # PATH SETUP
@@ -401,7 +401,6 @@ def handle_indices():
     return results
 
 def handle_scrape(stype):
-    """Handle scrape command - triggers background scrape."""
     if not SCRAPING_ENABLED:
         return {"status": "disabled", "type": stype, "message": "Scraping is currently disabled (SCRAPING_ENABLED=False)"}
     if stype in SCRAPER_MODULES:
@@ -409,9 +408,22 @@ def handle_scrape(stype):
         return {"status": "started", "type": stype}
     return {"error": "unknown type"}
 
+
+def handle_scrape_latest():
+    """
+    Handle scrape_latest command - triggers incremental scrape for all data types.
+    Always works (bypasses SCRAPING_ENABLED) since user explicitly requested it via button.
+    Scrapers will automatically detect if data exists and do gap-fill, or full 30-day fetch if no data.
+    """
+    for stype in SCRAPER_MODULES:
+        trigger_scrape_in_bg(stype)
+    return {"status": "started", "type": "all", "message": "Incremental scrape triggered for all data types"}
+
+
 def handle_scrape_status():
     """Handle scrape_status command - returns current scrape status."""
     return get_scrape_status()
+
 
 def handle_portfolio_list():
     """Handle portfolio_list command - returns all portfolio positions."""
@@ -757,6 +769,10 @@ def handle_command(req):
         
         elif cmd == "scrape_status":
             data = handle_scrape_status()
+            return {"id": req_id, "ok": True, "data": data}
+
+        elif cmd == "scrape_latest":
+            data = handle_scrape_latest()
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "health":

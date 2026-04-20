@@ -181,6 +181,7 @@ app.whenReady().then(() => {
   ipcMain.handle('fetchIndex', (_, idx) => sendToPython('index', { idx }))
   ipcMain.handle('fetchIndices', () => sendToPython('indices', {}))
   ipcMain.handle('triggerScrape', (_, type) => sendToPython('scrape', { type }))
+  ipcMain.handle('scrapeLatest', () => sendToPython('scrape_latest', {}))
   ipcMain.handle('scrapeStatus', () => sendToPython('scrape_status', {}))
   ipcMain.handle('flask-health', () => sendToPython('health', {}))
 
