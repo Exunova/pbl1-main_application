@@ -1,8 +1,9 @@
 {
   "market": "GB",
   "label": "FTSE 100",
-  "scraped_at": "2026-04-12 18:20:07.378283",
-  "article_count": 41,
+  "scraped_at": "2026-04-26 19:24:43.477548",
+  "updated_at": "2026-04-26T19:24:43.477591",
+  "article_count": 50,
   "articles": [
     {
       "title": "2 superb FTSE 100 stocks to buy before the next bull market, according to experts! - Yahoo Finance UK",
@@ -490,6 +491,114 @@
       "publisher": "MSN",
       "published": "Sat, 11 Apr 2026 23:23:47 GMT",
       "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxNeVh3ckJYeTBhdDFSSmxqNEhtWGUzR0s0NEdWWDJ1SUdyYTBMel82T3V6cV9XTjVUSHN6TFpJLWNQamY0X3lqS1ItUzhZRmZRSkFVS1pQMGpzNWx5V2lWaWNPdjlvRkYwcFZ6ZC1CemsyQnhpdkY5M0hqZGgtZWkxeG1XRkc5Wlh1RkMtSFpfWHJTUG9GU0VwSnZoTVBNV0V2OWtiS25GQ3VZTlRsWnJORVhpWWpWVGcwVUpaRkRSdUhLdDZhLWJEblBiUnFsLWRYYVludzQxWjFFaTlJQ1F5akthdw?oc=5\" target=\"_blank\">How much would an ISA need in it to aim for £500 of monthly passive income?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Share Prices, Stock Quotes, Charts, Trade History, Share Chat, Financial News - London South East - London South East",
+      "link": "https://news.google.com/rss/articles/CBMiOkFVX3lxTE15a0pnSlVXbUxWSnZ1Ul9mT1RkekpRYms2djM0QVlJTm5HaUQxLTlyZ1NXZkg2Vk10N0E?oc=5",
+      "publisher": "London South East",
+      "published": "Sun, 26 Apr 2026 08:14:31 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiOkFVX3lxTE15a0pnSlVXbUxWSnZ1Ul9mT1RkekpRYms2djM0QVlJTm5HaUQxLTlyZ1NXZkg2Vk10N0E?oc=5\" target=\"_blank\">Share Prices, Stock Quotes, Charts, Trade History, Share Chat, Financial News - London South East</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">London South East</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "£5,000 buys 2,603 shares of this FTSE 100 stock that now yields 6.5% - Fool UK",
+      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQVDc0ZFlYOGUtOXMwbWRnMVUxcE8wcmhqMXVDblZUV05fQ09oZ1MwcEdEN3lzU1p0ekwtUVFPZDhrMmtKTTNqN01UYnllODczckVNeEJhNjhabGNhMGtQUk9mVHlsMkY0OTI0UkRuZHJJdDVtYkNnT1l2T3Z6ZEMtS0ptNHp6MXo3ZmpkVXcxSTJfWXFST0dQb3U2Q3Z2NzZG?oc=5",
+      "publisher": "Fool UK",
+      "published": "Sun, 26 Apr 2026 09:55:16 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxQVDc0ZFlYOGUtOXMwbWRnMVUxcE8wcmhqMXVDblZUV05fQ09oZ1MwcEdEN3lzU1p0ekwtUVFPZDhrMmtKTTNqN01UYnllODczckVNeEJhNjhabGNhMGtQUk9mVHlsMkY0OTI0UkRuZHJJdDVtYkNnT1l2T3Z6ZEMtS0ptNHp6MXo3ZmpkVXcxSTJfWXFST0dQb3U2Q3Z2NzZG?oc=5\" target=\"_blank\">£5,000 buys 2,603 shares of this FTSE 100 stock that now yields 6.5%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Fool UK</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "FTSE 100 Holds Firm As Lower Unemployment And Peace Talk Hopes Offset Gilt Yield Jump - DirectorsTalk Interviews",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeVJPeHhremZGU19BV09OSThlQkV1Z3phV2tPVkpVV1RublI0ZGZHU0lDWmV1bmk1NzhaZmdSYUJ5NnN1TjhxbkJKU0EwOGZtUlVVMnNDbEg5UGptU1JCejNrTE1ycVhLdFhvMktFSTJvZGxyRHpvNW1YbHBGUTRMcnhpMEZmMXo4SFdDUGpJd3Q3dmwxWmtGUDd5d2JuVW8wRFk0WjVmRzhscTJBTkt6TTI5elU0OGJnZDRjcXc5UWlWNlN1bjNCWGpobGdJTHRpN2c?oc=5",
+      "publisher": "DirectorsTalk Interviews",
+      "published": "Sun, 26 Apr 2026 11:15:28 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeVJPeHhremZGU19BV09OSThlQkV1Z3phV2tPVkpVV1RublI0ZGZHU0lDWmV1bmk1NzhaZmdSYUJ5NnN1TjhxbkJKU0EwOGZtUlVVMnNDbEg5UGptU1JCejNrTE1ycVhLdFhvMktFSTJvZGxyRHpvNW1YbHBGUTRMcnhpMEZmMXo4SFdDUGpJd3Q3dmwxWmtGUDd5d2JuVW8wRFk0WjVmRzhscTJBTkt6TTI5elU0OGJnZDRjcXc5UWlWNlN1bjNCWGpobGdJTHRpN2c?oc=5\" target=\"_blank\">FTSE 100 Holds Firm As Lower Unemployment And Peace Talk Hopes Offset Gilt Yield Jump</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DirectorsTalk Interviews</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Next week on the stock market - Hargreaves Lansdown",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWjNCR1dQT3drY3V2OFRHNGZWUDNuTlp4bGhMeDhVWHVHMGpDdFN1LWpHSmVjNjVwVnBLWUEzVFBKV1lFb2wtU25SdEsxbmJxalJmd3B0QjlMM0VKUUE1MG9QV2U2UTd2LVE0RXRBRVU4Y3pQci1UY2U2d1Z0dFdMa2FxanV2MUlRVE1N?oc=5",
+      "publisher": "Hargreaves Lansdown",
+      "published": "Sun, 26 Apr 2026 11:12:03 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWjNCR1dQT3drY3V2OFRHNGZWUDNuTlp4bGhMeDhVWHVHMGpDdFN1LWpHSmVjNjVwVnBLWUEzVFBKV1lFb2wtU25SdEsxbmJxalJmd3B0QjlMM0VKUUE1MG9QV2U2UTd2LVE0RXRBRVU4Y3pQci1UY2U2d1Z0dFdMa2FxanV2MUlRVE1N?oc=5\" target=\"_blank\">Next week on the stock market</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Hargreaves Lansdown</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Market Buzz Builds Around FTSE 100 as Key Stocks Stay Active - Kalkine Media",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObE92cDNFYnE5aGoteFNyX3NMRWo1REhPbmtqWGVGc1p0cmk5bFZZTGQ2V1dtTGtYQTFFUkI5Q21sRXVIQmhlVGtTUzk2aFp1M0JoSXRJOHVZU21qN3JhaWZzQXl5VDZuMm8yZUVjTnB3NGx1R2JmOWY5NnBaM1hFUWg2OU5DMEdNaVlhVWlXNmdfV2NRUFpac0VWMXR4WDVOUEVRalhlSndpQXBn?oc=5",
+      "publisher": "Kalkine Media",
+      "published": "Sun, 26 Apr 2026 11:36:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxObE92cDNFYnE5aGoteFNyX3NMRWo1REhPbmtqWGVGc1p0cmk5bFZZTGQ2V1dtTGtYQTFFUkI5Q21sRXVIQmhlVGtTUzk2aFp1M0JoSXRJOHVZU21qN3JhaWZzQXl5VDZuMm8yZUVjTnB3NGx1R2JmOWY5NnBaM1hFUWg2OU5DMEdNaVlhVWlXNmdfV2NRUFpac0VWMXR4WDVOUEVRalhlSndpQXBn?oc=5\" target=\"_blank\">Market Buzz Builds Around FTSE 100 as Key Stocks Stay Active</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kalkine Media</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "Should I buy FTSE 100 shares today, or wait for the next stock market crash? - Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5iOUVXMUZKN1duZ0pHOXc2RkdwaDV1RTBkOEJRcEhQNUFmREtQRXZaWlBZYVdzSTZ1V3MzYzMxQjBUM1ZDcUtlUXlOR2VvYUJ5UTVJS2Y1czJMbEhlMUlBVmhYckwyZkVHdUhSQnhpQ0FhczlqN2Q2bjB3aHRjNHM?oc=5",
+      "publisher": "Yahoo Finance UK",
+      "published": "Sat, 25 Apr 2026 15:21:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5iOUVXMUZKN1duZ0pHOXc2RkdwaDV1RTBkOEJRcEhQNUFmREtQRXZaWlBZYVdzSTZ1V3MzYzMxQjBUM1ZDcUtlUXlOR2VvYUJ5UTVJS2Y1czJMbEhlMUlBVmhYckwyZkVHdUhSQnhpQ0FhczlqN2Q2bjB3aHRjNHM?oc=5\" target=\"_blank\">Should I buy FTSE 100 shares today, or wait for the next stock market crash?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance UK</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "FTSE 100 live: Stocks to dip; Trump 'not happy' with UK as Iran strikes continue - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxPM1dvWmhrZkdqdGMyX3prbDMwa3ZoUHV5dnh1TFo0Z0JGNjVKQXJhaUtWbmFPc2R1cjFXT1NFbWVjcUlweTRpc0pOQ0dPeTRXR1lYUktmMVc5RGFtZWEzdXpzTHVGQkVYeWZUQVp3b1NRY3pHY0p4YVpMTWYwQnU3UXdIM3BWLXBHQmRBQVNGeEFXZm1Uck15eUVCVWJZYkY2RUVzMWtfMTRlNE1fY3ZMVXRsMFgxOU5KM2hKUERtTVBnQWpfbms1UUQwZXlldHdFajd4TjlKNjdqNktTTkJSM0h5eEZCWVpWVVNxVlA4RHpiMFQ1RzdGdTZJcVJJSmJSVktZZDFVcjJha1lwVFpOWk8ySEd2OW5CTlVRaXk0NEw4QnA5cl9QTnBfMUExTUdUaUNJLWZmSFVIZTNyOGd2dERzbmItdFF5NE9SY1RWcmtldVpPU2VkYnViUFd3TW5XS0dBWWU0RHdQQ2xoNVVFSVFRYlZVcGlm?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 26 Apr 2026 07:54:24 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi-AJBVV95cUxPM1dvWmhrZkdqdGMyX3prbDMwa3ZoUHV5dnh1TFo0Z0JGNjVKQXJhaUtWbmFPc2R1cjFXT1NFbWVjcUlweTRpc0pOQ0dPeTRXR1lYUktmMVc5RGFtZWEzdXpzTHVGQkVYeWZUQVp3b1NRY3pHY0p4YVpMTWYwQnU3UXdIM3BWLXBHQmRBQVNGeEFXZm1Uck15eUVCVWJZYkY2RUVzMWtfMTRlNE1fY3ZMVXRsMFgxOU5KM2hKUERtTVBnQWpfbms1UUQwZXlldHdFajd4TjlKNjdqNktTTkJSM0h5eEZCWVpWVVNxVlA4RHpiMFQ1RzdGdTZJcVJJSmJSVktZZDFVcjJha1lwVFpOWk8ySEd2OW5CTlVRaXk0NEw4QnA5cl9QTnBfMUExTUdUaUNJLWZmSFVIZTNyOGd2dERzbmItdFF5NE9SY1RWcmtldVpPU2VkYnViUFd3TW5XS0dBWWU0RHdQQ2xoNVVFSVFRYlZVcGlm?oc=5\" target=\"_blank\">FTSE 100 live: Stocks to dip; Trump 'not happy' with UK as Iran strikes continue</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "FTSE 100 Falls As Hormuz Closure Lifts Oil Prices And Revives Inflation Concerns - DirectorsTalk Interviews",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOSWxxRVoyM0hsUjNSQTFuRG1SVzVpLUdaWkgyQVllaTRNWEJLbTluSjF4TS1vbll4U1ZsV1N6Vi05Q05nYjVReUpvLXJnVWp6S0U2XzBhRFg2Z1BkeWllUHZqTUdmcWdxQ1FZMHpmdDRIdGpiZkdtWTVkSDhGWGU3dkEycDJKRU5Cb1hQdENhM0hXOE9xMnJtWUZaNGJxNUVDTVotbTUxMy1NX3dZd1ZYQ282QTRGWWN5ZVBEc3FaZG5wZlpsdWRud2ltQQ?oc=5",
+      "publisher": "DirectorsTalk Interviews",
+      "published": "Sun, 26 Apr 2026 06:45:38 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxOSWxxRVoyM0hsUjNSQTFuRG1SVzVpLUdaWkgyQVllaTRNWEJLbTluSjF4TS1vbll4U1ZsV1N6Vi05Q05nYjVReUpvLXJnVWp6S0U2XzBhRFg2Z1BkeWllUHZqTUdmcWdxQ1FZMHpmdDRIdGpiZkdtWTVkSDhGWGU3dkEycDJKRU5Cb1hQdENhM0hXOE9xMnJtWUZaNGJxNUVDTVotbTUxMy1NX3dZd1ZYQ282QTRGWWN5ZVBEc3FaZG5wZlpsdWRud2ltQQ?oc=5\" target=\"_blank\">FTSE 100 Falls As Hormuz Closure Lifts Oil Prices And Revives Inflation Concerns</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">DirectorsTalk Interviews</font>",
+      "thumbnail": {
+        "type": "og_image",
+        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+    },
+    {
+      "title": "FTSE 100 Drop: UK Stocks React to Oil and Inflation Concerns - Kalkine Media",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTmZwNXlYc1hCYW9Lbi1BUjRIcjNfMGF3ck5hZW5Od2htN2xBY1hlaHVzVW1CdTczeEVVQ2xvN3AyOFotbWQzUnJOQmhid3h4WFZrWFlqNWRIaXZnUzRPbXI1RTY3M2dmU05GblJSN3p1S2l0eGlGc2d0a05nRFVSZlVKeXBrbXhNMGpwNm14bjNWVi1pR3Y2Y1AyVFl2bVp2eVpJcGl4SERtcTA?oc=5",
+      "publisher": "Kalkine Media",
+      "published": "Sun, 26 Apr 2026 10:30:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTmZwNXlYc1hCYW9Lbi1BUjRIcjNfMGF3ck5hZW5Od2htN2xBY1hlaHVzVW1CdTczeEVVQ2xvN3AyOFotbWQzUnJOQmhid3h4WFZrWFlqNWRIaXZnUzRPbXI1RTY3M2dmU05GblJSN3p1S2l0eGlGc2d0a05nRFVSZlVKeXBrbXhNMGpwNm14bjNWVi1pR3Y2Y1AyVFl2bVp2eVpJcGl4SERtcTA?oc=5\" target=\"_blank\">FTSE 100 Drop: UK Stocks React to Oil and Inflation Concerns</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kalkine Media</font>",
       "thumbnail": {
         "type": "og_image",
         "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"

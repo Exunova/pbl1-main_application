@@ -1,8 +1,8 @@
 {
   "ticker": "AAPL",
   "market": "US",
-  "scraped_at": "2026-04-20 05:45:06.647843",
-  "updated_at": "2026-04-20T05:45:06.647854",
+  "scraped_at": "2026-04-26 19:04:44.619080",
+  "updated_at": "2026-04-26T19:04:44.619093",
   "info": {
     "identity": {
       "longName": "Apple Inc.",
@@ -120,34 +120,34 @@
       ]
     },
     "price": {
-      "currentPrice": 270.23,
-      "previousClose": 263.4,
-      "open": 267.098,
-      "dayHigh": 272.3,
-      "dayLow": 266.72,
-      "bid": 269.76,
-      "ask": 280.56,
+      "currentPrice": 271.06,
+      "previousClose": 273.43,
+      "open": 272.76,
+      "dayHigh": 273.06,
+      "dayLow": 269.65,
+      "bid": 266.0,
+      "ask": 286.63,
       "fiftyTwoWeekHigh": 288.62,
-      "fiftyTwoWeekLow": 189.81,
-      "fiftyDayAverage": 260.5644,
-      "twoHundredDayAverage": 252.14175,
-      "volume": 55211089,
-      "averageVolume": 47004750,
-      "averageVolume10days": 43108060,
-      "regularMarketChangePercent": 2.59302,
-      "52WeekChange": 0.39899564
+      "fiftyTwoWeekLow": 193.25,
+      "fiftyDayAverage": 260.1454,
+      "twoHundredDayAverage": 253.6407,
+      "volume": 38033227,
+      "averageVolume": 45866346,
+      "averageVolume10days": 44085150,
+      "regularMarketChangePercent": -0.866765,
+      "52WeekChange": 0.28990197
     },
     "valuation": {
-      "marketCap": 3971820552192,
-      "enterpriseValue": 3990886547456,
-      "trailingPE": 34.249683,
-      "forwardPE": 28.898207,
-      "priceToBook": 45.053352,
-      "priceToSalesTrailing12Months": 9.117689,
+      "marketCap": 3979469914112,
+      "enterpriseValue": 4003071787008,
+      "trailingPE": 34.35488,
+      "forwardPE": 28.92041,
+      "priceToBook": 45.19173,
+      "priceToSalesTrailing12Months": 9.135249,
       "trailingEps": 7.89,
-      "forwardEps": 9.3511,
+      "forwardEps": 9.37262,
       "bookValue": 5.998,
-      "pegRatio": 2.43
+      "pegRatio": 2.44
     },
     "profitability": {
       "profitMargins": 0.27037,
@@ -177,15 +177,15 @@
       "recommendationMean": 1.89362,
       "numberOfAnalystOpinions": 40,
       "targetHighPrice": 350.0,
-      "targetLowPrice": 205.0,
-      "targetMeanPrice": 297.4555,
+      "targetLowPrice": 215.0,
+      "targetMeanPrice": 297.7055,
       "targetMedianPrice": 300.0
     },
     "ownership": {
       "sharesOutstanding": 14681140000,
       "floatShares": 14656035251,
       "heldPercentInsiders": 0.0164,
-      "heldPercentInstitutions": 0.65295,
+      "heldPercentInstitutions": 0.65225,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1598832000,
       "beta": 1.109

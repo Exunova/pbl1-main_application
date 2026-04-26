@@ -103,7 +103,7 @@ export default function PortfolioView() {
           </div>
         </div>
       )}
-            {/* --- AWAL PEMBUNGKUS GRID --- */}
+      {/* --- AWAL PEMBUNGKUS GRID --- */}
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 items-start mb-4">
         
         {/* --- SISI KIRI: TABEL (Ambil 3 Kolom) --- */}
@@ -160,9 +160,9 @@ export default function PortfolioView() {
                   data={pieData}
                   cx="50%"
                   cy="50%"
-                  innerRadius={60}
+                  innerRadius={0}
                   outerRadius={100}
-                  paddingAngle={2}
+                  paddingAngle={0}
                   dataKey="value"
                   stroke="none"
                 >

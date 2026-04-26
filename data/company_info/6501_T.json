@@ -1,8 +1,8 @@
 {
   "ticker": "6501.T",
   "market": "JP",
-  "scraped_at": "2026-04-20 05:45:44.705381",
-  "updated_at": "2026-04-20T05:45:44.705390",
+  "scraped_at": "2026-04-26 19:05:13.397516",
+  "updated_at": "2026-04-26T19:05:13.397538",
   "info": {
     "identity": {
       "longName": "Hitachi, Ltd.",
@@ -97,6 +97,28 @@
         },
         {
           "maxAge": 1,
+          "name": "Mr. Kojin  Nakakita",
+          "age": 62,
+          "title": "VP & Executive Officer",
+          "yearBorn": 1963,
+          "fiscalYear": 2025,
+          "totalPay": 124000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Takashi  Yoda",
+          "age": 59,
+          "title": "VP, Executive Officer and GM of Business Management Reinforcement Division",
+          "yearBorn": 1966,
+          "fiscalYear": 2025,
+          "totalPay": 74000000,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
           "name": "Mr. Tadashi  Kume",
           "age": 62,
           "title": "VP, EO, CQO & CMSO, Senior Officer of Nuclear Energy Business Unit & Energy Sector",
@@ -105,57 +127,35 @@
           "totalPay": 74000000,
           "exercisedValue": 0,
           "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Hideshi  Nakatsu",
-          "age": 58,
-          "title": "VP, Executive Officer and CEO of Industrial Products & Connective Industries Sector",
-          "yearBorn": 1967,
-          "fiscalYear": 2025,
-          "totalPay": 76000000,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Noriharu  Amiya",
-          "age": 56,
-          "title": "SVP, Exec Ofcr, CEO of Connective Indu. Sector & CEO of Urban Solutions & Services Business",
-          "yearBorn": 1969,
-          "fiscalYear": 2025,
-          "totalPay": 75000000,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
         }
       ]
     },
     "price": {
-      "currentPrice": 5157.0,
-      "previousClose": 5220.0,
-      "open": 5167.0,
-      "dayHigh": 5210.0,
-      "dayLow": 5109.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "currentPrice": 5229.0,
+      "previousClose": 5203.0,
+      "open": 5230.0,
+      "dayHigh": 5235.0,
+      "dayLow": 5095.0,
+      "bid": 5227.0,
+      "ask": 5230.0,
       "fiftyTwoWeekHigh": 6039.0,
-      "fiftyTwoWeekLow": 3323.0,
-      "fiftyDayAverage": 4948.4,
-      "twoHundredDayAverage": 4676.13,
-      "volume": 10437400,
-      "averageVolume": 15601416,
-      "averageVolume10days": 12598730,
-      "regularMarketChangePercent": -1.2068965,
-      "52WeekChange": 0.50789475
+      "fiftyTwoWeekLow": 3516.0,
+      "fiftyDayAverage": 4921.38,
+      "twoHundredDayAverage": 4700.665,
+      "volume": 10572600,
+      "averageVolume": 15678901,
+      "averageVolume10days": 12996910,
+      "regularMarketChangePercent": 0.4997117,
+      "52WeekChange": 0.3955164
     },
     "valuation": {
-      "marketCap": 23330136522752,
-      "enterpriseValue": 23052775587840,
-      "trailingPE": 30.863607,
-      "forwardPE": 28.950766,
-      "priceToBook": 3.6690001,
-      "priceToSalesTrailing12Months": 2.270806,
-      "trailingEps": 167.09,
+      "marketCap": 23529256910848,
+      "enterpriseValue": 23378385698816,
+      "trailingPE": 31.249626,
+      "forwardPE": 29.354965,
+      "priceToBook": 3.7202253,
+      "priceToSalesTrailing12Months": 2.2901874,
+      "trailingEps": 167.33,
       "forwardEps": 178.13,
       "bookValue": 1405.56,
       "pegRatio": 0.13
@@ -177,7 +177,7 @@
     },
     "dividend": {
       "dividendRate": 45.0,
-      "dividendYield": 0.87,
+      "dividendYield": 0.86,
       "fiveYearAvgDividendYield": 1.48,
       "payoutRatio": 0.2693,
       "exDividendDate": 1759104000,
@@ -193,10 +193,10 @@
       "targetMedianPrice": 5850.0
     },
     "ownership": {
-      "sharesOutstanding": 4523974507,
-      "floatShares": 4280011910,
+      "sharesOutstanding": 4499762162,
+      "floatShares": 4340023700,
       "heldPercentInsiders": 0.01725,
-      "heldPercentInstitutions": 0.48977003,
+      "heldPercentInstitutions": 0.48953998,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1719446400,
       "beta": 0.486

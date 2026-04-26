@@ -1,8 +1,8 @@
 {
   "ticker": "SHEL.L",
   "market": "GB",
-  "scraped_at": "2026-04-20 05:45:57.875164",
-  "updated_at": "2026-04-20T05:45:57.875176",
+  "scraped_at": "2026-04-26 19:05:26.058191",
+  "updated_at": "2026-04-26T19:05:26.058215",
   "info": {
     "identity": {
       "longName": "Shell plc",
@@ -117,34 +117,34 @@
       ]
     },
     "price": {
-      "currentPrice": 3196.0,
-      "previousClose": 3384.5,
-      "open": 3385.5,
-      "dayHigh": 3394.5,
-      "dayLow": 3169.738,
-      "bid": 3193.0,
-      "ask": 3193.5,
+      "currentPrice": 3307.5,
+      "previousClose": 3293.5,
+      "open": 3320.0,
+      "dayHigh": 3347.0,
+      "dayLow": 3293.0,
+      "bid": 3312.0,
+      "ask": 3312.5,
       "fiftyTwoWeekHigh": 3592.0,
       "fiftyTwoWeekLow": 2373.0,
-      "fiftyDayAverage": 3241.32,
-      "twoHundredDayAverage": 2850.295,
-      "volume": 12867112,
-      "averageVolume": 13456180,
-      "averageVolume10days": 13164146,
-      "regularMarketChangePercent": -5.569508,
-      "52WeekChange": 0.31037307
+      "fiftyDayAverage": 3283.75,
+      "twoHundredDayAverage": 2866.815,
+      "volume": 6007481,
+      "averageVolume": 13379917,
+      "averageVolume10days": 10083122,
+      "regularMarketChangePercent": 0.4250797,
+      "52WeekChange": 0.3456062
     },
     "valuation": {
-      "marketCap": 178688000000,
-      "enterpriseValue": 227339321344,
-      "trailingPE": 14.396396,
-      "forwardPE": 9.244818,
-      "priceToBook": 1.3879099,
-      "priceToSalesTrailing12Months": 0.6695293,
-      "trailingEps": 2.22,
-      "forwardEps": 3.457072,
+      "marketCap": 184664621056,
+      "enterpriseValue": 233651847168,
+      "trailingPE": 14.831839,
+      "forwardPE": 9.445672,
+      "priceToBook": 1.4363303,
+      "priceToSalesTrailing12Months": 0.6919232,
+      "trailingEps": 2.23,
+      "forwardEps": 3.5016036,
       "bookValue": 23.027433,
-      "pegRatio": 1.28
+      "pegRatio": 1.32
     },
     "profitability": {
       "profitMargins": 0.06683,
@@ -163,7 +163,7 @@
     },
     "dividend": {
       "dividendRate": 1.11,
-      "dividendYield": 3.49,
+      "dividendYield": 3.37,
       "fiveYearAvgDividendYield": 3.71,
       "payoutRatio": 0.47349998,
       "exDividendDate": 1771459200,
@@ -173,16 +173,16 @@
       "recommendationKey": "buy",
       "recommendationMean": 2.33333,
       "numberOfAnalystOpinions": 16,
-      "targetHighPrice": 4420.973,
-      "targetLowPrice": 2715.3115,
-      "targetMeanPrice": 3726.6692,
-      "targetMedianPrice": 3790.218
+      "targetHighPrice": 4407.2417,
+      "targetLowPrice": 2706.8777,
+      "targetMeanPrice": 3720.8457,
+      "targetMedianPrice": 3771.7515
     },
     "ownership": {
-      "sharesOutstanding": 5590988987,
-      "floatShares": 5517660824,
+      "sharesOutstanding": 5583208651,
+      "floatShares": 5516698376,
       "heldPercentInsiders": 0.00056,
-      "heldPercentInstitutions": 0.35269,
+      "heldPercentInstitutions": 0.35279998,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 1121385600,
       "beta": -0.208

@@ -1,8 +1,8 @@
 {
   "ticker": "9983.T",
   "market": "JP",
-  "scraped_at": "2026-04-20 05:45:48.184674",
-  "updated_at": "2026-04-20T05:45:48.184684",
+  "scraped_at": "2026-04-26 19:05:16.224125",
+  "updated_at": "2026-04-26T19:05:16.224149",
   "info": {
     "identity": {
       "longName": "Fast Retailing Co., Ltd.",
@@ -115,34 +115,34 @@
       ]
     },
     "price": {
-      "currentPrice": 74050.0,
-      "previousClose": 74840.0,
-      "open": 74620.0,
-      "dayHigh": 75700.0,
-      "dayLow": 74050.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "currentPrice": 70090.0,
+      "previousClose": 69290.0,
+      "open": 68600.0,
+      "dayHigh": 70250.0,
+      "dayLow": 68580.0,
+      "bid": 70060.0,
+      "ask": 70110.0,
       "fiftyTwoWeekHigh": 75700.0,
       "fiftyTwoWeekLow": 43270.0,
-      "fiftyDayAverage": 66302.6,
-      "twoHundredDayAverage": 55804.95,
-      "volume": 1059600,
-      "averageVolume": 1123122,
-      "averageVolume10days": 1395350,
-      "regularMarketChangePercent": -1.0555853,
-      "52WeekChange": 0.60108113
+      "fiftyDayAverage": 66994.0,
+      "twoHundredDayAverage": 56391.8,
+      "volume": 1286200,
+      "averageVolume": 1124411,
+      "averageVolume10days": 1172790,
+      "regularMarketChangePercent": 1.1545677,
+      "52WeekChange": 0.46142614
     },
     "valuation": {
-      "marketCap": 22721482194944,
-      "enterpriseValue": 21263443558400,
-      "trailingPE": 47.619045,
-      "forwardPE": 54.100456,
-      "priceToBook": 9.073388,
-      "priceToSalesTrailing12Months": 6.198625,
-      "trailingEps": 1555.05,
+      "marketCap": 21506398617600,
+      "enterpriseValue": 20048357883904,
+      "trailingPE": 45.044987,
+      "forwardPE": 51.207306,
+      "priceToBook": 8.169696,
+      "priceToSalesTrailing12Months": 5.8671393,
+      "trailingEps": 1556.0,
       "forwardEps": 1368.75,
-      "bookValue": 8161.229,
-      "pegRatio": 3.04
+      "bookValue": 8579.267,
+      "pegRatio": 2.87
     },
     "profitability": {
       "profitMargins": 0.1306,
@@ -161,7 +161,7 @@
     },
     "dividend": {
       "dividendRate": 640.0,
-      "dividendYield": 0.86,
+      "dividendYield": 0.91,
       "fiveYearAvgDividendYield": 0.8,
       "payoutRatio": 0.3722,
       "exDividendDate": 1787875200,
@@ -173,14 +173,14 @@
       "numberOfAnalystOpinions": 14,
       "targetHighPrice": 85000.0,
       "targetLowPrice": 56000.0,
-      "targetMeanPrice": 71264.29,
+      "targetMeanPrice": 71692.86,
       "targetMedianPrice": 71500.0
     },
     "ownership": {
       "sharesOutstanding": 306839741,
-      "floatShares": 181139773,
-      "heldPercentInsiders": 0.40285,
-      "heldPercentInstitutions": 0.35149,
+      "floatShares": 181557075,
+      "heldPercentInsiders": 0.39248002,
+      "heldPercentInstitutions": 0.35153,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1677456000,
       "beta": 0.371

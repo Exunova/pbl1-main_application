@@ -1,8 +1,8 @@
 {
   "ticker": "BATS.L",
   "market": "GB",
-  "scraped_at": "2026-04-20 05:45:59.280567",
-  "updated_at": "2026-04-20T05:45:59.280580",
+  "scraped_at": "2026-04-26 19:05:27.690496",
+  "updated_at": "2026-04-26T19:05:27.690516",
   "info": {
     "identity": {
       "longName": "British American Tobacco p.l.c.",
@@ -122,34 +122,34 @@
       ]
     },
     "price": {
-      "currentPrice": 4142.0,
-      "previousClose": 4152.0,
-      "open": 4161.0,
-      "dayHigh": 4176.0,
-      "dayLow": 4086.0,
-      "bid": 4136.0,
-      "ask": 4138.0,
+      "currentPrice": 4302.0,
+      "previousClose": 4206.0,
+      "open": 4255.0,
+      "dayHigh": 4371.0,
+      "dayLow": 4246.0,
+      "bid": 4326.0,
+      "ask": 4328.0,
       "fiftyTwoWeekHigh": 4876.92,
       "fiftyTwoWeekLow": 3013.0,
-      "fiftyDayAverage": 4402.92,
-      "twoHundredDayAverage": 4193.74,
-      "volume": 3205160,
-      "averageVolume": 4799090,
-      "averageVolume10days": 4668409,
-      "regularMarketChangePercent": -0.2408478,
-      "52WeekChange": 0.30910242
+      "fiftyDayAverage": 4382.44,
+      "twoHundredDayAverage": 4202.96,
+      "volume": 3494873,
+      "averageVolume": 4891761,
+      "averageVolume10days": 5307632,
+      "regularMarketChangePercent": 2.2824538,
+      "52WeekChange": 0.36528087
     },
     "valuation": {
-      "marketCap": 89679945728,
-      "enterpriseValue": 121465495552,
-      "trailingPE": 11.868195,
-      "forwardPE": 10.765516,
-      "priceToBook": 1.9555262,
-      "priceToSalesTrailing12Months": 3.501755,
+      "marketCap": 93108748288,
+      "enterpriseValue": 124942827520,
+      "trailingPE": 12.326648,
+      "forwardPE": 11.202512,
+      "priceToBook": 2.0310657,
+      "priceToSalesTrailing12Months": 3.6356401,
       "trailingEps": 3.49,
-      "forwardEps": 3.84747,
+      "forwardEps": 3.84021,
       "bookValue": 21.181,
-      "pegRatio": null
+      "pegRatio": 1.48
     },
     "profitability": {
       "profitMargins": 0.30316,
@@ -168,7 +168,7 @@
     },
     "dividend": {
       "dividendRate": 2.45,
-      "dividendYield": 5.92,
+      "dividendYield": 5.7,
       "fiveYearAvgDividendYield": 7.57,
       "payoutRatio": 0.6882,
       "exDividendDate": 1783555200,
@@ -176,18 +176,18 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 2.07692,
+      "recommendationMean": 1.75,
       "numberOfAnalystOpinions": 12,
       "targetHighPrice": 5200.0,
-      "targetLowPrice": 3050.0,
-      "targetMeanPrice": 4620.833,
+      "targetLowPrice": 3600.0,
+      "targetMeanPrice": 4775.0,
       "targetMedianPrice": 4900.0
     },
     "ownership": {
-      "sharesOutstanding": 2164971240,
-      "floatShares": 1980407121,
-      "heldPercentInsiders": 0.06566,
-      "heldPercentInstitutions": 0.55959,
+      "sharesOutstanding": 2164313216,
+      "floatShares": 1980254987,
+      "heldPercentInsiders": 0.06568,
+      "heldPercentInstitutions": 0.55979997,
       "lastSplitFactor": null,
       "lastSplitDate": null,
       "beta": 0.124

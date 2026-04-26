@@ -1,8 +1,8 @@
 {
   "ticker": "ASII.JK",
   "market": "ID",
-  "scraped_at": "2026-04-20 05:45:27.215361",
-  "updated_at": "2026-04-20T05:45:27.215371",
+  "scraped_at": "2026-04-26 19:05:00.486868",
+  "updated_at": "2026-04-26T19:05:00.486877",
   "info": {
     "identity": {
       "longName": "PT Astra International Tbk",
@@ -99,31 +99,31 @@
       ]
     },
     "price": {
-      "currentPrice": 6375.0,
-      "previousClose": 6200.0,
-      "open": 6275.0,
+      "currentPrice": 6325.0,
+      "previousClose": 6325.0,
+      "open": 6400.0,
       "dayHigh": 6475.0,
-      "dayLow": 6250.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "dayLow": 6275.0,
+      "bid": 6325.0,
+      "ask": 6350.0,
       "fiftyTwoWeekHigh": 7475.0,
       "fiftyTwoWeekLow": 4400.0,
-      "fiftyDayAverage": 6278.5,
-      "twoHundredDayAverage": 6059.8,
-      "volume": 25291100,
-      "averageVolume": 54482214,
-      "averageVolume10days": 30912330,
-      "regularMarketChangePercent": 2.8225806,
-      "52WeekChange": 0.3308977
+      "fiftyDayAverage": 6242.5,
+      "twoHundredDayAverage": 6102.175,
+      "volume": 27751700,
+      "averageVolume": 48717798,
+      "averageVolume10days": 32458040,
+      "regularMarketChangePercent": 0.0,
+      "52WeekChange": 0.29345608
     },
     "valuation": {
-      "marketCap": 256362453925888,
-      "enterpriseValue": 374583425236992,
-      "trailingPE": 7.8678446,
-      "forwardPE": 8.302295,
-      "priceToBook": 1.1199464,
-      "priceToSalesTrailing12Months": 0.7927297,
-      "trailingEps": 810.26,
+      "marketCap": 254351754919936,
+      "enterpriseValue": 372572743008256,
+      "trailingPE": 7.8064256,
+      "forwardPE": 8.237179,
+      "priceToBook": 1.1111625,
+      "priceToSalesTrailing12Months": 0.7865122,
+      "trailingEps": 810.23,
       "forwardEps": 767.86,
       "bookValue": 5692.237,
       "pegRatio": 0.77
@@ -145,26 +145,26 @@
     },
     "dividend": {
       "dividendRate": 406.0,
-      "dividendYield": 6.37,
+      "dividendYield": 6.42,
       "fiveYearAvgDividendYield": 7.02,
       "payoutRatio": 0.50119996,
-      "exDividendDate": 1760400000,
-      "lastDividendValue": 98.0
+      "exDividendDate": 1777939200,
+      "lastDividendValue": 390.0
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.68182,
-      "numberOfAnalystOpinions": 20,
+      "recommendationMean": 1.66667,
+      "numberOfAnalystOpinions": 19,
       "targetHighPrice": 8200.0,
       "targetLowPrice": 5400.0,
-      "targetMeanPrice": 7047.75,
-      "targetMedianPrice": 7150.0
+      "targetMeanPrice": 7084.4736,
+      "targetMedianPrice": 7200.0
     },
     "ownership": {
       "sharesOutstanding": 40213715340,
       "floatShares": 17954217488,
       "heldPercentInsiders": 0.57727003,
-      "heldPercentInstitutions": 0.1783,
+      "heldPercentInstitutions": 0.18250999,
       "lastSplitFactor": "10:1",
       "lastSplitDate": 1338854400,
       "beta": 0.127

@@ -1,8 +1,8 @@
 {
   "ticker": "TLKM.JK",
   "market": "ID",
-  "scraped_at": "2026-04-20 05:45:25.146206",
-  "updated_at": "2026-04-20T05:45:25.146217",
+  "scraped_at": "2026-04-26 19:04:59.337707",
+  "updated_at": "2026-04-26T19:04:59.337714",
   "info": {
     "identity": {
       "longName": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
@@ -99,34 +99,34 @@
       ]
     },
     "price": {
-      "currentPrice": 3100.0,
-      "previousClose": 3120.0,
-      "open": 3120.0,
-      "dayHigh": 3150.0,
-      "dayLow": 3080.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "currentPrice": 2810.0,
+      "previousClose": 2880.0,
+      "open": 2880.0,
+      "dayHigh": 2940.0,
+      "dayLow": 2750.0,
+      "bid": 2800.0,
+      "ask": 2810.0,
       "fiftyTwoWeekHigh": 3990.0,
-      "fiftyTwoWeekLow": 2510.0,
-      "fiftyDayAverage": 3242.8,
-      "twoHundredDayAverage": 3265.5,
-      "volume": 96349500,
-      "averageVolume": 132195428,
-      "averageVolume10days": 70713170,
-      "regularMarketChangePercent": -0.64102566,
-      "52WeekChange": 0.20622563
+      "fiftyTwoWeekLow": 2530.0,
+      "fiftyDayAverage": 3194.4,
+      "twoHundredDayAverage": 3272.8,
+      "volume": 254588000,
+      "averageVolume": 135981333,
+      "averageVolume10days": 116852380,
+      "regularMarketChangePercent": -2.4305556,
+      "52WeekChange": 0.09765625
     },
     "valuation": {
-      "marketCap": 307092879572992,
-      "enterpriseValue": 369584452403200,
-      "trailingPE": 14.144272,
-      "forwardPE": 11.872392,
-      "priceToBook": 2.239242,
-      "priceToSalesTrailing12Months": 2.083893,
-      "trailingEps": 219.17,
+      "marketCap": 278364833185792,
+      "enterpriseValue": 340856926109696,
+      "trailingPE": 12.820514,
+      "forwardPE": 10.761748,
+      "priceToBook": 2.0297647,
+      "priceToSalesTrailing12Months": 1.8889482,
+      "trailingEps": 219.18,
       "forwardEps": 261.11,
       "bookValue": 1384.397,
-      "pegRatio": 21.78
+      "pegRatio": 19.74
     },
     "profitability": {
       "profitMargins": 0.14765,
@@ -145,7 +145,7 @@
     },
     "dividend": {
       "dividendRate": 212.47,
-      "dividendYield": 6.85,
+      "dividendYield": 7.56,
       "fiveYearAvgDividendYield": 5.09,
       "payoutRatio": 0.96900004,
       "exDividendDate": 1749600000,
@@ -164,7 +164,7 @@
       "sharesOutstanding": 99062216599,
       "floatShares": 47372696337,
       "heldPercentInsiders": 0.55111,
-      "heldPercentInstitutions": 0.28138,
+      "heldPercentInstitutions": 0.28081,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1377648000,
       "beta": 0.154

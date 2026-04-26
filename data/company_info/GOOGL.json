@@ -1,8 +1,8 @@
 {
   "ticker": "GOOGL",
   "market": "US",
-  "scraped_at": "2026-04-20 05:45:08.190283",
-  "updated_at": "2026-04-20T05:45:08.190292",
+  "scraped_at": "2026-04-26 19:04:45.778126",
+  "updated_at": "2026-04-26T19:04:45.778137",
   "info": {
     "identity": {
       "longName": "Alphabet Inc.",
@@ -87,9 +87,9 @@
         {
           "maxAge": 1,
           "name": "Mr. Philipp  Schindler",
-          "age": 53,
+          "age": 54,
           "title": "Senior Vice President & Chief Business Officer of Google",
-          "yearBorn": 1972,
+          "yearBorn": 1971,
           "fiscalYear": 2024,
           "totalPay": 3051699,
           "exercisedValue": 0,
@@ -126,34 +126,34 @@
       ]
     },
     "price": {
-      "currentPrice": 341.68,
-      "previousClose": 336.02,
-      "open": 337.73,
-      "dayHigh": 342.32,
-      "dayLow": 336.24,
-      "bid": 320.66,
-      "ask": 341.74,
+      "currentPrice": 344.4,
+      "previousClose": 338.89,
+      "open": 338.725,
+      "dayHigh": 345.27,
+      "dayLow": 335.39,
+      "bid": 321.77,
+      "ask": 355.88,
       "fiftyTwoWeekHigh": 349.0,
-      "fiftyTwoWeekLow": 146.1,
-      "fiftyDayAverage": 307.8722,
-      "twoHundredDayAverage": 272.5199,
-      "volume": 25487532,
-      "averageVolume": 32964050,
-      "averageVolume10days": 23415690,
-      "regularMarketChangePercent": 1.68442,
-      "52WeekChange": 1.3138077
+      "fiftyTwoWeekLow": 147.84,
+      "fiftyDayAverage": 309.5592,
+      "twoHundredDayAverage": 276.5518,
+      "volume": 26351181,
+      "averageVolume": 32270354,
+      "averageVolume10days": 22488130,
+      "regularMarketChangePercent": 1.62589,
+      "52WeekChange": 1.1443248
     },
     "valuation": {
-      "marketCap": 4133303091200,
-      "enterpriseValue": 4073455878144,
-      "trailingPE": 31.637035,
-      "forwardPE": 25.396692,
-      "priceToBook": 9.946147,
-      "priceToSalesTrailing12Months": 10.26051,
-      "trailingEps": 10.8,
-      "forwardEps": 13.45372,
+      "marketCap": 4166206881792,
+      "enterpriseValue": 4106359930880,
+      "trailingPE": 31.859388,
+      "forwardPE": 25.513605,
+      "priceToBook": 10.025325,
+      "priceToSalesTrailing12Months": 10.342191,
+      "trailingEps": 10.81,
+      "forwardEps": 13.49868,
       "bookValue": 34.353,
-      "pegRatio": 2.34
+      "pegRatio": 2.36
     },
     "profitability": {
       "profitMargins": 0.32810003,
@@ -172,7 +172,7 @@
     },
     "dividend": {
       "dividendRate": 0.84,
-      "dividendYield": 0.25,
+      "dividendYield": 0.24,
       "fiveYearAvgDividendYield": null,
       "payoutRatio": 0.076799996,
       "exDividendDate": 1773014400,
@@ -180,18 +180,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.37313,
-      "numberOfAnalystOpinions": 56,
+      "recommendationMean": 1.38806,
+      "numberOfAnalystOpinions": 55,
       "targetHighPrice": 443.0,
       "targetLowPrice": 185.0,
-      "targetMeanPrice": 376.50394,
-      "targetMedianPrice": 386.0
+      "targetMeanPrice": 377.29492,
+      "targetMedianPrice": 385.0
     },
     "ownership": {
       "sharesOutstanding": 5822000000,
       "floatShares": 10833468350,
       "heldPercentInsiders": 0.00575,
-      "heldPercentInstitutions": 0.80924004,
+      "heldPercentInstitutions": 0.80660003,
       "lastSplitFactor": "20:1",
       "lastSplitDate": 1658102400,
       "beta": 1.128

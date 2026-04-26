@@ -1,8 +1,8 @@
 {
   "ticker": "8306.T",
   "market": "JP",
-  "scraped_at": "2026-04-20 05:45:38.989679",
-  "updated_at": "2026-04-20T05:45:38.989690",
+  "scraped_at": "2026-04-26 19:05:09.173666",
+  "updated_at": "2026-04-26T19:05:09.173678",
   "info": {
     "identity": {
       "longName": "Mitsubishi UFJ Financial Group, Inc.",
@@ -108,7 +108,7 @@
         },
         {
           "maxAge": 1,
-          "name": "Ms. Duangdao  Wongpanitkrit C.P.A.",
+          "name": "Ms. Duangdao  Wongpanitkrit CPA",
           "age": 56,
           "title": "Chief Finance & Strategy Officer",
           "yearBorn": 1969,
@@ -129,34 +129,34 @@
       ]
     },
     "price": {
-      "currentPrice": 2870.0,
-      "previousClose": 2946.5,
-      "open": 2920.0,
-      "dayHigh": 2926.0,
-      "dayLow": 2847.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "currentPrice": 2755.5,
+      "previousClose": 2752.0,
+      "open": 2782.5,
+      "dayHigh": 2783.0,
+      "dayLow": 2740.0,
+      "bid": 2755.5,
+      "ask": 2756.0,
       "fiftyTwoWeekHigh": 3087.0,
-      "fiftyTwoWeekLow": 1630.5,
-      "fiftyDayAverage": 2809.77,
-      "twoHundredDayAverage": 2466.5674,
-      "volume": 40793100,
-      "averageVolume": 44767973,
-      "averageVolume10days": 38019560,
-      "regularMarketChangePercent": -2.5963006,
-      "52WeekChange": 0.73623717
+      "fiftyTwoWeekLow": 1722.5,
+      "fiftyDayAverage": 2794.38,
+      "twoHundredDayAverage": 2487.1,
+      "volume": 22067000,
+      "averageVolume": 43475780,
+      "averageVolume10days": 35106710,
+      "regularMarketChangePercent": 0.12718023,
+      "52WeekChange": 0.5550226
     },
     "valuation": {
-      "marketCap": 32395403198464,
-      "enterpriseValue": -189138747392,
-      "trailingPE": 17.035673,
-      "forwardPE": 18.921415,
-      "priceToBook": 1.5227734,
-      "priceToSalesTrailing12Months": 5.539437,
-      "trailingEps": 168.47,
+      "marketCap": 31102974558208,
+      "enterpriseValue": -1486996111360,
+      "trailingPE": 16.366714,
+      "forwardPE": 18.166536,
+      "priceToBook": 1.4620217,
+      "priceToSalesTrailing12Months": 5.3184385,
+      "trailingEps": 168.36,
       "forwardEps": 151.68,
       "bookValue": 1884.719,
-      "pegRatio": 1.35
+      "pegRatio": 1.29
     },
     "profitability": {
       "profitMargins": 0.22768,
@@ -175,7 +175,7 @@
     },
     "dividend": {
       "dividendRate": 78.0,
-      "dividendYield": 2.72,
+      "dividendYield": 2.83,
       "fiveYearAvgDividendYield": 3.28,
       "payoutRatio": 0.4395,
       "exDividendDate": 1774828800,
@@ -187,14 +187,14 @@
       "numberOfAnalystOpinions": 12,
       "targetHighPrice": 3760.0,
       "targetLowPrice": 2120.0,
-      "targetMeanPrice": 3060.0,
+      "targetMeanPrice": 3068.3333,
       "targetMedianPrice": 3320.0
     },
     "ownership": {
       "sharesOutstanding": 11287597363,
-      "floatShares": 11229809906,
+      "floatShares": 11229696556,
       "heldPercentInsiders": 0.03566,
-      "heldPercentInstitutions": 0.38479,
+      "heldPercentInstitutions": 0.38529998,
       "lastSplitFactor": "1000:1",
       "lastSplitDate": 1191196800,
       "beta": 0.295

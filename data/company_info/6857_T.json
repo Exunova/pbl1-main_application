@@ -1,8 +1,8 @@
 {
   "ticker": "6857.T",
   "market": "JP",
-  "scraped_at": "2026-04-20 05:45:49.746116",
-  "updated_at": "2026-04-20T05:45:49.746127",
+  "scraped_at": "2026-04-26 19:05:18.202643",
+  "updated_at": "2026-04-26T19:05:18.202660",
   "info": {
     "identity": {
       "longName": "Advantest Corporation",
@@ -118,34 +118,34 @@
       ]
     },
     "price": {
-      "currentPrice": 27870.0,
-      "previousClose": 28625.0,
-      "open": 28900.0,
-      "dayHigh": 29050.0,
-      "dayLow": 27870.0,
-      "bid": 0.0,
-      "ask": 0.0,
-      "fiftyTwoWeekHigh": 29345.0,
-      "fiftyTwoWeekLow": 5344.0,
-      "fiftyDayAverage": 24897.6,
-      "twoHundredDayAverage": 18648.2,
-      "volume": 9985300,
-      "averageVolume": 10356355,
-      "averageVolume10days": 9884610,
-      "regularMarketChangePercent": -2.6375544,
-      "52WeekChange": 4.1269317
+      "currentPrice": 29440.0,
+      "previousClose": 27900.0,
+      "open": 28315.0,
+      "dayHigh": 29460.0,
+      "dayLow": 27920.0,
+      "bid": 29435.0,
+      "ask": 29445.0,
+      "fiftyTwoWeekHigh": 29460.0,
+      "fiftyTwoWeekLow": 5641.0,
+      "fiftyDayAverage": 25102.7,
+      "twoHundredDayAverage": 19081.1,
+      "volume": 15405700,
+      "averageVolume": 10421601,
+      "averageVolume10days": 10081370,
+      "regularMarketChangePercent": 5.519713,
+      "52WeekChange": 4.155867
     },
     "valuation": {
-      "marketCap": 20234020847616,
-      "enterpriseValue": 20001515896832,
-      "trailingPE": 78.12412,
-      "forwardPE": 117.23384,
-      "priceToBook": 30.015831,
-      "priceToSalesTrailing12Months": 19.58979,
-      "trailingEps": 356.74,
+      "marketCap": 21359184838656,
+      "enterpriseValue": 21141674524672,
+      "trailingPE": 82.64555,
+      "forwardPE": 123.83797,
+      "priceToBook": 31.706713,
+      "priceToSalesTrailing12Months": 20.67913,
+      "trailingEps": 356.22,
       "forwardEps": 237.73,
       "bookValue": 928.51,
-      "pegRatio": 1.29
+      "pegRatio": 1.36
     },
     "profitability": {
       "profitMargins": 0.27931,
@@ -164,7 +164,7 @@
     },
     "dividend": {
       "dividendRate": 49.0,
-      "dividendYield": 0.18,
+      "dividendYield": 0.17,
       "fiveYearAvgDividendYield": 0.85,
       "payoutRatio": 0.1377,
       "exDividendDate": 1759104000,
@@ -183,7 +183,7 @@
       "sharesOutstanding": 725515776,
       "floatShares": 716992899,
       "heldPercentInsiders": 0.00279,
-      "heldPercentInstitutions": 0.65245,
+      "heldPercentInstitutions": 0.64885,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1695859200,
       "beta": 1.054

@@ -1,147 +1,191 @@
 {
-  "scraped_at": "2026-04-20 05:56:14.761810",
+  "scraped_at": "2026-04-26 19:04:43.206308",
   "markets": {
     "US": {
       "index": "^GSPC",
-      "index_15m_count": 780,
+      "index_15m_count": 910,
+      "new_bars": 156,
       "stocks": {
         "NVDA": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "AAPL": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "GOOGL": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "MSFT": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "AMZN": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "META": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "TSLA": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "BRK-B": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "LLY": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         },
         "JPM": {
-          "ohlcv_15m_count": 780
+          "ohlcv_15m_count": 910,
+          "new_bars": 156
         }
       }
     },
     "ID": {
       "index": "^JKLQ45",
-      "index_15m_count": 666,
+      "index_15m_count": 766,
+      "new_bars": 119,
       "stocks": {
         "BBCA.JK": {
-          "ohlcv_15m_count": 666
+          "ohlcv_15m_count": 765,
+          "new_bars": 118
         },
         "BBRI.JK": {
-          "ohlcv_15m_count": 666
+          "ohlcv_15m_count": 765,
+          "new_bars": 118
         },
         "BMRI.JK": {
-          "ohlcv_15m_count": 667
+          "ohlcv_15m_count": 766,
+          "new_bars": 118
         },
         "TLKM.JK": {
-          "ohlcv_15m_count": 666
+          "ohlcv_15m_count": 765,
+          "new_bars": 118
         },
         "ASII.JK": {
-          "ohlcv_15m_count": 666
+          "ohlcv_15m_count": 765,
+          "new_bars": 118
         },
         "BBNI.JK": {
-          "ohlcv_15m_count": 667
+          "ohlcv_15m_count": 766,
+          "new_bars": 118
         },
         "PGAS.JK": {
-          "ohlcv_15m_count": 666
+          "ohlcv_15m_count": 765,
+          "new_bars": 118
         },
         "ADRO.JK": {
-          "ohlcv_15m_count": 666
+          "ohlcv_15m_count": 765,
+          "new_bars": 118
         },
         "UNVR.JK": {
-          "ohlcv_15m_count": 666
+          "ohlcv_15m_count": 765,
+          "new_bars": 118
         },
         "KLBF.JK": {
-          "ohlcv_15m_count": 666
+          "ohlcv_15m_count": 765,
+          "new_bars": 118
         }
       }
     },
     "JP": {
       "index": "^N225",
-      "index_15m_count": 690,
+      "index_15m_count": 797,
+      "new_bars": 130,
       "stocks": {
         "7203.T": {
-          "ohlcv_15m_count": 690
+          "ohlcv_15m_count": 782,
+          "new_bars": 115
         },
         "8306.T": {
-          "ohlcv_15m_count": 690
+          "ohlcv_15m_count": 782,
+          "new_bars": 115
         },
         "6758.T": {
-          "ohlcv_15m_count": 690
+          "ohlcv_15m_count": 782,
+          "new_bars": 115
         },
         "9984.T": {
-          "ohlcv_15m_count": 689
+          "ohlcv_15m_count": 781,
+          "new_bars": 115
         },
         "6501.T": {
-          "ohlcv_15m_count": 690
+          "ohlcv_15m_count": 782,
+          "new_bars": 115
         },
         "8316.T": {
-          "ohlcv_15m_count": 690
+          "ohlcv_15m_count": 782,
+          "new_bars": 115
         },
         "9983.T": {
-          "ohlcv_15m_count": 690
+          "ohlcv_15m_count": 782,
+          "new_bars": 115
         },
         "6857.T": {
-          "ohlcv_15m_count": 689
+          "ohlcv_15m_count": 781,
+          "new_bars": 115
         },
         "8035.T": {
-          "ohlcv_15m_count": 690
+          "ohlcv_15m_count": 782,
+          "new_bars": 115
         },
         "8058.T": {
-          "ohlcv_15m_count": 690
+          "ohlcv_15m_count": 782,
+          "new_bars": 115
         }
       }
     },
     "GB": {
       "index": "^FTSE",
-      "index_15m_count": 1020,
+      "index_15m_count": 1181,
+      "new_bars": 195,
       "stocks": {
         "AZN.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "HSBA.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "SHEL.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "BATS.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "GSK.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "BP.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "BARC.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "LLOY.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "NG.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         },
         "REL.L": {
-          "ohlcv_15m_count": 1020
+          "ohlcv_15m_count": 1181,
+          "new_bars": 195
         }
       }
     }

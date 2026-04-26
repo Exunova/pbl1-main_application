@@ -1,8 +1,8 @@
 {
   "ticker": "HSBA.L",
   "market": "GB",
-  "scraped_at": "2026-04-20 05:45:56.287344",
-  "updated_at": "2026-04-20T05:45:56.287354",
+  "scraped_at": "2026-04-26 19:05:24.699309",
+  "updated_at": "2026-04-26T19:05:24.699328",
   "info": {
     "identity": {
       "longName": "HSBC Holdings plc",
@@ -123,34 +123,34 @@
       ]
     },
     "price": {
-      "currentPrice": 1365.2,
-      "previousClose": 1338.2,
-      "open": 1339.8,
-      "dayHigh": 1365.4,
-      "dayLow": 1300.0,
-      "bid": 1361.4,
-      "ask": 1361.6,
+      "currentPrice": 1321.0,
+      "previousClose": 1338.0,
+      "open": 1327.6,
+      "dayHigh": 1339.0,
+      "dayLow": 1315.2,
+      "bid": 1325.0,
+      "ask": 1325.2,
       "fiftyTwoWeekHigh": 1410.6,
-      "fiftyTwoWeekLow": 788.0,
-      "fiftyDayAverage": 1271.808,
-      "twoHundredDayAverage": 1112.107,
-      "volume": 22461728,
-      "averageVolume": 26306298,
-      "averageVolume10days": 22438923,
-      "regularMarketChangePercent": 2.0176356,
-      "52WeekChange": 0.7302915
+      "fiftyTwoWeekLow": 821.5,
+      "fiftyDayAverage": 1275.868,
+      "twoHundredDayAverage": 1122.6775,
+      "volume": 18198314,
+      "averageVolume": 26049611,
+      "averageVolume10days": 19039360,
+      "regularMarketChangePercent": -1.2705531,
+      "52WeekChange": 0.5845028
     },
     "valuation": {
-      "marketCap": 234107109376,
-      "enterpriseValue": -219776286720,
-      "trailingPE": 15.339326,
-      "forwardPE": 10.340606,
-      "priceToBook": 1.7894719,
-      "priceToSalesTrailing12Months": 3.7028203,
+      "marketCap": 226527608832,
+      "enterpriseValue": -227352117248,
+      "trailingPE": 14.842697,
+      "forwardPE": 9.869377,
+      "priceToBook": 1.7259103,
+      "priceToSalesTrailing12Months": 3.582937,
       "trailingEps": 0.89,
-      "forwardEps": 1.3202322,
-      "bookValue": 7.6290665,
-      "pegRatio": 1.22
+      "forwardEps": 1.3384837,
+      "bookValue": 7.653932,
+      "pegRatio": 1.18
     },
     "profitability": {
       "profitMargins": 0.35248002,
@@ -169,26 +169,26 @@
     },
     "dividend": {
       "dividendRate": 0.56,
-      "dividendYield": 4.1,
+      "dividendYield": 4.2,
       "fiveYearAvgDividendYield": 4.97,
       "payoutRatio": 0.5345,
       "exDividendDate": 1773273600,
-      "lastDividendValue": 0.45
+      "lastDividendValue": 0.333016
     },
     "analyst": {
       "recommendationKey": "buy",
       "recommendationMean": 2.41176,
       "numberOfAnalystOpinions": 17,
-      "targetHighPrice": 1642.1775,
-      "targetLowPrice": 781.38184,
-      "targetMeanPrice": 1325.6707,
-      "targetMedianPrice": 1369.0625
+      "targetHighPrice": 1637.0768,
+      "targetLowPrice": 778.9549,
+      "targetMeanPrice": 1351.039,
+      "targetMedianPrice": 1419.1873
     },
     "ownership": {
       "sharesOutstanding": 17148192022,
-      "floatShares": 16935578090,
+      "floatShares": 16946547616,
       "heldPercentInsiders": 0.0021,
-      "heldPercentInstitutions": 0.50937,
+      "heldPercentInstitutions": 0.50771,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 931132800,
       "beta": 0.555

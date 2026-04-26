@@ -1,8 +1,8 @@
 {
   "ticker": "LLY",
   "market": "US",
-  "scraped_at": "2026-04-20 05:45:17.520917",
-  "updated_at": "2026-04-20T05:45:17.520927",
+  "scraped_at": "2026-04-26 19:04:53.282343",
+  "updated_at": "2026-04-26T19:04:53.282352",
   "info": {
     "identity": {
       "longName": "Eli Lilly and Company",
@@ -66,7 +66,7 @@
           "maxAge": 1,
           "name": "Mr. Jacob S. Van Naarden",
           "age": 40,
-          "title": "Executive VP & President of Lilly Oncology",
+          "title": "Executive VP, President of Lilly Oncology & Head of Corporate Business Development",
           "yearBorn": 1985,
           "fiscalYear": 2025,
           "totalPay": 2998730,
@@ -103,9 +103,9 @@
         {
           "maxAge": 1,
           "name": "Mr. Eric  Dozier",
-          "age": 57,
+          "age": 58,
           "title": "Executive VP & Chief People Officer",
-          "yearBorn": 1968,
+          "yearBorn": 1967,
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -123,34 +123,34 @@
       ]
     },
     "price": {
-      "currentPrice": 927.03,
-      "previousClose": 903.99,
-      "open": 917.8,
-      "dayHigh": 929.99,
-      "dayLow": 918.49,
-      "bid": 925.5,
-      "ask": 926.7,
+      "currentPrice": 883.96,
+      "previousClose": 917.65,
+      "open": 900.01,
+      "dayHigh": 900.42,
+      "dayLow": 871.731,
+      "bid": 883.93,
+      "ask": 883.97,
       "fiftyTwoWeekHigh": 1133.95,
       "fiftyTwoWeekLow": 623.78,
-      "fiftyDayAverage": 973.3478,
-      "twoHundredDayAverage": 905.36163,
-      "volume": 3232413,
-      "averageVolume": 3130643,
-      "averageVolume10days": 2551230,
-      "regularMarketChangePercent": 2.54871,
-      "52WeekChange": 0.13326085
+      "fiftyDayAverage": 960.99,
+      "twoHundredDayAverage": 908.6047,
+      "volume": 4453554,
+      "averageVolume": 3158951,
+      "averageVolume10days": 3000720,
+      "regularMarketChangePercent": -3.67133,
+      "52WeekChange": 0.00760293
     },
     "valuation": {
-      "marketCap": 829709287424,
-      "enterpriseValue": 864823607296,
-      "trailingPE": 40.323185,
-      "forwardPE": 22.005165,
-      "priceToBook": 31.260496,
-      "priceToSalesTrailing12Months": 12.729702,
-      "trailingEps": 22.99,
-      "forwardEps": 42.12784,
+      "marketCap": 789692284928,
+      "enterpriseValue": 826346700800,
+      "trailingPE": 38.466496,
+      "forwardPE": 20.982761,
+      "priceToBook": 29.808126,
+      "priceToSalesTrailing12Months": 12.115747,
+      "trailingEps": 22.98,
+      "forwardEps": 42.12792,
       "bookValue": 29.655,
-      "pegRatio": 1.0
+      "pegRatio": 1.3
     },
     "profitability": {
       "profitMargins": 0.31667,
@@ -169,7 +169,7 @@
     },
     "dividend": {
       "dividendRate": 6.23,
-      "dividendYield": 0.67,
+      "dividendYield": 0.7,
       "fiveYearAvgDividendYield": 0.92,
       "payoutRatio": 0.26139998,
       "exDividendDate": 1770940800,
@@ -181,14 +181,14 @@
       "numberOfAnalystOpinions": 29,
       "targetHighPrice": 1500.0,
       "targetLowPrice": 850.0,
-      "targetMeanPrice": 1209.862,
+      "targetMeanPrice": 1210.5518,
       "targetMedianPrice": 1260.0
     },
     "ownership": {
       "sharesOutstanding": 893357420,
-      "floatShares": 890981089,
+      "floatShares": 890963222,
       "heldPercentInsiders": 0.0017,
-      "heldPercentInstitutions": 0.84638,
+      "heldPercentInstitutions": 0.84685,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 876960000,
       "beta": 0.504

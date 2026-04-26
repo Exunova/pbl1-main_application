@@ -1,8 +1,8 @@
 {
   "ticker": "META",
   "market": "US",
-  "scraped_at": "2026-04-20 05:45:13.176828",
-  "updated_at": "2026-04-20T05:45:13.176838",
+  "scraped_at": "2026-04-26 19:04:49.427236",
+  "updated_at": "2026-04-26T19:04:49.427246",
   "info": {
     "identity": {
       "longName": "Meta Platforms, Inc.",
@@ -126,34 +126,34 @@
       ]
     },
     "price": {
-      "currentPrice": 688.55,
-      "previousClose": 676.87,
-      "open": 678.6,
-      "dayHigh": 691.5,
-      "dayLow": 675.13,
-      "bid": 687.94,
-      "ask": 688.91,
+      "currentPrice": 675.03,
+      "previousClose": 659.15,
+      "open": 660.32,
+      "dayHigh": 680.67,
+      "dayLow": 653.8401,
+      "bid": 674.6,
+      "ask": 675.98,
       "fiftyTwoWeekHigh": 796.25,
-      "fiftyTwoWeekLow": 479.8,
-      "fiftyDayAverage": 629.8502,
-      "twoHundredDayAverage": 681.2557,
-      "volume": 15272657,
-      "averageVolume": 16276772,
-      "averageVolume10days": 15154130,
-      "regularMarketChangePercent": 1.72559,
-      "52WeekChange": 0.42068672
+      "fiftyTwoWeekLow": 520.26,
+      "fiftyDayAverage": 629.8572,
+      "twoHundredDayAverage": 679.97705,
+      "volume": 13292272,
+      "averageVolume": 15716503,
+      "averageVolume10days": 12354790,
+      "regularMarketChangePercent": 2.40916,
+      "52WeekChange": 0.22790778
     },
     "valuation": {
-      "marketCap": 1747831357440,
-      "enterpriseValue": 1745214373888,
-      "trailingPE": 29.324957,
-      "forwardPE": 19.332428,
-      "priceToBook": 8.018797,
-      "priceToSalesTrailing12Months": 8.697149,
-      "trailingEps": 23.48,
-      "forwardEps": 35.61632,
+      "marketCap": 1713511989248,
+      "enterpriseValue": 1711014805504,
+      "trailingPE": 28.736912,
+      "forwardPE": 18.719633,
+      "priceToBook": 7.8613443,
+      "priceToSalesTrailing12Months": 8.526378,
+      "trailingEps": 23.49,
+      "forwardEps": 36.06,
       "bookValue": 85.867,
-      "pegRatio": 1.13
+      "pegRatio": 1.1
     },
     "profitability": {
       "profitMargins": 0.30084,
@@ -172,7 +172,7 @@
     },
     "dividend": {
       "dividendRate": 2.1,
-      "dividendYield": 0.3,
+      "dividendYield": 0.31,
       "fiveYearAvgDividendYield": null,
       "payoutRatio": 0.08939999,
       "exDividendDate": 1773619200,
@@ -184,14 +184,14 @@
       "numberOfAnalystOpinions": 60,
       "targetHighPrice": 1015.0,
       "targetLowPrice": 614.0,
-      "targetMeanPrice": 855.7627,
-      "targetMedianPrice": 852.5
+      "targetMeanPrice": 855.1127,
+      "targetMedianPrice": 850.0
     },
     "ownership": {
       "sharesOutstanding": 2196045588,
-      "floatShares": 2183866414,
+      "floatShares": 2185105896,
       "heldPercentInsiders": 0.00121,
-      "heldPercentInstitutions": 0.78485,
+      "heldPercentInstitutions": 0.78342,
       "lastSplitFactor": null,
       "lastSplitDate": null,
       "beta": 1.309

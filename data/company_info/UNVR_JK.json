@@ -1,8 +1,8 @@
 {
   "ticker": "UNVR.JK",
   "market": "ID",
-  "scraped_at": "2026-04-20 05:45:33.364925",
-  "updated_at": "2026-04-20T05:45:33.364935",
+  "scraped_at": "2026-04-26 19:05:05.710732",
+  "updated_at": "2026-04-26T19:05:05.710746",
   "info": {
     "identity": {
       "longName": "PT Unilever Indonesia Tbk",
@@ -95,34 +95,34 @@
       ]
     },
     "price": {
-      "currentPrice": 1865.0,
-      "previousClose": 1860.0,
-      "open": 1860.0,
-      "dayHigh": 1895.0,
-      "dayLow": 1860.0,
-      "bid": 0.0,
-      "ask": 0.0,
+      "currentPrice": 1575.0,
+      "previousClose": 1675.0,
+      "open": 1675.0,
+      "dayHigh": 1685.0,
+      "dayLow": 1565.0,
+      "bid": 1575.0,
+      "ask": 1580.0,
       "fiftyTwoWeekHigh": 2840.0,
       "fiftyTwoWeekLow": 1305.0,
-      "fiftyDayAverage": 2055.3,
-      "twoHundredDayAverage": 2102.9,
-      "volume": 9601000,
-      "averageVolume": 26480844,
-      "averageVolume10days": 9200740,
-      "regularMarketChangePercent": 0.26881722,
-      "52WeekChange": 0.38661706
+      "fiftyDayAverage": 1998.8,
+      "twoHundredDayAverage": 2107.325,
+      "volume": 41658200,
+      "averageVolume": 26827017,
+      "averageVolume10days": 18929200,
+      "regularMarketChangePercent": -5.970149,
+      "52WeekChange": -0.05405408
     },
     "valuation": {
-      "marketCap": 70834999787520,
-      "enterpriseValue": 65774165164032,
-      "trailingPE": 20.040834,
-      "forwardPE": 17.554594,
-      "priceToBook": 15.828694,
-      "priceToSalesTrailing12Months": 2.2175117,
-      "trailingEps": 93.06,
+      "marketCap": 59820442910720,
+      "enterpriseValue": 54759608287232,
+      "trailingPE": 16.94824,
+      "forwardPE": 14.824925,
+      "priceToBook": 13.367395,
+      "priceToSalesTrailing12Months": 1.8726976,
+      "trailingEps": 92.93,
       "forwardEps": 106.24,
       "bookValue": 117.824,
-      "pegRatio": 2.6
+      "pegRatio": 2.19
     },
     "profitability": {
       "profitMargins": 0.23921,
@@ -141,7 +141,7 @@
     },
     "dividend": {
       "dividendRate": 134.0,
-      "dividendYield": 7.18,
+      "dividendYield": 8.51,
       "fiveYearAvgDividendYield": 4.76,
       "payoutRatio": 1.4409,
       "exDividendDate": 1765756800,
@@ -153,14 +153,14 @@
       "numberOfAnalystOpinions": 17,
       "targetHighPrice": 3400.0,
       "targetLowPrice": 1500.0,
-      "targetMeanPrice": 2385.8823,
+      "targetMeanPrice": 2365.2942,
       "targetMedianPrice": 2480.0
     },
     "ownership": {
       "sharesOutstanding": 37981233300,
       "floatShares": 5557034244,
       "heldPercentInsiders": 0.86063004,
-      "heldPercentInstitutions": 0.03384,
+      "heldPercentInstitutions": 0.033940002,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1577923200,
       "beta": 0.366
