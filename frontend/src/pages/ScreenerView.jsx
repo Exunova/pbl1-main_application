@@ -63,53 +63,66 @@ function StockCard({ stock, onClick }) {
   const chartData = sparkline.length > 0 ? sparkline : fallbackSparkline
 
   return (
-    <div
-      onClick={() => onClick(stock)}
-      className="bg-card border border-white/5 p-4 rounded-xl hover:border-accent/40 cursor-pointer transition-all duration-200 hover:bg-white/3 active:scale-[0.98] group"
-    >
-      <div className="flex justify-between items-start mb-3 gap-2">
-        <div className="min-w-0 flex-1">
-          <h3 className="text-sm font-bold tracking-tight text-white/90 truncate group-hover:text-white transition-colors">
-            {stock.ticker}
-          </h3>
-          <p className="text-[10px] text-white/35 uppercase font-medium tracking-wider leading-none mt-1 truncate">
-            {stock.name}
-          </p>
-        </div>
-        <div className="text-right shrink-0">
-          <div className="text-sm font-mono font-bold text-white/90 leading-none">
-            {typeof displayPrice === 'number' ? displayPrice.toLocaleString(undefined, { maximumFractionDigits: 2 }) : displayPrice}
-          </div>
-          <div className={`text-[10px] font-bold mt-1.5 flex items-center justify-end gap-0.5 ${isUp ? 'text-[#22c55e]' : 'text-[#ef4444]'}`}>
-            {isUp ? <TrendingUp size={8} /> : <TrendingDown size={8} />}
-            {isUp ? '+' : ''}{displayChange?.toFixed ? displayChange.toFixed(2) : displayChange}%
-          </div>
-        </div>
+  <div
+    onClick={() => onClick(stock)}
+    className="bg-card border border-border p-4 rounded-xl hover:border-accent/40 cursor-pointer transition-all duration-200 hover:bg-border/30 active:scale-[0.98] group"
+  >
+    <div className="flex justify-between items-start mb-3 gap-2">
+      <div className="min-w-0 flex-1">
+        <h3 className="text-sm font-bold tracking-tight text-text truncate group-hover:text-accent transition-colors">
+          {stock.ticker}
+        </h3>
+        <p className="text-[10px] text-muted uppercase font-medium tracking-wider leading-none mt-1 truncate">
+          {stock.name}
+        </p>
       </div>
 
-      {/* Sparkline */}
-      <div className="h-10 w-full">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={chartData}>
-            <Line
-              type="monotone"
-              dataKey="v"
-              stroke={color}
-              strokeWidth={1.5}
-              dot={false}
-              isAnimationActive={false}
-            />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
+      <div className="text-right shrink-0">
+        <div className="text-sm font-mono font-bold text-text leading-none">
+          {typeof displayPrice === 'number'
+            ? displayPrice.toLocaleString(undefined, { maximumFractionDigits: 2 })
+            : displayPrice}
+        </div>
 
-      {/* Sector tag */}
-      <div className="mt-2 flex items-center justify-between">
-        <span className="text-[9px] text-white/25 uppercase tracking-widest truncate">{stock.sector}</span>
-        <span className="text-[9px] text-white/20 uppercase tracking-widest">{stock.industry?.slice(0, 8)}</span>
+        <div
+          className={`text-[10px] font-bold mt-1.5 flex items-center justify-end gap-0.5 ${
+            isUp ? 'text-success' : 'text-danger'
+          }`}
+        >
+          {isUp ? <TrendingUp size={8} /> : <TrendingDown size={8} />}
+          {isUp ? '+' : ''}
+          {displayChange?.toFixed ? displayChange.toFixed(2) : displayChange}%
+        </div>
       </div>
     </div>
-  )
+
+    {/* Sparkline */}
+    <div className="h-10 w-full">
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart data={chartData}>
+          <Line
+            type="monotone"
+            dataKey="v"
+            stroke={color}
+            strokeWidth={1.5}
+            dot={false}
+            isAnimationActive={false}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+
+    {/* Sector tag */}
+    <div className="mt-2 flex items-center justify-between">
+      <span className="text-[9px] text-muted uppercase tracking-widest truncate">
+        {stock.sector}
+      </span>
+      <span className="text-[9px] text-muted/70 uppercase tracking-widest">
+        {stock.industry?.slice(0, 8)}
+      </span>
+    </div>
+  </div>
+)
 }
 
 // ─── Main View ────────────────────────────────────────────────────────────────
@@ -125,104 +138,116 @@ export default function ScreenerView() {
   )
 
   return (
-    <div className="w-full h-full flex flex-col bg-background relative overflow-hidden">
+  <div className="w-full h-full flex flex-col bg-background relative overflow-hidden">
 
-      {/* ── Sidebar + Grid layout ── */}
-      <div className="flex-1 flex overflow-hidden">
+    {/* ── Sidebar + Grid layout ── */}
+    <div className="flex-1 flex overflow-hidden">
 
-        {/* ── Sidebar ── */}
-        <aside className="w-52 border-r border-white/5 flex flex-col p-5 shrink-0" style={{ background: 'rgba(20,23,32,0.5)' }}>
-          <div className="mb-6">
-            <h2 className="text-[10px] font-bold text-white/30 uppercase tracking-widest mb-3">
-              Stock Explorer
-            </h2>
-            <div className="flex flex-col gap-1">
-              {REGIONS.map(r => (
-                <button
-                  key={r}
-                  onClick={() => setRegion(r)}
-                  className={`text-left px-3 py-2 rounded-lg text-xs font-medium transition-all duration-200 ${
-                    region === r
-                      ? 'bg-accent/10 text-accent border border-accent/20'
-                      : 'text-white/40 hover:text-white/70 hover:bg-white/5 border border-transparent'
-                  }`}
-                >
-                  {r}
-                </button>
+      {/* ── Sidebar ── */}
+      <aside className="w-52 border-r border-border flex flex-col p-5 shrink-0 bg-surface/50">
+        <div className="mb-6">
+          <h2 className="text-[10px] font-bold text-muted uppercase tracking-widest mb-3">
+            Stock Explorer
+          </h2>
+
+          <div className="flex flex-col gap-1">
+            {REGIONS.map(r => (
+              <button
+                key={r}
+                onClick={() => setRegion(r)}
+                className={`text-left px-3 py-2 rounded-lg text-xs font-medium transition-all duration-200 ${
+                  region === r
+                    ? 'bg-accent/10 text-accent border border-accent/20'
+                    : 'text-muted hover:text-text hover:bg-border/30 border border-transparent'
+                }`}
+              >
+                {r}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-auto">
+          <div className="bg-card/50 border border-border p-3 rounded-xl">
+            <span className="text-[10px] font-bold text-muted uppercase tracking-widest block mb-2">
+              Market Status
+            </span>
+
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
+              <span className="text-xs font-bold text-text">LIVE</span>
+            </div>
+
+            <div className="mt-2 text-[10px] text-muted/70">
+              {stocks.length} stocks in {region}
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      {/* ── Main Content ── */}
+      <main className="flex-1 flex flex-col overflow-hidden">
+
+        {/* Header */}
+        <div className="flex items-center justify-between px-6 py-4 border-b border-border shrink-0">
+          <div>
+            <h1 className="text-xl font-bold tracking-tight text-text">
+              Market Screener
+            </h1>
+
+            <p className="text-xs text-muted mt-0.5">
+              Real-time analysis · {region}
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <div className="relative">
+              <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
+
+              <input
+                type="text"
+                placeholder="Search ticker or name…"
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                className="bg-card border border-border rounded-lg pl-8 pr-4 py-2 text-xs text-text placeholder:text-muted outline-none focus:border-accent/40 transition-all w-52"
+              />
+            </div>
+
+            <button className="p-2 border border-border rounded-lg bg-card hover:bg-border/30 text-muted hover:text-text transition-colors">
+              <Filter size={13} />
+            </button>
+          </div>
+        </div>
+
+        {/* Grid */}
+        <div className="flex-1 overflow-y-auto custom-scrollbar p-5">
+          {stocks.length === 0 ? (
+            <div className="flex flex-col items-center justify-center h-40 gap-2">
+              <Search size={28} className="text-muted/30" />
+              <span className="text-sm text-muted">No stocks found</span>
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+              {stocks.map(stock => (
+                <StockCard key={stock.ticker} stock={stock} onClick={setSelectedStock} />
               ))}
             </div>
-          </div>
-
-          <div className="mt-auto">
-            <div className="bg-card/50 border border-white/5 p-3 rounded-xl">
-              <span className="text-[10px] font-bold text-white/30 uppercase tracking-widest block mb-2">
-                Market Status
-              </span>
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-[#22c55e] animate-pulse" />
-                <span className="text-xs font-bold text-white/70">LIVE</span>
-              </div>
-              <div className="mt-2 text-[10px] text-white/25">
-                {stocks.length} stocks in {region}
-              </div>
-            </div>
-          </div>
-        </aside>
-
-        {/* ── Main Content ── */}
-        <main className="flex-1 flex flex-col overflow-hidden">
-          {/* Header */}
-          <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 shrink-0">
-            <div>
-              <h1 className="text-xl font-bold tracking-tight text-white/90">Market Screener</h1>
-              <p className="text-xs text-white/30 mt-0.5">
-                Real-time analysis · {region}
-              </p>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="relative">
-                <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-white/30" />
-                <input
-                  type="text"
-                  placeholder="Search ticker or name…"
-                  value={search}
-                  onChange={e => setSearch(e.target.value)}
-                  className="bg-card border border-white/8 rounded-lg pl-8 pr-4 py-2 text-xs text-white placeholder-white/25 outline-none focus:border-accent/40 transition-all w-52"
-                />
-              </div>
-              <button className="p-2 border border-white/8 rounded-lg bg-card hover:bg-white/5 text-white/30 hover:text-white/70 transition-colors">
-                <Filter size={13} />
-              </button>
-            </div>
-          </div>
-
-          {/* Grid */}
-          <div className="flex-1 overflow-y-auto custom-scrollbar p-5">
-            {stocks.length === 0 ? (
-              <div className="flex flex-col items-center justify-center h-40 gap-2">
-                <Search size={28} className="text-white/10" />
-                <span className="text-sm text-white/25">No stocks found</span>
-              </div>
-            ) : (
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
-                {stocks.map(stock => (
-                  <StockCard key={stock.ticker} stock={stock} onClick={setSelectedStock} />
-                ))}
-              </div>
-            )}
-          </div>
-        </main>
-      </div>
-
-      {/* ── Stock Detail Panel (full-screen overlay) ── */}
-      {selectedStock && (
-        <div className="absolute inset-0 z-[100]">
-          <StockDetailPanel
-            stock={selectedStock}
-            onClose={() => setSelectedStock(null)}
-          />
+          )}
         </div>
-      )}
+
+      </main>
     </div>
-  )
+
+    {/* ── Stock Detail Panel (full-screen overlay) ── */}
+    {selectedStock && (
+      <div className="absolute inset-0 z-[100]">
+        <StockDetailPanel
+          stock={selectedStock}
+          onClose={() => setSelectedStock(null)}
+        />
+      </div>
+    )}
+
+  </div>
+)
 }
