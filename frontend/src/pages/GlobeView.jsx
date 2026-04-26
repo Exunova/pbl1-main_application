@@ -66,7 +66,7 @@ const Candlestick = props => {
   const { x, y, width, height, payload } = props
   if (!payload) return null
   const isUp = payload.close >= payload.open
-  const color = isUp ? '#089981' : '#f23645'
+  const color = isUp ? 'var(--success)' : 'var(--danger)'
   const range = payload.high - payload.low
   const openY  = range === 0 ? y : y + height * ((payload.high - payload.open) / range)
   const closeY = range === 0 ? y : y + height * ((payload.high - payload.close) / range)
@@ -443,22 +443,22 @@ export default function GlobeView() {
         const el = document.createElement('div')
         const idx  = indexMapRef.current[ISO2_TO_ISO3[d.iso2]] || {}
         const sign = idx.change_pct >= 0 ? '+' : ''
-        const chgColor = idx.change_pct >= 0 ? '#089981' : '#f23645'
+        const chgColor = idx.change_pct >= 0 ? 'var(--success)' : 'var(--danger)'
         el.innerHTML = `
           <div style="position:absolute;left:0;top:0;pointer-events:none;">
-            <div style="position:absolute;left:-4px;top:-4px;width:8px;height:8px;border-radius:50%;background:#fb923c;box-shadow:0 0 10px #fb923c;animation:pulse 2s infinite;"></div>
-            <div style="position:absolute;left:0;top:-1px;width:130px;height:2px;background:#fb923c;"></div>
-            <div style="position:absolute;left:130px;top:-2.5px;width:5px;height:5px;border-radius:50%;background:#fb923c;"></div>
+            <div style="position:absolute;left:-4px;top:-4px;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent);animation:pulse 2s infinite;"></div>
+            <div style="position:absolute;left:0;top:-1px;width:130px;height:2px;background:var(--accent);"></div>
+            <div style="position:absolute;left:130px;top:-2.5px;width:5px;height:5px;border-radius:50%;background:var(--accent);"></div>
             <div id="globe-label-card" style="
               position:absolute;left:146px;top:0;transform:translateY(-50%);
-              background:rgba(17,17,17,0.92);backdrop-filter:blur(12px);
-              border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:14px 16px;
-              box-shadow:0 0 40px rgba(249,115,22,0.15);width:220px;
+              background:var(--surface);backdrop-filter:blur(12px);
+              border:1px solid var(--border);border-radius:12px;padding:14px 16px;
+              box-shadow:0 0 40px rgba(0,0,0,0.15);width:220px;
               opacity:0;transform:translate(-10px,-50%);transition:all 0.45s cubic-bezier(0.4,0,0.2,1);">
-              <h2 style="font-size:18px;font-weight:900;color:#fff;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:2px;">${d.countryName}</h2>
-              <p style="font-size:10px;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;">${COUNTRY_INDEX_MAP[d.iso2]?.name || ''}</p>
+              <h2 style="font-size:18px;font-weight:900;color:var(--text);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:2px;">${d.countryName}</h2>
+              <p style="font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:10px;">${COUNTRY_INDEX_MAP[d.iso2]?.name || ''}</p>
               <div style="display:flex;align-items:baseline;gap:8px;">
-                <span style="font-size:20px;font-weight:700;color:#fff;">${idx.current_price ?? '—'}</span>
+                <span style="font-size:20px;font-weight:700;color:var(--text);">${idx.current_price ?? '—'}</span>
                 <span style="font-size:12px;font-weight:600;color:${chgColor};">${idx.change_pct != null ? sign + idx.change_pct.toFixed(2) + '%' : ''}</span>
               </div>
             </div>
@@ -613,16 +613,16 @@ export default function GlobeView() {
   const renderTooltip = () => {
     if (!tooltip.visible || !tooltip.content) return null
     const { content, x, y } = tooltip
-    const chgClr  = content.change_pct > 0 ? '#089981' : content.change_pct < 0 ? '#f23645' : '#6b7280'
+    const chgClr  = content.change_pct > 0 ? 'var(--success)' : content.change_pct < 0 ? 'var(--danger)' : 'var(--muted)'
     const sign    = content.change_pct > 0 ? '+' : ''
     return (
       <div
-        className="absolute pointer-events-none z-50 rounded-xl border border-white/10 px-3 py-2 shadow-2xl text-sm"
-        style={{ left: x + 14, top: y + 14, background: 'rgba(17,17,17,0.92)', backdropFilter: 'blur(10px)' }}
+        className="absolute pointer-events-none z-50 rounded-xl border border-border px-3 py-2 shadow-2xl text-sm bg-surface backdrop-blur"
+        style={{ left: x + 14, top: y + 14 }}
       >
-        <div className="font-bold text-white text-sm">{content.country}</div>
-        <div className="text-white/50 text-xs">{content.name}</div>
-        <div className="text-white/80 text-xs">Price: {content.current_price}</div>
+        <div className="font-bold text-text text-sm">{content.country}</div>
+        <div className="text-muted text-xs">{content.name}</div>
+        <div className="text-text opacity-80 text-xs">Price: {content.current_price}</div>
         {content.change_pct !== null && (
           <div className="font-semibold text-xs" style={{ color: chgClr }}>
             {sign}{content.change_pct?.toFixed(2)}%
@@ -637,8 +637,8 @@ export default function GlobeView() {
   if (loading) return (
     <div className="w-full h-full flex items-center justify-center bg-background">
       <div className="flex flex-col items-center gap-4">
-        <div className="w-12 h-12 rounded-full border-2 border-orange-500/30 border-t-orange-500 animate-spin" />
-        <span className="text-white/40 text-sm tracking-widest uppercase">Loading Globe…</span>
+        <div className="w-12 h-12 rounded-full border-2 border-accent/30 border-t-accent animate-spin" />
+        <span className="text-muted text-sm tracking-widest uppercase">Loading Globe…</span>
       </div>
     </div>
   )
@@ -652,7 +652,7 @@ export default function GlobeView() {
   // ── Render ────────────────────────────────────────────────────────────────
 
   return (
-    <div className="flex h-full w-full overflow-hidden bg-background text-white">
+    <div className="flex h-full w-full overflow-hidden bg-background text-text">
       <div className="flex-1 flex flex-col min-w-0 relative">
         <div className="flex-1 relative overflow-hidden">
 
@@ -674,9 +674,9 @@ export default function GlobeView() {
             {!isSearchOpen ? (
               <button
                 onClick={() => setIsSearchOpen(true)}
-                className="w-10 h-10 rounded-full bg-black/60 backdrop-blur border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors group"
+                className="w-10 h-10 rounded-full bg-card backdrop-blur border border-border flex items-center justify-center hover:bg-surface transition-colors group"
               >
-                <svg className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-muted group-hover:text-text transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
@@ -690,10 +690,10 @@ export default function GlobeView() {
                     placeholder="Search country…"
                     value={searchQuery}
                     onChange={e => setSearchQuery(e.target.value)}
-                    className="h-10 w-64 bg-black/70 backdrop-blur border border-white/10 rounded-full px-4 py-2 text-xs focus:outline-none focus:border-orange-500/50 transition-all pl-10 text-white"
+                    className="h-10 w-64 bg-card backdrop-blur border border-border rounded-full px-4 py-2 text-xs focus:outline-none focus:border-accent transition-all pl-10 text-text"
                     onBlur={() => !searchQuery && setIsSearchOpen(false)}
                   />
-                  <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-muted" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
@@ -707,8 +707,8 @@ export default function GlobeView() {
               disabled={isScraping}
               className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium transition-all ${
                 isScraping
-                  ? 'bg-orange-500/20 text-orange-400 border border-orange-500/30 cursor-not-allowed'
-                  : 'bg-black/60 backdrop-blur border border-white/10 text-white/60 hover:text-white hover:bg-white/5 hover:border-white/20'
+                  ? 'bg-accent/20 text-accent border border-accent/30 cursor-not-allowed'
+                  : 'bg-card backdrop-blur border border-border text-muted hover:text-text hover:bg-surface hover:border-accent'
               }`}
             >
               <svg
@@ -722,9 +722,9 @@ export default function GlobeView() {
               {isScraping ? 'Scraping...' : 'Scrape Latest'}
             </button>
             {Object.keys(scrapeStatus).length > 0 && (
-              <div className="text-[10px] text-white/40 flex items-center gap-1">
+              <div className="text-[10px] text-muted flex items-center gap-1">
                 {scrapeStatus.ohlcv && (
-                  <span className={scrapeStatus.ohlcv?.includes('error') ? 'text-red-400' : 'text-green-400'}>
+                  <span className={scrapeStatus.ohlcv?.includes('error') ? 'text-danger' : 'text-success'}>
                     OHLCV {scrapeStatus.ohlcv?.includes('error') ? '✗' : '✓'}
                   </span>
                 )}
@@ -734,18 +734,18 @@ export default function GlobeView() {
 
           {/* Status badge */}
           <div className="absolute top-6 left-1/2 -translate-x-1/2 pointer-events-none z-10 transition-all duration-500" style={{ opacity: isZooming ? 0 : 1 }}>
-            <div className="bg-black/60 backdrop-blur border border-white/10 px-4 py-2 rounded-full text-xs text-white/60 flex items-center gap-2">
+            <div className="bg-card backdrop-blur border border-border px-4 py-2 rounded-full text-xs text-muted flex items-center gap-2">
               <span>🌍</span>
               {selectedCountry
-                ? <span>SELECTION: <strong className="text-orange-400 ml-1 uppercase">{COUNTRY_NAMES[selectedCountry]}</strong> — {COUNTRY_INDEX_MAP[selectedCountry]?.name}</span>
+                ? <span>SELECTION: <strong className="text-accent ml-1 uppercase">{COUNTRY_NAMES[selectedCountry]}</strong> — {COUNTRY_INDEX_MAP[selectedCountry]?.name}</span>
                 : <span>Click a highlighted country to explore its markets</span>
               }
             </div>
           </div>
 
           {/* Color legend */}
-          <div className="absolute bottom-6 left-6 flex flex-col gap-2 bg-black/60 backdrop-blur-md border border-white/5 p-4 rounded-xl z-10" style={{ bottom: selectedCountry && !isZooming ? `${chartHeight + 16}px` : '24px' }}>
-            <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Index Performance</span>
+          <div className="absolute bottom-6 left-6 flex flex-col gap-2 bg-surface backdrop-blur-md border border-border p-4 rounded-xl z-10" style={{ bottom: selectedCountry && !isZooming ? `${chartHeight + 16}px` : '24px' }}>
+            <span className="text-[10px] font-bold text-muted uppercase tracking-widest">Index Performance</span>
             <div className="flex flex-col gap-1.5 mt-1">
               {[
                 { color: '#166534', label: '> +1.0%' },
@@ -755,7 +755,7 @@ export default function GlobeView() {
               ].map(({ color, label }) => (
                 <div key={label} className="flex items-center gap-2">
                   <div className="w-3 h-3 rounded-full" style={{ background: color }} />
-                  <span className="text-[11px] text-white/70">{label}</span>
+                  <span className="text-[11px] text-text opacity-70">{label}</span>
                 </div>
               ))}
             </div>
@@ -764,10 +764,9 @@ export default function GlobeView() {
           {/* ── Candlestick chart bar (bottom) ── */}
           {selectedCountry && (
             <div
-              className="absolute bottom-0 left-0 border-t border-white/5 backdrop-blur-md flex flex-col shrink-0 transition-all duration-700 ease-out z-20"
+              className="absolute bottom-0 left-0 border-t border-border backdrop-blur-md flex flex-col shrink-0 transition-all duration-700 ease-out z-20 bg-surface"
               style={{
                 height: `${chartHeight}px`,
-                background: 'rgba(13,15,20,0.85)',
                 opacity: isZooming ? 0 : 1,
                 transform: isZooming ? 'translateY(100%)' : 'translateY(0)',
                 right: '320px',
@@ -775,21 +774,21 @@ export default function GlobeView() {
             >
               {/* drag handle */}
               <div
-                className={`absolute top-0 left-0 right-0 h-1 cursor-row-resize transition-colors ${isResizing ? 'bg-orange-500/50' : 'hover:bg-orange-500/30'}`}
+                className={`absolute top-0 left-0 right-0 h-1 cursor-row-resize transition-colors ${isResizing ? 'bg-accent' : 'hover:bg-accent/50'}`}
                 onMouseDown={() => setIsResizing(true)}
               />
               <div className="flex-1 p-4 flex flex-col relative overflow-hidden">
                 <div className="flex items-center justify-between mb-2 z-10">
                   <div>
-                    <h3 className="text-sm font-semibold uppercase text-white/80 tracking-widest">
+                    <h3 className="text-sm font-semibold uppercase text-text opacity-80 tracking-widest">
                       {COUNTRY_INDEX_MAP[selectedCountry]?.name || selectedCountry}
                     </h3>
                     <div className="flex items-end gap-2 mt-1">
-                      <span className="text-2xl font-bold text-white">
+                      <span className="text-2xl font-bold text-text">
                         {selectedIndexData?.current_price ?? '—'}
                       </span>
                       {selectedIndexData?.change_pct != null && (
-                        <span className={`text-sm mb-0.5 ${selectedIndexData.change_pct >= 0 ? 'text-[#089981]' : 'text-[#f23645]'}`}>
+                        <span className={`text-sm mb-0.5 ${selectedIndexData.change_pct >= 0 ? 'text-success' : 'text-danger'}`}>
                           {selectedIndexData.change_pct >= 0 ? '+' : ''}{selectedIndexData.change_pct.toFixed(2)}%
                         </span>
                       )}
@@ -799,23 +798,23 @@ export default function GlobeView() {
                 <div className="absolute inset-0 pt-16 pb-2">
                   <ResponsiveContainer width="100%" height="100%">
                     <BarChart data={chartData} margin={{ top: 0, right: 10, left: 0, bottom: 0 }}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="#ffffff0a" vertical={false} />
+                      <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
                       <XAxis dataKey="time" hide xAxisId={0} />
                       <XAxis dataKey="time" hide xAxisId={1} />
                       <YAxis domain={['dataMin - 5', 'dataMax + 5']} hide />
                       <YAxis yAxisId="volume" orientation="right" domain={[0, dataMax => dataMax * 5]} hide />
                       <Tooltip
-                        cursor={{ fill: '#ffffff0a' }}
+                        cursor={{ fill: 'var(--border)' }}
                         content={({ active, payload }) => {
                           if (active && payload?.length) {
                             const d = payload[0].payload
                             return (
-                              <div className="rounded-lg border border-white/10 p-2 text-[10px] font-mono" style={{ background: 'rgba(13,15,20,0.95)' }}>
+                              <div className="rounded-lg border border-border p-2 text-[10px] font-mono bg-surface">
                                 <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-                                  <span className="text-white/40">O:</span><span className="text-white">{d.open.toFixed(2)}</span>
-                                  <span className="text-white/40">H:</span><span className="text-white">{d.high.toFixed(2)}</span>
-                                  <span className="text-white/40">L:</span><span className="text-white">{d.low.toFixed(2)}</span>
-                                  <span className="text-white/40">C:</span><span style={{ color: d.close >= d.open ? '#089981' : '#f23645' }}>{d.close.toFixed(2)}</span>
+                                  <span className="text-muted">O:</span><span className="text-text">{d.open.toFixed(2)}</span>
+                                  <span className="text-muted">H:</span><span className="text-text">{d.high.toFixed(2)}</span>
+                                  <span className="text-muted">L:</span><span className="text-text">{d.low.toFixed(2)}</span>
+                                  <span className="font-bold" style={{ color: d.close >= d.open ? 'var(--success)' : 'var(--danger)' }}>C: {d.close.toFixed(2)}</span>
                                 </div>
                               </div>
                             )
@@ -825,7 +824,7 @@ export default function GlobeView() {
                       />
                       <Bar dataKey="volume" yAxisId="volume" xAxisId={0} barCategoryGap="10%">
                         {chartData.map((entry, i) => (
-                          <Cell key={`vol-${i}`} fill={entry.close >= entry.open ? '#08998144' : '#f2364544'} />
+                          <Cell key={`vol-${i}`} fill={entry.close >= entry.open ? 'var(--success)' : 'var(--danger)'} fillOpacity={0.4} />
                         ))}
                       </Bar>
                       <Bar dataKey="bounds" shape={<Candlestick />} xAxisId={1} barCategoryGap="10%" />
@@ -839,22 +838,20 @@ export default function GlobeView() {
           {/* ── Right panel: Forex + Calendar + News ── */}
           {selectedCountry && (
             <div
-              className="absolute top-0 bottom-0 right-0 w-[320px] border-l border-white/5 flex flex-col shrink-0 transition-all duration-700 ease-out z-30"
+              className="absolute top-0 bottom-0 right-0 w-[320px] border-l border-border flex flex-col shrink-0 transition-all duration-700 ease-out z-30 bg-surface backdrop-blur-md"
               style={{
-                background: 'rgba(13,15,20,0.88)',
-                backdropFilter: 'blur(16px)',
                 opacity: isZooming ? 0 : 1,
                 transform: isZooming ? 'translateX(100%)' : 'translateX(0)',
               }}
             >
               {/* Header */}
-              <div className="p-5 border-b border-white/5 bg-gradient-to-br from-orange-500/10 to-transparent">
+              <div className="p-5 border-b border-border bg-gradient-to-br from-accent/20 to-transparent">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h2 className="text-lg font-bold text-white uppercase tracking-tight">
+                    <h2 className="text-lg font-bold text-text uppercase tracking-tight">
                       {COUNTRY_NAMES[selectedCountry]}
                     </h2>
-                    <p className="text-xs text-white/40 mt-0.5">{COUNTRY_INDEX_MAP[selectedCountry]?.name}</p>
+                    <p className="text-xs text-muted mt-0.5">{COUNTRY_INDEX_MAP[selectedCountry]?.name}</p>
                   </div>
                   <button
                     onClick={() => {
@@ -864,7 +861,7 @@ export default function GlobeView() {
                         globeRef.current.pointOfView({ lat: 20, lng: 110, altitude: 3.5 }, 1200)
                       }
                     }}
-                    className="w-8 h-8 rounded-full flex items-center justify-center border border-white/10 text-white/40 hover:text-white hover:border-white/30 transition-colors"
+                    className="w-8 h-8 rounded-full flex items-center justify-center border border-border text-muted hover:text-text hover:border-accent transition-colors"
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
@@ -875,22 +872,22 @@ export default function GlobeView() {
 
               <div className="flex-1 overflow-y-auto custom-scrollbar">
                 {/* Forex rates */}
-                <div className="p-5 border-b border-white/5">
+                <div className="p-5 border-b border-border">
                   <div className="flex items-center justify-between mb-3">
-                    <span className="text-[11px] font-bold text-white/40 tracking-widest uppercase">Forex Rates</span>
-                    <span className="text-[11px] font-bold text-orange-400 tracking-widest uppercase">
+                    <span className="text-[11px] font-bold text-muted tracking-widest uppercase">Forex Rates</span>
+                    <span className="text-[11px] font-bold text-accent tracking-widest uppercase">
                       {COUNTRY_CURRENCY[ISO2_TO_ISO3[selectedCountry]] || 'USD'}
                     </span>
                   </div>
-                  <div className="grid grid-cols-3 text-[11px] text-white/40 mb-2 uppercase pb-2 border-b border-white/5">
+                  <div className="grid grid-cols-3 text-[11px] text-muted mb-2 uppercase pb-2 border-b border-border">
                     <div>Pair</div><div className="text-right">Rate</div><div className="text-right">Chg%</div>
                   </div>
                   <div className="flex flex-col">
                     {dynamicForexRates.map((fx, i) => (
-                      <div key={i} className="grid grid-cols-3 text-sm items-center py-2 border-b border-white/5 last:border-none">
-                        <div className="text-white/60 text-xs">{fx.pair}</div>
-                        <div className="text-right text-white font-medium text-xs">{fx.rate}</div>
-                        <div className={`text-right text-xs font-medium ${fx.chg >= 0 ? 'text-[#089981]' : 'text-[#f23645]'}`}>
+                      <div key={i} className="grid grid-cols-3 text-sm items-center py-2 border-b border-border last:border-none">
+                        <div className="text-muted text-xs">{fx.pair}</div>
+                        <div className="text-right text-text font-medium text-xs">{fx.rate}</div>
+                        <div className={`text-right text-xs font-medium ${fx.chg >= 0 ? 'text-success' : 'text-danger'}`}>
                           {fx.chg > 0 ? '+' : ''}{fx.chg.toFixed(2)}%
                         </div>
                       </div>
@@ -899,10 +896,10 @@ export default function GlobeView() {
                 </div>
 
                 {/* Economic Calendar */}
-                <div className="p-5 border-b border-white/5">
-                  <span className="text-[11px] font-bold text-white/40 tracking-widest uppercase block mb-3">Economic Calendar</span>
+                <div className="p-5 border-b border-border">
+                  <span className="text-[11px] font-bold text-muted tracking-widest uppercase block mb-3">Economic Calendar</span>
                   {panelLoading ? (
-                    <div className="text-xs text-white/40">Loading…</div>
+                    <div className="text-xs text-muted">Loading…</div>
                   ) : (
                     <EconomicCalendar events={calendarEvents} loading={false} />
                   )}
@@ -910,9 +907,9 @@ export default function GlobeView() {
 
                 {/* News */}
                 <div className="p-5">
-                  <span className="text-[11px] font-bold text-white/40 tracking-widest uppercase block mb-3">Macro News</span>
+                  <span className="text-[11px] font-bold text-muted tracking-widest uppercase block mb-3">Macro News</span>
                   {panelLoading ? (
-                    <div className="text-xs text-white/40">Loading…</div>
+                    <div className="text-xs text-muted">Loading…</div>
                   ) : (
                     <MacroNewsPanel articles={newsArticles} loading={false} />
                   )}
