@@ -179,9 +179,7 @@ export default function PortfolioView() {
                 data={pieData}
                 cx="50%"
                 cy="50%"
-                innerRadius={60}
                 outerRadius={100}
-                paddingAngle={2}
                 dataKey="value"
                 stroke="none"
               >
