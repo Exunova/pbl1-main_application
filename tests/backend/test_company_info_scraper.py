@@ -14,7 +14,7 @@ import shutil
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/yahoo_finance')
 
-from company_info_scraper import safe_val, extract_info, scrape_financials, to_filename
+from company_info_scraper import safe_val, extract_info, scrape_financials, to_filename, CompanyInfoScraper
 
 
 # ── safe_val tests ────────────────────────────────────────────────────────────
@@ -130,7 +130,6 @@ def test_to_filename_brkb():
 
 def test_run_creates_40_json_files(monkeypatch, tmp_path):
     """run() writes 41 JSON files: 40 company files + 1 _summary.json."""
-    import company_info_scraper
     from datetime import datetime
 
     output_dir = str(tmp_path / "company_info")
@@ -190,7 +189,7 @@ def test_run_creates_40_json_files(monkeypatch, tmp_path):
     # Patch time.sleep to speed up tests
     monkeypatch.setattr("time.sleep", lambda s: None)
 
-    result = company_info_scraper.run(output_dir)
+    result = CompanyInfoScraper().run(output_dir)
 
     # Should have _summary.json
     assert os.path.exists(os.path.join(output_dir, "_summary.json"))
@@ -205,8 +204,6 @@ def test_run_creates_40_json_files(monkeypatch, tmp_path):
 
 def test_run_summary_has_correct_structure(monkeypatch, tmp_path):
     """run() summary contains scraped_at and tickers dict."""
-    import company_info_scraper
-
     output_dir = str(tmp_path / "company_info2")
     os.makedirs(output_dir, exist_ok=True)
 
@@ -243,7 +240,7 @@ def test_run_summary_has_correct_structure(monkeypatch, tmp_path):
     monkeypatch.setattr(cache_db, "set_scrape_status", lambda k, s: None)
     monkeypatch.setattr("time.sleep", lambda s: None)
 
-    result = company_info_scraper.run(output_dir)
+    result = CompanyInfoScraper().run(output_dir)
 
     assert "scraped_at" in result
     assert "tickers" in result

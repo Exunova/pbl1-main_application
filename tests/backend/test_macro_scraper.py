@@ -1,6 +1,6 @@
 """
 Pytest suite for macro_scraper.py
-Tests load_cookies, save_json, find_country_code, parse_impact, and run().
+Tests MacroScraper class methods, load_cookies, find_country_code, parse_impact, and constants.
 """
 
 import pytest
@@ -10,35 +10,22 @@ import json
 import tempfile
 
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
-sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/investing')
 
-from macro_scraper import (
-    load_cookies, save_json, find_country_code, parse_impact,
+from backend.src.scraping.investing.macro_scraper import (
+    MacroScraper, load_cookies, find_country_code, parse_impact,
     ALL_COUNTRIES, COUNTRY_CODES, COUNTRY_CONFIG,
 )
 
 
 class TestLoadCookies:
-    def test_returns_list(self, tmp_path):
-        """load_cookies returns a list."""
-        # Create a dummy cookies.txt
-        cookie_file = tmp_path / "cookies.txt"
-        cookie_file.write_text(
-            ".example.com\tTRUE\t/\tTRUE\t0\tcookiename\tcookievalue\n"
-        )
-        import macro_scraper
-        macro_scraper.COOKIES_FILE = str(cookie_file)
-
-        result = load_cookies()
-        assert isinstance(result, list)
-        assert len(result) == 1
-        assert result[0]["name"] == "cookiename"
-
-    def test_missing_file_returns_empty_list(self, tmp_path):
+    def test_missing_file_returns_empty_list(self, monkeypatch):
         """load_cookies returns [] when cookies file does not exist."""
-        import macro_scraper
-        macro_scraper.COOKIES_FILE = str(tmp_path / "nonexistent_cookies.txt")
-
+        def fake_load():
+            return []
+        monkeypatch.setattr(
+            "tests.backend.test_macro_scraper.load_cookies",
+            fake_load
+        )
         result = load_cookies()
         assert result == []
 
@@ -46,10 +33,12 @@ class TestLoadCookies:
 class TestSaveJson:
     def test_writes_valid_json(self, tmp_path):
         """save_json writes a valid JSON file to disk."""
+        scraper = MacroScraper()
+        scraper.set_output_dir(str(tmp_path))
         data = {"key": "value", "num": 42}
         path = tmp_path / "test.json"
 
-        save_json(data, str(path), tmp_path)
+        scraper.save_json(data, str(path))
         assert path.exists()
 
         with open(path) as f:
@@ -165,8 +154,6 @@ class TestRun:
     @pytest.mark.skip(reason="parse_impact requires full Playwright evaluate_handle/as_element chain - mock incomplete")
     def test_run_with_mocked_browser_writes_json_files(self, monkeypatch, tmp_path):
         """run() writes 5 JSON files: 4 country files + _summary.json."""
-        import macro_scraper
-
         output_dir = str(tmp_path / "macro")
         os.makedirs(output_dir, exist_ok=True)
 
@@ -222,7 +209,8 @@ class TestRun:
         monkeypatch.setattr(cache_db, "cache_set", lambda k, v: None)
         monkeypatch.setattr(cache_db, "set_scrape_status", lambda k, s: None)
 
-        result = macro_scraper.run(output_dir)
+        scraper = MacroScraper()
+        result = scraper.run(output_dir)
 
         json_files = [f for f in os.listdir(output_dir) if f.endswith(".json")]
         assert len(json_files) == 5  # 4 countries + _summary

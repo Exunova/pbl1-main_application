@@ -42,6 +42,7 @@ class NewsHandler(BasePageHandler):
             self.trigger_scrape_in_bg("news")
             return {
                 "region": region,
+                "market": self.LABELS.get(region, region),
                 "label": self.LABELS.get(region, region),
                 "articles": [],
                 "loading": True,
@@ -63,6 +64,7 @@ class NewsHandler(BasePageHandler):
 
         result = {
             "region": region,
+            "market": self.LABELS.get(region, region),
             "label": self.LABELS.get(region, region),
             "articles": articles,
         }

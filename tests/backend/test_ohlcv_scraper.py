@@ -12,7 +12,7 @@ import pandas as pd
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/yahoo_finance')
 
-from ohlcv_scraper import safe_float, to_filename, scrape_15m, MARKETS
+from ohlcv_scraper import safe_float, to_filename, scrape_15m, MARKETS, OHLCVScraper
 
 
 class TestSafeFloat:
@@ -111,8 +111,6 @@ class TestScrape15m:
 class TestRun:
     def test_run_writes_all_44_stock_plus_4_index_files(self, monkeypatch, tmp_path):
         """run() writes 45 JSON files: 40 stock files + 4 index files + 1 _summary.json."""
-        import ohlcv_scraper
-
         output_dir = str(tmp_path / "ohlcv")
         os.makedirs(output_dir, exist_ok=True)
 
@@ -140,7 +138,7 @@ class TestRun:
         # Speed up tests
         monkeypatch.setattr("time.sleep", lambda s: None)
 
-        result = ohlcv_scraper.run(output_dir)
+        result = OHLCVScraper().run(output_dir)
 
         json_files = [f for f in os.listdir(output_dir) if f.endswith(".json")]
         # 4 markets * (1 index + 10 stocks) + 1 _summary = 45

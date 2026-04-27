@@ -43,6 +43,9 @@ sys.stderr.write(f"[Python IPC] Scraping is {'ENABLED' if SCRAPING_ENABLED else 
 if APP_DIR not in sys.path:
     sys.path.insert(0, APP_DIR)
 
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+
 # =============================================================================
 # CACHE DATABASE
 # =============================================================================

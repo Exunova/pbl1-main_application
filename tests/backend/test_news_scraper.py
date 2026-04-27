@@ -12,7 +12,7 @@ from unittest.mock import MagicMock, patch
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/google_news')
 
-from news_scraper import OGParser, get_thumbnail, parse_feed, NEWS_FEEDS
+from news_scraper import OGParser, get_thumbnail, parse_feed, NEWS_FEEDS, NewsScraper
 
 
 class TestOGParser:
@@ -140,8 +140,6 @@ class TestNewsFeeds:
 class TestRun:
     def test_run_writes_4_news_json_files(self, monkeypatch, tmp_path):
         """run() writes 5 JSON files: 4 market files + _summary.json."""
-        import news_scraper
-
         output_dir = str(tmp_path / "news")
         os.makedirs(output_dir, exist_ok=True)
 
@@ -156,7 +154,7 @@ class TestRun:
 
         monkeypatch.setattr("time.sleep", lambda s: None)
 
-        result = news_scraper.run(output_dir)
+        result = NewsScraper().run(output_dir)
 
         json_files = [f for f in os.listdir(output_dir) if f.endswith(".json")]
         assert len(json_files) == 5  # 4 markets + _summary
