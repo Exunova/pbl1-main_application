@@ -3,7 +3,7 @@
 from datetime import datetime
 
 from backend.src.ipc.base_page_handler import BasePageHandler
-from backend.src.ipc_main import SCRAPING_ENABLED
+from backend.src.config import SCRAPING_ENABLED
 
 
 class SettingsHandler(BasePageHandler):
