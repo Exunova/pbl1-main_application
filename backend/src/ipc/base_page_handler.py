@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 from typing import Optional
 
 from backend.src.db.cache_database import CacheDatabase
-from backend.src.config import SCRAPING_ENABLED
+from backend.src.ipc_main import SCRAPING_ENABLED
 
 
 db = CacheDatabase()

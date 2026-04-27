@@ -147,6 +147,28 @@ SCRAPER_MODULES = {
 }
 
 # =============================================================================
+# IPC HANDLER IMPORTS
+# =============================================================================
+from backend.src.ipc import (
+    DashboardHandler,
+    WatchlistHandler,
+    NewsHandler,
+    MacroHandler,
+    ForexHandler,
+    PortfolioHandler,
+    SettingsHandler,
+)
+
+# Create handler instances (module level for reuse across commands)
+dashboard_handler = DashboardHandler()
+watchlist_handler = WatchlistHandler()
+news_handler = NewsHandler()
+macro_handler = MacroHandler()
+forex_handler = ForexHandler()
+portfolio_handler = PortfolioHandler()
+settings_handler = SettingsHandler()
+
+# =============================================================================
 # REDIRECT PRINT TO STDERR (to keep STDOUT clean for JSON IPC)
 # =============================================================================
 _original_print = builtins.print
@@ -705,35 +727,35 @@ def handle_command(req):
             ticker = params.get("ticker")
             if not ticker:
                 return {"id": req_id, "ok": False, "error": "Missing ticker parameter"}
-            data = handle_ohlcv(ticker)
+            data = watchlist_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "news":
             region = params.get("region")
             if not region:
                 return {"id": req_id, "ok": False, "error": "Missing region parameter"}
-            data = handle_news(region)
+            data = news_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "macro":
             cc = params.get("cc")
             if not cc:
                 return {"id": req_id, "ok": False, "error": "Missing cc parameter"}
-            data = handle_macro(cc)
+            data = macro_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "forex":
             pair = params.get("pair")
             if not pair:
                 return {"id": req_id, "ok": False, "error": "Missing pair parameter"}
-            data = handle_forex(pair)
+            data = forex_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "company":
             ticker = params.get("ticker")
             if not ticker:
                 return {"id": req_id, "ok": False, "error": "Missing ticker parameter"}
-            data = handle_company(ticker)
+            data = watchlist_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "companies":
@@ -746,77 +768,78 @@ def handle_command(req):
                 return {"id": req_id, "ok": False, "error": "tickers must be a list"}
             else:
                 return {"id": req_id, "ok": False, "error": "tickers must be a list"}
-            data = handle_companies(tickers)
+            data = watchlist_handler.handle_command(cmd, {"tickers": tickers})
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "index":
             idx = params.get("idx")
             if not idx:
                 return {"id": req_id, "ok": False, "error": "Missing idx parameter"}
-            data = handle_index(idx)
+            data = dashboard_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "indices":
-            data = handle_indices()
+            data = dashboard_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "scrape":
             stype = params.get("type")
             if not stype:
                 return {"id": req_id, "ok": False, "error": "Missing type parameter"}
-            data = handle_scrape(stype)
+            data = settings_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "scrape_status":
-            data = handle_scrape_status()
+            data = settings_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "scrape_latest":
-            data = handle_scrape_latest()
+            data = settings_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "health":
-            return {"id": req_id, "ok": True, "data": {"status": "ok"}}
+            data = settings_handler.handle_command(cmd, params)
+            return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "portfolio_list":
-            data = handle_portfolio_list()
+            data = portfolio_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "portfolio_add":
-            data = handle_portfolio_add(params)
+            data = portfolio_handler.handle_command(cmd, params)
             if "error" in data:
                 return {"id": req_id, "ok": False, "error": data["error"]}
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "portfolio_edit":
-            data = handle_portfolio_edit(params)
+            data = portfolio_handler.handle_command(cmd, params)
             if "error" in data:
                 return {"id": req_id, "ok": False, "error": data["error"]}
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "portfolio_delete":
-            data = handle_portfolio_delete(params)
+            data = portfolio_handler.handle_command(cmd, params)
             if "error" in data:
                 return {"id": req_id, "ok": False, "error": data["error"]}
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "portfolio_pnl":
-            data = handle_portfolio_pnl()
+            data = portfolio_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "portfolio_export":
-            data = handle_portfolio_export()
+            data = portfolio_handler.handle_command(cmd, params)
             return {"id": req_id, "ok": True, "data": data}
-        
+
         elif cmd == "portfolio_import":
-            data = handle_portfolio_import(params)
+            data = portfolio_handler.handle_command(cmd, params)
             if "error" in data:
                 return {"id": req_id, "ok": False, "error": data["error"]}
             return {"id": req_id, "ok": True, "data": data}
-        
+
         else:
             return {"id": req_id, "ok": False, "error": f"Unknown command: {cmd}"}
-    
+
     except Exception as e:
         return {"id": req_id, "ok": False, "error": str(e)}
 
