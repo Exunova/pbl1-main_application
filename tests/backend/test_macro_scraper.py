@@ -9,8 +9,8 @@ import os
 import json
 import tempfile
 
-sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scrapers')
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
+sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/investing')
 
 from macro_scraper import (
     load_cookies, save_json, find_country_code, parse_impact,

@@ -12,7 +12,7 @@ import shutil
 
 # Ensure backend/src is in path
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
-sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scrapers')
+sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/yahoo_finance')
 
 from company_info_scraper import safe_val, extract_info, scrape_financials, to_filename
 

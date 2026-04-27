@@ -14,6 +14,8 @@ import shutil
 
 # Path to backend source
 BACKEND_SRC = '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src'
+sys.path.insert(0, BACKEND_SRC)
+sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/db')
 
 # Temp DB path for this test module
 TEST_DB_FILE = None

@@ -9,8 +9,8 @@ import os
 import json
 import pandas as pd
 
-sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scrapers')
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
+sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/yahoo_finance')
 
 from ohlcv_scraper import safe_float, to_filename, scrape_15m, MARKETS
 

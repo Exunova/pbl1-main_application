@@ -9,8 +9,8 @@ import os
 import json
 from unittest.mock import MagicMock, patch
 
-sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scrapers')
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
+sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/google_news')
 
 from news_scraper import OGParser, get_thumbnail, parse_feed, NEWS_FEEDS
 

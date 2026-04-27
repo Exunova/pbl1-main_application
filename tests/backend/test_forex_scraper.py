@@ -8,8 +8,8 @@ import sys
 import os
 import json
 
-sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scrapers')
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
+sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scraping/yahoo_finance')
 
 from forex_scraper import safe_float, scrape_pair, save_json, FOREX_PAIRS
 
