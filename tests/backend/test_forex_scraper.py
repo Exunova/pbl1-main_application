@@ -1,6 +1,6 @@
 """
 Pytest suite for forex_scraper.py
-Tests safe_float, scrape_pair, FOREX_PAIRS, and run().
+Tests ForexScraper class methods, safe_float, and FOREX_PAIRS.
 """
 
 import pytest
@@ -8,10 +8,9 @@ import sys
 import os
 import json
 
-sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/scrapers')
 sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
 
-from forex_scraper import safe_float, scrape_pair, save_json, FOREX_PAIRS
+from backend.src.scraping.yahoo_finance.forex_scraper import ForexScraper, safe_float, FOREX_PAIRS
 
 
 class TestSafeFloat:
@@ -34,7 +33,7 @@ class TestSafeFloat:
 
 class TestScrapePair:
     def test_scrape_pair_success_returns_valid_structure(self, monkeypatch):
-        """scrape_pair returns a dict with all required keys on success."""
+        """_scrape_pair returns a dict with all required keys on success."""
         class MockTicker:
             info = {
                 "currentPrice": 15000.0,
@@ -56,8 +55,9 @@ class TestScrapePair:
         import yfinance
         monkeypatch.setattr(yfinance, "Ticker", lambda s: MockTicker())
 
+        scraper = ForexScraper()
         config = FOREX_PAIRS["USD_IDR"]
-        result = scrape_pair("USD_IDR", config)
+        result = scraper._scrape_pair("USD_IDR", config)
 
         assert result["pair"] == "USD_IDR"
         assert "current_rate" in result
@@ -66,12 +66,13 @@ class TestScrapePair:
         assert "scraped_at" in result
 
     def test_scrape_pair_error_returns_error_field(self, monkeypatch):
-        """scrape_pair returns an error field when yfinance raises."""
+        """_scrape_pair returns an error field when yfinance raises."""
         import yfinance
         monkeypatch.setattr(yfinance, "Ticker", lambda s: (_ for _ in ()).throw(RuntimeError("network error")))
 
+        scraper = ForexScraper()
         config = FOREX_PAIRS["JPY_USD"]
-        result = scrape_pair("JPY_USD", config)
+        result = scraper._scrape_pair("JPY_USD", config)
 
         assert result["pair"] == "JPY_USD"
         assert "error" in result
@@ -102,11 +103,6 @@ class TestForexPairs:
 class TestRun:
     def test_run_writes_6_pair_json_files(self, monkeypatch, tmp_path):
         """run() writes 7 JSON files: 6 pair files + _summary.json."""
-        import forex_scraper
-
-        output_dir = str(tmp_path / "forex")
-        os.makedirs(output_dir, exist_ok=True)
-
         import yfinance
         monkeypatch.setattr(yfinance, "Ticker", lambda s: type("", (), {
             "info": {"currentPrice": 100.0, "previousClose": 99.0, "regularMarketChangePercent": 1.0},
@@ -118,7 +114,10 @@ class TestRun:
         monkeypatch.setattr(cache_db, "cache_set", lambda k, v: None)
         monkeypatch.setattr(cache_db, "set_scrape_status", lambda k, s: None)
 
-        result = forex_scraper.run(output_dir)
+        scraper = ForexScraper()
+        output_dir = str(tmp_path / "forex")
+
+        result = scraper.run(output_dir)
 
         json_files = [f for f in os.listdir(output_dir) if f.endswith(".json")]
         assert len(json_files) == 7  # 6 pairs + _summary
