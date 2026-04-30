@@ -4,24 +4,12 @@
   "base": "GBP",
   "quote": "USD",
   "label": "British Pound / US Dollar",
-  "scraped_at": "2026-04-26 19:04:50.343116",
-  "updated_at": "2026-04-26T19:04:50.343119",
-  "current_rate": 1.352887,
-  "prev_close": 1.346593,
-  "change_pct": 0.4674,
+  "scraped_at": "2026-04-27 07:53:21.074134",
+  "updated_at": "2026-04-27T07:53:21.074138",
+  "current_rate": 1.351881,
+  "prev_close": 1.353235,
+  "change_pct": -0.1,
   "history_30d": [
-    {
-      "date": "2026-03-24",
-      "close": 1.342426
-    },
-    {
-      "date": "2026-03-25",
-      "close": 1.341634
-    },
-    {
-      "date": "2026-03-26",
-      "close": 1.336362
-    },
     {
       "date": "2026-03-27",
       "close": 1.333565
@@ -107,8 +95,8 @@
       "close": 1.346638
     },
     {
-      "date": "2026-04-26",
-      "close": 1.352887
+      "date": "2026-04-27",
+      "close": 1.351881
     }
   ]
 }

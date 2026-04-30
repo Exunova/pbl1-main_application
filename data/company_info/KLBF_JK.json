@@ -1,8 +1,8 @@
 {
   "ticker": "KLBF.JK",
   "market": "ID",
-  "scraped_at": "2026-04-26 19:05:06.848649",
-  "updated_at": "2026-04-26T19:05:06.848662",
+  "scraped_at": "2026-04-30 14:52:35.760333",
+  "updated_at": "2026-04-30T14:52:35.760347",
   "info": {
     "identity": {
       "longName": "PT Kalbe Farma Tbk.",
@@ -57,34 +57,34 @@
       ]
     },
     "price": {
-      "currentPrice": 875.0,
-      "previousClose": 910.0,
-      "open": 910.0,
-      "dayHigh": 915.0,
+      "currentPrice": 870.0,
+      "previousClose": 875.0,
+      "open": 880.0,
+      "dayHigh": 890.0,
       "dayLow": 860.0,
       "bid": 870.0,
       "ask": 875.0,
       "fiftyTwoWeekHigh": 1600.0,
       "fiftyTwoWeekLow": 860.0,
-      "fiftyDayAverage": 1000.7,
-      "twoHundredDayAverage": 1180.3,
-      "volume": 96851500,
-      "averageVolume": 49739912,
-      "averageVolume10days": 49986080,
-      "regularMarketChangePercent": -3.846154,
-      "52WeekChange": -0.30555558
+      "fiftyDayAverage": 988.6,
+      "twoHundredDayAverage": 1170.05,
+      "volume": 33034800,
+      "averageVolume": 47185118,
+      "averageVolume10days": 54898450,
+      "regularMarketChangePercent": -0.5681818,
+      "52WeekChange": -0.33460075
     },
     "valuation": {
-      "marketCap": 39625712205824,
+      "marketCap": 39399278510080,
       "enterpriseValue": 36855017897984,
-      "trailingPE": 10.869565,
-      "forwardPE": 11.696298,
-      "priceToBook": 1.6997652,
-      "priceToSalesTrailing12Months": 1.1217614,
+      "trailingPE": 10.807453,
+      "forwardPE": 11.629461,
+      "priceToBook": 1.6900523,
+      "priceToSalesTrailing12Months": 1.1153513,
       "trailingEps": 80.5,
       "forwardEps": 74.81,
       "bookValue": 514.777,
-      "pegRatio": 0.93
+      "pegRatio": 0.95
     },
     "profitability": {
       "profitMargins": 0.10375,
@@ -122,7 +122,7 @@
       "sharesOutstanding": 45286528610,
       "floatShares": 18045775921,
       "heldPercentInsiders": 0.64862,
-      "heldPercentInstitutions": 0.11336,
+      "heldPercentInstitutions": 0.113570005,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1349654400,
       "beta": 0.105

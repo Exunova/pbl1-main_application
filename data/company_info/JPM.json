@@ -1,8 +1,8 @@
 {
   "ticker": "JPM",
   "market": "US",
-  "scraped_at": "2026-04-26 19:04:54.560987",
-  "updated_at": "2026-04-26T19:04:54.560998",
+  "scraped_at": "2026-04-30 14:52:24.084352",
+  "updated_at": "2026-04-30T14:52:24.084363",
   "info": {
     "identity": {
       "longName": "JPMorgan Chase & Co.",
@@ -127,34 +127,34 @@
       ]
     },
     "price": {
-      "currentPrice": 308.28,
-      "previousClose": 311.69,
-      "open": 311.15,
-      "dayHigh": 311.04,
-      "dayLow": 307.89,
-      "bid": 308.53,
-      "ask": 308.97,
+      "currentPrice": 309.25,
+      "previousClose": 311.45,
+      "open": 310.57,
+      "dayHigh": 312.045,
+      "dayLow": 307.29,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 337.25,
-      "fiftyTwoWeekLow": 238.43,
-      "fiftyDayAverage": 298.9562,
-      "twoHundredDayAverage": 304.2514,
-      "volume": 5209629,
-      "averageVolume": 10202403,
-      "averageVolume10days": 8453390,
-      "regularMarketChangePercent": -1.09404,
-      "52WeekChange": 0.26749444
+      "fiftyTwoWeekLow": 242.17,
+      "fiftyDayAverage": 299.3564,
+      "twoHundredDayAverage": 304.5943,
+      "volume": 7857299,
+      "averageVolume": 10021057,
+      "averageVolume10days": 7822720,
+      "regularMarketChangePercent": -0.706377,
+      "52WeekChange": 0.25258207
     },
     "valuation": {
-      "marketCap": 826036256768,
-      "enterpriseValue": 293710266368,
-      "trailingPE": 14.750239,
-      "forwardPE": 13.112367,
-      "priceToBook": 2.4013085,
-      "priceToSalesTrailing12Months": 4.7593975,
-      "trailingEps": 20.9,
+      "marketCap": 828635414528,
+      "enterpriseValue": 296309391360,
+      "trailingPE": 14.789575,
+      "forwardPE": 13.153625,
+      "priceToBook": 2.4088643,
+      "priceToSalesTrailing12Months": 4.774373,
+      "trailingEps": 20.91,
       "forwardEps": 23.51063,
       "bookValue": 128.38,
-      "pegRatio": 1.66
+      "pegRatio": 1.65
     },
     "profitability": {
       "profitMargins": 0.33936,
@@ -173,7 +173,7 @@
     },
     "dividend": {
       "dividendRate": 6.0,
-      "dividendYield": 1.95,
+      "dividendYield": 1.94,
       "fiveYearAvgDividendYield": 2.4,
       "payoutRatio": 0.2824,
       "exDividendDate": 1775433600,
@@ -192,7 +192,7 @@
       "sharesOutstanding": 2679500000,
       "floatShares": 2665245060,
       "heldPercentInsiders": 0.0040700003,
-      "heldPercentInstitutions": 0.75195,
+      "heldPercentInstitutions": 0.75794,
       "lastSplitFactor": "3:2",
       "lastSplitDate": 960768000,
       "beta": 1.043

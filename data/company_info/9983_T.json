@@ -1,8 +1,8 @@
 {
   "ticker": "9983.T",
   "market": "JP",
-  "scraped_at": "2026-04-26 19:05:16.224125",
-  "updated_at": "2026-04-26T19:05:16.224149",
+  "scraped_at": "2026-04-30 14:52:43.517077",
+  "updated_at": "2026-04-30T14:52:43.517084",
   "info": {
     "identity": {
       "longName": "Fast Retailing Co., Ltd.",
@@ -74,31 +74,7 @@
         },
         {
           "maxAge": 1,
-          "name": "Daisuke  Watanabe",
-          "title": "Legal Department Manager",
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Shuichi  Nakajima",
-          "title": "Group Senior Executive Officer",
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Yukihiro  Katsuta",
-          "title": "Group Senior Executive Officer",
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Takenari  Motoda",
+          "name": "Shimpei  Otani",
           "title": "Group Executive Officer",
           "fiscalYear": 2025,
           "exercisedValue": 0,
@@ -106,8 +82,32 @@
         },
         {
           "maxAge": 1,
-          "name": "Mr. Yoshihiro  Kunii",
-          "title": "Head of Production Department & Group Senior Executive Officer",
+          "name": "Tomoaki  Suenaga",
+          "title": "Group Executive Officer",
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Satoshi  Katayama",
+          "title": "Group Executive Officer",
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Yoshihide  Shindo",
+          "title": "Group Executive Officer",
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Tatsunori  Takahashi",
+          "title": "Group Executive Officer",
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -115,34 +115,34 @@
       ]
     },
     "price": {
-      "currentPrice": 70090.0,
-      "previousClose": 69290.0,
-      "open": 68600.0,
-      "dayHigh": 70250.0,
-      "dayLow": 68580.0,
-      "bid": 70060.0,
-      "ask": 70110.0,
+      "currentPrice": 73590.0,
+      "previousClose": 73170.0,
+      "open": 73090.0,
+      "dayHigh": 73670.0,
+      "dayLow": 72420.0,
+      "bid": 73400.0,
+      "ask": 73590.0,
       "fiftyTwoWeekHigh": 75700.0,
       "fiftyTwoWeekLow": 43270.0,
-      "fiftyDayAverage": 66994.0,
-      "twoHundredDayAverage": 56391.8,
-      "volume": 1286200,
-      "averageVolume": 1124411,
-      "averageVolume10days": 1172790,
-      "regularMarketChangePercent": 1.1545677,
-      "52WeekChange": 0.46142614
+      "fiftyDayAverage": 67145.8,
+      "twoHundredDayAverage": 56640.9,
+      "volume": 1485500,
+      "averageVolume": 1142862,
+      "averageVolume10days": 1184300,
+      "regularMarketChangePercent": 0.5740057,
+      "52WeekChange": 0.55482364
     },
     "valuation": {
-      "marketCap": 21506398617600,
-      "enterpriseValue": 20048357883904,
-      "trailingPE": 45.044987,
-      "forwardPE": 51.207306,
-      "priceToBook": 8.169696,
-      "priceToSalesTrailing12Months": 5.8671393,
-      "trailingEps": 1556.0,
+      "marketCap": 22580337573888,
+      "enterpriseValue": 20993424752640,
+      "trailingPE": 47.217873,
+      "forwardPE": 53.764385,
+      "priceToBook": 8.577657,
+      "priceToSalesTrailing12Months": 6.16012,
+      "trailingEps": 1558.52,
       "forwardEps": 1368.75,
       "bookValue": 8579.267,
-      "pegRatio": 2.87
+      "pegRatio": 3.0
     },
     "profitability": {
       "profitMargins": 0.1306,
@@ -161,7 +161,7 @@
     },
     "dividend": {
       "dividendRate": 640.0,
-      "dividendYield": 0.91,
+      "dividendYield": 0.87,
       "fiveYearAvgDividendYield": 0.8,
       "payoutRatio": 0.3722,
       "exDividendDate": 1787875200,
@@ -173,14 +173,14 @@
       "numberOfAnalystOpinions": 14,
       "targetHighPrice": 85000.0,
       "targetLowPrice": 56000.0,
-      "targetMeanPrice": 71692.86,
-      "targetMedianPrice": 71500.0
+      "targetMeanPrice": 72264.29,
+      "targetMedianPrice": 73000.0
     },
     "ownership": {
       "sharesOutstanding": 306839741,
       "floatShares": 181557075,
       "heldPercentInsiders": 0.39248002,
-      "heldPercentInstitutions": 0.35153,
+      "heldPercentInstitutions": 0.35493,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1677456000,
       "beta": 0.371

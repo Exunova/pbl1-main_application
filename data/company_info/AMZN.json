@@ -1,8 +1,8 @@
 {
   "ticker": "AMZN",
   "market": "US",
-  "scraped_at": "2026-04-26 19:04:48.258158",
-  "updated_at": "2026-04-26T19:04:48.258171",
+  "scraped_at": "2026-04-30 14:52:18.269371",
+  "updated_at": "2026-04-30T14:52:18.269382",
   "info": {
     "identity": {
       "longName": "Amazon.com, Inc.",
@@ -122,34 +122,34 @@
       ]
     },
     "price": {
-      "currentPrice": 263.99,
-      "previousClose": 255.08,
-      "open": 259.88,
-      "dayHigh": 264.375,
-      "dayLow": 257.685,
-      "bid": 263.92,
-      "ask": 264.31,
-      "fiftyTwoWeekHigh": 264.5,
-      "fiftyTwoWeekLow": 178.85,
-      "fiftyDayAverage": 218.641,
-      "twoHundredDayAverage": 226.4041,
-      "volume": 53601873,
-      "averageVolume": 51827403,
-      "averageVolume10days": 46305860,
-      "regularMarketChangePercent": 3.49302,
-      "52WeekChange": 0.40644646
+      "currentPrice": 263.04,
+      "previousClose": 259.7,
+      "open": 258.215,
+      "dayHigh": 265.91,
+      "dayLow": 257.7,
+      "bid": 261.8,
+      "ask": 263.22,
+      "fiftyTwoWeekHigh": 265.91,
+      "fiftyTwoWeekLow": 183.85,
+      "fiftyDayAverage": 222.3274,
+      "twoHundredDayAverage": 226.95856,
+      "volume": 56731766,
+      "averageVolume": 52426268,
+      "averageVolume10days": 46259210,
+      "regularMarketChangePercent": 1.2861,
+      "52WeekChange": 0.38296533
     },
     "valuation": {
-      "marketCap": 2839014801408,
-      "enterpriseValue": 2889429811200,
-      "trailingPE": 36.76741,
-      "forwardPE": 27.862535,
-      "priceToBook": 6.8916097,
-      "priceToSalesTrailing12Months": 3.959994,
-      "trailingEps": 7.18,
-      "forwardEps": 9.47473,
+      "marketCap": 2828798525440,
+      "enterpriseValue": 2879231623168,
+      "trailingPE": 31.464117,
+      "forwardPE": 27.824644,
+      "priceToBook": 6.86681,
+      "priceToSalesTrailing12Months": 3.945744,
+      "trailingEps": 8.36,
+      "forwardEps": 9.45349,
       "bookValue": 38.306,
-      "pegRatio": 1.91
+      "pegRatio": null
     },
     "profitability": {
       "profitMargins": 0.108339995,
@@ -176,18 +176,18 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.35294,
+      "recommendationMean": 1.35821,
       "numberOfAnalystOpinions": 64,
       "targetHighPrice": 360.0,
       "targetLowPrice": 175.0,
-      "targetMeanPrice": 283.78906,
+      "targetMeanPrice": 283.97656,
       "targetMedianPrice": 285.0
     },
     "ownership": {
       "sharesOutstanding": 10754251799,
       "floatShares": 9756218134,
       "heldPercentInsiders": 0.08944,
-      "heldPercentInstitutions": 0.67037004,
+      "heldPercentInstitutions": 0.67072,
       "lastSplitFactor": "20:1",
       "lastSplitDate": 1654473600,
       "beta": 1.383

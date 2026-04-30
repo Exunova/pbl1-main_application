@@ -1,8 +1,8 @@
 {
   "ticker": "BATS.L",
   "market": "GB",
-  "scraped_at": "2026-04-26 19:05:27.690496",
-  "updated_at": "2026-04-26T19:05:27.690516",
+  "scraped_at": "2026-04-30 14:52:51.478205",
+  "updated_at": "2026-04-30T14:52:51.478215",
   "info": {
     "identity": {
       "longName": "British American Tobacco p.l.c.",
@@ -122,34 +122,34 @@
       ]
     },
     "price": {
-      "currentPrice": 4302.0,
-      "previousClose": 4206.0,
-      "open": 4255.0,
-      "dayHigh": 4371.0,
-      "dayLow": 4246.0,
-      "bid": 4326.0,
-      "ask": 4328.0,
+      "currentPrice": 4242.0,
+      "previousClose": 4259.0,
+      "open": 4273.0,
+      "dayHigh": 4277.0,
+      "dayLow": 4239.0,
+      "bid": 4242.0,
+      "ask": 4243.0,
       "fiftyTwoWeekHigh": 4876.92,
       "fiftyTwoWeekLow": 3013.0,
-      "fiftyDayAverage": 4382.44,
-      "twoHundredDayAverage": 4202.96,
-      "volume": 3494873,
-      "averageVolume": 4891761,
-      "averageVolume10days": 5307632,
-      "regularMarketChangePercent": 2.2824538,
-      "52WeekChange": 0.36528087
+      "fiftyDayAverage": 4379.12,
+      "twoHundredDayAverage": 4209.49,
+      "volume": 102541,
+      "averageVolume": 5016561,
+      "averageVolume10days": 6113288,
+      "regularMarketChangePercent": -0.39915472,
+      "52WeekChange": 0.316131
     },
     "valuation": {
-      "marketCap": 93108748288,
-      "enterpriseValue": 124942827520,
-      "trailingPE": 12.326648,
-      "forwardPE": 11.202512,
-      "priceToBook": 2.0310657,
-      "priceToSalesTrailing12Months": 3.6356401,
+      "marketCap": 91799117824,
+      "enterpriseValue": 124008292352,
+      "trailingPE": 12.154727,
+      "forwardPE": 11.04627,
+      "priceToBook": 2.0027382,
+      "priceToSalesTrailing12Months": 3.5845027,
       "trailingEps": 3.49,
       "forwardEps": 3.84021,
       "bookValue": 21.181,
-      "pegRatio": 1.48
+      "pegRatio": 1.46
     },
     "profitability": {
       "profitMargins": 0.30316,
@@ -168,7 +168,7 @@
     },
     "dividend": {
       "dividendRate": 2.45,
-      "dividendYield": 5.7,
+      "dividendYield": 5.75,
       "fiveYearAvgDividendYield": 7.57,
       "payoutRatio": 0.6882,
       "exDividendDate": 1783555200,
@@ -184,10 +184,10 @@
       "targetMedianPrice": 4900.0
     },
     "ownership": {
-      "sharesOutstanding": 2164313216,
+      "sharesOutstanding": 2164052705,
       "floatShares": 1980254987,
-      "heldPercentInsiders": 0.06568,
-      "heldPercentInstitutions": 0.55979997,
+      "heldPercentInsiders": 0.065689996,
+      "heldPercentInstitutions": 0.56016,
       "lastSplitFactor": null,
       "lastSplitDate": null,
       "beta": 0.124

@@ -4,24 +4,12 @@
   "base": "IDR",
   "quote": "USD",
   "label": "Indonesian Rupiah / US Dollar",
-  "scraped_at": "2026-04-26 19:04:49.846058",
-  "updated_at": "2026-04-26T19:04:49.846061",
+  "scraped_at": "2026-04-27 07:53:20.425476",
+  "updated_at": "2026-04-27T07:53:20.425483",
   "current_rate": 5.8e-05,
   "prev_close": 5.8e-05,
-  "change_pct": 0.1737,
+  "change_pct": -0.0,
   "history_30d": [
-    {
-      "date": "2026-03-24",
-      "close": 5.9e-05
-    },
-    {
-      "date": "2026-03-25",
-      "close": 6e-05
-    },
-    {
-      "date": "2026-03-26",
-      "close": 6e-05
-    },
     {
       "date": "2026-03-27",
       "close": 5.9e-05
@@ -107,7 +95,7 @@
       "close": 5.8e-05
     },
     {
-      "date": "2026-04-25",
+      "date": "2026-04-27",
       "close": 5.8e-05
     }
   ]

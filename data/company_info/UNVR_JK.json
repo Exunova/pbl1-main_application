@@ -1,8 +1,8 @@
 {
   "ticker": "UNVR.JK",
   "market": "ID",
-  "scraped_at": "2026-04-26 19:05:05.710732",
-  "updated_at": "2026-04-26T19:05:05.710746",
+  "scraped_at": "2026-04-30 14:52:34.591447",
+  "updated_at": "2026-04-30T14:52:34.591456",
   "info": {
     "identity": {
       "longName": "PT Unilever Indonesia Tbk",
@@ -95,34 +95,34 @@
       ]
     },
     "price": {
-      "currentPrice": 1575.0,
-      "previousClose": 1675.0,
-      "open": 1675.0,
-      "dayHigh": 1685.0,
-      "dayLow": 1565.0,
-      "bid": 1575.0,
-      "ask": 1580.0,
+      "currentPrice": 1545.0,
+      "previousClose": 1575.0,
+      "open": 1615.0,
+      "dayHigh": 1615.0,
+      "dayLow": 1530.0,
+      "bid": 1540.0,
+      "ask": 1545.0,
       "fiftyTwoWeekHigh": 2840.0,
       "fiftyTwoWeekLow": 1305.0,
-      "fiftyDayAverage": 1998.8,
-      "twoHundredDayAverage": 2107.325,
-      "volume": 41658200,
-      "averageVolume": 26827017,
-      "averageVolume10days": 18929200,
-      "regularMarketChangePercent": -5.970149,
-      "52WeekChange": -0.05405408
+      "fiftyDayAverage": 1952.4,
+      "twoHundredDayAverage": 2106.7,
+      "volume": 38659100,
+      "averageVolume": 26193680,
+      "averageVolume10days": 28176860,
+      "regularMarketChangePercent": -1.9047619,
+      "52WeekChange": -0.1025641
     },
     "valuation": {
-      "marketCap": 59820442910720,
+      "marketCap": 58681005703168,
       "enterpriseValue": 54759608287232,
-      "trailingPE": 16.94824,
-      "forwardPE": 14.824925,
-      "priceToBook": 13.367395,
-      "priceToSalesTrailing12Months": 1.8726976,
+      "trailingPE": 16.625418,
+      "forwardPE": 14.542545,
+      "priceToBook": 13.112779,
+      "priceToSalesTrailing12Months": 1.8370272,
       "trailingEps": 92.93,
       "forwardEps": 106.24,
       "bookValue": 117.824,
-      "pegRatio": 2.19
+      "pegRatio": 2.07
     },
     "profitability": {
       "profitMargins": 0.23921,
@@ -160,7 +160,7 @@
       "sharesOutstanding": 37981233300,
       "floatShares": 5557034244,
       "heldPercentInsiders": 0.86063004,
-      "heldPercentInstitutions": 0.033940002,
+      "heldPercentInstitutions": 0.03565,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1577923200,
       "beta": 0.366

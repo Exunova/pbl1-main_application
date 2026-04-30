@@ -1,8 +1,8 @@
 {
   "ticker": "REL.L",
   "market": "GB",
-  "scraped_at": "2026-04-26 19:05:37.438116",
-  "updated_at": "2026-04-26T19:05:37.438139",
+  "scraped_at": "2026-04-30 14:52:59.429105",
+  "updated_at": "2026-04-30T14:52:59.429119",
   "info": {
     "identity": {
       "longName": "RELX PLC",
@@ -116,34 +116,34 @@
       ]
     },
     "price": {
-      "currentPrice": 2696.0,
-      "previousClose": 2684.0,
-      "open": 2677.0,
-      "dayHigh": 2706.0,
-      "dayLow": 2659.0,
-      "bid": 2703.0,
-      "ask": 2704.0,
+      "currentPrice": 2643.0,
+      "previousClose": 2651.0,
+      "open": 2639.0,
+      "dayHigh": 2656.0,
+      "dayLow": 2639.0,
+      "bid": 2642.0,
+      "ask": 2643.0,
       "fiftyTwoWeekHigh": 4183.0,
       "fiftyTwoWeekLow": 1991.0,
-      "fiftyDayAverage": 2518.76,
-      "twoHundredDayAverage": 3063.83,
-      "volume": 8648731,
-      "averageVolume": 10187710,
-      "averageVolume10days": 7638916,
-      "regularMarketChangePercent": 0.44709387,
-      "52WeekChange": -0.31919193
+      "fiftyDayAverage": 2546.8,
+      "twoHundredDayAverage": 3045.22,
+      "volume": 192817,
+      "averageVolume": 10040970,
+      "averageVolume10days": 7609784,
+      "regularMarketChangePercent": -0.30177292,
+      "52WeekChange": -0.34944785
     },
     "valuation": {
-      "marketCap": 48069545984,
-      "enterpriseValue": 56201895936,
-      "trailingPE": 24.071428,
-      "forwardPE": 17.209793,
-      "priceToBook": 20.722523,
-      "priceToSalesTrailing12Months": 5.012466,
+      "marketCap": 46962593792,
+      "enterpriseValue": 55383318528,
+      "trailingPE": 23.598215,
+      "forwardPE": 16.871468,
+      "priceToBook": 20.315144,
+      "priceToSalesTrailing12Months": 4.897038,
       "trailingEps": 1.12,
       "forwardEps": 1.56655,
       "bookValue": 1.301,
-      "pegRatio": 1.45
+      "pegRatio": 1.44
     },
     "profitability": {
       "profitMargins": 0.21533,
@@ -162,7 +162,7 @@
     },
     "dividend": {
       "dividendRate": 0.68,
-      "dividendYield": 2.5,
+      "dividendYield": 2.55,
       "fiveYearAvgDividendYield": 1.98,
       "payoutRatio": 0.5741,
       "exDividendDate": 1778112000,
@@ -178,10 +178,10 @@
       "targetMedianPrice": 3450.0
     },
     "ownership": {
-      "sharesOutstanding": 1780884254,
+      "sharesOutstanding": 1776867067,
       "floatShares": 1804563526,
-      "heldPercentInsiders": 0.0045,
-      "heldPercentInstitutions": 0.57699,
+      "heldPercentInsiders": 0.00459,
+      "heldPercentInstitutions": 0.58164,
       "lastSplitFactor": "58:67",
       "lastSplitDate": 1199664000,
       "beta": 0.228

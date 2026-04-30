@@ -252,7 +252,7 @@ export default function PortfolioView() {
           </select>
 
           <div className="flex gap-2 pt-1">
-            <button className="flex-1 bg-accent text-background text-xs font-bold py-1.5 rounded">
+            <button onClick={handleSave} className="flex-1 bg-accent text-background text-xs font-bold py-1.5 rounded">
               {editingId ? "Update" : "Save"}
             </button>
             <button

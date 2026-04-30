@@ -1,8 +1,8 @@
 {
   "ticker": "GOOGL",
   "market": "US",
-  "scraped_at": "2026-04-26 19:04:45.778126",
-  "updated_at": "2026-04-26T19:04:45.778137",
+  "scraped_at": "2026-04-30 14:52:15.969969",
+  "updated_at": "2026-04-30T14:52:15.969977",
   "info": {
     "identity": {
       "longName": "Alphabet Inc.",
@@ -24,8 +24,8 @@
           "age": 52,
           "title": "CEO & Director",
           "yearBorn": 1973,
-          "fiscalYear": 2024,
-          "totalPay": 10319413,
+          "fiscalYear": 2025,
+          "totalPay": 10906079,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -35,8 +35,8 @@
           "age": 67,
           "title": "President & Chief Investment Officer",
           "yearBorn": 1958,
-          "fiscalYear": 2024,
-          "totalPay": 3023363,
+          "fiscalYear": 2025,
+          "totalPay": 1015596,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -46,7 +46,7 @@
           "age": 52,
           "title": "Co-Founder & Director",
           "yearBorn": 1973,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 1,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -57,7 +57,7 @@
           "age": 51,
           "title": "Co-Founder & Director",
           "yearBorn": 1974,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
           "totalPay": 1,
           "exercisedValue": 0,
           "unexercisedValue": 0
@@ -68,8 +68,8 @@
           "age": 52,
           "title": "Senior VP & CFO",
           "yearBorn": 1973,
-          "fiscalYear": 2024,
-          "totalPay": 11455556,
+          "fiscalYear": 2025,
+          "totalPay": 1087961,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -79,81 +79,42 @@
           "age": 64,
           "title": "President of Global Affairs, Chief Legal Officer & Company Secretary",
           "yearBorn": 1961,
-          "fiscalYear": 2024,
-          "totalPay": 3019696,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Philipp  Schindler",
-          "age": 54,
-          "title": "Senior Vice President & Chief Business Officer of Google",
-          "yearBorn": 1971,
-          "fiscalYear": 2024,
-          "totalPay": 3051699,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Ellen  West",
-          "title": "Vice President of Investor Relations",
-          "fiscalYear": 2024,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Fiona Clare Cicconi",
-          "age": 59,
-          "title": "Chief People Officer",
-          "yearBorn": 1966,
-          "fiscalYear": 2024,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Ivy  Ross",
-          "age": 69,
-          "title": "VP & Head of Design for all Hardware Products",
-          "yearBorn": 1956,
-          "fiscalYear": 2024,
+          "fiscalYear": 2025,
+          "totalPay": 1015596,
           "exercisedValue": 0,
           "unexercisedValue": 0
         }
       ]
     },
     "price": {
-      "currentPrice": 344.4,
-      "previousClose": 338.89,
-      "open": 338.725,
-      "dayHigh": 345.27,
-      "dayLow": 335.39,
-      "bid": 321.77,
-      "ask": 355.88,
-      "fiftyTwoWeekHigh": 349.0,
+      "currentPrice": 349.94,
+      "previousClose": 349.81,
+      "open": 347.565,
+      "dayHigh": 355.79,
+      "dayLow": 344.21,
+      "bid": 349.9,
+      "ask": 350.25,
+      "fiftyTwoWeekHigh": 355.79,
       "fiftyTwoWeekLow": 147.84,
-      "fiftyDayAverage": 309.5592,
-      "twoHundredDayAverage": 276.5518,
-      "volume": 26351181,
-      "averageVolume": 32270354,
-      "averageVolume10days": 22488130,
-      "regularMarketChangePercent": 1.62589,
-      "52WeekChange": 1.1443248
+      "fiftyDayAverage": 312.2256,
+      "twoHundredDayAverage": 279.10526,
+      "volume": 29676925,
+      "averageVolume": 32330586,
+      "averageVolume10days": 24465870,
+      "regularMarketChangePercent": 0.0371644,
+      "52WeekChange": 1.1694977
     },
     "valuation": {
-      "marketCap": 4166206881792,
-      "enterpriseValue": 4106359930880,
-      "trailingPE": 31.859388,
-      "forwardPE": 25.513605,
-      "priceToBook": 10.025325,
-      "priceToSalesTrailing12Months": 10.342191,
-      "trailingEps": 10.81,
-      "forwardEps": 13.49868,
+      "marketCap": 4233379446784,
+      "enterpriseValue": 4173377306624,
+      "trailingPE": 26.672256,
+      "forwardPE": 25.86764,
+      "priceToBook": 10.186592,
+      "priceToSalesTrailing12Months": 10.508941,
+      "trailingEps": 13.12,
+      "forwardEps": 13.5281,
       "bookValue": 34.353,
-      "pegRatio": 2.36
+      "pegRatio": null
     },
     "profitability": {
       "profitMargins": 0.32810003,
@@ -174,24 +135,24 @@
       "dividendRate": 0.84,
       "dividendYield": 0.24,
       "fiveYearAvgDividendYield": null,
-      "payoutRatio": 0.076799996,
+      "payoutRatio": 0.0641,
       "exDividendDate": 1773014400,
       "lastDividendValue": 0.21
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.38806,
-      "numberOfAnalystOpinions": 55,
+      "recommendationMean": 1.39394,
+      "numberOfAnalystOpinions": 56,
       "targetHighPrice": 443.0,
       "targetLowPrice": 185.0,
-      "targetMeanPrice": 377.29492,
-      "targetMedianPrice": 385.0
+      "targetMeanPrice": 378.50394,
+      "targetMedianPrice": 387.5
     },
     "ownership": {
-      "sharesOutstanding": 5822000000,
-      "floatShares": 10833468350,
-      "heldPercentInsiders": 0.00575,
-      "heldPercentInstitutions": 0.80660003,
+      "sharesOutstanding": 5823665113,
+      "floatShares": 10836734540,
+      "heldPercentInsiders": 0.00564,
+      "heldPercentInstitutions": 0.808,
       "lastSplitFactor": "20:1",
       "lastSplitDate": 1658102400,
       "beta": 1.128

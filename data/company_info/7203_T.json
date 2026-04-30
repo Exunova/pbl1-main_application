@@ -1,8 +1,8 @@
 {
   "ticker": "7203.T",
   "market": "JP",
-  "scraped_at": "2026-04-26 19:05:07.987884",
-  "updated_at": "2026-04-26T19:05:07.987895",
+  "scraped_at": "2026-04-30 14:52:36.874285",
+  "updated_at": "2026-04-30T14:52:36.874296",
   "info": {
     "identity": {
       "longName": "Toyota Motor Corporation",
@@ -120,31 +120,31 @@
       ]
     },
     "price": {
-      "currentPrice": 3067.0,
-      "previousClose": 3123.0,
-      "open": 3122.0,
-      "dayHigh": 3133.0,
-      "dayLow": 3062.0,
-      "bid": 3067.0,
-      "ask": 3074.0,
+      "currentPrice": 3023.0,
+      "previousClose": 3112.0,
+      "open": 3062.0,
+      "dayHigh": 3071.0,
+      "dayLow": 2997.0,
+      "bid": 3023.0,
+      "ask": 3024.0,
       "fiftyTwoWeekHigh": 4000.0,
       "fiftyTwoWeekLow": 2434.0,
-      "fiftyDayAverage": 3440.2,
-      "twoHundredDayAverage": 3163.91,
-      "volume": 22659400,
-      "averageVolume": 22972037,
-      "averageVolume10days": 18526090,
-      "regularMarketChangePercent": -1.7931476,
-      "52WeekChange": 0.1006639
+      "fiftyDayAverage": 3414.2,
+      "twoHundredDayAverage": 3170.115,
+      "volume": 32130400,
+      "averageVolume": 22931832,
+      "averageVolume10days": 19629920,
+      "regularMarketChangePercent": -2.8598971,
+      "52WeekChange": 0.13122499
     },
     "valuation": {
-      "marketCap": 39973390647296,
-      "enterpriseValue": 66526837211136,
-      "trailingPE": 10.78752,
-      "forwardPE": 9.459626,
-      "priceToBook": 1.0256245,
-      "priceToSalesTrailing12Months": 0.79232484,
-      "trailingEps": 284.31,
+      "marketCap": 35795507347456,
+      "enterpriseValue": 67113339322368,
+      "trailingPE": 10.639496,
+      "forwardPE": 9.3239155,
+      "priceToBook": 1.0109106,
+      "priceToSalesTrailing12Months": 0.7095137,
+      "trailingEps": 284.13,
       "forwardEps": 324.22,
       "bookValue": 2990.373,
       "pegRatio": 1.56
@@ -166,7 +166,7 @@
     },
     "dividend": {
       "dividendRate": 95.0,
-      "dividendYield": 3.1,
+      "dividendYield": 3.05,
       "fiveYearAvgDividendYield": 2.7,
       "payoutRatio": 0.3343,
       "exDividendDate": 1774828800,
@@ -182,10 +182,10 @@
       "targetMedianPrice": 3900.0
     },
     "ownership": {
-      "sharesOutstanding": 13033384474,
+      "sharesOutstanding": 11841053512,
       "floatShares": 9737764559,
       "heldPercentInsiders": 0.14920999,
-      "heldPercentInstitutions": 0.2576,
+      "heldPercentInstitutions": 0.25778,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1633046400,
       "beta": 0.357

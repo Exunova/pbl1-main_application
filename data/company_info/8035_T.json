@@ -1,8 +1,8 @@
 {
   "ticker": "8035.T",
   "market": "JP",
-  "scraped_at": "2026-04-26 19:05:19.462442",
-  "updated_at": "2026-04-26T19:05:19.462459",
+  "scraped_at": "2026-04-30 14:52:45.848810",
+  "updated_at": "2026-04-30T14:52:45.848821",
   "info": {
     "identity": {
       "longName": "Tokyo Electron Limited",
@@ -110,34 +110,34 @@
       ]
     },
     "price": {
-      "currentPrice": 45850.0,
-      "previousClose": 45480.0,
-      "open": 45450.0,
-      "dayHigh": 46110.0,
-      "dayLow": 45410.0,
-      "bid": 45840.0,
-      "ask": 45860.0,
-      "fiftyTwoWeekHigh": 46600.0,
+      "currentPrice": 44390.0,
+      "previousClose": 45150.0,
+      "open": 45000.0,
+      "dayHigh": 45290.0,
+      "dayLow": 43980.0,
+      "bid": 44330.0,
+      "ask": 44400.0,
+      "fiftyTwoWeekHigh": 47710.0,
       "fiftyTwoWeekLow": 19870.0,
-      "fiftyDayAverage": 41707.6,
-      "twoHundredDayAverage": 33124.1,
-      "volume": 2312400,
-      "averageVolume": 3280555,
-      "averageVolume10days": 3072370,
-      "regularMarketChangePercent": 0.81354445,
-      "52WeekChange": 1.1627359
+      "fiftyDayAverage": 41886.8,
+      "twoHundredDayAverage": 33313.85,
+      "volume": 4081000,
+      "averageVolume": 3252728,
+      "averageVolume10days": 3084360,
+      "regularMarketChangePercent": -1.683278,
+      "52WeekChange": 1.1287129
     },
     "valuation": {
-      "marketCap": 20945068621824,
-      "enterpriseValue": 20599384571904,
-      "trailingPE": 38.910343,
-      "forwardPE": 35.814716,
-      "priceToBook": 10.481433,
-      "priceToSalesTrailing12Months": 8.774211,
-      "trailingEps": 1178.35,
+      "marketCap": 20278115565568,
+      "enterpriseValue": 20278501441536,
+      "trailingPE": 37.669083,
+      "forwardPE": 34.67427,
+      "priceToBook": 10.147673,
+      "priceToSalesTrailing12Months": 8.494814,
+      "trailingEps": 1178.42,
       "forwardEps": 1280.2,
       "bookValue": 4374.402,
-      "pegRatio": 2.17
+      "pegRatio": 2.13
     },
     "profitability": {
       "profitMargins": 0.21077,
@@ -156,7 +156,7 @@
     },
     "dividend": {
       "dividendRate": 601.0,
-      "dividendYield": 1.31,
+      "dividendYield": 1.33,
       "fiveYearAvgDividendYield": 2.2,
       "payoutRatio": 0.50189996,
       "exDividendDate": 1774828800,
@@ -175,7 +175,7 @@
       "sharesOutstanding": 454847594,
       "floatShares": 437698721,
       "heldPercentInsiders": 0.03207,
-      "heldPercentInstitutions": 0.57706,
+      "heldPercentInstitutions": 0.57178,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1680134400,
       "beta": 1.318

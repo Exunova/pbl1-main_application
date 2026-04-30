@@ -1,8 +1,8 @@
 {
   "ticker": "PGAS.JK",
   "market": "ID",
-  "scraped_at": "2026-04-26 19:05:03.275278",
-  "updated_at": "2026-04-26T19:05:03.275289",
+  "scraped_at": "2026-04-30 14:52:32.214597",
+  "updated_at": "2026-04-30T14:52:32.214605",
   "info": {
     "identity": {
       "longName": "PT Perusahaan Gas Negara Tbk",
@@ -104,34 +104,34 @@
       ]
     },
     "price": {
-      "currentPrice": 1930.0,
-      "previousClose": 1940.0,
-      "open": 1940.0,
-      "dayHigh": 1955.0,
-      "dayLow": 1900.0,
-      "bid": 1925.0,
-      "ask": 1930.0,
+      "currentPrice": 1895.0,
+      "previousClose": 1920.0,
+      "open": 1920.0,
+      "dayHigh": 1925.0,
+      "dayLow": 1850.0,
+      "bid": 1885.0,
+      "ask": 1895.0,
       "fiftyTwoWeekHigh": 2520.0,
       "fiftyTwoWeekLow": 1530.0,
-      "fiftyDayAverage": 2025.8,
-      "twoHundredDayAverage": 1854.7,
-      "volume": 40491700,
-      "averageVolume": 54683230,
-      "averageVolume10days": 35495190,
-      "regularMarketChangePercent": -0.5154639,
-      "52WeekChange": 0.12865496
+      "fiftyDayAverage": 2012.1,
+      "twoHundredDayAverage": 1859.65,
+      "volume": 28420500,
+      "averageVolume": 50443550,
+      "averageVolume10days": 27984020,
+      "regularMarketChangePercent": -1.3020834,
+      "52WeekChange": 0.17431188
     },
     "valuation": {
-      "marketCap": 46786110554112,
-      "enterpriseValue": 46786731311104,
-      "trailingPE": 12.594623,
-      "forwardPE": 9.488226,
-      "priceToBook": 16495.727,
-      "priceToSalesTrailing12Months": 11877.914,
-      "trailingEps": 153.24,
+      "marketCap": 45937657380864,
+      "enterpriseValue": 46544317317120,
+      "trailingPE": 11.003367,
+      "forwardPE": 9.316159,
+      "priceToBook": 16196.581,
+      "priceToSalesTrailing12Months": 11662.512,
+      "trailingEps": 172.22,
       "forwardEps": 203.41,
       "bookValue": 0.117,
-      "pegRatio": 1.01
+      "pegRatio": 1.42
     },
     "profitability": {
       "profitMargins": 0.061890002,
@@ -150,9 +150,9 @@
     },
     "dividend": {
       "dividendRate": 182.08,
-      "dividendYield": 9.43,
+      "dividendYield": 9.48,
       "fiveYearAvgDividendYield": 3.13,
-      "payoutRatio": 1.2596,
+      "payoutRatio": 1.1209999,
       "exDividendDate": 1749686400,
       "lastDividendValue": 182.08102
     },
@@ -160,16 +160,16 @@
       "recommendationKey": "hold",
       "recommendationMean": 2.54545,
       "numberOfAnalystOpinions": 11,
-      "targetHighPrice": 2694.5881,
-      "targetLowPrice": 1554.5701,
-      "targetMeanPrice": 2090.033,
-      "targetMedianPrice": 2124.579
+      "targetHighPrice": 2639.48,
+      "targetLowPrice": 1562.8501,
+      "targetMeanPrice": 2091.6143,
+      "targetMedianPrice": 2135.895
     },
     "ownership": {
       "sharesOutstanding": 24241508195,
       "floatShares": 10428454411,
       "heldPercentInsiders": 0.63008,
-      "heldPercentInstitutions": 0.121520005,
+      "heldPercentInstitutions": 0.12274,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1217808000,
       "beta": null

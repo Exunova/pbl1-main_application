@@ -25,7 +25,7 @@ const Titlebar = ({ theme, onThemeToggle }) => {
   ]
 
   return (
-  <div className="h-10 bg-surface border-b border-border flex items-center justify-between px-3 drag-header shrink-0">
+  <div className="h-10 bg-[#131722] border-b border-border flex items-center justify-between px-3 drag-header shrink-0">
     <div className="flex items-center gap-4 no-drag">
       <div className="flex items-center gap-2">
         <div className="w-5 h-5 bg-accent rounded-sm flex items-center justify-center">

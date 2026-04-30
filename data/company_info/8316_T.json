@@ -1,8 +1,8 @@
 {
   "ticker": "8316.T",
   "market": "JP",
-  "scraped_at": "2026-04-26 19:05:14.818299",
-  "updated_at": "2026-04-26T19:05:14.818319",
+  "scraped_at": "2026-04-30 14:52:42.417586",
+  "updated_at": "2026-04-30T14:52:42.417597",
   "info": {
     "identity": {
       "longName": "Sumitomo Mitsui Financial Group, Inc.",
@@ -127,34 +127,34 @@
       ]
     },
     "price": {
-      "currentPrice": 5347.0,
-      "previousClose": 5350.0,
-      "open": 5383.0,
-      "dayHigh": 5389.0,
-      "dayLow": 5298.0,
-      "bid": 5345.0,
-      "ask": 5348.0,
+      "currentPrice": 5512.0,
+      "previousClose": 5648.0,
+      "open": 5609.0,
+      "dayHigh": 5609.0,
+      "dayLow": 5420.0,
+      "bid": 5501.0,
+      "ask": 5513.0,
       "fiftyTwoWeekHigh": 6284.0,
       "fiftyTwoWeekLow": 3238.0,
-      "fiftyDayAverage": 5484.66,
-      "twoHundredDayAverage": 4711.1,
-      "volume": 7882600,
-      "averageVolume": 14036049,
-      "averageVolume10days": 10235860,
-      "regularMarketChangePercent": -0.05607477,
-      "52WeekChange": 0.5927912
+      "fiftyDayAverage": 5460.38,
+      "twoHundredDayAverage": 4729.83,
+      "volume": 15242200,
+      "averageVolume": 14096367,
+      "averageVolume10days": 10740340,
+      "regularMarketChangePercent": -2.407932,
+      "52WeekChange": 0.6874813
     },
     "valuation": {
-      "marketCap": 20414864556032,
-      "enterpriseValue": -28299940069376,
-      "trailingPE": 14.305971,
-      "forwardPE": 16.824518,
-      "priceToBook": 1.3077743,
-      "priceToSalesTrailing12Months": 5.506475,
-      "trailingEps": 373.76,
+      "marketCap": 21044834336768,
+      "enterpriseValue": -27147670388736,
+      "trailingPE": 14.74191,
+      "forwardPE": 17.343697,
+      "priceToBook": 1.3481301,
+      "priceToSalesTrailing12Months": 5.676396,
+      "trailingEps": 373.9,
       "forwardEps": 317.81,
       "bookValue": 4088.626,
-      "pegRatio": 0.85
+      "pegRatio": 0.9
     },
     "profitability": {
       "profitMargins": 0.20729999,
@@ -173,7 +173,7 @@
     },
     "dividend": {
       "dividendRate": 157.0,
-      "dividendYield": 2.94,
+      "dividendYield": 2.78,
       "fiveYearAvgDividendYield": 3.89,
       "payoutRatio": 0.3747,
       "exDividendDate": 1774828800,
@@ -192,7 +192,7 @@
       "sharesOutstanding": 3818003356,
       "floatShares": 3826720269,
       "heldPercentInsiders": 0.05316,
-      "heldPercentInstitutions": 0.40645,
+      "heldPercentInstitutions": 0.40735,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1727395200,
       "beta": 0.349

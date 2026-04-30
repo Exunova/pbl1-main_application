@@ -1,8 +1,8 @@
 {
   "ticker": "META",
   "market": "US",
-  "scraped_at": "2026-04-26 19:04:49.427236",
-  "updated_at": "2026-04-26T19:04:49.427246",
+  "scraped_at": "2026-04-30 14:52:19.396728",
+  "updated_at": "2026-04-30T14:52:19.396739",
   "info": {
     "identity": {
       "longName": "Meta Platforms, Inc.",
@@ -16,7 +16,7 @@
       "industry": "Internet Content & Information",
       "fullTimeEmployees": 78865,
       "website": "https://www.meta.com",
-      "longBusinessSummary": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices, personal computers, virtual reality (VR) headsets, and AI glasses in the United States, Canada, Europe, Asia-Pacific, and internationally. It operates through two segments, Family of Apps (FoA) and Reality Labs (RL). The FoA segment offers Facebook, which enables people to build community through feed, reels, stories, groups, marketplace, and other; Instagram that brings people closer through Instagram feed, stories, reels, live, and messaging; Messenger, a messaging application for people to connect with friends, family, communities, and businesses across platforms and devices through text, audio, and video calls; Meta AI, an assistant that's available across apps, as a stand-alone app, on AI glasses, and on the web; Threads, an application for text-based updates and public conversations; and WhatsApp, a messaging application that is used by people and businesses to communicate and transact in a private way. The RL segment provides virtual and augmented reality products, including consumer hardware, software, and content that help people feel connected anytime and anywhere, as well as Meta Quest devices that enable social experiences across gaming, fitness, entertainment, and more. The segment also includes wearables such as AI glasses like Ray Ban Meta and Oakley Meta glasses, featuring Meta AI for advanced conversational and hands free interaction; and the Meta Ray Ban Display, which combines AI glasses with an integrated lens display and the Meta Neural Band, a wrist worn device using electromyography that lets people control their AI glasses through neuromuscular signals. Meta Platforms, Inc. has a collaboration with Microsoft Corporation, NVIDIA Corporation, Advanced Micro Devices, Inc., Broadcom Inc., and OpenAI, L.L.C. The company was formerly known as Facebook, Inc. and changed its name to Meta Platforms, Inc. in October 2021. The company was incorporated in 2004 and is headquartered in Menlo Park, California.",
+      "longBusinessSummary": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices, personal computers, virtual reality (VR) headsets, and AI glasses in the United States, Canada, Europe, Asia-Pacific, and internationally. It operates through two segments, Family of Apps (FoA) and Reality Labs (RL). The FoA segment offers Facebook, which enables people to build community through feed, reels, stories, groups, marketplace, and other; Instagram that brings people closer through Instagram feed, stories, reels, live, and messaging; Messenger, a messaging application for people to connect with friends, family, communities, and businesses across platforms and devices through text, audio, and video calls; Meta AI, an assistant that's available across apps, as a stand-alone app, on AI glasses, and on the web; Threads, an application for text-based updates and public conversations; and WhatsApp, a messaging application that is used by people and businesses to communicate and transact. The RL segment provides virtual and augmented reality products, including consumer hardware, software, and content that help people feel connected, as well as Meta Quest devices that enable social experiences across gaming, fitness, entertainment, and more. The segment also includes wearables such as AI glasses like Ray Ban Meta and Oakley Meta glasses; and the Meta Ray Ban Display, which combines AI glasses with an integrated lens display and the Meta Neural Band, a wrist worn device using electromyography that lets people control their AI glasses through neuromuscular signals. Meta Platforms, Inc. has a collaboration with Microsoft Corporation, NVIDIA Corporation, Advanced Micro Devices, Inc., Broadcom Inc., and OpenAI, L.L.C. The company was formerly known as Facebook, Inc. and changed its name to Meta Platforms, Inc. in October 2021. The company was incorporated in 2004 and is headquartered in Menlo Park, California.",
       "companyOfficers": [
         {
           "maxAge": 1,
@@ -126,34 +126,34 @@
       ]
     },
     "price": {
-      "currentPrice": 675.03,
-      "previousClose": 659.15,
-      "open": 660.32,
-      "dayHigh": 680.67,
-      "dayLow": 653.8401,
-      "bid": 674.6,
-      "ask": 675.98,
+      "currentPrice": 669.12,
+      "previousClose": 671.34,
+      "open": 668.91,
+      "dayHigh": 674.25,
+      "dayLow": 663.8084,
+      "bid": 669.13,
+      "ask": 668.58,
       "fiftyTwoWeekHigh": 796.25,
       "fiftyTwoWeekLow": 520.26,
-      "fiftyDayAverage": 629.8572,
-      "twoHundredDayAverage": 679.97705,
-      "volume": 13292272,
-      "averageVolume": 15716503,
-      "averageVolume10days": 12354790,
-      "regularMarketChangePercent": 2.40916,
-      "52WeekChange": 0.22790778
+      "fiftyDayAverage": 631.6614,
+      "twoHundredDayAverage": 679.2441,
+      "volume": 16921156,
+      "averageVolume": 14646434,
+      "averageVolume10days": 12285220,
+      "regularMarketChangePercent": -0.330687,
+      "52WeekChange": 0.16936088
     },
     "valuation": {
-      "marketCap": 1713511989248,
-      "enterpriseValue": 1711014805504,
-      "trailingPE": 28.736912,
-      "forwardPE": 18.719633,
-      "priceToBook": 7.8613443,
-      "priceToSalesTrailing12Months": 8.526378,
-      "trailingEps": 23.49,
+      "marketCap": 1698509750272,
+      "enterpriseValue": 1696065126400,
+      "trailingPE": 24.331636,
+      "forwardPE": 18.55574,
+      "priceToBook": 7.7925167,
+      "priceToSalesTrailing12Months": 8.451727,
+      "trailingEps": 27.5,
       "forwardEps": 36.06,
       "bookValue": 85.867,
-      "pegRatio": 1.1
+      "pegRatio": null
     },
     "profitability": {
       "profitMargins": 0.30084,
@@ -174,13 +174,13 @@
       "dividendRate": 2.1,
       "dividendYield": 0.31,
       "fiveYearAvgDividendYield": null,
-      "payoutRatio": 0.08939999,
+      "payoutRatio": 0.0764,
       "exDividendDate": 1773619200,
       "lastDividendValue": 0.525
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.35938,
+      "recommendationMean": 1.35385,
       "numberOfAnalystOpinions": 60,
       "targetHighPrice": 1015.0,
       "targetLowPrice": 614.0,
@@ -191,7 +191,7 @@
       "sharesOutstanding": 2196045588,
       "floatShares": 2185105896,
       "heldPercentInsiders": 0.00121,
-      "heldPercentInstitutions": 0.78342,
+      "heldPercentInstitutions": 0.78481,
       "lastSplitFactor": null,
       "lastSplitDate": null,
       "beta": 1.309
