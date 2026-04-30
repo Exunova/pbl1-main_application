@@ -1,6 +1,7 @@
 import { contextBridge, ipcRenderer } from "electron";
 
 contextBridge.exposeInMainWorld("api", {
+    getScrapedTickers: () => ipcRenderer.invoke('get_scraped_tickers'),
     fetchOHLCV: (ticker) => ipcRenderer.invoke("fetchOHLCV", ticker),
     fetchNews: (region) => ipcRenderer.invoke("fetchNews", region),
     fetchMacro: (cc) => ipcRenderer.invoke("fetchMacro", cc),

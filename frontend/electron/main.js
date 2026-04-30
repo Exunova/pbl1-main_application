@@ -184,6 +184,7 @@ app.whenReady().then(() => {
   ipcMain.handle('scrapeLatest', () => sendToPython('scrape_latest', {}))
   ipcMain.handle('scrapeStatus', () => sendToPython('scrape_status', {}))
   ipcMain.handle('flask-health', () => sendToPython('health', {}))
+  ipcMain.handle('get_scraped_tickers', () => sendToPython('get_scraped_tickers', {}))
 
   ipcMain.on('window-minimize', (e) => BrowserWindow.fromWebContents(e.sender)?.minimize())
   ipcMain.on('window-maximize', (e) => {

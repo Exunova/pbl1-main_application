@@ -13,14 +13,29 @@ export default function PortfolioView() {
   const [editingId, setEditingId] = useState(null);
   const [editForm, setEditForm] = useState({}); // Menyimpan data saat diedit
   
+  // Tambahkan baris ini di bawah state yang sudah ada
+  const [availableTickers, setAvailableTickers] = useState([]);
+  const [showTickerDropdown, setShowTickerDropdown] = useState(false);
+
   useEffect(() => {
     if (!window.api) return
     window.api.getPositions().then(r => setPositions(r?.positions || [])).catch(() => {})
     window.api.fetchPnL().then(setPnlData).catch(() => {})
+    // --- TAMBAHKAN BARIS INI UNTUK MENGAMBIL 40 TICKER ---
+    window.api.getScrapedTickers().then(data => {
+        if(data) setAvailableTickers(data);
+    }).catch(() => {})
   }, [])
 
   const handleSave = async () => {
   if (!form.ticker || !form.shares || !form.buyPrice) return;
+  
+  // Validasi ticker harus ada di availableTickers (sekarang berupa array of objects)
+  if (!availableTickers.some(t => t.ticker === form.ticker)) {
+    alert("Ticker tidak valid! Silakan pilih ticker yang tersedia dari dropdown hasil scraping.");
+    return;
+  }
+
   const pos = { ...form, shares: parseFloat(form.shares), buyPrice: parseFloat(form.buyPrice) };
   
   if (editingId) {
@@ -209,15 +224,51 @@ export default function PortfolioView() {
         <div className="bg-surface rounded-lg p-4 w-80 space-y-3">
           <h3 className="text-sm font-bold text-text">Add Position</h3>
 
-          {['ticker', 'company'].map(field => (
+          {/* --- INPUT TICKER DENGAN FITUR PENCARIAN KUSTOM --- */}
+          <div className="mb-3 relative">
             <input
-              key={field}
-              value={form[field]}
-              onChange={e => setForm(f => ({ ...f, [field]: e.target.value }))}
-              placeholder={field}
+              value={form.ticker}
+              onChange={e => {
+                setForm(f => ({ ...f, ticker: e.target.value.toUpperCase() }));
+                setShowTickerDropdown(true);
+              }}
+              onFocus={() => setShowTickerDropdown(true)}
+              onBlur={() => setTimeout(() => setShowTickerDropdown(false), 200)}
+              placeholder="ticker (contoh: AAPL)"
               className="w-full bg-card border border-border rounded px-2 py-1.5 text-xs text-text outline-none focus:border-accent"
             />
-          ))}
+            {showTickerDropdown && availableTickers.length > 0 && (
+              <div className="absolute z-10 w-full mt-1 bg-card border border-border rounded shadow-lg max-h-40 overflow-y-auto">
+                {availableTickers
+                  .filter(t => t.ticker.toLowerCase().includes(form.ticker.toLowerCase()))
+                  .map(t => (
+                    <div
+                      key={t.ticker}
+                      onClick={() => {
+                        // OTOMATIS MENGISI COMPANY NAME
+                        setForm(f => ({ ...f, ticker: t.ticker, company: t.name }));
+                        setShowTickerDropdown(false);
+                      }}
+                      className="px-2 py-1.5 text-xs text-text hover:bg-border cursor-pointer transition-colors flex justify-between items-center"
+                    >
+                      <span className="font-bold">{t.ticker}</span>
+                      <span className="text-muted text-[10px] truncate max-w-[150px] text-right">{t.name}</span>
+                    </div>
+                  ))}
+                {availableTickers.filter(t => t.ticker.toLowerCase().includes(form.ticker.toLowerCase())).length === 0 && (
+                  <div className="px-2 py-1.5 text-xs text-muted italic">Tidak ditemukan</div>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* --- INPUT COMPANY (Tetap Teks Biasa) --- */}
+          <input
+            value={form.company}
+            onChange={e => setForm(f => ({ ...f, company: e.target.value }))}
+            placeholder="company"
+            className="w-full bg-card border border-border rounded px-2 py-1.5 text-xs text-text outline-none focus:border-accent"
+          />
 
           <div className="grid grid-cols-2 gap-2">
             <input

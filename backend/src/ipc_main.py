@@ -46,6 +46,27 @@ if APP_DIR not in sys.path:
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
+# Menambahkan fungsi baru untuk fitur dropdown ticker di portofolio
+def handle_get_scraped_tickers():
+    """Fungsi untuk mengambil daftar 40 ticker beserta nama perusahaannya hasil scraping"""
+    try:
+        # Membaca file _summary.json dari folder data/company_info
+        data = read_cache_file("company_info", "_summary.json")
+        result = []
+        
+        # Mengekstrak nama-nama ticker dan nama perusahaan dari dalam file JSON
+        if data and "tickers" in data:
+            for ticker, details in data["tickers"].items():
+                result.append({
+                    "ticker": ticker,
+                    "name": details.get("name", "")
+                })
+                    
+        return result
+    except Exception as e:
+        return []
+
+
 # =============================================================================
 # CACHE DATABASE
 # =============================================================================
@@ -730,14 +751,15 @@ def handle_command(req):
             ticker = params.get("ticker")
             if not ticker:
                 return {"id": req_id, "ok": False, "error": "Missing ticker parameter"}
-            data = watchlist_handler.handle_command(cmd, params)
+            # Ubah baris di bawah ini:
+            data = handle_ohlcv(ticker)
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "news":
             region = params.get("region")
             if not region:
                 return {"id": req_id, "ok": False, "error": "Missing region parameter"}
-            data = news_handler.handle_command(cmd, params)
+            data = handle_news(region)
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "macro":
@@ -778,11 +800,13 @@ def handle_command(req):
             idx = params.get("idx")
             if not idx:
                 return {"id": req_id, "ok": False, "error": "Missing idx parameter"}
-            data = dashboard_handler.handle_command(cmd, params)
+            # Ubah baris di bawah ini:
+            data = handle_index(idx)
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "indices":
-            data = dashboard_handler.handle_command(cmd, params)
+            # Ubah baris di bawah ini:
+            data = handle_indices()
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "scrape":
@@ -838,6 +862,11 @@ def handle_command(req):
             data = portfolio_handler.handle_command(cmd, params)
             if "error" in data:
                 return {"id": req_id, "ok": False, "error": data["error"]}
+            return {"id": req_id, "ok": True, "data": data}
+
+        # Untuk fitur dropdown ticker di portofolio
+        elif cmd == "get_scraped_tickers":
+            data = handle_get_scraped_tickers()
             return {"id": req_id, "ok": True, "data": data}
 
         else:
