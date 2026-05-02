@@ -1,8 +1,8 @@
 {
   "ticker": "TLKM.JK",
   "market": "ID",
-  "scraped_at": "2026-04-30 14:52:28.824382",
-  "updated_at": "2026-04-30T14:52:28.824390",
+  "scraped_at": "2026-05-02 07:21:33.602318",
+  "updated_at": "2026-05-02T07:21:33.602324",
   "info": {
     "identity": {
       "longName": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
@@ -99,34 +99,34 @@
       ]
     },
     "price": {
-      "currentPrice": 2820.0,
+      "currentPrice": 2810.0,
       "previousClose": 2870.0,
       "open": 2860.0,
       "dayHigh": 2870.0,
       "dayLow": 2810.0,
-      "bid": 2820.0,
+      "bid": 2810.0,
       "ask": 2830.0,
       "fiftyTwoWeekHigh": 3990.0,
       "fiftyTwoWeekLow": 2530.0,
-      "fiftyDayAverage": 3157.8,
-      "twoHundredDayAverage": 3275.1,
-      "volume": 59533600,
-      "averageVolume": 117605427,
-      "averageVolume10days": 127782790,
-      "regularMarketChangePercent": -1.7421603,
-      "52WeekChange": 0.07089555
+      "fiftyDayAverage": 3144.2,
+      "twoHundredDayAverage": 3275.9,
+      "volume": 134260800,
+      "averageVolume": 117902844,
+      "averageVolume10days": 135507570,
+      "regularMarketChangePercent": -2.0905924,
+      "52WeekChange": 0.048507452
     },
     "valuation": {
-      "marketCap": 279355460681728,
-      "enterpriseValue": 346800523313152,
-      "trailingPE": 12.860856,
-      "forwardPE": 10.800047,
-      "priceToBook": 2.036988,
-      "priceToSalesTrailing12Months": 1.8956704,
-      "trailingEps": 219.27,
+      "marketCap": 278364833185792,
+      "enterpriseValue": 340856926109696,
+      "trailingPE": 12.820514,
+      "forwardPE": 10.761748,
+      "priceToBook": 2.0297647,
+      "priceToSalesTrailing12Months": 1.8889482,
+      "trailingEps": 219.18,
       "forwardEps": 261.11,
       "bookValue": 1384.397,
-      "pegRatio": 19.81
+      "pegRatio": 19.74
     },
     "profitability": {
       "profitMargins": 0.14765,
@@ -145,8 +145,8 @@
     },
     "dividend": {
       "dividendRate": 212.47,
-      "dividendYield": 7.4,
-      "fiveYearAvgDividendYield": 5.09,
+      "dividendYield": 7.56,
+      "fiveYearAvgDividendYield": 5.13,
       "payoutRatio": 0.96900004,
       "exDividendDate": 1749600000,
       "lastDividendValue": 212.4665

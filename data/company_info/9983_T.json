@@ -1,8 +1,8 @@
 {
   "ticker": "9983.T",
   "market": "JP",
-  "scraped_at": "2026-04-30 14:52:43.517077",
-  "updated_at": "2026-04-30T14:52:43.517084",
+  "scraped_at": "2026-05-02 07:21:48.080722",
+  "updated_at": "2026-05-02T07:21:48.080733",
   "info": {
     "identity": {
       "longName": "Fast Retailing Co., Ltd.",
@@ -115,31 +115,31 @@
       ]
     },
     "price": {
-      "currentPrice": 73590.0,
-      "previousClose": 73170.0,
-      "open": 73090.0,
-      "dayHigh": 73670.0,
+      "currentPrice": 72890.0,
+      "previousClose": 73590.0,
+      "open": 73000.0,
+      "dayHigh": 73900.0,
       "dayLow": 72420.0,
-      "bid": 73400.0,
-      "ask": 73590.0,
+      "bid": 72720.0,
+      "ask": 72890.0,
       "fiftyTwoWeekHigh": 75700.0,
       "fiftyTwoWeekLow": 43270.0,
-      "fiftyDayAverage": 67145.8,
-      "twoHundredDayAverage": 56640.9,
-      "volume": 1485500,
-      "averageVolume": 1142862,
-      "averageVolume10days": 1184300,
-      "regularMarketChangePercent": 0.5740057,
-      "52WeekChange": 0.55482364
+      "fiftyDayAverage": 67280.2,
+      "twoHundredDayAverage": 56771.25,
+      "volume": 891200,
+      "averageVolume": 1148573,
+      "averageVolume10days": 1214470,
+      "regularMarketChangePercent": -0.95121616,
+      "52WeekChange": 0.5334445
     },
     "valuation": {
-      "marketCap": 22580337573888,
-      "enterpriseValue": 20993424752640,
-      "trailingPE": 47.217873,
-      "forwardPE": 53.764385,
-      "priceToBook": 8.577657,
-      "priceToSalesTrailing12Months": 6.16012,
-      "trailingEps": 1558.52,
+      "marketCap": 22365549363200,
+      "enterpriseValue": 20907508629504,
+      "trailingPE": 46.72885,
+      "forwardPE": 53.252968,
+      "priceToBook": 8.496064,
+      "priceToSalesTrailing12Months": 6.1015234,
+      "trailingEps": 1559.85,
       "forwardEps": 1368.75,
       "bookValue": 8579.267,
       "pegRatio": 3.0
@@ -161,8 +161,8 @@
     },
     "dividend": {
       "dividendRate": 640.0,
-      "dividendYield": 0.87,
-      "fiveYearAvgDividendYield": 0.8,
+      "dividendYield": 0.88,
+      "fiveYearAvgDividendYield": 0.81,
       "payoutRatio": 0.3722,
       "exDividendDate": 1787875200,
       "lastDividendValue": 320.0

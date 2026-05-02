@@ -1,11 +1,11 @@
 {
   "ticker": "PGAS.JK",
   "market": "ID",
-  "scraped_at": "2026-04-30 14:52:32.214597",
-  "updated_at": "2026-04-30T14:52:32.214605",
+  "scraped_at": "2026-05-02 07:21:36.953883",
+  "updated_at": "2026-05-02T07:21:36.953891",
   "info": {
     "identity": {
-      "longName": "PT Perusahaan Gas Negara Tbk",
+      "longName": "PT Perusahaan Gas Negara (Persero) Tbk",
       "shortName": "Perusahaan Gas Negara (Persero)",
       "symbol": "PGAS.JK",
       "quoteType": "EQUITY",
@@ -14,9 +14,9 @@
       "currency": "IDR",
       "sector": "Utilities",
       "industry": "Utilities - Regulated Gas",
-      "fullTimeEmployees": 3336,
+      "fullTimeEmployees": 3319,
       "website": "https://pgn.co.id",
-      "longBusinessSummary": "PT Perusahaan Gas Negara Tbk, together with its subsidiaries, engages in the transmission and distribution of natural gas in Indonesia. It operates through three segments: Trading and Transmission, Exploration and Production of Oil and Gas, and Other Operations. The company is involved in the trading and transmission of oil and gas; processing of liquefied natural gas (LNG) to industrial, commercial and household customers; and trading of LNG and natural gas. It also engages in exploration, exploitation, and business development in oil and gas; provision of fiber optic for network services, as well as construction and maintenance services to customers and management; management and leasing buildings and equipment; and distribution of oil and natural gas. In addition, the company provides telecommunication, engineering, consultancy and services. The company was formerly known as PT Perusahaan Gas Negara (Persero) Tbk and changed its name to PT Perusahaan Gas Negara Tbk in June 2018. The company was founded in 1859 and is headquartered in Jakarta, Indonesia. PT Perusahaan Gas Negara Tbk is a subsidiary of PT Pertamina (Persero).",
+      "longBusinessSummary": "PT Perusahaan Gas Negara (Persero) Tbk, together with its subsidiaries, engages in the transmission and distribution of natural gas in Indonesia. It operates through three segments: Trading and Transmission, Exploration and Production of Oil and Gas, and Other Operations. The company is involved in the trading and transmission of oil and gas; processing of liquefied natural gas (LNG) to industrial, commercial and household customers; and trading of LNG and natural gas. It also engages in exploration, exploitation, and business development in oil and gas; provision of fiber optic for network services, as well as construction and maintenance services to customers and management; management and leasing buildings and equipment; and distribution of oil and natural gas. In addition, the company provides telecommunication, engineering, consultancy and services. The company was formerly known as PT Perusahaan Gas Negara Tbk and changed its name to PT Perusahaan Gas Negara (Persero) Tbk in January 2026. The company was founded in 1859 and is headquartered in Jakarta, Indonesia. As of April 30, 2018, PT Perusahaan Gas Negara (Persero) Tbk operates as a subsidiary of PT Pertamina (Persero).",
       "companyOfficers": [
         {
           "maxAge": 1,
@@ -104,43 +104,43 @@
       ]
     },
     "price": {
-      "currentPrice": 1895.0,
+      "currentPrice": 1940.0,
       "previousClose": 1920.0,
       "open": 1920.0,
-      "dayHigh": 1925.0,
+      "dayHigh": 1940.0,
       "dayLow": 1850.0,
-      "bid": 1885.0,
-      "ask": 1895.0,
+      "bid": 1920.0,
+      "ask": 1940.0,
       "fiftyTwoWeekHigh": 2520.0,
       "fiftyTwoWeekLow": 1530.0,
-      "fiftyDayAverage": 2012.1,
-      "twoHundredDayAverage": 1859.65,
-      "volume": 28420500,
-      "averageVolume": 50443550,
-      "averageVolume10days": 27984020,
-      "regularMarketChangePercent": -1.3020834,
-      "52WeekChange": 0.17431188
+      "fiftyDayAverage": 2007.7,
+      "twoHundredDayAverage": 1861.475,
+      "volume": 49935600,
+      "averageVolume": 50434480,
+      "averageVolume10days": 29732160,
+      "regularMarketChangePercent": 1.0416667,
+      "52WeekChange": 0.1865443
     },
     "valuation": {
-      "marketCap": 45937657380864,
-      "enterpriseValue": 46544317317120,
-      "trailingPE": 11.003367,
-      "forwardPE": 9.316159,
-      "priceToBook": 16196.581,
-      "priceToSalesTrailing12Months": 11662.512,
-      "trailingEps": 172.22,
+      "marketCap": 47028524548096,
+      "enterpriseValue": 47029145305088,
+      "trailingPE": 11.235955,
+      "forwardPE": 9.537387,
+      "priceToBook": 16581.197,
+      "priceToSalesTrailing12Months": 11939.458,
+      "trailingEps": 172.66,
       "forwardEps": 203.41,
       "bookValue": 0.117,
-      "pegRatio": 1.42
+      "pegRatio": 1.43
     },
     "profitability": {
       "profitMargins": 0.061890002,
-      "operatingMargins": 0.12656,
+      "operatingMargins": 0.13191,
       "grossMargins": 0.18101999,
       "returnOnEquity": 0.10092,
-      "returnOnAssets": 0.052529998,
+      "returnOnAssets": 0.05302,
       "revenueGrowth": -0.038,
-      "earningsGrowth": 0.446,
+      "earningsGrowth": 0.458,
       "grossProfits": 713029568,
       "totalRevenue": 3938916352,
       "netIncomeToCommon": 243796704,
@@ -150,20 +150,20 @@
     },
     "dividend": {
       "dividendRate": 182.08,
-      "dividendYield": 9.48,
+      "dividendYield": 9.39,
       "fiveYearAvgDividendYield": 3.13,
       "payoutRatio": 1.1209999,
       "exDividendDate": 1749686400,
       "lastDividendValue": 182.08102
     },
     "analyst": {
-      "recommendationKey": "hold",
-      "recommendationMean": 2.54545,
-      "numberOfAnalystOpinions": 11,
-      "targetHighPrice": 2639.48,
-      "targetLowPrice": 1562.8501,
-      "targetMeanPrice": 2091.6143,
-      "targetMedianPrice": 2135.895
+      "recommendationKey": "buy",
+      "recommendationMean": 2.41667,
+      "numberOfAnalystOpinions": 12,
+      "targetHighPrice": 2640.6958,
+      "targetLowPrice": 1563.5701,
+      "targetMeanPrice": 2097.7898,
+      "targetMedianPrice": 2145.5654
     },
     "ownership": {
       "sharesOutstanding": 24241508195,
@@ -172,7 +172,7 @@
       "heldPercentInstitutions": 0.12274,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1217808000,
-      "beta": null
+      "beta": 0.101
     }
   },
   "financials": {

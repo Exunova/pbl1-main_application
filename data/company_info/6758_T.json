@@ -1,8 +1,8 @@
 {
   "ticker": "6758.T",
   "market": "JP",
-  "scraped_at": "2026-04-30 14:52:39.086723",
-  "updated_at": "2026-04-30T14:52:39.086734",
+  "scraped_at": "2026-05-02 07:21:43.808652",
+  "updated_at": "2026-05-02T07:21:43.808662",
   "info": {
     "identity": {
       "longName": "Sony Group Corporation",
@@ -118,34 +118,34 @@
       ]
     },
     "price": {
-      "currentPrice": 3113.0,
-      "previousClose": 3234.0,
-      "open": 3231.0,
-      "dayHigh": 3233.0,
-      "dayLow": 3080.0,
-      "bid": 3110.0,
-      "ask": 3114.0,
+      "currentPrice": 3127.0,
+      "previousClose": 3113.0,
+      "open": 3085.0,
+      "dayHigh": 3142.0,
+      "dayLow": 3075.0,
+      "bid": 3125.0,
+      "ask": 3127.0,
       "fiftyTwoWeekHigh": 4776.0,
-      "fiftyTwoWeekLow": 3080.0,
-      "fiftyDayAverage": 3348.8,
-      "twoHundredDayAverage": 3883.4414,
-      "volume": 27241300,
-      "averageVolume": 20732964,
-      "averageVolume10days": 14533840,
-      "regularMarketChangePercent": -3.7414963,
-      "52WeekChange": -0.11711711
+      "fiftyTwoWeekLow": 3075.0,
+      "fiftyDayAverage": 3338.9,
+      "twoHundredDayAverage": 3880.6514,
+      "volume": 14988600,
+      "averageVolume": 20841436,
+      "averageVolume10days": 15750690,
+      "regularMarketChangePercent": 0.44972697,
+      "52WeekChange": -0.1658628
     },
     "valuation": {
-      "marketCap": 18390569713664,
-      "enterpriseValue": 19227102674944,
-      "trailingPE": 15.0874815,
-      "forwardPE": 16.99236,
-      "priceToBook": 2.2759259,
-      "priceToSalesTrailing12Months": 1.3963681,
-      "trailingEps": 206.33,
+      "marketCap": 18473275097088,
+      "enterpriseValue": 18588517793792,
+      "trailingPE": 15.151662,
+      "forwardPE": 17.068777,
+      "priceToBook": 2.2861612,
+      "priceToSalesTrailing12Months": 1.4026479,
+      "trailingEps": 206.38,
       "forwardEps": 183.2,
       "bookValue": 1367.795,
-      "pegRatio": 2.78
+      "pegRatio": 2.69
     },
     "profitability": {
       "profitMargins": -0.0161,
@@ -164,7 +164,7 @@
     },
     "dividend": {
       "dividendRate": 25.0,
-      "dividendYield": 0.77,
+      "dividendYield": 0.8,
       "fiveYearAvgDividendYield": 0.58,
       "payoutRatio": 0.109,
       "exDividendDate": 1774828800,

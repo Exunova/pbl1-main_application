@@ -1,8 +1,8 @@
 {
   "ticker": "BMRI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-30 14:52:27.666381",
-  "updated_at": "2026-04-30T14:52:27.666390",
+  "scraped_at": "2026-05-02 07:21:32.428670",
+  "updated_at": "2026-05-02T07:21:32.428679",
   "info": {
     "identity": {
       "longName": "PT Bank Mandiri (Persero) Tbk",
@@ -107,34 +107,34 @@
       ]
     },
     "price": {
-      "currentPrice": 4430.0,
+      "currentPrice": 4390.0,
       "previousClose": 4430.0,
       "open": 4430.0,
       "dayHigh": 4450.0,
       "dayLow": 4370.0,
-      "bid": 4420.0,
-      "ask": 4430.0,
+      "bid": 4390.0,
+      "ask": 4400.0,
       "fiftyTwoWeekHigh": 5575.0,
       "fiftyTwoWeekLow": 4010.0,
-      "fiftyDayAverage": 4815.1,
-      "twoHundredDayAverage": 4755.775,
-      "volume": 112062800,
-      "averageVolume": 163770621,
-      "averageVolume10days": 164271640,
-      "regularMarketChangePercent": 0.0,
-      "52WeekChange": -0.106854856
+      "fiftyDayAverage": 4797.4,
+      "twoHundredDayAverage": 4754.125,
+      "volume": 186960200,
+      "averageVolume": 164184721,
+      "averageVolume10days": 170917570,
+      "regularMarketChangePercent": -0.90293455,
+      "52WeekChange": -0.114919364
     },
     "valuation": {
-      "marketCap": 413466670137344,
-      "enterpriseValue": 516346840350720,
-      "trailingPE": 7.3420954,
-      "forwardPE": 6.6769156,
-      "priceToBook": 1.354496,
-      "priceToSalesTrailing12Months": 2.8453615,
-      "trailingEps": 603.37,
+      "marketCap": 409733336924160,
+      "enterpriseValue": 512617164570624,
+      "trailingPE": 7.277972,
+      "forwardPE": 6.6166277,
+      "priceToBook": 1.3422658,
+      "priceToSalesTrailing12Months": 2.8196697,
+      "trailingEps": 603.19,
       "forwardEps": 663.48,
       "bookValue": 3270.589,
-      "pegRatio": 1.04
+      "pegRatio": 1.03
     },
     "profitability": {
       "profitMargins": 0.40245,
@@ -153,8 +153,8 @@
     },
     "dividend": {
       "dividendRate": 100.0,
-      "dividendYield": 2.26,
-      "fiveYearAvgDividendYield": 5.14,
+      "dividendYield": 2.28,
+      "fiveYearAvgDividendYield": 5.12,
       "payoutRatio": 0.9386,
       "exDividendDate": 1767657600,
       "lastDividendValue": 100.0
@@ -170,7 +170,7 @@
     },
     "ownership": {
       "sharesOutstanding": 93333333331,
-      "floatShares": 37569831172,
+      "floatShares": 37565169093,
       "heldPercentInsiders": 0.54161,
       "heldPercentInstitutions": 0.25337,
       "lastSplitFactor": "2:1",

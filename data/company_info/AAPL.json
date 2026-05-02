@@ -1,8 +1,8 @@
 {
   "ticker": "AAPL",
   "market": "US",
-  "scraped_at": "2026-04-30 14:52:14.704239",
-  "updated_at": "2026-04-30T14:52:14.704246",
+  "scraped_at": "2026-05-02 07:21:19.279518",
+  "updated_at": "2026-05-02T07:21:19.279526",
   "info": {
     "identity": {
       "longName": "Apple Inc.",
@@ -14,7 +14,7 @@
       "currency": "USD",
       "sector": "Technology",
       "industry": "Consumer Electronics",
-      "fullTimeEmployees": 150000,
+      "fullTimeEmployees": 166000,
       "website": "https://www.apple.com",
       "longBusinessSummary": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV, which offers exclusive original content and live sports; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers and resellers. The company was formerly known as Apple Computer, Inc. and changed its name to Apple Inc. in January 2007. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.",
       "companyOfficers": [
@@ -120,49 +120,49 @@
       ]
     },
     "price": {
-      "currentPrice": 270.17,
-      "previousClose": 270.71,
-      "open": 267.55,
-      "dayHigh": 271.04,
-      "dayLow": 267.04,
-      "bid": 269.82,
-      "ask": 270.28,
+      "currentPrice": 280.14,
+      "previousClose": 271.35,
+      "open": 278.94,
+      "dayHigh": 287.21,
+      "dayLow": 278.37,
+      "bid": 280.16,
+      "ask": 288.5,
       "fiftyTwoWeekHigh": 288.62,
       "fiftyTwoWeekLow": 193.25,
-      "fiftyDayAverage": 260.6874,
-      "twoHundredDayAverage": 254.5222,
-      "volume": 24117049,
-      "averageVolume": 44334911,
-      "averageVolume10days": 41768140,
-      "regularMarketChangePercent": -0.199467,
-      "52WeekChange": 0.26650107
+      "fiftyDayAverage": 260.8274,
+      "twoHundredDayAverage": 254.8334,
+      "volume": 76013740,
+      "averageVolume": 45077117,
+      "averageVolume10days": 46471000,
+      "regularMarketChangePercent": 3.23936,
+      "52WeekChange": 0.32140243
     },
     "valuation": {
-      "marketCap": 3966403870720,
-      "enterpriseValue": 3990005481472,
-      "trailingPE": 34.24208,
-      "forwardPE": 28.845333,
-      "priceToBook": 45.04335,
-      "priceToSalesTrailing12Months": 9.105255,
-      "trailingEps": 7.89,
-      "forwardEps": 9.36616,
+      "marketCap": 4112774856704,
+      "enterpriseValue": 4126823677952,
+      "trailingPE": 35.460762,
+      "forwardPE": 29.812311,
+      "priceToBook": 46.70557,
+      "priceToSalesTrailing12Months": 9.110306,
+      "trailingEps": 7.9,
+      "forwardEps": 9.39679,
       "bookValue": 5.998,
-      "pegRatio": 2.43
+      "pegRatio": 2.44
     },
     "profitability": {
-      "profitMargins": 0.27037,
-      "operatingMargins": 0.35374,
-      "grossMargins": 0.47325,
-      "returnOnEquity": 1.5202099,
-      "returnOnAssets": 0.24377,
-      "revenueGrowth": 0.157,
-      "earningsGrowth": 0.183,
-      "grossProfits": 206157004800,
-      "totalRevenue": 435617005568,
-      "netIncomeToCommon": 117776998400,
-      "operatingCashflow": 135471996928,
-      "totalCash": 66907000832,
-      "totalDebt": 90509000704
+      "profitMargins": 0.27152002,
+      "operatingMargins": 0.32275,
+      "grossMargins": 0.47862,
+      "returnOnEquity": 1.4147099,
+      "returnOnAssets": 0.26229,
+      "revenueGrowth": 0.166,
+      "earningsGrowth": 0.218,
+      "grossProfits": 216070995968,
+      "totalRevenue": 451442016256,
+      "netIncomeToCommon": 122575003648,
+      "operatingCashflow": 140222005248,
+      "totalCash": 68507000832,
+      "totalDebt": 84710998016
     },
     "dividend": {
       "dividendRate": 1.04,
@@ -174,21 +174,21 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.89362,
-      "numberOfAnalystOpinions": 40,
-      "targetHighPrice": 350.0,
+      "recommendationMean": 1.875,
+      "numberOfAnalystOpinions": 42,
+      "targetHighPrice": 355.0,
       "targetLowPrice": 215.0,
-      "targetMeanPrice": 297.8805,
-      "targetMedianPrice": 300.0
+      "targetMeanPrice": 301.35953,
+      "targetMedianPrice": 302.5
     },
     "ownership": {
       "sharesOutstanding": 14681140000,
-      "floatShares": 14656035251,
+      "floatShares": 14642606254,
       "heldPercentInsiders": 0.0164,
-      "heldPercentInstitutions": 0.65248,
+      "heldPercentInstitutions": 0.65251,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1598832000,
-      "beta": 1.109
+      "beta": null
     }
   },
   "financials": {

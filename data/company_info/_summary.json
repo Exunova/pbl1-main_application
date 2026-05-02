@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-01 04:05:17.793569",
+  "scraped_at": "2026-05-02 10:51:06.466070",
   "tickers": {
     "NVDA": {
       "market": "US",
@@ -99,7 +99,7 @@
     },
     "PGAS.JK": {
       "market": "ID",
-      "name": "PT Perusahaan Gas Negara Tbk",
+      "name": "PT Perusahaan Gas Negara (Persero) Tbk",
       "sector": "Utilities",
       "status": "ok"
     },

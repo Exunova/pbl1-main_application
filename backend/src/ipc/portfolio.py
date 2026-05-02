@@ -144,36 +144,43 @@ class PortfolioHandler(BasePageHandler):
             if not positions:
                 return {"positions": [], "total": {"totalPnL": 0, "stockReturn": 0, "forexReturn": 0}}
 
-            tickers = [p["ticker"] for p in positions]
+            tickers = list(set([p["ticker"] for p in positions]))
+            fx_map = {"IDR": "USDIDR=X", "JPY": "USDJPY=X", "GBP": "USDGBP=X"}
+            fx_symbols = list(fx_map.values())
+            
+            all_symbols = tickers + fx_symbols
+
             try:
-                prices = yf.download(tickers, period="1d", auto_adjust=True, threads=True)
+                # OPTIMIZATION: Fetch 1 month of data for all stocks and FX pairs in ONE network call!
+                # Disabled threads and progress to prevent yfinance from deadlocking/hanging.
+                prices = yf.download(all_symbols, period="1mo", auto_adjust=True, threads=False, progress=False)
             except Exception as e:
                 sys.stderr.write(f"yfinance batch download failed: {e}\n")
                 prices = None
 
-            fx_tickers = {"USD_IDR": "USDIDR=X", "USD_JPY": "USDJPY=X", "USD_GBP": "USDGBP=X"}
-            fx_rates = {}
-            for key, ticker in fx_tickers.items():
-                try:
-                    info = yf.Ticker(ticker).info
-                    fx_rates[key] = info.get("currentPrice") or info.get("regularMarketPrice") or 1.0
-                except Exception:
-                    fx_rates[key] = 1.0
-
-            def get_hist_avg_approx(pair_ticker):
-                try:
-                    hist = yf.Ticker(pair_ticker).history(period="1mo")
-                    return float(hist["Close"].iloc[-1]) if not hist.empty else None
-                except Exception:
+            def get_latest_price(symbol):
+                if prices is None or prices.empty:
                     return None
+                try:
+                    s = prices["Close"] if len(all_symbols) == 1 else prices["Close"][symbol]
+                    s = s.dropna()
+                    if not s.empty:
+                        return float(s.iloc[-1])
+                except Exception:
+                    pass
+                return None
 
-            current_fx = {c: fx_rates.get(k, 1.0) for c, k in [("IDR", "USD_IDR"), ("JPY", "USD_JPY"), ("GBP", "USD_GBP")]}
-
-            def get_buy_fx(currency):
-                if currency == "USD":
-                    return 1.0
-                pair = {"IDR": "USDIDR=X", "JPY": "USDJPY=X", "GBP": "USDGBP=X"}.get(currency)
-                return get_hist_avg_approx(pair) if pair else (15650.0 if currency == "IDR" else 1.0)
+            def get_hist_avg(symbol):
+                if prices is None or prices.empty:
+                    return None
+                try:
+                    s = prices["Close"] if len(all_symbols) == 1 else prices["Close"][symbol]
+                    s = s.dropna()
+                    if not s.empty:
+                        return float(s.mean())
+                except Exception:
+                    pass
+                return None
 
             pnl_positions = []
             total_pnl_idr = 0.0
@@ -185,23 +192,21 @@ class PortfolioHandler(BasePageHandler):
                 currency = p["currency"]
                 shares = p["shares"]
                 buy_price = p["buyPrice"]
-                buy_fx = get_buy_fx(currency)
-                curr_fx = current_fx.get(currency, 1.0 if currency == "USD" else 15650.0)
-
-                current_price = None
-                if prices is not None and not prices.empty:
-                    try:
-                        current_price = float(prices["Close"].iloc[-1]) if len(tickers) == 1 else float(prices["Close"][ticker].iloc[-1])
-                    except Exception:
-                        pass
-
-                if current_price is None:
-                    try:
-                        info = yf.Ticker(ticker).info
-                        current_price = info.get("currentPrice") or info.get("regularMarketPrice")
-                    except Exception:
-                        current_price = None
-
+                
+                curr_fx = 1.0
+                buy_fx = 1.0
+                
+                if currency != "USD":
+                    fx_sym = fx_map.get(currency)
+                    if fx_sym:
+                        latest_fx = get_latest_price(fx_sym)
+                        avg_fx = get_hist_avg(fx_sym)
+                        
+                        curr_fx = latest_fx if latest_fx else (15650.0 if currency == "IDR" else 1.0)
+                        buy_fx = avg_fx if avg_fx else curr_fx
+                
+                current_price = get_latest_price(ticker)
+                
                 if current_price is None:
                     current_price = buy_price
 

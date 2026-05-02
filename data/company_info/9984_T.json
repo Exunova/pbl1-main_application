@@ -1,8 +1,8 @@
 {
   "ticker": "9984.T",
   "market": "JP",
-  "scraped_at": "2026-04-30 14:52:40.201771",
-  "updated_at": "2026-04-30T14:52:40.201782",
+  "scraped_at": "2026-05-02 07:21:44.869465",
+  "updated_at": "2026-05-02T07:21:44.869471",
   "info": {
     "identity": {
       "longName": "SoftBank Group Corp.",
@@ -115,34 +115,34 @@
       ]
     },
     "price": {
-      "currentPrice": 5219.0,
-      "previousClose": 5268.0,
-      "open": 4968.0,
-      "dayHigh": 5399.0,
-      "dayLow": 4956.0,
-      "bid": 5212.0,
-      "ask": 5219.0,
+      "currentPrice": 5424.0,
+      "previousClose": 5219.0,
+      "open": 5278.0,
+      "dayHigh": 5466.0,
+      "dayLow": 5249.0,
+      "bid": 5423.0,
+      "ask": 5424.0,
       "fiftyTwoWeekHigh": 6923.75,
-      "fiftyTwoWeekLow": 1794.25,
-      "fiftyDayAverage": 4131.92,
-      "twoHundredDayAverage": 4361.1777,
-      "volume": 101484400,
-      "averageVolume": 56233352,
-      "averageVolume10days": 96652970,
-      "regularMarketChangePercent": -0.93014425,
-      "52WeekChange": 1.8806562
+      "fiftyTwoWeekLow": 1797.75,
+      "fiftyDayAverage": 4142.54,
+      "twoHundredDayAverage": 4373.904,
+      "volume": 72065400,
+      "averageVolume": 56987536,
+      "averageVolume10days": 97649730,
+      "regularMarketChangePercent": 3.9279554,
+      "52WeekChange": 1.8191762
     },
     "valuation": {
-      "marketCap": 29741847412736,
-      "enterpriseValue": 52537122095104,
-      "trailingPE": 9.760613,
-      "forwardPE": 17.67415,
-      "priceToBook": 1.9256072,
-      "priceToSalesTrailing12Months": 3.8825333,
-      "trailingEps": 534.7,
+      "marketCap": 30910095294464,
+      "enterpriseValue": 53426129993728,
+      "trailingPE": 10.141919,
+      "forwardPE": 18.368383,
+      "priceToBook": 2.001244,
+      "priceToSalesTrailing12Months": 4.0350375,
+      "trailingEps": 534.81,
       "forwardEps": 295.29,
       "bookValue": 2710.314,
-      "pegRatio": 1136.47
+      "pegRatio": 1170.13
     },
     "profitability": {
       "profitMargins": 0.48167,
@@ -161,7 +161,7 @@
     },
     "dividend": {
       "dividendRate": 11.0,
-      "dividendYield": 0.21,
+      "dividendYield": 0.2,
       "fiveYearAvgDividendYield": 0.6,
       "payoutRatio": 0.020599999,
       "exDividendDate": 1774828800,
@@ -173,7 +173,7 @@
       "numberOfAnalystOpinions": 18,
       "targetHighPrice": 7570.0,
       "targetLowPrice": 3100.0,
-      "targetMeanPrice": 5344.3613,
+      "targetMeanPrice": 5375.6113,
       "targetMedianPrice": 5225.0
     },
     "ownership": {

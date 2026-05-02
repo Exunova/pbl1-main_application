@@ -1,8 +1,8 @@
 {
   "ticker": "BBRI.JK",
   "market": "ID",
-  "scraped_at": "2026-04-30 14:52:26.507594",
-  "updated_at": "2026-04-30T14:52:26.507601",
+  "scraped_at": "2026-05-02 07:21:31.327030",
+  "updated_at": "2026-05-02T07:21:31.327041",
   "info": {
     "identity": {
       "longName": "PT Bank Rakyat Indonesia (Persero) Tbk",
@@ -16,7 +16,7 @@
       "industry": "Banks - Regional",
       "fullTimeEmployees": 59714,
       "website": "https://bri.co.id",
-      "longBusinessSummary": "PT Bank Rakyat Indonesia (Persero) Tbk provides various banking products and services in Indonesia and internationally. The company offers savings and current accounts; time, foreign currency time, and on-call deposits; mortgage, working capital, investment, franchise, and cash collateral loans, as well as supply and value chain financing and bank guarantees; and microphone, small and medium, and program loans. It also provides bill payment, deposit, online transaction, remittance, money transfer, business, financial, institutional, treasury and global, custodian, trustee, and cash management services. In addition, the company offers investment products and services; trade finance and services, and transaction banking services, including import and export, standby L/C, money changer, BRI RTE online system services, as well as letters of credit; credit cards; and wealth management, merchant, and digital banking services. Further, it provides life and general insurance, securities underwriting and brokerage, and venture capital services. PT Bank Rakyat Indonesia (Persero) Tbk was founded in 1895 and is headquartered in Jakarta, Indonesia.",
+      "longBusinessSummary": "PT Bank Rakyat Indonesia (Persero) Tbk provides various banking products and services in Indonesia and internationally. The company offers savings and current accounts; time, foreign currency time, and on-call deposits; mortgage, working capital, investment, franchise, and cash collateral loans, as well as supply and value chain financing and bank guarantees; and microphone, small and medium, and program loans. It also provides bill payment, deposit, online transaction, remittance, money transfer, business, financial, institutional, treasury and global, custodian, trustee, and cash management services. In addition, the company offers investment products and services; trade finance and services, and transaction banking services, including import and export, standby L/C, money changer, BRI RTE online system services, as well as letters of credit; credit cards; and wealth management, merchant, and digital banking services. Further, it provides life and general insurance, securities underwriting and brokerage, and venture capital services. PT Bank Rakyat Indonesia (Persero) Tbk was founded in 1895 and is headquartered in Jakarta, Indonesia. PT Bank Rakyat Indonesia (Persero) Tbk operates as a subsidiary of PT Danantara Asset Management (Persero).",
       "companyOfficers": [
         {
           "maxAge": 1,
@@ -107,34 +107,34 @@
       ]
     },
     "price": {
-      "currentPrice": 3030.0,
+      "currentPrice": 2990.0,
       "previousClose": 3070.0,
       "open": 3050.0,
       "dayHigh": 3060.0,
       "dayLow": 2980.0,
-      "bid": 3020.0,
-      "ask": 3030.0,
+      "bid": 2990.0,
+      "ask": 3000.0,
       "fiftyTwoWeekHigh": 4450.0,
       "fiftyTwoWeekLow": 2980.0,
-      "fiftyDayAverage": 3493.8,
-      "twoHundredDayAverage": 3761.35,
-      "volume": 248487600,
-      "averageVolume": 232541485,
-      "averageVolume10days": 282381820,
-      "regularMarketChangePercent": -1.3029315,
-      "52WeekChange": -0.20876288
+      "fiftyDayAverage": 3477.0,
+      "twoHundredDayAverage": 3756.9,
+      "volume": 382750500,
+      "averageVolume": 235223789,
+      "averageVolume10days": 297810300,
+      "regularMarketChangePercent": -2.605863,
+      "52WeekChange": -0.22938144
     },
     "valuation": {
-      "marketCap": 459223741759488,
-      "enterpriseValue": 575784993423360,
-      "trailingPE": 8.056797,
-      "forwardPE": 6.8833914,
-      "priceToBook": 1.4082452,
-      "priceToSalesTrailing12Months": 3.2752838,
-      "trailingEps": 376.08,
+      "marketCap": 453161395421184,
+      "enterpriseValue": 563736939069440,
+      "trailingPE": 7.9491677,
+      "forwardPE": 6.7925215,
+      "priceToBook": 1.3896544,
+      "priceToSalesTrailing12Months": 3.232046,
+      "trailingEps": 376.14,
       "forwardEps": 440.19,
       "bookValue": 2151.614,
-      "pegRatio": 1.6
+      "pegRatio": 1.55
     },
     "profitability": {
       "profitMargins": 0.40405998,
@@ -153,8 +153,8 @@
     },
     "dividend": {
       "dividendRate": 418.0,
-      "dividendYield": 13.62,
-      "fiveYearAvgDividendYield": 5.74,
+      "dividendYield": 13.98,
+      "fiveYearAvgDividendYield": 5.89,
       "payoutRatio": 0.9186,
       "exDividendDate": 1776729600,
       "lastDividendValue": 209.0
@@ -165,7 +165,7 @@
       "numberOfAnalystOpinions": 21,
       "targetHighPrice": 4900.0,
       "targetLowPrice": 3000.0,
-      "targetMeanPrice": 4263.5713,
+      "targetMeanPrice": 4146.905,
       "targetMedianPrice": 4300.0
     },
     "ownership": {

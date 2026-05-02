@@ -1,8 +1,8 @@
 {
   "ticker": "NVDA",
   "market": "US",
-  "scraped_at": "2026-04-30 14:52:13.387630",
-  "updated_at": "2026-04-30T14:52:13.387643",
+  "scraped_at": "2026-05-02 07:21:18.003989",
+  "updated_at": "2026-05-02T07:21:18.004007",
   "info": {
     "identity": {
       "longName": "NVIDIA Corporation",
@@ -121,34 +121,34 @@
       ]
     },
     "price": {
-      "currentPrice": 209.25,
-      "previousClose": 213.07,
-      "open": 212.715,
-      "dayHigh": 212.715,
-      "dayLow": 207.5758,
-      "bid": 208.2,
-      "ask": 211.48,
+      "currentPrice": 198.45,
+      "previousClose": 199.57,
+      "open": 201.28,
+      "dayHigh": 203.0,
+      "dayLow": 197.12,
+      "bid": 198.22,
+      "ask": 198.53,
       "fiftyTwoWeekHigh": 216.83,
       "fiftyTwoWeekLow": 110.82,
-      "fiftyDayAverage": 186.7114,
-      "twoHundredDayAverage": 183.57655,
-      "volume": 114136225,
-      "averageVolume": 174998868,
-      "averageVolume10days": 144604650,
-      "regularMarketChangePercent": -1.79284,
-      "52WeekChange": 0.87483203
+      "fiftyDayAverage": 186.9432,
+      "twoHundredDayAverage": 183.7209,
+      "volume": 127110269,
+      "averageVolume": 175832187,
+      "averageVolume10days": 153869820,
+      "regularMarketChangePercent": -0.561212,
+      "52WeekChange": 0.7429694
     },
     "valuation": {
-      "marketCap": 5085821140992,
-      "enterpriseValue": 5033630892032,
-      "trailingPE": 42.704082,
-      "forwardPE": 18.617907,
-      "priceToBook": 32.33158,
-      "priceToSalesTrailing12Months": 23.552227,
-      "trailingEps": 4.9,
+      "marketCap": 4823327440896,
+      "enterpriseValue": 4798406983680,
+      "trailingPE": 40.417515,
+      "forwardPE": 17.656982,
+      "priceToBook": 30.662855,
+      "priceToSalesTrailing12Months": 22.33663,
+      "trailingEps": 4.91,
       "forwardEps": 11.23918,
       "bookValue": 6.472,
-      "pegRatio": 0.76
+      "pegRatio": 0.63
     },
     "profitability": {
       "profitMargins": 0.55603004,
@@ -186,7 +186,7 @@
       "sharesOutstanding": 24300000000,
       "floatShares": 23321682000,
       "heldPercentInsiders": 0.042090002,
-      "heldPercentInstitutions": 0.69668,
+      "heldPercentInstitutions": 0.68079,
       "lastSplitFactor": "10:1",
       "lastSplitDate": 1717977600,
       "beta": 2.335

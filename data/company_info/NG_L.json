@@ -1,8 +1,8 @@
 {
   "ticker": "NG.L",
   "market": "GB",
-  "scraped_at": "2026-04-30 14:52:58.148831",
-  "updated_at": "2026-04-30T14:52:58.148855",
+  "scraped_at": "2026-05-02 07:22:02.535087",
+  "updated_at": "2026-05-02T07:22:02.535114",
   "info": {
     "identity": {
       "longName": "National Grid plc",
@@ -119,34 +119,34 @@
       ]
     },
     "price": {
-      "currentPrice": 1289.4,
-      "previousClose": 1279.8,
-      "open": 1273.8,
-      "dayHigh": 1289.4,
-      "dayLow": 1273.8,
-      "bid": 1289.0,
-      "ask": 1289.2,
+      "currentPrice": 1309.0,
+      "previousClose": 1312.2,
+      "open": 1322.8,
+      "dayHigh": 1322.8,
+      "dayLow": 1301.2,
+      "bid": 1306.0,
+      "ask": 1306.4,
       "fiftyTwoWeekHigh": 1428.5,
       "fiftyTwoWeekLow": 1000.0,
-      "fiftyDayAverage": 1314.836,
-      "twoHundredDayAverage": 1175.464,
-      "volume": 648318,
-      "averageVolume": 12588418,
-      "averageVolume10days": 11710695,
-      "regularMarketChangePercent": 0.7501153,
-      "52WeekChange": 0.19440043
+      "fiftyDayAverage": 1314.23,
+      "twoHundredDayAverage": 1176.7125,
+      "volume": 4457736,
+      "averageVolume": 12627510,
+      "averageVolume10days": 12539820,
+      "regularMarketChangePercent": -0.24386156,
+      "52WeekChange": 0.2303797
     },
     "valuation": {
-      "marketCap": 64127365120,
-      "enterpriseValue": 104925945856,
-      "trailingPE": 21.49,
-      "forwardPE": 14.528614,
-      "priceToBook": 1.7078145,
-      "priceToSalesTrailing12Months": 3.6681938,
+      "marketCap": 65102155776,
+      "enterpriseValue": 106364338176,
+      "trailingPE": 21.816666,
+      "forwardPE": 14.749794,
+      "priceToBook": 1.7337747,
+      "priceToSalesTrailing12Months": 3.7239535,
       "trailingEps": 0.6,
-      "forwardEps": 0.88749,
+      "forwardEps": 0.88747,
       "bookValue": 7.55,
-      "pegRatio": 1.09
+      "pegRatio": 1.1
     },
     "profitability": {
       "profitMargins": 0.16428,
@@ -165,8 +165,8 @@
     },
     "dividend": {
       "dividendRate": 0.47,
-      "dividendYield": 3.69,
-      "fiveYearAvgDividendYield": 5.02,
+      "dividendYield": 3.6,
+      "fiveYearAvgDividendYield": 4.99,
       "payoutRatio": 0.78260005,
       "exDividendDate": 1763596800,
       "lastDividendValue": 0.1635

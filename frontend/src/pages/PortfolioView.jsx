@@ -89,7 +89,7 @@ export default function PortfolioView() {
 
 
   return (
-  <div className="flex flex-col h-full p-4 gap-4 overflow-auto">
+  <div className="h-full w-full overflow-y-auto p-4 space-y-4 pb-10 custom-scrollbar">
     <div className="flex items-center justify-between">
       <h2 className="text-sm font-bold text-text">Portfolio</h2>
       <button
@@ -129,58 +129,70 @@ export default function PortfolioView() {
 
     <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 items-start mb-4">
 
-      <div className="lg:col-span-3 bg-surface rounded-lg overflow-hidden h-full">
-        <table className="w-full text-xs">
-          <thead>
-            <tr className="text-muted border-b border-border">
-              <th className="text-left p-2 font-medium">Ticker</th>
-              <th className="text-left p-2 font-medium">Company</th>
-              <th className="text-right p-2 font-medium">Shares</th>
-              <th className="text-right p-2 font-medium">Buy Price</th>
-              <th className="text-right p-2 font-medium">Cur</th>
-              <th className="text-right p-2 font-medium">PnL</th>
-              <th className="text-right p-2 font-medium">Actions</th>
-            </tr>
-          </thead>
-          <tbody>
-            {positions.map(p => {
-              const cur = pnlData?.positions?.find(x => x.ticker === p.ticker)
-              const curPrice = cur?.currentPrice || 186.2
-              const pnl = (curPrice - p.buyPrice) * p.shares
-              const pnlPct = (pnl / (p.buyPrice * p.shares)) * 100
-              return (
-                <tr key={p.id} className="border-b border-border hover:bg-border/30">
-                  <td className="p-2 font-bold text-accent">{p.ticker}</td>
-                  <td className="p-2 text-muted">{p.company}</td>
-                  <td className="p-2 text-right text-muted">{p.shares}</td>
-                  <td className="p-2 text-right text-muted">{p.buyPrice?.toFixed(2)}</td>
-                  <td className="p-2 text-right text-muted/70">{p.currency}</td>
-                  <td className="p-2 text-right">
-                    <span className={pnl >= 0 ? 'text-success' : 'text-danger'}>
-                      {pnl >= 0 ? '+' : ''}
-                      {pnl.toFixed(2)} ({pnlPct.toFixed(1)}%)
-                    </span>
-                  </td>
-                  <td className="p-2 text-right">
-                    <button onClick={() => handleEditClick(p)} className="text-accent hover:text-accent/70 text-xs mr-3">
-                      Edit
-                    </button>
-                    <button onClick={() => handleDelete(p.id)} className="text-danger hover:text-danger/70 text-xs">
-                      Delete
-                    </button>
-                  </td>
-                </tr>
-              )
-            })}
-            {positions.length === 0 && (
-              <tr>
-                <td colSpan={7} className="p-4 text-center text-muted">
-                  No positions yet
-                </td>
-              </tr>
-            )}
-          </tbody>
-        </table>
+      <div className="lg:col-span-3 bg-surface rounded-lg p-4 h-[350px] overflow-y-auto custom-scrollbar">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 auto-rows-[160px]">
+          {positions.map((p, index) => {
+            const isLoading = !pnlData;
+            const cur = pnlData?.positions?.find(x => x.ticker === p.ticker)
+            const curPrice = isLoading ? p.buyPrice : (cur?.currentPrice || p.buyPrice)
+            const pnl = isLoading ? 0 : (curPrice - p.buyPrice) * p.shares
+            const pnlPct = isLoading ? 0 : (p.buyPrice && p.shares ? (pnl / (p.buyPrice * p.shares)) * 100 : 0)
+            
+            let bgClass = 'heatmap-neutral';
+            if (isLoading) {
+               bgClass = 'heatmap-loading'; // Loading state
+            } else if (pnlPct > 0) {
+               bgClass = 'heatmap-profit';
+            } else if (pnlPct < 0) {
+               bgClass = 'heatmap-loss';
+            }
+
+            let spanClass = 'col-span-1 row-span-1';
+
+            return (
+              <div 
+                key={p.id} 
+                className={`${bgClass} ${spanClass} heatmap-card rounded-2xl p-4 flex flex-col shadow-md relative hover:scale-[1.02]`}
+              >
+                <div className="flex justify-between items-start z-10 pointer-events-none">
+                  <div className="font-medium text-sm opacity-90 truncate pr-2 w-full">
+                    <span className="font-bold opacity-100 mr-2 text-base">{p.ticker}</span>
+                    <span className="block truncate opacity-80 text-xs mt-0.5">{p.company}</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-1 text-xs mt-auto pointer-events-none">
+                  <div className="flex justify-between items-center">
+                    <span className="opacity-70">Shares</span>
+                    <span className="font-semibold">{p.shares}</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="opacity-70">Buy Price</span>
+                    <span className="font-semibold">{p.buyPrice?.toFixed(2)} {p.currency}</span>
+                  </div>
+                  <div className="w-full h-[1px] bg-current opacity-20 my-1"></div>
+                  <div className="flex justify-between items-center">
+                    <span className="opacity-70">PnL</span>
+                    {isLoading ? (
+                      <span className="font-semibold animate-pulse">Loading...</span>
+                    ) : (
+                      <span className="font-bold">
+                        {pnl >= 0 ? '+' : ''}{pnl.toFixed(2)} ({pnlPct.toFixed(1)}%)
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )
+          })}
+          
+          {positions.length === 0 && (
+            <div className="col-span-full h-full flex flex-col items-center justify-center text-muted min-h-[200px]">
+              <div className="text-3xl mb-2">📊</div>
+              <div>Belum ada posisi portofolio.</div>
+            </div>
+          )}
+        </div>
       </div>
 
       {pieData.length > 0 && (
@@ -217,6 +229,69 @@ export default function PortfolioView() {
           </ResponsiveContainer>
         </div>
       )}
+    </div>
+
+    {/* --- BAGIAN TABEL DETAIL LAMA --- */}
+    <div className="bg-surface rounded-lg overflow-hidden mb-4">
+      <div className="p-3 border-b border-border text-sm font-bold text-text">
+        Position Details
+      </div>
+      <table className="w-full text-xs">
+        <thead>
+          <tr className="text-muted border-b border-border">
+            <th className="text-left p-2 font-medium">Ticker</th>
+            <th className="text-left p-2 font-medium">Company</th>
+            <th className="text-right p-2 font-medium">Shares</th>
+            <th className="text-right p-2 font-medium">Buy Price</th>
+            <th className="text-right p-2 font-medium">Cur</th>
+            <th className="text-right p-2 font-medium">PnL</th>
+            <th className="text-right p-2 font-medium">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {positions.map(p => {
+            const isLoading = !pnlData;
+            const cur = pnlData?.positions?.find(x => x.ticker === p.ticker)
+            const curPrice = isLoading ? p.buyPrice : (cur?.currentPrice || p.buyPrice)
+            const pnl = isLoading ? 0 : (curPrice - p.buyPrice) * p.shares
+            const pnlPct = isLoading ? 0 : (p.buyPrice && p.shares ? (pnl / (p.buyPrice * p.shares)) * 100 : 0)
+            return (
+              <tr key={p.id} className="border-b border-border hover:bg-border/30">
+                <td className="p-2 font-bold text-accent">{p.ticker}</td>
+                <td className="p-2 text-muted">{p.company}</td>
+                <td className="p-2 text-right text-muted">{p.shares}</td>
+                <td className="p-2 text-right text-muted">{p.buyPrice?.toFixed(2)}</td>
+                <td className="p-2 text-right text-muted">{p.currency}</td>
+                <td className="p-2 text-right">
+                  {isLoading ? (
+                    <span className="text-muted animate-pulse">Loading...</span>
+                  ) : (
+                    <span className={pnl >= 0 ? 'text-success' : 'text-danger'}>
+                      {pnl >= 0 ? '+' : ''}
+                      {pnl.toFixed(2)} ({pnlPct.toFixed(1)}%)
+                    </span>
+                  )}
+                </td>
+                <td className="p-2 text-right">
+                  <button onClick={() => handleEditClick(p)} className="text-accent hover:text-accent/70 text-xs mr-3">
+                    Edit
+                  </button>
+                  <button onClick={() => handleDelete(p.id)} className="text-danger hover:text-danger/70 text-xs">
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            )
+          })}
+          {positions.length === 0 && (
+            <tr>
+              <td colSpan={7} className="p-4 text-center text-muted">
+                No positions yet
+              </td>
+            </tr>
+          )}
+        </tbody>
+      </table>
     </div>
 
     {showAdd && (
