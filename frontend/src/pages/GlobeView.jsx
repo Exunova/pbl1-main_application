@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import Globe from 'globe.gl'
-import { ResponsiveContainer, YAxis, BarChart, Bar, Cell, XAxis, Tooltip, CartesianGrid } from 'recharts'
+import { ResponsiveContainer, LineChart, Line, Tooltip, YAxis, XAxis } from 'recharts'
 import EconomicCalendar from '../components/EconomicCalendar'
 import MacroNewsPanel from '../components/MacroNewsPanel'
 
@@ -60,43 +60,6 @@ function isPointInCountry(point, geometry) {
   return false
 }
 
-// ─── Candlestick subcomponent ────────────────────────────────────────────────
-
-const Candlestick = props => {
-  const { x, y, width, height, payload } = props
-  if (!payload) return null
-  const isUp = payload.close >= payload.open
-  const color = isUp ? 'var(--success)' : 'var(--danger)'
-  const range = payload.high - payload.low
-  const openY  = range === 0 ? y : y + height * ((payload.high - payload.open) / range)
-  const closeY = range === 0 ? y : y + height * ((payload.high - payload.close) / range)
-  const highY  = y
-  const lowY   = y + height
-  const bodyTop    = Math.min(openY, closeY)
-  const bodyBottom = Math.max(openY, closeY)
-  const bodyHeight = Math.max(1, bodyBottom - bodyTop)
-  const midX = x + width / 2
-  return (
-    <g>
-      <line x1={midX} y1={highY} x2={midX} y2={lowY} stroke={color} strokeWidth={1} />
-      <rect x={x} y={bodyTop} width={width} height={bodyHeight} fill={color} stroke={color} />
-    </g>
-  )
-}
-
-function generateCandlestickData(count = 60) {
-  let open = 1000
-  return Array.from({ length: count }, (_, i) => {
-    const close  = open + (Math.random() - 0.5) * 40
-    const high   = Math.max(open, close) + Math.random() * 15
-    const low    = Math.min(open, close) - Math.random() * 15
-    const volume = Math.random() * 50000 + 10000
-    const data   = { time: i, open, high, low, close, volume, bounds: [low, high] }
-    open = close
-    return data
-  })
-}
-
 // ─── getPointOfView ───────────────────────────────────────────────────────────
 
 function getPointOfView(feature) {
@@ -146,6 +109,8 @@ export default function GlobeView() {
 
   const [chartHeight, setChartHeight]         = useState(220)
   const [isResizing,  setIsResizing]          = useState(false)
+  const [panelWidth, setPanelWidth]           = useState(320)
+  const [isResizingPanel, setIsResizingPanel] = useState(false)
 
   const [searchQuery,   setSearchQuery]   = useState('')
   const [isSearchOpen,  setIsSearchOpen]  = useState(false)
@@ -157,6 +122,7 @@ export default function GlobeView() {
 
   const [tooltip, setTooltip] = useState({ visible: false, x: 0, y: 0, content: null })
   const [scrapeStatus, setScrapeStatus] = useState({})
+  const [ohlcvData, setOhlcvData] = useState([])
   const [isScraping, setIsScraping] = useState(false)
 
   const handleScrapeLatest = async () => {
@@ -487,7 +453,12 @@ export default function GlobeView() {
     return () => {
       window.removeEventListener('resize', handleResize)
       if (globeRef.current) {
-        globeRef.current.renderer()?.dispose()
+        try {
+          const inst = globeRef.current;
+          inst.controls().dispose?.();
+          inst.renderer()?.dispose();
+          inst._destructor?.();
+        } catch(e) {}
         globeRef.current = null
       }
     }
@@ -535,22 +506,28 @@ export default function GlobeView() {
   // ── Resize chart handle  ──────────────────────────────────────────────────
 
   useEffect(() => {
-    if (!isResizing) return
+    if (!isResizing && !isResizingPanel) return
     const onMouseMove = e => {
       const container = containerRef.current?.parentElement
       if (!container) return
       const rect = container.getBoundingClientRect()
-      const newH = Math.max(120, Math.min(400, rect.bottom - e.clientY))
-      setChartHeight(newH)
+      if (isResizing) {
+        const newH = Math.max(120, Math.min(400, rect.bottom - e.clientY))
+        setChartHeight(newH)
+      }
+      if (isResizingPanel) {
+        const newW = Math.max(250, Math.min(600, rect.right - e.clientX))
+        setPanelWidth(newW)
+      }
     }
-    const onMouseUp = () => setIsResizing(false)
+    const onMouseUp = () => { setIsResizing(false); setIsResizingPanel(false); }
     window.addEventListener('mousemove', onMouseMove)
     window.addEventListener('mouseup', onMouseUp)
     return () => {
       window.removeEventListener('mousemove', onMouseMove)
       window.removeEventListener('mouseup', onMouseUp)
     }
-  }, [isResizing])
+  }, [isResizing, isResizingPanel])
 
   useEffect(() => {
     if (globeRef.current && containerRef.current) {
@@ -562,9 +539,39 @@ export default function GlobeView() {
     }
   }, [chartHeight, selectedCountry])
 
+  useEffect(() => {
+    if (!selectedCountry || !window.api) {
+      setOhlcvData([]);
+      return;
+    }
+    const indexTicker = COUNTRY_INDEX_MAP[selectedCountry]?.index;
+    if (!indexTicker) return;
+    
+    let cancelled = false;
+    window.api.fetchOHLCV(indexTicker).then(d => {
+      if (cancelled) return;
+      const resp = d?.data || d;
+      setOhlcvData(resp?.ohlcv_15m || []);
+    }).catch(() => {});
+    
+    return () => { cancelled = true; };
+  }, [selectedCountry]);
+
   // ── Derived / memoised data ───────────────────────────────────────────────
 
-  const chartData = useMemo(() => generateCandlestickData(60), [selectedCountry])
+  const chartData = useMemo(() => {
+    if (ohlcvData.length > 0) {
+      return ohlcvData.map((c, i) => ({
+        time: i,
+        close: c.close
+      }));
+    }
+    let p = 1000;
+    return Array.from({ length: 60 }, (_, i) => {
+      p += (Math.random() - 0.49) * p * 0.008;
+      return { time: i, close: p };
+    });
+  }, [ohlcvData]);
 
   const selectedIndexData = useMemo(() => {
     if (!selectedCountry) return null
@@ -661,7 +668,7 @@ export default function GlobeView() {
             ref={containerRef}
             className="absolute top-0 left-0 right-0 bottom-0 transition-all duration-700 ease-in-out z-0"
             style={{
-              right:  selectedCountry && !isZooming ? '320px' : '0px',
+              right:  selectedCountry && !isZooming ? `${panelWidth}px` : '0px',
               bottom: selectedCountry && !isZooming ? `${chartHeight}px` : '0px',
             }}
           />
@@ -701,40 +708,9 @@ export default function GlobeView() {
             )}
           </div>
 
-          <div className="absolute top-6 right-6 z-50 flex items-center gap-2">
-            <button
-              onClick={handleScrapeLatest}
-              disabled={isScraping}
-              className={`flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-medium transition-all ${
-                isScraping
-                  ? 'bg-accent/20 text-accent border border-accent/30 cursor-not-allowed'
-                  : 'bg-card backdrop-blur border border-border text-muted hover:text-text hover:bg-surface hover:border-accent'
-              }`}
-            >
-              <svg
-                className={`w-4 h-4 ${isScraping ? 'animate-spin' : ''}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-              {isScraping ? 'Scraping...' : 'Scrape Latest'}
-            </button>
-            {Object.keys(scrapeStatus).length > 0 && (
-              <div className="text-[10px] text-muted flex items-center gap-1">
-                {scrapeStatus.ohlcv && (
-                  <span className={scrapeStatus.ohlcv?.includes('error') ? 'text-danger' : 'text-success'}>
-                    OHLCV {scrapeStatus.ohlcv?.includes('error') ? '✗' : '✓'}
-                  </span>
-                )}
-              </div>
-            )}
-          </div>
-
           {/* Status badge */}
           <div className="absolute top-6 left-1/2 -translate-x-1/2 pointer-events-none z-10 transition-all duration-500" style={{ opacity: isZooming ? 0 : 1 }}>
-            <div className="bg-card backdrop-blur border border-border px-4 py-2 rounded-full text-xs text-muted flex items-center gap-2">
+            <div className="bg-card backdrop-blur border border-border px-4 py-2 text-xs text-muted flex items-center gap-2">
               <span>🌍</span>
               {selectedCountry
                 ? <span>SELECTION: <strong className="text-accent ml-1 uppercase">{COUNTRY_NAMES[selectedCountry]}</strong> — {COUNTRY_INDEX_MAP[selectedCountry]?.name}</span>
@@ -769,7 +745,7 @@ export default function GlobeView() {
                 height: `${chartHeight}px`,
                 opacity: isZooming ? 0 : 1,
                 transform: isZooming ? 'translateY(100%)' : 'translateY(0)',
-                right: '320px',
+                right: `${panelWidth}px`,
               }}
             >
               {/* drag handle */}
@@ -795,42 +771,28 @@ export default function GlobeView() {
                     </div>
                   </div>
                 </div>
-                <div className="absolute inset-0 pt-16 pb-2">
-                  <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={chartData} margin={{ top: 0, right: 10, left: 0, bottom: 0 }}>
-                      <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" vertical={false} />
-                      <XAxis dataKey="time" hide xAxisId={0} />
-                      <XAxis dataKey="time" hide xAxisId={1} />
-                      <YAxis domain={['dataMin - 5', 'dataMax + 5']} hide />
-                      <YAxis yAxisId="volume" orientation="right" domain={[0, dataMax => dataMax * 5]} hide />
-                      <Tooltip
-                        cursor={{ fill: 'var(--border)' }}
-                        content={({ active, payload }) => {
-                          if (active && payload?.length) {
-                            const d = payload[0].payload
-                            return (
-                              <div className="rounded-lg border border-border p-2 text-[10px] font-mono bg-surface">
-                                <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-                                  <span className="text-muted">O:</span><span className="text-text">{d.open.toFixed(2)}</span>
-                                  <span className="text-muted">H:</span><span className="text-text">{d.high.toFixed(2)}</span>
-                                  <span className="text-muted">L:</span><span className="text-text">{d.low.toFixed(2)}</span>
-                                  <span className="font-bold" style={{ color: d.close >= d.open ? 'var(--success)' : 'var(--danger)' }}>C: {d.close.toFixed(2)}</span>
-                                </div>
-                              </div>
-                            )
-                          }
-                          return null
-                        }}
-                      />
-                      <Bar dataKey="volume" yAxisId="volume" xAxisId={0} barCategoryGap="10%">
-                        {chartData.map((entry, i) => (
-                          <Cell key={`vol-${i}`} fill={entry.close >= entry.open ? 'var(--success)' : 'var(--danger)'} fillOpacity={0.4} />
-                        ))}
-                      </Bar>
-                      <Bar dataKey="bounds" shape={<Candlestick />} xAxisId={1} barCategoryGap="10%" />
-                    </BarChart>
-                  </ResponsiveContainer>
-                </div>
+                 <div className="absolute inset-0 pt-16 pb-2">
+                   <ResponsiveContainer width="100%" height="100%">
+                     <LineChart data={chartData} margin={{ top: 0, right: 10, left: 0, bottom: 0 }}>
+                       <XAxis dataKey="time" hide />
+                       <YAxis domain={['dataMin - 10', 'dataMax + 10']} hide />
+                       <Tooltip
+                         content={({ active, payload }) => {
+                           if (active && payload?.length) {
+                             const d = payload[0].payload
+                             return (
+                               <div className="p-2 text-[10px] font-mono border border-border bg-surface">
+                                 <span className="text-text">Close: {d.close?.toFixed(2)}</span>
+                               </div>
+                             )
+                           }
+                           return null
+                         }}
+                       />
+                       <Line type="monotone" dataKey="close" stroke="var(--accent)" strokeWidth={1.5} dot={false} isAnimationActive={false} />
+                     </LineChart>
+                   </ResponsiveContainer>
+                 </div>
               </div>
             </div>
           )}
@@ -838,12 +800,17 @@ export default function GlobeView() {
           {/* ── Right panel: Forex + Calendar + News ── */}
           {selectedCountry && (
             <div
-              className="absolute top-0 bottom-0 right-0 w-[320px] border-l border-border flex flex-col shrink-0 transition-all duration-700 ease-out z-30 bg-surface backdrop-blur-md"
+              className="absolute top-0 bottom-0 right-0 border-l border-border flex flex-col shrink-0 transition-all duration-700 ease-out z-30 bg-surface backdrop-blur-md"
               style={{
+                width: `${panelWidth}px`,
                 opacity: isZooming ? 0 : 1,
                 transform: isZooming ? 'translateX(100%)' : 'translateX(0)',
               }}
             >
+              <div
+                className={`absolute top-0 bottom-0 left-0 w-1 cursor-col-resize transition-colors z-50 ${isResizingPanel ? 'bg-accent' : 'hover:bg-accent/50'}`}
+                onMouseDown={() => setIsResizingPanel(true)}
+              />
               {/* Header */}
               <div className="p-5 border-b border-border bg-gradient-to-br from-accent/20 to-transparent">
                 <div className="flex items-center justify-between">
@@ -896,22 +863,12 @@ export default function GlobeView() {
                 </div>
 
                 {/* Economic Calendar */}
-                <div className="p-5 border-b border-border">
+                <div className="p-5">
                   <span className="text-[11px] font-bold text-muted tracking-widest uppercase block mb-3">Economic Calendar</span>
                   {panelLoading ? (
                     <div className="text-xs text-muted">Loading…</div>
                   ) : (
                     <EconomicCalendar events={calendarEvents} loading={false} />
-                  )}
-                </div>
-
-                {/* News */}
-                <div className="p-5">
-                  <span className="text-[11px] font-bold text-muted tracking-widest uppercase block mb-3">Macro News</span>
-                  {panelLoading ? (
-                    <div className="text-xs text-muted">Loading…</div>
-                  ) : (
-                    <MacroNewsPanel articles={newsArticles} loading={false} />
                   )}
                 </div>
               </div>

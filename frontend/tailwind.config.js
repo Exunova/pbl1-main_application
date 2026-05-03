@@ -33,6 +33,8 @@ export default {
         border: "var(--border)",
 
         accent: "var(--accent)",
+        secondary: "var(--secondary)",
+        cta: "var(--cta)",
         danger: "var(--danger)",
         success: "var(--success)",
       }

@@ -1,14 +1,15 @@
-import { useState, useEffect, useRef, useMemo } from 'react'
-import { stockScreenerData } from '../data/mockData'
+import { useState, useEffect, useMemo } from 'react'
+import { stockScreenerData, MARKETS } from '../data/mockData'
 import { LineChart, Line, ResponsiveContainer } from 'recharts'
-import { Search, Filter, TrendingUp, TrendingDown } from 'lucide-react'
+import { Search, TrendingUp, TrendingDown } from 'lucide-react'
 import StockDetailPanel from './StockDetailPanel'
 
-// ─── Regions ──────────────────────────────────────────────────────────────────
-
-const REGIONS = ['Asia Pacific', 'Americas', 'Europe', 'Middle East']
-
-// ─── StockCard ────────────────────────────────────────────────────────────────
+const COUNTRY_NAMES = {
+  US: 'United States',
+  ID: 'Indonesia',
+  JP: 'Japan',
+  GB: 'United Kingdom'
+}
 
 function StockCard({ stock, onClick }) {
   const [liveData, setLiveData] = useState(null)
@@ -18,9 +19,8 @@ function StockCard({ stock, onClick }) {
     let cancelled = false
     if (!window.api) return
 
-    // Try to get real price from company_info cache
     window.api.fetchCompany(stock.ticker).then(d => {
-      const respData = d?.data || d // handle both wrapped and unwrapped for safety
+      const respData = d?.data || d 
       if (cancelled || !respData?.info?.price) return
       const cur = respData.info.price.currentPrice
       const prv = respData.info.price.previousClose
@@ -32,14 +32,13 @@ function StockCard({ stock, onClick }) {
       }
     }).catch(() => {})
 
-    // Sparkline from OHLCV
     window.api.fetchOHLCV(stock.ticker).then(d => {
       if (cancelled) return
       const respData = d?.data || d
       const candles = respData?.ohlcv_15m || []
       if (candles.length > 0) {
-        const last30 = candles.slice(-30).map((c, i) => ({ i, v: c.close }))
-        setSparkline(last30)
+        const all = candles.map((c, i) => ({ i, v: c.close }))
+        setSparkline(all)
       }
     }).catch(() => {})
 
@@ -49,55 +48,53 @@ function StockCard({ stock, onClick }) {
   const displayPrice = liveData?.price ?? parseFloat(String(stock.price).replace(/,/g, '')) ?? 0
   const displayChange = liveData?.changePct ?? stock.change
   const isUp = displayChange >= 0
-  const color = isUp ? '#22c55e' : '#ef4444'
+  const color = isUp ? 'var(--success)' : 'var(--danger)'
 
-  // fallback sparkline from mock price
   const fallbackSparkline = useMemo(() => {
     let p = displayPrice
-    return Array.from({ length: 20 }, (_, i) => {
+    return Array.from({ length: 50 }, (_, i) => {
       p += (Math.random() - 0.49) * p * 0.008
       return { i, v: p }
     })
-  }, [stock.ticker])
+  }, [stock.ticker, displayPrice])
 
   const chartData = sparkline.length > 0 ? sparkline : fallbackSparkline
 
   return (
   <div
     onClick={() => onClick(stock)}
-    className="bg-card border border-border p-4 rounded-xl hover:border-accent/40 cursor-pointer transition-all duration-200 hover:bg-border/30 active:scale-[0.98] group"
+    className="bg-surface border border-border p-4 hover:border-white/40 cursor-pointer transition-all duration-200 hover:bg-white/5 group flex flex-col"
   >
     <div className="flex justify-between items-start mb-3 gap-2">
       <div className="min-w-0 flex-1">
-        <h3 className="text-sm font-bold tracking-tight text-text truncate group-hover:text-accent transition-colors">
+        <h3 className="text-sm font-bold tracking-widest text-text truncate uppercase group-hover:text-white transition-colors">
           {stock.ticker}
         </h3>
-        <p className="text-[10px] text-muted uppercase font-medium tracking-wider leading-none mt-1 truncate">
+        <p className="text-[10px] text-muted uppercase tracking-widest mt-1 truncate">
           {stock.name}
         </p>
       </div>
 
       <div className="text-right shrink-0">
-        <div className="text-sm font-mono font-bold text-text leading-none">
+        <div className="text-sm font-bold text-text number-font leading-none">
           {typeof displayPrice === 'number'
             ? displayPrice.toLocaleString(undefined, { maximumFractionDigits: 2 })
             : displayPrice}
         </div>
 
         <div
-          className={`text-[10px] font-bold mt-1.5 flex items-center justify-end gap-0.5 ${
+          className={`text-[10px] font-bold mt-1.5 flex items-center justify-end gap-1 number-font ${
             isUp ? 'text-success' : 'text-danger'
           }`}
         >
-          {isUp ? <TrendingUp size={8} /> : <TrendingDown size={8} />}
+          {isUp ? <TrendingUp size={10} /> : <TrendingDown size={10} />}
           {isUp ? '+' : ''}
           {displayChange?.toFixed ? displayChange.toFixed(2) : displayChange}%
         </div>
       </div>
     </div>
 
-    {/* Sparkline */}
-    <div className="h-10 w-full">
+    <div className="h-10 w-full opacity-80 group-hover:opacity-100 transition-opacity">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={chartData}>
           <Line
@@ -112,122 +109,123 @@ function StockCard({ stock, onClick }) {
       </ResponsiveContainer>
     </div>
 
-    {/* Sector tag */}
-    <div className="mt-2 flex items-center justify-between">
-      <span className="text-[9px] text-muted uppercase tracking-widest truncate">
+    <div className="mt-3 flex items-start justify-between border-t border-border/50 pt-2 gap-2">
+      <span className="text-[9px] text-muted uppercase tracking-widest leading-tight flex-1">
         {stock.sector}
       </span>
-      <span className="text-[9px] text-muted/70 uppercase tracking-widest">
-        {stock.industry?.slice(0, 8)}
+      <span className="text-[9px] text-muted/50 uppercase tracking-widest leading-tight text-right flex-1">
+        {stock.industry}
       </span>
     </div>
   </div>
 )
 }
 
-// ─── Main View ────────────────────────────────────────────────────────────────
-
 export default function ScreenerView() {
   const [selectedStock, setSelectedStock] = useState(null)
-  const [region, setRegion]               = useState('Asia Pacific')
+  const [region, setRegion]               = useState('US')
   const [search, setSearch]               = useState('')
 
+  const [sidebarWidth, setSidebarWidth] = useState(256)
+  const [isResizing, setIsResizing] = useState(false)
+
+  useEffect(() => {
+    if (!isResizing) return
+    const onMouseMove = e => {
+      const newW = Math.max(150, Math.min(500, e.clientX))
+      setSidebarWidth(newW)
+    }
+    const onMouseUp = () => setIsResizing(false)
+    window.addEventListener('mousemove', onMouseMove)
+    window.addEventListener('mouseup', onMouseUp)
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove)
+      window.removeEventListener('mouseup', onMouseUp)
+    }
+  }, [isResizing])
+
+  const availableTickers = MARKETS[region]?.tickers || [];
+  
   const stocks = stockScreenerData.filter(s =>
-    s.region === region &&
+    availableTickers.includes(s.ticker) &&
     (!search || s.ticker.toLowerCase().includes(search.toLowerCase()) || s.name.toLowerCase().includes(search.toLowerCase()))
   )
 
-  return (
-  <div className="w-full h-full flex flex-col bg-background relative overflow-hidden">
+  const regionKeys = Object.keys(MARKETS);
 
-    {/* ── Sidebar + Grid layout ── */}
+  return (
+  <div className="w-full h-full flex flex-col bg-background relative overflow-hidden text-text">
+
     <div className="flex-1 flex overflow-hidden">
 
-      {/* ── Sidebar ── */}
-      <aside className="w-52 border-r border-border flex flex-col p-5 shrink-0 bg-surface/50">
-        <div className="mb-6">
-          <h2 className="text-[10px] font-bold text-muted uppercase tracking-widest mb-3">
-            Stock Explorer
+      <aside className="border-r flex flex-col shrink-0 bg-background relative" style={{ width: sidebarWidth, borderColor: 'rgba(255,255,255,0.04)' }}>
+        <div className="p-6 border-b border-border">
+          <h2 className="text-[10px] font-bold text-muted uppercase tracking-widest">
+            Market Navigator
           </h2>
-
-          <div className="flex flex-col gap-1">
-            {REGIONS.map(r => (
-              <button
-                key={r}
-                onClick={() => setRegion(r)}
-                className={`text-left px-3 py-2 rounded-lg text-xs font-medium transition-all duration-200 ${
-                  region === r
-                    ? 'bg-accent/10 text-accent border border-accent/20'
-                    : 'text-muted hover:text-text hover:bg-border/30 border border-transparent'
-                }`}
-              >
-                {r}
-              </button>
-            ))}
-          </div>
         </div>
 
-        <div className="mt-auto">
-          <div className="bg-card/50 border border-border p-3 rounded-xl">
-            <span className="text-[10px] font-bold text-muted uppercase tracking-widest block mb-2">
-              Market Status
-            </span>
-
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
-              <span className="text-xs font-bold text-text">LIVE</span>
-            </div>
-
-            <div className="mt-2 text-[10px] text-muted/70">
-              {stocks.length} stocks in {region}
-            </div>
-          </div>
+        <div className="flex flex-col">
+          {regionKeys.map(r => {
+            const isActive = region === r;
+            return (
+            <button
+              key={r}
+              onClick={() => setRegion(r)}
+              className={`text-left px-6 py-4 text-[11px] font-bold uppercase tracking-widest transition-colors ${
+                isActive
+                  ? 'bg-surface text-text border-l-2 border-l-text'
+                  : 'text-muted hover:bg-surface/30 hover:text-text border-l-2 border-l-transparent'
+              }`}
+            >
+              <div className="flex justify-between items-center">
+                <span>{COUNTRY_NAMES[r] || r}</span>
+                <span className={`text-[9px] ${isActive ? 'text-muted' : 'text-muted/50'}`}>({MARKETS[r].label})</span>
+              </div>
+            </button>
+          )})}
         </div>
+
+        <div
+          className={`absolute top-0 right-0 bottom-0 w-1 cursor-col-resize z-50 transition-colors ${isResizing ? 'bg-accent' : 'hover:bg-accent/50'}`}
+          onMouseDown={() => setIsResizing(true)}
+        />
       </aside>
 
-      {/* ── Main Content ── */}
-      <main className="flex-1 flex flex-col overflow-hidden">
+      <main className="flex-1 flex flex-col overflow-hidden bg-background">
 
-        {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-border shrink-0">
-          <div>
-            <h1 className="text-xl font-bold tracking-tight text-text">
-              Market Screener
+        <div className="flex items-center justify-between px-8 py-5 border-b border-border shrink-0 bg-background">
+          <div className="flex flex-col">
+            <h1 className="text-xl font-bold tracking-widest text-text uppercase">
+              {COUNTRY_NAMES[region]} Market
             </h1>
-
-            <p className="text-xs text-muted mt-0.5">
-              Real-time analysis · {region}
+            <p className="text-[10px] text-muted mt-1 uppercase tracking-widest">
+              Index: {MARKETS[region].label} • {availableTickers.length} Tracked Constituents
             </p>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <div className="relative">
-              <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
-
+              <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" />
               <input
                 type="text"
-                placeholder="Search ticker or name…"
+                placeholder="Search ticker..."
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                className="bg-card border border-border rounded-lg pl-8 pr-4 py-2 text-xs text-text placeholder:text-muted outline-none focus:border-accent/40 transition-all w-52"
+                className="bg-surface border border-border pl-9 pr-4 py-2.5 text-xs text-text placeholder:text-muted/50 outline-none focus:border-white transition-colors w-64 uppercase tracking-wider"
               />
             </div>
-
-            <button className="p-2 border border-border rounded-lg bg-card hover:bg-border/30 text-muted hover:text-text transition-colors">
-              <Filter size={13} />
-            </button>
           </div>
         </div>
 
-        {/* Grid */}
-        <div className="flex-1 overflow-y-auto custom-scrollbar p-5">
+        <div className="flex-1 overflow-y-auto custom-scrollbar p-6">
           {stocks.length === 0 ? (
-            <div className="flex flex-col items-center justify-center h-40 gap-2">
-              <Search size={28} className="text-muted/30" />
-              <span className="text-sm text-muted">No stocks found</span>
+            <div className="flex flex-col items-center justify-center h-48 gap-3 border border-dashed border-border/50 bg-surface/10">
+              <Search size={32} className="text-muted/20" />
+              <span className="text-xs text-muted uppercase tracking-widest">No assets matched</span>
             </div>
           ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {stocks.map(stock => (
                 <StockCard key={stock.ticker} stock={stock} onClick={setSelectedStock} />
               ))}
@@ -238,9 +236,8 @@ export default function ScreenerView() {
       </main>
     </div>
 
-    {/* ── Stock Detail Panel (full-screen overlay) ── */}
     {selectedStock && (
-      <div className="absolute inset-0 z-[100]">
+      <div className="absolute inset-0 z-[100] bg-background">
         <StockDetailPanel
           stock={selectedStock}
           onClose={() => setSelectedStock(null)}

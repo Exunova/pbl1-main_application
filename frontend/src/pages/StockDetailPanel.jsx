@@ -30,7 +30,7 @@ const Candlestick = (props) => {
   const d = props.payload
   if (!d || !width || width <= 0) return null
   const isUp = d.close >= d.open
-  const color = isUp ? '#22c55e' : '#ef4444'
+  const color = isUp ? "var(--success)" : "var(--danger)"
   const ratio = height / Math.max(d.high - d.low, 0.001)
   const bodyTop = y + (d.high - Math.max(d.open, d.close)) * ratio
   const bodyH = Math.max(Math.abs(d.open - d.close) * ratio, 2)
@@ -38,7 +38,7 @@ const Candlestick = (props) => {
   return (
     <g>
       <line x1={wickX} y1={y} x2={wickX} y2={y + height} stroke="#374151" strokeWidth={1} />
-      <rect x={x + 1} y={bodyTop} width={Math.max(width - 2, 1)} height={bodyH} fill={color} rx={1} />
+      <rect x={x} y={bodyTop} width={Math.max(width, 1)} height={bodyH} fill={color} />
     </g>
   )
 }
@@ -49,11 +49,11 @@ const CandleTooltip = ({ active, payload }) => {
   if (!d) return null
   const isUp = d.close >= d.open
   return (
-    <div style={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 8, padding: '8px 12px', fontSize: 11 }}>
+    <div style={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 0, padding: '8px 12px', fontSize: 11 }}>
       <div style={{ display: 'grid', gridTemplateColumns: 'auto auto', gap: '2px 12px' }}>
         <span style={{ color: '#6b7280' }}>O</span><span style={{ color: '#e2e8f0' }}>{fmt(d.open, 0)}</span>
-        <span style={{ color: '#6b7280' }}>H</span><span style={{ color: '#22c55e' }}>{fmt(d.high, 0)}</span>
-        <span style={{ color: '#6b7280' }}>L</span><span style={{ color: '#ef4444' }}>{fmt(d.low, 0)}</span>
+        <span style={{ color: '#6b7280' }}>H</span><span style={{ color: "var(--success)" }}>{fmt(d.high, 0)}</span>
+        <span style={{ color: '#6b7280' }}>L</span><span style={{ color: "var(--danger)" }}>{fmt(d.low, 0)}</span>
         <span style={{ color: '#6b7280' }}>C</span><span style={{ color: isUp ? '#22c55e' : '#ef4444' }}>{fmt(d.close, 0)}</span>
       </div>
     </div>
@@ -69,7 +69,7 @@ const SectionLabel = ({ children }) => (
 )
 
 const InfoGrid = ({ rows }) => (
-  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'var(--border)', borderRadius: 6, overflow: 'hidden', marginBottom: 14 }}>
+  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'var(--border)', borderRadius: 0, overflow: 'hidden', marginBottom: 14 }}>
     {rows.map(({ label, value, color }) => (
       <div key={label} style={{ background: 'var(--surface)', padding: '7px 10px' }}>
         <div style={{ fontSize: 10, color: 'var(--muted)' }}>{label}</div>
@@ -177,7 +177,7 @@ export default function StockDetailPanel({ stock, onClose }) {
     if (ohlcvData.length > 0) {
       return ohlcvData.map((c, i) => ({
         index: i, time: i,
-        open: c.open, high: c.high, low: c.low, close: c.close,
+        open: c.open, high: c.high, low: c.low, close: c.close, volume: c.volume || 0,
       }))
     }
     // Fallback mock
@@ -188,7 +188,7 @@ export default function StockDetailPanel({ stock, onClose }) {
       const close = base + move
       const high = Math.max(base, close) + Math.random() * base * 0.004
       const low = Math.min(base, close) - Math.random() * base * 0.004
-      const d = { index: i, time: i, open: +base.toFixed(2), high: +high.toFixed(2), low: +low.toFixed(2), close: +close.toFixed(2) }
+      const d = { index: i, time: i, open: +base.toFixed(2), high: +high.toFixed(2), low: +low.toFixed(2), close: +close.toFixed(2), volume: Math.random() * 10000 + 5000 }
       base = close
       return d
     })
@@ -303,7 +303,7 @@ export default function StockDetailPanel({ stock, onClose }) {
       <div style={{ background: 'var(--background)', padding: '10px 16px', borderBottom: '0.5px solid var(--border)', display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
         <button
           onClick={onClose}
-          style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--muted)', padding: '4px 6px', display: 'flex', alignItems: 'center', borderRadius: 6, transition: 'background 0.15s' }}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--muted)', padding: '4px 6px', display: 'flex', alignItems: 'center', borderRadius: 0, transition: 'background 0.15s' }}
           onMouseEnter={e => e.currentTarget.style.background = 'var(--surface)'}
           onMouseLeave={e => e.currentTarget.style.background = 'none'}
           title="Back to Screener"
@@ -312,7 +312,7 @@ export default function StockDetailPanel({ stock, onClose }) {
         </button>
 
         {/* Ticker avatar */}
-        <div style={{ width: 30, height: 30, borderRadius: 8, background: 'var(--card)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '0.5px solid var(--border)' }}>
+        <div style={{ width: 30, height: 30, borderRadius: 0, background: 'var(--card)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '0.5px solid var(--border)' }}>
           <span style={{ fontSize: 9, fontWeight: 700, color: '#60a5fa', letterSpacing: '0.05em' }}>
             {ticker.replace(/[^A-Z]/gi, '').slice(0, 3).toUpperCase()}
           </span>
@@ -324,7 +324,7 @@ export default function StockDetailPanel({ stock, onClose }) {
           </span>
           <span style={{ fontSize: 11, color: '#4b5563', marginLeft: 8 }}>{ticker}</span>
           {(identity.sector || stock.sector) && (
-            <span style={{ fontSize: 9, background: '#1a2d1a', color: '#4ade80', padding: '2px 8px', borderRadius: 4, marginLeft: 8, display: 'inline-block', fontWeight: 600, letterSpacing: '0.05em' }}>
+            <span style={{ fontSize: 9, background: '#1a2d1a', color: '#4ade80', padding: '2px 8px', borderRadius: 0, marginLeft: 8, display: 'inline-block', fontWeight: 600, letterSpacing: '0.05em' }}>
               {identity.sector || stock.sector}
             </span>
           )}
@@ -355,7 +355,7 @@ export default function StockDetailPanel({ stock, onClose }) {
               <button key={ct}
                 onClick={() => setChartType(ct.toLowerCase())}
                 style={{
-                  fontSize: 11, padding: '3px 9px', borderRadius: 4, cursor: 'pointer',
+                  fontSize: 11, padding: '3px 9px', borderRadius: 0, cursor: 'pointer',
                   border: 'none', fontFamily: 'inherit',
                   background: chartType === ct.toLowerCase() ? 'var(--background)' : 'transparent',
                   color: chartType === ct.toLowerCase() ? '#60a5fa' : '#4b5563',
@@ -370,7 +370,7 @@ export default function StockDetailPanel({ stock, onClose }) {
               <button key={tf}
                 onClick={() => setTimeframe(tf)}
                 style={{
-                  fontSize: 11, padding: '3px 9px', borderRadius: 4, cursor: 'pointer',
+                  fontSize: 11, padding: '3px 9px', borderRadius: 0, cursor: 'pointer',
                   border: 'none', fontFamily: 'inherit',
                   background: timeframe === tf ? 'var(--card)' : 'transparent',
                   color: timeframe === tf ? '#f59e0b' : '#4b5563',
@@ -387,7 +387,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 onClick={() => setYScale(id)}
                 title={`Y-axis scale: ${id}`}
                 style={{
-                  fontSize: 10, padding: '2px 8px', borderRadius: 4, cursor: 'pointer',
+                  fontSize: 10, padding: '2px 8px', borderRadius: 0, cursor: 'pointer',
                   border: yScale === id ? '0.5px solid var(--accent)' : '0.5px solid transparent',
                   fontFamily: 'inherit',
                   background: yScale === id ? 'var(--surface)' : 'transparent',
@@ -398,12 +398,31 @@ export default function StockDetailPanel({ stock, onClose }) {
 
             <span style={{ width: 1, height: 14, background: '#1e2433', margin: '0 4px' }} />
 
-            {/* Zoom-out button */}
+            {/* Zoom buttons */}
+            <button
+              onClick={() => {
+                const ts = chartRef?.current?.timeScale();
+                const r = ts?.getVisibleLogicalRange();
+                if (!r) return;
+                const span = (r.to - r.from) / 2;
+                const mid = (r.from + r.to) / 2;
+                ts.setVisibleLogicalRange({ from: mid - span / 2, to: mid + span / 2 });
+              }}
+              title="Zoom in"
+              style={{
+                fontSize: 10, padding: '2px 8px', borderRadius: 0, cursor: 'pointer',
+                border: '0.5px solid var(--border)', fontFamily: 'inherit',
+                background: 'transparent', color: 'var(--muted)',
+                display: 'flex', alignItems: 'center', gap: 3,
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--surface)'; e.currentTarget.style.color = 'var(--text)' }}
+              onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#4b5563' }}
+            >⊕ Zoom In</button>
             <button
               onClick={handleZoomOut}
               title="Zoom out — show all candles"
               style={{
-                fontSize: 10, padding: '2px 8px', borderRadius: 4, cursor: 'pointer',
+                fontSize: 10, padding: '2px 8px', borderRadius: 0, cursor: 'pointer',
                 border: '0.5px solid var(--border)', fontFamily: 'inherit',
                 background: 'transparent', color: 'var(--muted)',
                 display: 'flex', alignItems: 'center', gap: 3,
@@ -416,8 +435,8 @@ export default function StockDetailPanel({ stock, onClose }) {
             <div style={{ marginLeft: 'auto', display: 'flex', gap: 10 }}>
               {[
                 { label: 'O', val: lastCandle.open, color: '#e2e8f0' },
-                { label: 'H', val: lastCandle.high, color: '#22c55e' },
-                { label: 'L', val: lastCandle.low, color: '#ef4444' },
+                { label: 'H', val: lastCandle.high, color: "var(--success)" },
+                { label: 'L', val: lastCandle.low, color: "var(--danger)" },
                 { label: 'C', val: lastCandle.close, color: '#e2e8f0' },
               ].map(({ label, val, color }) => (
                 <span key={label} style={{ fontSize: 11, color: 'var(--muted)' }}>
@@ -446,18 +465,25 @@ export default function StockDetailPanel({ stock, onClose }) {
                 {chartType === 'line' ? (
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
                     <XAxis dataKey="index" hide />
-                    <YAxis domain={yDomain} tick={{ fontSize: 9, fill: '#4b5563' }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} />
-                    <Tooltip contentStyle={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 8, fontSize: 11 }} />
+                    <YAxis yAxisId="price" domain={yDomain} tick={{ fontSize: 9, fill: 'var(--muted)', fontFamily: "'Fira Code', monospace" }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} axisLine={{stroke: 'var(--border)'}} tickLine={false} />
+                    <YAxis yAxisId="volume" orientation="left" hide domain={[0, dataMax => dataMax * 5]} />
+                    <Tooltip contentStyle={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 0, fontSize: 11 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}
                     <Line type="monotone" dataKey="close" stroke="#22c55e" strokeWidth={1.8} dot={false} isAnimationActive={false} />
                   </ComposedChart>
                 ) : (
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
                     <XAxis dataKey="index" hide />
-                    <YAxis domain={yDomain} tick={{ fontSize: 9, fill: '#4b5563' }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} />
+                    <YAxis yAxisId="price" domain={yDomain} tick={{ fontSize: 9, fill: 'var(--muted)', fontFamily: "'Fira Code', monospace" }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} axisLine={{stroke: 'var(--border)'}} tickLine={false} />
+                    <YAxis yAxisId="volume" orientation="left" hide domain={[0, dataMax => dataMax * 5]} />
                     <Tooltip content={<CandleTooltip />} cursor={{ stroke: '#1e2433', strokeWidth: 1 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}
-                    <Bar dataKey={d => [d.low, d.high]} shape={<Candlestick />} isAnimationActive={false} />
+                    <Bar dataKey={d => [d.low, d.high]} shape={<Candlestick />} isAnimationActive={false} xAxisId={0} yAxisId="price" barCategoryGap="10%" barGap={0} />
+                    <Bar dataKey="volume" fill="var(--border)" isAnimationActive={false} xAxisId={0} yAxisId="volume" barGap={0}>
+                      {visibleData.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={entry.close >= entry.open ? 'var(--success)' : 'var(--danger)'} fillOpacity={0.3} />
+                      ))}
+                    </Bar>
                   </ComposedChart>
                 )}
               </ResponsiveContainer>
@@ -472,7 +498,7 @@ export default function StockDetailPanel({ stock, onClose }) {
               { label: 'P/E (TTM)', value: valuation.trailingPE ? valuation.trailingPE.toFixed(1) + 'x' : (stock.pe ? stock.pe + 'x' : '—'), color: '#60a5fa' },
               { label: 'Div Yield', value: dividend.dividendYield ? pct(dividend.dividendYield) : (stock.div || '—'), color: '#fbbf24' },
             ].map(({ label, value, color }) => (
-              <div key={label} style={{ background: 'var(--card)', borderRadius: 6, padding: 8 }}>
+              <div key={label} style={{ background: 'var(--card)', borderRadius: 0, padding: 8 }}>
                 <div style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 2 }}>{label}</div>
                 <div style={{ fontSize: 12, fontWeight: 500, color }}>{value}</div>
               </div>
@@ -504,7 +530,7 @@ export default function StockDetailPanel({ stock, onClose }) {
             {loading && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                 {Array.from({ length: 6 }).map((_, i) => (
-                  <div key={i} style={{ height: 32, background: 'var(--surface)', borderRadius: 6, animation: 'pulse 1.5s ease-in-out infinite' }} />
+                  <div key={i} style={{ height: 32, background: 'var(--surface)', borderRadius: 0, animation: 'pulse 1.5s ease-in-out infinite' }} />
                 ))}
               </div>
             )}
@@ -516,10 +542,10 @@ export default function StockDetailPanel({ stock, onClose }) {
                 <InfoGrid rows={[
                   { label: 'Prev Close', value: fmt(priceInfo.previousClose ?? prevClose, 2) },
                   { label: 'Open', value: fmt(priceInfo.open, 2) },
-                  { label: 'Day Low', value: fmt(priceInfo.dayLow, 2), color: '#ef4444' },
-                  { label: 'Day High', value: fmt(priceInfo.dayHigh, 2), color: '#22c55e' },
-                  { label: '52W Low', value: fmt(priceInfo.fiftyTwoWeekLow, 2), color: '#ef4444' },
-                  { label: '52W High', value: fmt(priceInfo.fiftyTwoWeekHigh, 2), color: '#22c55e' },
+                  { label: 'Day Low', value: fmt(priceInfo.dayLow, 2), color: "var(--danger)" },
+                  { label: 'Day High', value: fmt(priceInfo.dayHigh, 2), color: "var(--success)" },
+                  { label: '52W Low', value: fmt(priceInfo.fiftyTwoWeekLow, 2), color: "var(--danger)" },
+                  { label: '52W High', value: fmt(priceInfo.fiftyTwoWeekHigh, 2), color: "var(--success)" },
                 ]} />
 
                 <SectionLabel>Valuation</SectionLabel>
@@ -543,7 +569,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 {analyst.recommendationKey && (
                   <>
                     <SectionLabel>Analyst Consensus</SectionLabel>
-                    <div style={{ background: 'var(--surface)', borderRadius: 6, padding: '10px 12px', marginBottom: 14 }}>
+                    <div style={{ background: 'var(--surface)', borderRadius: 0, padding: '10px 12px', marginBottom: 14 }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
                         <span style={{ fontSize: 13, fontWeight: 700, color: '#4ade80', textTransform: 'capitalize' }}>
                           {analyst.recommendationKey.replace(/_/g, ' ')}
@@ -619,7 +645,7 @@ export default function StockDetailPanel({ stock, onClose }) {
             {!loading && tab === 'about' && (
               <>
                 <SectionLabel>Company</SectionLabel>
-                <div style={{ background: 'var(--surface)', borderRadius: 6, padding: '10px 12px', marginBottom: 14 }}>
+                <div style={{ background: 'var(--surface)', borderRadius: 0, padding: '10px 12px', marginBottom: 14 }}>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, fontSize: 11, marginBottom: 10 }}>
                     {[
                       { label: 'Sector', value: identity.sector || stock.sector },
