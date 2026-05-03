@@ -154,6 +154,14 @@ class PortfolioHandler(BasePageHandler):
                 # OPTIMIZATION: Fetch 1 month of data for all stocks and FX pairs in ONE network call!
                 # Disabled threads and progress to prevent yfinance from deadlocking/hanging.
                 prices = yf.download(all_symbols, period="1mo", auto_adjust=True, threads=False, progress=False)
+                if prices is not None and not prices.empty:
+                    sys.stderr.write(f"yfinance download success. Columns: {prices.columns.tolist()}\n")
+                    if "Close" in prices.columns:
+                        sys.stderr.write(f"Close data head:\n{prices['Close'].head()}\n")
+                    else:
+                        sys.stderr.write(f"NO CLOSE COLUMN in prices. Available levels: {prices.columns.levels if hasattr(prices.columns, 'levels') else 'N/A'}\n")
+                else:
+                    sys.stderr.write("yfinance download returned empty data\n")
             except Exception as e:
                 sys.stderr.write(f"yfinance batch download failed: {e}\n")
                 prices = None
@@ -162,11 +170,24 @@ class PortfolioHandler(BasePageHandler):
                 if prices is None or prices.empty:
                     return None
                 try:
-                    s = prices["Close"] if len(all_symbols) == 1 else prices["Close"][symbol]
+                    if len(all_symbols) == 1:
+                        s = prices["Close"]
+                    else:
+                        if ("Close", symbol) in prices.columns:
+                            s = prices[("Close", symbol)]
+                        elif "Close" in prices.columns and symbol in prices["Close"].columns:
+                            s = prices["Close"][symbol]
+                        else:
+                            found_col = [c for c in prices.columns if c[1] == symbol and c[0] == 'Close']
+                            if found_col:
+                                s = prices[found_col[0]]
+                            else:
+                                return None
                     s = s.dropna()
                     if not s.empty:
                         return float(s.iloc[-1])
-                except Exception:
+                except Exception as e:
+                    sys.stderr.write(f"Error getting latest price for {symbol}: {e}\n")
                     pass
                 return None
 
@@ -174,11 +195,24 @@ class PortfolioHandler(BasePageHandler):
                 if prices is None or prices.empty:
                     return None
                 try:
-                    s = prices["Close"] if len(all_symbols) == 1 else prices["Close"][symbol]
+                    if len(all_symbols) == 1:
+                        s = prices["Close"]
+                    else:
+                        if ("Close", symbol) in prices.columns:
+                            s = prices[("Close", symbol)]
+                        elif "Close" in prices.columns and symbol in prices["Close"].columns:
+                            s = prices["Close"][symbol]
+                        else:
+                            found_col = [c for c in prices.columns if c[1] == symbol and c[0] == 'Close']
+                            if found_col:
+                                s = prices[found_col[0]]
+                            else:
+                                return None
                     s = s.dropna()
                     if not s.empty:
                         return float(s.mean())
-                except Exception:
+                except Exception as e:
+                    sys.stderr.write(f"Error getting hist avg for {symbol}: {e}\n")
                     pass
                 return None
 
@@ -205,27 +239,52 @@ class PortfolioHandler(BasePageHandler):
                         curr_fx = latest_fx if latest_fx else (15650.0 if currency == "IDR" else 1.0)
                         buy_fx = avg_fx if avg_fx else curr_fx
                 
-                current_price = get_latest_price(ticker)
+                # Conversion to IDR:
+                # If currency is USD, we need USDIDR rate.
+                # If currency is JPY, we need JPYIDR rate (or JPYUSD * USDIDR).
+                # Existing curr_fx is USD/Foreign (e.g. 149 JPY per 1 USD).
+                # We need conversion to IDR for ALL metrics.
                 
-                if current_price is None:
-                    current_price = buy_price
+                usd_idr_rate = get_latest_price("USDIDR=X") or 15650.0
+                buy_usd_idr = get_hist_avg("USDIDR=X") or 15650.0
+                
+                if currency == "IDR":
+                    buy_price_idr = buy_price
+                    current_price_idr = get_latest_price(ticker) or buy_price
+                    stock_return_idr = (current_price_idr - buy_price_idr) * shares
+                    forex_return_idr = 0.0
+                elif currency == "USD":
+                    buy_price_idr = buy_price * buy_usd_idr
+                    current_price_usd = get_latest_price(ticker) or buy_price
+                    current_price_idr = current_price_usd * usd_idr_rate
+                    
+                    stock_return_idr = (current_price_usd - buy_price) * shares * usd_idr_rate
+                    forex_return_idr = buy_price * shares * (usd_idr_rate - buy_usd_idr)
+                else:
+                    buy_usd_curr = buy_fx
+                    buy_curr_idr = (1.0 / buy_usd_curr) * buy_usd_idr
+                    buy_price_idr = buy_price * buy_curr_idr
+                    
+                    current_usd_curr = curr_fx
+                    current_curr_idr = (1.0 / current_usd_curr) * usd_idr_rate
+                    current_price_foreign = get_latest_price(ticker) or buy_price
+                    current_price_idr = current_price_foreign * current_curr_idr
+                    
+                    stock_return_idr = (current_price_foreign - buy_price) * shares * current_curr_idr
+                    forex_return_idr = buy_price * shares * (current_curr_idr - buy_curr_idr)
 
-                stock_return = (current_price - buy_price) * shares
-                stock_return_idr = stock_return * curr_fx
-                forex_return_idr = shares * buy_price * (curr_fx - buy_fx)
-
-                total_pnl_idr += stock_return_idr + forex_return_idr
+                total_pnl_idr += (stock_return_idr + forex_return_idr)
                 total_stock_idr += stock_return_idr
                 total_forex_idr += forex_return_idr
-
+                
                 pnl_positions.append({
                     "ticker": ticker,
                     "shares": shares,
                     "buyPrice": buy_price,
-                    "currentPrice": current_price,
+                    "buyPriceIDR": buy_price_idr,
+                    "currentPrice": get_latest_price(ticker) or buy_price,
+                    "currentPriceIDR": current_price_idr,
                     "currency": currency,
-                    "fxRate": curr_fx,
-                    "fxRateAtBuy": buy_fx,
                     "stockReturn": stock_return_idr,
                     "forexReturn": forex_return_idr,
                 })

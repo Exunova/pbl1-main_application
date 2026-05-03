@@ -23,9 +23,11 @@ class BasePageHandler(ABC):
         ...
 
     def get_data_path(self, category: str, filename: str) -> str:
+        base = os.path.abspath(__file__)
+        project_root = os.path.normpath(os.path.join(os.path.dirname(base), "..", "..", ".."))
         data_dir = os.environ.get(
             "DATA_DIR",
-            os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "data"),
+            os.path.join(project_root, "data"),
         )
         d = os.path.join(data_dir, category)
         os.makedirs(d, exist_ok=True)

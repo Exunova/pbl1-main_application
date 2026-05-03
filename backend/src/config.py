@@ -3,7 +3,7 @@ import os
 # =============================================================================
 # SCRAPING TOGGLE
 # =============================================================================
-SCRAPING_ENABLED = True   # change this to False to turn off all scraping
+SCRAPING_ENABLED = False   # change this to False to turn off all scraping
 
 # =============================================================================
 # PATH SETUP
