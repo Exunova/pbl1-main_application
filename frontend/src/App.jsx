@@ -1,5 +1,6 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import logo from './logo.ico'
 import { Globe, LayoutGrid, BarChart3, PieChart, User, Minus, Square, X, RefreshCcw } from 'lucide-react'
 import GlobeView from './pages/GlobeView'
 import ScreenerView from './pages/ScreenerView'
@@ -37,8 +38,8 @@ const Titlebar = ({ theme, onThemeToggle }) => {
     <div className="h-10 bg-surface border-b border-border flex items-center justify-between px-4 drag-header shrink-0 z-50 relative">
       <div className="flex items-center gap-6 no-drag">
         <div className="flex items-center gap-2">
-          <div className="w-5 h-5 bg-text flex items-center justify-center">
-            <span className="text-xs font-black text-background">M</span>
+          <div className="w-5 h-5 flex items-center justify-center">
+            <img src={logo} className="w-full h-full object-contain" alt="MAPRO Logo" />
           </div>
           <span className="text-xs font-bold tracking-widest text-text uppercase">MAPRO</span>
         </div>

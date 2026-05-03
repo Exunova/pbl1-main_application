@@ -207,6 +207,7 @@ export default function StockDetailPanel({ stock, onClose }) {
   const [range, setRange] = useState({ start: 0, end: DEFAULT_VISIBLE })
   const [isPanning, setIsPanning] = useState(false)
   const [lastX, setLastX] = useState(0)
+  const chartRef = useRef(null)
 
   useEffect(() => {
     const len = candleData.length
@@ -222,15 +223,28 @@ export default function StockDetailPanel({ stock, onClose }) {
     [candleData, range]
   )
 
-  const handleWheel = e => {
-    e.preventDefault()
-    const dir = e.deltaY > 0 ? 1 : -1
-    setRange(prev => {
-      const newStart = Math.min(Math.max(0, prev.start + dir * 2), prev.end - 10)
-      const newEnd = Math.max(Math.min(candleData.length, prev.end - dir * 2), newStart + 10)
-      return { start: newStart, end: newEnd }
-    })
-  }
+  useEffect(() => {
+    const el = chartRef.current
+    if (!el) return
+    let wheelRaf = null
+    const onWheel = (e) => {
+      e.preventDefault()
+      if (wheelRaf) return
+      const dir = e.deltaY > 0 ? 1 : -1
+      wheelRaf = requestAnimationFrame(() => {
+        setRange(prev => {
+          const span = prev.end - prev.start
+          const step = Math.max(2, Math.floor(span * 0.05))
+          const newStart = Math.min(Math.max(0, prev.start + dir * step), prev.end - 10)
+          const newEnd = Math.max(Math.min(candleData.length, prev.end - dir * step), newStart + 10)
+          return { start: newStart, end: newEnd }
+        })
+        wheelRaf = null
+      })
+    }
+    el.addEventListener('wheel', onWheel, { passive: false })
+    return () => el.removeEventListener('wheel', onWheel)
+  }, [candleData.length, ohlcvLoading])
 
   const handleMouseDown = e => { setIsPanning(true); setLastX(e.clientX) }
   const handleMouseMove = e => {
@@ -401,12 +415,15 @@ export default function StockDetailPanel({ stock, onClose }) {
             {/* Zoom buttons */}
             <button
               onClick={() => {
-                const ts = chartRef?.current?.timeScale();
-                const r = ts?.getVisibleLogicalRange();
-                if (!r) return;
-                const span = (r.to - r.from) / 2;
-                const mid = (r.from + r.to) / 2;
-                ts.setVisibleLogicalRange({ from: mid - span / 2, to: mid + span / 2 });
+                setRange(prev => {
+                  const span = prev.end - prev.start
+                  const newSpan = Math.max(10, Math.floor(span * 0.8))
+                  const mid = (prev.start + prev.end) / 2
+                  return {
+                    start: Math.max(0, Math.floor(mid - newSpan / 2)),
+                    end: Math.min(candleData.length, Math.ceil(mid + newSpan / 2))
+                  }
+                })
               }}
               title="Zoom in"
               style={{
@@ -448,14 +465,14 @@ export default function StockDetailPanel({ stock, onClose }) {
 
           {/* Chart */}
           {ohlcvLoading ? (
-            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--muted)1', fontSize: 12 }}>
+            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--muted)', fontSize: 12 }}>
               Loading chart…
             </div>
           ) : (
             <div
+              ref={chartRef}
               style={{ flex: 1, overflow: 'hidden', padding: '8px 4px 0 4px', cursor: isPanning ? 'grabbing' : 'crosshair', outline: 'none' }}
               tabIndex={-1}
-              onWheel={handleWheel}
               onMouseDown={handleMouseDown}
               onMouseMove={handleMouseMove}
               onMouseUp={handleMouseUp}
@@ -473,13 +490,13 @@ export default function StockDetailPanel({ stock, onClose }) {
                   </ComposedChart>
                 ) : (
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
-                    <XAxis dataKey="index" hide />
+                    <XAxis dataKey="index" hide padding={{ left: 0, right: 0 }} />
                     <YAxis yAxisId="price" domain={yDomain} tick={{ fontSize: 9, fill: 'var(--muted)', fontFamily: "'Fira Code', monospace" }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} axisLine={{stroke: 'var(--border)'}} tickLine={false} />
                     <YAxis yAxisId="volume" orientation="left" hide domain={[0, dataMax => dataMax * 5]} />
                     <Tooltip content={<CandleTooltip />} cursor={{ stroke: '#1e2433', strokeWidth: 1 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}
-                    <Bar dataKey={d => [d.low, d.high]} shape={<Candlestick />} isAnimationActive={false} xAxisId={0} yAxisId="price" barCategoryGap="10%" barGap={0} />
-                    <Bar dataKey="volume" fill="var(--border)" isAnimationActive={false} xAxisId={0} yAxisId="volume" barGap={0}>
+                    <Bar dataKey={d => [d.low, d.high]} shape={<Candlestick />} isAnimationActive={false} xAxisId={0} yAxisId="price" barCategoryGap={1} barGap="-100%" />
+                    <Bar dataKey="volume" fill="var(--border)" isAnimationActive={false} xAxisId={0} yAxisId="volume" barCategoryGap={1} barGap="-100%">
                       {visibleData.map((entry, index) => (
                         <Cell key={`cell-${index}`} fill={entry.close >= entry.open ? 'var(--success)' : 'var(--danger)'} fillOpacity={0.3} />
                       ))}

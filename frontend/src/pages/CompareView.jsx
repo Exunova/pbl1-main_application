@@ -106,25 +106,29 @@ export default function CompareView() {
       window.api.fetchOHLCV(MARKETS[idx1].index),
       window.api.fetchOHLCV(MARKETS[idx2].index),
     ]).then(([d1, d2]) => {
-      const c1 = d1?.ohlcv_15m || []
-      const c2 = d2?.ohlcv_15m || []
-      const base1 = c1.length > 0 && c1[0].close ? c1[0].close : 1
-      const base2 = c2.length > 0 && c2[0].close ? c2[0].close : 1
+      const c1 = [...(d1?.ohlcv_15m || [])].sort((a, b) => a.timestamp.localeCompare(b.timestamp))
+      const c2 = [...(d2?.ohlcv_15m || [])].sort((a, b) => a.timestamp.localeCompare(b.timestamp))
+
+      const base1 = c1.find(c => c.close != null)?.close || 1
+      const base2 = c2.find(c => c.close != null)?.close || 1
+
       const c1ByTs = {}; c1.forEach(c => { if (c?.timestamp) c1ByTs[c.timestamp] = c.close })
       const c2ByTs = {}; c2.forEach(c => { if (c?.timestamp) c2ByTs[c.timestamp] = c.close })
       const allTs = Array.from(new Set([...Object.keys(c1ByTs), ...Object.keys(c2ByTs)])).sort()
-      let lastV1 = c1.length > 0 ? c1[0].close : null
-      let lastV2 = c2.length > 0 ? c2[0].close : null
+
+      let lastV1 = base1
+      let lastV2 = base2
       const merged = []
       for (const ts of allTs) {
         if (c1ByTs[ts] !== undefined) lastV1 = c1ByTs[ts]
         if (c2ByTs[ts] !== undefined) lastV2 = c2ByTs[ts]
-        if (lastV1 === null || lastV2 === null) continue
         const v1 = (lastV1 / base1) * 100
         const v2 = (lastV2 / base2) * 100
         merged.push({
           ts: ts.slice(5, 16),
-          v1, v2
+          v1, v2,
+          v1_high: v1 > v2 ? [v2, v1] : [v2, v2],
+          v1_low: v2 > v1 ? [v1, v2] : [v1, v1]
         })
       }
       setChartData(merged); setLoading(false)
@@ -169,14 +173,29 @@ export default function CompareView() {
                       tickLine={false} axisLine={{ stroke: 'var(--border)' }} domain={['auto', 'auto']} orientation="right" />
                     <Tooltip contentStyle={{ background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text)', fontSize: 11, fontFamily: "'Fira Code', monospace" }}
                       labelStyle={{ color: 'var(--muted)' }}
-                      formatter={(val, name) => [typeof val === 'number' ? val.toFixed(2) : val, name]} />
+                      formatter={(val, name, entry) => {
+                        const { v1, v2 } = entry.payload
+                        if (name === 'OUTPERFORM') {
+                          if (v1 <= v2) return [null, null]
+                          const pct = ((v1 - v2) / v1) * 100
+                          return [`+${pct.toFixed(2)}%`, name]
+                        }
+                        if (name === 'UNDERPERFORM') {
+                          if (v2 <= v1) return [null, null]
+                          const pct = ((v2 - v1) / v1) * 100
+                          return [`-${pct.toFixed(2)}%`, name]
+                        }
+                        return [typeof val === 'number' ? val.toFixed(2) : val, name]
+                      }} />
                     <Legend wrapperStyle={{ fontSize: 11, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.1em', paddingBottom: '10px' }}
                       verticalAlign="top" payload={[
                         { value: MARKETS[idx1].label, type: 'line', color: IDX1_COLOR },
                         { value: MARKETS[idx2].label, type: 'line', color: IDX2_COLOR }
                       ]} />
-                    <Line type="monotone" dataKey="v1" stroke={IDX1_COLOR} strokeWidth={1.5} dot={false} isAnimationActive={false} />
-                    <Line type="monotone" dataKey="v2" stroke={IDX2_COLOR} strokeWidth={1.5} dot={false} isAnimationActive={false} />
+                    <Area name="OUTPERFORM" type="monotone" dataKey="v1_high" fill="var(--success)" fillOpacity={0.2} stroke="none" isAnimationActive={false} />
+                    <Area name="UNDERPERFORM" type="monotone" dataKey="v1_low" fill="var(--danger)" fillOpacity={0.2} stroke="none" isAnimationActive={false} />
+                    <Line name={MARKETS[idx1].label} type="monotone" dataKey="v1" stroke={IDX1_COLOR} strokeWidth={1.5} dot={false} isAnimationActive={false} />
+                    <Line name={MARKETS[idx2].label} type="monotone" dataKey="v2" stroke={IDX2_COLOR} strokeWidth={1.5} dot={false} isAnimationActive={false} />
                   </ComposedChart>
                 </ResponsiveContainer>
               : <div className="flex items-center justify-center h-full text-muted text-xs uppercase">No data</div>
