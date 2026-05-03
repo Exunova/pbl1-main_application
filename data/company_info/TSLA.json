@@ -1,8 +1,8 @@
 {
   "ticker": "TSLA",
   "market": "US",
-  "scraped_at": "2026-05-02 07:21:25.490754",
-  "updated_at": "2026-05-02T07:21:25.490761",
+  "scraped_at": "2026-05-03 20:41:07.182244",
+  "updated_at": "2026-05-03T20:41:07.182261",
   "info": {
     "identity": {
       "longName": "Tesla, Inc.",
@@ -73,41 +73,6 @@
           "fiscalYear": 2024,
           "exercisedValue": 0,
           "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. John  Walker",
-          "age": 62,
-          "title": "Vice President of Sales - North America",
-          "yearBorn": 1963,
-          "fiscalYear": 2024,
-          "totalPay": 121550,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Rodney D. Westmoreland Jr.",
-          "title": "Director of Construction Management",
-          "fiscalYear": 2024,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Lars  Moravy",
-          "title": "Vice President of Vehicle Engineering",
-          "fiscalYear": 2024,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ashok  Elluswamy",
-          "title": "Executive Officer",
-          "fiscalYear": 2024,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
         }
       ]
     },
@@ -121,22 +86,22 @@
       "ask": 391.09,
       "fiftyTwoWeekHigh": 498.83,
       "fiftyTwoWeekLow": 271.0,
-      "fiftyDayAverage": 384.1324,
-      "twoHundredDayAverage": 402.1468,
+      "fiftyDayAverage": 383.7146,
+      "twoHundredDayAverage": 402.49255,
       "volume": 64477320,
-      "averageVolume": 62939924,
-      "averageVolume10days": 63892660,
+      "averageVolume": 63147439,
+      "averageVolume10days": 61363110,
       "regularMarketChangePercent": 2.40809,
-      "52WeekChange": 0.32874894
+      "52WeekChange": 0.39449084
     },
     "valuation": {
       "marketCap": 1467812020224,
       "enterpriseValue": 1439645040640,
-      "trailingPE": 352.0901,
+      "trailingPE": 358.55045,
       "forwardPE": 154.14774,
       "priceToBook": 17.848108,
       "priceToSalesTrailing12Months": 14.996189,
-      "trailingEps": 1.11,
+      "trailingEps": 1.09,
       "forwardEps": 2.53536,
       "bookValue": 21.897,
       "pegRatio": 5.25
@@ -177,7 +142,7 @@
       "sharesOutstanding": 3755723871,
       "floatShares": 2815929087,
       "heldPercentInsiders": 0.11121,
-      "heldPercentInstitutions": 0.4466,
+      "heldPercentInstitutions": 0.44662,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1661385600,
       "beta": 1.915

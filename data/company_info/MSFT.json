@@ -1,8 +1,8 @@
 {
   "ticker": "MSFT",
   "market": "US",
-  "scraped_at": "2026-05-02 07:21:21.608918",
-  "updated_at": "2026-05-02T07:21:21.608933",
+  "scraped_at": "2026-05-03 20:41:03.682333",
+  "updated_at": "2026-05-03T20:41:03.682346",
   "info": {
     "identity": {
       "longName": "Microsoft Corporation",
@@ -129,23 +129,23 @@
       "ask": 415.98,
       "fiftyTwoWeekHigh": 555.45,
       "fiftyTwoWeekLow": 356.28,
-      "fiftyDayAverage": 395.7908,
-      "twoHundredDayAverage": 468.4585,
+      "fiftyDayAverage": 396.1104,
+      "twoHundredDayAverage": 468.0026,
       "volume": 31238861,
-      "averageVolume": 36482890,
-      "averageVolume10days": 37372000,
+      "averageVolume": 35897555,
+      "averageVolume10days": 35660750,
       "regularMarketChangePercent": 1.63423,
-      "52WeekChange": -0.063177705
+      "52WeekChange": -0.049820006
     },
     "valuation": {
       "marketCap": 3078640631808,
-      "enterpriseValue": 3124024573952,
-      "trailingPE": 24.669048,
-      "forwardPE": 21.498459,
+      "enterpriseValue": 3125844377600,
+      "trailingPE": 24.69845,
+      "forwardPE": 21.452034,
       "priceToBook": 7.876841,
       "priceToSalesTrailing12Months": 9.6729555,
-      "trailingEps": 16.8,
-      "forwardEps": 19.27766,
+      "trailingEps": 16.78,
+      "forwardEps": 19.31938,
       "bookValue": 52.615,
       "pegRatio": 1.29
     },
@@ -166,7 +166,7 @@
     },
     "dividend": {
       "dividendRate": 3.64,
-      "dividendYield": 0.89,
+      "dividendYield": 0.88,
       "fiveYearAvgDividendYield": 0.79,
       "payoutRatio": 0.20729999,
       "exDividendDate": 1779321600,
@@ -185,7 +185,7 @@
       "sharesOutstanding": 7428434704,
       "floatShares": 7417589189,
       "heldPercentInsiders": 0.00079,
-      "heldPercentInstitutions": 0.7593,
+      "heldPercentInstitutions": 0.75935996,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 1045526400,
       "beta": 1.107

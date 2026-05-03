@@ -1,8 +1,8 @@
 {
   "ticker": "ASII.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:34.738247",
-  "updated_at": "2026-05-02T07:21:34.738255",
+  "scraped_at": "2026-05-03 20:41:16.806119",
+  "updated_at": "2026-05-03T20:41:16.806137",
   "info": {
     "identity": {
       "longName": "PT Astra International Tbk",
@@ -111,19 +111,19 @@
       "fiftyDayAverage": 6193.0,
       "twoHundredDayAverage": 6128.35,
       "volume": 47690300,
-      "averageVolume": 40635062,
+      "averageVolume": 39638250,
       "averageVolume10days": 30149950,
       "regularMarketChangePercent": -1.2396694,
-      "52WeekChange": 0.24739039
+      "52WeekChange": 0.25
     },
     "valuation": {
       "marketCap": 240276962541568,
       "enterpriseValue": 365878298279936,
-      "trailingPE": 7.374631,
+      "trailingPE": 7.610399,
       "forwardPE": 7.7813663,
       "priceToBook": 1.0496752,
       "priceToSalesTrailing12Months": 0.75393075,
-      "trailingEps": 810.21,
+      "trailingEps": 785.11,
       "forwardEps": 767.86,
       "bookValue": 5692.237,
       "pegRatio": 0.77
@@ -147,7 +147,7 @@
       "dividendRate": 390.0,
       "dividendYield": 6.53,
       "fiveYearAvgDividendYield": 7.07,
-      "payoutRatio": 0.50119996,
+      "payoutRatio": 0.5172,
       "exDividendDate": 1777939200,
       "lastDividendValue": 292.0
     },
@@ -162,9 +162,9 @@
     },
     "ownership": {
       "sharesOutstanding": 40213715340,
-      "floatShares": 17886090122,
+      "floatShares": 17803158023,
       "heldPercentInsiders": 0.57727003,
-      "heldPercentInstitutions": 0.18294,
+      "heldPercentInstitutions": 0.18425,
       "lastSplitFactor": "10:1",
       "lastSplitDate": 1338854400,
       "beta": 0.127

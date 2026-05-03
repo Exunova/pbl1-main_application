@@ -1,8 +1,8 @@
 {
   "ticker": "UNVR.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:39.170435",
-  "updated_at": "2026-05-02T07:21:39.170442",
+  "scraped_at": "2026-05-03 20:41:21.254144",
+  "updated_at": "2026-05-03T20:41:21.254161",
   "info": {
     "identity": {
       "longName": "PT Unilever Indonesia Tbk",
@@ -107,19 +107,19 @@
       "fiftyDayAverage": 1937.9,
       "twoHundredDayAverage": 2106.5,
       "volume": 50188300,
-      "averageVolume": 26622155,
+      "averageVolume": 25780951,
       "averageVolume10days": 31833050,
       "regularMarketChangePercent": -2.5396826,
-      "52WeekChange": -0.12535614
+      "52WeekChange": -0.13521129
     },
     "valuation": {
       "marketCap": 58301194698752,
       "enterpriseValue": 53240360075264,
-      "trailingPE": 16.501827,
+      "trailingPE": 15.823111,
       "forwardPE": 14.448419,
       "priceToBook": 13.027906,
       "priceToSalesTrailing12Months": 1.8251371,
-      "trailingEps": 93.02,
+      "trailingEps": 97.01,
       "forwardEps": 106.24,
       "bookValue": 117.824,
       "pegRatio": 2.14

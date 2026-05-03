@@ -1,8 +1,8 @@
 {
   "ticker": "7203.T",
   "market": "JP",
-  "scraped_at": "2026-05-02 07:21:41.568914",
-  "updated_at": "2026-05-02T07:21:41.568925",
+  "scraped_at": "2026-05-03 20:41:23.502254",
+  "updated_at": "2026-05-03T20:41:23.502268",
   "info": {
     "identity": {
       "longName": "Toyota Motor Corporation",
@@ -129,13 +129,13 @@
       "ask": 3001.0,
       "fiftyTwoWeekHigh": 4000.0,
       "fiftyTwoWeekLow": 2434.0,
-      "fiftyDayAverage": 3401.34,
-      "twoHundredDayAverage": 3172.905,
+      "fiftyDayAverage": 3387.08,
+      "twoHundredDayAverage": 3175.4675,
       "volume": 21904100,
-      "averageVolume": 23085141,
-      "averageVolume10days": 20811260,
+      "averageVolume": 23103044,
+      "averageVolume10days": 20986210,
       "regularMarketChangePercent": -0.7608336,
-      "52WeekChange": 0.08741009
+      "52WeekChange": 0.07913673
     },
     "valuation": {
       "marketCap": 35523162800128,
@@ -184,8 +184,8 @@
     "ownership": {
       "sharesOutstanding": 11841053512,
       "floatShares": 9737894893,
-      "heldPercentInsiders": 0.14920999,
-      "heldPercentInstitutions": 0.25778,
+      "heldPercentInsiders": 0.14917,
+      "heldPercentInstitutions": 0.25783002,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1633046400,
       "beta": 0.357

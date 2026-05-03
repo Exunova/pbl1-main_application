@@ -1,8 +1,8 @@
 {
   "ticker": "GOOGL",
   "market": "US",
-  "scraped_at": "2026-05-02 07:21:20.403389",
-  "updated_at": "2026-05-02T07:21:20.403403",
+  "scraped_at": "2026-05-03 20:41:02.562558",
+  "updated_at": "2026-05-03T20:41:02.562574",
   "info": {
     "identity": {
       "longName": "Alphabet Inc.",
@@ -14,7 +14,7 @@
       "currency": "USD",
       "sector": "Communication Services",
       "industry": "Internet Content & Information",
-      "fullTimeEmployees": 190820,
+      "fullTimeEmployees": 194668,
       "website": "https://abc.xyz",
       "longBusinessSummary": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California.",
       "companyOfficers": [
@@ -83,6 +83,47 @@
           "totalPay": 1015596,
           "exercisedValue": 0,
           "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. Philipp  Schindler",
+          "age": 54,
+          "title": "Senior Vice President & Chief Business Officer of Google",
+          "yearBorn": 1971,
+          "fiscalYear": 2025,
+          "totalPay": 1623997,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Mr. James H. Friedland",
+          "age": 55,
+          "title": "Head of Investor Relations",
+          "yearBorn": 1970,
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Ms. Fiona Clare Cicconi",
+          "age": 59,
+          "title": "Chief People Officer",
+          "yearBorn": 1966,
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
+          "name": "Ms. Ivy  Ross",
+          "age": 69,
+          "title": "VP & Head of Design for all Hardware Products",
+          "yearBorn": 1956,
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
         }
       ]
     },
@@ -94,46 +135,46 @@
       "dayLow": 379.05,
       "bid": 384.88,
       "ask": 385.62,
-      "fiftyTwoWeekHigh": 386.75,
+      "fiftyTwoWeekHigh": 386.76,
       "fiftyTwoWeekLow": 147.84,
-      "fiftyDayAverage": 313.855,
-      "twoHundredDayAverage": 280.11926,
+      "fiftyDayAverage": 315.5118,
+      "twoHundredDayAverage": 281.13284,
       "volume": 29974345,
-      "averageVolume": 32977985,
-      "averageVolume10days": 29658650,
+      "averageVolume": 32889960,
+      "averageVolume10days": 30116990,
       "regularMarketChangePercent": 0.231293,
-      "52WeekChange": 1.3459122
+      "52WeekChange": 1.3487608
     },
     "valuation": {
       "marketCap": 4672805404672,
-      "enterpriseValue": 4173377306624,
-      "trailingPE": 29.397104,
-      "forwardPE": 28.510286,
+      "enterpriseValue": 4642055913472,
+      "trailingPE": 29.419529,
+      "forwardPE": 27.061312,
       "priceToBook": 11.227258,
-      "priceToSalesTrailing12Months": 11.5997715,
-      "trailingEps": 13.12,
-      "forwardEps": 13.5281,
+      "priceToSalesTrailing12Months": 11.059947,
+      "trailingEps": 13.11,
+      "forwardEps": 14.25245,
       "bookValue": 34.353,
       "pegRatio": 2.63
     },
     "profitability": {
-      "profitMargins": 0.32810003,
-      "operatingMargins": 0.31568,
-      "grossMargins": 0.59652,
-      "returnOnEquity": 0.35705003,
-      "returnOnAssets": 0.15427,
-      "revenueGrowth": 0.18,
-      "earningsGrowth": 0.311,
-      "grossProfits": 240300998656,
-      "totalRevenue": 402835996672,
-      "netIncomeToCommon": 132169998336,
-      "operatingCashflow": 164713005056,
-      "totalCash": 126843002880,
-      "totalDebt": 66995998720
+      "profitMargins": 0.37919,
+      "operatingMargins": 0.36121,
+      "grossMargins": 0.60368,
+      "returnOnEquity": 0.38884997,
+      "returnOnAssets": 0.14641,
+      "revenueGrowth": 0.218,
+      "earningsGrowth": 0.82,
+      "grossProfits": 255053004800,
+      "totalRevenue": 422498009088,
+      "netIncomeToCommon": 160207994880,
+      "operatingCashflow": 174353006592,
+      "totalCash": 126839996416,
+      "totalDebt": 95875997696
     },
     "dividend": {
       "dividendRate": 0.84,
-      "dividendYield": 0.24,
+      "dividendYield": 0.22,
       "fiveYearAvgDividendYield": null,
       "payoutRatio": 0.0641,
       "exDividendDate": 1773014400,
@@ -150,9 +191,9 @@
     },
     "ownership": {
       "sharesOutstanding": 5823665113,
-      "floatShares": 10836734540,
+      "floatShares": 10853633960,
       "heldPercentInsiders": 0.00564,
-      "heldPercentInstitutions": 0.808,
+      "heldPercentInstitutions": 0.80793,
       "lastSplitFactor": "20:1",
       "lastSplitDate": 1658102400,
       "beta": 1.128

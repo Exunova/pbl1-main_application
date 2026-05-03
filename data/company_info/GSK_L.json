@@ -1,8 +1,8 @@
 {
   "ticker": "GSK.L",
   "market": "GB",
-  "scraped_at": "2026-05-02 07:21:57.351333",
-  "updated_at": "2026-05-02T07:21:57.351347",
+  "scraped_at": "2026-05-03 20:41:40.135010",
+  "updated_at": "2026-05-03T20:41:40.135025",
   "info": {
     "identity": {
       "longName": "GSK plc",
@@ -47,7 +47,7 @@
           "title": "Scientific & Medical Expert",
           "yearBorn": 1951,
           "fiscalYear": 2025,
-          "totalPay": 61025,
+          "totalPay": 61133,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
@@ -127,23 +127,23 @@
       "ask": 1908.0,
       "fiftyTwoWeekHigh": 2282.0,
       "fiftyTwoWeekLow": 1288.605,
-      "fiftyDayAverage": 2084.57,
-      "twoHundredDayAverage": 1799.2775,
+      "fiftyDayAverage": 2078.33,
+      "twoHundredDayAverage": 1801.83,
       "volume": 4930806,
-      "averageVolume": 9614664,
-      "averageVolume10days": 8362593,
+      "averageVolume": 9531408,
+      "averageVolume10days": 8342113,
       "regularMarketChangePercent": -1.4259788,
-      "52WeekChange": 0.33137727
+      "52WeekChange": 0.31239212
     },
     "valuation": {
       "marketCap": 75886878720,
       "enterpriseValue": 91659198464,
       "trailingPE": 13.387324,
-      "forwardPE": 9.647248,
+      "forwardPE": 9.669477,
       "priceToBook": 4.658172,
       "priceToSalesTrailing12Months": 2.315036,
       "trailingEps": 1.42,
-      "forwardEps": 1.97051,
+      "forwardEps": 1.96598,
       "bookValue": 4.081,
       "pegRatio": 0.5
     },
@@ -164,7 +164,7 @@
     },
     "dividend": {
       "dividendRate": 0.68,
-      "dividendYield": 3.53,
+      "dividendYield": 3.58,
       "fiveYearAvgDividendYield": 4.41,
       "payoutRatio": 0.4645,
       "exDividendDate": 1778716800,
@@ -181,9 +181,9 @@
     },
     "ownership": {
       "sharesOutstanding": 3991945533,
-      "floatShares": 3891762000,
+      "floatShares": 3891480600,
       "heldPercentInsiders": 0.01743,
-      "heldPercentInstitutions": 0.4656,
+      "heldPercentInstitutions": 0.46341,
       "lastSplitFactor": "4:5",
       "lastSplitDate": 1658188800,
       "beta": 0.354

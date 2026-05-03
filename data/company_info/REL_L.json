@@ -1,8 +1,8 @@
 {
   "ticker": "REL.L",
   "market": "GB",
-  "scraped_at": "2026-05-02 07:22:03.803573",
-  "updated_at": "2026-05-02T07:22:03.803597",
+  "scraped_at": "2026-05-03 20:41:45.884740",
+  "updated_at": "2026-05-03T20:41:45.884751",
   "info": {
     "identity": {
       "longName": "RELX PLC",
@@ -125,13 +125,13 @@
       "ask": 2695.0,
       "fiftyTwoWeekHigh": 4183.0,
       "fiftyTwoWeekLow": 1991.0,
-      "fiftyDayAverage": 2554.58,
-      "twoHundredDayAverage": 3039.155,
+      "fiftyDayAverage": 2562.1,
+      "twoHundredDayAverage": 3032.785,
       "volume": 2769145,
-      "averageVolume": 10035841,
-      "averageVolume10days": 8209079,
+      "averageVolume": 9766319,
+      "averageVolume10days": 7972622,
       "regularMarketChangePercent": 0.5965697,
-      "52WeekChange": -0.34918708
+      "52WeekChange": -0.34530455
     },
     "valuation": {
       "marketCap": 47939870720,
@@ -162,7 +162,7 @@
     },
     "dividend": {
       "dividendRate": 0.68,
-      "dividendYield": 2.52,
+      "dividendYield": 2.5,
       "fiveYearAvgDividendYield": 1.98,
       "payoutRatio": 0.5741,
       "exDividendDate": 1778112000,
@@ -179,9 +179,9 @@
     },
     "ownership": {
       "sharesOutstanding": 1776867067,
-      "floatShares": 1804563526,
+      "floatShares": 1804527145,
       "heldPercentInsiders": 0.00459,
-      "heldPercentInstitutions": 0.58164,
+      "heldPercentInstitutions": 0.58234,
       "lastSplitFactor": "58:67",
       "lastSplitDate": 1199664000,
       "beta": 0.228

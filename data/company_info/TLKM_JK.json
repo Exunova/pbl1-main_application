@@ -1,8 +1,8 @@
 {
   "ticker": "TLKM.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:33.602318",
-  "updated_at": "2026-05-02T07:21:33.602324",
+  "scraped_at": "2026-05-03 20:41:15.692261",
+  "updated_at": "2026-05-03T20:41:15.692275",
   "info": {
     "identity": {
       "longName": "Perusahaan Perseroan (Persero) PT Telekomunikasi Indonesia Tbk",
@@ -111,10 +111,10 @@
       "fiftyDayAverage": 3144.2,
       "twoHundredDayAverage": 3275.9,
       "volume": 134260800,
-      "averageVolume": 117902844,
+      "averageVolume": 116479753,
       "averageVolume10days": 135507570,
       "regularMarketChangePercent": -2.0905924,
-      "52WeekChange": 0.048507452
+      "52WeekChange": 0.04074073
     },
     "valuation": {
       "marketCap": 278364833185792,
@@ -164,7 +164,7 @@
       "sharesOutstanding": 99062216599,
       "floatShares": 47372696337,
       "heldPercentInsiders": 0.55111,
-      "heldPercentInstitutions": 0.28116,
+      "heldPercentInstitutions": 0.2809,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1377648000,
       "beta": 0.154

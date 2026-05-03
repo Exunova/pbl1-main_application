@@ -1,8 +1,8 @@
 {
   "ticker": "SHEL.L",
   "market": "GB",
-  "scraped_at": "2026-05-02 07:21:54.843244",
-  "updated_at": "2026-05-02T07:21:54.843260",
+  "scraped_at": "2026-05-03 20:41:37.801378",
+  "updated_at": "2026-05-03T20:41:37.801390",
   "info": {
     "identity": {
       "longName": "Shell plc",
@@ -62,6 +62,16 @@
         },
         {
           "maxAge": 1,
+          "name": "Mr. Graham Robert van't Hoff",
+          "age": 63,
+          "title": "Executive Vice President of Chemicals",
+          "yearBorn": 1962,
+          "fiscalYear": 2025,
+          "exercisedValue": 0,
+          "unexercisedValue": 0
+        },
+        {
+          "maxAge": 1,
           "name": "Mr. Brian Paul Eggleston",
           "title": "Executive Vice President of Finance Downstream",
           "fiscalYear": 2025,
@@ -103,16 +113,6 @@
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Machteld  de Haan",
-          "age": 51,
-          "title": "President of Downstream, Renewables & Energy Solutions",
-          "yearBorn": 1974,
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
         }
       ]
     },
@@ -126,25 +126,25 @@
       "ask": 3287.5,
       "fiftyTwoWeekHigh": 3592.0,
       "fiftyTwoWeekLow": 2403.5,
-      "fiftyDayAverage": 3314.57,
-      "twoHundredDayAverage": 2880.02,
+      "fiftyDayAverage": 3321.56,
+      "twoHundredDayAverage": 2883.1575,
       "volume": 3646777,
-      "averageVolume": 13681538,
-      "averageVolume10days": 11683860,
+      "averageVolume": 13794595,
+      "averageVolume10days": 10438923,
       "regularMarketChangePercent": -1.0823812,
-      "52WeekChange": 0.33762312
+      "52WeekChange": 0.32314503
     },
     "valuation": {
-      "marketCap": 183496130560,
+      "marketCap": 183478616064,
       "enterpriseValue": 232661090304,
       "trailingPE": 14.81982,
-      "forwardPE": 9.364314,
+      "forwardPE": 9.442906,
       "priceToBook": 1.4287306,
-      "priceToSalesTrailing12Months": 0.68754494,
+      "priceToSalesTrailing12Months": 0.6874793,
       "trailingEps": 2.22,
-      "forwardEps": 3.513338,
+      "forwardEps": 3.4840968,
       "bookValue": 23.027433,
-      "pegRatio": 1.33
+      "pegRatio": 1.32
     },
     "profitability": {
       "profitMargins": 0.06683,
@@ -163,7 +163,7 @@
     },
     "dividend": {
       "dividendRate": 1.11,
-      "dividendYield": 3.35,
+      "dividendYield": 3.39,
       "fiveYearAvgDividendYield": 3.7,
       "payoutRatio": 0.47349998,
       "exDividendDate": 1771459200,
@@ -173,16 +173,16 @@
       "recommendationKey": "buy",
       "recommendationMean": 2.33333,
       "numberOfAnalystOpinions": 16,
-      "targetHighPrice": 4392.3354,
-      "targetLowPrice": 2697.7224,
-      "targetMeanPrice": 3711.349,
-      "targetMedianPrice": 3774.7173
+      "targetHighPrice": 4391.9775,
+      "targetLowPrice": 2697.5027,
+      "targetMeanPrice": 3709.986,
+      "targetMedianPrice": 3774.41
     },
     "ownership": {
-      "sharesOutstanding": 5577389937,
-      "floatShares": 5516585146,
+      "sharesOutstanding": 5576857812,
+      "floatShares": 5516528532,
       "heldPercentInsiders": 0.00056,
-      "heldPercentInstitutions": 0.3533,
+      "heldPercentInstitutions": 0.35368,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 1121385600,
       "beta": -0.208

@@ -1,8 +1,8 @@
 {
   "ticker": "8035.T",
   "market": "JP",
-  "scraped_at": "2026-05-02 07:21:50.268668",
-  "updated_at": "2026-05-02T07:21:50.268679",
+  "scraped_at": "2026-05-03 20:41:33.237186",
+  "updated_at": "2026-05-03T20:41:33.237207",
   "info": {
     "identity": {
       "longName": "Tokyo Electron Limited",
@@ -119,17 +119,17 @@
       "ask": 47480.0,
       "fiftyTwoWeekHigh": 48190.0,
       "fiftyTwoWeekLow": 19870.0,
-      "fiftyDayAverage": 41947.0,
-      "twoHundredDayAverage": 33399.477,
+      "fiftyDayAverage": 42053.0,
+      "twoHundredDayAverage": 33500.85,
       "volume": 5915900,
-      "averageVolume": 3266533,
-      "averageVolume10days": 3128910,
+      "averageVolume": 3302593,
+      "averageVolume10days": 3239620,
       "regularMarketChangePercent": 6.893445,
-      "52WeekChange": 1.0998108
+      "52WeekChange": 1.24456
     },
     "valuation": {
       "marketCap": 21675976425472,
-      "enterpriseValue": 21164111953920,
+      "enterpriseValue": 21076367114240,
       "trailingPE": 37.878788,
       "forwardPE": 37.06452,
       "priceToBook": 10.847198,
@@ -150,7 +150,7 @@
       "grossProfits": 1107880968192,
       "totalRevenue": 2443533090816,
       "netIncomeToCommon": 574453972992,
-      "operatingCashflow": null,
+      "operatingCashflow": 539731984384,
       "totalCash": 506250002432,
       "totalDebt": 0
     },
@@ -173,12 +173,12 @@
     },
     "ownership": {
       "sharesOutstanding": 454847594,
-      "floatShares": 436069798,
+      "floatShares": 434144934,
       "heldPercentInsiders": 0.032309998,
-      "heldPercentInstitutions": 0.57618,
+      "heldPercentInstitutions": 0.57641,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1680134400,
-      "beta": null
+      "beta": 1.318
     }
   },
   "financials": {

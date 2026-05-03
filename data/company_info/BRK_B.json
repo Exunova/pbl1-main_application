@@ -1,8 +1,8 @@
 {
   "ticker": "BRK-B",
   "market": "US",
-  "scraped_at": "2026-05-02 07:21:26.716795",
-  "updated_at": "2026-05-02T07:21:26.716802",
+  "scraped_at": "2026-05-03 20:41:08.274139",
+  "updated_at": "2026-05-03T20:41:08.274164",
   "info": {
     "identity": {
       "longName": "Berkshire Hathaway Inc.",
@@ -113,27 +113,27 @@
       "dayLow": 473.0,
       "bid": 0.0,
       "ask": 0.0,
-      "fiftyTwoWeekHigh": 542.07,
+      "fiftyTwoWeekHigh": 521.26,
       "fiftyTwoWeekLow": 455.19,
-      "fiftyDayAverage": 482.957,
-      "twoHundredDayAverage": 489.89154,
+      "fiftyDayAverage": 482.4784,
+      "twoHundredDayAverage": 489.90005,
       "volume": 4759657,
-      "averageVolume": 4809496,
-      "averageVolume10days": 4995370,
+      "averageVolume": 4775337,
+      "averageVolume10days": 4827340,
       "regularMarketChangePercent": -0.124577,
-      "52WeekChange": -0.12263799
+      "52WeekChange": -0.07642293
     },
     "valuation": {
       "marketCap": 1020221521920,
-      "enterpriseValue": -234974855168,
-      "trailingPE": 15.248549,
-      "forwardPE": 21.747606,
+      "enterpriseValue": -234975707136,
+      "trailingPE": 15.243635,
+      "forwardPE": 21.94944,
       "priceToBook": 0.00094855647,
       "priceToSalesTrailing12Months": 2.7466362,
-      "trailingEps": 31.02,
-      "forwardEps": 21.74998,
+      "trailingEps": 31.03,
+      "forwardEps": 21.54998,
       "bookValue": 498663.0,
-      "pegRatio": 10.06
+      "pegRatio": null
     },
     "profitability": {
       "profitMargins": 0.18029,
@@ -171,7 +171,7 @@
       "sharesOutstanding": 1390722404,
       "floatShares": 1235265,
       "heldPercentInsiders": 0.0026800002,
-      "heldPercentInstitutions": 0.66163003,
+      "heldPercentInstitutions": 0.6618,
       "lastSplitFactor": "50:1",
       "lastSplitDate": 1264032000,
       "beta": 0.699

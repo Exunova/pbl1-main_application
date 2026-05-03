@@ -1,8 +1,8 @@
 {
   "ticker": "PGAS.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:36.953883",
-  "updated_at": "2026-05-02T07:21:36.953891",
+  "scraped_at": "2026-05-03 20:41:19.065429",
+  "updated_at": "2026-05-03T20:41:19.065443",
   "info": {
     "identity": {
       "longName": "PT Perusahaan Gas Negara (Persero) Tbk",
@@ -116,10 +116,10 @@
       "fiftyDayAverage": 2007.7,
       "twoHundredDayAverage": 1861.475,
       "volume": 49935600,
-      "averageVolume": 50434480,
+      "averageVolume": 48858951,
       "averageVolume10days": 29732160,
       "regularMarketChangePercent": 1.0416667,
-      "52WeekChange": 0.1865443
+      "52WeekChange": 0.190184
     },
     "valuation": {
       "marketCap": 47028524548096,
@@ -160,16 +160,16 @@
       "recommendationKey": "buy",
       "recommendationMean": 2.41667,
       "numberOfAnalystOpinions": 12,
-      "targetHighPrice": 2640.6958,
-      "targetLowPrice": 1563.5701,
-      "targetMeanPrice": 2097.7898,
-      "targetMedianPrice": 2145.5654
+      "targetHighPrice": 2636.44,
+      "targetLowPrice": 1561.05,
+      "targetMeanPrice": 2094.4087,
+      "targetMedianPrice": 2142.1074
     },
     "ownership": {
       "sharesOutstanding": 24241508195,
       "floatShares": 10428454411,
       "heldPercentInsiders": 0.63008,
-      "heldPercentInstitutions": 0.12274,
+      "heldPercentInstitutions": 0.122659996,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1217808000,
       "beta": 0.101

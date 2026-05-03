@@ -1,8 +1,8 @@
 {
   "ticker": "8316.T",
   "market": "JP",
-  "scraped_at": "2026-05-02 07:21:47.000856",
-  "updated_at": "2026-05-02T07:21:47.000864",
+  "scraped_at": "2026-05-03 20:41:29.768074",
+  "updated_at": "2026-05-03T20:41:29.768095",
   "info": {
     "identity": {
       "longName": "Sumitomo Mitsui Financial Group, Inc.",
@@ -135,14 +135,14 @@
       "bid": 5534.0,
       "ask": 5541.0,
       "fiftyTwoWeekHigh": 6284.0,
-      "fiftyTwoWeekLow": 3238.0,
-      "fiftyDayAverage": 5453.5,
-      "twoHundredDayAverage": 4739.455,
+      "fiftyTwoWeekLow": 3279.0,
+      "fiftyDayAverage": 5450.0,
+      "twoHundredDayAverage": 4749.085,
       "volume": 8711900,
-      "averageVolume": 14115465,
-      "averageVolume10days": 11009160,
+      "averageVolume": 13912071,
+      "averageVolume10days": 10722340,
       "regularMarketChangePercent": 0.5261248,
-      "52WeekChange": 0.67946374
+      "52WeekChange": 0.6882998
     },
     "valuation": {
       "marketCap": 21155557670912,
@@ -191,8 +191,8 @@
     "ownership": {
       "sharesOutstanding": 3818003356,
       "floatShares": 3826720269,
-      "heldPercentInsiders": 0.05316,
-      "heldPercentInstitutions": 0.40735,
+      "heldPercentInsiders": 0.05307,
+      "heldPercentInstitutions": 0.40959,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1727395200,
       "beta": 0.349

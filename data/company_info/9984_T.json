@@ -1,8 +1,8 @@
 {
   "ticker": "9984.T",
   "market": "JP",
-  "scraped_at": "2026-05-02 07:21:44.869465",
-  "updated_at": "2026-05-02T07:21:44.869471",
+  "scraped_at": "2026-05-03 20:41:27.280113",
+  "updated_at": "2026-05-03T20:41:27.280126",
   "info": {
     "identity": {
       "longName": "SoftBank Group Corp.",
@@ -124,13 +124,13 @@
       "ask": 5424.0,
       "fiftyTwoWeekHigh": 6923.75,
       "fiftyTwoWeekLow": 1797.75,
-      "fiftyDayAverage": 4142.54,
-      "twoHundredDayAverage": 4373.904,
+      "fiftyDayAverage": 4162.04,
+      "twoHundredDayAverage": 4386.9863,
       "volume": 72065400,
-      "averageVolume": 56987536,
-      "averageVolume10days": 97649730,
+      "averageVolume": 57633169,
+      "averageVolume10days": 95341500,
       "regularMarketChangePercent": 3.9279554,
-      "52WeekChange": 1.8191762
+      "52WeekChange": 1.9299123
     },
     "valuation": {
       "marketCap": 30910095294464,
@@ -142,7 +142,7 @@
       "trailingEps": 534.81,
       "forwardEps": 295.29,
       "bookValue": 2710.314,
-      "pegRatio": 1170.13
+      "pegRatio": null
     },
     "profitability": {
       "profitMargins": 0.48167,
@@ -180,7 +180,7 @@
       "sharesOutstanding": 5698763936,
       "floatShares": 3654731287,
       "heldPercentInsiders": 0.34730998,
-      "heldPercentInstitutions": 0.34657001,
+      "heldPercentInstitutions": 0.34668,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1766966400,
       "beta": 0.687

@@ -1,8 +1,8 @@
 {
   "ticker": "LLOY.L",
   "market": "GB",
-  "scraped_at": "2026-05-02 07:22:01.160227",
-  "updated_at": "2026-05-02T07:22:01.160240",
+  "scraped_at": "2026-05-03 20:41:43.584415",
+  "updated_at": "2026-05-03T20:41:43.584433",
   "info": {
     "identity": {
       "longName": "Lloyds Banking Group plc",
@@ -121,26 +121,26 @@
       "bid": 98.63,
       "ask": 98.65,
       "fiftyTwoWeekHigh": 114.6,
-      "fiftyTwoWeekLow": 69.7,
-      "fiftyDayAverage": 98.1974,
-      "twoHundredDayAverage": 92.58485,
+      "fiftyTwoWeekLow": 70.58,
+      "fiftyDayAverage": 98.0792,
+      "twoHundredDayAverage": 92.68585,
       "volume": 392552203,
-      "averageVolume": 230863429,
-      "averageVolume10days": 196029718,
+      "averageVolume": 234040146,
+      "averageVolume10days": 222990296,
       "regularMarketChangePercent": -1.4545135,
-      "52WeekChange": 0.41243982
+      "52WeekChange": 0.39189577
     },
     "valuation": {
-      "marketCap": 57363476480,
-      "enterpriseValue": -104038916096,
+      "marketCap": 57360551936,
+      "enterpriseValue": -103760896000,
       "trailingPE": 12.280001,
-      "forwardPE": 8.190762,
+      "forwardPE": 8.188031,
       "priceToBook": 1.383662,
-      "priceToSalesTrailing12Months": 2.9983,
+      "priceToSalesTrailing12Months": 2.9981472,
       "trailingEps": 0.08,
-      "forwardEps": 0.11994,
+      "forwardEps": 0.11998,
       "bookValue": 0.71,
-      "pegRatio": 1.04
+      "pegRatio": 1.03
     },
     "profitability": {
       "profitMargins": 0.26495,
@@ -159,7 +159,7 @@
     },
     "dividend": {
       "dividendRate": 0.04,
-      "dividendYield": 3.66,
+      "dividendYield": 3.72,
       "fiveYearAvgDividendYield": 4.23,
       "payoutRatio": 0.4382,
       "exDividendDate": 1775692800,
@@ -175,10 +175,10 @@
       "targetMedianPrice": 120.00001
     },
     "ownership": {
-      "sharesOutstanding": 58391162620,
-      "floatShares": 55171355580,
+      "sharesOutstanding": 58388185152,
+      "floatShares": 55434054740,
       "heldPercentInsiders": 0.00081,
-      "heldPercentInstitutions": 0.50284,
+      "heldPercentInstitutions": 0.50373,
       "lastSplitFactor": "41:40",
       "lastSplitDate": 1242000000,
       "beta": 0.939

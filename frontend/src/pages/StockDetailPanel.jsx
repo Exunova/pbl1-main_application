@@ -11,8 +11,8 @@ function fmt(n, decimals = 2) {
   if (n == null || n === '' || n === '—') return '—'
   if (typeof n === 'number') {
     if (Math.abs(n) >= 1e12) return `${(n / 1e12).toFixed(2)}T`
-    if (Math.abs(n) >= 1e9)  return `${(n / 1e9).toFixed(2)}B`
-    if (Math.abs(n) >= 1e6)  return `${(n / 1e6).toFixed(2)}M`
+    if (Math.abs(n) >= 1e9) return `${(n / 1e9).toFixed(2)}B`
+    if (Math.abs(n) >= 1e6) return `${(n / 1e6).toFixed(2)}M`
     return n.toLocaleString(undefined, { maximumFractionDigits: decimals })
   }
   return String(n)
@@ -33,8 +33,8 @@ const Candlestick = (props) => {
   const color = isUp ? '#22c55e' : '#ef4444'
   const ratio = height / Math.max(d.high - d.low, 0.001)
   const bodyTop = y + (d.high - Math.max(d.open, d.close)) * ratio
-  const bodyH   = Math.max(Math.abs(d.open - d.close) * ratio, 2)
-  const wickX   = x + width / 2
+  const bodyH = Math.max(Math.abs(d.open - d.close) * ratio, 2)
+  const wickX = x + width / 2
   return (
     <g>
       <line x1={wickX} y1={y} x2={wickX} y2={y + height} stroke="#374151" strokeWidth={1} />
@@ -49,7 +49,7 @@ const CandleTooltip = ({ active, payload }) => {
   if (!d) return null
   const isUp = d.close >= d.open
   return (
-    <div style={{ background: '#141720', border: '0.5px solid #1e2433', borderRadius: 8, padding: '8px 12px', fontSize: 11 }}>
+    <div style={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 8, padding: '8px 12px', fontSize: 11 }}>
       <div style={{ display: 'grid', gridTemplateColumns: 'auto auto', gap: '2px 12px' }}>
         <span style={{ color: '#6b7280' }}>O</span><span style={{ color: '#e2e8f0' }}>{fmt(d.open, 0)}</span>
         <span style={{ color: '#6b7280' }}>H</span><span style={{ color: '#22c55e' }}>{fmt(d.high, 0)}</span>
@@ -69,11 +69,11 @@ const SectionLabel = ({ children }) => (
 )
 
 const InfoGrid = ({ rows }) => (
-  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: '#1e2433', borderRadius: 6, overflow: 'hidden', marginBottom: 14 }}>
+  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 1, background: 'var(--border)', borderRadius: 6, overflow: 'hidden', marginBottom: 14 }}>
     {rows.map(({ label, value, color }) => (
-      <div key={label} style={{ background: '#0d1017', padding: '7px 10px' }}>
-        <div style={{ fontSize: 10, color: '#6b7280' }}>{label}</div>
-        <div style={{ fontSize: 12, color: color || '#e2e8f0', fontWeight: 500, marginTop: 2 }}>{value ?? '—'}</div>
+      <div key={label} style={{ background: 'var(--surface)', padding: '7px 10px' }}>
+        <div style={{ fontSize: 10, color: 'var(--muted)' }}>{label}</div>
+        <div style={{ fontSize: 12, color: color || 'var(--text)', fontWeight: 500, marginTop: 2 }}>{value ?? '—'}</div>
       </div>
     ))}
   </div>
@@ -93,10 +93,10 @@ function aggregateCandles(candles, groupSize) {
     if (!group.length) continue
     result.push({
       index: result.length,
-      time:  group[0].time,
-      open:  group[0].open,
-      high:  Math.max(...group.map(c => c.high)),
-      low:   Math.min(...group.map(c => c.low)),
+      time: group[0].time,
+      open: group[0].open,
+      high: Math.max(...group.map(c => c.high)),
+      low: Math.min(...group.map(c => c.low)),
       close: group[group.length - 1].close,
     })
   }
@@ -104,13 +104,13 @@ function aggregateCandles(candles, groupSize) {
 }
 
 export default function StockDetailPanel({ stock, onClose }) {
-  const [tab,        setTab]        = useState('overview')
-  const [chartType,  setChartType]  = useState('candlestick')
-  const [timeframe,  setTimeframe]  = useState('15m')
-  const [yScale,     setYScale]     = useState('auto')   // 'auto' | 'tight' | 'full'
+  const [tab, setTab] = useState('overview')
+  const [chartType, setChartType] = useState('candlestick')
+  const [timeframe, setTimeframe] = useState('15m')
+  const [yScale, setYScale] = useState('auto')   // 'auto' | 'tight' | 'full'
   const [companyData, setCompanyData] = useState(null)
-  const [ohlcvData,   setOhlcvData]   = useState([])
-  const [loading,     setLoading]     = useState(true)
+  const [ohlcvData, setOhlcvData] = useState([])
+  const [loading, setLoading] = useState(true)
   const [ohlcvLoading, setOhlcvLoading] = useState(true)
 
   // Fetch real data
@@ -123,23 +123,23 @@ export default function StockDetailPanel({ stock, onClose }) {
 
     if (window.api) {
       window.api.fetchCompany(stock.ticker)
-        .then(d => { 
+        .then(d => {
           if (!cancelled) {
             const respData = d?.data || d
-            setCompanyData(respData) 
+            setCompanyData(respData)
           }
         })
-        .catch(() => {})
+        .catch(() => { })
         .finally(() => { if (!cancelled) setLoading(false) })
 
       window.api.fetchOHLCV(stock.ticker)
-        .then(d => { 
+        .then(d => {
           if (!cancelled) {
             const respData = d?.data || d
-            setOhlcvData(respData?.ohlcv_15m || []) 
+            setOhlcvData(respData?.ohlcv_15m || [])
           }
         })
-        .catch(() => {})
+        .catch(() => { })
         .finally(() => { if (!cancelled) setOhlcvLoading(false) })
     } else {
       setLoading(false)
@@ -151,24 +151,24 @@ export default function StockDetailPanel({ stock, onClose }) {
 
   // ── Derived values ────────────────────────────────────────────────────────
 
-  const info       = companyData?.info || {}
-  const priceInfo  = info.price        || {}
-  const valuation  = info.valuation    || {}
-  const dividend   = info.dividend     || {}
-  const analyst    = info.analyst      || {}
-  const identity   = info.identity     || {}
+  const info = companyData?.info || {}
+  const priceInfo = info.price || {}
+  const valuation = info.valuation || {}
+  const dividend = info.dividend || {}
+  const analyst = info.analyst || {}
+  const identity = info.identity || {}
   const financials = companyData?.financials?.income_statement || {}
 
   // Fallback to stock mock data
-  const stockPrice  = priceInfo.currentPrice  ?? parseFloat(String(stock.price).replace(/,/g, ''))  ?? 0
-  const prevClose   = priceInfo.previousClose ?? (stockPrice * (1 - stock.change / 100))
-  const changePct   = priceInfo.currentPrice && priceInfo.previousClose
+  const stockPrice = priceInfo.currentPrice ?? parseFloat(String(stock.price).replace(/,/g, '')) ?? 0
+  const prevClose = priceInfo.previousClose ?? (stockPrice * (1 - stock.change / 100))
+  const changePct = priceInfo.currentPrice && priceInfo.previousClose
     ? +((priceInfo.currentPrice - priceInfo.previousClose) / priceInfo.previousClose * 100).toFixed(2)
     : stock.change
-  const isPositive  = changePct >= 0
+  const isPositive = changePct >= 0
   const changeColor = isPositive ? '#22c55e' : '#ef4444'
-  const ticker      = stock.ticker
-  const name        = identity.longName || stock.name
+  const ticker = stock.ticker
+  const name = identity.longName || stock.name
 
   // ── Chart data ─────────────────────────────────────────────────────────────
 
@@ -186,8 +186,8 @@ export default function StockDetailPanel({ stock, onClose }) {
       const seed = stock.ticker.charCodeAt(0) * 17
       const move = (Math.sin(i * seed / 30 + i * 0.3) * 0.6 + Math.random() - 0.49) * base * 0.012
       const close = base + move
-      const high  = Math.max(base, close) + Math.random() * base * 0.004
-      const low   = Math.min(base, close) - Math.random() * base * 0.004
+      const high = Math.max(base, close) + Math.random() * base * 0.004
+      const low = Math.min(base, close) - Math.random() * base * 0.004
       const d = { index: i, time: i, open: +base.toFixed(2), high: +high.toFixed(2), low: +low.toFixed(2), close: +close.toFixed(2) }
       base = close
       return d
@@ -197,16 +197,16 @@ export default function StockDetailPanel({ stock, onClose }) {
   // Aggregate into 30m / 1h when needed
   const candleData = useMemo(() => {
     if (timeframe === '30m') return aggregateCandles(baseCandles, 2)
-    if (timeframe === '1h')  return aggregateCandles(baseCandles, 4)
+    if (timeframe === '1h') return aggregateCandles(baseCandles, 4)
     return baseCandles
   }, [baseCandles, timeframe])
 
   // ── Zoom / pan ─────────────────────────────────────────────────────────────
 
   const DEFAULT_VISIBLE = 80
-  const [range, setRange]         = useState({ start: 0, end: DEFAULT_VISIBLE })
+  const [range, setRange] = useState({ start: 0, end: DEFAULT_VISIBLE })
   const [isPanning, setIsPanning] = useState(false)
-  const [lastX, setLastX]         = useState(0)
+  const [lastX, setLastX] = useState(0)
 
   useEffect(() => {
     const len = candleData.length
@@ -227,7 +227,7 @@ export default function StockDetailPanel({ stock, onClose }) {
     const dir = e.deltaY > 0 ? 1 : -1
     setRange(prev => {
       const newStart = Math.min(Math.max(0, prev.start + dir * 2), prev.end - 10)
-      const newEnd   = Math.max(Math.min(candleData.length, prev.end - dir * 2), newStart + 10)
+      const newEnd = Math.max(Math.min(candleData.length, prev.end - dir * 2), newStart + 10)
       return { start: newStart, end: newEnd }
     })
   }
@@ -285,8 +285,8 @@ export default function StockDetailPanel({ stock, onClose }) {
   function formatBig(n) {
     if (n == null) return '—'
     if (Math.abs(n) >= 1e12) return `${(n / 1e12).toFixed(2)}T`
-    if (Math.abs(n) >= 1e9)  return `${(n / 1e9).toFixed(2)}B`
-    if (Math.abs(n) >= 1e6)  return `${(n / 1e6).toFixed(2)}M`
+    if (Math.abs(n) >= 1e9) return `${(n / 1e9).toFixed(2)}B`
+    if (Math.abs(n) >= 1e6) return `${(n / 1e6).toFixed(2)}M`
     return n.toLocaleString()
   }
 
@@ -294,17 +294,17 @@ export default function StockDetailPanel({ stock, onClose }) {
 
   return (
     <div style={{
-      background: '#0b0d12', borderRadius: 0, overflow: 'hidden',
+      background: 'var(--background)', borderRadius: 0, overflow: 'hidden',
       fontFamily: "'Inter', system-ui, sans-serif",
       display: 'flex', flexDirection: 'column', height: '100%',
     }}>
 
       {/* ── Header ── */}
-      <div style={{ background: '#0d1017', padding: '10px 16px', borderBottom: '0.5px solid #1e2433', display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
+      <div style={{ background: 'var(--background)', padding: '10px 16px', borderBottom: '0.5px solid var(--border)', display: 'flex', alignItems: 'center', gap: 10, flexShrink: 0 }}>
         <button
           onClick={onClose}
-          style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#6b7280', padding: '4px 6px', display: 'flex', alignItems: 'center', borderRadius: 6, transition: 'background 0.15s' }}
-          onMouseEnter={e => e.currentTarget.style.background = '#1e2433'}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--muted)', padding: '4px 6px', display: 'flex', alignItems: 'center', borderRadius: 6, transition: 'background 0.15s' }}
+          onMouseEnter={e => e.currentTarget.style.background = 'var(--surface)'}
           onMouseLeave={e => e.currentTarget.style.background = 'none'}
           title="Back to Screener"
         >
@@ -312,14 +312,14 @@ export default function StockDetailPanel({ stock, onClose }) {
         </button>
 
         {/* Ticker avatar */}
-        <div style={{ width: 30, height: 30, borderRadius: 8, background: '#1c2030', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '0.5px solid #2a3350' }}>
+        <div style={{ width: 30, height: 30, borderRadius: 8, background: 'var(--card)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, border: '0.5px solid var(--border)' }}>
           <span style={{ fontSize: 9, fontWeight: 700, color: '#60a5fa', letterSpacing: '0.05em' }}>
             {ticker.replace(/[^A-Z]/gi, '').slice(0, 3).toUpperCase()}
           </span>
         </div>
 
         <div style={{ flex: 1, minWidth: 0 }}>
-          <span style={{ fontSize: 13, fontWeight: 700, color: '#f0f0f0' }}>
+          <span style={{ fontSize: 13, fontWeight: 700, color: 'var(--text)' }}>
             {loading ? stock.name : name}
           </span>
           <span style={{ fontSize: 11, color: '#4b5563', marginLeft: 8 }}>{ticker}</span>
@@ -331,7 +331,7 @@ export default function StockDetailPanel({ stock, onClose }) {
         </div>
 
         <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexShrink: 0 }}>
-          <span style={{ fontSize: 15, fontWeight: 700, color: '#f0f0f0', letterSpacing: '0.01em' }}>
+          <span style={{ fontSize: 15, fontWeight: 700, color: 'var(--muted)', letterSpacing: '0.01em' }}>
             {stockPrice ? stockPrice.toLocaleString(undefined, { maximumFractionDigits: 2 }) : '—'}
           </span>
           <span style={{ fontSize: 12, color: changeColor, display: 'flex', alignItems: 'center', gap: 3 }}>
@@ -345,10 +345,10 @@ export default function StockDetailPanel({ stock, onClose }) {
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 290px', flex: 1, overflow: 'hidden' }}>
 
         {/* ── Chart Side ── */}
-        <div style={{ borderRight: '0.5px solid #1e2433', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        <div style={{ borderRight: '0.5px solid var(--border)', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
           {/* Toolbar */}
-          <div style={{ padding: '6px 14px', borderBottom: '0.5px solid #1e2433', display: 'flex', gap: 3, alignItems: 'center', flexShrink: 0, background: '#0b0d12', flexWrap: 'wrap' }}>
+          <div style={{ padding: '6px 14px', borderBottom: '0.5px solid var(--border)', display: 'flex', gap: 3, alignItems: 'center', flexShrink: 0, background: 'var(--background)', flexWrap: 'wrap' }}>
 
             {/* Chart type */}
             {['Line', 'Candle'].map(ct => (
@@ -357,7 +357,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 style={{
                   fontSize: 11, padding: '3px 9px', borderRadius: 4, cursor: 'pointer',
                   border: 'none', fontFamily: 'inherit',
-                  background: chartType === ct.toLowerCase() ? '#1c2a3a' : 'transparent',
+                  background: chartType === ct.toLowerCase() ? 'var(--background)' : 'transparent',
                   color: chartType === ct.toLowerCase() ? '#60a5fa' : '#4b5563',
                 }}
               >{ct}</button>
@@ -372,7 +372,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 style={{
                   fontSize: 11, padding: '3px 9px', borderRadius: 4, cursor: 'pointer',
                   border: 'none', fontFamily: 'inherit',
-                  background: timeframe === tf ? '#1c2a3a' : 'transparent',
+                  background: timeframe === tf ? 'var(--card)' : 'transparent',
                   color: timeframe === tf ? '#f59e0b' : '#4b5563',
                   fontWeight: timeframe === tf ? 700 : 400,
                 }}
@@ -388,10 +388,10 @@ export default function StockDetailPanel({ stock, onClose }) {
                 title={`Y-axis scale: ${id}`}
                 style={{
                   fontSize: 10, padding: '2px 8px', borderRadius: 4, cursor: 'pointer',
-                  border: yScale === id ? '0.5px solid #3b82f6' : '0.5px solid transparent',
+                  border: yScale === id ? '0.5px solid var(--accent)' : '0.5px solid transparent',
                   fontFamily: 'inherit',
-                  background: yScale === id ? '#0f1e33' : 'transparent',
-                  color: yScale === id ? '#60a5fa' : '#374151',
+                  background: yScale === id ? 'var(--surface)' : 'transparent',
+                  color: yScale === id ? 'var(--text)' : '#374151',
                 }}
               >{label}</button>
             ))}
@@ -404,23 +404,23 @@ export default function StockDetailPanel({ stock, onClose }) {
               title="Zoom out — show all candles"
               style={{
                 fontSize: 10, padding: '2px 8px', borderRadius: 4, cursor: 'pointer',
-                border: '0.5px solid #1e2433', fontFamily: 'inherit',
-                background: 'transparent', color: '#4b5563',
+                border: '0.5px solid var(--border)', fontFamily: 'inherit',
+                background: 'transparent', color: 'var(--muted)',
                 display: 'flex', alignItems: 'center', gap: 3,
               }}
-              onMouseEnter={e => { e.currentTarget.style.background = '#1e2433'; e.currentTarget.style.color = '#e2e8f0' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--surface)'; e.currentTarget.style.color = 'var(--text)' }}
               onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#4b5563' }}
             >⊖ Zoom Out</button>
 
             {/* OHLC readout */}
             <div style={{ marginLeft: 'auto', display: 'flex', gap: 10 }}>
               {[
-                { label: 'O', val: lastCandle.open,  color: '#e2e8f0' },
-                { label: 'H', val: lastCandle.high,  color: '#22c55e' },
-                { label: 'L', val: lastCandle.low,   color: '#ef4444' },
+                { label: 'O', val: lastCandle.open, color: '#e2e8f0' },
+                { label: 'H', val: lastCandle.high, color: '#22c55e' },
+                { label: 'L', val: lastCandle.low, color: '#ef4444' },
                 { label: 'C', val: lastCandle.close, color: '#e2e8f0' },
               ].map(({ label, val, color }) => (
-                <span key={label} style={{ fontSize: 11, color: '#6b7280' }}>
+                <span key={label} style={{ fontSize: 11, color: 'var(--muted)' }}>
                   {label} <span style={{ color }}>{val?.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
                 </span>
               ))}
@@ -429,7 +429,7 @@ export default function StockDetailPanel({ stock, onClose }) {
 
           {/* Chart */}
           {ohlcvLoading ? (
-            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#374151', fontSize: 12 }}>
+            <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--muted)1', fontSize: 12 }}>
               Loading chart…
             </div>
           ) : (
@@ -447,7 +447,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
                     <XAxis dataKey="index" hide />
                     <YAxis domain={yDomain} tick={{ fontSize: 9, fill: '#4b5563' }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} />
-                    <Tooltip contentStyle={{ background: '#141720', border: '0.5px solid #1e2433', borderRadius: 8, fontSize: 11 }} />
+                    <Tooltip contentStyle={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 8, fontSize: 11 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}
                     <Line type="monotone" dataKey="close" stroke="#22c55e" strokeWidth={1.8} dot={false} isAnimationActive={false} />
                   </ComposedChart>
@@ -465,15 +465,15 @@ export default function StockDetailPanel({ stock, onClose }) {
           )}
 
           {/* Footer metrics */}
-          <div style={{ padding: '8px 14px', borderTop: '0.5px solid #1e2433', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6, flexShrink: 0, background: '#0b0d12' }}>
+          <div style={{ padding: '8px 14px', borderTop: '0.5px solid var(--border)', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6, flexShrink: 0, background: 'var(--background)' }}>
             {[
-              { label: 'Market Cap',    value: formatBig(priceInfo.marketCap),              color: '#e2e8f0' },
-              { label: 'Volume',        value: formatBig(priceInfo.volume),                 color: '#e2e8f0' },
-              { label: 'P/E (TTM)',     value: valuation.trailingPE ? valuation.trailingPE.toFixed(1) + 'x' : (stock.pe ? stock.pe + 'x' : '—'), color: '#60a5fa' },
-              { label: 'Div Yield',     value: dividend.dividendYield ? pct(dividend.dividendYield) : (stock.div || '—'), color: '#fbbf24' },
+              { label: 'Market Cap', value: formatBig(priceInfo.marketCap), color: '#e2e8f0' },
+              { label: 'Volume', value: formatBig(priceInfo.volume), color: '#e2e8f0' },
+              { label: 'P/E (TTM)', value: valuation.trailingPE ? valuation.trailingPE.toFixed(1) + 'x' : (stock.pe ? stock.pe + 'x' : '—'), color: '#60a5fa' },
+              { label: 'Div Yield', value: dividend.dividendYield ? pct(dividend.dividendYield) : (stock.div || '—'), color: '#fbbf24' },
             ].map(({ label, value, color }) => (
-              <div key={label} style={{ background: '#0d1017', borderRadius: 6, padding: 8 }}>
-                <div style={{ fontSize: 10, color: '#4b5563', marginBottom: 2 }}>{label}</div>
+              <div key={label} style={{ background: 'var(--card)', borderRadius: 6, padding: 8 }}>
+                <div style={{ fontSize: 10, color: 'var(--muted)', marginBottom: 2 }}>{label}</div>
                 <div style={{ fontSize: 12, fontWeight: 500, color }}>{value}</div>
               </div>
             ))}
@@ -481,10 +481,10 @@ export default function StockDetailPanel({ stock, onClose }) {
         </div>
 
         {/* ── Right Panel ── */}
-        <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', background: '#0b0d12' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'var(--background)' }}>
 
           {/* Tabs */}
-          <div style={{ display: 'flex', borderBottom: '0.5px solid #1e2433', flexShrink: 0 }}>
+          <div style={{ display: 'flex', borderBottom: '0.5px solid var(--border)', flexShrink: 0 }}>
             {['overview', 'financials', 'about'].map(t => (
               <button key={t}
                 onClick={() => setTab(t)}
@@ -504,7 +504,7 @@ export default function StockDetailPanel({ stock, onClose }) {
             {loading && (
               <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                 {Array.from({ length: 6 }).map((_, i) => (
-                  <div key={i} style={{ height: 32, background: '#141720', borderRadius: 6, animation: 'pulse 1.5s ease-in-out infinite' }} />
+                  <div key={i} style={{ height: 32, background: 'var(--surface)', borderRadius: 6, animation: 'pulse 1.5s ease-in-out infinite' }} />
                 ))}
               </div>
             )}
@@ -514,36 +514,36 @@ export default function StockDetailPanel({ stock, onClose }) {
               <>
                 <SectionLabel>Price Info</SectionLabel>
                 <InfoGrid rows={[
-                  { label: 'Prev Close',  value: fmt(priceInfo.previousClose ?? prevClose, 2) },
-                  { label: 'Open',        value: fmt(priceInfo.open, 2) },
-                  { label: 'Day Low',     value: fmt(priceInfo.dayLow, 2), color: '#ef4444' },
-                  { label: 'Day High',    value: fmt(priceInfo.dayHigh, 2), color: '#22c55e' },
-                  { label: '52W Low',     value: fmt(priceInfo.fiftyTwoWeekLow, 2), color: '#ef4444' },
-                  { label: '52W High',    value: fmt(priceInfo.fiftyTwoWeekHigh, 2), color: '#22c55e' },
+                  { label: 'Prev Close', value: fmt(priceInfo.previousClose ?? prevClose, 2) },
+                  { label: 'Open', value: fmt(priceInfo.open, 2) },
+                  { label: 'Day Low', value: fmt(priceInfo.dayLow, 2), color: '#ef4444' },
+                  { label: 'Day High', value: fmt(priceInfo.dayHigh, 2), color: '#22c55e' },
+                  { label: '52W Low', value: fmt(priceInfo.fiftyTwoWeekLow, 2), color: '#ef4444' },
+                  { label: '52W High', value: fmt(priceInfo.fiftyTwoWeekHigh, 2), color: '#22c55e' },
                 ]} />
 
                 <SectionLabel>Valuation</SectionLabel>
                 <InfoGrid rows={[
-                  { label: 'Market Cap',  value: formatBig(priceInfo.marketCap) },
-                  { label: 'P/E (TTM)',   value: valuation.trailingPE ? valuation.trailingPE.toFixed(1) + 'x' : (stock.pe ? stock.pe + 'x' : '—') },
-                  { label: 'Forward P/E', value: valuation.forwardPE  ? valuation.forwardPE.toFixed(1) + 'x' : '—' },
-                  { label: 'EPS (TTM)',   value: valuation.trailingEps ? fmt(valuation.trailingEps, 2) : '—' },
-                  { label: 'Price/Book',  value: valuation.priceToBook ? valuation.priceToBook.toFixed(2) + 'x' : '—' },
-                  { label: 'Beta',        value: valuation.beta ? valuation.beta.toFixed(2) : '—' },
+                  { label: 'Market Cap', value: formatBig(priceInfo.marketCap) },
+                  { label: 'P/E (TTM)', value: valuation.trailingPE ? valuation.trailingPE.toFixed(1) + 'x' : (stock.pe ? stock.pe + 'x' : '—') },
+                  { label: 'Forward P/E', value: valuation.forwardPE ? valuation.forwardPE.toFixed(1) + 'x' : '—' },
+                  { label: 'EPS (TTM)', value: valuation.trailingEps ? fmt(valuation.trailingEps, 2) : '—' },
+                  { label: 'Price/Book', value: valuation.priceToBook ? valuation.priceToBook.toFixed(2) + 'x' : '—' },
+                  { label: 'Beta', value: valuation.beta ? valuation.beta.toFixed(2) : '—' },
                 ]} />
 
                 <SectionLabel>Dividend</SectionLabel>
                 <InfoGrid rows={[
-                  { label: 'Yield',       value: dividend.dividendYield ? pct(dividend.dividendYield) : (stock.div || '—'), color: '#fbbf24' },
-                  { label: 'Rate',        value: dividend.dividendRate ? fmt(dividend.dividendRate, 2) : '—' },
-                  { label: 'Payout',      value: dividend.payoutRatio  ? pct(dividend.payoutRatio)   : '—' },
-                  { label: 'Ex-Date',     value: dividend.exDividendDate ? new Date(dividend.exDividendDate * 1000).toLocaleDateString() : '—' },
+                  { label: 'Yield', value: dividend.dividendYield ? pct(dividend.dividendYield) : (stock.div || '—'), color: '#fbbf24' },
+                  { label: 'Rate', value: dividend.dividendRate ? fmt(dividend.dividendRate, 2) : '—' },
+                  { label: 'Payout', value: dividend.payoutRatio ? pct(dividend.payoutRatio) : '—' },
+                  { label: 'Ex-Date', value: dividend.exDividendDate ? new Date(dividend.exDividendDate * 1000).toLocaleDateString() : '—' },
                 ]} />
 
                 {analyst.recommendationKey && (
                   <>
                     <SectionLabel>Analyst Consensus</SectionLabel>
-                    <div style={{ background: '#141720', borderRadius: 6, padding: '10px 12px', marginBottom: 14 }}>
+                    <div style={{ background: 'var(--surface)', borderRadius: 6, padding: '10px 12px', marginBottom: 14 }}>
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
                         <span style={{ fontSize: 13, fontWeight: 700, color: '#4ade80', textTransform: 'capitalize' }}>
                           {analyst.recommendationKey.replace(/_/g, ' ')}
@@ -555,7 +555,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                       {analyst.targetMeanPrice && (
                         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 4, marginTop: 4 }}>
                           {[
-                            { label: 'Low',  value: analyst.targetLowPrice  ? fmt(analyst.targetLowPrice, 2)  : '—', color: '#e2e8f0' },
+                            { label: 'Low', value: analyst.targetLowPrice ? fmt(analyst.targetLowPrice, 2) : '—', color: '#e2e8f0' },
                             { label: 'Mean', value: analyst.targetMeanPrice ? fmt(analyst.targetMeanPrice, 2) : '—', color: '#60a5fa' },
                             { label: 'High', value: analyst.targetHighPrice ? fmt(analyst.targetHighPrice, 2) : '—', color: '#e2e8f0' },
                           ].map(({ label, value, color }) => (
@@ -579,7 +579,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 {finRows.length > 0 ? (
                   <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 11, marginBottom: 14 }}>
                     <thead>
-                      <tr style={{ borderBottom: '0.5px solid #1e2433' }}>
+                      <tr style={{ borderBottom: '0.5px solid var(--border)' }}>
                         <th style={{ textAlign: 'left', padding: '5px 6px', color: '#4b5563', fontWeight: 400 }}>Item</th>
                         {finRows.slice(0, 2).map(([yr]) => (
                           <th key={yr} style={{ textAlign: 'right', padding: '5px 6px', color: '#4b5563', fontWeight: 400 }}>
@@ -590,13 +590,13 @@ export default function StockDetailPanel({ stock, onClose }) {
                     </thead>
                     <tbody>
                       {[
-                        { name: 'Revenue',     key: 'Total Revenue',     color: '#e2e8f0' },
-                        { name: 'Gross Profit',key: 'Gross Profit',      color: '#4ade80' },
-                        { name: 'Net Income',  key: 'Net Income',        color: '#4ade80' },
-                        { name: 'EBIT',        key: 'EBIT',              color: '#e2e8f0' },
-                        { name: 'Diluted EPS', key: 'Diluted EPS',       color: '#fbbf24' },
+                        { name: 'Revenue', key: 'Total Revenue', color: '#e2e8f0' },
+                        { name: 'Gross Profit', key: 'Gross Profit', color: '#4ade80' },
+                        { name: 'Net Income', key: 'Net Income', color: '#4ade80' },
+                        { name: 'EBIT', key: 'EBIT', color: '#e2e8f0' },
+                        { name: 'Diluted EPS', key: 'Diluted EPS', color: '#fbbf24' },
                       ].map(({ name, key, color }) => (
-                        <tr key={name} style={{ borderBottom: '0.5px solid #0d1017' }}>
+                        <tr key={name} style={{ borderBottom: '0.5px solid var(--border)' }}>
                           <td style={{ padding: '6px 6px', color: '#6b7280' }}>{name}</td>
                           {finRows.slice(0, 2).map(([yr, yd]) => (
                             <td key={yr} style={{ padding: '6px 6px', textAlign: 'right', color }}>
@@ -619,14 +619,14 @@ export default function StockDetailPanel({ stock, onClose }) {
             {!loading && tab === 'about' && (
               <>
                 <SectionLabel>Company</SectionLabel>
-                <div style={{ background: '#141720', borderRadius: 6, padding: '10px 12px', marginBottom: 14 }}>
+                <div style={{ background: 'var(--surface)', borderRadius: 6, padding: '10px 12px', marginBottom: 14 }}>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, fontSize: 11, marginBottom: 10 }}>
                     {[
-                      { label: 'Sector',    value: identity.sector    || stock.sector   },
-                      { label: 'Industry',  value: identity.industry  || stock.industry },
-                      { label: 'Country',   value: identity.country },
+                      { label: 'Sector', value: identity.sector || stock.sector },
+                      { label: 'Industry', value: identity.industry || stock.industry },
+                      { label: 'Country', value: identity.country },
                       { label: 'Employees', value: identity.fullTimeEmployees ? identity.fullTimeEmployees.toLocaleString() : '—' },
-                      { label: 'Website',   value: identity.website },
+                      { label: 'Website', value: identity.website },
                     ].filter(r => r.value).map(({ label, value }) => (
                       <div key={label}>
                         <div style={{ color: '#4b5563', fontSize: 10 }}>{label}</div>

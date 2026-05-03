@@ -1,8 +1,8 @@
 {
   "ticker": "BBNI.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:35.856033",
-  "updated_at": "2026-05-02T07:21:35.856041",
+  "scraped_at": "2026-05-03 20:41:17.968788",
+  "updated_at": "2026-05-03T20:41:17.968807",
   "info": {
     "identity": {
       "longName": "PT Bank Negara Indonesia (Persero) Tbk",
@@ -14,7 +14,7 @@
       "currency": "IDR",
       "sector": "Financial Services",
       "industry": "Banks - Regional",
-      "fullTimeEmployees": 27737,
+      "fullTimeEmployees": 27651,
       "website": "https://www.bni.co.id",
       "longBusinessSummary": "PT Bank Negara Indonesia (Persero) Tbk, together with its subsidiaries, provides various banking products and services in Indonesia, rest of Asia, New York, and Europe. It operates through Corporate Banking, Institutional Banking, Commercial Banking, Consumer Banking, Treasury & International Banking, Head Office, and Subsidiaries segments. The company offers savings; savings plan and FIPF products; loans; credit cards; bancassurance, payroll, and simulation services; safe deposit boxes, bank references, bonds, foreign bank notes, and mobile banking services; services to collect payments or valuable documents; and Xpora, a digital solution for small and medium enterprises. It also provides business banking, funding, lending, trade finance, smart remittance, foreign direct investment, collection and liquidity management, payment management, supply chain financing, consumer financing, wealth management, and custody and trust services; financial institution products; solutions for industrial sectors; and treasury products. In addition, the company offers insurance and venture capital services; securities; and ATM, phone and SMS banking, mobile and internet banking, and internet payment gateway services. PT Bank Negara Indonesia (Persero) Tbk was founded in 1946 and is headquartered in Jakarta Pusat, Indonesia.",
       "companyOfficers": [
@@ -121,14 +121,14 @@
       "fiftyDayAverage": 4045.8,
       "twoHundredDayAverage": 4239.0,
       "volume": 57549500,
-      "averageVolume": 67263914,
+      "averageVolume": 66635827,
       "averageVolume10days": 40425260,
       "regularMarketChangePercent": -2.1052632,
-      "52WeekChange": -0.11428571
+      "52WeekChange": -0.11638957
     },
     "valuation": {
       "marketCap": 138595289530368,
-      "enterpriseValue": 112767889571840,
+      "enterpriseValue": 111502795210752,
       "trailingPE": 6.8259387,
       "forwardPE": 5.5147877,
       "priceToBook": 0.8070528,
@@ -144,14 +144,14 @@
       "grossMargins": 0.0,
       "returnOnEquity": 0.12029,
       "returnOnAssets": 0.01584,
-      "revenueGrowth": 0.061,
-      "earningsGrowth": 0.054,
-      "grossProfits": 50081646510080,
+      "revenueGrowth": 0.078,
+      "earningsGrowth": 0.052,
+      "grossProfits": 50087015219200,
       "totalRevenue": 50762184916992,
       "netIncomeToCommon": 20320993935360,
       "operatingCashflow": -148624340156416,
       "totalCash": 111583057412096,
-      "totalDebt": 81225507143680
+      "totalDebt": 79809694662656
     },
     "dividend": {
       "dividendRate": 349.41,
@@ -165,19 +165,19 @@
       "recommendationKey": "strong_buy",
       "recommendationMean": 1.5,
       "numberOfAnalystOpinions": 21,
-      "targetHighPrice": 5700.0,
+      "targetHighPrice": 5500.0,
       "targetLowPrice": 3800.0,
-      "targetMeanPrice": 4913.905,
+      "targetMeanPrice": 4894.857,
       "targetMedianPrice": 4900.0
     },
     "ownership": {
       "sharesOutstanding": 578683733,
-      "floatShares": 15039824344,
+      "floatShares": 15056179278,
       "heldPercentInsiders": 0.68178004,
-      "heldPercentInstitutions": 0.16553,
+      "heldPercentInstitutions": 0.16459,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 1696896000,
-      "beta": null
+      "beta": 0.248
     }
   },
   "financials": {

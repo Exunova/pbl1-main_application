@@ -1,8 +1,8 @@
 {
   "ticker": "KLBF.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:40.329472",
-  "updated_at": "2026-05-02T07:21:40.329479",
+  "scraped_at": "2026-05-03 20:41:22.350604",
+  "updated_at": "2026-05-03T20:41:22.350621",
   "info": {
     "identity": {
       "longName": "PT Kalbe Farma Tbk.",
@@ -69,21 +69,21 @@
       "fiftyDayAverage": 984.3,
       "twoHundredDayAverage": 1166.825,
       "volume": 55352100,
-      "averageVolume": 47330957,
+      "averageVolume": 46750277,
       "averageVolume10days": 57476730,
       "regularMarketChangePercent": -1.1428571,
-      "52WeekChange": -0.34220535
+      "52WeekChange": -0.37769783
     },
     "valuation": {
       "marketCap": 39172844814336,
       "enterpriseValue": 36336799055872,
       "trailingPE": 10.741339,
       "forwardPE": 11.562626,
-      "priceToBook": 1.6803393,
+      "priceToBook": 1.6108909,
       "priceToSalesTrailing12Months": 1.081683,
       "trailingEps": 80.53,
       "forwardEps": 74.81,
-      "bookValue": 514.777,
+      "bookValue": 536.97,
       "pegRatio": 0.92
     },
     "profitability": {
@@ -122,7 +122,7 @@
       "sharesOutstanding": 45286528610,
       "floatShares": 18030765777,
       "heldPercentInsiders": 0.64862,
-      "heldPercentInstitutions": 0.113570005,
+      "heldPercentInstitutions": 0.113800004,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1349654400,
       "beta": null

@@ -1,8 +1,8 @@
 {
   "ticker": "NVDA",
   "market": "US",
-  "scraped_at": "2026-05-02 07:21:18.003989",
-  "updated_at": "2026-05-02T07:21:18.004007",
+  "scraped_at": "2026-05-03 20:41:00.009055",
+  "updated_at": "2026-05-03T20:41:00.009073",
   "info": {
     "identity": {
       "longName": "NVIDIA Corporation",
@@ -130,22 +130,22 @@
       "ask": 198.53,
       "fiftyTwoWeekHigh": 216.83,
       "fiftyTwoWeekLow": 110.82,
-      "fiftyDayAverage": 186.9432,
-      "twoHundredDayAverage": 183.7209,
+      "fiftyDayAverage": 187.1542,
+      "twoHundredDayAverage": 183.8563,
       "volume": 127110269,
-      "averageVolume": 175832187,
-      "averageVolume10days": 153869820,
+      "averageVolume": 174763742,
+      "averageVolume10days": 150718020,
       "regularMarketChangePercent": -0.561212,
-      "52WeekChange": 0.7429694
+      "52WeekChange": 0.74354243
     },
     "valuation": {
       "marketCap": 4823327440896,
-      "enterpriseValue": 4798406983680,
-      "trailingPE": 40.417515,
+      "enterpriseValue": 4771191193600,
+      "trailingPE": 40.5,
       "forwardPE": 17.656982,
       "priceToBook": 30.662855,
       "priceToSalesTrailing12Months": 22.33663,
-      "trailingEps": 4.91,
+      "trailingEps": 4.9,
       "forwardEps": 11.23918,
       "bookValue": 6.472,
       "pegRatio": 0.63
@@ -186,7 +186,7 @@
       "sharesOutstanding": 24300000000,
       "floatShares": 23321682000,
       "heldPercentInsiders": 0.042090002,
-      "heldPercentInstitutions": 0.68079,
+      "heldPercentInstitutions": 0.68091005,
       "lastSplitFactor": "10:1",
       "lastSplitDate": 1717977600,
       "beta": 2.335

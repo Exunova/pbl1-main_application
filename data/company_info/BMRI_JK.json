@@ -1,8 +1,8 @@
 {
   "ticker": "BMRI.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:32.428670",
-  "updated_at": "2026-05-02T07:21:32.428679",
+  "scraped_at": "2026-05-03 20:41:14.565400",
+  "updated_at": "2026-05-03T20:41:14.565413",
   "info": {
     "identity": {
       "longName": "PT Bank Mandiri (Persero) Tbk",
@@ -119,10 +119,10 @@
       "fiftyDayAverage": 4797.4,
       "twoHundredDayAverage": 4754.125,
       "volume": 186960200,
-      "averageVolume": 164184721,
+      "averageVolume": 161739737,
       "averageVolume10days": 170917570,
       "regularMarketChangePercent": -0.90293455,
-      "52WeekChange": -0.114919364
+      "52WeekChange": -0.11847389
     },
     "valuation": {
       "marketCap": 409733336924160,
@@ -172,7 +172,7 @@
       "sharesOutstanding": 93333333331,
       "floatShares": 37565169093,
       "heldPercentInsiders": 0.54161,
-      "heldPercentInstitutions": 0.25337,
+      "heldPercentInstitutions": 0.25301,
       "lastSplitFactor": "2:1",
       "lastSplitDate": 1680566400,
       "beta": 0.096

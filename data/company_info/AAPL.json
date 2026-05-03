@@ -1,8 +1,8 @@
 {
   "ticker": "AAPL",
   "market": "US",
-  "scraped_at": "2026-05-02 07:21:19.279518",
-  "updated_at": "2026-05-02T07:21:19.279526",
+  "scraped_at": "2026-05-03 20:41:01.408574",
+  "updated_at": "2026-05-03T20:41:01.408589",
   "info": {
     "identity": {
       "longName": "Apple Inc.",
@@ -129,23 +129,23 @@
       "ask": 288.5,
       "fiftyTwoWeekHigh": 288.62,
       "fiftyTwoWeekLow": 193.25,
-      "fiftyDayAverage": 260.8274,
-      "twoHundredDayAverage": 254.8334,
+      "fiftyDayAverage": 261.2186,
+      "twoHundredDayAverage": 255.1833,
       "volume": 76013740,
-      "averageVolume": 45077117,
-      "averageVolume10days": 46471000,
+      "averageVolume": 44885765,
+      "averageVolume10days": 48483230,
       "regularMarketChangePercent": 3.23936,
-      "52WeekChange": 0.32140243
+      "52WeekChange": 0.40851724
     },
     "valuation": {
-      "marketCap": 4112774856704,
-      "enterpriseValue": 4126823677952,
-      "trailingPE": 35.460762,
-      "forwardPE": 29.812311,
+      "marketCap": 4109006274560,
+      "enterpriseValue": 4130719924224,
+      "trailingPE": 33.915257,
+      "forwardPE": 29.292562,
       "priceToBook": 46.70557,
-      "priceToSalesTrailing12Months": 9.110306,
-      "trailingEps": 7.9,
-      "forwardEps": 9.39679,
+      "priceToSalesTrailing12Months": 9.101958,
+      "trailingEps": 8.26,
+      "forwardEps": 9.56352,
       "bookValue": 5.998,
       "pegRatio": 2.44
     },
@@ -165,11 +165,11 @@
       "totalDebt": 84710998016
     },
     "dividend": {
-      "dividendRate": 1.04,
-      "dividendYield": 0.38,
+      "dividendRate": 1.08,
+      "dividendYield": 0.39,
       "fiveYearAvgDividendYield": 0.51,
-      "payoutRatio": 0.1304,
-      "exDividendDate": 1770595200,
+      "payoutRatio": 0.1259,
+      "exDividendDate": 1778457600,
       "lastDividendValue": 0.26
     },
     "analyst": {
@@ -182,13 +182,13 @@
       "targetMedianPrice": 302.5
     },
     "ownership": {
-      "sharesOutstanding": 14681140000,
-      "floatShares": 14642606254,
-      "heldPercentInsiders": 0.0164,
-      "heldPercentInstitutions": 0.65251,
+      "sharesOutstanding": 14667688000,
+      "floatShares": 14662240621,
+      "heldPercentInsiders": 0.01642,
+      "heldPercentInstitutions": 0.65318,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1598832000,
-      "beta": null
+      "beta": 1.109
     }
   },
   "financials": {

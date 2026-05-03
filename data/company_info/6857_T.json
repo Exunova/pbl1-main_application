@@ -1,8 +1,8 @@
 {
   "ticker": "6857.T",
   "market": "JP",
-  "scraped_at": "2026-05-02 07:21:49.178207",
-  "updated_at": "2026-05-02T07:21:49.178218",
+  "scraped_at": "2026-05-03 20:41:32.131585",
+  "updated_at": "2026-05-03T20:41:32.131608",
   "info": {
     "identity": {
       "longName": "Advantest Corporation",
@@ -126,14 +126,14 @@
       "bid": 27815.0,
       "ask": 27825.0,
       "fiftyTwoWeekHigh": 32400.0,
-      "fiftyTwoWeekLow": 6136.0,
-      "fiftyDayAverage": 25272.1,
-      "twoHundredDayAverage": 19367.074,
+      "fiftyTwoWeekLow": 6240.0,
+      "fiftyDayAverage": 25292.5,
+      "twoHundredDayAverage": 19451.25,
       "volume": 7144100,
-      "averageVolume": 10375990,
-      "averageVolume10days": 12165120,
+      "averageVolume": 10238110,
+      "averageVolume10days": 11794270,
       "regularMarketChangePercent": -1.5746639,
-      "52WeekChange": 3.4595232
+      "52WeekChange": 3.3893008
     },
     "valuation": {
       "marketCap": 20180220510208,
@@ -183,7 +183,7 @@
       "sharesOutstanding": 725515776,
       "floatShares": 716221919,
       "heldPercentInsiders": 0.00279,
-      "heldPercentInstitutions": 0.649,
+      "heldPercentInstitutions": 0.64935994,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1695859200,
       "beta": 1.054

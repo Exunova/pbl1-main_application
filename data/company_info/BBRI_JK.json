@@ -1,8 +1,8 @@
 {
   "ticker": "BBRI.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:31.327030",
-  "updated_at": "2026-05-02T07:21:31.327041",
+  "scraped_at": "2026-05-03 20:41:13.348086",
+  "updated_at": "2026-05-03T20:41:13.348103",
   "info": {
     "identity": {
       "longName": "PT Bank Rakyat Indonesia (Persero) Tbk",
@@ -14,7 +14,7 @@
       "currency": "IDR",
       "sector": "Financial Services",
       "industry": "Banks - Regional",
-      "fullTimeEmployees": 59714,
+      "fullTimeEmployees": 82203,
       "website": "https://bri.co.id",
       "longBusinessSummary": "PT Bank Rakyat Indonesia (Persero) Tbk provides various banking products and services in Indonesia and internationally. The company offers savings and current accounts; time, foreign currency time, and on-call deposits; mortgage, working capital, investment, franchise, and cash collateral loans, as well as supply and value chain financing and bank guarantees; and microphone, small and medium, and program loans. It also provides bill payment, deposit, online transaction, remittance, money transfer, business, financial, institutional, treasury and global, custodian, trustee, and cash management services. In addition, the company offers investment products and services; trade finance and services, and transaction banking services, including import and export, standby L/C, money changer, BRI RTE online system services, as well as letters of credit; credit cards; and wealth management, merchant, and digital banking services. Further, it provides life and general insurance, securities underwriting and brokerage, and venture capital services. PT Bank Rakyat Indonesia (Persero) Tbk was founded in 1895 and is headquartered in Jakarta, Indonesia. PT Bank Rakyat Indonesia (Persero) Tbk operates as a subsidiary of PT Danantara Asset Management (Persero).",
       "companyOfficers": [
@@ -119,37 +119,37 @@
       "fiftyDayAverage": 3477.0,
       "twoHundredDayAverage": 3756.9,
       "volume": 382750500,
-      "averageVolume": 235223789,
+      "averageVolume": 234012012,
       "averageVolume10days": 297810300,
       "regularMarketChangePercent": -2.605863,
-      "52WeekChange": -0.22938144
+      "52WeekChange": -0.22538859
     },
     "valuation": {
       "marketCap": 453161395421184,
-      "enterpriseValue": 563736939069440,
+      "enterpriseValue": 581155782918144,
       "trailingPE": 7.9491677,
       "forwardPE": 6.7925215,
       "priceToBook": 1.3896544,
-      "priceToSalesTrailing12Months": 3.232046,
+      "priceToSalesTrailing12Months": 3.1152046,
       "trailingEps": 376.14,
       "forwardEps": 440.19,
       "bookValue": 2151.614,
       "pegRatio": 1.55
     },
     "profitability": {
-      "profitMargins": 0.40405998,
-      "operatingMargins": 0.38641998,
+      "profitMargins": 0.40230998,
+      "operatingMargins": 0.42025003,
       "grossMargins": 0.0,
-      "returnOnEquity": 0.17465,
-      "returnOnAssets": 0.027679998,
-      "revenueGrowth": 0.17,
-      "earningsGrowth": 0.063,
-      "grossProfits": 138027481432064,
-      "totalRevenue": 140208838279168,
-      "netIncomeToCommon": 56652384436224,
-      "operatingCashflow": -89698663923712,
-      "totalCash": 102642437062656,
-      "totalDebt": 209176617811968
+      "returnOnEquity": 0.18135999,
+      "returnOnAssets": 0.02715,
+      "revenueGrowth": 0.163,
+      "earningsGrowth": 0.143,
+      "grossProfits": 143549685301248,
+      "totalRevenue": 145467623079936,
+      "netIncomeToCommon": 58523543142400,
+      "operatingCashflow": -152577001914368,
+      "totalCash": 121338605862912,
+      "totalDebt": 245416847212544
     },
     "dividend": {
       "dividendRate": 418.0,
@@ -170,9 +170,9 @@
     },
     "ownership": {
       "sharesOutstanding": 151559001603,
-      "floatShares": 69928283455,
+      "floatShares": 69916456181,
       "heldPercentInsiders": 0.56005,
-      "heldPercentInstitutions": 0.19968,
+      "heldPercentInstitutions": 0.1988,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1510272000,
       "beta": 0.359

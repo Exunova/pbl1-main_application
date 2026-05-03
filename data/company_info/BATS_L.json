@@ -1,8 +1,8 @@
 {
   "ticker": "BATS.L",
   "market": "GB",
-  "scraped_at": "2026-05-02 07:21:56.082896",
-  "updated_at": "2026-05-02T07:21:56.082909",
+  "scraped_at": "2026-05-03 20:41:39.007290",
+  "updated_at": "2026-05-03T20:41:39.007303",
   "info": {
     "identity": {
       "longName": "British American Tobacco p.l.c.",
@@ -131,25 +131,25 @@
       "ask": 4347.0,
       "fiftyTwoWeekHigh": 4876.92,
       "fiftyTwoWeekLow": 3013.0,
-      "fiftyDayAverage": 4376.12,
-      "twoHundredDayAverage": 4211.875,
+      "fiftyDayAverage": 4371.32,
+      "twoHundredDayAverage": 4213.955,
       "volume": 1161767,
-      "averageVolume": 5007297,
-      "averageVolume10days": 5884623,
+      "averageVolume": 4921250,
+      "averageVolume10days": 5637849,
       "regularMarketChangePercent": 0.1387925,
-      "52WeekChange": 0.34046507
+      "52WeekChange": 0.34232557
     },
     "valuation": {
-      "marketCap": 93681844224,
+      "marketCap": 93671096320,
       "enterpriseValue": 125529628672,
       "trailingPE": 12.404012,
       "forwardPE": 11.272821,
       "priceToBook": 2.0438128,
-      "priceToSalesTrailing12Months": 3.658018,
+      "priceToSalesTrailing12Months": 3.6575985,
       "trailingEps": 3.49,
       "forwardEps": 3.84021,
       "bookValue": 21.181,
-      "pegRatio": 1.47
+      "pegRatio": 1.5
     },
     "profitability": {
       "profitMargins": 0.30316,
@@ -168,7 +168,7 @@
     },
     "dividend": {
       "dividendRate": 2.45,
-      "dividendYield": 5.67,
+      "dividendYield": 5.66,
       "fiveYearAvgDividendYield": 7.53,
       "payoutRatio": 0.6882,
       "exDividendDate": 1783555200,
@@ -184,10 +184,10 @@
       "targetMedianPrice": 4900.0
     },
     "ownership": {
-      "sharesOutstanding": 2164052705,
-      "floatShares": 1980254987,
+      "sharesOutstanding": 2163804296,
+      "floatShares": 1980211521,
       "heldPercentInsiders": 0.065689996,
-      "heldPercentInstitutions": 0.56016,
+      "heldPercentInstitutions": 0.56036,
       "lastSplitFactor": null,
       "lastSplitDate": null,
       "beta": 0.124

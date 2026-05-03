@@ -223,13 +223,13 @@ export default function CandlestickChart({ data = [] }) {
             </svg>
           </ToolBtn>
         </div>
-        
-        <div style={{ width: '1px', height: '16px', background: '#1c2333', margin: '0 4px' }} />
+
+        <div style={{ width: '1px', height: '16px', background: 'var(--border)', margin: '0 4px' }} />
 
         <ToolBtn onClick={fitAll} title="Reset Zoom / Fit All">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
-            <path d="M3 3v5h5"/>
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+            <path d="M3 3v5h5" />
           </svg>
         </ToolBtn>
 

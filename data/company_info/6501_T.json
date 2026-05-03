@@ -1,8 +1,8 @@
 {
   "ticker": "6501.T",
   "market": "JP",
-  "scraped_at": "2026-05-02 07:21:45.948399",
-  "updated_at": "2026-05-02T07:21:45.948410",
+  "scraped_at": "2026-05-03 20:41:28.612975",
+  "updated_at": "2026-05-03T20:41:28.612991",
   "info": {
     "identity": {
       "longName": "Hitachi, Ltd.",
@@ -139,25 +139,25 @@
       "bid": 4794.0,
       "ask": 4795.0,
       "fiftyTwoWeekHigh": 6039.0,
-      "fiftyTwoWeekLow": 3634.0,
-      "fiftyDayAverage": 4909.68,
-      "twoHundredDayAverage": 4716.48,
+      "fiftyTwoWeekLow": 3673.0,
+      "fiftyDayAverage": 4907.64,
+      "twoHundredDayAverage": 4719.855,
       "volume": 11393000,
-      "averageVolume": 16148823,
-      "averageVolume10days": 15426400,
+      "averageVolume": 16153462,
+      "averageVolume10days": 15057360,
       "regularMarketChangePercent": -1.7820565,
-      "52WeekChange": 0.32915878
+      "52WeekChange": 0.30547237
     },
     "valuation": {
       "marketCap": 21576359608320,
       "enterpriseValue": 21300508622848,
       "trailingPE": 27.173296,
       "forwardPE": 26.918541,
-      "priceToBook": 3.4114516,
+      "priceToBook": 3.313764,
       "priceToSalesTrailing12Months": 2.0380473,
       "trailingEps": 176.46,
       "forwardEps": 178.13,
-      "bookValue": 1405.56,
+      "bookValue": 1446.995,
       "pegRatio": 0.13
     },
     "profitability": {
@@ -196,7 +196,7 @@
       "sharesOutstanding": 4499762162,
       "floatShares": 4355881716,
       "heldPercentInsiders": 0.01725,
-      "heldPercentInstitutions": 0.48979,
+      "heldPercentInstitutions": 0.48978,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1719446400,
       "beta": 0.486

@@ -1,8 +1,8 @@
 {
   "ticker": "BBCA.JK",
   "market": "ID",
-  "scraped_at": "2026-05-02 07:21:30.078650",
-  "updated_at": "2026-05-02T07:21:30.078659",
+  "scraped_at": "2026-05-03 20:41:11.951313",
+  "updated_at": "2026-05-03T20:41:11.951331",
   "info": {
     "identity": {
       "longName": "PT Bank Central Asia Tbk",
@@ -117,18 +117,18 @@
       "fiftyDayAverage": 6711.0,
       "twoHundredDayAverage": 7721.5,
       "volume": 303405400,
-      "averageVolume": 163553975,
+      "averageVolume": 159741824,
       "averageVolume10days": 195981710,
       "regularMarketChangePercent": -2.0920503,
       "52WeekChange": -0.3481894
     },
     "valuation": {
-      "marketCap": 719626199629824,
+      "marketCap": 718825993535488,
       "enterpriseValue": 609299092996096,
       "trailingPE": 12.531329,
       "forwardPE": 12.124855,
       "priceToBook": 2.7739725,
-      "priceToSalesTrailing12Months": 6.6246085,
+      "priceToSalesTrailing12Months": 6.617242,
       "trailingEps": 466.83,
       "forwardEps": 482.48,
       "bookValue": 2108.889,
@@ -167,10 +167,10 @@
       "targetMedianPrice": 9200.0
     },
     "ownership": {
-      "sharesOutstanding": 123013033200,
-      "floatShares": 48238754535,
+      "sharesOutstanding": 122876240600,
+      "floatShares": 48242440822,
       "heldPercentInsiders": 0.60814,
-      "heldPercentInstitutions": 0.18797001,
+      "heldPercentInstitutions": 0.18809,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1634083200,
       "beta": 0.112

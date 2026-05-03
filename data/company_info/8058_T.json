@@ -1,8 +1,8 @@
 {
   "ticker": "8058.T",
   "market": "JP",
-  "scraped_at": "2026-05-02 07:21:51.315747",
-  "updated_at": "2026-05-02T07:21:51.315754",
+  "scraped_at": "2026-05-03 20:41:34.335256",
+  "updated_at": "2026-05-03T20:41:34.335272",
   "info": {
     "identity": {
       "longName": "Mitsubishi Corporation",
@@ -14,7 +14,7 @@
       "currency": "JPY",
       "sector": "Industrials",
       "industry": "Conglomerates",
-      "fullTimeEmployees": 62062,
+      "fullTimeEmployees": null,
       "website": "https://www.mitsubishicorp.com",
       "longBusinessSummary": "Mitsubishi Corporation engages in the global environment and energy, material solutions, metal resources, social infrastructure, mobility, food industry, SLC, and power solutions businesses in Japan and internationally. The Global Environment and Energy segment engages in the development and production of natural gas and liquefied natural gas (LNG), LPG, and petroleum products; and development of energy businesses. The Material Solutions segment is involved in sales transactions; and business investment and business development in material-related fields, including petrochemicals, basic chemicals, functional materials, carbon/ceramics, and steel products. The Metal Resources segment engages in the investment and development of metal resources, such as copper, coking coal, iron ore, aluminum, lithium, and nickel; and supplies raw materials for steel and non-ferrous metals. The Social Infrastructure segment develops power generation, ships, aerospace, industrial machinery, energy infrastructure, and vinegar. The Mobility segment is involved in the automotive value chain business, including sales, sales financing, after-sales services for automobiles, and mobility service businesses; and mobility-related businesses. The Food industry segment sells food, fresh produce, consumer goods, and food ingredients. The S.L.C. segment is involved in C2B business. The Power Solutions segment engages in power generation, trading, and retail electricity, as well as power transmission and hydrogen energy development. The company was incorporated in 1950 and is headquartered in Tokyo, Japan.",
       "companyOfficers": [
@@ -118,49 +118,49 @@
       "bid": 5216.0,
       "ask": 5220.0,
       "fiftyTwoWeekHigh": 5787.0,
-      "fiftyTwoWeekLow": 2630.0,
-      "fiftyDayAverage": 5199.26,
-      "twoHundredDayAverage": 3995.66,
+      "fiftyTwoWeekLow": 2640.5,
+      "fiftyDayAverage": 5205.84,
+      "twoHundredDayAverage": 4007.3875,
       "volume": 46978900,
-      "averageVolume": 11642746,
-      "averageVolume10days": 10030220,
+      "averageVolume": 12293842,
+      "averageVolume10days": 13783750,
       "regularMarketChangePercent": 4.5891786,
-      "52WeekChange": 0.88979363
+      "52WeekChange": 0.9765196
     },
     "valuation": {
       "marketCap": 19140643389440,
-      "enterpriseValue": 25372752084992,
+      "enterpriseValue": 24568488001536,
       "trailingPE": 29.761633,
       "forwardPE": 24.613281,
       "priceToBook": 2.1246574,
-      "priceToSalesTrailing12Months": 1.0427814,
+      "priceToSalesTrailing12Months": 1.0118761,
       "trailingEps": 175.36,
       "forwardEps": 212.04,
       "bookValue": 2456.396,
       "pegRatio": 3.34
     },
     "profitability": {
-      "profitMargins": 0.039839998,
-      "operatingMargins": 0.04211,
-      "grossMargins": 0.085489996,
-      "returnOnEquity": 0.08528,
-      "returnOnAssets": 0.008909999,
-      "revenueGrowth": 0.099,
-      "earningsGrowth": 0.278,
-      "grossProfits": 1569200013312,
-      "totalRevenue": 18355375308800,
-      "netIncomeToCommon": 731225980928,
-      "operatingCashflow": 922891976704,
-      "totalCash": 1539021996032,
-      "totalDebt": 6814293819392
+      "profitMargins": 0.04232,
+      "operatingMargins": 0.01757,
+      "grossMargins": 0.0875,
+      "returnOnEquity": 0.08984999,
+      "returnOnAssets": 0.011460001,
+      "revenueGrowth": 0.12,
+      "earningsGrowth": 0.683,
+      "grossProfits": 1655074062336,
+      "totalRevenue": 18915994370048,
+      "netIncomeToCommon": 800459980800,
+      "operatingCashflow": 1490041044992,
+      "totalCash": 1858730983424,
+      "totalDebt": 6507851153408
     },
     "dividend": {
       "dividendRate": 110.0,
       "dividendYield": 2.11,
       "fiveYearAvgDividendYield": 3.18,
       "payoutRatio": 0.5994,
-      "exDividendDate": 1774828800,
-      "lastDividendValue": 55.0
+      "exDividendDate": 1790640000,
+      "lastDividendValue": 63.0
     },
     "analyst": {
       "recommendationKey": "buy",
@@ -173,12 +173,12 @@
     },
     "ownership": {
       "sharesOutstanding": 3667492292,
-      "floatShares": 3706006911,
+      "floatShares": 3661498671,
       "heldPercentInsiders": 0.12272,
-      "heldPercentInstitutions": 0.33714,
+      "heldPercentInstitutions": 0.33709,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1703721600,
-      "beta": 0.553
+      "beta": null
     }
   },
   "financials": {

@@ -1,8 +1,8 @@
 {
   "ticker": "JPM",
   "market": "US",
-  "scraped_at": "2026-05-02 07:21:28.939549",
-  "updated_at": "2026-05-02T07:21:28.939557",
+  "scraped_at": "2026-05-03 20:41:10.541525",
+  "updated_at": "2026-05-03T20:41:10.541540",
   "info": {
     "identity": {
       "longName": "JPMorgan Chase & Co.",
@@ -136,29 +136,29 @@
       "ask": 0.0,
       "fiftyTwoWeekHigh": 337.25,
       "fiftyTwoWeekLow": 248.83,
-      "fiftyDayAverage": 299.4454,
-      "twoHundredDayAverage": 304.7277,
+      "fiftyDayAverage": 299.5338,
+      "twoHundredDayAverage": 304.86096,
       "volume": 5293072,
-      "averageVolume": 10002493,
-      "averageVolume10days": 7888870,
+      "averageVolume": 9897744,
+      "averageVolume10days": 7394150,
       "regularMarketChangePercent": -0.242636,
-      "52WeekChange": 0.24046576
+      "52WeekChange": 0.23721099
     },
     "valuation": {
       "marketCap": 837263360000,
-      "enterpriseValue": 306973769728,
-      "trailingPE": 14.957875,
-      "forwardPE": 13.290585,
+      "enterpriseValue": 596170964992,
+      "trailingPE": 14.950718,
+      "forwardPE": 13.278351,
       "priceToBook": 2.4339461,
       "priceToSalesTrailing12Months": 4.8240848,
-      "trailingEps": 20.89,
-      "forwardEps": 23.51063,
+      "trailingEps": 20.9,
+      "forwardEps": 23.53229,
       "bookValue": 128.38,
       "pegRatio": 1.66
     },
     "profitability": {
       "profitMargins": 0.33936,
-      "operatingMargins": 0.43051997,
+      "operatingMargins": 0.43741,
       "grossMargins": 0.0,
       "returnOnEquity": 0.16465001,
       "returnOnAssets": 0.01272,
@@ -167,9 +167,9 @@
       "grossProfits": 173559005184,
       "totalRevenue": 173559005184,
       "netIncomeToCommon": 57512001536,
-      "operatingCashflow": null,
-      "totalCash": 1864180957184,
-      "totalDebt": 1311809994752
+      "operatingCashflow": -107704000512,
+      "totalCash": 1582246002688,
+      "totalDebt": 1321104965632
     },
     "dividend": {
       "dividendRate": 6.0,
@@ -190,9 +190,9 @@
     },
     "ownership": {
       "sharesOutstanding": 2679500000,
-      "floatShares": 2665271855,
+      "floatShares": 2665283212,
       "heldPercentInsiders": 0.0040700003,
-      "heldPercentInstitutions": 0.75736,
+      "heldPercentInstitutions": 0.75745004,
       "lastSplitFactor": "3:2",
       "lastSplitDate": 960768000,
       "beta": 1.043

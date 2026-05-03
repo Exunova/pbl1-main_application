@@ -1,8 +1,8 @@
 {
   "ticker": "9983.T",
   "market": "JP",
-  "scraped_at": "2026-05-02 07:21:48.080722",
-  "updated_at": "2026-05-02T07:21:48.080733",
+  "scraped_at": "2026-05-03 20:41:30.933274",
+  "updated_at": "2026-05-03T20:41:30.933324",
   "info": {
     "identity": {
       "longName": "Fast Retailing Co., Ltd.",
@@ -74,39 +74,39 @@
         },
         {
           "maxAge": 1,
-          "name": "Shimpei  Otani",
-          "title": "Group Executive Officer",
+          "name": "Takahiro  Tambara",
+          "title": "Group Executive Officer & CIO",
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
         {
           "maxAge": 1,
-          "name": "Tomoaki  Suenaga",
-          "title": "Group Executive Officer",
+          "name": "Daisuke  Watanabe",
+          "title": "Legal Department Manager",
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
         {
           "maxAge": 1,
-          "name": "Satoshi  Katayama",
-          "title": "Group Executive Officer",
+          "name": "Mr. Shuichi  Nakajima",
+          "title": "Group Senior Executive Officer",
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
         {
           "maxAge": 1,
-          "name": "Yoshihide  Shindo",
-          "title": "Group Executive Officer",
+          "name": "Mr. Yukihiro  Katsuta",
+          "title": "Group Senior Executive Officer",
           "fiscalYear": 2025,
           "exercisedValue": 0,
           "unexercisedValue": 0
         },
         {
           "maxAge": 1,
-          "name": "Tatsunori  Takahashi",
+          "name": "Mr. Takenari  Motoda",
           "title": "Group Executive Officer",
           "fiscalYear": 2025,
           "exercisedValue": 0,
@@ -124,13 +124,13 @@
       "ask": 72890.0,
       "fiftyTwoWeekHigh": 75700.0,
       "fiftyTwoWeekLow": 43270.0,
-      "fiftyDayAverage": 67280.2,
-      "twoHundredDayAverage": 56771.25,
+      "fiftyDayAverage": 67389.8,
+      "twoHundredDayAverage": 56899.9,
       "volume": 891200,
-      "averageVolume": 1148573,
-      "averageVolume10days": 1214470,
+      "averageVolume": 1140503,
+      "averageVolume10days": 1176360,
       "regularMarketChangePercent": -0.95121616,
-      "52WeekChange": 0.5334445
+      "52WeekChange": 0.5188581
     },
     "valuation": {
       "marketCap": 22365549363200,
@@ -142,7 +142,7 @@
       "trailingEps": 1559.85,
       "forwardEps": 1368.75,
       "bookValue": 8579.267,
-      "pegRatio": 3.0
+      "pegRatio": 2.64
     },
     "profitability": {
       "profitMargins": 0.1306,
@@ -180,7 +180,7 @@
       "sharesOutstanding": 306839741,
       "floatShares": 181557075,
       "heldPercentInsiders": 0.39248002,
-      "heldPercentInstitutions": 0.35493,
+      "heldPercentInstitutions": 0.35521,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1677456000,
       "beta": 0.371
