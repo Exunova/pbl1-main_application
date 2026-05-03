@@ -1,8 +1,8 @@
 {
   "ticker": "UNVR.JK",
   "market": "ID",
-  "scraped_at": "2026-05-03 20:41:21.254144",
-  "updated_at": "2026-05-03T20:41:21.254161",
+  "scraped_at": "2026-05-03 22:19:28.564807",
+  "updated_at": "2026-05-03T22:19:28.564830",
   "info": {
     "identity": {
       "longName": "PT Unilever Indonesia Tbk",
@@ -149,7 +149,7 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 2.35294,
+      "recommendationMean": 2.23529,
       "numberOfAnalystOpinions": 17,
       "targetHighPrice": 3400.0,
       "targetLowPrice": 1500.0,

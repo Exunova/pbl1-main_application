@@ -1,8 +1,8 @@
 {
   "ticker": "8035.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 20:41:33.237186",
-  "updated_at": "2026-05-03T20:41:33.237207",
+  "scraped_at": "2026-05-03 22:19:43.781523",
+  "updated_at": "2026-05-03T22:19:43.781539",
   "info": {
     "identity": {
       "longName": "Tokyo Electron Limited",
@@ -137,7 +137,7 @@
       "trailingEps": 1252.68,
       "forwardEps": 1280.2,
       "bookValue": 4374.402,
-      "pegRatio": 2.1
+      "pegRatio": 2.24
     },
     "profitability": {
       "profitMargins": 0.23509,
@@ -164,11 +164,11 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.77273,
+      "recommendationMean": 1.72727,
       "numberOfAnalystOpinions": 21,
       "targetHighPrice": 70000.0,
       "targetLowPrice": 26500.0,
-      "targetMeanPrice": 48580.953,
+      "targetMeanPrice": 49214.285,
       "targetMedianPrice": 48500.0
     },
     "ownership": {
