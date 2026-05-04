@@ -1,8 +1,8 @@
 {
   "ticker": "9983.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 22:19:40.763696",
-  "updated_at": "2026-05-03T22:19:40.763717",
+  "scraped_at": "2026-05-04 09:18:46.955646",
+  "updated_at": "2026-05-04T09:18:46.955687",
   "info": {
     "identity": {
       "longName": "Fast Retailing Co., Ltd.",
@@ -124,11 +124,11 @@
       "ask": 72890.0,
       "fiftyTwoWeekHigh": 75700.0,
       "fiftyTwoWeekLow": 43270.0,
-      "fiftyDayAverage": 67389.8,
-      "twoHundredDayAverage": 56899.9,
+      "fiftyDayAverage": 67502.8,
+      "twoHundredDayAverage": 57032.05,
       "volume": 891200,
-      "averageVolume": 1140503,
-      "averageVolume10days": 1176360,
+      "averageVolume": 1144913,
+      "averageVolume10days": 1189333,
       "regularMarketChangePercent": -0.95121616,
       "52WeekChange": 0.5188581
     },

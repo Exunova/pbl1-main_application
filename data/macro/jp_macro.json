@@ -2,71 +2,8 @@
   "country": "JP",
   "name": "Japan",
   "currency": "JPY",
-  "scraped_at": "2026-04-12 17:27:25.835565",
-  "event_count": 7,
-  "events": [
-    {
-      "name": "Household Spending (YoY) (Feb)",
-      "date": "04/07/2026",
-      "time": "06:30JP",
-      "impact": "high",
-      "actual": "-1.8%",
-      "forecast": "-0.8%",
-      "previous": "-1.0%"
-    },
-    {
-      "name": "Household Spending (MoM) (Feb)",
-      "date": "04/07/2026",
-      "time": "06:30JP",
-      "impact": "high",
-      "actual": "1.5%",
-      "forecast": "2.6%",
-      "previous": "-2.5%"
-    },
-    {
-      "name": "Foreign Reserves (USD) (Mar)",
-      "date": "04/07/2026",
-      "time": "06:50JP",
-      "impact": "high",
-      "actual": "1,374.7B",
-      "forecast": "",
-      "previous": "1,410.7B"
-    },
-    {
-      "name": "30-Year JGB Auction",
-      "date": "04/07/2026",
-      "time": "10:35JP",
-      "impact": "high",
-      "actual": "3.697%",
-      "forecast": "",
-      "previous": "3.398%"
-    },
-    {
-      "name": "Leading Index (MoM) (Feb)",
-      "date": "04/07/2026",
-      "time": "12:00JP",
-      "impact": "high",
-      "actual": "0.3%",
-      "forecast": "",
-      "previous": "1.7%"
-    },
-    {
-      "name": "Coincident Indicator (MoM) (Feb)",
-      "date": "04/07/2026",
-      "time": "12:00JP",
-      "impact": "high",
-      "actual": "-1.6%",
-      "forecast": "",
-      "previous": "3.4%"
-    },
-    {
-      "name": "Leading Index (Feb)",
-      "date": "04/07/2026",
-      "time": "12:00JP",
-      "impact": "high",
-      "actual": "112.4",
-      "forecast": "112.4",
-      "previous": "112.1"
-    }
-  ]
+  "scraped_at": "2026-05-04 09:17:27.734706",
+  "updated_at": "2026-05-04T09:17:27.734719",
+  "event_count": 0,
+  "events": []
 }

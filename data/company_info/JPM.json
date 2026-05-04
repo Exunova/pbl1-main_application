@@ -1,8 +1,8 @@
 {
   "ticker": "JPM",
   "market": "US",
-  "scraped_at": "2026-05-03 22:19:15.667654",
-  "updated_at": "2026-05-03T22:19:15.667667",
+  "scraped_at": "2026-05-04 09:16:54.363199",
+  "updated_at": "2026-05-04T09:16:54.363226",
   "info": {
     "identity": {
       "longName": "JPMorgan Chase & Co.",
@@ -132,14 +132,14 @@
       "open": 313.95,
       "dayHigh": 316.08,
       "dayLow": 311.83,
-      "bid": 0.0,
-      "ask": 0.0,
+      "bid": 311.5,
+      "ask": 311.78,
       "fiftyTwoWeekHigh": 337.25,
       "fiftyTwoWeekLow": 248.83,
       "fiftyDayAverage": 299.5338,
       "twoHundredDayAverage": 304.86096,
       "volume": 5293072,
-      "averageVolume": 9897744,
+      "averageVolume": 9898560,
       "averageVolume10days": 7394150,
       "regularMarketChangePercent": -0.242636,
       "52WeekChange": 0.23721099
@@ -185,8 +185,8 @@
       "numberOfAnalystOpinions": 22,
       "targetHighPrice": 391.0,
       "targetLowPrice": 288.0,
-      "targetMeanPrice": 340.45456,
-      "targetMedianPrice": 338.0
+      "targetMeanPrice": 341.22726,
+      "targetMedianPrice": 342.5
     },
     "ownership": {
       "sharesOutstanding": 2679500000,

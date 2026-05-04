@@ -1,8 +1,8 @@
 {
   "ticker": "GOOGL",
   "market": "US",
-  "scraped_at": "2026-05-03 22:19:06.187492",
-  "updated_at": "2026-05-03T22:19:06.187501",
+  "scraped_at": "2026-05-04 09:16:08.282595",
+  "updated_at": "2026-05-04T09:16:08.282626",
   "info": {
     "identity": {
       "longName": "Alphabet Inc.",
@@ -139,10 +139,10 @@
       "fiftyTwoWeekLow": 147.84,
       "fiftyDayAverage": 315.5118,
       "twoHundredDayAverage": 281.13284,
-      "volume": 29974345,
-      "averageVolume": 32889960,
+      "volume": 30105226,
+      "averageVolume": 32261153,
       "averageVolume10days": 30116990,
-      "regularMarketChangePercent": 0.231293,
+      "regularMarketChangePercent": 0.2312928,
       "52WeekChange": 1.3487608
     },
     "valuation": {
@@ -155,7 +155,7 @@
       "trailingEps": 13.11,
       "forwardEps": 14.25245,
       "bookValue": 34.353,
-      "pegRatio": 2.63
+      "pegRatio": 1.79
     },
     "profitability": {
       "profitMargins": 0.37919,
@@ -182,11 +182,11 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.35938,
+      "recommendationMean": 1.36508,
       "numberOfAnalystOpinions": 53,
-      "targetHighPrice": 470.0,
+      "targetHighPrice": 515.0,
       "targetLowPrice": 185.0,
-      "targetMeanPrice": 408.87207,
+      "targetMeanPrice": 413.77603,
       "targetMedianPrice": 420.0
     },
     "ownership": {

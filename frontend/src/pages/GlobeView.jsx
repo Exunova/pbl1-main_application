@@ -3,6 +3,7 @@ import Globe from 'globe.gl'
 import { ResponsiveContainer, LineChart, Line, Tooltip, YAxis, XAxis } from 'recharts'
 import EconomicCalendar from '../components/EconomicCalendar'
 import MacroNewsPanel from '../components/MacroNewsPanel'
+import { useScraping } from '../contexts/ScrapingContext'
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
@@ -121,33 +122,20 @@ export default function GlobeView() {
   const [panelLoading,   setPanelLoading]   = useState(false)
 
   const [tooltip, setTooltip] = useState({ visible: false, x: 0, y: 0, content: null })
-  const [scrapeStatus, setScrapeStatus] = useState({})
   const [ohlcvData, setOhlcvData] = useState([])
-  const [isScraping, setIsScraping] = useState(false)
+  const { isScraping, startScrape, pollStatus, scrapeStatus } = useScraping()
 
   const handleScrapeLatest = async () => {
     if (!window.api) return
-    setIsScraping(true)
+    startScrape()
     try {
       await window.api.scrapeLatest()
-      setTimeout(async () => {
-        const status = await window.api.scrapeStatus()
-        setScrapeStatus(status || {})
-      }, 1000)
+      setTimeout(() => pollStatus(), 1000)
     } catch (err) {
       console.error('Scrape error:', err)
-    } finally {
-      setTimeout(() => setIsScraping(false), 3000)
     }
   }
 
-  const pollScrapeStatus = async () => {
-    if (!window.api) return
-    try {
-      const status = await window.api.scrapeStatus()
-      setScrapeStatus(status || {})
-    } catch {}
-  }
 
   // ── Data fetching ──────────────────────────────────────────────────────────
 
@@ -171,7 +159,8 @@ export default function GlobeView() {
       const indices = await window.api.fetchIndices()
       setIndicesData(indices || [])
       return indices
-    } catch {
+    } catch (err) {
+      console.error('Fetch index data error:', err)
       setIndicesData([]); return []
     }
   }, [])
@@ -188,7 +177,8 @@ export default function GlobeView() {
       ])
       setCalendarEvents(macroData?.events  || [])
       setNewsArticles(newsData?.articles   || [])
-    } catch {
+    } catch (err) {
+      console.error('Load country data error:', err)
       setCalendarEvents([]); setNewsArticles([])
     } finally {
       setPanelLoading(false)
@@ -332,6 +322,7 @@ export default function GlobeView() {
         const lngSpread = maxLng - minLng
         const geoScale  = Math.max(0.1, Math.min(Math.sqrt(latSpread * lngSpread) * 0.08, 1.2))
 
+        /* ── Bubble generation (disabled) ──
         const newBubbles = []
         for (let b = 0; b < 3; b++) {
           let lat, lng, found = false, attempts = 0
@@ -351,6 +342,7 @@ export default function GlobeView() {
           })
         }
         setBubbles(newBubbles)
+        ── Bubble generation (disabled) ── */
 
         const feature = countries.find(f => f.properties.ISO_A3 === iso3)
         if (feature) {
@@ -492,7 +484,7 @@ export default function GlobeView() {
         if (selectedCountry && ISO2_TO_ISO3[selectedCountry] === iso3) return '#fb923c'
         return iso2 ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.05)'
       })
-      .pointsData(bubbles)
+      .pointsData([])
 
     const htmlData = selectedCountry && !isZooming && selectedPoint ? [{
       lat: selectedPoint.lat,

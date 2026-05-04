@@ -1,8 +1,8 @@
 {
   "ticker": "8058.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 22:19:45.355017",
-  "updated_at": "2026-05-03T22:19:45.355041",
+  "scraped_at": "2026-05-04 09:18:58.064857",
+  "updated_at": "2026-05-04T09:18:58.064887",
   "info": {
     "identity": {
       "longName": "Mitsubishi Corporation",
@@ -122,8 +122,8 @@
       "fiftyDayAverage": 5205.84,
       "twoHundredDayAverage": 4007.3875,
       "volume": 46978900,
-      "averageVolume": 12293842,
-      "averageVolume10days": 13783750,
+      "averageVolume": 12322570,
+      "averageVolume10days": 14346800,
       "regularMarketChangePercent": 4.5891786,
       "52WeekChange": 0.9765196
     },

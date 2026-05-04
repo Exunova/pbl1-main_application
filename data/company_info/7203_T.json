@@ -1,8 +1,8 @@
 {
   "ticker": "7203.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 22:19:31.298683",
-  "updated_at": "2026-05-03T22:19:31.298702",
+  "scraped_at": "2026-05-04 09:18:25.756916",
+  "updated_at": "2026-05-04T09:18:25.756945",
   "info": {
     "identity": {
       "longName": "Toyota Motor Corporation",
@@ -129,11 +129,11 @@
       "ask": 3001.0,
       "fiftyTwoWeekHigh": 4000.0,
       "fiftyTwoWeekLow": 2434.0,
-      "fiftyDayAverage": 3387.08,
-      "twoHundredDayAverage": 3175.4675,
+      "fiftyDayAverage": 3374.72,
+      "twoHundredDayAverage": 3178.66,
       "volume": 21904100,
-      "averageVolume": 23103044,
-      "averageVolume10days": 20986210,
+      "averageVolume": 23009632,
+      "averageVolume10days": 21734511,
       "regularMarketChangePercent": -0.7608336,
       "52WeekChange": 0.07913673
     },
@@ -174,7 +174,7 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.76471,
+      "recommendationMean": 1.83333,
       "numberOfAnalystOpinions": 18,
       "targetHighPrice": 4500.0,
       "targetLowPrice": 3200.0,

@@ -1,8 +1,8 @@
 {
   "ticker": "AAPL",
   "market": "US",
-  "scraped_at": "2026-05-03 22:19:04.826605",
-  "updated_at": "2026-05-03T22:19:04.826612",
+  "scraped_at": "2026-05-04 09:16:05.335610",
+  "updated_at": "2026-05-04T09:16:05.335637",
   "info": {
     "identity": {
       "longName": "Apple Inc.",
@@ -120,8 +120,8 @@
       ]
     },
     "price": {
-      "currentPrice": 280.14,
-      "previousClose": 271.35,
+      "currentPrice": 280.25,
+      "previousClose": 271.24002,
       "open": 278.94,
       "dayHigh": 287.21,
       "dayLow": 278.37,
@@ -131,23 +131,23 @@
       "fiftyTwoWeekLow": 193.25,
       "fiftyDayAverage": 261.2186,
       "twoHundredDayAverage": 255.1833,
-      "volume": 76013740,
-      "averageVolume": 44885765,
+      "volume": 79915442,
+      "averageVolume": 44124766,
       "averageVolume10days": 48483230,
-      "regularMarketChangePercent": 3.23936,
+      "regularMarketChangePercent": 3.3217735,
       "52WeekChange": 0.40851724
     },
     "valuation": {
-      "marketCap": 4109006274560,
+      "marketCap": 4110619508736,
       "enterpriseValue": 4130719924224,
-      "trailingPE": 33.915257,
-      "forwardPE": 29.292562,
-      "priceToBook": 46.70557,
-      "priceToSalesTrailing12Months": 9.101958,
+      "trailingPE": 33.92857,
+      "forwardPE": 29.304062,
+      "priceToBook": 46.723907,
+      "priceToSalesTrailing12Months": 9.105532,
       "trailingEps": 8.26,
       "forwardEps": 9.56352,
       "bookValue": 5.998,
-      "pegRatio": 2.44
+      "pegRatio": 2.52
     },
     "profitability": {
       "profitMargins": 0.27152002,
@@ -174,12 +174,12 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.875,
-      "numberOfAnalystOpinions": 42,
+      "recommendationMean": 1.89796,
+      "numberOfAnalystOpinions": 43,
       "targetHighPrice": 355.0,
       "targetLowPrice": 215.0,
-      "targetMeanPrice": 301.35953,
-      "targetMedianPrice": 302.5
+      "targetMeanPrice": 300.6535,
+      "targetMedianPrice": 310.0
     },
     "ownership": {
       "sharesOutstanding": 14667688000,

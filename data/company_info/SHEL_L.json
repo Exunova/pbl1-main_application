@@ -1,8 +1,8 @@
 {
   "ticker": "SHEL.L",
   "market": "GB",
-  "scraped_at": "2026-05-03 22:19:49.783599",
-  "updated_at": "2026-05-03T22:19:49.783621",
+  "scraped_at": "2026-05-04 09:19:04.027520",
+  "updated_at": "2026-05-04T09:19:04.027577",
   "info": {
     "identity": {
       "longName": "Shell plc",
@@ -129,7 +129,7 @@
       "fiftyDayAverage": 3321.56,
       "twoHundredDayAverage": 2883.1575,
       "volume": 3646777,
-      "averageVolume": 13794595,
+      "averageVolume": 13918004,
       "averageVolume10days": 10438923,
       "regularMarketChangePercent": -1.0823812,
       "52WeekChange": 0.32314503
@@ -138,11 +138,11 @@
       "marketCap": 183478616064,
       "enterpriseValue": 232661090304,
       "trailingPE": 14.81982,
-      "forwardPE": 9.442906,
+      "forwardPE": 9.426244,
       "priceToBook": 1.4287306,
       "priceToSalesTrailing12Months": 0.6874793,
       "trailingEps": 2.22,
-      "forwardEps": 3.4840968,
+      "forwardEps": 3.4902556,
       "bookValue": 23.027433,
       "pegRatio": 1.32
     },
@@ -173,10 +173,10 @@
       "recommendationKey": "buy",
       "recommendationMean": 2.33333,
       "numberOfAnalystOpinions": 16,
-      "targetHighPrice": 4391.9775,
-      "targetLowPrice": 2697.5027,
-      "targetMeanPrice": 3709.986,
-      "targetMedianPrice": 3774.41
+      "targetHighPrice": 4387.8633,
+      "targetLowPrice": 2694.9758,
+      "targetMeanPrice": 3706.5107,
+      "targetMedianPrice": 3770.8743
     },
     "ownership": {
       "sharesOutstanding": 5576857812,

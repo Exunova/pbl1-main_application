@@ -1,8 +1,8 @@
 {
   "ticker": "AZN.L",
   "market": "GB",
-  "scraped_at": "2026-05-03 22:19:46.948517",
-  "updated_at": "2026-05-03T22:19:46.948538",
+  "scraped_at": "2026-05-04 09:19:00.678336",
+  "updated_at": "2026-05-04T09:19:00.678358",
   "info": {
     "identity": {
       "longName": "AstraZeneca PLC",
@@ -125,7 +125,7 @@
       "fiftyDayAverage": 14626.96,
       "twoHundredDayAverage": 13327.88,
       "volume": 1403694,
-      "averageVolume": 2684794,
+      "averageVolume": 2695080,
       "averageVolume10days": 2005799,
       "regularMarketChangePercent": -3.1258962,
       "52WeekChange": 0.2564627
@@ -134,13 +134,13 @@
       "marketCap": 209548607488,
       "enterpriseValue": 235705876480,
       "trailingPE": 27.575508,
-      "forwardPE": 15.745735,
+      "forwardPE": 15.782496,
       "priceToBook": 5.9641705,
       "priceToSalesTrailing12Months": 3.4671092,
       "trailingEps": 4.9,
-      "forwardEps": 8.581371,
+      "forwardEps": 8.561383,
       "bookValue": 22.655289,
-      "pegRatio": 1.57
+      "pegRatio": 1.52
     },
     "profitability": {
       "profitMargins": 0.17188999,
@@ -169,10 +169,10 @@
       "recommendationKey": "buy",
       "recommendationMean": 1.58333,
       "numberOfAnalystOpinions": 21,
-      "targetHighPrice": 18605.05,
-      "targetLowPrice": 11140.589,
-      "targetMeanPrice": 16261.582,
-      "targetMedianPrice": 16529.488
+      "targetHighPrice": 18587.623,
+      "targetLowPrice": 11130.153,
+      "targetMeanPrice": 16251.665,
+      "targetMedianPrice": 16514.004
     },
     "ownership": {
       "sharesOutstanding": 1550833276,

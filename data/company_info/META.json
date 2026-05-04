@@ -1,8 +1,8 @@
 {
   "ticker": "META",
   "market": "US",
-  "scraped_at": "2026-05-03 22:19:10.289511",
-  "updated_at": "2026-05-03T22:19:10.289523",
+  "scraped_at": "2026-05-04 09:16:38.320955",
+  "updated_at": "2026-05-04T09:16:38.320981",
   "info": {
     "identity": {
       "longName": "Meta Platforms, Inc.",
@@ -137,10 +137,10 @@
       "fiftyTwoWeekLow": 520.26,
       "fiftyDayAverage": 630.3146,
       "twoHundredDayAverage": 678.2809,
-      "volume": 21105378,
-      "averageVolume": 15412944,
+      "volume": 21404028,
+      "averageVolume": 15388446,
       "averageVolume10days": 17190690,
-      "regularMarketChangePercent": -0.517229,
+      "regularMarketChangePercent": -0.5172294,
       "52WeekChange": 0.015819192
     },
     "valuation": {
@@ -153,7 +153,7 @@
       "trailingEps": 27.52,
       "forwardEps": 36.178,
       "bookValue": 85.867,
-      "pegRatio": 1.0
+      "pegRatio": 0.93
     },
     "profitability": {
       "profitMargins": 0.32837,
@@ -184,7 +184,7 @@
       "numberOfAnalystOpinions": 59,
       "targetHighPrice": 1015.0,
       "targetLowPrice": 614.0,
-      "targetMeanPrice": 838.62305,
+      "targetMeanPrice": 832.798,
       "targetMedianPrice": 830.0
     },
     "ownership": {

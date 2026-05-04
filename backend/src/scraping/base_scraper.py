@@ -7,6 +7,7 @@ from datetime import datetime
 from typing import Any, Dict, List, Optional
 
 from backend.src.db.cache_database import CacheDatabase
+from backend.src.scraping.logging_util import log_scraping_error
 
 
 class BaseScraper(ABC):
@@ -37,7 +38,11 @@ class BaseScraper(ABC):
         Returns:
             dict with at least 'success' bool and 'data' key
         """
-        pass
+        try:
+            pass
+        except Exception as e:
+            log_scraping_error(self.scraper_key(), str(e), e)
+            raise
 
     def is_cache_fresh(self, key: str) -> tuple[bool, Optional[dict]]:
         """
@@ -69,7 +74,7 @@ class BaseScraper(ABC):
         if not ts_str:
             return None
         try:
-            return datetime.fromisoformat(ts_str.replace('Z', '+00:00'))
+            return datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
         except Exception:
             pass
         try:
@@ -77,7 +82,7 @@ class BaseScraper(ABC):
         except Exception:
             pass
         try:
-            return datetime.strptime(ts_str.split('.')[0], '%Y-%m-%d %H:%M:%S')
+            return datetime.strptime(ts_str.split(".")[0], "%Y-%m-%d %H:%M:%S")
         except Exception:
             return None
 

@@ -1,8 +1,8 @@
 {
   "ticker": "LLY",
   "market": "US",
-  "scraped_at": "2026-05-03 22:19:14.292106",
-  "updated_at": "2026-05-03T22:19:14.292117",
+  "scraped_at": "2026-05-04 09:16:46.724307",
+  "updated_at": "2026-05-04T09:16:46.724333",
   "info": {
     "identity": {
       "longName": "Eli Lilly and Company",
@@ -128,14 +128,14 @@
       "open": 948.95,
       "dayHigh": 984.45,
       "dayLow": 943.8,
-      "bid": 0.0,
-      "ask": 0.0,
+      "bid": 961.0,
+      "ask": 962.0,
       "fiftyTwoWeekHigh": 1133.95,
       "fiftyTwoWeekLow": 623.78,
       "fiftyDayAverage": 947.6562,
       "twoHundredDayAverage": 911.339,
       "volume": 3650213,
-      "averageVolume": 3244050,
+      "averageVolume": 3179461,
       "averageVolume10days": 3697860,
       "regularMarketChangePercent": 3.07405,
       "52WeekChange": 0.1727047
@@ -150,7 +150,7 @@
       "trailingEps": 28.13,
       "forwardEps": 43.66999,
       "bookValue": 29.655,
-      "pegRatio": 1.38
+      "pegRatio": 1.42
     },
     "profitability": {
       "profitMargins": 0.34986,

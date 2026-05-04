@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import logo from './logo.ico'
 import { Globe, LayoutGrid, BarChart3, PieChart, User, Minus, Square, X, RefreshCcw } from 'lucide-react'
 import GlobeView from './pages/GlobeView'
+import { ScrapingProvider, useScraping } from './contexts/ScrapingContext'
 import ScreenerView from './pages/ScreenerView'
 import CompareView from './pages/CompareView'
 import PortfolioView from './pages/PortfolioView'
@@ -12,19 +13,7 @@ const THEMES = ['dark', 'light', 'auto']
 
 const Titlebar = ({ theme, onThemeToggle }) => {
   const location = useLocation()
-  const [isScraping, setIsScraping] = useState(false)
-
-  const handleScrapeLatest = async () => {
-    if (!window.api) return
-    setIsScraping(true)
-    try {
-      await window.api.scrapeLatest()
-    } catch (err) {
-      console.error('Scrape error:', err)
-    } finally {
-      setTimeout(() => setIsScraping(false), 3000)
-    }
-  }
+  const { isScraping, errorCount, startScrape } = useScraping()
 
   const tabs = [
     { name: 'Globe', path: '/', icon: Globe },
@@ -66,7 +55,7 @@ const Titlebar = ({ theme, onThemeToggle }) => {
           <div className="w-px h-4 bg-border mx-3"></div>
 
           <button
-            onClick={handleScrapeLatest}
+            onClick={startScrape}
             disabled={isScraping}
             className={`flex items-center gap-1.5 px-2 h-7 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all ${
               isScraping
@@ -77,6 +66,12 @@ const Titlebar = ({ theme, onThemeToggle }) => {
             <RefreshCcw size={12} className={isScraping ? 'animate-spin' : ''} />
             {isScraping ? 'Scraping...' : 'Scrape Latest'}
           </button>
+          <div className="relative group flex items-center ml-2">
+            <span className={`w-2 h-2 rounded-full ${isScraping ? 'bg-yellow-400' : 'bg-green-500'}`}></span>
+            <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1 px-2 py-1 bg-black/90 border border-border text-[10px] text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+              {errorCount || 0} errors
+            </span>
+          </div>
         </nav>
       </div>
 
@@ -123,18 +118,20 @@ export default function App() {
   }
 
   return (
-    <div className={`flex flex-col h-screen w-screen bg-background overflow-hidden relative text-text selection:bg-text/20 selection:text-text ${theme}`}>
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-[0.03] pointer-events-none mix-blend-overlay"></div>
-      <Titlebar theme={theme} onThemeToggle={nextTheme} />
-      <main className="flex-1 overflow-hidden relative z-10">
-        <Routes>
-          <Route path="/" element={<GlobeView />} />
-          <Route path="/screener" element={<ScreenerView />} />
-          <Route path="/compare" element={<CompareView />} />
-          <Route path="/portfolio" element={<PortfolioView />} />
-          <Route path="/profile" element={<ProfileView theme={theme} onThemeToggle={nextTheme} />} />
-        </Routes>
-      </main>
-    </div>
+    <ScrapingProvider>
+      <div className={`flex flex-col h-screen w-screen bg-background overflow-hidden relative text-text selection:bg-text/20 selection:text-text ${theme}`}>
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-[0.03] pointer-events-none mix-blend-overlay"></div>
+        <Titlebar theme={theme} onThemeToggle={nextTheme} />
+        <main className="flex-1 overflow-hidden relative z-10">
+          <Routes>
+            <Route path="/" element={<GlobeView />} />
+            <Route path="/screener" element={<ScreenerView />} />
+            <Route path="/compare" element={<CompareView />} />
+            <Route path="/portfolio" element={<PortfolioView />} />
+            <Route path="/profile" element={<ProfileView theme={theme} onThemeToggle={nextTheme} />} />
+          </Routes>
+        </main>
+      </div>
+    </ScrapingProvider>
   )
 }

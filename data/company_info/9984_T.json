@@ -1,8 +1,8 @@
 {
   "ticker": "9984.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 22:19:36.011716",
-  "updated_at": "2026-05-03T22:19:36.011738",
+  "scraped_at": "2026-05-04 09:18:38.432673",
+  "updated_at": "2026-05-04T09:18:38.432714",
   "info": {
     "identity": {
       "longName": "SoftBank Group Corp.",
@@ -124,11 +124,11 @@
       "ask": 5424.0,
       "fiftyTwoWeekHigh": 6923.75,
       "fiftyTwoWeekLow": 1797.75,
-      "fiftyDayAverage": 4162.04,
-      "twoHundredDayAverage": 4386.9863,
+      "fiftyDayAverage": 4180.88,
+      "twoHundredDayAverage": 4399.2886,
       "volume": 72065400,
-      "averageVolume": 57633169,
-      "averageVolume10days": 95341500,
+      "averageVolume": 57918643,
+      "averageVolume10days": 100615377,
       "regularMarketChangePercent": 3.9279554,
       "52WeekChange": 1.9299123
     },
@@ -142,7 +142,7 @@
       "trailingEps": 534.81,
       "forwardEps": 295.29,
       "bookValue": 2710.314,
-      "pegRatio": null
+      "pegRatio": 1170.13
     },
     "profitability": {
       "profitMargins": 0.48167,

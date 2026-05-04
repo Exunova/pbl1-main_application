@@ -1,8 +1,8 @@
 {
   "ticker": "6501.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 22:19:37.530859",
-  "updated_at": "2026-05-03T22:19:37.530880",
+  "scraped_at": "2026-05-04 09:18:40.566999",
+  "updated_at": "2026-05-04T09:18:40.567024",
   "info": {
     "identity": {
       "longName": "Hitachi, Ltd.",
@@ -140,11 +140,11 @@
       "ask": 4795.0,
       "fiftyTwoWeekHigh": 6039.0,
       "fiftyTwoWeekLow": 3673.0,
-      "fiftyDayAverage": 4907.64,
-      "twoHundredDayAverage": 4719.855,
+      "fiftyDayAverage": 4910.34,
+      "twoHundredDayAverage": 4724.515,
       "volume": 11393000,
-      "averageVolume": 16153462,
-      "averageVolume10days": 15057360,
+      "averageVolume": 15934496,
+      "averageVolume10days": 15570688,
       "regularMarketChangePercent": -1.7820565,
       "52WeekChange": 0.30547237
     },

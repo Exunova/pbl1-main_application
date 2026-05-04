@@ -1,9 +1,9 @@
 {
-  "scraped_at": "2026-04-12 17:27:25.833544",
+  "scraped_at": "2026-05-04 09:17:27.711107",
   "countries": {
     "US": {
       "name": "United States",
-      "event_count": 12
+      "event_count": 0
     },
     "ID": {
       "name": "Indonesia",
@@ -11,11 +11,15 @@
     },
     "JP": {
       "name": "Japan",
-      "event_count": 7
+      "event_count": 0
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "event_count": 0
     },
     "DE": {
       "name": "Germany",
-      "event_count": 2
+      "event_count": 0
     }
   }
 }

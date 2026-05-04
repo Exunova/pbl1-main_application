@@ -1,8 +1,8 @@
 {
   "ticker": "KLBF.JK",
   "market": "ID",
-  "scraped_at": "2026-05-03 22:19:29.924409",
-  "updated_at": "2026-05-03T22:19:29.924428",
+  "scraped_at": "2026-05-04 09:17:56.972754",
+  "updated_at": "2026-05-04T09:17:56.972784",
   "info": {
     "identity": {
       "longName": "PT Kalbe Farma Tbk.",
@@ -58,20 +58,20 @@
     },
     "price": {
       "currentPrice": 865.0,
-      "previousClose": 875.0,
-      "open": 880.0,
-      "dayHigh": 890.0,
-      "dayLow": 860.0,
-      "bid": 865.0,
-      "ask": 870.0,
+      "previousClose": 865.0,
+      "open": 875.0,
+      "dayHigh": 880.0,
+      "dayLow": 855.0,
+      "bid": 860.0,
+      "ask": 865.0,
       "fiftyTwoWeekHigh": 1600.0,
-      "fiftyTwoWeekLow": 860.0,
+      "fiftyTwoWeekLow": 855.0,
       "fiftyDayAverage": 984.3,
       "twoHundredDayAverage": 1166.825,
-      "volume": 55352100,
-      "averageVolume": 46750277,
+      "volume": 5358100,
+      "averageVolume": 46781439,
       "averageVolume10days": 57476730,
-      "regularMarketChangePercent": -1.1428571,
+      "regularMarketChangePercent": 0.0,
       "52WeekChange": -0.37769783
     },
     "valuation": {

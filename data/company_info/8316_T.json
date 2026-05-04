@@ -1,8 +1,8 @@
 {
   "ticker": "8316.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 22:19:39.066889",
-  "updated_at": "2026-05-03T22:19:39.066908",
+  "scraped_at": "2026-05-04 09:18:43.386064",
+  "updated_at": "2026-05-04T09:18:43.386106",
   "info": {
     "identity": {
       "longName": "Sumitomo Mitsui Financial Group, Inc.",
@@ -139,8 +139,8 @@
       "fiftyDayAverage": 5450.0,
       "twoHundredDayAverage": 4749.085,
       "volume": 8711900,
-      "averageVolume": 13912071,
-      "averageVolume10days": 10722340,
+      "averageVolume": 13887232,
+      "averageVolume10days": 10648033,
       "regularMarketChangePercent": 0.5261248,
       "52WeekChange": 0.6882998
     },

@@ -1,8 +1,8 @@
 {
   "ticker": "GSK.L",
   "market": "GB",
-  "scraped_at": "2026-05-03 22:19:52.579446",
-  "updated_at": "2026-05-03T22:19:52.579468",
+  "scraped_at": "2026-05-04 09:19:16.856936",
+  "updated_at": "2026-05-04T09:19:16.856974",
   "info": {
     "identity": {
       "longName": "GSK plc",
@@ -130,7 +130,7 @@
       "fiftyDayAverage": 2078.33,
       "twoHundredDayAverage": 1801.83,
       "volume": 4930806,
-      "averageVolume": 9531408,
+      "averageVolume": 9410436,
       "averageVolume10days": 8342113,
       "regularMarketChangePercent": -1.4259788,
       "52WeekChange": 0.31239212

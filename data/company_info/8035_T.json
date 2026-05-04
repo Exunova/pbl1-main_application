@@ -1,8 +1,8 @@
 {
   "ticker": "8035.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 22:19:43.781523",
-  "updated_at": "2026-05-03T22:19:43.781539",
+  "scraped_at": "2026-05-04 09:18:55.569318",
+  "updated_at": "2026-05-04T09:18:55.569354",
   "info": {
     "identity": {
       "longName": "Tokyo Electron Limited",
@@ -119,11 +119,11 @@
       "ask": 47480.0,
       "fiftyTwoWeekHigh": 48190.0,
       "fiftyTwoWeekLow": 19870.0,
-      "fiftyDayAverage": 42053.0,
-      "twoHundredDayAverage": 33500.85,
+      "fiftyDayAverage": 42088.2,
+      "twoHundredDayAverage": 33592.8,
       "volume": 5915900,
-      "averageVolume": 3302593,
-      "averageVolume10days": 3239620,
+      "averageVolume": 3317606,
+      "averageVolume10days": 3269044,
       "regularMarketChangePercent": 6.893445,
       "52WeekChange": 1.24456
     },

@@ -1,8 +1,8 @@
 {
   "ticker": "6857.T",
   "market": "JP",
-  "scraped_at": "2026-05-03 22:19:42.314938",
-  "updated_at": "2026-05-03T22:19:42.314957",
+  "scraped_at": "2026-05-04 09:18:50.211124",
+  "updated_at": "2026-05-04T09:18:50.211154",
   "info": {
     "identity": {
       "longName": "Advantest Corporation",
@@ -127,11 +127,11 @@
       "ask": 27825.0,
       "fiftyTwoWeekHigh": 32400.0,
       "fiftyTwoWeekLow": 6240.0,
-      "fiftyDayAverage": 25292.5,
-      "twoHundredDayAverage": 19451.25,
+      "fiftyDayAverage": 25348.3,
+      "twoHundredDayAverage": 19543.775,
       "volume": 7144100,
-      "averageVolume": 10238110,
-      "averageVolume10days": 11794270,
+      "averageVolume": 10254839,
+      "averageVolume10days": 11995266,
       "regularMarketChangePercent": -1.5746639,
       "52WeekChange": 3.3893008
     },
@@ -145,7 +145,7 @@
       "trailingEps": 514.58,
       "forwardEps": 237.73,
       "bookValue": 928.51,
-      "pegRatio": 1.3
+      "pegRatio": 1.28
     },
     "profitability": {
       "profitMargins": 0.33258,
@@ -172,12 +172,12 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.85714,
+      "recommendationMean": 1.80952,
       "numberOfAnalystOpinions": 20,
       "targetHighPrice": 39200.0,
       "targetLowPrice": 23000.0,
-      "targetMeanPrice": 31865.0,
-      "targetMedianPrice": 30850.0
+      "targetMeanPrice": 32365.0,
+      "targetMedianPrice": 34000.0
     },
     "ownership": {
       "sharesOutstanding": 725515776,

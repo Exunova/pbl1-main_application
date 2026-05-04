@@ -1,8 +1,8 @@
 {
   "ticker": "LLOY.L",
   "market": "GB",
-  "scraped_at": "2026-05-03 22:19:56.765693",
-  "updated_at": "2026-05-03T22:19:56.765705",
+  "scraped_at": "2026-05-04 09:19:24.856944",
+  "updated_at": "2026-05-04T09:19:24.856990",
   "info": {
     "identity": {
       "longName": "Lloyds Banking Group plc",
@@ -125,7 +125,7 @@
       "fiftyDayAverage": 98.0792,
       "twoHundredDayAverage": 92.68585,
       "volume": 392552203,
-      "averageVolume": 234040146,
+      "averageVolume": 235186457,
       "averageVolume10days": 222990296,
       "regularMarketChangePercent": -1.4545135,
       "52WeekChange": 0.39189577

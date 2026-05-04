@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-03 22:38:04.216256",
+  "scraped_at": "2026-05-04 09:16:01.971379",
   "markets": {
     "US": {
       "index": "^GSPC",
@@ -12,7 +12,7 @@
         },
         "AAPL": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "GOOGL": {
           "ohlcv_15m_count": 1040,
@@ -40,7 +40,7 @@
         },
         "LLY": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "JPM": {
           "ohlcv_15m_count": 1040,

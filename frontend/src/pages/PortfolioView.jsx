@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Treemap } from 'recharts'
 import { Plus, Edit2, Trash2, Layers, Activity, Newspaper } from 'lucide-react'
 
@@ -7,7 +7,7 @@ function formatChange(n) {
   return (n >= 0 ? '+' : '') + n.toFixed(2)
 }
 
-function CustomTreemapContent(props) {
+const CustomTreemapContent = React.memo(function CustomTreemapContent(props) {
   const { x, y, width, height, name } = props
   const parts = (name || ':0').split(':')
   const ticker = parts[0]
@@ -35,7 +35,7 @@ function CustomTreemapContent(props) {
       )}
     </g>
   )
-}
+})
 
 export default function PortfolioView() {
   const [positions, setPositions] = useState([])
@@ -46,18 +46,30 @@ export default function PortfolioView() {
   const [editingId, setEditingId] = useState(null)
   const [availableTickers, setAvailableTickers] = useState([])
   const [showTickerDropdown, setShowTickerDropdown] = useState(false)
+  const [isInitialLoad, setIsInitialLoad] = useState(true)
+  const [sharesError, setSharesError] = useState(false)
 
   useEffect(() => {
     if (!window.api) return
-    window.api.getPositions().then(r => setPositions(r?.positions || [])).catch(() => {})
-    window.api.fetchPnL().then(setPnlData).catch(() => {})
-    window.api.getScrapedTickers().then(data => {
-        if(data) setAvailableTickers(data)
-    }).catch(() => {})
+    Promise.all([
+      window.api.getPositions().catch(() => []),
+      window.api.fetchPnL().catch(() => null),
+      window.api.getScrapedTickers().catch(() => [])
+    ]).then(([positionsResult, pnlResult, tickersResult]) => {
+      setPositions(positionsResult?.positions || [])
+      setPnlData(pnlResult)
+      if (tickersResult) setAvailableTickers(tickersResult)
+      setIsInitialLoad(false)
+    })
   }, [])
 
   const handleSave = async () => {
     if (!form.ticker || !form.shares || !form.buyPrice) return;
+    const sharesNum = parseFloat(form.shares)
+    if (isNaN(sharesNum) || sharesNum <= 0 || !Number.isInteger(sharesNum)) {
+      setSharesError(true)
+      return
+    }
     if (parseFloat(form.buyPrice) <= 0) {
       alert("Buy Price must be greater than 0!");
       return;
@@ -95,15 +107,15 @@ export default function PortfolioView() {
     setShowAdd(true);
   };
 
-  const pieData = positions.map(p => {
+  const pieData = useMemo(() => positions.map(p => {
     const cur = pnlData?.positions?.find(x => x.ticker === p.ticker);
     const shares = parseFloat(p.shares) || 0;
     const buyPrice = parseFloat(p.buyPrice) || 0;
     const curPriceIDR = cur?.currentPriceIDR || (buyPrice * 15650.0);
     return { name: p.ticker, value: curPriceIDR * shares };
-  }).filter(d => d.value > 0);
+  }).filter(d => d.value > 0), [positions, pnlData]);
 
-  const treeData = positions.map(p => {
+  const treeData = useMemo(() => positions.map(p => {
     const cur = pnlData?.positions?.find(x => x.ticker === p.ticker);
     const pnlPct = (cur?.buyPriceIDR && cur?.shares ? ((cur.stockReturn) / (cur.buyPriceIDR * cur.shares)) * 100 : 0);
     const valuationIDR = cur?.currentPriceIDR ? (cur.currentPriceIDR * p.shares) : (parseFloat(p.buyPrice) * 15650.0 * p.shares);
@@ -111,9 +123,18 @@ export default function PortfolioView() {
       name: p.ticker + ':' + formatChange(pnlPct),
       size: Math.max(valuationIDR, 1)
     }
-  });
+  }), [positions, pnlData]);
 
   const COLORS = ['#ffffff', '#d4d4d4', '#a1a1aa', '#71717a', '#52525b', '#3f3f46', '#27272a'];
+
+  // Guard: Don't render until initial data is loaded
+  if (isInitialLoad) {
+    return (
+      <div className="h-full w-full flex items-center justify-center bg-background">
+        <div className="text-muted text-xs uppercase tracking-widest">Loading portfolio data...</div>
+      </div>
+    )
+  }
 
   return (
   <div className="h-full w-full overflow-y-auto p-6 space-y-6 pb-12 custom-scrollbar relative bg-background">
@@ -290,7 +311,13 @@ export default function PortfolioView() {
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">SHARES (Lot)</label>
-                <input value={form.shares} onChange={e => setForm(f => ({ ...f, shares: e.target.value }))} type="number" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
+                <input value={form.shares} onChange={e => {
+                  const val = e.target.value
+                  const num = parseFloat(val)
+                  const isInvalid = val !== '' && (isNaN(num) || num <= 0 || !Number.isInteger(num))
+                  setSharesError(isInvalid)
+                  setForm(f => ({ ...f, shares: val }))
+                }} min="1" type="number" className={`w-full bg-[#111] border px-3 py-2 text-xs text-white outline-none focus:border-white number-font ${sharesError ? 'border-red-500' : 'border-border'}`} />
               </div>
               <div>
                 <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Buy Price</label>
@@ -311,7 +338,7 @@ export default function PortfolioView() {
             </div>
             <div className="flex gap-3 pt-4 border-t border-border/50">
               <button onClick={() => { setShowAdd(false); setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }) }} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Cancel</button>
-              <button onClick={handleSave} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors">{editingId ? "Update" : "Save"}</button>
+              <button onClick={handleSave} disabled={!form.shares || sharesError} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">{editingId ? "Update" : "Save"}</button>
             </div>
           </div>
         </div>
