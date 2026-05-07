@@ -49,6 +49,7 @@ export default function PortfolioView() {
   const [isInitialLoad, setIsInitialLoad] = useState(true)
   const [sharesError, setSharesError] = useState(false)
   const [errorMessage, setErrorMessage] = useState('')
+  const [deleteTarget, setDeleteTarget] = useState(null)
 
   useEffect(() => {
     if (!window.api) return
@@ -115,10 +116,12 @@ export default function PortfolioView() {
     window.api.fetchPnL().then(setPnlData).catch(() => {})
   };
 
-  const handleDelete = async (id) => {
-    await window.api.deletePosition(id)
+  const handleDelete = async () => {
+    if (!deleteTarget) return
+    await window.api.deletePosition(deleteTarget.id)
     const updated = await window.api.getPositions()
     setPositions(updated?.positions || [])
+    setDeleteTarget(null)
     window.api.fetchPnL().then(setPnlData).catch(() => {})
   }
 
@@ -282,7 +285,7 @@ export default function PortfolioView() {
                   <td className="px-4 py-3 text-right">
                     <div className="flex justify-end gap-3">
                       <button onClick={() => handleEditClick(p)} className="text-muted hover:text-white" title="Edit"><Edit2 size={12} /></button>
-                      <button onClick={() => handleDelete(p.id)} className="text-muted hover:text-danger" title="Delete"><Trash2 size={12} /></button>
+                      <button onClick={() => setDeleteTarget(p)} className="text-muted hover:text-danger" title="Delete"><Trash2 size={12} /></button>
                     </div>
                   </td>
                 </tr>
@@ -376,6 +379,20 @@ export default function PortfolioView() {
               </div>
             </div>
           )}
+        </div>
+      </div>
+    )}
+    {deleteTarget && (
+      <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+        <div className="bg-surface border border-border p-5 w-full max-w-xs space-y-4 shadow-2xl">
+          <div className="space-y-1">
+            <h3 className="text-sm font-bold text-white uppercase tracking-widest">Hapus Saham?</h3>
+            <p className="text-xs text-muted">Yakin ingin menghapus {deleteTarget.ticker} dari portofolio?</p>
+          </div>
+          <div className="flex gap-3 pt-2 border-t border-border/50">
+            <button onClick={() => setDeleteTarget(null)} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Batal</button>
+            <button onClick={handleDelete} className="flex-1 bg-red-500 text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-red-600 transition-colors">Hapus</button>
+          </div>
         </div>
       </div>
     )}
