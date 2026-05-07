@@ -65,14 +65,30 @@ export default function PortfolioView() {
   }, [])
 
   const handleSave = async () => {
-    if (!form.ticker || !form.shares || !form.buyPrice) return;
+    if (!form.ticker) {
+      setErrorMessage("Ticker harus diisi!")
+      return
+    }
+    if (!form.shares) {
+      setErrorMessage("Shares harus diisi!")
+      return
+    }
+    if (!form.buyPrice) {
+      setErrorMessage("Buy Price harus diisi!")
+      return
+    }
+    if (!form.buyDate) {
+      setErrorMessage("Buy Date harus diisi!")
+      return
+    }
     const sharesNum = parseFloat(form.shares)
     if (isNaN(sharesNum) || sharesNum <= 0 || !Number.isInteger(sharesNum)) {
       setSharesError(true)
       setErrorMessage("Shares harus angka bulat dan lebih dari 0!")
       return
     }
-    if (parseFloat(form.buyPrice) <= 0) {
+    const buyPriceNum = parseFloat(form.buyPrice)
+    if (isNaN(buyPriceNum) || buyPriceNum <= 0) {
       setErrorMessage("Buy Price harus lebih dari 0!");
       return;
     }
@@ -291,6 +307,7 @@ export default function PortfolioView() {
               <input value={form.ticker} onChange={e => { 
                 const val = e.target.value.toUpperCase();
                 setForm(f => ({ ...f, ticker: val })); 
+                setErrorMessage('');
                 setShowTickerDropdown(true); 
               }} onFocus={() => setShowTickerDropdown(true)} onBlur={() => setTimeout(() => setShowTickerDropdown(false), 200)} placeholder="e.g. AAPL" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white transition-colors" />
               {showTickerDropdown && availableTickers.length > 0 && (
@@ -313,7 +330,7 @@ export default function PortfolioView() {
             </div>
             <div>
               <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Company Name</label>
-              <input value={form.company} onChange={e => setForm(f => ({ ...f, company: e.target.value }))} className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white" />
+              <input value={form.company} onChange={e => { setForm(f => ({ ...f, company: e.target.value })); setErrorMessage(''); }} className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white" />
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>
@@ -329,13 +346,13 @@ export default function PortfolioView() {
               </div>
               <div>
                 <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Buy Price</label>
-                <input value={form.buyPrice} onChange={e => setForm(f => ({ ...f, buyPrice: e.target.value }))} type="number" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
+                <input value={form.buyPrice} onChange={e => { setForm(f => ({ ...f, buyPrice: e.target.value })); setErrorMessage(''); }} type="number" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Buy Date</label>
-                <input value={form.buyDate} onChange={e => setForm(f => ({ ...f, buyDate: e.target.value }))} type="date" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
+                <input value={form.buyDate} onChange={e => { setForm(f => ({ ...f, buyDate: e.target.value })); setErrorMessage(''); }} type="date" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
               </div>
               <div>
                 <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Currency</label>
@@ -346,7 +363,7 @@ export default function PortfolioView() {
             </div>
             <div className="flex gap-3 pt-4 border-t border-border/50">
               <button onClick={() => { setShowAdd(false); setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); setSharesError(false); setErrorMessage(''); }} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Cancel</button>
-              <button onClick={handleSave} disabled={!form.shares} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">{editingId ? "Update" : "Save"}</button>
+              <button onClick={handleSave} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors">{editingId ? "Update" : "Save"}</button>
             </div>
           </div>
           {errorMessage && (
