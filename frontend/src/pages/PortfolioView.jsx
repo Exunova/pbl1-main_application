@@ -133,16 +133,22 @@ export default function PortfolioView() {
     setShowAdd(true);
   };
 
-  const pieData = useMemo(() => positions.map(p => {
-    const cur = pnlData?.positions?.find(x => x.id === p.id);
+  const ambilPnl = (p, index) => {
+    if (!pnlData?.positions) return null
+    const ketemu = pnlData.positions.find(x => String(x.id) === String(p.id))
+    return ketemu || pnlData.positions[index]
+  }
+
+  const pieData = useMemo(() => positions.map((p, index) => {
+    const cur = ambilPnl(p, index);
     const shares = parseFloat(p.shares) || 0;
     const buyPrice = parseFloat(p.buyPrice) || 0;
     const curPriceIDR = cur?.currentPriceIDR || (buyPrice * 15650.0);
     return { name: p.ticker, value: curPriceIDR * shares };
   }).filter(d => d.value > 0), [positions, pnlData]);
 
-  const treeData = useMemo(() => positions.map(p => {
-    const cur = pnlData?.positions?.find(x => x.id === p.id);
+  const treeData = useMemo(() => positions.map((p, index) => {
+    const cur = ambilPnl(p, index);
     const pnlPct = (cur?.buyPriceIDR && cur?.shares ? ((cur.stockReturn) / (cur.buyPriceIDR * cur.shares)) * 100 : 0);
     const valuationIDR = cur?.currentPriceIDR ? (cur.currentPriceIDR * p.shares) : (parseFloat(p.buyPrice) * 15650.0 * p.shares);
     return {
@@ -263,9 +269,9 @@ export default function PortfolioView() {
             </tr>
           </thead>
           <tbody className="divide-y divide-border/30">
-             {positions.map(p => {
+             {positions.map((p, index) => {
                const isLoading = !pnlData;
-               const cur = pnlData?.positions?.find(x => x.id === p.id)
+               const cur = ambilPnl(p, index)
                const pnl = cur?.stockReturn || 0
                const pnlPct = isLoading ? 0 : (cur?.buyPriceIDR && cur?.shares ? (pnl / (cur.buyPriceIDR * cur.shares)) * 100 : 0)
                const isProfit = pnl >= 0;
