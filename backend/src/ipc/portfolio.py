@@ -278,6 +278,7 @@ class PortfolioHandler(BasePageHandler):
                 total_forex_idr += forex_return_idr
                 
                 pnl_positions.append({
+                    "id": p["id"],
                     "ticker": ticker,
                     "shares": shares,
                     "buyPrice": buy_price,
