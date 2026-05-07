@@ -313,12 +313,14 @@ export default function PortfolioView() {
               {showTickerDropdown && availableTickers.length > 0 && (
                 <div className="absolute z-10 w-full mt-1 bg-[#111] border border-border max-h-48 overflow-y-auto custom-scrollbar">
                   {availableTickers.filter(t => t.ticker.toLowerCase().includes(form.ticker.toLowerCase())).map(t => (
-                    <div key={t.ticker} onClick={() => { 
+                    <div key={t.ticker} onMouseDown={e => { 
+                      e.preventDefault()
                       let autoCurrency = 'USD';
                       if (t.ticker.endsWith('.JK')) autoCurrency = 'IDR';
                       else if (t.ticker.endsWith('.T')) autoCurrency = 'JPY';
                       else if (t.ticker.endsWith('.L')) autoCurrency = 'GBP';
                       setForm(f => ({ ...f, ticker: t.ticker, company: t.name, currency: autoCurrency })); 
+                      setErrorMessage('');
                       setShowTickerDropdown(false); 
                     }} className="px-3 py-2 text-xs hover:bg-white/10 cursor-pointer flex flex-col border-b border-border/30">
                       <span className="font-bold text-white">{t.ticker}</span>
