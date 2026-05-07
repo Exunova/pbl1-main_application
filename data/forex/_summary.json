@@ -1,34 +1,34 @@
 {
-  "scraped_at": "2026-05-04 09:17:11.817505",
+  "scraped_at": "2026-05-07 09:21:05.987151",
   "pairs": {
     "IDR_USD": {
-      "rate": 5.8e-05,
-      "change": 0.1614,
-      "status": "ok"
+      "rate": null,
+      "change": null,
+      "status": "error"
     },
     "JPY_USD": {
-      "rate": 0.006368,
-      "change": -0.2999,
+      "rate": 0.0064,
+      "change": 0.0186,
       "status": "ok"
     },
     "GBP_USD": {
-      "rate": 1.357589,
-      "change": -0.2159,
+      "rate": 1.360396,
+      "change": 0.0735,
       "status": "ok"
     },
     "USD_IDR": {
-      "rate": 17345.0,
-      "change": -0.1612,
+      "rate": 17400.0,
+      "change": 0.0,
       "status": "ok"
     },
     "USD_JPY": {
-      "rate": 157.033,
-      "change": 0.3008,
+      "rate": 156.241,
+      "change": -0.0211,
       "status": "ok"
     },
     "USD_GBP": {
-      "rate": 0.73591,
-      "change": 0.1224,
+      "rate": 0.73508,
+      "change": -0.0734,
       "status": "ok"
     }
   }

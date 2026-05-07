@@ -1,8 +1,8 @@
 {
   "ticker": "7203.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 09:18:25.756916",
-  "updated_at": "2026-05-04T09:18:25.756945",
+  "scraped_at": "2026-05-07 09:22:06.980680",
+  "updated_at": "2026-05-07T09:22:06.980697",
   "info": {
     "identity": {
       "longName": "Toyota Motor Corporation",
@@ -120,30 +120,30 @@
       ]
     },
     "price": {
-      "currentPrice": 3000.0,
-      "previousClose": 3023.0,
-      "open": 3000.0,
-      "dayHigh": 3022.0,
-      "dayLow": 2971.0,
-      "bid": 3000.0,
-      "ask": 3001.0,
+      "currentPrice": 3027.0,
+      "previousClose": 3000.0,
+      "open": 3017.0,
+      "dayHigh": 3047.0,
+      "dayLow": 2978.0,
+      "bid": 3027.0,
+      "ask": 3029.0,
       "fiftyTwoWeekHigh": 4000.0,
       "fiftyTwoWeekLow": 2434.0,
-      "fiftyDayAverage": 3374.72,
-      "twoHundredDayAverage": 3178.66,
-      "volume": 21904100,
-      "averageVolume": 23009632,
-      "averageVolume10days": 21734511,
-      "regularMarketChangePercent": -0.7608336,
-      "52WeekChange": 0.07913673
+      "fiftyDayAverage": 3333.42,
+      "twoHundredDayAverage": 3185.8025,
+      "volume": 13832900,
+      "averageVolume": 22488107,
+      "averageVolume10days": 23535316,
+      "regularMarketChangePercent": 0.8997001,
+      "52WeekChange": 0.12296462
     },
     "valuation": {
-      "marketCap": 35523162800128,
+      "marketCap": 35842869428224,
       "enterpriseValue": 65653599895552,
-      "trailingPE": 10.559662,
-      "forwardPE": 9.252976,
-      "priceToBook": 1.0032194,
-      "priceToSalesTrailing12Months": 0.7041155,
+      "trailingPE": 10.654698,
+      "forwardPE": 9.336253,
+      "priceToBook": 1.0122483,
+      "priceToSalesTrailing12Months": 0.7104525,
       "trailingEps": 284.1,
       "forwardEps": 324.22,
       "bookValue": 2990.373,
@@ -185,10 +185,10 @@
       "sharesOutstanding": 11841053512,
       "floatShares": 9737894893,
       "heldPercentInsiders": 0.14917,
-      "heldPercentInstitutions": 0.25783002,
+      "heldPercentInstitutions": 0.25852,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1633046400,
-      "beta": 0.357
+      "beta": 0.327
     }
   },
   "financials": {

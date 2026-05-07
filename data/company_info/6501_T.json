@@ -1,8 +1,8 @@
 {
   "ticker": "6501.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 09:18:40.566999",
-  "updated_at": "2026-05-04T09:18:40.567024",
+  "scraped_at": "2026-05-07 09:22:12.348392",
+  "updated_at": "2026-05-07T09:22:12.348401",
   "info": {
     "identity": {
       "longName": "Hitachi, Ltd.",
@@ -131,30 +131,30 @@
       ]
     },
     "price": {
-      "currentPrice": 4795.0,
-      "previousClose": 4882.0,
-      "open": 4800.0,
-      "dayHigh": 4861.0,
-      "dayLow": 4775.0,
-      "bid": 4794.0,
-      "ask": 4795.0,
+      "currentPrice": 4946.0,
+      "previousClose": 4795.0,
+      "open": 4900.0,
+      "dayHigh": 4981.0,
+      "dayLow": 4854.0,
+      "bid": 4946.0,
+      "ask": 4949.0,
       "fiftyTwoWeekHigh": 6039.0,
-      "fiftyTwoWeekLow": 3673.0,
-      "fiftyDayAverage": 4910.34,
-      "twoHundredDayAverage": 4724.515,
-      "volume": 11393000,
-      "averageVolume": 15934496,
-      "averageVolume10days": 15570688,
-      "regularMarketChangePercent": -1.7820565,
-      "52WeekChange": 0.30547237
+      "fiftyTwoWeekLow": 3707.0,
+      "fiftyDayAverage": 4903.34,
+      "twoHundredDayAverage": 4734.885,
+      "volume": 11682900,
+      "averageVolume": 15843464,
+      "averageVolume10days": 18553200,
+      "regularMarketChangePercent": 3.1491137,
+      "52WeekChange": 0.2558931
     },
     "valuation": {
-      "marketCap": 21576359608320,
+      "marketCap": 22255824273408,
       "enterpriseValue": 21300508622848,
-      "trailingPE": 27.173296,
-      "forwardPE": 26.918541,
-      "priceToBook": 3.313764,
-      "priceToSalesTrailing12Months": 2.0380473,
+      "trailingPE": 28.029015,
+      "forwardPE": 27.766237,
+      "priceToBook": 3.4181182,
+      "priceToSalesTrailing12Months": 2.1022277,
       "trailingEps": 176.46,
       "forwardEps": 178.13,
       "bookValue": 1446.995,
@@ -196,10 +196,10 @@
       "sharesOutstanding": 4499762162,
       "floatShares": 4355881716,
       "heldPercentInsiders": 0.01725,
-      "heldPercentInstitutions": 0.48978,
+      "heldPercentInstitutions": 0.48997003,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1719446400,
-      "beta": 0.486
+      "beta": 0.497
     }
   },
   "financials": {

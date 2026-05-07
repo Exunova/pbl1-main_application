@@ -1,8 +1,8 @@
 {
   "ticker": "6857.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 09:18:50.211124",
-  "updated_at": "2026-05-04T09:18:50.211154",
+  "scraped_at": "2026-05-07 09:22:16.808496",
+  "updated_at": "2026-05-07T09:22:16.808513",
   "info": {
     "identity": {
       "longName": "Advantest Corporation",
@@ -118,30 +118,30 @@
       ]
     },
     "price": {
-      "currentPrice": 27815.0,
-      "previousClose": 28260.0,
-      "open": 28990.0,
-      "dayHigh": 29160.0,
-      "dayLow": 27800.0,
-      "bid": 27815.0,
-      "ask": 27825.0,
+      "currentPrice": 30030.0,
+      "previousClose": 27815.0,
+      "open": 30100.0,
+      "dayHigh": 30260.0,
+      "dayLow": 29720.0,
+      "bid": 30020.0,
+      "ask": 30040.0,
       "fiftyTwoWeekHigh": 32400.0,
-      "fiftyTwoWeekLow": 6240.0,
-      "fiftyDayAverage": 25348.3,
-      "twoHundredDayAverage": 19543.775,
-      "volume": 7144100,
-      "averageVolume": 10254839,
-      "averageVolume10days": 11995266,
-      "regularMarketChangePercent": -1.5746639,
-      "52WeekChange": 3.3893008
+      "fiftyTwoWeekLow": 6423.0,
+      "fiftyDayAverage": 25455.4,
+      "twoHundredDayAverage": 19788.2,
+      "volume": 6072200,
+      "averageVolume": 10258555,
+      "averageVolume10days": 14141000,
+      "regularMarketChangePercent": 7.9633293,
+      "52WeekChange": 3.2227116
     },
     "valuation": {
-      "marketCap": 20180220510208,
+      "marketCap": 21787238727680,
       "enterpriseValue": 19860446773248,
-      "trailingPE": 54.05379,
-      "forwardPE": 117.00249,
-      "priceToBook": 29.956596,
-      "priceToSalesTrailing12Months": 17.880596,
+      "trailingPE": 58.358273,
+      "forwardPE": 126.31978,
+      "priceToBook": 32.34214,
+      "priceToSalesTrailing12Months": 19.30449,
       "trailingEps": 514.58,
       "forwardEps": 237.73,
       "bookValue": 928.51,
@@ -183,10 +183,10 @@
       "sharesOutstanding": 725515776,
       "floatShares": 716221919,
       "heldPercentInsiders": 0.00279,
-      "heldPercentInstitutions": 0.64935994,
+      "heldPercentInstitutions": 0.65077,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1695859200,
-      "beta": 1.054
+      "beta": 1.199
     }
   },
   "financials": {

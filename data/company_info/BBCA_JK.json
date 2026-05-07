@@ -1,8 +1,8 @@
 {
   "ticker": "BBCA.JK",
   "market": "ID",
-  "scraped_at": "2026-05-04 09:17:09.848167",
-  "updated_at": "2026-05-04T09:17:09.848278",
+  "scraped_at": "2026-05-07 09:21:54.813754",
+  "updated_at": "2026-05-07T09:21:54.813771",
   "info": {
     "identity": {
       "longName": "PT Bank Central Asia Tbk",
@@ -105,34 +105,34 @@
       ]
     },
     "price": {
-      "currentPrice": 5925.0,
-      "previousClose": 5850.0,
-      "open": 5800.0,
-      "dayHigh": 5925.0,
-      "dayLow": 5800.0,
-      "bid": 5900.0,
-      "ask": 5925.0,
+      "currentPrice": 6025.0,
+      "previousClose": 5950.0,
+      "open": 6000.0,
+      "dayHigh": 6050.0,
+      "dayLow": 6000.0,
+      "bid": 6025.0,
+      "ask": 6050.0,
       "fiftyTwoWeekHigh": 9800.0,
       "fiftyTwoWeekLow": 5800.0,
-      "fiftyDayAverage": 6711.0,
-      "twoHundredDayAverage": 7721.5,
-      "volume": 37178600,
-      "averageVolume": 159107315,
-      "averageVolume10days": 195981710,
-      "regularMarketChangePercent": 1.2875537,
-      "52WeekChange": -0.3481894
+      "fiftyDayAverage": 6633.0,
+      "twoHundredDayAverage": 7683.5,
+      "volume": 16466600,
+      "averageVolume": 159117422,
+      "averageVolume10days": 203174060,
+      "regularMarketChangePercent": 1.2605042,
+      "52WeekChange": -0.33704734
     },
     "valuation": {
-      "marketCap": 728041718284288,
-      "enterpriseValue": 609299092996096,
-      "trailingPE": 12.691987,
-      "forwardPE": 12.280301,
-      "priceToBook": 2.8095362,
-      "priceToSalesTrailing12Months": 6.7020783,
-      "trailingEps": 466.83,
+      "marketCap": 740329351282688,
+      "enterpriseValue": 621586725994496,
+      "trailingPE": 12.899289,
+      "forwardPE": 12.487564,
+      "priceToBook": 2.8569546,
+      "priceToSalesTrailing12Months": 6.8151937,
+      "trailingEps": 467.08,
       "forwardEps": 482.48,
       "bookValue": 2108.889,
-      "pegRatio": 1.6
+      "pegRatio": 1.62
     },
     "profitability": {
       "profitMargins": 0.53462005,
@@ -151,7 +151,7 @@
     },
     "dividend": {
       "dividendRate": 336.0,
-      "dividendYield": 5.74,
+      "dividendYield": 5.65,
       "fiveYearAvgDividendYield": 2.55,
       "payoutRatio": 0.65309995,
       "exDividendDate": 1774828800,
@@ -159,7 +159,7 @@
     },
     "analyst": {
       "recommendationKey": "strong_buy",
-      "recommendationMean": 1.20833,
+      "recommendationMean": 1.2,
       "numberOfAnalystOpinions": 23,
       "targetHighPrice": 10900.0,
       "targetLowPrice": 6000.0,
@@ -170,10 +170,10 @@
       "sharesOutstanding": 122876240600,
       "floatShares": 48242440822,
       "heldPercentInsiders": 0.60814,
-      "heldPercentInstitutions": 0.18809,
+      "heldPercentInstitutions": 0.18818001,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1634083200,
-      "beta": 0.112
+      "beta": 0.013
     }
   },
   "financials": {

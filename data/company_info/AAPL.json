@@ -1,8 +1,8 @@
 {
   "ticker": "AAPL",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:05.335610",
-  "updated_at": "2026-05-04T09:16:05.335637",
+  "scraped_at": "2026-05-07 09:21:43.163283",
+  "updated_at": "2026-05-07T09:21:43.163297",
   "info": {
     "identity": {
       "longName": "Apple Inc.",
@@ -120,34 +120,34 @@
       ]
     },
     "price": {
-      "currentPrice": 280.25,
-      "previousClose": 271.24002,
-      "open": 278.94,
-      "dayHigh": 287.21,
-      "dayLow": 278.37,
-      "bid": 280.16,
-      "ask": 288.5,
+      "currentPrice": 287.51,
+      "previousClose": 284.22702,
+      "open": 281.915,
+      "dayHigh": 288.03,
+      "dayLow": 281.075,
+      "bid": 287.05,
+      "ask": 290.0,
       "fiftyTwoWeekHigh": 288.62,
-      "fiftyTwoWeekLow": 193.25,
-      "fiftyDayAverage": 261.2186,
-      "twoHundredDayAverage": 255.1833,
-      "volume": 79915442,
-      "averageVolume": 44124766,
-      "averageVolume10days": 48483230,
-      "regularMarketChangePercent": 3.3217735,
-      "52WeekChange": 0.40851724
+      "fiftyTwoWeekLow": 193.46,
+      "fiftyDayAverage": 262.131,
+      "twoHundredDayAverage": 256.2575,
+      "volume": 58322453,
+      "averageVolume": 44235504,
+      "averageVolume10days": 50909370,
+      "regularMarketChangePercent": 1.15506,
+      "52WeekChange": 0.45582056
     },
     "valuation": {
-      "marketCap": 4110619508736,
-      "enterpriseValue": 4130719924224,
-      "trailingPE": 33.92857,
-      "forwardPE": 29.304062,
-      "priceToBook": 46.723907,
-      "priceToSalesTrailing12Months": 9.105532,
-      "trailingEps": 8.26,
-      "forwardEps": 9.56352,
+      "marketCap": 4222761828352,
+      "enterpriseValue": 4238965735424,
+      "trailingPE": 34.765415,
+      "forwardPE": 30.039297,
+      "priceToBook": 47.93431,
+      "priceToSalesTrailing12Months": 9.353941,
+      "trailingEps": 8.27,
+      "forwardEps": 9.57113,
       "bookValue": 5.998,
-      "pegRatio": 2.52
+      "pegRatio": 2.49
     },
     "profitability": {
       "profitMargins": 0.27152002,
@@ -166,7 +166,7 @@
     },
     "dividend": {
       "dividendRate": 1.08,
-      "dividendYield": 0.39,
+      "dividendYield": 0.38,
       "fiveYearAvgDividendYield": 0.51,
       "payoutRatio": 0.1259,
       "exDividendDate": 1778457600,
@@ -174,21 +174,21 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.89796,
-      "numberOfAnalystOpinions": 43,
+      "recommendationMean": 1.91667,
+      "numberOfAnalystOpinions": 42,
       "targetHighPrice": 355.0,
       "targetLowPrice": 215.0,
-      "targetMeanPrice": 300.6535,
+      "targetMeanPrice": 303.3762,
       "targetMedianPrice": 310.0
     },
     "ownership": {
-      "sharesOutstanding": 14667688000,
+      "sharesOutstanding": 14687356000,
       "floatShares": 14662240621,
-      "heldPercentInsiders": 0.01642,
-      "heldPercentInstitutions": 0.65318,
+      "heldPercentInsiders": 0.0164,
+      "heldPercentInstitutions": 0.65272003,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1598832000,
-      "beta": 1.109
+      "beta": 1.065
     }
   },
   "financials": {

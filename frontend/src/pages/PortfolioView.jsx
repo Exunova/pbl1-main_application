@@ -68,6 +68,7 @@ export default function PortfolioView() {
     const sharesNum = parseFloat(form.shares)
     if (isNaN(sharesNum) || sharesNum <= 0 || !Number.isInteger(sharesNum)) {
       setSharesError(true)
+      alert("Shares harus angka bulat dan lebih dari 0!")
       return
     }
     if (parseFloat(form.buyPrice) <= 0) {
@@ -91,6 +92,8 @@ export default function PortfolioView() {
     setShowAdd(false);
     setEditingId(null);
     setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' });
+    // hapus error lama
+    setSharesError(false);
     window.api.fetchPnL().then(setPnlData).catch(() => {})
   };
 
@@ -104,6 +107,7 @@ export default function PortfolioView() {
   const handleEditClick = (position) => {
     setForm({ ticker: position.ticker, company: position.company, shares: position.shares / 100, buyPrice: position.buyPrice, buyDate: position.buyDate, currency: position.currency });
     setEditingId(position.id);
+    setSharesError(false);
     setShowAdd(true);
   };
 
@@ -148,7 +152,7 @@ export default function PortfolioView() {
           <p className="text-[10px] text-muted tracking-widest uppercase mt-0.5">Asset Management Terminal</p>
         </div>
       </div>
-      <button onClick={() => { setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); setShowAdd(true); }} className="flex items-center gap-2 px-4 py-2 bg-white text-black text-[11px] font-bold uppercase tracking-widest border border-white hover:bg-gray-200 transition-colors">
+      <button onClick={() => { setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); setSharesError(false); setShowAdd(true); }} className="flex items-center gap-2 px-4 py-2 bg-white text-black text-[11px] font-bold uppercase tracking-widest border border-white hover:bg-gray-200 transition-colors">
         <Plus size={14} /> Add Position
       </button>
     </div>
@@ -337,8 +341,8 @@ export default function PortfolioView() {
               </div>
             </div>
             <div className="flex gap-3 pt-4 border-t border-border/50">
-              <button onClick={() => { setShowAdd(false); setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }) }} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Cancel</button>
-              <button onClick={handleSave} disabled={!form.shares || sharesError} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">{editingId ? "Update" : "Save"}</button>
+              <button onClick={() => { setShowAdd(false); setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); setSharesError(false); }} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Cancel</button>
+              <button onClick={handleSave} disabled={!form.shares} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">{editingId ? "Update" : "Save"}</button>
             </div>
           </div>
         </div>

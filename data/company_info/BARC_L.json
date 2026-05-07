@@ -1,8 +1,8 @@
 {
   "ticker": "BARC.L",
   "market": "GB",
-  "scraped_at": "2026-05-04 09:19:22.524222",
-  "updated_at": "2026-05-04T09:19:22.524243",
+  "scraped_at": "2026-05-07 09:22:28.525442",
+  "updated_at": "2026-05-07T09:22:28.525458",
   "info": {
     "identity": {
       "longName": "Barclays PLC",
@@ -111,32 +111,32 @@
       ]
     },
     "price": {
-      "currentPrice": 433.75,
-      "previousClose": 431.45,
-      "open": 428.35,
-      "dayHigh": 435.5,
-      "dayLow": 424.35,
-      "bid": 434.05,
-      "ask": 434.15,
+      "currentPrice": 442.65,
+      "previousClose": 419.55,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 507.45,
-      "fiftyTwoWeekLow": 292.3,
-      "fiftyDayAverage": 418.979,
-      "twoHundredDayAverage": 417.774,
-      "volume": 27779224,
-      "averageVolume": 65273428,
-      "averageVolume10days": 59896965,
-      "regularMarketChangePercent": 0.53308326,
-      "52WeekChange": 0.44079053
+      "fiftyTwoWeekLow": 0.0,
+      "fiftyDayAverage": 417.586,
+      "twoHundredDayAverage": 418.446,
+      "volume": 1,
+      "averageVolume": 67002320,
+      "averageVolume10days": 60524882,
+      "regularMarketChangePercent": 5.505901,
+      "52WeekChange": 0.37534833
     },
     "valuation": {
-      "marketCap": 59139010560,
-      "enterpriseValue": 94768865280,
-      "trailingPE": 10.08721,
-      "forwardPE": 6.852832,
-      "priceToBook": 0.9309938,
-      "priceToSalesTrailing12Months": 2.1828957,
+      "marketCap": 60352471040,
+      "enterpriseValue": 95990562816,
+      "trailingPE": 10.294186,
+      "forwardPE": 7.063526,
+      "priceToBook": 0.9500966,
+      "priceToSalesTrailing12Months": 2.227686,
       "trailingEps": 0.43,
-      "forwardEps": 0.63295,
+      "forwardEps": 0.62667,
       "bookValue": 4.659,
       "pegRatio": 1.4
     },
@@ -157,7 +157,7 @@
     },
     "dividend": {
       "dividendRate": 0.09,
-      "dividendYield": 1.98,
+      "dividendYield": 2.05,
       "fiveYearAvgDividendYield": 3.21,
       "payoutRatio": 0.1982,
       "exDividendDate": 1771459200,
@@ -176,10 +176,10 @@
       "sharesOutstanding": 13634354256,
       "floatShares": 12749912140,
       "heldPercentInsiders": 0.00315,
-      "heldPercentInstitutions": 0.50076,
+      "heldPercentInstitutions": 0.50081,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1020038400,
-      "beta": 0.86
+      "beta": 0.896
     }
   },
   "financials": {

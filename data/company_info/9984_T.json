@@ -1,8 +1,8 @@
 {
   "ticker": "9984.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 09:18:38.432673",
-  "updated_at": "2026-05-04T09:18:38.432714",
+  "scraped_at": "2026-05-07 09:22:11.068312",
+  "updated_at": "2026-05-07T09:22:11.068332",
   "info": {
     "identity": {
       "longName": "SoftBank Group Corp.",
@@ -115,30 +115,30 @@
       ]
     },
     "price": {
-      "currentPrice": 5424.0,
-      "previousClose": 5219.0,
-      "open": 5278.0,
-      "dayHigh": 5466.0,
-      "dayLow": 5249.0,
-      "bid": 5423.0,
-      "ask": 5424.0,
+      "currentPrice": 6256.0,
+      "previousClose": 5424.0,
+      "open": 6100.0,
+      "dayHigh": 6264.0,
+      "dayLow": 5887.0,
+      "bid": 6255.0,
+      "ask": 6248.0,
       "fiftyTwoWeekHigh": 6923.75,
       "fiftyTwoWeekLow": 1797.75,
-      "fiftyDayAverage": 4180.88,
-      "twoHundredDayAverage": 4399.2886,
-      "volume": 72065400,
-      "averageVolume": 57918643,
-      "averageVolume10days": 100615377,
-      "regularMarketChangePercent": 3.9279554,
-      "52WeekChange": 1.9299123
+      "fiftyDayAverage": 4249.02,
+      "twoHundredDayAverage": 4436.2427,
+      "volume": 67867000,
+      "averageVolume": 58182008,
+      "averageVolume10days": 99105550,
+      "regularMarketChangePercent": 15.339233,
+      "52WeekChange": 1.997513
     },
     "valuation": {
-      "marketCap": 30910095294464,
+      "marketCap": 35651466559488,
       "enterpriseValue": 53426129993728,
-      "trailingPE": 10.141919,
-      "forwardPE": 18.368383,
-      "priceToBook": 2.001244,
-      "priceToSalesTrailing12Months": 4.0350375,
+      "trailingPE": 11.697613,
+      "forwardPE": 21.185951,
+      "priceToBook": 2.3082197,
+      "priceToSalesTrailing12Months": 4.6539817,
       "trailingEps": 534.81,
       "forwardEps": 295.29,
       "bookValue": 2710.314,
@@ -180,10 +180,10 @@
       "sharesOutstanding": 5698763936,
       "floatShares": 3654731287,
       "heldPercentInsiders": 0.34730998,
-      "heldPercentInstitutions": 0.34668,
+      "heldPercentInstitutions": 0.34819,
       "lastSplitFactor": "4:1",
       "lastSplitDate": 1766966400,
-      "beta": 0.687
+      "beta": 0.901
     }
   },
   "financials": {

@@ -1,8 +1,8 @@
 {
   "ticker": "NG.L",
   "market": "GB",
-  "scraped_at": "2026-05-04 09:19:27.776811",
-  "updated_at": "2026-05-04T09:19:27.776850",
+  "scraped_at": "2026-05-07 09:22:31.273578",
+  "updated_at": "2026-05-07T09:22:31.273597",
   "info": {
     "identity": {
       "longName": "National Grid plc",
@@ -28,123 +28,36 @@
           "totalPay": 1765000,
           "exercisedValue": 0,
           "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. John Mark Pettigrew CBE",
-          "age": 57,
-          "title": "Executive Officer",
-          "yearBorn": 1968,
-          "fiscalYear": 2025,
-          "totalPay": 2705000,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Zoe A. Yujnovich",
-          "age": 50,
-          "title": "CEO & Director",
-          "yearBorn": 1975,
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Talvis P. Love",
-          "age": 56,
-          "title": "Chief Information & Digital Officer",
-          "yearBorn": 1969,
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Angela  Broad",
-          "title": "Director of Investor Relations",
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Justine  Campbell",
-          "age": 55,
-          "title": "Chief Legal officer",
-          "yearBorn": 1970,
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Emma  Hardaker-Jones",
-          "age": 52,
-          "title": "Chief People Officer",
-          "yearBorn": 1973,
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Alice Kyne Delahunty",
-          "age": 44,
-          "title": "President of UK Electricity Transmission",
-          "yearBorn": 1981,
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Mr. Benjamin Hollis Wilson",
-          "age": 51,
-          "title": "President of National Grid Ventures & Chief US External Affairs Officer",
-          "yearBorn": 1974,
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
-        },
-        {
-          "maxAge": 1,
-          "name": "Ms. Sarah Orban Salati",
-          "title": "Chief Commercial Officer of NGV North East Team",
-          "fiscalYear": 2025,
-          "exercisedValue": 0,
-          "unexercisedValue": 0
         }
       ]
     },
     "price": {
-      "currentPrice": 1309.0,
-      "previousClose": 1312.2,
-      "open": 1322.8,
-      "dayHigh": 1322.8,
-      "dayLow": 1301.2,
-      "bid": 1306.0,
-      "ask": 1306.4,
+      "currentPrice": 1298.2,
+      "previousClose": 1292.2,
+      "open": 0.0,
+      "dayHigh": 0.0,
+      "dayLow": 0.0,
+      "bid": 0.0,
+      "ask": 0.0,
       "fiftyTwoWeekHigh": 1428.5,
-      "fiftyTwoWeekLow": 1000.0,
-      "fiftyDayAverage": 1313.49,
-      "twoHundredDayAverage": 1177.955,
-      "volume": 4457736,
-      "averageVolume": 12616129,
-      "averageVolume10days": 11966221,
-      "regularMarketChangePercent": -0.24386156,
-      "52WeekChange": 0.22737932
+      "fiftyTwoWeekLow": 0.0,
+      "fiftyDayAverage": 1310.864,
+      "twoHundredDayAverage": 1180.3785,
+      "volume": 0,
+      "averageVolume": 12786544,
+      "averageVolume10days": 12974915,
+      "regularMarketChangePercent": 0.4643244,
+      "52WeekChange": 0.22483408
     },
     "valuation": {
-      "marketCap": 65129906176,
-      "enterpriseValue": 106364338176,
-      "trailingPE": 21.816666,
-      "forwardPE": 14.749794,
-      "priceToBook": 1.7337747,
-      "priceToSalesTrailing12Months": 3.7255409,
+      "marketCap": 64592547840,
+      "enterpriseValue": 105832333312,
+      "trailingPE": 21.636665,
+      "forwardPE": 14.6271105,
+      "priceToBook": 1.71947,
+      "priceToSalesTrailing12Months": 3.694803,
       "trailingEps": 0.6,
-      "forwardEps": 0.88747,
+      "forwardEps": 0.88753,
       "bookValue": 7.55,
       "pegRatio": 1.1
     },
@@ -165,7 +78,7 @@
     },
     "dividend": {
       "dividendRate": 0.47,
-      "dividendYield": 3.61,
+      "dividendYield": 3.66,
       "fiveYearAvgDividendYield": 4.99,
       "payoutRatio": 0.78260005,
       "exDividendDate": 1763596800,
@@ -184,10 +97,10 @@
       "sharesOutstanding": 4975547000,
       "floatShares": 4872996240,
       "heldPercentInsiders": 0.00169,
-      "heldPercentInstitutions": 0.60075,
+      "heldPercentInstitutions": 0.6009,
       "lastSplitFactor": "11:12",
       "lastSplitDate": 1495411200,
-      "beta": 0.638
+      "beta": 0.624
     }
   },
   "financials": {

@@ -1,11 +1,9 @@
 {
-  "scraped_at": "2026-05-04 09:16:01.973503",
+  "scraped_at": "2026-05-07 09:21:05.987281",
   "tickers": {
     "NVDA": {
       "market": "US",
-      "name": "NVIDIA Corporation",
-      "sector": "Technology",
-      "status": "ok"
+      "status": "error: Failed to perform, curl: (28) Connection timed out after 30001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
     },
     "AAPL": {
       "market": "US",

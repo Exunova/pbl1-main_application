@@ -1,8 +1,8 @@
 {
   "ticker": "6758.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 09:18:35.460782",
-  "updated_at": "2026-05-04T09:18:35.460842",
+  "scraped_at": "2026-05-07 09:22:09.857298",
+  "updated_at": "2026-05-07T09:22:09.857314",
   "info": {
     "identity": {
       "longName": "Sony Group Corporation",
@@ -118,30 +118,30 @@
       ]
     },
     "price": {
-      "currentPrice": 3127.0,
-      "previousClose": 3113.0,
-      "open": 3085.0,
-      "dayHigh": 3142.0,
-      "dayLow": 3075.0,
-      "bid": 3125.0,
-      "ask": 3127.0,
+      "currentPrice": 3144.0,
+      "previousClose": 3127.0,
+      "open": 3124.0,
+      "dayHigh": 3177.0,
+      "dayLow": 3066.0,
+      "bid": 3143.0,
+      "ask": 3145.0,
       "fiftyTwoWeekHigh": 4776.0,
-      "fiftyTwoWeekLow": 3075.0,
-      "fiftyDayAverage": 3326.92,
-      "twoHundredDayAverage": 3876.4214,
-      "volume": 14988600,
-      "averageVolume": 20712351,
-      "averageVolume10days": 15718144,
-      "regularMarketChangePercent": 0.44972697,
-      "52WeekChange": -0.16211146
+      "fiftyTwoWeekLow": 3066.0,
+      "fiftyDayAverage": 3312.8,
+      "twoHundredDayAverage": 3869.8513,
+      "volume": 13337600,
+      "averageVolume": 19573228,
+      "averageVolume10days": 17666800,
+      "regularMarketChangePercent": 0.54347825,
+      "52WeekChange": -0.106571436
     },
     "valuation": {
-      "marketCap": 18473275097088,
+      "marketCap": 18573705609216,
       "enterpriseValue": 18588517793792,
-      "trailingPE": 15.151662,
-      "forwardPE": 17.068777,
-      "priceToBook": 2.2861612,
-      "priceToSalesTrailing12Months": 1.4026479,
+      "trailingPE": 15.234034,
+      "forwardPE": 17.161572,
+      "priceToBook": 2.29859,
+      "priceToSalesTrailing12Months": 1.4102733,
       "trailingEps": 206.38,
       "forwardEps": 183.2,
       "bookValue": 1367.795,
@@ -183,10 +183,10 @@
       "sharesOutstanding": 5907667254,
       "floatShares": 5965686915,
       "heldPercentInsiders": 0.00071999995,
-      "heldPercentInstitutions": 0.47316003,
+      "heldPercentInstitutions": 0.47287998,
       "lastSplitFactor": "5:1",
       "lastSplitDate": 1727395200,
-      "beta": 0.751
+      "beta": 0.719
     }
   },
   "financials": {
