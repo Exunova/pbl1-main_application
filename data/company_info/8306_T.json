@@ -1,8 +1,8 @@
 {
   "ticker": "8306.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 05:56:58.940228",
-  "updated_at": "2026-05-04T05:56:58.940237",
+  "scraped_at": "2026-05-07 09:22:08.502371",
+  "updated_at": "2026-05-07T09:22:08.502380",
   "info": {
     "identity": {
       "longName": "Mitsubishi UFJ Financial Group, Inc.",
@@ -129,30 +129,30 @@
       ]
     },
     "price": {
-      "currentPrice": 2798.0,
-      "previousClose": 2817.0,
-      "open": 2800.0,
-      "dayHigh": 2813.0,
-      "dayLow": 2754.0,
-      "bid": 2797.5,
-      "ask": 2798.5,
+      "currentPrice": 2880.5,
+      "previousClose": 2798.0,
+      "open": 2850.0,
+      "dayHigh": 2886.0,
+      "dayLow": 2817.5,
+      "bid": 2879.0,
+      "ask": 2878.0,
       "fiftyTwoWeekHigh": 3087.0,
-      "fiftyTwoWeekLow": 1725.5,
-      "fiftyDayAverage": 2782.43,
-      "twoHundredDayAverage": 2503.8374,
-      "volume": 28643100,
-      "averageVolume": 43321176,
-      "averageVolume10days": 33422390,
-      "regularMarketChangePercent": -0.6744764,
-      "52WeekChange": 0.61035967
+      "fiftyTwoWeekLow": 1741.5,
+      "fiftyDayAverage": 2772.0,
+      "twoHundredDayAverage": 2520.3274,
+      "volume": 26808400,
+      "averageVolume": 42632733,
+      "averageVolume10days": 33375616,
+      "regularMarketChangePercent": 2.9485347,
+      "52WeekChange": 0.58661747
     },
     "valuation": {
-      "marketCap": 31582695981056,
+      "marketCap": 32513923743744,
       "enterpriseValue": -1005258670080,
-      "trailingPE": 16.611256,
-      "forwardPE": 18.446732,
-      "priceToBook": 1.4845715,
-      "priceToSalesTrailing12Months": 5.4004683,
+      "trailingPE": 17.101044,
+      "forwardPE": 18.990639,
+      "priceToBook": 1.5283445,
+      "priceToSalesTrailing12Months": 5.5597034,
       "trailingEps": 168.44,
       "forwardEps": 151.68,
       "bookValue": 1884.719,
@@ -182,8 +182,8 @@
       "lastDividendValue": 39.0
     },
     "analyst": {
-      "recommendationKey": "buy",
-      "recommendationMean": 1.91667,
+      "recommendationKey": "none",
+      "recommendationMean": null,
       "numberOfAnalystOpinions": 12,
       "targetHighPrice": 3760.0,
       "targetLowPrice": 2120.0,
@@ -194,10 +194,10 @@
       "sharesOutstanding": 11287597363,
       "floatShares": 11229583206,
       "heldPercentInsiders": 0.035669997,
-      "heldPercentInstitutions": 0.38406,
+      "heldPercentInstitutions": 0.38694,
       "lastSplitFactor": "1000:1",
       "lastSplitDate": 1191196800,
-      "beta": 0.295
+      "beta": 0.325
     }
   },
   "financials": {

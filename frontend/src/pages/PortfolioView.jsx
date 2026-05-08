@@ -48,6 +48,8 @@ export default function PortfolioView() {
   const [showTickerDropdown, setShowTickerDropdown] = useState(false)
   const [isInitialLoad, setIsInitialLoad] = useState(true)
   const [sharesError, setSharesError] = useState(false)
+  const [errorMessage, setErrorMessage] = useState('')
+  const [deleteTarget, setDeleteTarget] = useState(null)
 
   useEffect(() => {
     if (!window.api) return
@@ -64,23 +66,40 @@ export default function PortfolioView() {
   }, [])
 
   const handleSave = async () => {
-    if (!form.ticker || !form.shares || !form.buyPrice) return;
+    if (!form.ticker) {
+      setErrorMessage("Ticker harus diisi!")
+      return
+    }
+    if (!form.shares) {
+      setErrorMessage("Shares harus diisi!")
+      return
+    }
+    if (!form.buyPrice) {
+      setErrorMessage("Buy Price harus diisi!")
+      return
+    }
+    if (!form.buyDate) {
+      setErrorMessage("Buy Date harus diisi!")
+      return
+    }
     const sharesNum = parseFloat(form.shares)
     if (isNaN(sharesNum) || sharesNum <= 0 || !Number.isInteger(sharesNum)) {
       setSharesError(true)
+      setErrorMessage("Shares harus angka bulat dan lebih dari 0!")
       return
     }
-    if (parseFloat(form.buyPrice) <= 0) {
-      alert("Buy Price must be greater than 0!");
+    const buyPriceNum = parseFloat(form.buyPrice)
+    if (isNaN(buyPriceNum) || buyPriceNum <= 0) {
+      setErrorMessage("Buy Price harus lebih dari 0!");
       return;
     }
     const today = new Date().toISOString().split('T')[0];
     if (form.buyDate > today) {
-      alert("Buy date cannot be in the future!");
+      setErrorMessage("Buy date tidak boleh melebihi hari ini!");
       return;
     }
     if (!availableTickers.some(t => t.ticker === form.ticker)) {
-      alert("Ticker tidak valid! Silakan pilih ticker yang tersedia dari dropdown hasil scraping.");
+      setErrorMessage("Ticker tidak valid! Pilih ticker dari dropdown.");
       return;
     }
     const pos = { ...form, shares: parseFloat(form.shares) * 100, buyPrice: parseFloat(form.buyPrice) };
@@ -91,32 +110,45 @@ export default function PortfolioView() {
     setShowAdd(false);
     setEditingId(null);
     setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' });
+    // hapus error lama
+    setSharesError(false);
+    setErrorMessage('');
     window.api.fetchPnL().then(setPnlData).catch(() => {})
   };
 
-  const handleDelete = async (id) => {
-    await window.api.deletePosition(id)
+  const handleDelete = async () => {
+    if (!deleteTarget) return
+    await window.api.deletePosition(deleteTarget.id)
     const updated = await window.api.getPositions()
     setPositions(updated?.positions || [])
+    setDeleteTarget(null)
     window.api.fetchPnL().then(setPnlData).catch(() => {})
   }
 
   const handleEditClick = (position) => {
     setForm({ ticker: position.ticker, company: position.company, shares: position.shares / 100, buyPrice: position.buyPrice, buyDate: position.buyDate, currency: position.currency });
     setEditingId(position.id);
+    setSharesError(false);
+    setErrorMessage('');
     setShowAdd(true);
   };
 
-  const pieData = useMemo(() => positions.map(p => {
-    const cur = pnlData?.positions?.find(x => x.ticker === p.ticker);
+  const ambilPnl = (p, index) => {
+    if (!pnlData?.positions) return null
+    const ketemu = pnlData.positions.find(x => String(x.id) === String(p.id))
+    return ketemu || pnlData.positions[index]
+  }
+
+  const pieData = useMemo(() => positions.map((p, index) => {
+    const cur = ambilPnl(p, index);
     const shares = parseFloat(p.shares) || 0;
     const buyPrice = parseFloat(p.buyPrice) || 0;
     const curPriceIDR = cur?.currentPriceIDR || (buyPrice * 15650.0);
     return { name: p.ticker, value: curPriceIDR * shares };
   }).filter(d => d.value > 0), [positions, pnlData]);
 
-  const treeData = useMemo(() => positions.map(p => {
-    const cur = pnlData?.positions?.find(x => x.ticker === p.ticker);
+  const treeData = useMemo(() => positions.map((p, index) => {
+    const cur = ambilPnl(p, index);
     const pnlPct = (cur?.buyPriceIDR && cur?.shares ? ((cur.stockReturn) / (cur.buyPriceIDR * cur.shares)) * 100 : 0);
     const valuationIDR = cur?.currentPriceIDR ? (cur.currentPriceIDR * p.shares) : (parseFloat(p.buyPrice) * 15650.0 * p.shares);
     return {
@@ -148,7 +180,7 @@ export default function PortfolioView() {
           <p className="text-[10px] text-muted tracking-widest uppercase mt-0.5">Asset Management Terminal</p>
         </div>
       </div>
-      <button onClick={() => { setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); setShowAdd(true); }} className="flex items-center gap-2 px-4 py-2 bg-white text-black text-[11px] font-bold uppercase tracking-widest border border-white hover:bg-gray-200 transition-colors">
+      <button onClick={() => { setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); setSharesError(false); setErrorMessage(''); setShowAdd(true); }} className="flex items-center gap-2 px-4 py-2 bg-white text-black text-[11px] font-bold uppercase tracking-widest border border-white hover:bg-gray-200 transition-colors">
         <Plus size={14} /> Add Position
       </button>
     </div>
@@ -237,9 +269,9 @@ export default function PortfolioView() {
             </tr>
           </thead>
           <tbody className="divide-y divide-border/30">
-             {positions.map(p => {
+             {positions.map((p, index) => {
                const isLoading = !pnlData;
-               const cur = pnlData?.positions?.find(x => x.ticker === p.ticker)
+               const cur = ambilPnl(p, index)
                const pnl = cur?.stockReturn || 0
                const pnlPct = isLoading ? 0 : (cur?.buyPriceIDR && cur?.shares ? (pnl / (cur.buyPriceIDR * cur.shares)) * 100 : 0)
                const isProfit = pnl >= 0;
@@ -259,7 +291,7 @@ export default function PortfolioView() {
                   <td className="px-4 py-3 text-right">
                     <div className="flex justify-end gap-3">
                       <button onClick={() => handleEditClick(p)} className="text-muted hover:text-white" title="Edit"><Edit2 size={12} /></button>
-                      <button onClick={() => handleDelete(p.id)} className="text-muted hover:text-danger" title="Delete"><Trash2 size={12} /></button>
+                      <button onClick={() => setDeleteTarget(p)} className="text-muted hover:text-danger" title="Delete"><Trash2 size={12} /></button>
                     </div>
                   </td>
                 </tr>
@@ -284,17 +316,20 @@ export default function PortfolioView() {
               <input value={form.ticker} onChange={e => { 
                 const val = e.target.value.toUpperCase();
                 setForm(f => ({ ...f, ticker: val })); 
+                setErrorMessage('');
                 setShowTickerDropdown(true); 
               }} onFocus={() => setShowTickerDropdown(true)} onBlur={() => setTimeout(() => setShowTickerDropdown(false), 200)} placeholder="e.g. AAPL" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white transition-colors" />
               {showTickerDropdown && availableTickers.length > 0 && (
                 <div className="absolute z-10 w-full mt-1 bg-[#111] border border-border max-h-48 overflow-y-auto custom-scrollbar">
                   {availableTickers.filter(t => t.ticker.toLowerCase().includes(form.ticker.toLowerCase())).map(t => (
-                    <div key={t.ticker} onClick={() => { 
+                    <div key={t.ticker} onMouseDown={e => { 
+                      e.preventDefault()
                       let autoCurrency = 'USD';
                       if (t.ticker.endsWith('.JK')) autoCurrency = 'IDR';
                       else if (t.ticker.endsWith('.T')) autoCurrency = 'JPY';
                       else if (t.ticker.endsWith('.L')) autoCurrency = 'GBP';
                       setForm(f => ({ ...f, ticker: t.ticker, company: t.name, currency: autoCurrency })); 
+                      setErrorMessage('');
                       setShowTickerDropdown(false); 
                     }} className="px-3 py-2 text-xs hover:bg-white/10 cursor-pointer flex flex-col border-b border-border/30">
                       <span className="font-bold text-white">{t.ticker}</span>
@@ -306,7 +341,7 @@ export default function PortfolioView() {
             </div>
             <div>
               <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Company Name</label>
-              <input value={form.company} onChange={e => setForm(f => ({ ...f, company: e.target.value }))} className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white" />
+              <input value={form.company} onChange={e => { setForm(f => ({ ...f, company: e.target.value })); setErrorMessage(''); }} className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white" />
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>
@@ -316,18 +351,19 @@ export default function PortfolioView() {
                   const num = parseFloat(val)
                   const isInvalid = val !== '' && (isNaN(num) || num <= 0 || !Number.isInteger(num))
                   setSharesError(isInvalid)
+                  setErrorMessage('')
                   setForm(f => ({ ...f, shares: val }))
-                }} min="1" type="number" className={`w-full bg-[#111] border px-3 py-2 text-xs text-white outline-none focus:border-white number-font ${sharesError ? 'border-red-500' : 'border-border'}`} />
+                }} type="text" className={`w-full bg-[#111] border px-3 py-2 text-xs text-white outline-none focus:border-white number-font ${sharesError ? 'border-red-500' : 'border-border'}`} />
               </div>
               <div>
                 <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Buy Price</label>
-                <input value={form.buyPrice} onChange={e => setForm(f => ({ ...f, buyPrice: e.target.value }))} type="number" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
+                <input value={form.buyPrice} onChange={e => { setForm(f => ({ ...f, buyPrice: e.target.value })); setErrorMessage(''); }} type="number" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
               </div>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Buy Date</label>
-                <input value={form.buyDate} onChange={e => setForm(f => ({ ...f, buyDate: e.target.value }))} type="date" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
+                <input value={form.buyDate} onChange={e => { setForm(f => ({ ...f, buyDate: e.target.value })); setErrorMessage(''); }} type="date" className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" />
               </div>
               <div>
                 <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Currency</label>
@@ -337,9 +373,31 @@ export default function PortfolioView() {
               </div>
             </div>
             <div className="flex gap-3 pt-4 border-t border-border/50">
-              <button onClick={() => { setShowAdd(false); setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }) }} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Cancel</button>
-              <button onClick={handleSave} disabled={!form.shares || sharesError} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">{editingId ? "Update" : "Save"}</button>
+              <button onClick={() => { setShowAdd(false); setEditingId(null); setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' }); setSharesError(false); setErrorMessage(''); }} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Cancel</button>
+              <button onClick={handleSave} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors">{editingId ? "Update" : "Save"}</button>
             </div>
+          </div>
+          {errorMessage && (
+            <div className="absolute inset-0 bg-black/80 flex items-center justify-center p-4">
+              <div className="bg-surface border border-red-500 p-4 w-full max-w-xs space-y-3">
+                <div className="text-xs text-white">{errorMessage}</div>
+                <button onClick={() => { setErrorMessage(''); setSharesError(false); }} className="w-full bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors">OK</button>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    )}
+    {deleteTarget && (
+      <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+        <div className="bg-surface border border-border p-5 w-full max-w-xs space-y-4 shadow-2xl">
+          <div className="space-y-1">
+            <h3 className="text-sm font-bold text-white uppercase tracking-widest">Hapus Saham?</h3>
+            <p className="text-xs text-muted">Yakin ingin menghapus {deleteTarget.ticker} dari portofolio?</p>
+          </div>
+          <div className="flex gap-3 pt-2 border-t border-border/50">
+            <button onClick={() => setDeleteTarget(null)} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Batal</button>
+            <button onClick={handleDelete} className="flex-1 bg-red-500 text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-red-600 transition-colors">Hapus</button>
           </div>
         </div>
       </div>

@@ -1,8 +1,8 @@
 {
   "ticker": "8035.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 05:57:07.346007",
-  "updated_at": "2026-05-04T05:57:07.346018",
+  "scraped_at": "2026-05-07 09:22:18.432033",
+  "updated_at": "2026-05-07T09:22:18.432047",
   "info": {
     "identity": {
       "longName": "Tokyo Electron Limited",
@@ -110,33 +110,33 @@
       ]
     },
     "price": {
-      "currentPrice": 47450.0,
-      "previousClose": 44390.0,
-      "open": 47000.0,
-      "dayHigh": 48190.0,
-      "dayLow": 46710.0,
-      "bid": 47440.0,
-      "ask": 47480.0,
-      "fiftyTwoWeekHigh": 48190.0,
+      "currentPrice": 51890.0,
+      "previousClose": 47450.0,
+      "open": 51180.0,
+      "dayHigh": 51960.0,
+      "dayLow": 50240.0,
+      "bid": 51910.0,
+      "ask": 51870.0,
+      "fiftyTwoWeekHigh": 51960.0,
       "fiftyTwoWeekLow": 19870.0,
-      "fiftyDayAverage": 42053.0,
-      "twoHundredDayAverage": 33500.85,
-      "volume": 5915900,
-      "averageVolume": 3302593,
-      "averageVolume10days": 3239620,
-      "regularMarketChangePercent": 6.893445,
-      "52WeekChange": 1.24456
+      "fiftyDayAverage": 42275.8,
+      "twoHundredDayAverage": 33900.074,
+      "volume": 2464100,
+      "averageVolume": 3324598,
+      "averageVolume10days": 3695733,
+      "regularMarketChangePercent": 9.353275,
+      "52WeekChange": 1.1225677
     },
     "valuation": {
-      "marketCap": 21675976425472,
+      "marketCap": 23704243273728,
       "enterpriseValue": 21076367114240,
-      "trailingPE": 37.878788,
-      "forwardPE": 37.06452,
-      "priceToBook": 10.847198,
-      "priceToSalesTrailing12Months": 8.870752,
+      "trailingPE": 41.423187,
+      "forwardPE": 40.53273,
+      "priceToBook": 11.402038,
+      "priceToSalesTrailing12Months": 9.700808,
       "trailingEps": 1252.68,
       "forwardEps": 1280.2,
-      "bookValue": 4374.402,
+      "bookValue": 4550.941,
       "pegRatio": 2.24
     },
     "profitability": {
@@ -164,21 +164,21 @@
     },
     "analyst": {
       "recommendationKey": "buy",
-      "recommendationMean": 1.72727,
+      "recommendationMean": 1.68182,
       "numberOfAnalystOpinions": 21,
       "targetHighPrice": 70000.0,
       "targetLowPrice": 26500.0,
-      "targetMeanPrice": 49214.285,
-      "targetMedianPrice": 48500.0
+      "targetMeanPrice": 50238.094,
+      "targetMedianPrice": 50000.0
     },
     "ownership": {
       "sharesOutstanding": 454847594,
       "floatShares": 434144934,
       "heldPercentInsiders": 0.032309998,
-      "heldPercentInstitutions": 0.57641,
+      "heldPercentInstitutions": 0.57461,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1680134400,
-      "beta": 1.318
+      "beta": 1.366
     }
   },
   "financials": {

@@ -1,8 +1,8 @@
 {
   "ticker": "8316.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 05:57:03.491956",
-  "updated_at": "2026-05-04T05:57:03.491963",
+  "scraped_at": "2026-05-07 09:22:13.897262",
+  "updated_at": "2026-05-07T09:22:13.897278",
   "info": {
     "identity": {
       "longName": "Sumitomo Mitsui Financial Group, Inc.",
@@ -127,30 +127,30 @@
       ]
     },
     "price": {
-      "currentPrice": 5541.0,
-      "previousClose": 5512.0,
-      "open": 5512.0,
-      "dayHigh": 5562.0,
-      "dayLow": 5431.0,
-      "bid": 5534.0,
-      "ask": 5541.0,
+      "currentPrice": 5721.0,
+      "previousClose": 5541.0,
+      "open": 5650.0,
+      "dayHigh": 5722.0,
+      "dayLow": 5574.0,
+      "bid": 5721.0,
+      "ask": 5718.0,
       "fiftyTwoWeekHigh": 6284.0,
-      "fiftyTwoWeekLow": 3279.0,
-      "fiftyDayAverage": 5450.0,
-      "twoHundredDayAverage": 4749.085,
-      "volume": 8711900,
-      "averageVolume": 13912071,
-      "averageVolume10days": 10722340,
-      "regularMarketChangePercent": 0.5261248,
-      "52WeekChange": 0.6882998
+      "fiftyTwoWeekLow": 3315.0,
+      "fiftyDayAverage": 5419.86,
+      "twoHundredDayAverage": 4787.805,
+      "volume": 8001800,
+      "averageVolume": 13759551,
+      "averageVolume10days": 11624633,
+      "regularMarketChangePercent": 3.267148,
+      "52WeekChange": 0.6629652
     },
     "valuation": {
-      "marketCap": 21155557670912,
+      "marketCap": 21846615392256,
       "enterpriseValue": -27557281923072,
-      "trailingPE": 14.83693,
-      "forwardPE": 17.434946,
-      "priceToBook": 1.3552231,
-      "priceToSalesTrailing12Months": 5.706261,
+      "trailingPE": 15.321588,
+      "forwardPE": 18.004469,
+      "priceToBook": 1.3994921,
+      "priceToSalesTrailing12Months": 5.8916297,
       "trailingEps": 373.46,
       "forwardEps": 317.81,
       "bookValue": 4088.626,
@@ -192,10 +192,10 @@
       "sharesOutstanding": 3818003356,
       "floatShares": 3826720269,
       "heldPercentInsiders": 0.05307,
-      "heldPercentInstitutions": 0.40959,
+      "heldPercentInstitutions": 0.40912998,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1727395200,
-      "beta": 0.349
+      "beta": 0.392
     }
   },
   "financials": {

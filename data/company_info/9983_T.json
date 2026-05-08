@@ -1,8 +1,8 @@
 {
   "ticker": "9983.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 05:57:04.561509",
-  "updated_at": "2026-05-04T05:57:04.561515",
+  "scraped_at": "2026-05-07 09:22:15.252689",
+  "updated_at": "2026-05-07T09:22:15.252717",
   "info": {
     "identity": {
       "longName": "Fast Retailing Co., Ltd.",
@@ -115,30 +115,30 @@
       ]
     },
     "price": {
-      "currentPrice": 72890.0,
-      "previousClose": 73590.0,
-      "open": 73000.0,
-      "dayHigh": 73900.0,
-      "dayLow": 72420.0,
-      "bid": 72720.0,
-      "ask": 72890.0,
+      "currentPrice": 75480.0,
+      "previousClose": 72890.0,
+      "open": 75000.0,
+      "dayHigh": 75580.0,
+      "dayLow": 73360.0,
+      "bid": 75460.0,
+      "ask": 75420.0,
       "fiftyTwoWeekHigh": 75700.0,
       "fiftyTwoWeekLow": 43270.0,
-      "fiftyDayAverage": 67389.8,
-      "twoHundredDayAverage": 56899.9,
-      "volume": 891200,
-      "averageVolume": 1140503,
-      "averageVolume10days": 1176360,
-      "regularMarketChangePercent": -0.95121616,
-      "52WeekChange": 0.5188581
+      "fiftyDayAverage": 67846.4,
+      "twoHundredDayAverage": 57462.6,
+      "volume": 963800,
+      "averageVolume": 1143635,
+      "averageVolume10days": 1265450,
+      "regularMarketChangePercent": 3.5532994,
+      "52WeekChange": 0.5354961
     },
     "valuation": {
-      "marketCap": 22365549363200,
+      "marketCap": 23160263016448,
       "enterpriseValue": 20907508629504,
-      "trailingPE": 46.72885,
-      "forwardPE": 53.252968,
-      "priceToBook": 8.496064,
-      "priceToSalesTrailing12Months": 6.1015234,
+      "trailingPE": 48.38927,
+      "forwardPE": 55.145206,
+      "priceToBook": 8.797955,
+      "priceToSalesTrailing12Months": 6.318329,
       "trailingEps": 1559.85,
       "forwardEps": 1368.75,
       "bookValue": 8579.267,
@@ -180,10 +180,10 @@
       "sharesOutstanding": 306839741,
       "floatShares": 181557075,
       "heldPercentInsiders": 0.39248002,
-      "heldPercentInstitutions": 0.35521,
+      "heldPercentInstitutions": 0.3557,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1677456000,
-      "beta": 0.371
+      "beta": 0.455
     }
   },
   "financials": {

@@ -1,8 +1,8 @@
 {
   "ticker": "8058.T",
   "market": "JP",
-  "scraped_at": "2026-05-04 05:57:08.435783",
-  "updated_at": "2026-05-04T05:57:08.435794",
+  "scraped_at": "2026-05-07 09:22:19.620067",
+  "updated_at": "2026-05-07T09:22:19.620091",
   "info": {
     "identity": {
       "longName": "Mitsubishi Corporation",
@@ -110,30 +110,30 @@
       ]
     },
     "price": {
-      "currentPrice": 5219.0,
-      "previousClose": 4990.0,
-      "open": 4991.0,
-      "dayHigh": 5445.0,
-      "dayLow": 4842.0,
-      "bid": 5216.0,
-      "ask": 5220.0,
+      "currentPrice": 5285.0,
+      "previousClose": 5219.0,
+      "open": 5119.0,
+      "dayHigh": 5288.0,
+      "dayLow": 5108.0,
+      "bid": 5281.0,
+      "ask": 5281.0,
       "fiftyTwoWeekHigh": 5787.0,
-      "fiftyTwoWeekLow": 2640.5,
-      "fiftyDayAverage": 5205.84,
-      "twoHundredDayAverage": 4007.3875,
-      "volume": 46978900,
-      "averageVolume": 12293842,
-      "averageVolume10days": 13783750,
-      "regularMarketChangePercent": 4.5891786,
-      "52WeekChange": 0.9765196
+      "fiftyTwoWeekLow": 2688.0,
+      "fiftyDayAverage": 5217.24,
+      "twoHundredDayAverage": 4052.55,
+      "volume": 9800600,
+      "averageVolume": 12110503,
+      "averageVolume10days": 17412000,
+      "regularMarketChangePercent": 1.26461,
+      "52WeekChange": 0.92405534
     },
     "valuation": {
-      "marketCap": 19140643389440,
+      "marketCap": 19351019192320,
       "enterpriseValue": 24568488001536,
-      "trailingPE": 29.761633,
-      "forwardPE": 24.613281,
-      "priceToBook": 2.1246574,
-      "priceToSalesTrailing12Months": 1.0118761,
+      "trailingPE": 30.138002,
+      "forwardPE": 24.924543,
+      "priceToBook": 2.151526,
+      "priceToSalesTrailing12Months": 1.0229977,
       "trailingEps": 175.36,
       "forwardEps": 212.04,
       "bookValue": 2456.396,
@@ -172,13 +172,13 @@
       "targetMedianPrice": 5220.0
     },
     "ownership": {
-      "sharesOutstanding": 3667492292,
+      "sharesOutstanding": 3661498671,
       "floatShares": 3661498671,
       "heldPercentInsiders": 0.12272,
-      "heldPercentInstitutions": 0.33709,
+      "heldPercentInstitutions": 0.33699,
       "lastSplitFactor": "3:1",
       "lastSplitDate": 1703721600,
-      "beta": null
+      "beta": 0.497
     }
   },
   "financials": {
