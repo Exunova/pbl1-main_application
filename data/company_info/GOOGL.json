@@ -1,8 +1,8 @@
 {
   "ticker": "GOOGL",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:08.282595",
-  "updated_at": "2026-05-04T09:16:08.282626",
+  "scraped_at": "2026-05-04 05:56:32.014115",
+  "updated_at": "2026-05-04T05:56:32.014125",
   "info": {
     "identity": {
       "longName": "Alphabet Inc.",
@@ -140,7 +140,7 @@
       "fiftyDayAverage": 315.5118,
       "twoHundredDayAverage": 281.13284,
       "volume": 30105226,
-      "averageVolume": 32261153,
+      "averageVolume": 32889960,
       "averageVolume10days": 30116990,
       "regularMarketChangePercent": 0.2312928,
       "52WeekChange": 1.3487608

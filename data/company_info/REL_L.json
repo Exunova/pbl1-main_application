@@ -1,8 +1,8 @@
 {
   "ticker": "REL.L",
   "market": "GB",
-  "scraped_at": "2026-05-04 09:19:29.600396",
-  "updated_at": "2026-05-04T09:19:29.600429",
+  "scraped_at": "2026-05-04 05:57:19.987423",
+  "updated_at": "2026-05-04T05:57:19.987431",
   "info": {
     "identity": {
       "longName": "RELX PLC",
@@ -128,7 +128,7 @@
       "fiftyDayAverage": 2562.1,
       "twoHundredDayAverage": 3032.785,
       "volume": 2769145,
-      "averageVolume": 9670006,
+      "averageVolume": 9766319,
       "averageVolume10days": 7972622,
       "regularMarketChangePercent": 0.5965697,
       "52WeekChange": -0.34530455

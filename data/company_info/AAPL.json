@@ -1,8 +1,8 @@
 {
   "ticker": "AAPL",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:05.335610",
-  "updated_at": "2026-05-04T09:16:05.335637",
+  "scraped_at": "2026-05-04 05:56:30.903765",
+  "updated_at": "2026-05-04T05:56:30.903773",
   "info": {
     "identity": {
       "longName": "Apple Inc.",
@@ -132,7 +132,7 @@
       "fiftyDayAverage": 261.2186,
       "twoHundredDayAverage": 255.1833,
       "volume": 79915442,
-      "averageVolume": 44124766,
+      "averageVolume": 44885765,
       "averageVolume10days": 48483230,
       "regularMarketChangePercent": 3.3217735,
       "52WeekChange": 0.40851724

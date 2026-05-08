@@ -1,8 +1,8 @@
 {
   "ticker": "AZN.L",
   "market": "GB",
-  "scraped_at": "2026-05-04 09:19:00.678336",
-  "updated_at": "2026-05-04T09:19:00.678358",
+  "scraped_at": "2026-05-04 05:57:09.470995",
+  "updated_at": "2026-05-04T05:57:09.471005",
   "info": {
     "identity": {
       "longName": "AstraZeneca PLC",
@@ -125,7 +125,7 @@
       "fiftyDayAverage": 14626.96,
       "twoHundredDayAverage": 13327.88,
       "volume": 1403694,
-      "averageVolume": 2695080,
+      "averageVolume": 2684794,
       "averageVolume10days": 2005799,
       "regularMarketChangePercent": -3.1258962,
       "52WeekChange": 0.2564627

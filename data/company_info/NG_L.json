@@ -1,8 +1,8 @@
 {
   "ticker": "NG.L",
   "market": "GB",
-  "scraped_at": "2026-05-04 09:19:27.776811",
-  "updated_at": "2026-05-04T09:19:27.776850",
+  "scraped_at": "2026-05-04 05:57:18.698468",
+  "updated_at": "2026-05-04T05:57:18.698476",
   "info": {
     "identity": {
       "longName": "National Grid plc",
@@ -131,7 +131,7 @@
       "fiftyDayAverage": 1313.49,
       "twoHundredDayAverage": 1177.955,
       "volume": 4457736,
-      "averageVolume": 12616129,
+      "averageVolume": 12563464,
       "averageVolume10days": 11966221,
       "regularMarketChangePercent": -0.24386156,
       "52WeekChange": 0.22737932

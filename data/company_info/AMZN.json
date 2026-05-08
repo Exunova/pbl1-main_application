@@ -1,8 +1,8 @@
 {
   "ticker": "AMZN",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:35.361814",
-  "updated_at": "2026-05-04T09:16:35.361838",
+  "scraped_at": "2026-05-04 05:56:34.528968",
+  "updated_at": "2026-05-04T05:56:34.528989",
   "info": {
     "identity": {
       "longName": "Amazon.com, Inc.",
@@ -134,7 +134,7 @@
       "fiftyDayAverage": 224.8008,
       "twoHundredDayAverage": 227.37746,
       "volume": 50825231,
-      "averageVolume": 53486856,
+      "averageVolume": 53451004,
       "averageVolume10days": 52255340,
       "regularMarketChangePercent": 1.328799,
       "52WeekChange": 0.4395492

@@ -1,8 +1,8 @@
 {
   "ticker": "META",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:38.320955",
-  "updated_at": "2026-05-04T09:16:38.320981",
+  "scraped_at": "2026-05-04 05:56:35.855889",
+  "updated_at": "2026-05-04T05:56:35.855907",
   "info": {
     "identity": {
       "longName": "Meta Platforms, Inc.",
@@ -138,7 +138,7 @@
       "fiftyDayAverage": 630.3146,
       "twoHundredDayAverage": 678.2809,
       "volume": 21404028,
-      "averageVolume": 15388446,
+      "averageVolume": 15412944,
       "averageVolume10days": 17190690,
       "regularMarketChangePercent": -0.5172294,
       "52WeekChange": 0.015819192

@@ -1,8 +1,8 @@
 {
   "ticker": "JPM",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:54.363199",
-  "updated_at": "2026-05-04T09:16:54.363226",
+  "scraped_at": "2026-05-04 05:56:42.035958",
+  "updated_at": "2026-05-04T05:56:42.035973",
   "info": {
     "identity": {
       "longName": "JPMorgan Chase & Co.",
@@ -139,7 +139,7 @@
       "fiftyDayAverage": 299.5338,
       "twoHundredDayAverage": 304.86096,
       "volume": 5293072,
-      "averageVolume": 9898560,
+      "averageVolume": 9897744,
       "averageVolume10days": 7394150,
       "regularMarketChangePercent": -0.242636,
       "52WeekChange": 0.23721099

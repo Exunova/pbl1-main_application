@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-04 09:17:11.817505",
+  "scraped_at": "2026-05-04 11:14:38.056445",
   "pairs": {
     "IDR_USD": {
       "rate": 5.8e-05,
@@ -27,8 +27,8 @@
       "status": "ok"
     },
     "USD_GBP": {
-      "rate": 0.73591,
-      "change": 0.1224,
+      "rate": 0.7366,
+      "change": 0.2163,
       "status": "ok"
     }
   }

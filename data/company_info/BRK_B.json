@@ -1,8 +1,8 @@
 {
   "ticker": "BRK-B",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:43.086911",
-  "updated_at": "2026-05-04T09:16:43.086936",
+  "scraped_at": "2026-05-04 05:56:38.955475",
+  "updated_at": "2026-05-04T05:56:38.955493",
   "info": {
     "identity": {
       "longName": "Berkshire Hathaway Inc.",
@@ -118,7 +118,7 @@
       "fiftyDayAverage": 482.4784,
       "twoHundredDayAverage": 489.90005,
       "volume": 4759657,
-      "averageVolume": 4678398,
+      "averageVolume": 4775337,
       "averageVolume10days": 4827340,
       "regularMarketChangePercent": -0.124577,
       "52WeekChange": -0.07642293

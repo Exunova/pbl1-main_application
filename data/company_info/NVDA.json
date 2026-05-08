@@ -1,8 +1,8 @@
 {
   "ticker": "NVDA",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:03.278780",
-  "updated_at": "2026-05-04T09:16:03.278806",
+  "scraped_at": "2026-05-04 05:56:29.686528",
+  "updated_at": "2026-05-04T05:56:29.686541",
   "info": {
     "identity": {
       "longName": "NVIDIA Corporation",
@@ -133,7 +133,7 @@
       "fiftyDayAverage": 187.1542,
       "twoHundredDayAverage": 183.8563,
       "volume": 128646996,
-      "averageVolume": 174226236,
+      "averageVolume": 174763742,
       "averageVolume10days": 150718020,
       "regularMarketChangePercent": -0.5612042,
       "52WeekChange": 0.74354243

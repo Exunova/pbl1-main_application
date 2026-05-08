@@ -1,8 +1,8 @@
 {
   "ticker": "SHEL.L",
   "market": "GB",
-  "scraped_at": "2026-05-04 09:19:04.027520",
-  "updated_at": "2026-05-04T09:19:04.027577",
+  "scraped_at": "2026-05-04 05:57:11.768172",
+  "updated_at": "2026-05-04T05:57:11.768181",
   "info": {
     "identity": {
       "longName": "Shell plc",
@@ -129,7 +129,7 @@
       "fiftyDayAverage": 3321.56,
       "twoHundredDayAverage": 2883.1575,
       "volume": 3646777,
-      "averageVolume": 13918004,
+      "averageVolume": 13794595,
       "averageVolume10days": 10438923,
       "regularMarketChangePercent": -1.0823812,
       "52WeekChange": 0.32314503

@@ -1,8 +1,8 @@
 {
   "ticker": "BARC.L",
   "market": "GB",
-  "scraped_at": "2026-05-04 09:19:22.524222",
-  "updated_at": "2026-05-04T09:19:22.524243",
+  "scraped_at": "2026-05-04 05:57:16.349338",
+  "updated_at": "2026-05-04T05:57:16.349347",
   "info": {
     "identity": {
       "longName": "Barclays PLC",
@@ -123,7 +123,7 @@
       "fiftyDayAverage": 418.979,
       "twoHundredDayAverage": 417.774,
       "volume": 27779224,
-      "averageVolume": 65273428,
+      "averageVolume": 64940953,
       "averageVolume10days": 59896965,
       "regularMarketChangePercent": 0.53308326,
       "52WeekChange": 0.44079053

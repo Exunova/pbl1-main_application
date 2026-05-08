@@ -1,14 +1,14 @@
 {
-  "scraped_at": "2026-05-04 09:16:01.971379",
+  "scraped_at": "2026-05-04 11:14:23.530477",
   "markets": {
     "US": {
       "index": "^GSPC",
       "index_15m_count": 1040,
-      "new_bars": 26,
+      "new_bars": 0,
       "stocks": {
         "NVDA": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "AAPL": {
           "ohlcv_15m_count": 1040,
@@ -16,27 +16,27 @@
         },
         "GOOGL": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "MSFT": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "AMZN": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "META": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "TSLA": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "BRK-B": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         },
         "LLY": {
           "ohlcv_15m_count": 1040,
@@ -44,7 +44,7 @@
         },
         "JPM": {
           "ohlcv_15m_count": 1040,
-          "new_bars": 26
+          "new_bars": 0
         }
       }
     },

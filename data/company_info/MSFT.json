@@ -1,8 +1,8 @@
 {
   "ticker": "MSFT",
   "market": "US",
-  "scraped_at": "2026-05-04 09:16:30.234135",
-  "updated_at": "2026-05-04T09:16:30.234158",
+  "scraped_at": "2026-05-04 05:56:33.134756",
+  "updated_at": "2026-05-04T05:56:33.134769",
   "info": {
     "identity": {
       "longName": "Microsoft Corporation",
@@ -132,7 +132,7 @@
       "fiftyDayAverage": 396.1104,
       "twoHundredDayAverage": 468.0026,
       "volume": 31372361,
-      "averageVolume": 35745641,
+      "averageVolume": 35897555,
       "averageVolume10days": 35660750,
       "regularMarketChangePercent": 1.5131602,
       "52WeekChange": -0.049820006

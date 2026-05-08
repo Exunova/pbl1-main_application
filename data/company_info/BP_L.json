@@ -1,8 +1,8 @@
 {
   "ticker": "BP.L",
   "market": "GB",
-  "scraped_at": "2026-05-04 09:19:19.849901",
-  "updated_at": "2026-05-04T09:19:19.849930",
+  "scraped_at": "2026-05-04 05:57:15.271402",
+  "updated_at": "2026-05-04T05:57:15.271411",
   "info": {
     "identity": {
       "longName": "BP p.l.c.",
@@ -126,7 +126,7 @@
       "fiftyDayAverage": 549.028,
       "twoHundredDayAverage": 464.98874,
       "volume": 65451185,
-      "averageVolume": 57496141,
+      "averageVolume": 57174589,
       "averageVolume10days": 42004003,
       "regularMarketChangePercent": -2.038363,
       "52WeekChange": 0.63260067
