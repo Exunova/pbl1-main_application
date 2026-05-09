@@ -19,7 +19,7 @@ export default function AddPositionModal({
     <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
       <div className="bg-surface border border-border p-6 w-full max-w-sm space-y-5 shadow-2xl relative">
         <div className="flex justify-between items-center border-b border-border/50 pb-3">
-          <h3 className="text-sm font-bold text-white uppercase tracking-widest flex items-center gap-2">
+          <h3 className="text-sm font-bold text-[var(--text)] uppercase tracking-widest flex items-center gap-2">
             {editingId ? <Edit2 size={14} /> : <Plus size={14} />} {editingId ? "Edit Position" : "Add Position"}
           </h3>
         </div>
@@ -37,10 +37,10 @@ export default function AddPositionModal({
               onFocus={() => setShowTickerDropdown(true)} 
               onBlur={() => setTimeout(() => setShowTickerDropdown(false), 200)} 
               placeholder="e.g. AAPL" 
-              className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white transition-colors" 
+              className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text] outline-none focus:border-white transition-colors" 
             />
             {showTickerDropdown && availableTickers.length > 0 && (
-              <div className="absolute z-10 w-full mt-1 bg-[#111] border border-border max-h-48 overflow-y-auto custom-scrollbar">
+              <div className="absolute z-10 w-full mt-1 bg-[var(--background)] border border-border max-h-48 overflow-y-auto custom-scrollbar">
                 {availableTickers.filter(t => t.ticker.toLowerCase().includes(form.ticker.toLowerCase())).map(t => (
                   <div 
                     key={t.ticker} 
@@ -56,7 +56,7 @@ export default function AddPositionModal({
                     }} 
                     className="px-3 py-2 text-xs hover:bg-white/10 cursor-pointer flex flex-col border-b border-border/30"
                   >
-                    <span className="font-bold text-white">{t.ticker}</span>
+                    <span className="font-bold text-[var(--text)]">{t.ticker}</span>
                     <span className="text-[9px] text-muted truncate mt-0.5">{t.name}</span>
                   </div>
                 ))}
@@ -68,7 +68,7 @@ export default function AddPositionModal({
             <input 
               value={form.company} 
               onChange={e => { setForm(f => ({ ...f, company: e.target.value })); setErrorMessage(''); }} 
-              className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white" 
+              className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white" 
             />
           </div>
           <div className="grid grid-cols-2 gap-3">
@@ -85,7 +85,7 @@ export default function AddPositionModal({
                   setForm(f => ({ ...f, shares: val }))
                 }} 
                 type="text" 
-                className={`w-full bg-[#111] border px-3 py-2 text-xs text-white outline-none focus:border-white number-font ${sharesError ? 'border-red-500' : 'border-border'}`} 
+                className={`w-full bg-[var(--background)] border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white number-font ${sharesError ? 'border-red-500' : 'border-border'}`} 
               />
             </div>
             <div>
@@ -94,7 +94,7 @@ export default function AddPositionModal({
                 value={form.buyPrice} 
                 onChange={e => { setForm(f => ({ ...f, buyPrice: e.target.value })); setErrorMessage(''); }} 
                 type="number" 
-                className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" 
+                className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white number-font" 
               />
             </div>
           </div>
@@ -105,18 +105,18 @@ export default function AddPositionModal({
                 value={form.buyDate} 
                 onChange={e => { setForm(f => ({ ...f, buyDate: e.target.value })); setErrorMessage(''); }} 
                 type="date" 
-                className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white number-font" 
+                className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white number-font" 
               />
             </div>
             <div>
               <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Currency</label>
-              <select disabled value={form.currency} className="w-full bg-[#111] border border-border px-3 py-2 text-xs text-white outline-none focus:border-white opacity-50 cursor-not-allowed">
+              <select disabled value={form.currency} className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white opacity-50 cursor-not-allowed">
                 {['USD', 'IDR', 'JPY', 'GBP'].map(c => <option key={c}>{c}</option>)}
               </select>
             </div>
           </div>
           <div className="flex gap-3 pt-4 border-t border-border/50">
-            <button onClick={onClose} className="flex-1 bg-surface border border-border text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Cancel</button>
+            <button onClick={onClose} className="flex-1 bg-surface border border-border text-[var(--text)] text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">Cancel</button>
             <button onClick={handleSave} className="flex-1 bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors">{editingId ? "Update" : "Save"}</button>
           </div>
         </div>

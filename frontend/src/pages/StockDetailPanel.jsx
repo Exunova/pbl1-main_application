@@ -38,7 +38,14 @@ const Candlestick = (props) => {
   return (
     <g>
       <line x1={wickX} y1={y} x2={wickX} y2={y + height} stroke="#374151" strokeWidth={1} />
-      <rect x={x} y={bodyTop} width={Math.max(width, 1)} height={bodyH} fill={color} />
+      {/* <rect x={x} y={bodyTop} width={Math.max(width, 1)} height={bodyH} fill={color} /> */}
+      <rect
+        x={x - 6}
+        y={bodyTop}
+        width={Math.max(width + 12, 1)}
+        height={bodyH}
+        fill={color}
+      />
     </g>
   )
 }
@@ -338,7 +345,7 @@ export default function StockDetailPanel({ stock, onClose }) {
           </span>
           <span style={{ fontSize: 11, color: '#4b5563', marginLeft: 8 }}>{ticker}</span>
           {(identity.sector || stock.sector) && (
-            <span style={{ fontSize: 9, background: '#1a2d1a', color: '#4ade80', padding: '2px 8px', borderRadius: 0, marginLeft: 8, display: 'inline-block', fontWeight: 600, letterSpacing: '0.05em' }}>
+            <span style={{ fontSize: 9, background: 'var(--bacground)', color: '#4ade80', padding: '2px 8px', borderRadius: 0, marginLeft: 8, display: 'inline-block', fontWeight: 600, letterSpacing: '0.05em' }}>
               {identity.sector || stock.sector}
             </span>
           )}
@@ -482,7 +489,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 {chartType === 'line' ? (
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
                     <XAxis dataKey="index" hide />
-                    <YAxis yAxisId="price" domain={yDomain} tick={{ fontSize: 9, fill: 'var(--muted)', fontFamily: "'Fira Code', monospace" }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} axisLine={{stroke: 'var(--border)'}} tickLine={false} />
+                    <YAxis yAxisId="price" domain={yDomain} tick={{ fontSize: 9, fill: 'var(--muted)', fontFamily: "'Fira Code', monospace" }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} axisLine={{ stroke: 'var(--border)' }} tickLine={false} />
                     <YAxis yAxisId="volume" orientation="left" hide domain={[0, dataMax => dataMax * 5]} />
                     <Tooltip contentStyle={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 0, fontSize: 11 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}
@@ -491,7 +498,7 @@ export default function StockDetailPanel({ stock, onClose }) {
                 ) : (
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
                     <XAxis dataKey="index" hide padding={{ left: 0, right: 0 }} />
-                    <YAxis yAxisId="price" domain={yDomain} tick={{ fontSize: 9, fill: 'var(--muted)', fontFamily: "'Fira Code', monospace" }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} axisLine={{stroke: 'var(--border)'}} tickLine={false} />
+                    <YAxis yAxisId="price" domain={yDomain} tick={{ fontSize: 9, fill: 'var(--muted)', fontFamily: "'Fira Code', monospace" }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} axisLine={{ stroke: 'var(--border)' }} tickLine={false} />
                     <YAxis yAxisId="volume" orientation="left" hide domain={[0, dataMax => dataMax * 5]} />
                     <Tooltip content={<CandleTooltip />} cursor={{ stroke: '#1e2433', strokeWidth: 1 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}

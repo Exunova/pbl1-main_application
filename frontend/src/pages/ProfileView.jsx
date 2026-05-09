@@ -94,10 +94,10 @@ export default function ProfileView({ theme, onThemeToggle }) {
     <div className="h-full w-full overflow-y-auto p-8 space-y-8 bg-background custom-scrollbar">
       <div className="flex items-center gap-4 border-b border-border/50 pb-6 animate-fade-in-up">
         <div className="p-3 bg-surface border border-border">
-          <User className="text-white" size={24} />
+          <User className="text-[var(--text)]" size={24} />
         </div>
         <div>
-          <h2 className="text-xl font-bold text-white tracking-widest uppercase">System Profile</h2>
+          <h2 className="text-xl font-bold text-[var(--text)] tracking-widest uppercase">System Profile</h2>
           <p className="text-[10px] text-muted tracking-widest uppercase mt-0.5">Application Settings & Data Mobility</p>
         </div>
       </div>
@@ -106,18 +106,18 @@ export default function ProfileView({ theme, onThemeToggle }) {
         <div className="bg-surface border border-border p-6 space-y-6">
           <div className="flex items-center gap-2 border-b border-border/50 pb-3">
             <Monitor size={16} className="text-muted" />
-            <h3 className="text-xs font-bold text-white uppercase tracking-widest">Interface Preferences</h3>
+            <h3 className="text-xs font-bold text-[var(--text)] uppercase tracking-widest">Interface Preferences</h3>
           </div>
           
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-xs font-bold text-white uppercase">System Theme</p>
+                <p className="text-xs font-bold text-[var(--text)] uppercase">System Theme</p>
                 <p className="text-[9px] text-muted uppercase mt-0.5">Toggle between dark, light, or auto mode</p>
               </div>
               <button 
                 onClick={onThemeToggle}
-                className="flex items-center gap-3 px-4 py-2 bg-[#111] border border-border hover:border-white transition-all text-[10px] font-bold uppercase tracking-widest"
+                className="flex items-center gap-3 px-4 py-2 bg-[var(--background)] border border-border hover:border-white transition-all text-[10px] font-bold uppercase tracking-widest"
               >
                 {theme === 'dark' && <><Moon size={14} /> Dark</>}
                 {theme === 'light' && <><Sun size={14} /> Light</>}
@@ -130,7 +130,7 @@ export default function ProfileView({ theme, onThemeToggle }) {
         <div className="bg-surface border border-border p-6 space-y-6">
           <div className="flex items-center gap-2 border-b border-border/50 pb-3">
             <Download size={16} className="text-muted" />
-            <h3 className="text-xs font-bold text-white uppercase tracking-widest">Data Portability</h3>
+            <h3 className="text-xs font-bold text-[var(--text)] uppercase tracking-widest">Data Portability</h3>
           </div>
 
           <div className="space-y-6">
@@ -160,7 +160,7 @@ export default function ProfileView({ theme, onThemeToggle }) {
                   className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10"
                 />
                 <button 
-                  className="w-full flex items-center justify-center gap-2 py-3 bg-surface border border-border text-white text-[11px] font-bold uppercase tracking-widest hover:bg-white/5 transition-all"
+                  className="w-full flex items-center justify-center gap-2 py-3 bg-surface border border-border text-[var(--text)] text-[11px] font-bold uppercase tracking-widest hover:bg-white/5 transition-all"
                 >
                   <Upload size={14} /> Import Portfolio (.CSV)
                 </button>

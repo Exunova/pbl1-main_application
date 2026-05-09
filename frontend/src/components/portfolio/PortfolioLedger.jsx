@@ -10,7 +10,7 @@ export default function PortfolioLedger({ positions, pnlData, onEdit, onDelete }
       </div>
       <div className="overflow-x-auto">
         <table className="w-full text-xs text-left whitespace-nowrap">
-          <thead className="bg-[#111] text-muted uppercase tracking-widest text-[9px] border-b border-border/50">
+          <thead className="var(--surface) text-muted uppercase tracking-widest text-[9px] border-b border-border/50">
             <tr>
               <th className="px-4 py-3">Ticker</th>
               <th className="px-4 py-3">Company</th>
@@ -29,7 +29,7 @@ export default function PortfolioLedger({ positions, pnlData, onEdit, onDelete }
               const isProfit = pnl >= 0;
               return (
                 <tr key={p.id} className="hover:bg-white/5 transition-colors">
-                  <td className="px-4 py-3 font-bold text-white">{p.ticker}</td>
+                  <td className="px-4 py-3 font-bold text-[var(--text)]">{p.ticker}</td>
                   <td className="px-4 py-3 text-muted max-w-[150px] truncate" title={p.company}>{p.company}</td>
                   <td className="px-4 py-3 text-right font-medium number-font">{p.shares / 100}</td>
                   <td className="px-4 py-3 text-right number-font">{p.buyPrice?.toFixed(2)} <span className="text-[9px] ml-0.5">{p.currency}</span></td>

@@ -7,7 +7,7 @@ export default function PortfolioMetrics({ total }) {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
       {[
         { label: 'Total P&L (IDR)', value: total.totalPnL, color: 'text-success' },
-        { label: 'Stock Return (IDR)', value: total.stockReturn, color: 'text-white' },
+        { label: 'Stock Return (IDR)', value: total.stockReturn, color: 'text-[var(--text)]' },
         { label: 'Forex Return (IDR)', value: total.forexReturn, color: 'text-secondary' }
       ].map((metric, i) => (
         <div key={i} className="bg-surface border border-border p-4 flex flex-col justify-center">

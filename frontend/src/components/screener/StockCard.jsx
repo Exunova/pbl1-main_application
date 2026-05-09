@@ -58,7 +58,7 @@ export default function StockCard({ stock, onClick }) {
   >
     <div className="flex justify-between items-start mb-3 gap-2">
       <div className="min-w-0 flex-1">
-        <h3 className="text-sm font-bold tracking-widest text-text truncate uppercase group-hover:text-white transition-colors">
+        <h3 className="text-sm font-bold tracking-widest text-text truncate uppercase group-hover:text-[var(--text)] transition-colors">
           {stock.ticker}
         </h3>
         <p className="text-[10px] text-muted uppercase tracking-widest mt-1 truncate">

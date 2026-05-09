@@ -28,11 +28,11 @@ function CustomTreemapContent(props) {
         onMouseLeave={e => { e.target.style.filter = 'brightness(1)' }}
       />
       {showText && (
-        <text x={x + width / 2} y={y + height / 2 - 4} textAnchor="middle" fill="#fff" fontSize={11} fontWeight="bold"
+        <text x={x + width / 2} y={y + height / 2 - 4} textAnchor="middle" fill="#fff" fontSize={11} fontWeight="bold" stroke="none"
           fontFamily="'Fira Sans', sans-serif" pointerEvents="none">{ticker}</text>
       )}
       {showText && (
-        <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" fill="rgba(255,255,255,0.85)" fontSize={10}
+        <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" fill="rgba(255,255,255,0.85)" fontSize={10} stroke="none"
           fontFamily="'Fira Code', monospace" pointerEvents="none">{changeStr}%</text>
       )}
     </g>

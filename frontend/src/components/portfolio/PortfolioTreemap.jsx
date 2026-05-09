@@ -22,9 +22,9 @@ const CustomTreemapContent = React.memo(function CustomTreemapContent(props) {
       <rect x={x} y={y} width={width} height={height} fill={bgColor} stroke="#000" strokeWidth={1} />
       {showText && (
         <>
-          <text x={x + width / 2} y={y + height / 2 - 4} textAnchor="middle" fill="#fff" fontSize={11} fontWeight="bold"
+          <text x={x + width / 2} y={y + height / 2 - 4} textAnchor="middle" fill="var(--text)" fontSize={11} fontWeight="bold"
             fontFamily="sans-serif" pointerEvents="none">{ticker}</text>
-          <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" fill="rgba(255,255,255,0.85)" fontSize={10}
+          <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" fill="var(--text)" fontSize={10}
             fontFamily="monospace" pointerEvents="none">{changeStr}%</text>
         </>
       )}
@@ -35,7 +35,7 @@ const CustomTreemapContent = React.memo(function CustomTreemapContent(props) {
 export default function PortfolioTreemap({ data, positionsCount }) {
   return (
     <div className="lg:col-span-2 bg-surface border border-border p-5 min-h-[380px] flex flex-col relative">
-      <h3 className="text-xs font-bold text-white uppercase tracking-widest mb-4 border-b border-border/50 pb-2 flex items-center gap-2">
+      <h3 className="text-xs font-bold var(--text) uppercase tracking-widest mb-4 border-b border-border/50 pb-2 flex items-center gap-2">
         <Activity size={14} className="text-muted" /> Active Positions Map
       </h3>
       <div className="flex-1 min-h-[300px] relative">
