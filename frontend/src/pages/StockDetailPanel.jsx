@@ -37,12 +37,11 @@ const Candlestick = (props) => {
   const wickX = x + width / 2
   return (
     <g>
-      <line x1={wickX} y1={y} x2={wickX} y2={y + height} stroke="#374151" strokeWidth={1} />
-      {/* <rect x={x} y={bodyTop} width={Math.max(width, 1)} height={bodyH} fill={color} /> */}
+      <line x1={wickX} y1={y} x2={wickX} y2={y + height} stroke={color} strokeWidth={1} />
       <rect
-        x={x - 6}
+        x={x - 7}
         y={bodyTop}
-        width={Math.max(width + 12, 1)}
+        width={Math.max(width + 14, 1)}
         height={bodyH}
         fill={color}
       />
@@ -58,7 +57,7 @@ const CandleTooltip = ({ active, payload }) => {
   return (
     <div style={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 0, padding: '8px 12px', fontSize: 11 }}>
       <div style={{ display: 'grid', gridTemplateColumns: 'auto auto', gap: '2px 12px' }}>
-        <span style={{ color: '#6b7280' }}>O</span><span style={{ color: '#e2e8f0' }}>{fmt(d.open, 0)}</span>
+        <span style={{ color: '#6b7280' }}>O</span><span style={{ color: '#696b6e' }}>{fmt(d.open, 0)}</span>
         <span style={{ color: '#6b7280' }}>H</span><span style={{ color: "var(--success)" }}>{fmt(d.high, 0)}</span>
         <span style={{ color: '#6b7280' }}>L</span><span style={{ color: "var(--danger)" }}>{fmt(d.low, 0)}</span>
         <span style={{ color: '#6b7280' }}>C</span><span style={{ color: isUp ? '#22c55e' : '#ef4444' }}>{fmt(d.close, 0)}</span>
