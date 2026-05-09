@@ -457,10 +457,10 @@ export default function StockDetailPanel({ stock, onClose }) {
             {/* OHLC readout */}
             <div style={{ marginLeft: 'auto', display: 'flex', gap: 10 }}>
               {[
-                { label: 'O', val: lastCandle.open, color: '#e2e8f0' },
+                { label: 'O', val: lastCandle.open, color: '#a8a8a9' },
                 { label: 'H', val: lastCandle.high, color: "var(--success)" },
                 { label: 'L', val: lastCandle.low, color: "var(--danger)" },
-                { label: 'C', val: lastCandle.close, color: '#e2e8f0' },
+                { label: 'C', val: lastCandle.close, color: '#bbbcbd' },
               ].map(({ label, val, color }) => (
                 <span key={label} style={{ fontSize: 11, color: 'var(--muted)' }}>
                   {label} <span style={{ color }}>{val?.toLocaleString(undefined, { maximumFractionDigits: 2 })}</span>
