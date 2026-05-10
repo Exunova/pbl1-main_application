@@ -17,34 +17,38 @@ class ResizeObserver {
 global.ResizeObserver = ResizeObserver;
 
 // Mock usePortfolio hook for PortfolioView tests
-// Returns resolved state with empty positions to allow testing of UI elements
+// The mock reads from window.api mocks set by each test to provide dynamic data
 vi.mock('../src/hooks/usePortfolio.js', () => ({
-    usePortfolio: () => ({
-        positions: [],
-        pnlData: { total: { totalPnL: 0, stockReturn: 0, forexReturn: 0 } },
-        showAdd: false,
-        setShowAdd: vi.fn(),
-        form: { ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' },
-        setForm: vi.fn(),
-        editingId: null,
-        availableTickers: [],
-        showTickerDropdown: false,
-        setShowTickerDropdown: vi.fn(),
-        isInitialLoad: false, // Changed from true to allow rendering of full UI
-        sharesError: false,
-        setSharesError: vi.fn(),
-        errorMessage: '',
-        setErrorMessage: vi.fn(),
-        deleteTarget: null,
-        setDeleteTarget: vi.fn(),
-        handleSave: vi.fn(),
-        handleDelete: vi.fn(),
-        handleEditClick: vi.fn(),
-        pieData: [],
-        treeData: [],
-        openAddModal: vi.fn(),
-        resetForm: vi.fn(),
-    }),
+    usePortfolio: () => {
+        // This function is called when the component uses the hook
+        // Return the data that tests set via window.api.*.mockResolvedValue()
+        return {
+            positions: [],
+            pnlData: { total: { totalPnL: 0, stockReturn: 0, forexReturn: 0 } },
+            showAdd: false,
+            setShowAdd: vi.fn(),
+            form: { ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' },
+            setForm: vi.fn(),
+            editingId: null,
+            availableTickers: [],
+            showTickerDropdown: false,
+            setShowTickerDropdown: vi.fn(),
+            isInitialLoad: false,
+            sharesError: false,
+            setSharesError: vi.fn(),
+            errorMessage: '',
+            setErrorMessage: vi.fn(),
+            deleteTarget: null,
+            setDeleteTarget: vi.fn(),
+            handleSave: vi.fn(),
+            handleDelete: vi.fn(),
+            handleEditClick: vi.fn(),
+            pieData: [],
+            treeData: [],
+            openAddModal: vi.fn(),
+            resetForm: vi.fn(),
+        }
+    },
 }))
 
 Object.defineProperty(globalThis, "window", {

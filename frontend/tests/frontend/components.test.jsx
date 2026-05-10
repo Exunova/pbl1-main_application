@@ -154,7 +154,7 @@ describe('EconomicCalendar', () => {
 
   // UI-027: Test impact filter (show only high impact events)
   // SKIPPED: impactFilter prop does not exist in EconomicCalendar component
-  it.skip('filters to show only high impact events when impactFilter is high - SKIPPED: impactFilter prop does not exist in EconomicCalendar component', () => {
+  it('filters to show only high impact events when impactFilter is high', () => {
     const mockEvents = [
       { name: 'Core CPI', date: '2026-04-12', time: '08:30', impact: 'high' },
       { name: 'Retail Sales', date: '2026-04-12', time: '10:00', impact: 'medium' },
@@ -167,7 +167,7 @@ describe('EconomicCalendar', () => {
   })
 
   // SKIPPED: impactFilter prop does not exist in EconomicCalendar component
-  it.skip('filters to show only medium impact events when impactFilter is medium - SKIPPED: impactFilter prop does not exist in EconomicCalendar component', () => {
+  it('filters to show only medium impact events when impactFilter is medium', () => {
     const mockEvents = [
       { name: 'Core CPI', date: '2026-04-12', time: '08:30', impact: 'high' },
       { name: 'Retail Sales', date: '2026-04-12', time: '10:00', impact: 'medium' },
@@ -180,7 +180,7 @@ describe('EconomicCalendar', () => {
   })
 
   // SKIPPED: impactFilter prop does not exist in EconomicCalendar component
-  it.skip('shows no economic events when impactFilter matches nothing - SKIPPED: impactFilter prop does not exist in EconomicCalendar component', () => {
+  it('shows no economic events when impactFilter matches nothing', () => {
     const mockEvents = [
       { name: 'Core CPI', date: '2026-04-12', time: '08:30', impact: 'high' },
     ]

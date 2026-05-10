@@ -1,4 +1,18 @@
-import { test, expect } from '@playwright/test'
+import { test, expect, _electron } from '@playwright/test'
+
+let electronApp
+
+test.beforeAll(async () => {
+  electronApp = await _electron.launch({
+    executablePath: 'C:\\Users\\user\\Project\\pbl1-main_application\\frontend\\node_modules\\electron\\dist\\electron.exe',
+    args: ['.'],
+    cwd: 'C:\\Users\\user\\Project\\pbl1-main_application\\frontend',
+  })
+})
+
+test.afterAll(async () => {
+  if (electronApp) await electronApp.close()
+})
 
 // Mock data for CompareView
 const mockIndices = [
@@ -58,8 +72,7 @@ test.beforeEach(async ({ page }) => {
 // UI-011: Visual comparison of two indices with overlay chart
 test.describe('UI-011: Two Index Selectors with Overlay Chart', () => {
   test('renders two index selectors with VS separator', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     // Check both selectors are present
@@ -72,8 +85,7 @@ test.describe('UI-011: Two Index Selectors with Overlay Chart', () => {
   })
 
   test('first selector shows index 1 color indicator', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     // First color indicator (white square)
@@ -82,8 +94,7 @@ test.describe('UI-011: Two Index Selectors with Overlay Chart', () => {
   })
 
   test('second selector shows index 2 color indicator', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     // Two color indicators should be visible
@@ -92,8 +103,7 @@ test.describe('UI-011: Two Index Selectors with Overlay Chart', () => {
   })
 
   test('overlay chart shows OUTPERFORM area (green)', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Chart should render with Recharts
@@ -106,8 +116,7 @@ test.describe('UI-011: Two Index Selectors with Overlay Chart', () => {
   })
 
   test('overlay chart shows UNDERPERFORM area (red)', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Chart renders with areas
@@ -116,8 +125,7 @@ test.describe('UI-011: Two Index Selectors with Overlay Chart', () => {
   })
 
   test('selecting different indices updates the chart', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     const selectors = page.locator('select')
@@ -132,8 +140,7 @@ test.describe('UI-011: Two Index Selectors with Overlay Chart', () => {
   })
 
   test('chart displays both index lines', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Check for line elements in chart
@@ -142,19 +149,8 @@ test.describe('UI-011: Two Index Selectors with Overlay Chart', () => {
   })
 
   test('loading state shows when fetching chart data', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-
-    // Initial load should show loading or chart
-    const body = page.locator('body')
-    await expect(body).toBeVisible()
-  })
-})
-
-// UI-012: Visual heatmap rendering
-test.describe('UI-012: Heatmap Rendering', () => {
-  test('heatmap container is visible for selected indices', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Two heatmap containers should be present (one per index panel)
@@ -164,8 +160,7 @@ test.describe('UI-012: Heatmap Rendering', () => {
   })
 
   test('heatmap renders with Recharts Treemap', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Treemap uses rect elements for cells
@@ -175,8 +170,7 @@ test.describe('UI-012: Heatmap Rendering', () => {
   })
 
   test('positive change cells show green color', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Verify mock data has positive changes
@@ -189,8 +183,7 @@ test.describe('UI-012: Heatmap Rendering', () => {
   })
 
   test('negative change cells show red color', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Verify mock data has negative changes (GOOGL, TLKM)
@@ -203,8 +196,7 @@ test.describe('UI-012: Heatmap Rendering', () => {
   })
 
   test('heatmap cells display ticker labels', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Treemap renders text elements for tickers
@@ -213,8 +205,7 @@ test.describe('UI-012: Heatmap Rendering', () => {
   })
 
   test('clicking index panel selects it and shows news toggle', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     // Click on first index panel
@@ -231,8 +222,7 @@ test.describe('UI-012: Heatmap Rendering', () => {
 // UI-013: Visual duplicate selection handling
 test.describe('UI-013: Duplicate Index Selection', () => {
   test('can select same index for both selectors', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     const selectors = page.locator('select')
@@ -248,8 +238,7 @@ test.describe('UI-013: Duplicate Index Selection', () => {
   })
 
   test('same index selection shows no warning message by default', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     const selectors = page.locator('select')
@@ -268,8 +257,7 @@ test.describe('UI-013: Duplicate Index Selection', () => {
   })
 
   test('VS text remains visible when same index selected', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     const selectors = page.locator('select')
@@ -284,8 +272,7 @@ test.describe('UI-013: Duplicate Index Selection', () => {
   })
 
   test('chart handles identical index comparison', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     const selectors = page.locator('select')
@@ -304,8 +291,7 @@ test.describe('UI-013: Duplicate Index Selection', () => {
   })
 
   test('switching back to different indices restores comparison', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     const selectors = page.locator('select')
@@ -334,8 +320,7 @@ test.describe('CompareView Integration', () => {
       }
     })
 
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Filter critical errors
@@ -349,8 +334,7 @@ test.describe('CompareView Integration', () => {
   })
 
   test('all selectors are interactive and change values', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     const selectors = page.locator('select')
@@ -367,8 +351,7 @@ test.describe('CompareView Integration', () => {
   })
 
   test('chart tooltip appears on hover', async ({ page }) => {
-    await page.goto('http://localhost:5173/#/compare')
-    await page.waitLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Hover over chart area

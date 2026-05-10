@@ -1,4 +1,18 @@
-import { test, expect } from '@playwright/test'
+import { test, expect, _electron } from '@playwright/test'
+
+let electronApp
+
+test.beforeAll(async () => {
+  electronApp = await _electron.launch({
+    executablePath: 'C:\\Users\\user\\Project\\pbl1-main_application\\frontend\\node_modules\\electron\\dist\\electron.exe',
+    args: ['.'],
+    cwd: 'C:\\Users\\user\\Project\\pbl1-main_application\\frontend',
+  })
+})
+
+test.afterAll(async () => {
+  if (electronApp) await electronApp.close()
+})
 
 // Mock positions data
 const mockPositions = [
@@ -62,8 +76,8 @@ test.describe('UI-014: Visual portfolio position list display', () => {
       window.api.fetchPnL = async () => ({ total: { totalPnL: 0, stockReturn: 0, forexReturn: 0 }, positions: [] })
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -85,8 +99,8 @@ test.describe('UI-014: Visual portfolio position list display', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -112,8 +126,8 @@ test.describe('UI-014: Visual portfolio position list display', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -137,8 +151,8 @@ test.describe('UI-014: Visual portfolio position list display', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -160,8 +174,8 @@ test.describe('UI-014: Visual portfolio position list display', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -190,8 +204,8 @@ test.describe('UI-015: Add position form submission flow', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -220,8 +234,8 @@ test.describe('UI-015: Add position form submission flow', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -255,8 +269,8 @@ test.describe('UI-015: Add position form submission flow', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -292,8 +306,8 @@ test.describe('UI-015: Add position form submission flow', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -340,8 +354,8 @@ test.describe('UI-015: Add position form submission flow', () => {
       }
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -398,8 +412,8 @@ test.describe('UI-015: Add position form submission flow', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -438,8 +452,8 @@ test.describe('UI-016: Form validation visual feedback', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -480,8 +494,8 @@ test.describe('UI-016: Form validation visual feedback', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -521,8 +535,8 @@ test.describe('UI-016: Form validation visual feedback', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -569,8 +583,8 @@ test.describe('UI-016: Form validation visual feedback', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -617,8 +631,8 @@ test.describe('UI-016: Form validation visual feedback', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -668,8 +682,8 @@ test.describe('UI-016: Form validation visual feedback', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -716,8 +730,8 @@ test.describe('UI-017: PnL display per position visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -751,8 +765,8 @@ test.describe('UI-017: PnL display per position visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -778,8 +792,8 @@ test.describe('UI-017: PnL display per position visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -810,8 +824,8 @@ test.describe('UI-017: PnL display per position visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -834,8 +848,8 @@ test.describe('UI-017: PnL display per position visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -864,8 +878,8 @@ test.describe('UI-018: Grand total PnL display visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -888,8 +902,8 @@ test.describe('UI-018: Grand total PnL display visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -917,8 +931,8 @@ test.describe('UI-018: Grand total PnL display visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -941,8 +955,8 @@ test.describe('UI-018: Grand total PnL display visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -966,8 +980,8 @@ test.describe('UI-018: Grand total PnL display visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -991,8 +1005,8 @@ test.describe('UI-018: Grand total PnL display visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -1017,8 +1031,8 @@ test.describe('UI-019: Delete position flow visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -1045,8 +1059,8 @@ test.describe('UI-019: Delete position flow visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -1074,8 +1088,8 @@ test.describe('UI-019: Delete position flow visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -1117,8 +1131,8 @@ test.describe('UI-019: Delete position flow visually', () => {
       }
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -1155,8 +1169,8 @@ test.describe('UI-019: Delete position flow visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()
@@ -1184,8 +1198,8 @@ test.describe('UI-019: Delete position flow visually', () => {
       window.api.getScrapedTickers = async () => mockTickers
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
 
     // Navigate to Portfolio tab
     const portfolioTab = page.getByText(/portfolio/i).first()

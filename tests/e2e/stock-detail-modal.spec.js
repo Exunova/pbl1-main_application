@@ -1,4 +1,18 @@
-import { test, expect } from '@playwright/test'
+import { test, expect, _electron } from '@playwright/test'
+
+let electronApp
+
+test.beforeAll(async () => {
+  electronApp = await _electron.launch({
+    executablePath: 'C:\\Users\\user\\Project\\pbl1-main_application\\frontend\\node_modules\\electron\\dist\\electron.exe',
+    args: ['.'],
+    cwd: 'C:\\Users\\user\\Project\\pbl1-main_application\\frontend',
+  })
+})
+
+test.afterAll(async () => {
+  if (electronApp) await electronApp.close()
+})
 
 // Mock data for StockDetailModal
 const mockCompanyData = {
@@ -74,8 +88,7 @@ test.beforeEach(async ({ page }) => {
 // UI-021: Visual candlestick chart rendering
 test.describe('UI-021: Candlestick Chart Rendering', () => {
   test('modal renders with chart tab accessible', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Open modal by clicking stock card if available, otherwise verify modal can be triggered
@@ -84,8 +97,7 @@ test.describe('UI-021: Candlestick Chart Rendering', () => {
   })
 
   test('candlestick chart renders with OHLCV data', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     // Verify fetchOHLCV returns valid candlestick data
@@ -105,8 +117,7 @@ test.describe('UI-021: Candlestick Chart Rendering', () => {
   })
 
   test('chart displays loading state before data arrives', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Verify the loading state text is rendered when tab is chart
     const content = await page.content()
@@ -115,8 +126,7 @@ test.describe('UI-021: Candlestick Chart Rendering', () => {
   })
 
   test('CandlestickChart component receives data prop', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     // Simulate what the modal does - fetch OHLCV data
@@ -126,8 +136,7 @@ test.describe('UI-021: Candlestick Chart Rendering', () => {
   })
 
   test('chart shows correct number of candles', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     const data = await page.evaluate(() => window.api.fetchOHLCV('AAPL'))
@@ -139,8 +148,7 @@ test.describe('UI-021: Candlestick Chart Rendering', () => {
 // UI-022: Visual financial tables rendering
 test.describe('UI-022: Financial Tables Rendering', () => {
   test('financial table displays income statement data', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     // Verify company data has financials
@@ -154,8 +162,7 @@ test.describe('UI-022: Financial Tables Rendering', () => {
   })
 
   test('financial table has correct column headers', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     // Verify financial data has expected columns
@@ -172,8 +179,7 @@ test.describe('UI-022: Financial Tables Rendering', () => {
   })
 
   test('financial table displays formatted currency values', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     const companyData = await page.evaluate(() => window.api.fetchCompany('AAPL'))
@@ -187,8 +193,7 @@ test.describe('UI-022: Financial Tables Rendering', () => {
   })
 
   test('financial table rows are sorted by year descending', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     const companyData = await page.evaluate(() => window.api.fetchCompany('AAPL'))
@@ -203,8 +208,7 @@ test.describe('UI-022: Financial Tables Rendering', () => {
 // UI-023: Tab switching
 test.describe('UI-023: Tab Switching', () => {
   test('modal has four tabs: overview, chart, financials, about', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     // Verify the tab names
@@ -215,8 +219,7 @@ test.describe('UI-023: Tab Switching', () => {
   })
 
   test('clicking chart tab triggers fetchOHLCV', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     // Simulate chart tab selection
@@ -226,8 +229,7 @@ test.describe('UI-023: Tab Switching', () => {
   })
 
   test('clicking financials tab shows loading then company data', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     const companyData = await page.evaluate(() => window.api.fetchCompany('AAPL'))
@@ -235,8 +237,7 @@ test.describe('UI-023: Tab Switching', () => {
   })
 
   test('tab switching is reflected in modal UI', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // The StockDetailModal has buttons for each tab with onClick handlers
     const content = await page.content()
@@ -247,8 +248,7 @@ test.describe('UI-023: Tab Switching', () => {
 // UI-024: Overview tab content
 test.describe('UI-024: Overview Tab Content', () => {
   test('overview displays company identity info', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     const companyData = await page.evaluate(() => window.api.fetchCompany('AAPL'))
@@ -260,8 +260,7 @@ test.describe('UI-024: Overview Tab Content', () => {
   })
 
   test('overview displays price and valuation info', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     const companyData = await page.evaluate(() => window.api.fetchCompany('AAPL'))
@@ -273,8 +272,7 @@ test.describe('UI-024: Overview Tab Content', () => {
   })
 
   test('overview displays analyst recommendations', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     const companyData = await page.evaluate(() => window.api.fetchCompany('AAPL'))
@@ -285,8 +283,7 @@ test.describe('UI-024: Overview Tab Content', () => {
   })
 
   test('overview displays dividend info', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(500)
 
     const companyData = await page.evaluate(() => window.api.fetchCompany('AAPL'))
@@ -306,8 +303,7 @@ test.describe('StockDetailModal Integration', () => {
       }
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1000)
 
     // Filter out non-critical errors
@@ -321,8 +317,7 @@ test.describe('StockDetailModal Integration', () => {
   })
 
   test('window.api methods are callable for StockDetailModal', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Verify all required API methods for StockDetailModal exist
     const methods = ['fetchCompany', 'fetchOHLCV']

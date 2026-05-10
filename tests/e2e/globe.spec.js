@@ -1,59 +1,9 @@
 import { test, expect } from '@playwright/test'
 
-// Mock world topology data (simplified countries feature collection)
-const mockWorldTopology = {
-  type: 'FeatureCollection',
-  features: [
-    {
-      type: 'Feature',
-      properties: { ISO_A3: 'USA', ISO_A2: 'US', NAME: 'United States', LABEL_X: -97, LABEL_Y: 38 },
-      geometry: { type: 'Polygon', coordinates: [[[-125, 25], [-65, 25], [-65, 49], [-125, 49], [-125, 25]]] }
-    },
-    {
-      type: 'Feature',
-      properties: { ISO_A3: 'IDN', ISO_A2: 'ID', NAME: 'Indonesia', LABEL_X: 121, LABEL_Y: -2 },
-      geometry: { type: 'Polygon', coordinates: [[[95, -10], [115, -10], [115, 5], [95, 5], [95, -10]]] }
-    },
-    {
-      type: 'Feature',
-      properties: { ISO_A3: 'JPN', ISO_A2: 'JP', NAME: 'Japan', LABEL_X: 138, LABEL_Y: 36 },
-      geometry: { type: 'Polygon', coordinates: [[[129, 30], [146, 30], [146, 45], [129, 45], [129, 30]]] }
-    },
-    {
-      type: 'Feature',
-      properties: { ISO_A3: 'GBR', ISO_A2: 'GB', NAME: 'United Kingdom', LABEL_X: -2, LABEL_Y: 54 },
-      geometry: { type: 'Polygon', coordinates: [[[-8, 50], [2, 50], [2, 60], [-8, 60], [-8, 50]]] }
-    },
-    {
-      type: 'Feature',
-      properties: { ISO_A3: 'AQ', ISO_A2: 'AQ', NAME: 'Antarctica', LABEL_X: 0, LABEL_Y: -90 },
-      geometry: { type: 'Polygon', coordinates: [[[-180, -90], [0, -90], [0, -60], [-180, -60], [-180, -90]]] }
-    },
-  ]
-}
-
-const mockIndices = [
-  { index: '^GSPC', name: 'S&P 500', country: 'US', current_price: 5234.5, prev_close: 5200.0, change_pct: 0.66 },
-  { index: '^JKLQ45', name: 'LQ45', country: 'ID', current_price: 1820.0, prev_close: 1810.0, change_pct: 0.55 },
-  { index: '^N225', name: 'Nikkei 225', country: 'JP', current_price: 39500.0, prev_close: 39200.0, change_pct: 0.77 },
-  { index: '^FTSE', name: 'FTSE 100', country: 'GB', current_price: 7950.0, prev_close: 7980.0, change_pct: -0.38 },
-]
-
-const mockMacroData = {
-  events: [
-    { name: 'Core CPI', date: '2026-04-12', time: '08:30', impact: 'high', actual: '3.1%', forecast: '3.0%', previous: '2.9%' },
-    { name: 'Retail Sales', date: '2026-04-12', time: '10:00', impact: 'medium', actual: '0.5%', forecast: '0.4%', previous: '0.3%' },
-  ]
-}
-
-const mockNewsData = {
-  articles: [
-    { title: 'S&P 500 rises on strong earnings reports', link: '#', publisher: 'Reuters', published: '2026-04-12 08:30', thumbnail: { type: 'og', url: '' } },
-  ]
-}
-
 // Setup window.api mock for all tests
 test.beforeEach(async ({ page }) => {
+  await page.goto('http://localhost:5173', { waitUntil: 'domcontentloaded' })
+  await page.waitForTimeout(2000)
   await page.evaluate(() => {
     // Clear any existing window.api
     window.api = {
@@ -106,18 +56,13 @@ test.beforeEach(async ({ page }) => {
       close: async () => ({}),
     }
   })
-
-  // Mock the geojson fetch
-  await page.route('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson', async (route) => {
-    await route.fulfill({ contentType: 'application/json', body: JSON.stringify(mockWorldTopology) })
-  })
 })
 
 // UI-001: Test D3.js + topojson map renders
 test.describe('UI-001: Globe Map Rendering', () => {
   test('renders globe container and loads world data', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    // Wait for the page to be ready (Electron's renderer, not localhost)
+    await page.waitForLoadState('domcontentloaded')
 
     // Navigate to globe view if needed (assuming app loads there by default or via nav)
     // Wait for globe container to be present
@@ -136,8 +81,6 @@ test.describe('UI-001: Globe Map Rendering', () => {
   })
 
   test('shows loading state initially while fetching data', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-
     // With our mock, globe should load quickly but we can check loading state appears briefly
     const loadingSpinner = page.locator('body')
 
@@ -146,8 +89,7 @@ test.describe('UI-001: Globe Map Rendering', () => {
   })
 
   test('displays globe canvas element after loading', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Check globe-related content is present
@@ -161,8 +103,7 @@ test.describe('UI-001: Globe Map Rendering', () => {
 // UI-002: Test country colors based on index performance
 test.describe('UI-002: Country Color Coding', () => {
   test('countries display with color based on index performance', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Globe should render with polygon colors
@@ -176,9 +117,6 @@ test.describe('UI-002: Country Color Coding', () => {
   })
 
   test('positive performance shows green color', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
-
     // Verify indices with positive change_pct are loaded
     const indices = await page.evaluate(() => window.api.fetchIndices())
     const positiveIndices = indices.filter(i => i.change_pct > 0)
@@ -186,9 +124,6 @@ test.describe('UI-002: Country Color Coding', () => {
   })
 
   test('negative performance shows red color', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
-
     // Verify indices with negative change_pct exist
     const indices = await page.evaluate(() => window.api.fetchIndices())
     const negativeIndices = indices.filter(i => i.change_pct < 0)
@@ -199,8 +134,7 @@ test.describe('UI-002: Country Color Coding', () => {
 // UI-003: Test hover tooltip shows country info
 test.describe('UI-003: Hover Tooltip', () => {
   test('shows tooltip when hovering over country', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Hover over the globe container area
@@ -218,9 +152,6 @@ test.describe('UI-003: Hover Tooltip', () => {
   })
 
   test('tooltip contains country information', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
-
     // Verify fetchIndices returns proper data shape for tooltip content
     const indices = await page.evaluate(() => window.api.fetchIndices())
     expect(indices[0]).toHaveProperty('name')
@@ -232,8 +163,7 @@ test.describe('UI-003: Hover Tooltip', () => {
 // UI-004: Test click on country triggers action
 test.describe('UI-004: Country Click Interaction', () => {
   test('clicking on country polygon triggers navigation/selection', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Click on the globe container (simulating country click)
@@ -246,9 +176,6 @@ test.describe('UI-004: Country Click Interaction', () => {
   })
 
   test('clicking country updates selected country state', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
-
     // Verify fetchMacro works for country data loading
     const macroData = await page.evaluate(() => window.api.fetchMacro('US'))
     expect(macroData).toHaveProperty('events')
@@ -256,8 +183,7 @@ test.describe('UI-004: Country Click Interaction', () => {
   })
 
   test('clicking same country again deselects it', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1000)
 
     // Click twice on same area to deselect
@@ -275,8 +201,7 @@ test.describe('UI-004: Country Click Interaction', () => {
 // UI-005: Test responsive resize handling
 test.describe('UI-005: Responsive Resize', () => {
   test('globe resizes with window resize event', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     // Get initial viewport size
@@ -296,8 +221,7 @@ test.describe('UI-005: Responsive Resize', () => {
   })
 
   test('globe handles container dimension changes', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     // Resize to various dimensions
@@ -314,8 +238,6 @@ test.describe('UI-005: Responsive Resize', () => {
 // UI-006: Test loading state when data unavailable
 test.describe('UI-006: Loading State', () => {
   test('shows loading spinner when data is being fetched', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-
     // Page should show loading state initially (before data loads)
     const loadingText = page.getByText(/loading/i)
     // May or may not be visible depending on timing - just verify page loads
@@ -328,8 +250,7 @@ test.describe('UI-006: Loading State', () => {
       window.api.fetchIndices = async () => []
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1000)
 
     // Page should handle empty data gracefully
@@ -342,25 +263,10 @@ test.describe('UI-006: Loading State', () => {
       window.api.fetchIndices = async () => { throw new Error('Network error') }
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1000)
 
     // Error state should be displayed or handled gracefully
-    await expect(page.locator('body')).toBeVisible()
-  })
-
-  test('shows error message when globe data fails to load', async ({ page }) => {
-    // Override geojson route to fail
-    await page.route('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson', async (route) => {
-      await route.abort()
-    })
-
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
-    await page.waitForTimeout(2000)
-
-    // Error handling should display or page should remain stable
     await expect(page.locator('body')).toBeVisible()
   })
 })
@@ -368,9 +274,6 @@ test.describe('UI-006: Loading State', () => {
 // Additional integration tests
 test.describe('Globe Integration', () => {
   test('window.api methods are all callable', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
-
     // Verify all required API methods exist and are callable
     const results = await page.evaluate(() => {
       const methods = [
@@ -402,8 +305,7 @@ test.describe('Globe Integration', () => {
       }
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(3000)
 
     // Filter out known non-critical errors
@@ -414,5 +316,76 @@ test.describe('Globe Integration', () => {
     )
 
     expect(criticalErrors.length).toBe(0)
+  })
+})
+
+// UI-001 to UI-004: Converted from skipped Vitest tests (d3-geo/canvas requires real browser)
+test.describe('UI-001 to UI-004: Converted Vitest Skipped Tests', () => {
+  test('UI-001: renders globe after loading', async ({ page }) => {
+    // Override mock to return empty indices initially to trigger loading state
+    await page.evaluate(() => {
+      window.api.fetchIndices = async () => []
+    })
+
+    await page.waitForLoadState('domcontentloaded')
+
+    // Wait for globe to finish loading
+    await page.waitForTimeout(2000)
+
+    // Globe should render without showing loading text
+    const pageContent = await page.content()
+    expect(pageContent).not.toMatch(/loading map/i)
+  })
+
+  test('UI-002: fetchIndices called on mount', async ({ page }) => {
+    let fetchIndicesCalled = false
+    await page.evaluate(() => {
+      window.api.fetchIndices = async () => {
+        fetchIndicesCalled = true
+        return [
+          { index: '^GSPC', name: 'S&P 500', country: 'US', current_price: 5234.5, change_pct: 0.66 },
+          { index: '^JKLQ45', name: 'LQ45', country: 'ID', current_price: 1820.0, change_pct: 0.55 },
+        ]
+      }
+    })
+
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
+
+    expect(fetchIndicesCalled).toBe(true)
+  })
+
+  test('UI-003: fetchMacro called on mount for initial data', async ({ page }) => {
+    let fetchMacroCalled = false
+    await page.evaluate(() => {
+      window.api.fetchIndices = async () => []
+      window.api.fetchMacro = async (country) => {
+        fetchMacroCalled = true
+        return { events: [] }
+      }
+    })
+
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(1000)
+
+    expect(fetchMacroCalled).toBe(true)
+  })
+
+  test('UI-004: shows error state on map fetch failure', async ({ page }) => {
+    // Override geojson route to fail
+    await page.route('https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson', async (route) => {
+      await route.abort()
+    })
+
+    await page.evaluate(() => {
+      window.api.fetchIndices = async () => []
+    })
+
+    await page.waitForLoadState('domcontentloaded')
+    await page.waitForTimeout(2000)
+
+    // Error state should show some error message
+    const pageContent = await page.content()
+    expect(pageContent).toMatch(/error/i)
   })
 })

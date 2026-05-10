@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export default function EconomicCalendar({ country, events: propEvents, loading = false }) {
+export default function EconomicCalendar({ country, events: propEvents, loading = false, impactFilter }) {
   const [events, setEvents] = useState(propEvents || [])
 
   useEffect(() => {
@@ -14,13 +14,17 @@ export default function EconomicCalendar({ country, events: propEvents, loading 
       .catch(() => {})
   }, [country, propEvents])
 
+  const filteredEvents = impactFilter
+    ? events.filter(ev => ev.impact === impactFilter)
+    : events
+
   const IMPACT_COLORS = { high: '#ef4444', medium: '#f59e0b', low: '#94a3b8' }
 
   if (loading) return (
     <div className="p-3 text-xs text-white/40">Loading calendar...</div>
   )
 
-  if (!events.length) return (
+  if (!filteredEvents.length) return (
     <div className="p-3 text-xs text-white/40">No economic events</div>
   )
 
@@ -31,7 +35,7 @@ export default function EconomicCalendar({ country, events: propEvents, loading 
     </h3>
 
     <div className="space-y-1.5 max-h-48 overflow-y-auto">
-      {events.map((ev, i) => (
+      {filteredEvents.map((ev, i) => (
         <div key={i} className="bg-card rounded p-2 text-xs">
           
           <div className="flex justify-between items-start">

@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test'
+import { defineConfig } from '@playwright/test'
 import { fileURLToPath } from 'url'
 import { dirname, resolve } from 'path'
 
@@ -20,17 +20,17 @@ export default defineConfig({
     {
       name: 'chromium',
       use: {
-        ...devices['Desktop Chrome'],
-        headless: false,
+        channel: 'chromium',
+        headless: true,
       },
     },
   ],
   webServers: [
     {
-      command: 'xvfb-run -a node node_modules/.bin/electron-vite dev --port 5173',
+      command: 'npx electron-vite dev',
       port: 5173,
-      reuseExistingServer: false,
-      timeout: 60000,
+      reuseExistingServer: true,
+      timeout: 120000,
       cwd: FRONTEND,
     },
   ],

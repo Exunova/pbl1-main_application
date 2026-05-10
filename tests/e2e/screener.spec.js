@@ -1,4 +1,18 @@
-import { test, expect } from '@playwright/test'
+import { test, expect, _electron } from '@playwright/test'
+
+let electronApp
+
+test.beforeAll(async () => {
+  electronApp = await _electron.launch({
+    executablePath: 'C:\\Users\\user\\Project\\pbl1-main_application\\frontend\\node_modules\\electron\\dist\\electron.exe',
+    args: ['.'],
+    cwd: 'C:\\Users\\user\\Project\\pbl1-main_application\\frontend',
+  })
+})
+
+test.afterAll(async () => {
+  if (electronApp) await electronApp.close()
+})
 
 // Mock stock data for screener
 const mockStocks = [
@@ -79,8 +93,7 @@ test.beforeEach(async ({ page }) => {
 // UI-007: Visual verification of stock card grid
 test.describe('UI-007: Stock Card Grid Rendering', () => {
   test('renders stock card grid with correct layout', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Navigate to screener (assuming there's a way to switch tabs)
     // For now, check the page loads properly
@@ -88,8 +101,7 @@ test.describe('UI-007: Stock Card Grid Rendering', () => {
   })
 
   test('stock cards display ticker, name, price and change', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Verify stock card elements are rendered
@@ -98,8 +110,7 @@ test.describe('UI-007: Stock Card Grid Rendering', () => {
   })
 
   test('stock cards are clickable', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Click on a stock card area
@@ -114,8 +125,7 @@ test.describe('UI-007: Stock Card Grid Rendering', () => {
   })
 
   test('grid layout adapts to container width', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Resize to different viewport sizes
@@ -134,8 +144,7 @@ test.describe('UI-007: Stock Card Grid Rendering', () => {
 // UI-008: Click flow opens StockDetailModal visually
 test.describe('UI-008: StockDetailPanel Modal', () => {
   test('click on stock card opens detail panel', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Simulate click on stock card
@@ -150,8 +159,7 @@ test.describe('UI-008: StockDetailPanel Modal', () => {
   })
 
   test('detail panel displays chart and info sections', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Open detail panel
@@ -167,8 +175,7 @@ test.describe('UI-008: StockDetailPanel Modal', () => {
   })
 
   test('back button closes detail panel', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Open detail panel
@@ -192,8 +199,7 @@ test.describe('UI-008: StockDetailPanel Modal', () => {
 // UI-009: Visual price change indicators
 test.describe('UI-009: Price Change Color Indicators', () => {
   test('positive price change shows green color', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Verify mock data has positive change stocks
     const stocks = await page.evaluate(() => window.api.getScrapedTickers())
@@ -202,8 +208,7 @@ test.describe('UI-009: Price Change Color Indicators', () => {
   })
 
   test('negative price change shows red color', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Verify API returns mock stocks with different change values
     const companies = await page.evaluate(() => window.api.fetchCompanies())
@@ -211,8 +216,7 @@ test.describe('UI-009: Price Change Color Indicators', () => {
   })
 
   test('price indicator uses correct CSS colors', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Check that page renders with color classes (text-success for positive, text-danger for negative)
@@ -225,8 +229,7 @@ test.describe('UI-009: Price Change Color Indicators', () => {
 // UI-010: Visual loading/empty states
 test.describe('UI-010: Loading and Empty States', () => {
   test('shows empty state when no stocks match search', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Empty state should display "No assets matched" message with dashed border
@@ -238,16 +241,14 @@ test.describe('UI-010: Loading and Empty States', () => {
   })
 
   test('handles loading state during data fetch', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Page should load and display content
     await expect(page.locator('body')).toBeVisible()
   })
 
   test('shows loading skeleton in detail panel', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Open detail panel
@@ -263,8 +264,7 @@ test.describe('UI-010: Loading and Empty States', () => {
   })
 
   test('detail panel shows loading spinner while fetching chart data', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Verify fetchOHLCV is called when detail panel opens
     const ohlcvResult = await page.evaluate(() => window.api.fetchOHLCV('AAPL'))
@@ -272,8 +272,7 @@ test.describe('UI-010: Loading and Empty States', () => {
   })
 
   test('handles search with no results gracefully', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Check for empty state message or "No assets matched"
     const emptyState = page.getByText(/no assets matched/i)
@@ -288,8 +287,7 @@ test.describe('UI-010: Loading and Empty States', () => {
 // Additional integration tests
 test.describe('Screener Integration', () => {
   test('window.api methods are callable for screener', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Verify all required API methods for screener exist
     const methods = ['fetchCompanies', 'fetchCompany', 'fetchOHLCV']
@@ -307,8 +305,7 @@ test.describe('Screener Integration', () => {
       }
     })
 
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(2000)
 
     // Filter out non-critical errors
@@ -322,8 +319,7 @@ test.describe('Screener Integration', () => {
   })
 
   test('search functionality filters stocks visually', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
     await page.waitForTimeout(1500)
 
     // Try to find and interact with search input if present
@@ -338,8 +334,7 @@ test.describe('Screener Integration', () => {
   })
 
   test('region selector changes displayed stocks', async ({ page }) => {
-    await page.goto('http://localhost:5173')
-    await page.waitForLoadState('networkidle')
+    await page.waitForLoadState('domcontentloaded')
 
     // Verify fetchCompanies can be called with region
     const result = await page.evaluate(() => window.api.fetchCompanies())
