@@ -107,7 +107,8 @@ export function usePortfolio() {
 
   const treeData = useMemo(() => positions.map((p, index) => {
     const cur = ambilPnl(p, index, pnlData);
-    const pnlPct = (cur?.buyPriceIDR && cur?.shares ? ((cur.stockReturn) / (cur.buyPriceIDR * cur.shares)) * 100 : 0);
+    const stockReturnIDR = cur?.stockReturnIDR ?? cur?.stockReturn ?? 0;
+    const pnlPct = (cur?.buyPriceIDR && cur?.shares ? (stockReturnIDR / (cur.buyPriceIDR * cur.shares)) * 100 : 0);
     const valuationIDR = cur?.currentPriceIDR ? (cur.currentPriceIDR * p.shares) : (parseFloat(p.buyPrice) * 15650.0 * p.shares);
     return {
       name: p.ticker + ':' + formatChange(pnlPct),

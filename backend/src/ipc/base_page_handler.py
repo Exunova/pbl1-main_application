@@ -69,16 +69,16 @@ class BasePageHandler(ABC):
             if scraper_key in active_scrapers:
                 return
             active_scrapers.add(scraper_key)
+        set_scrape_status(scraper_key, "pending")
 
         def run():
             try:
+                set_scrape_status(scraper_key, "running")
                 scraper_mod, output_dir = SCRAPER_MODULES[scraper_key]
                 result = scraper_mod.run(output_dir)
-                status = result.get("scraped_at") if isinstance(result, dict) else None
-                if status:
-                    set_scrape_status(scraper_key, status)
+                set_scrape_status(scraper_key, "done")
             except Exception as e:
-                set_scrape_status(scraper_key, f"error: {e}")
+                set_scrape_status(scraper_key, f"failed: {e}")
             finally:
                 with scrape_lock:
                     active_scrapers.discard(scraper_key)

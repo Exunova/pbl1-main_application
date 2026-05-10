@@ -11,6 +11,7 @@ import json
 import threading
 import sqlite3
 import builtins
+import re
 from datetime import datetime
 from contextlib import contextmanager
 
@@ -40,6 +41,9 @@ sys.stderr.write(f"[Python IPC] DATA_DIR initialized at: {DATA_DIR}\n")
 sys.stderr.write(f"[Python IPC] Scraping is {'ENABLED' if SCRAPING_ENABLED else 'DISABLED'}\n")
 
 # Ensure sys.path has APP_DIR for scrapers imports
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
 if APP_DIR not in sys.path:
     sys.path.insert(0, APP_DIR)
 
@@ -250,15 +254,16 @@ def trigger_scrape_in_bg(scraper_key):
         if scraper_key in active_scrapers:
             return
         active_scrapers.add(scraper_key)
+    set_scrape_status(scraper_key, "pending")
 
     def run():
         try:
+            set_scrape_status(scraper_key, "running")
             scraper_mod, output_dir = SCRAPER_MODULES[scraper_key]
             result = scraper_mod.run(output_dir)
-            status = result.get("scraped_at") if isinstance(result, dict) else datetime.now().isoformat()
-            set_scrape_status(scraper_key, status)
+            set_scrape_status(scraper_key, "done")
         except Exception as e:
-            set_scrape_status(scraper_key, f"error: {str(e)}")
+            set_scrape_status(scraper_key, f"failed: {str(e)}")
             sys.stderr.write(f"Scrape error {scraper_key}: {e}\n")
         finally:
             with scrape_lock:
@@ -290,7 +295,8 @@ def read_cache_file(category, filename):
 
 def to_filename(ticker):
     """Convert ticker symbol to safe filename."""
-    return ticker.replace(".", "_").replace("^", "IDX_").replace("-", "_")
+    safe = re.sub(r"[^A-Za-z0-9._^-]", "_", str(ticker))
+    return safe.replace(".", "_").replace("^", "IDX_").replace("-", "_")
 
 # =============================================================================
 # COMMAND HANDLERS

@@ -69,7 +69,7 @@ export default function StockCard({ stock, onClick }) {
       <div className="text-right shrink-0">
         <div className="text-sm font-bold text-text number-font leading-none">
           {typeof displayPrice === 'number'
-            ? displayPrice.toLocaleString(undefined, { maximumFractionDigits: 2 })
+            ? displayPrice.toLocaleString('en-US', { maximumFractionDigits: 2 })
             : displayPrice}
         </div>
 

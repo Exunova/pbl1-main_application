@@ -24,7 +24,7 @@ export default function PortfolioLedger({ positions, pnlData, onEdit, onDelete }
             {positions.map((p, index) => {
               const isLoading = !pnlData;
               const cur = ambilPnl(p, index, pnlData)
-              const pnl = cur?.stockReturn || 0
+              const pnl = cur?.stockReturnIDR ?? cur?.stockReturn ?? 0
               const pnlPct = isLoading ? 0 : (cur?.buyPriceIDR && cur?.shares ? (pnl / (cur.buyPriceIDR * cur.shares)) * 100 : 0)
               const isProfit = pnl >= 0;
               return (

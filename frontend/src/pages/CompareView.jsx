@@ -16,6 +16,18 @@ export default function CompareView() {
   const IDX1_COLOR = '#ffffff'
   const IDX2_COLOR = '#a1a1aa'
 
+  const pickDifferentRegion = (selected) => regions.find(region => region !== selected) || selected
+
+  const handleIdx1Change = (value) => {
+    setIdx1(value)
+    if (value === idx2) setIdx2(pickDifferentRegion(value))
+  }
+
+  const handleIdx2Change = (value) => {
+    setIdx2(value)
+    if (value === idx1) setIdx1(pickDifferentRegion(value))
+  }
+
   useEffect(() => {
     if (!window.api) return
     const allTickers = Object.values(MARKETS).flatMap(m => m.tickers)
@@ -87,7 +99,7 @@ export default function CompareView() {
         <div className="flex items-center gap-4 border-b border-border px-6 py-4 shrink-0 bg-surface/30">
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 shrink-0" style={{ background: IDX1_COLOR }} />
-            <select value={idx1} onChange={e => setIdx1(e.target.value)}
+            <select value={idx1} onChange={e => handleIdx1Change(e.target.value)}
               className="bg-transparent border-none text-sm text-text outline-none uppercase tracking-widest font-bold cursor-pointer">
               {regions.map(r => <option key={r} value={r} className="bg-surface text-text">{MARKETS[r].label}</option>)}
             </select>
@@ -95,7 +107,7 @@ export default function CompareView() {
           <span className="text-muted text-xs font-bold tracking-widest px-2 shrink-0">VS</span>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 shrink-0" style={{ background: IDX2_COLOR }} />
-            <select value={idx2} onChange={e => setIdx2(e.target.value)}
+            <select value={idx2} onChange={e => handleIdx2Change(e.target.value)}
               className="bg-transparent border-none text-sm text-text outline-none uppercase tracking-widest font-bold cursor-pointer">
               {regions.map(r => <option key={r} value={r} className="bg-surface text-text">{MARKETS[r].label}</option>)}
             </select>

@@ -347,9 +347,8 @@ describe('CompareView', () => {
     fireEvent.change(selectors[0], { target: { value: 'US' } })
     fireEvent.change(selectors[1], { target: { value: 'US' } })
     
-    // Should not crash - component handles this gracefully
-    expect(selectors[0].value).toBe('US')
-    expect(selectors[1].value).toBe('US')
+    // Same-index selection is auto-switched so the two slots stay different.
+    expect(selectors[0].value).not.toBe(selectors[1].value)
   })
 
   it('UI-013: same index selection still triggers fetchOHLCV', () => {
@@ -361,7 +360,7 @@ describe('CompareView', () => {
     fireEvent.change(selectors[0], { target: { value: 'US' } })
     fireEvent.change(selectors[1], { target: { value: 'US' } })
     
-    // fetchOHLCV should still be called (possibly with same index twice)
+    // fetchOHLCV should still be called after the auto-switch
     const callCount = window.api.fetchOHLCV.mock.calls.length
     expect(callCount).toBeGreaterThan(0)
   })

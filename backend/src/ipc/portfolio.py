@@ -1,4 +1,6 @@
 import sys
+import re
+import math
 from datetime import datetime
 
 import yfinance as yf
@@ -7,6 +9,8 @@ from backend.src.ipc.base_page_handler import BasePageHandler
 
 
 class PortfolioHandler(BasePageHandler):
+    VALID_CURRENCIES = {"USD", "IDR", "JPY", "GBP"}
+    TICKER_RE = re.compile(r"^[A-Za-z0-9._^-]{1,32}$")
 
     def handle_command(self, cmd: str, params: dict) -> dict:
         if cmd == "portfolio_list":
@@ -55,8 +59,16 @@ class PortfolioHandler(BasePageHandler):
             buyDate = params.get("buyDate")
             currency = params.get("currency", "USD")
 
-            if not all([ticker, company, shares, buyPrice, buyDate]):
-                return {"error": "Missing required fields"}
+            validation_error = self._validate_position_fields({
+                "ticker": ticker,
+                "company": company,
+                "shares": shares,
+                "buyPrice": buyPrice,
+                "buyDate": buyDate,
+                "currency": currency,
+            }, require_all=True)
+            if validation_error:
+                return {"error": validation_error}
 
             new_id = self._cache_db.add_position({
                 "ticker": ticker,
@@ -92,7 +104,12 @@ class PortfolioHandler(BasePageHandler):
             if not fields:
                 return {"error": "No fields to update"}
 
-            self._cache_db.edit_position(pid, fields)
+            validation_error = self._validate_position_fields(fields, require_all=False)
+            if validation_error:
+                return {"error": validation_error}
+
+            if not self._cache_db.edit_position(pid, fields):
+                return {"error": "Position not found"}
 
             positions = self._cache_db.get_positions()
             row = next((p for p in positions if p["id"] == pid), None)
@@ -119,10 +136,55 @@ class PortfolioHandler(BasePageHandler):
             if not pid:
                 return {"error": "Missing position id"}
 
-            self._cache_db.delete_position(pid)
+            if not self._cache_db.delete_position(pid):
+                return {"error": "Position not found"}
             return {"status": "ok"}
         except Exception as e:
             return {"error": str(e)}
+
+    def _validate_position_fields(self, fields: dict, require_all: bool) -> str | None:
+        required = ["ticker", "company", "shares", "buyPrice", "buyDate", "currency"]
+        if require_all:
+            missing = [field for field in required if fields.get(field) in (None, "")]
+            if missing:
+                return f"Missing required fields: {', '.join(missing)}"
+
+        if "ticker" in fields and fields.get("ticker") in (None, ""):
+            return "Ticker is required"
+        if "ticker" in fields and not self.TICKER_RE.fullmatch(str(fields.get("ticker"))):
+            return "Ticker format is invalid"
+
+        if "company" in fields and fields.get("company") in (None, ""):
+            return "Company is required"
+
+        if "shares" in fields:
+            try:
+                shares = float(fields.get("shares"))
+            except (TypeError, ValueError):
+                return "Shares must be a number"
+            if shares <= 0:
+                return "Shares must be greater than 0"
+
+        if "buyPrice" in fields:
+            try:
+                buy_price = float(fields.get("buyPrice"))
+            except (TypeError, ValueError):
+                return "Buy price must be a number"
+            if buy_price <= 0:
+                return "Buy price must be greater than 0"
+
+        if "buyDate" in fields:
+            try:
+                buy_date = datetime.strptime(str(fields.get("buyDate")), "%Y-%m-%d").date()
+            except (TypeError, ValueError):
+                return "Buy date must use YYYY-MM-DD format"
+            if buy_date > datetime.now().date():
+                return "Buy date cannot be in the future"
+
+        if "currency" in fields and fields.get("currency") not in self.VALID_CURRENCIES:
+            return "Currency must be one of USD, IDR, JPY, GBP"
+
+        return None
 
     def portfolio_pnl(self) -> dict:
         """Calculate PnL for all positions."""
@@ -185,7 +247,8 @@ class PortfolioHandler(BasePageHandler):
                                 return None
                     s = s.dropna()
                     if not s.empty:
-                        return float(s.iloc[-1])
+                        value = float(s.iloc[-1])
+                        return value if math.isfinite(value) else None
                 except Exception as e:
                     sys.stderr.write(f"Error getting latest price for {symbol}: {e}\n")
                     pass
@@ -210,7 +273,8 @@ class PortfolioHandler(BasePageHandler):
                                 return None
                     s = s.dropna()
                     if not s.empty:
-                        return float(s.mean())
+                        value = float(s.mean())
+                        return value if math.isfinite(value) else None
                 except Exception as e:
                     sys.stderr.write(f"Error getting hist avg for {symbol}: {e}\n")
                     pass
@@ -247,18 +311,22 @@ class PortfolioHandler(BasePageHandler):
                 
                 usd_idr_rate = get_latest_price("USDIDR=X") or 15650.0
                 buy_usd_idr = get_hist_avg("USDIDR=X") or 15650.0
-                
+                latest_price = get_latest_price(ticker)
+                price_unavailable = latest_price is None
+
                 if currency == "IDR":
                     buy_price_idr = buy_price
-                    current_price_idr = get_latest_price(ticker) or buy_price
-                    stock_return_idr = (current_price_idr - buy_price_idr) * shares
+                    current_price_idr = latest_price if latest_price is not None else buy_price
+                    stock_return_native = (current_price_idr - buy_price_idr) * shares
+                    stock_return_idr = stock_return_native
                     forex_return_idr = 0.0
                 elif currency == "USD":
                     buy_price_idr = buy_price * buy_usd_idr
-                    current_price_usd = get_latest_price(ticker) or buy_price
+                    current_price_usd = latest_price if latest_price is not None else buy_price
                     current_price_idr = current_price_usd * usd_idr_rate
-                    
-                    stock_return_idr = (current_price_usd - buy_price) * shares * usd_idr_rate
+
+                    stock_return_native = (current_price_usd - buy_price) * shares
+                    stock_return_idr = stock_return_native * usd_idr_rate
                     forex_return_idr = buy_price * shares * (usd_idr_rate - buy_usd_idr)
                 else:
                     buy_usd_curr = buy_fx
@@ -267,10 +335,11 @@ class PortfolioHandler(BasePageHandler):
                     
                     current_usd_curr = curr_fx
                     current_curr_idr = (1.0 / current_usd_curr) * usd_idr_rate
-                    current_price_foreign = get_latest_price(ticker) or buy_price
+                    current_price_foreign = latest_price if latest_price is not None else buy_price
                     current_price_idr = current_price_foreign * current_curr_idr
-                    
-                    stock_return_idr = (current_price_foreign - buy_price) * shares * current_curr_idr
+
+                    stock_return_native = (current_price_foreign - buy_price) * shares
+                    stock_return_idr = stock_return_native * current_curr_idr
                     forex_return_idr = buy_price * shares * (current_curr_idr - buy_curr_idr)
 
                 total_pnl_idr += (stock_return_idr + forex_return_idr)
@@ -283,11 +352,14 @@ class PortfolioHandler(BasePageHandler):
                     "shares": shares,
                     "buyPrice": buy_price,
                     "buyPriceIDR": buy_price_idr,
-                    "currentPrice": get_latest_price(ticker) or buy_price,
+                    "currentPrice": latest_price,
                     "currentPriceIDR": current_price_idr,
                     "currency": currency,
-                    "stockReturn": stock_return_idr,
+                    "stockReturn": stock_return_native,
+                    "stockReturnIDR": stock_return_idr,
                     "forexReturn": forex_return_idr,
+                    "totalPnL": stock_return_idr + forex_return_idr,
+                    "priceError": "Price unavailable" if price_unavailable else None,
                 })
 
             return {

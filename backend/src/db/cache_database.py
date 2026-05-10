@@ -19,40 +19,60 @@ class CacheDatabase:
     def get_conn(self) -> sqlite3.Connection:
         """Create and return a new database connection with WAL mode."""
         conn = sqlite3.connect(CACHE_DB)
-        conn.execute("PRAGMA journal_mode=WAL")
-        conn.row_factory = sqlite3.Row
-        return conn
+        try:
+            conn.execute("PRAGMA journal_mode=WAL")
+            conn.row_factory = sqlite3.Row
+            return conn
+        except sqlite3.DatabaseError:
+            conn.close()
+            raise
 
     def init_db(self) -> None:
         """Create the cache, positions, and scrape_status tables if they don't exist."""
+        try:
+            self._create_schema()
+        except sqlite3.DatabaseError:
+            self._reset_corrupt_db()
+            self._create_schema()
+
+    def _create_schema(self) -> None:
         conn = self.get_conn()
-        conn.execute("""
-            CREATE TABLE IF NOT EXISTS cache (
-                key TEXT PRIMARY KEY,
-                data TEXT NOT NULL,
-                updated_at TEXT NOT NULL
-            )
-        """)
-        conn.execute("""
-            CREATE TABLE IF NOT EXISTS positions (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                ticker TEXT NOT NULL,
-                company TEXT NOT NULL,
-                shares REAL NOT NULL,
-                buyPrice REAL NOT NULL,
-                buyDate TEXT NOT NULL,
-                currency TEXT NOT NULL DEFAULT 'USD'
-            )
-        """)
-        conn.execute("""
-            CREATE TABLE IF NOT EXISTS scrape_status (
-                key TEXT PRIMARY KEY,
-                updated_at TEXT,
-                status TEXT
-            )
-        """)
-        conn.commit()
-        conn.close()
+        try:
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS cache (
+                    key TEXT PRIMARY KEY,
+                    data TEXT NOT NULL,
+                    updated_at TEXT NOT NULL
+                )
+            """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS positions (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    ticker TEXT NOT NULL,
+                    company TEXT NOT NULL,
+                    shares REAL NOT NULL,
+                    buyPrice REAL NOT NULL,
+                    buyDate TEXT NOT NULL,
+                    currency TEXT NOT NULL DEFAULT 'USD'
+                )
+            """)
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS scrape_status (
+                    key TEXT PRIMARY KEY,
+                    updated_at TEXT,
+                    status TEXT
+                )
+            """)
+            conn.commit()
+        finally:
+            conn.close()
+
+    def _reset_corrupt_db(self) -> None:
+        for suffix in ("", "-wal", "-shm"):
+            try:
+                os.remove(CACHE_DB + suffix)
+            except FileNotFoundError:
+                pass
 
     # ── Cache operations ──────────────────────────────────────────
 
@@ -103,21 +123,23 @@ class CacheDatabase:
         conn.close()
         return new_id
 
-    def edit_position(self, id: int, fields: Dict[str, Any]) -> None:
+    def edit_position(self, id: int, fields: Dict[str, Any]) -> bool:
         """Update a position by id with the given fields."""
         sets = ', '.join(f"{k} = ?" for k in fields)
         vals = list(fields.values()) + [id]
         conn = self.get_conn()
-        conn.execute(f"UPDATE positions SET {sets} WHERE id = ?", vals)
+        cur = conn.execute(f"UPDATE positions SET {sets} WHERE id = ?", vals)
         conn.commit()
         conn.close()
+        return cur.rowcount > 0
 
-    def delete_position(self, id: int) -> None:
+    def delete_position(self, id: int) -> bool:
         """Delete a position by id."""
         conn = self.get_conn()
-        conn.execute("DELETE FROM positions WHERE id = ?", (id,))
+        cur = conn.execute("DELETE FROM positions WHERE id = ?", (id,))
         conn.commit()
         conn.close()
+        return cur.rowcount > 0
 
     # ── Scrape status ─────────────────────────────────────────────
 

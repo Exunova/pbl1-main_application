@@ -6,9 +6,16 @@ import sys
 import tempfile
 import pytest
 import threading
+from pathlib import Path
 
-# Ensure backend/src is on the import path
-sys.path.insert(0, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src')
+ROOT_DIR = Path(__file__).resolve().parents[2]
+BACKEND_SRC = ROOT_DIR / 'backend' / 'src'
+SCRAPERS_DIR = BACKEND_SRC / 'scrapers'
+YAHOO_SCRAPERS_DIR = BACKEND_SRC / 'scraping' / 'yahoo_finance'
+
+# Ensure backend modules are on the import path
+for path in (BACKEND_SRC, SCRAPERS_DIR, YAHOO_SCRAPERS_DIR):
+    sys.path.insert(0, str(path))
 
 # Point cache DB to a temp file for each test session
 ORIGINAL_APP_DIR = None
@@ -143,18 +150,18 @@ def ipc_process(tmp_path, monkeypatch):
     import shutil
 
     # Copy the real cache.db to a temp location so we don't pollute real data
-    real_db = '/home/reiyo/Project/PBL1/pbl1-main_application/backend/cache.db'
+    real_db = ROOT_DIR / 'backend' / 'cache.db'
     tmp_db = str(tmp_path / "cache.db")
     if os.path.exists(real_db):
         shutil.copy(real_db, tmp_db)
 
     # Set environment so subprocess uses temp cache
     env = os.environ.copy()
-    env['PYTHONPATH'] = '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src'
+    env['PYTHONPATH'] = os.pathsep.join(str(p) for p in (BACKEND_SRC, SCRAPERS_DIR, YAHOO_SCRAPERS_DIR, ROOT_DIR))
     env['CACHE_DB'] = tmp_db
 
     proc = subprocess.Popen(
-        [sys.executable, '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/ipc_main.py'],
+        [sys.executable, str(BACKEND_SRC / 'ipc_main.py')],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,

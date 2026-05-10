@@ -10,10 +10,13 @@ import json
 import time
 import threading
 import os
+import sys
 import tempfile
+from pathlib import Path
 
-IPC_PATH = '/home/reiyo/Project/PBL1/pbl1-main_application/backend/src/ipc_main.py'
-PYTHON = '/home/reiyo/Project/PBL1/pbl1-main_application/backend/venv/bin/python'
+ROOT_DIR = Path(__file__).resolve().parents[2]
+IPC_PATH = str(ROOT_DIR / 'backend' / 'src' / 'ipc_main.py')
+PYTHON = str(ROOT_DIR / 'backend' / 'venv' / 'Scripts' / 'python.exe')
 VENV_PYTHON = PYTHON if os.path.exists(PYTHON) else 'python3'
 
 
@@ -22,10 +25,13 @@ def ipc_process(tmp_path):
     """Spawn ipc_main.py with a temporary cache.db, yield the process, then clean up."""
     cache_db = str(tmp_path / "cache.db")
     env = os.environ.copy()
-    env['PYTHONPATH'] = os.path.dirname(os.path.dirname(os.path.dirname(IPC_PATH)))
+    backend_src = str(ROOT_DIR / 'backend' / 'src')
+    env['PYTHONPATH'] = os.pathsep.join([backend_src, str(ROOT_DIR)])
+    env['CACHE_DB'] = cache_db
+    env['Cache_DB'] = cache_db
 
     proc = subprocess.Popen(
-        [VENV_PYTHON, IPC_PATH],
+        [sys.executable, IPC_PATH],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,

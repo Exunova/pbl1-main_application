@@ -1,5 +1,5 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import logo from './logo.ico'
 import { Globe, LayoutGrid, BarChart3, PieChart, User, Minus, Square, X, RefreshCcw } from 'lucide-react'
 import GlobeView from './pages/GlobeView'
