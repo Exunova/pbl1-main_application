@@ -12,4 +12,4 @@ fi
 
 # Install dependencies
 echo "Installing Python dependencies..."
-"$VENV_DIR/bin/pip" install -r "$BACKEND_DIR/src/requirements.txt"
+python -m pip install -r "$BACKEND_DIR/src/requirements.txt"
