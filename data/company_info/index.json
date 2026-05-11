@@ -1,0 +1,99 @@
+{
+  "ticker": "index",
+  "market": "US",
+  "scraped_at": "2026-05-11 08:18:00.110932",
+  "updated_at": "2026-05-11T08:18:00.110941",
+  "info": {
+    "identity": {
+      "longName": "CYBER HORNET S&P 500",
+      "shortName": "Index Funds S&P 500 Equal Weigh",
+      "symbol": "INDEX",
+      "quoteType": "MUTUALFUND",
+      "exchange": "NAS",
+      "market": "us_market",
+      "currency": "USD",
+      "sector": null,
+      "industry": null,
+      "fullTimeEmployees": null,
+      "website": null,
+      "longBusinessSummary": "The fund will invest, under normal circumstances, at least 80% of its net assets and borrowings for investment purposes in securities of issuers included in the index. The index is designed to measure the performance of 500 U.S. companies chosen for market size, liquidity and industry grouping, among other factors. In some instances, one or more of the 500 companies may have more than one share class included in the index. The fund is non-diversified.",
+      "companyOfficers": []
+    },
+    "price": {
+      "currentPrice": null,
+      "previousClose": 69.16,
+      "open": null,
+      "dayHigh": null,
+      "dayLow": null,
+      "bid": null,
+      "ask": null,
+      "fiftyTwoWeekHigh": 69.75,
+      "fiftyTwoWeekLow": 54.7,
+      "fiftyDayAverage": 64.664,
+      "twoHundredDayAverage": 63.74335,
+      "volume": null,
+      "averageVolume": 0,
+      "averageVolume10days": 0,
+      "regularMarketChangePercent": 0.85309416,
+      "52WeekChange": null
+    },
+    "valuation": {
+      "marketCap": null,
+      "enterpriseValue": null,
+      "trailingPE": 28.707489,
+      "forwardPE": null,
+      "priceToBook": null,
+      "priceToSalesTrailing12Months": null,
+      "trailingEps": null,
+      "forwardEps": null,
+      "bookValue": null,
+      "pegRatio": null
+    },
+    "profitability": {
+      "profitMargins": null,
+      "operatingMargins": null,
+      "grossMargins": null,
+      "returnOnEquity": null,
+      "returnOnAssets": null,
+      "revenueGrowth": null,
+      "earningsGrowth": null,
+      "grossProfits": null,
+      "totalRevenue": null,
+      "netIncomeToCommon": null,
+      "operatingCashflow": null,
+      "totalCash": null,
+      "totalDebt": null
+    },
+    "dividend": {
+      "dividendRate": 0.5324,
+      "dividendYield": 0.78,
+      "fiveYearAvgDividendYield": null,
+      "payoutRatio": null,
+      "exDividendDate": null,
+      "lastDividendValue": 0.5324
+    },
+    "analyst": {
+      "recommendationKey": null,
+      "recommendationMean": null,
+      "numberOfAnalystOpinions": null,
+      "targetHighPrice": null,
+      "targetLowPrice": null,
+      "targetMeanPrice": null,
+      "targetMedianPrice": null
+    },
+    "ownership": {
+      "sharesOutstanding": null,
+      "floatShares": null,
+      "heldPercentInsiders": null,
+      "heldPercentInstitutions": null,
+      "lastSplitFactor": null,
+      "lastSplitDate": null,
+      "beta": null
+    }
+  },
+  "financials": {
+    "income_statement": {},
+    "balance_sheet": {},
+    "cash_flow": {}
+  }
+}

@@ -7,6 +7,8 @@ frontend/out/
 frontend/dist/
 frontend/.vite/
 
+data/
+
 # Python
 __pycache__/
 *.pyc

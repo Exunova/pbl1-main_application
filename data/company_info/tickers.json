@@ -1,0 +1,99 @@
+{
+  "ticker": "tickers",
+  "market": "US",
+  "scraped_at": "2026-05-11 08:18:01.399673",
+  "updated_at": "2026-05-11T08:18:01.399681",
+  "info": {
+    "identity": {
+      "longName": null,
+      "shortName": null,
+      "symbol": null,
+      "quoteType": null,
+      "exchange": null,
+      "market": null,
+      "currency": null,
+      "sector": null,
+      "industry": null,
+      "fullTimeEmployees": null,
+      "website": null,
+      "longBusinessSummary": null,
+      "companyOfficers": null
+    },
+    "price": {
+      "currentPrice": null,
+      "previousClose": null,
+      "open": null,
+      "dayHigh": null,
+      "dayLow": null,
+      "bid": null,
+      "ask": null,
+      "fiftyTwoWeekHigh": null,
+      "fiftyTwoWeekLow": null,
+      "fiftyDayAverage": null,
+      "twoHundredDayAverage": null,
+      "volume": null,
+      "averageVolume": null,
+      "averageVolume10days": null,
+      "regularMarketChangePercent": null,
+      "52WeekChange": null
+    },
+    "valuation": {
+      "marketCap": null,
+      "enterpriseValue": null,
+      "trailingPE": null,
+      "forwardPE": null,
+      "priceToBook": null,
+      "priceToSalesTrailing12Months": null,
+      "trailingEps": null,
+      "forwardEps": null,
+      "bookValue": null,
+      "pegRatio": null
+    },
+    "profitability": {
+      "profitMargins": null,
+      "operatingMargins": null,
+      "grossMargins": null,
+      "returnOnEquity": null,
+      "returnOnAssets": null,
+      "revenueGrowth": null,
+      "earningsGrowth": null,
+      "grossProfits": null,
+      "totalRevenue": null,
+      "netIncomeToCommon": null,
+      "operatingCashflow": null,
+      "totalCash": null,
+      "totalDebt": null
+    },
+    "dividend": {
+      "dividendRate": null,
+      "dividendYield": null,
+      "fiveYearAvgDividendYield": null,
+      "payoutRatio": null,
+      "exDividendDate": null,
+      "lastDividendValue": null
+    },
+    "analyst": {
+      "recommendationKey": null,
+      "recommendationMean": null,
+      "numberOfAnalystOpinions": null,
+      "targetHighPrice": null,
+      "targetLowPrice": null,
+      "targetMeanPrice": null,
+      "targetMedianPrice": null
+    },
+    "ownership": {
+      "sharesOutstanding": null,
+      "floatShares": null,
+      "heldPercentInsiders": null,
+      "heldPercentInstitutions": null,
+      "lastSplitFactor": null,
+      "lastSplitDate": null,
+      "beta": null
+    }
+  },
+  "financials": {
+    "income_statement": {},
+    "balance_sheet": {},
+    "cash_flow": {}
+  }
+}
