@@ -356,21 +356,25 @@ class MacroScraper(BaseScraper):
         if any_missing:
             events = scrape_calendar(from_date, to_date, target_countries, output_dir)
 
-            events_by_country = {}
-            for event in events:
-                currency = event.get("currency", "")
-                country = "US"
-                if "IDR" in currency:
-                    country = "ID"
-                elif "JPY" in currency:
-                    country = "JP"
-                elif "EUR" in currency:
-                    country = "DE"
+            if events:
+                events_by_country = {}
+                for event in events:
+                    currency = event.get("currency", "")
+                    country = "US"
+                    if "IDR" in currency:
+                        country = "ID"
+                    elif "JPY" in currency:
+                        country = "JP"
+                    elif "EUR" in currency:
+                        country = "DE"
+                    elif "GBP" in currency:
+                        country = "UK"
 
-                event.pop("currency", None)
-                if country not in events_by_country:
-                    events_by_country[country] = []
-                events_by_country[country].append(event)
+                    event.pop("currency", None)
+                    if country not in events_by_country:
+                        events_by_country[country] = []
+                    events_by_country[country].append(event)
+            # else: keep events_by_country from cache (lines 344-349)
         else:
             logger.info("All countries found in cache, skipping scrape.")
 
