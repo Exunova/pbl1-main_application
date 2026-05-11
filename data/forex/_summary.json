@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-05-11 08:45:26.124510",
+  "scraped_at": "2026-05-11 09:50:04.530076",
   "pairs": {
     "IDR_USD": {
       "rate": 5.8e-05,
@@ -7,13 +7,13 @@
       "status": "ok"
     },
     "JPY_USD": {
-      "rate": 0.00637,
-      "change": -0.2281,
+      "rate": 0.006365,
+      "change": -0.315,
       "status": "ok"
     },
     "GBP_USD": {
-      "rate": 1.359638,
-      "change": -0.2638,
+      "rate": 1.359324,
+      "change": -0.2868,
       "status": "ok"
     },
     "USD_IDR": {
@@ -22,13 +22,13 @@
       "status": "ok"
     },
     "USD_JPY": {
-      "rate": 156.977,
-      "change": 0.2273,
+      "rate": 157.123,
+      "change": 0.3205,
       "status": "ok"
     },
     "USD_GBP": {
-      "rate": 0.73549,
-      "change": 0.2645,
+      "rate": 0.73566,
+      "change": 0.2877,
       "status": "ok"
     }
   }

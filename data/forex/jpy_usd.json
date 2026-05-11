@@ -4,11 +4,11 @@
   "base": "JPY",
   "quote": "USD",
   "label": "Japanese Yen / US Dollar",
-  "scraped_at": "2026-05-11 08:18:03.794237",
-  "updated_at": "2026-05-11T08:18:03.794241",
-  "current_rate": 0.00637,
+  "scraped_at": "2026-05-11 09:50:05.742051",
+  "updated_at": "2026-05-11T09:50:05.742056",
+  "current_rate": 0.006365,
   "prev_close": 0.006385,
-  "change_pct": -0.2281,
+  "change_pct": -0.315,
   "history_30d": [
     {
       "date": "2026-04-13",
@@ -92,7 +92,7 @@
     },
     {
       "date": "2026-05-11",
-      "close": 0.00637
+      "close": 0.006365
     }
   ]
 }

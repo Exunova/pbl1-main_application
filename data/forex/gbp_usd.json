@@ -4,11 +4,11 @@
   "base": "GBP",
   "quote": "USD",
   "label": "British Pound / US Dollar",
-  "scraped_at": "2026-05-11 08:18:04.145377",
-  "updated_at": "2026-05-11T08:18:04.145380",
-  "current_rate": 1.359638,
+  "scraped_at": "2026-05-11 09:50:06.217183",
+  "updated_at": "2026-05-11T09:50:06.217187",
+  "current_rate": 1.359324,
   "prev_close": 1.363234,
-  "change_pct": -0.2638,
+  "change_pct": -0.2868,
   "history_30d": [
     {
       "date": "2026-04-13",
@@ -92,7 +92,7 @@
     },
     {
       "date": "2026-05-11",
-      "close": 1.359638
+      "close": 1.359324
     }
   ]
 }

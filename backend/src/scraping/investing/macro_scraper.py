@@ -1,4 +1,4 @@
-"""Macro Economic Events scraper for investing.com."""
+﻿"""Macro Economic Events scraper for investing.com."""
 
 import json
 import os
@@ -99,6 +99,38 @@ def load_cookies():
     return cookies
 
 
+def close_watchlist_onboarding(page):
+    """Close the watchlist onboarding dialog if present."""
+    try:
+        dialogs = page.query_selector_all("[role='dialog']")
+        for dialog in dialogs:
+            if dialog.is_visible():
+                # Look for close/skip button in the dialog
+                close_selectors = [
+                    "button:has-text('Skip')",
+                    "button:has-text('Skip tour')",
+                    "[aria-label='Skip']",
+                    "[aria-label='Close']",
+                    "button:has-text('Close')",
+                    "[class*='skip']",
+                    "[class*='close']",
+                ]
+                for sel in close_selectors:
+                    try:
+                        btn = dialog.query_selector(sel)
+                        if btn and btn.is_visible():
+                            btn.click(force=True)
+                            time.sleep(0.5)
+                            logger.info("Closed watchlist onboarding dialog")
+                            return True
+                    except:
+                        continue
+        return False
+    except Exception as e:
+        logger.debug(f"Error closing watchlist dialog: {e}")
+        return False
+
+
 def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
     if output_dir is None:
         output_dir = os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "data")
@@ -117,7 +149,7 @@ def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
             ],
         )
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             viewport={"width": 1280, "height": 800},
         )
         cookies = load_cookies()
@@ -132,6 +164,10 @@ def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
             wait_until="domcontentloaded",
         )
         time.sleep(10)
+
+        # Close any watchlist onboarding dialog first
+        close_watchlist_onboarding(page)
+        time.sleep(0.5)
 
         logger.info("Opening filters and setting dates...")
         if not click_show_filters(page):
@@ -221,17 +257,62 @@ def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
 
 
 def click_show_filters(page):
+    """Click the Show Filters button with proper overlay handling."""
     try:
-        btn = page.query_selector('button:has-text("Show Filters")')
-        if btn:
-            btn.click()
+        # First, check if already showing filters (Hide Filters button exists)
+        hide_btn = page.query_selector('button:has-text("Hide Filters")')
+        if hide_btn:
+            logger.info("Filter panel already open")
+            return True
+
+        # Find the Show Filters button
+        filter_btns = page.query_selector_all('button:has-text("Show Filters")')
+        if not filter_btns:
+            logger.warning("No Show Filters button found")
+            return False
+
+        # Find the visible one
+        visible_btn = None
+        for btn in filter_btns:
+            try:
+                if btn.is_visible():
+                    visible_btn = btn
+                    break
+            except:
+                pass
+
+        if not visible_btn:
+            logger.warning("No visible Show Filters button found")
+            return False
+
+        # Click with force=True to bypass any overlay interception
+        try:
+            visible_btn.click(force=True, timeout=5000)
+            logger.info("Clicked Show Filters button (force)")
             time.sleep(1)
-            return True
-        btn = page.query_selector('button:has-text("Hide Filters")')
-        if btn:
-            return True
-        return False
-    except:
+
+            # Verify the filter panel opened
+            hide_btn = page.query_selector('button:has-text("Hide Filters")')
+            if hide_btn:
+                logger.info("Filter panel confirmed open")
+                return True
+            else:
+                logger.warning("Filter panel may not have opened (Hide Filters not found)")
+                return True  # Still return True as click succeeded
+
+        except Exception as e:
+            logger.warning(f"Force click failed: {e}")
+            # Fallback: try evaluate click
+            try:
+                visible_btn.evaluate("el => el.click()")
+                logger.info("Clicked Show Filters button (evaluate)")
+                time.sleep(1)
+            except Exception as e2:
+                logger.error(f"Evaluate click also failed: {e2}")
+                return False
+
+    except Exception as e:
+        logger.error(f"Error in click_show_filters: {e}")
         return False
 
 
@@ -239,7 +320,7 @@ def open_custom_dates(page):
     try:
         btn = page.query_selector('button:has-text("Custom dates")')
         if btn:
-            btn.click()
+            btn.evaluate("el => el.click()")
             time.sleep(2)
             return True
         return False
@@ -251,7 +332,10 @@ def set_dates(page, from_date, to_date):
     month, day, year = from_date.split("/")
     start_input = page.query_selector("#date-picker-start-day")
     if start_input:
-        start_input.click()
+        try:
+            start_input.click(force=True)
+        except:
+            page.evaluate("arguments[0].click()", start_input)
         start_input.fill("")
         time.sleep(0.2)
         start_input.type(f"{month}/{day}/{year}")
@@ -260,7 +344,10 @@ def set_dates(page, from_date, to_date):
     month, day, year = to_date.split("/")
     end_input = page.query_selector("#date-picker-end-day")
     if end_input:
-        end_input.click()
+        try:
+            end_input.click(force=True)
+        except:
+            page.evaluate("arguments[0].click()", end_input)
         end_input.fill("")
         time.sleep(0.2)
         end_input.type(f"{month}/{day}/{year}")
