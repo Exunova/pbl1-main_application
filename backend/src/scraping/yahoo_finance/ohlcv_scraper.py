@@ -10,7 +10,8 @@ Usage: run(output_dir) where output_dir = /home/reiyo/Project/PBL1/pbl1-main_app
 import yfinance as yf
 import json
 import time
-from datetime import datetime, timedelta
+import os
+from datetime import datetime
 
 from backend.src.scraping.base_scraper import BaseScraper
 from backend.src.config import MARKETS

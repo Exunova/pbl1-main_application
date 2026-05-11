@@ -1,7 +1,6 @@
 """Forex scraper using Yahoo Finance."""
 
 import os
-import json
 from datetime import datetime
 from typing import Optional
 
