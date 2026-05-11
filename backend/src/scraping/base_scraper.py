@@ -160,7 +160,7 @@ class BaseScraper(ABC):
     @property
     def output_dir(self) -> str:
         """Return the configured output directory. Override via run()."""
-        return self._output_dir
+        return getattr(self, '_output_dir', '')
 
     def set_output_dir(self, output_dir: str) -> None:
         self._output_dir = output_dir

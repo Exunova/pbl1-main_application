@@ -12,13 +12,7 @@ from typing import Dict
 import yfinance as yf
 
 from backend.src.scraping.base_scraper import BaseScraper
-
-MARKETS = {
-    "US": ["NVDA", "AAPL", "GOOGL", "MSFT", "AMZN", "META", "TSLA", "BRK-B", "LLY", "JPM"],
-    "ID": ["BBCA.JK", "BBRI.JK", "BMRI.JK", "TLKM.JK", "ASII.JK", "BBNI.JK", "PGAS.JK", "ADRO.JK", "UNVR.JK", "KLBF.JK"],
-    "JP": ["7203.T", "8306.T", "6758.T", "9984.T", "6501.T", "8316.T", "9983.T", "6857.T", "8035.T", "8058.T"],
-    "GB": ["AZN.L", "HSBA.L", "SHEL.L", "BATS.L", "GSK.L", "BP.L", "BARC.L", "LLOY.L", "NG.L", "REL.L"],
-}
+from backend.src.config import MARKETS
 
 INFO_FIELDS = {
     "identity":      ["longName", "shortName", "symbol", "quoteType", "exchange", "market",

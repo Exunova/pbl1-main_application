@@ -8,15 +8,7 @@ from typing import Optional
 import yfinance as yf
 
 from backend.src.scraping.base_scraper import BaseScraper
-
-FOREX_PAIRS = {
-    "IDR_USD": {"ticker": "IDRUSD=X", "base": "IDR", "quote": "USD", "label": "Indonesian Rupiah / US Dollar"},
-    "JPY_USD": {"ticker": "JPYUSD=X", "base": "JPY", "quote": "USD", "label": "Japanese Yen / US Dollar"},
-    "GBP_USD": {"ticker": "GBPUSD=X", "base": "GBP", "quote": "USD", "label": "British Pound / US Dollar"},
-    "USD_IDR": {"ticker": "USDIDR=X", "base": "USD", "quote": "IDR", "label": "US Dollar / Indonesian Rupiah"},
-    "USD_JPY": {"ticker": "USDJPY=X", "base": "USD", "quote": "JPY", "label": "US Dollar / Japanese Yen"},
-    "USD_GBP": {"ticker": "USDGBP=X", "base": "USD", "quote": "GBP", "label": "US Dollar / British Pound"},
-}
+from backend.src.config import FOREX_PAIRS
 
 FOREX_TTL_SECONDS = 3600  # 1 hour
 

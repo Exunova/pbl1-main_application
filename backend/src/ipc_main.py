@@ -9,113 +9,25 @@ import sys
 import os
 import json
 import threading
-import sqlite3
 import builtins
 import re
+import yfinance as yf
 from datetime import datetime
 from contextlib import contextmanager
 
-import yfinance as yf
+# Allow imports from project root (backend/ parent)
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-# =============================================================================
-# HARDCODE TOGGLE — SCRAPING ON / OFF
-# Set SCRAPING_ENABLED = False to completely disable all background scrapers.
-# The app will still serve existing cached / file data; it just won't fetch
-# any new data from the network.  Flip back to True to re-enable scraping.
-# =============================================================================
-SCRAPING_ENABLED = True   # ← change this to False to turn off all scraping
+from backend.src.config import DATA_DIR, SCRAPING_ENABLED
 
-# =============================================================================
-# PATH SETUP
-# =============================================================================
+from backend.src.db.cache_database import CacheDatabase
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-APP_DIR = os.path.dirname(BASE_DIR)
-ROOT_DIR = os.path.dirname(APP_DIR)
-DATA_DIR = os.path.join(ROOT_DIR, 'data')
-CACHE_DB = os.path.join(APP_DIR, 'cache.db')
-
-# Ensure data dir exists
-os.makedirs(DATA_DIR, exist_ok=True)
-sys.stderr.write(f"[Python IPC] DATA_DIR initialized at: {DATA_DIR}\n")
-sys.stderr.write(f"[Python IPC] Scraping is {'ENABLED' if SCRAPING_ENABLED else 'DISABLED'}\n")
-
-# Ensure sys.path has APP_DIR for scrapers imports
-if BASE_DIR not in sys.path:
-    sys.path.insert(0, BASE_DIR)
-
-if APP_DIR not in sys.path:
-    sys.path.insert(0, APP_DIR)
-
-if ROOT_DIR not in sys.path:
-    sys.path.insert(0, ROOT_DIR)
-
-# Menambahkan fungsi baru untuk fitur dropdown ticker di portofolio
-def handle_get_scraped_tickers():
-    """Fungsi untuk mengambil daftar 40 ticker beserta nama perusahaannya hasil scraping"""
-    try:
-        # Membaca file _summary.json dari folder data/company_info
-        data = read_cache_file("company_info", "_summary.json")
-        result = []
-        
-        # Mengekstrak nama-nama ticker dan nama perusahaan dari dalam file JSON
-        if data and "tickers" in data:
-            for ticker, details in data["tickers"].items():
-                result.append({
-                    "ticker": ticker,
-                    "name": details.get("name", "")
-                })
-                    
-        return result
-    except Exception as e:
-        return []
-
-
-# =============================================================================
-# CACHE DATABASE
-# =============================================================================
-
-def get_db_conn():
-    """Get a connection to the cache SQLite database."""
-    conn = sqlite3.connect(CACHE_DB, check_same_thread=False)
-    conn.execute("PRAGMA journal_mode=WAL")
-    conn.row_factory = sqlite3.Row
-    return conn
-
-def init_db():
-    """Initialize the cache database schema."""
-    with get_db_conn() as conn:
-        conn.execute("""
-            CREATE TABLE IF NOT EXISTS cache (
-                key TEXT PRIMARY KEY,
-                data TEXT NOT NULL,
-                updated_at TEXT
-            )
-        """)
-        conn.execute("""
-            CREATE TABLE IF NOT EXISTS positions (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                ticker TEXT NOT NULL,
-                company TEXT NOT NULL,
-                shares REAL NOT NULL,
-                buyPrice REAL NOT NULL,
-                buyDate TEXT NOT NULL,
-                currency TEXT NOT NULL DEFAULT 'USD'
-            )
-        """)
-        conn.execute("""
-            CREATE TABLE IF NOT EXISTS scrape_status (
-                key TEXT PRIMARY KEY,
-                updated_at TEXT,
-                status TEXT
-            )
-        """)
-        conn.commit()
+_cache_db = CacheDatabase()
 
 @contextmanager
 def db_cursor():
-    """Context manager for database cursor."""
-    conn = get_db_conn()
+    """Context manager for database cursor using singleton."""
+    conn = _cache_db.get_conn()
     try:
         cursor = conn.cursor()
         yield cursor
@@ -123,55 +35,58 @@ def db_cursor():
     finally:
         conn.close()
 
-# =============================================================================
-# CACHE FUNCTIONS
-# =============================================================================
-
-def cache_get(key):
-    """Get cached data by key. Returns parsed JSON or None."""
-    try:
-        with db_cursor() as cur:
-            cur.execute("SELECT data FROM cache WHERE key = ?", (key,))
-            row = cur.fetchone()
-            if row:
-                return json.loads(row['data'])
-    except Exception:
-        pass
-    return None
-
-def cache_set(key, data):
-    """Store data in cache with current timestamp."""
-    try:
-        with db_cursor() as cur:
-            cur.execute(
-                "INSERT OR REPLACE INTO cache (key, data, updated_at) VALUES (?, ?, ?)",
-                (key, json.dumps(data, default=str), datetime.now().isoformat())
-            )
-    except Exception:
-        pass
-
 def cache_get_or_run(key, scraper_fn):
     """Return cached data if exists, otherwise run scraper_fn() and cache result."""
-    cached = cache_get(key)
+    cached = _cache_db.cache_get(key)
     if cached is not None:
         return cached
     result = scraper_fn()
     if result is not None:
-        cache_set(key, result)
+        _cache_db.cache_set(key, result)
     return result
 
+def handle_get_scraped_tickers():
+    """Return list of tickers with scraped OHLCV data from data directory."""
+    tickers = []
+    ohlcv_dir = os.path.join(DATA_DIR, "ohlcv")
+    if os.path.isdir(ohlcv_dir):
+        for fname in os.listdir(ohlcv_dir):
+            if fname.endswith(".json") and fname != "_summary.json":
+                tickers.append({"ticker": fname[:-5]})
+    return tickers
+
 # =============================================================================
-# SCRAPER IMPORTS (after path setup)
+# SCRAPER IMPORTS (after path setup) — using newer scraping package
 # =============================================================================
 
-from src.scrapers import ohlcv_scraper, news_scraper, macro_scraper, forex_scraper, company_info_scraper
+from backend.src.scraping.yahoo_finance.ohlcv_scraper import OHLCVScraper
+from backend.src.scraping.yahoo_finance.forex_scraper import ForexScraper
+from backend.src.scraping.yahoo_finance.company_info_scraper import CompanyInfoScraper
+from backend.src.scraping.google_news.news_scraper import NewsScraper
+from backend.src.scraping.investing.macro_scraper import MacroScraper
+
+# Wrapper functions to normalize interface between old modules and new classes
+def _run_ohlcv(output_dir):
+    return OHLCVScraper().run(output_dir, incremental=True, full=False)
+
+def _run_forex(output_dir):
+    return ForexScraper().run(output_dir)
+
+def _run_company_info(output_dir):
+    return CompanyInfoScraper().run(output_dir)
+
+def _run_news(output_dir):
+    return NewsScraper().run(output_dir)
+
+def _run_macro(output_dir):
+    return MacroScraper().run(output_dir)
 
 SCRAPER_MODULES = {
-    "ohlcv": (ohlcv_scraper, os.path.join(DATA_DIR, "ohlcv")),
-    "news": (news_scraper, os.path.join(DATA_DIR, "news")),
-    "macro": (macro_scraper, os.path.join(DATA_DIR, "macro")),
-    "forex": (forex_scraper, os.path.join(DATA_DIR, "forex")),
-    "company_info": (company_info_scraper, os.path.join(DATA_DIR, "company_info")),
+    "ohlcv": (_run_ohlcv, os.path.join(DATA_DIR, "ohlcv")),
+    "news": (_run_news, os.path.join(DATA_DIR, "news")),
+    "macro": (_run_macro, os.path.join(DATA_DIR, "macro")),
+    "forex": (_run_forex, os.path.join(DATA_DIR, "forex")),
+    "company_info": (_run_company_info, os.path.join(DATA_DIR, "company_info")),
 }
 
 # =============================================================================
@@ -243,7 +158,7 @@ def get_scrape_status():
 
 def trigger_scrape_in_bg(scraper_key):
     """Trigger a scraper to run in the background if not already running.
-    
+
     Scraping is completely skipped when SCRAPING_ENABLED is False.
     """
     if not SCRAPING_ENABLED:
@@ -260,7 +175,7 @@ def trigger_scrape_in_bg(scraper_key):
         try:
             set_scrape_status(scraper_key, "running")
             scraper_mod, output_dir = SCRAPER_MODULES[scraper_key]
-            result = scraper_mod.run(output_dir)
+            result = scraper_mod(output_dir)
             set_scrape_status(scraper_key, "done")
         except Exception as e:
             set_scrape_status(scraper_key, f"failed: {str(e)}")
@@ -305,7 +220,7 @@ def to_filename(ticker):
 def handle_ohlcv(ticker):
     """Handle ohlcv command - returns OHLCV data for a ticker."""
     fname = to_filename(ticker) + ".json"
-    cached = cache_get(f"ohlcv:{ticker}")
+    cached = _cache_db.cache_get(f"ohlcv:{ticker}")
     if cached:
         updated_at_str = cached.get("updated_at") or cached.get("scraped_at")
         if updated_at_str:
@@ -316,87 +231,87 @@ def handle_ohlcv(ticker):
                     return cached
             except Exception:
                 pass
-    
+
     data = read_cache_file("ohlcv", fname)
     if not data:
         trigger_scrape_in_bg("ohlcv")
         return {"ticker": ticker, "ohlcv_15m": [], "loading": True}
-    
+
     if not data:
         return {"ticker": ticker, "ohlcv_15m": []}
-    
-    cache_set(f"ohlcv:{ticker}", data)
+
+    _cache_db.cache_set(f"ohlcv:{ticker}", data)
     return data
 
 def handle_news(region):
     """Handle news command - returns news articles for a region."""
-    cached = cache_get(f"news:{region.upper()}")
+    cached = _cache_db.cache_get(f"news:{region.upper()}")
     if cached:
         return cached
-    
+
     data = read_cache_file("news", f"{region.lower()}_news.json")
     if not data:
         trigger_scrape_in_bg("news")
         labels = {"US": "S&P 500 / Wall Street", "ID": "LQ45 / IHSG", "JP": "Nikkei 225", "GB": "FTSE 100"}
         return {"region": region.upper(), "label": labels.get(region.upper(), region), "articles": [], "loading": True}
-    
+
     labels = {"US": "S&P 500 / Wall Street", "ID": "LQ45 / IHSG", "JP": "Nikkei 225", "GB": "FTSE 100"}
     if not data:
         return {"region": region.upper(), "label": labels.get(region.upper(), region), "articles": []}
-    
-    cache_set(f"news:{region.upper()}", data)
+
+    _cache_db.cache_set(f"news:{region.upper()}", data)
     return data
 
 def handle_macro(cc):
     """Handle macro command - returns macro events for a country code."""
-    cached = cache_get(f"macro:{cc.upper()}")
+    cached = _cache_db.cache_get(f"macro:{cc.upper()}")
     if cached:
         return cached
-    
+
     data = read_cache_file("macro", f"{cc.lower()}_macro.json")
     if not data:
         trigger_scrape_in_bg("macro")
         return {"country": cc.upper(), "name": cc.upper(), "events": [], "loading": True}
-    
+
     if not data:
         return {"country": cc.upper(), "name": cc.upper(), "events": []}
-    
-    cache_set(f"macro:{cc.upper()}", data)
+
+    _cache_db.cache_set(f"macro:{cc.upper()}", data)
     return data
 
 def handle_forex(pair):
     """Handle forex command - returns forex data for a pair."""
-    cached = cache_get(f"forex:{pair.upper()}")
+    cached = _cache_db.cache_get(f"forex:{pair.upper()}")
     if cached:
         return cached
-    
+
     data = read_cache_file("forex", f"{pair.lower()}.json")
     if not data:
         trigger_scrape_in_bg("forex")
         return {"pair": pair.upper(), "current_rate": None, "change_pct": 0, "loading": True}
-    
+
     if not data:
         return {"pair": pair.upper(), "current_rate": None, "change_pct": 0}
-    
-    cache_set(f"forex:{pair.upper()}", data)
+
+    _cache_db.cache_set(f"forex:{pair.upper()}", data)
     return data
 
 def handle_company(ticker):
     """Handle company command - returns company info for a ticker."""
     fname = to_filename(ticker) + ".json"
-    cached = cache_get(f"company:{ticker}")
+    cached = _cache_db.cache_get(f"company:{ticker}")
     if cached:
         return cached
-    
+
     data = read_cache_file("company_info", fname)
     if not data:
         trigger_scrape_in_bg("company_info")
         return {"ticker": ticker, "info": {}, "loading": True}
-    
+
     if not data:
         return {"ticker": ticker, "info": {}}
-    
-    cache_set(f"company:{ticker}", data)
+
+    _cache_db.cache_set(f"company:{ticker}", data)
     return data
 
 def handle_companies(tickers):
@@ -410,7 +325,7 @@ def handle_index(idx):
     """Handle index command - returns index summary from OHLCV data."""
     fname = to_filename(idx) + ".json"
     data = read_cache_file("ohlcv", fname)
-    
+
     indices_map = {
         "^GSPC": {"name": "S&P 500", "country": "US"},
         "^JKLQ45": {"name": "LQ45", "country": "ID"},
@@ -418,14 +333,14 @@ def handle_index(idx):
         "^FTSE": {"name": "FTSE 100", "country": "GB"}
     }
     meta = indices_map.get(idx, {"name": idx, "country": "XX"})
-    
+
     if data and data.get("ohlcv_15m"):
         candles = data["ohlcv_15m"]
         cur = candles[-1].get("close")
         prv = candles[0].get("close")
         chg = ((cur - prv) / prv * 100) if cur and prv else 0
         return {**meta, "index": idx, "current_price": cur, "prev_close": prv, "change_pct": chg, "scraped_at": data.get("scraped_at", "")}
-    
+
     return {**meta, "index": idx, "current_price": None, "prev_close": None, "change_pct": 0}
 
 def handle_indices():
@@ -437,7 +352,7 @@ def handle_indices():
         ("^N225", {"name": "Nikkei 225", "country": "JP"}),
         ("^FTSE", {"name": "FTSE 100", "country": "GB"})
     ]
-    
+
     for idx, meta in indices_list:
         fname = to_filename(idx) + ".json"
         data = read_cache_file("ohlcv", fname)
@@ -449,7 +364,7 @@ def handle_indices():
             results.append({"index": idx, **meta, "current_price": cur, "prev_close": prv, "change_pct": chg})
         else:
             results.append({"index": idx, **meta, "current_price": None, "prev_close": None, "change_pct": 0})
-    
+
     return results
 
 def handle_scrape(stype):
@@ -508,17 +423,17 @@ def handle_portfolio_add(params):
         buyPrice = params.get("buyPrice")
         buyDate = params.get("buyDate")
         currency = params.get("currency", "USD")
-        
+
         if not all([ticker, company, shares, buyPrice, buyDate]):
             return {"error": "Missing required fields"}
-        
+
         with db_cursor() as cur:
             cur.execute(
                 "INSERT INTO positions (ticker, company, shares, buyPrice, buyDate, currency) VALUES (?, ?, ?, ?, ?, ?)",
                 (ticker, company, shares, buyPrice, buyDate, currency)
             )
             new_id = cur.lastrowid
-        
+
         return {"id": new_id, "ticker": ticker, "company": company, "shares": shares, "buyPrice": buyPrice, "buyDate": buyDate, "currency": currency}
     except Exception as e:
         return {"error": str(e)}
@@ -529,32 +444,32 @@ def handle_portfolio_edit(params):
         pid = params.get("id")
         if not pid:
             return {"error": "Missing position id"}
-        
+
         # Build update fields
         allowed_fields = ["ticker", "company", "shares", "buyPrice", "buyDate", "currency"]
         update_fields = []
         update_values = []
-        
+
         for field in allowed_fields:
             if field in params:
                 update_fields.append(f"{field} = ?")
                 update_values.append(params[field])
-        
+
         if not update_fields:
             return {"error": "No fields to update"}
-        
+
         update_values.append(pid)
         query = f"UPDATE positions SET {', '.join(update_fields)} WHERE id = ?"
-        
+
         with db_cursor() as cur:
             cur.execute(query, update_values)
             if cur.rowcount == 0:
                 return {"error": "Position not found"}
-            
+
             # Fetch updated position
             cur.execute("SELECT id, ticker, company, shares, buyPrice, buyDate, currency FROM positions WHERE id = ?", (pid,))
             row = cur.fetchone()
-        
+
         if row:
             return {
                 "id": row['id'],
@@ -575,12 +490,12 @@ def handle_portfolio_delete(params):
         pid = params.get("id")
         if not pid:
             return {"error": "Missing position id"}
-        
+
         with db_cursor() as cur:
             cur.execute("DELETE FROM positions WHERE id = ?", (pid,))
             if cur.rowcount == 0:
                 return {"error": "Position not found"}
-        
+
         return {"status": "ok"}
     except Exception as e:
         return {"error": str(e)}
@@ -723,7 +638,7 @@ def handle_portfolio_import(params):
         incoming = params.get("positions", [])
         if not isinstance(incoming, list):
             return {"error": "positions must be a list"}
-        
+
         added = 0
         with db_cursor() as cur:
             for pos in incoming:
@@ -733,11 +648,11 @@ def handle_portfolio_import(params):
                         (pos.get("ticker"), pos.get("company", ""), pos.get("shares"), pos.get("buyPrice"), pos.get("buyDate"), pos.get("currency"))
                     )
                     added += 1
-            
+
             # Get total count
             cur.execute("SELECT COUNT(*) as cnt FROM positions")
             total = cur.fetchone()['cnt']
-        
+
         return {"imported": added, "total": total}
     except Exception as e:
         return {"error": str(e)}
@@ -751,7 +666,7 @@ def handle_command(req):
     req_id = req.get("id", "")
     cmd = req.get("cmd")
     params = req.get("params", {})
-    
+
     try:
         if cmd == "ohlcv":
             ticker = params.get("ticker")
@@ -888,8 +803,8 @@ def handle_command(req):
 def main():
     """Main entry point - read commands from STDIN, write responses to STDOUT."""
     # Initialize database
-    init_db()
-    
+    _cache_db.init_db()
+
     # Load scrape status from database
     try:
         with db_cursor() as cur:
@@ -899,7 +814,7 @@ def main():
                 scrape_status[row['key']] = row['status']
     except Exception:
         pass
-    
+
     for line in sys.stdin:
         line = line.strip()
         if not line:

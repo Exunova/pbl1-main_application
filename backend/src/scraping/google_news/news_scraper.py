@@ -3,14 +3,11 @@ News Scraper — Google News RSS + Thumbnail Fetcher
 Fetches RSS feeds for multiple regions and writes JSON output files.
 """
 
-import sys, os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
-from cache_db import cache_get, cache_set, set_scrape_status
-
 import feedparser
 import requests
 import json
 import time
+import os
 from datetime import datetime
 from urllib.parse import urlparse
 from html.parser import HTMLParser
@@ -18,13 +15,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from backend.src.scraping.base_scraper import BaseScraper
-
-NEWS_FEEDS = {
-    "US": {"label": "S&P 500 / Wall Street", "url": "https://news.google.com/rss/search?q=%22S%26P+500%22+OR+%22SPX%22+when:1d&hl=en-US&gl=US&ceid=US:en"},
-    "ID": {"label": "LQ45 / IHSG", "url": "https://news.google.com/rss/search?q=%22LQ45%22+OR+%22IHSG%22+when:1d&hl=id&gl=ID&ceid=ID:id"},
-    "JP": {"label": "Nikkei 225", "url": "https://news.google.com/rss/search?q=%22Nikkei+225%22+OR+%22Nikkei+index%22+when:1d&hl=en&gl=JP&ceid=JP:en"},
-    "GB": {"label": "FTSE 100", "url": "https://news.google.com/rss/search?q=%22FTSE+100%22+when:1d&hl=en-GB&gl=GB&ceid=GB:en"},
-}
+from backend.src.config import NEWS_FEEDS
 
 NEWS_TTL_SECONDS = 7200  # 2 hours
 
@@ -200,7 +191,7 @@ class NewsScraper(BaseScraper):
                     "article_count": len(merged_articles),
                     "articles": merged_articles
                 }
-                cache_set(f"news:{market}", news_data)
+                self._cache_db.cache_set(f"news:{market}", news_data)
 
             save_json(news_data, output_dir, f"{market.lower()}_news.json")
 

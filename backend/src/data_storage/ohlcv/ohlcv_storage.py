@@ -4,7 +4,7 @@ import json
 import os
 
 from ..base_storage_interface import BaseStorageInterface, DATA_DIR
-from ...scrapers.ohlcv_scraper import to_filename
+from backend.src.scraping.yahoo_finance.ohlcv_scraper import to_filename
 
 
 class OHLCVStorage(BaseStorageInterface):

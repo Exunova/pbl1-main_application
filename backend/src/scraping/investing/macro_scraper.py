@@ -10,9 +10,8 @@ from typing import Optional
 
 from playwright.sync_api import sync_playwright
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 from backend.src.scraping.base_scraper import BaseScraper
-from cache_db import cache_get, cache_set, set_scrape_status
+from backend.src.config import COUNTRY_CONFIG
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -67,13 +66,7 @@ COUNTRY_CODES = {
     "EuroZone": "EU",
 }
 
-COUNTRY_CONFIG = {
-    "US": {"name": "United States", "currency": "USD"},
-    "ID": {"name": "Indonesia", "currency": "IDR"},
-    "JP": {"name": "Japan", "currency": "JPY"},
-    "UK": {"name": "United Kingdom", "currency": "GBP"},
-    "DE": {"name": "Germany", "currency": "EUR"},
-}
+from backend.src.config import COUNTRY_CONFIG
 
 MACRO_TTL_SECONDS = 86400
 
@@ -81,7 +74,7 @@ MACRO_TTL_SECONDS = 86400
 def load_cookies():
     """Load cookies from Netscape format cookies.txt file."""
     cookies = []
-    cookies_file = os.path.join(os.path.dirname(__file__), "..", "..", "scrapers", "cookies.txt")
+    cookies_file = os.path.join(os.path.dirname(__file__), "..", "cookies.txt")
     if not os.path.exists(cookies_file):
         logger.warning(f"Cookies file not found: {cookies_file}")
         return cookies
@@ -402,7 +395,7 @@ class MacroScraper(BaseScraper):
                     "event_count": len(events_list),
                     "events": events_list,
                 }
-                cache_set(f"macro:{code}", macro_data)
+                self._cache_db.cache_set(f"macro:{code}", macro_data)
 
             self.save_json(macro_data, f"{code.lower()}_macro.json")
 

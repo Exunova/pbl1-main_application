@@ -47,7 +47,7 @@ class BasePageHandler(ABC):
         if self._cache_db is None:
             return
         try:
-            self._cache_db.set(key, data)
+            self._cache_db.cache_set(key, data)
         except Exception:
             pass
 
@@ -55,7 +55,7 @@ class BasePageHandler(ABC):
         if self._cache_db is None:
             return None
         try:
-            return self._cache_db.get(key)
+            return self._cache_db.cache_get(key)
         except Exception:
             return None
 

@@ -121,6 +121,8 @@ class CacheDatabase:
         conn.commit()
         new_id = cur.lastrowid
         conn.close()
+        if new_id is None:
+            return -1
         return new_id
 
     def edit_position(self, id: int, fields: Dict[str, Any]) -> bool:
@@ -143,7 +145,7 @@ class CacheDatabase:
 
     # ── Scrape status ─────────────────────────────────────────────
 
-    def set_scrape_status(self, key: str, status: str) -> None:
+    def set_scrape_status(self, key: str, status: str, data: Any = None) -> None:
         """Set or update the scrape status for a given key."""
         conn = self.get_conn()
         conn.execute("""
