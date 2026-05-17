@@ -24,6 +24,8 @@ contextBridge.exposeInMainWorld("api", {
     portfolioExport: () => ipcRenderer.invoke("portfolio-export"),
     portfolioImport: (positions) =>
         ipcRenderer.invoke("portfolio-import", positions),
+    checkForexRate: (params) =>
+        ipcRenderer.invoke("check-forex-rate", params),
 
     flaskHealth: () => ipcRenderer.invoke("flask-health"),
 

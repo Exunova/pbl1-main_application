@@ -27,6 +27,8 @@ class PortfolioHandler(BasePageHandler):
             return self.portfolio_export()
         elif cmd == "portfolio_import":
             return self.portfolio_import(params)
+        elif cmd == "check_forex_rate":
+            return self.check_forex_rate(params)
         return {}
 
     def portfolio_list(self) -> dict:
@@ -212,23 +214,44 @@ class PortfolioHandler(BasePageHandler):
             
             all_symbols = tickers + fx_symbols
 
+            # Determine date range: from the earliest buyDate to today
+            from datetime import timedelta
+            buy_dates = []
+            for p in positions:
+                try:
+                    buy_dates.append(datetime.strptime(p["buyDate"], "%Y-%m-%d").date())
+                except (ValueError, TypeError):
+                    pass
+            
+            if buy_dates:
+                earliest_date = min(buy_dates) - timedelta(days=7)  # buffer for weekends/holidays
+                start_str = earliest_date.isoformat()
+            else:
+                start_str = None
+
             try:
-                # OPTIMIZATION: Fetch 1 month of data for all stocks and FX pairs in ONE network call!
-                # Disabled threads and progress to prevent yfinance from deadlocking/hanging.
-                prices = yf.download(all_symbols, period="1mo", auto_adjust=True, threads=False, progress=False)
+                # Download data from earliest buyDate to now for accurate historical lookups
+                download_kwargs = {
+                    "auto_adjust": True,
+                    "threads": False,
+                    "progress": False,
+                }
+                if start_str:
+                    download_kwargs["start"] = start_str
+                else:
+                    download_kwargs["period"] = "1mo"
+
+                prices = yf.download(all_symbols, **download_kwargs)
                 if prices is not None and not prices.empty:
-                    sys.stderr.write(f"yfinance download success. Columns: {prices.columns.tolist()}\n")
-                    if "Close" in prices.columns:
-                        sys.stderr.write(f"Close data head:\n{prices['Close'].head()}\n")
-                    else:
-                        sys.stderr.write(f"NO CLOSE COLUMN in prices. Available levels: {prices.columns.levels if hasattr(prices.columns, 'levels') else 'N/A'}\n")
+                    sys.stderr.write(f"yfinance download success. Date range: {prices.index[0]} to {prices.index[-1]}\n")
                 else:
                     sys.stderr.write("yfinance download returned empty data\n")
             except Exception as e:
                 sys.stderr.write(f"yfinance batch download failed: {e}\n")
                 prices = None
 
-            def get_latest_price(symbol):
+            def _get_series(symbol):
+                """Extract the Close price series for a symbol from the downloaded data."""
                 if prices is None or prices.empty:
                     return None
                 try:
@@ -245,40 +268,41 @@ class PortfolioHandler(BasePageHandler):
                                 s = prices[found_col[0]]
                             else:
                                 return None
-                    s = s.dropna()
-                    if not s.empty:
-                        value = float(s.iloc[-1])
-                        return value if math.isfinite(value) else None
+                    return s.dropna()
                 except Exception as e:
-                    sys.stderr.write(f"Error getting latest price for {symbol}: {e}\n")
-                    pass
+                    sys.stderr.write(f"Error getting series for {symbol}: {e}\n")
+                    return None
+
+            def get_latest_price(symbol):
+                """Get the most recent closing price for a symbol."""
+                s = _get_series(symbol)
+                if s is not None and not s.empty:
+                    value = float(s.iloc[-1])
+                    return value if math.isfinite(value) else None
                 return None
 
-            def get_hist_avg(symbol):
-                if prices is None or prices.empty:
+            def get_price_on_date(symbol, target_date):
+                """Get the closing price on or closest before the target_date.
+                
+                This is used to find the forex rate on the exact buy date,
+                giving an accurate forex return calculation.
+                """
+                s = _get_series(symbol)
+                if s is None or s.empty:
                     return None
                 try:
-                    if len(all_symbols) == 1:
-                        s = prices["Close"]
-                    else:
-                        if ("Close", symbol) in prices.columns:
-                            s = prices[("Close", symbol)]
-                        elif "Close" in prices.columns and symbol in prices["Close"].columns:
-                            s = prices["Close"][symbol]
-                        else:
-                            found_col = [c for c in prices.columns if c[1] == symbol and c[0] == 'Close']
-                            if found_col:
-                                s = prices[found_col[0]]
-                            else:
-                                return None
-                    s = s.dropna()
-                    if not s.empty:
-                        value = float(s.mean())
+                    # Filter to dates on or before the target date
+                    mask = s.index.date <= target_date
+                    filtered = s[mask]
+                    if not filtered.empty:
+                        value = float(filtered.iloc[-1])
                         return value if math.isfinite(value) else None
+                    # If no data before target, use the earliest available
+                    value = float(s.iloc[0])
+                    return value if math.isfinite(value) else None
                 except Exception as e:
-                    sys.stderr.write(f"Error getting hist avg for {symbol}: {e}\n")
-                    pass
-                return None
+                    sys.stderr.write(f"Error getting price on date for {symbol} at {target_date}: {e}\n")
+                    return None
 
             pnl_positions = []
             total_pnl_idr = 0.0
@@ -290,6 +314,12 @@ class PortfolioHandler(BasePageHandler):
                 currency = p["currency"]
                 shares = p["shares"]
                 buy_price = p["buyPrice"]
+
+                # Parse buyDate for historical rate lookup
+                try:
+                    buy_date = datetime.strptime(p["buyDate"], "%Y-%m-%d").date()
+                except (ValueError, TypeError):
+                    buy_date = datetime.now().date()
                 
                 curr_fx = 1.0
                 buy_fx = 1.0
@@ -298,19 +328,15 @@ class PortfolioHandler(BasePageHandler):
                     fx_sym = fx_map.get(currency)
                     if fx_sym:
                         latest_fx = get_latest_price(fx_sym)
-                        avg_fx = get_hist_avg(fx_sym)
+                        # Use the forex rate on the exact buy date instead of average
+                        historical_fx = get_price_on_date(fx_sym, buy_date)
                         
                         curr_fx = latest_fx if latest_fx else (15650.0 if currency == "IDR" else 1.0)
-                        buy_fx = avg_fx if avg_fx else curr_fx
+                        buy_fx = historical_fx if historical_fx else curr_fx
                 
-                # Conversion to IDR:
-                # If currency is USD, we need USDIDR rate.
-                # If currency is JPY, we need JPYIDR rate (or JPYUSD * USDIDR).
-                # Existing curr_fx is USD/Foreign (e.g. 149 JPY per 1 USD).
-                # We need conversion to IDR for ALL metrics.
-                
+                # Get USDIDR rates: current and on buy date
                 usd_idr_rate = get_latest_price("USDIDR=X") or 15650.0
-                buy_usd_idr = get_hist_avg("USDIDR=X") or 15650.0
+                buy_usd_idr = get_price_on_date("USDIDR=X", buy_date) or 15650.0
                 latest_price = get_latest_price(ticker)
                 price_unavailable = latest_price is None
 
@@ -413,5 +439,111 @@ class PortfolioHandler(BasePageHandler):
             total = len(positions)
 
             return {"imported": added, "total": total}
+        except Exception as e:
+            return {"error": str(e)}
+
+    def check_forex_rate(self, params: dict) -> dict:
+        """Check if forex rate is available on a specific buy date.
+
+        Returns the exact rate if available, or offers a 1-month average
+        as an alternative so the user can decide.
+        """
+        try:
+            from datetime import timedelta
+
+            currency = params.get("currency", "USD")
+            buy_date_str = params.get("buyDate")
+
+            if not buy_date_str:
+                return {"error": "Missing buyDate"}
+
+            # IDR positions don't need forex conversion
+            if currency == "IDR":
+                return {"available": True, "rate": 1.0, "currency": "IDR"}
+
+            try:
+                buy_date = datetime.strptime(buy_date_str, "%Y-%m-%d").date()
+            except ValueError:
+                return {"error": "Invalid date format, use YYYY-MM-DD"}
+
+            # Determine which forex pair to check
+            fx_map = {"USD": "USDIDR=X", "JPY": "USDJPY=X", "GBP": "USDGBP=X"}
+            fx_symbol = fx_map.get(currency)
+            if not fx_symbol:
+                return {"error": f"Unsupported currency: {currency}"}
+
+            # Download 1 month of data around the buy date
+            start = buy_date - timedelta(days=7)
+            end = buy_date + timedelta(days=7)
+            today = datetime.now().date()
+            if end > today:
+                end = today
+
+            try:
+                data = yf.download(fx_symbol, start=start.isoformat(), end=end.isoformat(),
+                                   auto_adjust=True, threads=False, progress=False)
+            except Exception as e:
+                return {"error": f"Failed to fetch forex data: {str(e)}"}
+
+            if data is None or data.empty:
+                return {"available": False, "reason": "no_data", "currency": currency,
+                        "buyDate": buy_date_str, "avgRate": None}
+
+            # Handle MultiIndex columns from yfinance
+            def _extract_close(df):
+                """Extract Close price series, handling both MultiIndex and flat columns."""
+                if "Close" not in df.columns and hasattr(df.columns, 'get_level_values'):
+                    # MultiIndex: try to find Close at level 0
+                    close_cols = [c for c in df.columns if c[0] == "Close"]
+                    if close_cols:
+                        return df[close_cols[0]].dropna()
+                    return None
+                col = df["Close"]
+                # If col is a DataFrame (MultiIndex), get the first column
+                if hasattr(col, 'columns'):
+                    col = col.iloc[:, 0]
+                return col.dropna()
+
+            close = _extract_close(data)
+            if close is None or close.empty:
+                return {"available": False, "reason": "no_data", "currency": currency,
+                        "buyDate": buy_date_str, "avgRate": None}
+
+            # Check if exact date exists in the data
+            exact_match = close[close.index.date == buy_date]
+
+            if not exact_match.empty:
+                rate = float(exact_match.iloc[-1])
+                return {"available": True, "rate": rate, "currency": currency,
+                        "buyDate": buy_date_str}
+
+            # Exact date not available — calculate 1-month average as alternative
+            try:
+                avg_start = buy_date - timedelta(days=30)
+                avg_data = yf.download(fx_symbol, start=avg_start.isoformat(),
+                                       end=(buy_date + timedelta(days=1)).isoformat(),
+                                       auto_adjust=True, threads=False, progress=False)
+                if avg_data is not None and not avg_data.empty:
+                    avg_close = _extract_close(avg_data)
+                    avg_rate = float(avg_close.mean()) if avg_close is not None and not avg_close.empty else None
+                else:
+                    avg_rate = None
+            except Exception:
+                avg_rate = None
+
+            # Find nearest available date
+            before = close[close.index.date < buy_date]
+            nearest_date = before.index[-1].date().isoformat() if not before.empty else None
+            nearest_rate = float(before.iloc[-1]) if not before.empty else None
+
+            return {
+                "available": False,
+                "reason": "not_trading_day",
+                "currency": currency,
+                "buyDate": buy_date_str,
+                "nearestDate": nearest_date,
+                "nearestRate": nearest_rate,
+                "avgRate": avg_rate,
+            }
         except Exception as e:
             return {"error": str(e)}

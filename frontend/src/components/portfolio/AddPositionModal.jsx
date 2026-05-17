@@ -13,7 +13,9 @@ export default function AddPositionModal({
   errorMessage,
   setErrorMessage,
   handleSave,
-  onClose
+  onClose,
+  forexPrompt,
+  handleForexChoice
 }) {
   return (
     <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
@@ -30,14 +32,24 @@ export default function AddPositionModal({
               value={form.ticker} 
               onChange={e => { 
                 const val = e.target.value.toUpperCase();
-                setForm(f => ({ ...f, ticker: val })); 
+                // Check if typed value exactly matches an available ticker
+                const match = availableTickers.find(t => t.ticker.toUpperCase() === val);
+                if (match) {
+                  let autoCurrency = 'USD';
+                  if (match.ticker.endsWith('.JK')) autoCurrency = 'IDR';
+                  else if (match.ticker.endsWith('.T')) autoCurrency = 'JPY';
+                  else if (match.ticker.endsWith('.L')) autoCurrency = 'GBP';
+                  setForm(f => ({ ...f, ticker: match.ticker, company: match.name || match.ticker, currency: autoCurrency }));
+                } else {
+                  setForm(f => ({ ...f, ticker: val }));
+                }
                 setErrorMessage('');
                 setShowTickerDropdown(true); 
               }} 
               onFocus={() => setShowTickerDropdown(true)} 
               onBlur={() => setTimeout(() => setShowTickerDropdown(false), 200)} 
               placeholder="e.g. AAPL" 
-              className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text] outline-none focus:border-white transition-colors" 
+              className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white transition-colors" 
             />
             {showTickerDropdown && availableTickers.length > 0 && (
               <div className="absolute z-10 w-full mt-1 bg-[var(--background)] border border-border max-h-48 overflow-y-auto custom-scrollbar">
@@ -110,7 +122,7 @@ export default function AddPositionModal({
             </div>
             <div>
               <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Currency</label>
-              <select value={form.currency} className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white">
+              <select value={form.currency} disabled className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none opacity-70 cursor-not-allowed">
                 {['USD', 'IDR', 'JPY', 'GBP'].map(c => <option key={c}>{c}</option>)}
               </select>
             </div>
@@ -125,6 +137,36 @@ export default function AddPositionModal({
             <div className="bg-surface border border-red-500 p-4 w-full max-w-xs space-y-3">
               <div className="text-xs text-white">{errorMessage}</div>
               <button onClick={() => { setErrorMessage(''); setSharesError(false); }} className="w-full bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors">OK</button>
+            </div>
+          </div>
+        )}
+        {forexPrompt && (
+          <div className="absolute inset-0 bg-black/80 flex items-center justify-center p-4">
+            <div className="bg-surface border border-yellow-500 p-4 w-full max-w-xs space-y-3">
+              <div className="text-[10px] font-bold text-yellow-400 uppercase tracking-widest">⚠ Kurs Tidak Tersedia</div>
+              <div className="text-xs text-white leading-relaxed">
+                Kurs <span className="font-bold text-yellow-300">{forexPrompt.currency}/IDR</span> pada tanggal <span className="font-bold text-yellow-300">{forexPrompt.buyDate}</span> tidak tersedia (bukan hari perdagangan).
+              </div>
+              {forexPrompt.nearestDate && (
+                <div className="text-[10px] text-muted">
+                  Tanggal terdekat: {forexPrompt.nearestDate} (kurs: {forexPrompt.nearestRate?.toLocaleString('id-ID')})
+                </div>
+              )}
+              {forexPrompt.avgRate && (
+                <div className="text-[10px] text-muted">
+                  Rata-rata 1 bulan: {forexPrompt.avgRate?.toLocaleString('id-ID', { maximumFractionDigits: 2 })}
+                </div>
+              )}
+              <div className="flex flex-col gap-2 pt-2">
+                <button onClick={() => handleForexChoice('change_date')} className="w-full bg-surface border border-border text-[var(--text)] text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">
+                  Ganti Tanggal
+                </button>
+                {forexPrompt.avgRate && (
+                  <button onClick={() => handleForexChoice('use_average')} className="w-full bg-yellow-600 text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-yellow-700 transition-colors">
+                    Pakai Rata-rata 1 Bulan
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         )}

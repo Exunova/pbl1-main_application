@@ -45,6 +45,66 @@ def cache_get_or_run(key, scraper_fn):
         _cache_db.cache_set(key, result)
     return result
 
+def _restore_ticker_from_filename(name):
+    """Restore original ticker format from a safe filename.
+
+    ``to_filename()`` converts '.' → '_', '^' → 'IDX_', '-' → '_'.
+    This function reverses known suffix patterns so that the frontend
+    can reliably detect the exchange via ``.endsWith('.JK')`` etc.
+    """
+    suffix_map = {
+        "_JK": ".JK",   # Jakarta Stock Exchange (IDR)
+        "_T": ".T",     # Tokyo Stock Exchange (JPY)
+        "_L": ".L",     # London Stock Exchange (GBP)
+    }
+    for safe_suffix, original_suffix in suffix_map.items():
+        if name.endswith(safe_suffix):
+            return name[:-len(safe_suffix)] + original_suffix
+    if name.startswith("IDX_"):
+        return "^" + name[4:]
+    return name
+
+
+def _get_company_name(ticker):
+    """Get company name for a ticker, trying cache → file → yfinance."""
+    # 1. Try cache database
+    cached_company = _cache_db.cache_get(f"company:{ticker}")
+    if cached_company:
+        name = cached_company.get("info", {}).get("identity", {}).get("longName")
+        if not name:
+            name = cached_company.get("info", {}).get("identity", {}).get("shortName")
+        if name:
+            return name
+
+    # 2. Try company_info file on disk
+    fname = to_filename(ticker) + ".json"
+    data = read_cache_file("company_info", fname)
+    if data:
+        name = data.get("info", {}).get("identity", {}).get("longName")
+        if not name:
+            name = data.get("info", {}).get("identity", {}).get("shortName")
+        if name:
+            _cache_db.cache_set(f"company:{ticker}", data)
+            return name
+
+    # 3. Fetch from yfinance on-demand and cache the result
+    try:
+        info = yf.Ticker(ticker).info
+        name = info.get("longName") or info.get("shortName")
+        if name:
+            company_data = {
+                "ticker": ticker,
+                "info": {"identity": {"longName": info.get("longName"), "shortName": info.get("shortName")}}
+            }
+            _cache_db.cache_set(f"company:{ticker}", company_data)
+            return name
+    except Exception:
+        pass
+
+    # 4. Fallback
+    return ticker
+
+
 def handle_get_scraped_tickers():
     """Return list of tickers with scraped OHLCV data from data directory."""
     tickers = []
@@ -56,15 +116,13 @@ def handle_get_scraped_tickers():
                 try:
                     with open(ohlcv_path, "r", encoding="utf-8") as f:
                         ohlcv_data = json.load(f)
-                    original_ticker = ohlcv_data.get("ticker", fname[:-5])
-                    # Try to get company name from cache database
-                    long_name = None
-                    cached_company = _cache_db.cache_get(f"company:{original_ticker}")
-                    if cached_company:
-                        long_name = cached_company.get("info", {}).get("identity", {}).get("longName")
+                    original_ticker = ohlcv_data.get("ticker") or _restore_ticker_from_filename(fname[:-5])
+                    long_name = _get_company_name(original_ticker)
                     tickers.append({"ticker": original_ticker, "name": long_name})
                 except Exception:
-                    tickers.append({"ticker": fname[:-5], "name": None})
+                    restored = _restore_ticker_from_filename(fname[:-5])
+                    tickers.append({"ticker": restored, "name": restored})
+
     return tickers
 
 # =============================================================================
@@ -792,6 +850,12 @@ def handle_command(req):
             return {"id": req_id, "ok": True, "data": data}
 
         elif cmd == "portfolio_import":
+            data = portfolio_handler.handle_command(cmd, params)
+            if "error" in data:
+                return {"id": req_id, "ok": False, "error": data["error"]}
+            return {"id": req_id, "ok": True, "data": data}
+
+        elif cmd == "check_forex_rate":
             data = portfolio_handler.handle_command(cmd, params)
             if "error" in data:
                 return {"id": req_id, "ok": False, "error": data["error"]}

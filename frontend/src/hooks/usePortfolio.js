@@ -29,6 +29,8 @@ export function usePortfolio() {
     })
   }, [])
 
+  const [forexPrompt, setForexPrompt] = useState(null)
+
   const handleSave = async () => {
     if (!form.ticker) {
       setErrorMessage("Ticker harus diisi!")
@@ -66,6 +68,27 @@ export function usePortfolio() {
       setErrorMessage("Ticker tidak valid! Pilih ticker dari dropdown.");
       return;
     }
+
+    // Check forex rate availability before saving (skip for IDR)
+    if (form.currency !== 'IDR') {
+      try {
+        const fxResult = await window.api.checkForexRate({ currency: form.currency, buyDate: form.buyDate });
+        console.log('checkForexRate result:', JSON.stringify(fxResult));
+        if (fxResult && !fxResult.available) {
+          setForexPrompt(fxResult);
+          return;
+        }
+      } catch (e) {
+        console.error('checkForexRate error:', e);
+        setErrorMessage(`Forex check error: ${e.message}`);
+        return;
+      }
+    }
+
+    await doSave();
+  };
+
+  const doSave = async () => {
     const pos = { ...form, shares: parseFloat(form.shares) * 100, buyPrice: parseFloat(form.buyPrice) };
     if (editingId) await window.api.editPosition(editingId, pos);
     else await window.api.addPosition(pos);
@@ -74,10 +97,21 @@ export function usePortfolio() {
     setShowAdd(false);
     setEditingId(null);
     setForm({ ticker: '', company: '', shares: '', buyPrice: '', buyDate: '', currency: 'USD' });
-    // hapus error lama
     setSharesError(false);
     setErrorMessage('');
+    setForexPrompt(null);
     window.api.fetchPnL().then(setPnlData).catch(() => {})
+  };
+
+  const handleForexChoice = (choice) => {
+    if (choice === 'change_date') {
+      // Close the prompt and let user change the date
+      setForexPrompt(null);
+    } else if (choice === 'use_average') {
+      // Proceed with save — PnL calculation will use the fallback
+      setForexPrompt(null);
+      doSave();
+    }
   };
 
   const handleDelete = async () => {
@@ -152,6 +186,8 @@ export function usePortfolio() {
     pieData,
     treeData,
     openAddModal,
-    resetForm
+    resetForm,
+    forexPrompt,
+    handleForexChoice
   }
 }

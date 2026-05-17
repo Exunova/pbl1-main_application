@@ -170,6 +170,7 @@ app.whenReady().then(() => {
   ipcMain.handle('portfolio-pnl', () => sendToPython('portfolio_pnl', {}))
   ipcMain.handle('portfolio-export', () => sendToPython('portfolio_export', {}))
   ipcMain.handle('portfolio-import', (_, data) => sendToPython('portfolio_import', data))
+  ipcMain.handle('check-forex-rate', (_, params) => sendToPython('check_forex_rate', params))
 
   // Data fetching handlers — route to Python backend commands
   ipcMain.handle('fetchOHLCV', (_, ticker) => sendToPython('ohlcv', { ticker }))
