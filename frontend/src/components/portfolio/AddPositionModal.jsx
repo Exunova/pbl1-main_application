@@ -152,20 +152,10 @@ export default function AddPositionModal({
                   Tanggal terdekat: {forexPrompt.nearestDate} (kurs: {forexPrompt.nearestRate?.toLocaleString('id-ID')})
                 </div>
               )}
-              {forexPrompt.avgRate && (
-                <div className="text-[10px] text-muted">
-                  Rata-rata 1 bulan: {forexPrompt.avgRate?.toLocaleString('id-ID', { maximumFractionDigits: 2 })}
-                </div>
-              )}
               <div className="flex flex-col gap-2 pt-2">
-                <button onClick={() => handleForexChoice('change_date')} className="w-full bg-surface border border-border text-[var(--text)] text-xs font-bold uppercase tracking-widest py-2 hover:bg-white/10 transition-colors">
+                <button onClick={() => handleForexChoice('change_date')} className="w-full bg-white text-black text-xs font-bold uppercase tracking-widest py-2 hover:bg-gray-200 transition-colors">
                   Ganti Tanggal
                 </button>
-                {forexPrompt.avgRate && (
-                  <button onClick={() => handleForexChoice('use_average')} className="w-full bg-yellow-600 text-white text-xs font-bold uppercase tracking-widest py-2 hover:bg-yellow-700 transition-colors">
-                    Pakai Rata-rata 1 Bulan
-                  </button>
-                )}
               </div>
             </div>
           </div>
