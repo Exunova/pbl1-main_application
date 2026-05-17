@@ -49,10 +49,26 @@ def handle_get_scraped_tickers():
     """Return list of tickers with scraped OHLCV data from data directory."""
     tickers = []
     ohlcv_dir = os.path.join(DATA_DIR, "ohlcv")
+    company_info_dir = os.path.join(DATA_DIR, "company_info")
     if os.path.isdir(ohlcv_dir):
         for fname in os.listdir(ohlcv_dir):
             if fname.endswith(".json") and fname != "_summary.json":
-                tickers.append({"ticker": fname[:-5]})
+                ohlcv_path = os.path.join(ohlcv_dir, fname)
+                try:
+                    with open(ohlcv_path, "r", encoding="utf-8") as f:
+                        ohlcv_data = json.load(f)
+                    original_ticker = ohlcv_data.get("ticker", fname[:-5])
+                    # Construct company_info filename using to_filename
+                    company_info_fname = to_filename(original_ticker) + ".json"
+                    company_info_path = os.path.join(company_info_dir, company_info_fname)
+                    long_name = None
+                    if os.path.isfile(company_info_path):
+                        with open(company_info_path, "r", encoding="utf-8") as f:
+                            company_data = json.load(f)
+                            long_name = company_data.get("info", {}).get("identity", {}).get("longName")
+                    tickers.append({"ticker": original_ticker, "name": long_name})
+                except Exception:
+                    tickers.append({"ticker": fname[:-5], "name": None})
     return tickers
 
 # =============================================================================

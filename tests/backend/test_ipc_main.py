@@ -294,6 +294,19 @@ def test_portfolio_import_command(ipc_process):
         ]
     })
     assert resp["ok"] is True
-    assert "data" in resp
     assert resp["data"]["imported"] == 2
     assert resp["data"]["total"] >= 2
+
+
+# ── Scraped Tickers ──────────────────────────────────────────────────────────
+
+def test_get_scraped_tickers_command(ipc_process):
+    """get_scraped_tickers command returns list of tickers with ticker and name fields."""
+    resp = send_command(ipc_process, "get_scraped_tickers")
+    assert resp["ok"] is True
+    assert "data" in resp
+    data = resp["data"]
+    assert isinstance(data, list)
+    # Each ticker should have 'ticker' field and optionally 'name' field
+    for item in data:
+        assert "ticker" in item, "Each ticker entry must have a 'ticker' field"

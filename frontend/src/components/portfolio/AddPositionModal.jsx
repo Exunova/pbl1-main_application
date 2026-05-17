@@ -110,7 +110,7 @@ export default function AddPositionModal({
             </div>
             <div>
               <label className="block text-[9px] font-bold text-muted uppercase tracking-widest mb-1">Currency</label>
-              <select disabled value={form.currency} className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white opacity-50 cursor-not-allowed">
+              <select value={form.currency} className="w-full bg-[var(--background)] border border-border px-3 py-2 text-xs text-[var(--text)] outline-none focus:border-white">
                 {['USD', 'IDR', 'JPY', 'GBP'].map(c => <option key={c}>{c}</option>)}
               </select>
             </div>
