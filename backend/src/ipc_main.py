@@ -129,26 +129,69 @@ def handle_get_scraped_tickers():
 # SCRAPER IMPORTS (after path setup) — using newer scraping package
 # =============================================================================
 
-from backend.src.scraping.yahoo_finance.ohlcv_scraper import OHLCVScraper
-from backend.src.scraping.yahoo_finance.forex_scraper import ForexScraper
-from backend.src.scraping.yahoo_finance.company_info_scraper import CompanyInfoScraper
-from backend.src.scraping.google_news.news_scraper import NewsScraper
-from backend.src.scraping.investing.macro_scraper import MacroScraper
+# Import guard: if any scraper module is missing, disable scraping gracefully
+SCRAPING_ENABLED = True
+_scraper_import_errors = []
+
+try:
+    from backend.src.scraping.yahoo_finance.ohlcv_scraper import OHLCVScraper
+except ImportError as e:
+    SCRAPING_ENABLED = False
+    sys.stderr.write(f"WARNING: OHLCVScraper import failed ({e}) — scraping disabled for ohlcv\n")
+    OHLCVScraper = None
+
+try:
+    from backend.src.scraping.yahoo_finance.forex_scraper import ForexScraper
+except ImportError as e:
+    SCRAPING_ENABLED = False
+    sys.stderr.write(f"WARNING: ForexScraper import failed ({e}) — scraping disabled for forex\n")
+    ForexScraper = None
+
+try:
+    from backend.src.scraping.yahoo_finance.company_info_scraper import CompanyInfoScraper
+except ImportError as e:
+    SCRAPING_ENABLED = False
+    sys.stderr.write(f"WARNING: CompanyInfoScraper import failed ({e}) — scraping disabled for company_info\n")
+    CompanyInfoScraper = None
+
+try:
+    from backend.src.scraping.google_news.news_scraper import NewsScraper
+except ImportError as e:
+    SCRAPING_ENABLED = False
+    sys.stderr.write(f"WARNING: NewsScraper import failed ({e}) — scraping disabled for news\n")
+    NewsScraper = None
+
+try:
+    from backend.src.scraping.investing.macro_scraper import MacroScraper
+except ImportError as e:
+    SCRAPING_ENABLED = False
+    sys.stderr.write(f"WARNING: MacroScraper import failed ({e}) — scraping disabled for macro\n")
+    MacroScraper = None
 
 # Wrapper functions to normalize interface between old modules and new classes
 def _run_ohlcv(output_dir):
+    if OHLCVScraper is None:
+        return {"error": "scraping disabled"}
     return OHLCVScraper().run(output_dir, incremental=True, full=False)
 
 def _run_forex(output_dir):
+    if ForexScraper is None:
+        return {"error": "scraping disabled"}
     return ForexScraper().run(output_dir)
 
 def _run_company_info(output_dir):
+    if CompanyInfoScraper is None:
+        return {"error": "scraping disabled"}
     return CompanyInfoScraper().run(output_dir)
 
 def _run_news(output_dir):
+    if NewsScraper is None:
+        return {"error": "scraping disabled"}
     return NewsScraper().run(output_dir)
 
 def _run_macro(output_dir):
+    if MacroScraper is None:
+        return {"error": "scraping disabled"}
     return MacroScraper().run(output_dir)
 
 SCRAPER_MODULES = {
@@ -306,9 +349,6 @@ def handle_ohlcv(ticker):
     if not data:
         trigger_scrape_in_bg("ohlcv")
         return {"ticker": ticker, "ohlcv_15m": [], "loading": True}
-
-    if not data:
-        return {"ticker": ticker, "ohlcv_15m": []}
 
     _cache_db.cache_set(f"ohlcv:{ticker}", data)
     return data

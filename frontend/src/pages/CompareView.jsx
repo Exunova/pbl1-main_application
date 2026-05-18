@@ -11,6 +11,7 @@ export default function CompareView() {
   const [loading, setLoading] = useState(false)
   const [tickerData, setTickerData] = useState({})
   const [selectedNewsRegion, setSelectedNewsRegion] = useState(null)
+  const [error, setError] = useState(null)
   
   const regions = Object.keys(MARKETS)
   const IDX1_COLOR = '#ffffff'
@@ -29,7 +30,10 @@ export default function CompareView() {
   }
 
   useEffect(() => {
-    if (!window.api) return
+    if (!window.api) {
+      setError('Backend not connected')
+      return
+    }
     const allTickers = Object.values(MARKETS).flatMap(m => m.tickers)
     let cancelled = false
     
@@ -57,7 +61,10 @@ export default function CompareView() {
   }, [])
 
   useEffect(() => {
-    if (!window.api) return
+    if (!window.api) {
+      setError('Backend not connected')
+      return
+    }
     setLoading(true)
     Promise.all([
       window.api.fetchOHLCV(MARKETS[idx1].index),
@@ -90,11 +97,19 @@ export default function CompareView() {
         })
       }
       setChartData(merged); setLoading(false)
-    }).catch(() => setLoading(false))
+    }).catch(e => {
+      console.error('[CompareView] fetchOHLCV error:', e)
+      setLoading(false)
+    })
   }, [idx1, idx2])
 
   return (
-    <div className="flex h-full w-full bg-background text-text overflow-hidden">
+    <div className="flex h-full w-full bg-background text-text overflow-hidden relative">
+      {error && (
+        <div className="absolute top-0 left-0 right-0 z-50 px-4 py-2 bg-red-500/20 border-b border-red-500/50 text-red-400 text-xs font-mono">
+          ⚠ {error}
+        </div>
+      )}
       <div className="flex flex-col flex-1 overflow-hidden">
         <div className="flex items-center gap-4 border-b border-border px-6 py-4 shrink-0 bg-surface/30">
           <div className="flex items-center gap-2">

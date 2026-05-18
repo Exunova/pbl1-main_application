@@ -8,9 +8,15 @@ import pytest
 import threading
 from pathlib import Path
 
+
+def pytest_configure(config):
+    config.addinivalue_line(
+        "markers", "network: marks tests that require real network access"
+    )
+
 ROOT_DIR = Path(__file__).resolve().parents[2]
 BACKEND_SRC = ROOT_DIR / 'backend' / 'src'
-SCRAPERS_DIR = BACKEND_SRC / 'scrapers'
+SCRAPERS_DIR = BACKEND_SRC / 'scraping'
 YAHOO_SCRAPERS_DIR = BACKEND_SRC / 'scraping' / 'yahoo_finance'
 
 # Ensure backend modules are on the import path
@@ -24,12 +30,12 @@ ORIGINAL_CACHE_DB = None
 
 @pytest.fixture
 def tmp_cache_db(tmp_path, monkeypatch):
-    """Redirect cache_db to use a temp SQLite file for isolation."""
-    import cache_db
+    """Redirect CacheDatabase to use a temp SQLite file for isolation."""
+    from backend.src.db.cache_database import CacheDatabase
     tmp_db = str(tmp_path / "cache.db")
-    monkeypatch.setattr(cache_db, 'CACHE_DB', tmp_db)
-    cache_db.init_db()
-    yield tmp_db
+    monkeypatch.setenv('Cache_DB', tmp_db)
+    cache = CacheDatabase()
+    yield cache
 
 
 @pytest.fixture
@@ -49,8 +55,7 @@ def mock_yfinance(monkeypatch):
         def __getitem__(self, key):
             return super().__getitem__(key)
 
-    fake_ticker = MagicMock()
-    fake_ticker.info = {
+    info_data = {
         "longName": "Test Corp",
         "shortName": "TEST",
         "symbol": "TEST",
@@ -77,8 +82,10 @@ def mock_yfinance(monkeypatch):
         "profitMargins": 0.25,
         "returnOnEquity": 0.30,
     }
-    fake_ticker.info.__getitem__ = lambda k, v=None: fake_ticker.info.get(k, v)
-    fake_ticker.info.get = lambda k, v=None: fake_ticker.info.get(k, v)
+
+    fake_ticker = MagicMock()
+    fake_ticker.info = FakeInfo(info_data)
+    fake_ticker.info.get = lambda k, v=None: info_data.get(k, v)
 
     fake_df = MagicMock()
     fake_df.empty = False
@@ -119,17 +126,18 @@ def mock_feed_and_requests(monkeypatch):
     fake_session = MagicMock()
     fake_session.get = MagicMock(return_value=FakeResp())
 
-    monkeypatch.setattr('scrapers.news_scraper.session', fake_session)
-    monkeypatch.setattr('scrapers.news_scraper.feedparser.parse', lambda f: FakeFeed())
+    monkeypatch.setattr('backend.src.scraping.google_news.news_scraper.session', fake_session)
+    monkeypatch.setattr('backend.src.scraping.google_news.news_scraper.feedparser.parse', lambda f: FakeFeed())
     yield fake_session
 
 
 @pytest.fixture
 def clean_cache():
     """Callable fixture to clear all scraper cache entries between tests."""
-    import cache_db
+    from backend.src.db.cache_database import CacheDatabase
     def _clean():
-        conn = cache_db.get_conn()
+        db = CacheDatabase()
+        conn = db.get_conn()
         conn.execute("""
             DELETE FROM cache WHERE
             key LIKE 'forex:%' OR key LIKE 'news:%' OR
@@ -139,6 +147,44 @@ def clean_cache():
         conn.commit()
         conn.close()
     return _clean
+
+
+@pytest.fixture
+def mock_playwright_page(monkeypatch):
+    """Mock Playwright page for macro scraper tests."""
+    from unittest.mock import MagicMock
+
+    fake_page = MagicMock()
+    fake_page.goto = MagicMock(return_value=None)
+    fake_page.wait_for_selector = MagicMock(return_value=None)
+    fake_page.query_selector_all = MagicMock(return_value=[])
+    fake_page.query_selector = MagicMock(return_value=None)
+    fake_page.evaluate = MagicMock(return_value=[])
+    fake_page.content = MagicMock(return_value="<html><body></body></html>")
+    fake_page.close = MagicMock(return_value=None)
+
+    fake_browser = MagicMock()
+    fake_browser.new_page = MagicMock(return_value=fake_page)
+    fake_browser.close = MagicMock(return_value=None)
+
+    fake_playwright = MagicMock()
+    fake_playwright.chromium.launch = MagicMock(return_value=fake_browser)
+    fake_playwright.stop = MagicMock(return_value=None)
+
+    monkeypatch.setattr('backend.src.scraping.investing.macro_scraper.sync_playwright', lambda: fake_playwright)
+    yield fake_page
+
+
+@pytest.fixture
+def ipc_bridge_mock(monkeypatch):
+    """Mock IPC bridge for testing command handlers without subprocess."""
+    from unittest.mock import MagicMock
+
+    bridge = MagicMock()
+    bridge.send = MagicMock(return_value={"id": "test", "ok": True, "data": {}})
+    bridge.receive = MagicMock(return_value={"id": "test", "cmd": "test", "params": {}})
+    monkeypatch.setattr('ipc_main.handle_command', bridge.send)
+    yield bridge
 
 
 @pytest.fixture

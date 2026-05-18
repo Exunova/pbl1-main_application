@@ -1,16 +1,18 @@
 """
-News Scraper — Google News RSS + Thumbnail Fetcher
+News Scraper — Google News RSS + Publisher Logo Fetcher
 Fetches RSS feeds for multiple regions and writes JSON output files.
+Extracts real publisher logos from the Google News article page (which re-hosts
+publisher favicons in <link sizes="..."> tags), falling back to Google's favicon service.
 """
 
 import feedparser
+import re
 import requests
 import json
 import time
 import os
 from datetime import datetime
 from urllib.parse import urlparse
-from html.parser import HTMLParser
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -30,38 +32,69 @@ session.mount('http://', adapter)
 session.mount('https://', adapter)
 
 
-class OGParser(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.og_image = None
 
-    def handle_starttag(self, tag, attrs):
-        if tag == "meta":
-            d = dict(attrs)
-            if d.get("property") == "og:image":
-                self.og_image = d.get("content")
-
-
-def get_thumbnail(url, timeout=10):
+def get_publisher_logo(gnews_link, publisher_domain=None, timeout=10):
     """
-    Fetch article page and extract og:image meta tag for actual thumbnail.
-    Fallback to Google favicons only if no og:image found.
-    """
-    domain = urlparse(url).netloc
-    favicon = f"https://www.google.com/s2/favicons?domain={domain}&sz=64"
+    Extract the actual publisher logo from the Google News article page.
 
-    # Try to fetch article page and extract og:image
+    Google News RSS links (news.google.com/rss/articles/...) do NOT redirect
+    to the real article — they stay on Google's domain. The og:image found on
+    that page is Google's own article thumbnail, NOT the publisher logo.
+
+    However, the Google News article page re-hosts the publisher's favicon in
+    <link> tags with sizes attributes (e.g. sizes="48x48"). This function
+    extracts those icons which are the real publisher logos.
+
+    Falls back to Google's favicon service using the publisher_domain extracted
+    from the RSS <source href="..."> element, which reliably points to the
+    actual publisher's website.
+    """
+    favicon_url = (
+        f"https://www.google.com/s2/favicons?domain={publisher_domain}&sz=64"
+        if publisher_domain
+        else None
+    )
+    favicon_fallback = {"type": "favicon", "url": favicon_url}
+
+    # Build the Google News article page URL from the RSS link
+    match = re.search(r"/articles/([A-Za-z0-9_-]+)", gnews_link)
+    if not match:
+        return favicon_fallback
+
+    article_id = match.group(1)
+    article_page_url = f"https://news.google.com/articles/{article_id}"
+
     try:
-        resp = session.get(url, headers=HEADERS, timeout=timeout)
-        parser = OGParser()
-        parser.feed(resp.text)
-        if parser.og_image:
-            return {"type": "og_image", "url": parser.og_image}
+        resp = session.get(article_page_url, headers=HEADERS, timeout=timeout)
+        text = resp.text
+
+        # Google News re-hosts publisher icons in <link> tags with sizes attribute.
+        # Example: <link href="https://lh3.googleusercontent.com/...-w48" sizes="48x48">
+        # These are the REAL publisher logos, not Google's article thumbnails.
+        icons = re.findall(
+            r'href="(https://lh[0-9]\.googleusercontent\.com/[^"]+)"\s+sizes="([^"]+)"',
+            text,
+        )
+
+        if icons:
+            # Pick the largest available size
+            sized = []
+            for icon_url, size_str in icons:
+                try:
+                    w = int(size_str.split("x")[0])
+                    sized.append((w, icon_url))
+                except Exception:
+                    pass
+            if sized:
+                sized.sort(reverse=True)
+                best_url = sized[0][1]
+                # Bump to 64 px for a crisper display
+                best_url_64 = re.sub(r"=w\d+$", "=w64", best_url)
+                return {"type": "publisher_icon", "url": best_url_64}
     except Exception:
         pass
 
-    # Fallback to favicon if no og:image found
-    return {"type": "favicon", "url": favicon}
+    return favicon_fallback
 
 
 def parse_feed(market, config):
@@ -72,22 +105,38 @@ def parse_feed(market, config):
         articles = []
         for entry in feed.entries:
             link = entry.get("link", "")
-            domain = urlparse(link).netloc if link else ""
 
-            thumb = get_thumbnail(link) if link else {"type": "none", "url": None}
+            # Extract publisher info from RSS source element
+            source = entry.get("source", {}) if hasattr(entry, "source") else {}
+            publisher = source.get("title", "")
+            publisher_href = source.get("href", "")
+            publisher_domain = urlparse(publisher_href).netloc if publisher_href else ""
+
+            # Fetch the real publisher logo from the Google News article page.
+            # The link stays on news.google.com (no redirect), so og:image gives
+            # Google's own CDN image. Instead we extract the publisher icon that
+            # Google re-hosts in <link sizes="..."> tags on that same page.
+            logo = (
+                get_publisher_logo(link, publisher_domain=publisher_domain)
+                if link
+                else {"type": "none", "url": None}
+            )
+
+            # Favicon via Google's favicon service (reliable fallback / extra field)
+            favicon_domain = publisher_domain or (urlparse(link).netloc if link else "")
 
             articles.append({
                 "title": entry.get("title", ""),
                 "link": link,
-                "publisher": entry.get("source", {}).get("title", "") if hasattr(entry, "source") else "",
+                "publisher": publisher,
                 "published": entry.get("published", ""),
                 "summary": entry.get("summary", ""),
-                "thumbnail": thumb,
-                "favicon": f"https://www.google.com/s2/favicons?domain={domain}&sz=64" if domain else None
+                "thumbnail": logo,
+                "favicon": f"https://www.google.com/s2/favicons?domain={favicon_domain}&sz=64" if favicon_domain else None,
             })
 
-            # Sleep 3 seconds between thumbnail fetches to avoid rate limiting
-            time.sleep(3)
+            # Brief pause between logo fetches to avoid rate limiting
+            time.sleep(2)
 
         return articles
     except Exception as e:

@@ -16,8 +16,8 @@ function startPythonBackend() {
 
   const candidates = isDev
     ? [
-        join(backendDir, '../venv/Scripts/python.exe'), // Windows venv
-        join(backendDir, '../venv/bin/python3'),        // Linux/Mac venv
+        join(backendDir, 'venv/Scripts/python.exe'), // Windows venv
+        join(backendDir, 'venv/bin/python3'),        // Linux/Mac venv
         '/usr/bin/python3',
         'python',
         'python3',
@@ -83,7 +83,11 @@ function startPythonBackend() {
   })
 
   pythonProcess.on('exit', (code, signal) => {
-    console.log(`[Python IPC] Process exited with code ${code}, signal ${signal}`)
+    if (code !== 0) {
+      console.error(`[Python IPC] Process exited with error code ${code}, signal ${signal}`)
+    } else {
+      console.log(`[Python IPC] Process exited with code ${code}, signal ${signal}`)
+    }
     pythonProcess = null
     pendingRequests.forEach((pending) => {
       pending.reject(new Error('Python backend process terminated'))

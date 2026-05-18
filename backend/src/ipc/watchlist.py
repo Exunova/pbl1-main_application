@@ -55,19 +55,39 @@ class WatchlistHandler(BasePageHandler):
 
         fname = to_filename(ticker) + ".json"
         cached = self.cache_get(f"company:{ticker}")
-        if cached:
+        # Only return cached data if it contains actual price info.
+        # Stale entries with only identity data must fall through to OHLCV fallback.
+        if cached and cached.get("info", {}).get("price"):
             return cached
 
         data = self.read_cache_file("company_info", fname)
-        if not data:
-            self.trigger_scrape_in_bg("company_info")
-            return {"ticker": ticker, "info": {}, "loading": True}
+        if data:
+            self.cache_set(f"company:{ticker}", data)
+            return data
 
-        if not data:
-            return {"ticker": ticker, "info": {}}
+        # Fallback: derive price info from OHLCV data when company_info file missing
+        ohlcv_data = self.read_cache_file("ohlcv", fname)
+        if ohlcv_data and ohlcv_data.get("ohlcv_15m"):
+            candles = ohlcv_data["ohlcv_15m"]
+            first_close = candles[0].get("close")
+            last_close = candles[-1].get("close")
+            if first_close and last_close:
+                chg_pct = ((last_close - first_close) / first_close) * 100
+                info = {"price": {
+                    "currentPrice": last_close,
+                    "previousClose": first_close,
+                    "regularMarketChangePercent": chg_pct,
+                    "marketCap": None,
+                }}
+                # Merge any cached identity data (company name, sector, etc.)
+                if cached and cached.get("info", {}).get("identity"):
+                    info["identity"] = cached["info"]["identity"]
+                result = {"ticker": ticker, "info": info}
+                self.cache_set(f"company:{ticker}", result)
+                return result
 
-        self.cache_set(f"company:{ticker}", data)
-        return data
+        self.trigger_scrape_in_bg("company_info")
+        return {"ticker": ticker, "info": {}, "loading": True}
 
     def _handle_companies(self, tickers):
         """Handle companies command - returns company info for multiple tickers."""

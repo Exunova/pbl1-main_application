@@ -22,10 +22,10 @@ const CustomTreemapContent = React.memo(function CustomTreemapContent(props) {
       <rect x={x} y={y} width={width} height={height} fill={bgColor} stroke="#000" strokeWidth={1} />
       {showText && (
         <>
-          <text x={x + width / 2} y={y + height / 2 - 4} textAnchor="middle" fill="var(--text)" fontSize={11} fontWeight="bold"
-            fontFamily="sans-serif" pointerEvents="none">{ticker}</text>
-          <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" fill="var(--text)" fontSize={10}
-            fontFamily="monospace" pointerEvents="none">{changeStr}%</text>
+          <text x={x + width / 2} y={y + height / 2 - 4} textAnchor="middle" fill="#fff" fontSize={11} fontWeight="bold" stroke="none"
+            fontFamily="'Fira Sans', sans-serif" pointerEvents="none">{ticker}</text>
+          <text x={x + width / 2} y={y + height / 2 + 10} textAnchor="middle" fill="rgba(255,255,255,0.85)" fontSize={10} stroke="none"
+            fontFamily="'Fira Code', monospace" pointerEvents="none">{changeStr}%</text>
         </>
       )}
     </g>

@@ -1,609 +1,1209 @@
 {
   "market": "US",
   "label": "S&P 500 / Wall Street",
-  "scraped_at": "2026-05-17 19:27:16.849908",
-  "updated_at": "2026-05-17T19:27:16.849932",
-  "article_count": 50,
+  "scraped_at": "2026-05-18 11:56:27.112592",
+  "updated_at": "2026-05-18T11:56:27.112620",
+  "article_count": 100,
   "articles": [
     {
-      "title": "Global dividend ETFs are crushing the S&P 500. 3 ETFs with yields above 5% - MSN",
-      "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdHlzTFRKcUM1eDI1YUdwQWpidlJ0cGR3NWlFbTFYbGJvek1SMHM5LW5VNU1mTGI3ajVycXVTZkdzNHQ1QmRYMUZabDh0NVUtUU0tS2tQRXdCaEtZWFFNRExZTGJQdjBPMVE2dkNKZFhqRlN0a3VoWk1vWmtlNTNGOWJUODRhTVY2QVpkU2xIcHB5ZlZFZEZLekVNU2xyTU1RZWJjSHJYVktEMlBqZnp0cGc3T3BSU3Yta0k1VnduMGQ3dW1xUEc3MTJrUnJMOUpM?oc=5",
-      "publisher": "MSN",
-      "published": "Sun, 12 Apr 2026 06:00:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0AFBVV95cUxOdHlzTFRKcUM1eDI1YUdwQWpidlJ0cGR3NWlFbTFYbGJvek1SMHM5LW5VNU1mTGI3ajVycXVTZkdzNHQ1QmRYMUZabDh0NVUtUU0tS2tQRXdCaEtZWFFNRExZTGJQdjBPMVE2dkNKZFhqRlN0a3VoWk1vWmtlNTNGOWJUODRhTVY2QVpkU2xIcHB5ZlZFZEZLekVNU2xyTU1RZWJjSHJYVktEMlBqZnp0cGc3T3BSU3Yta0k1VnduMGQ3dW1xUEc3MTJrUnJMOUpM?oc=5\" target=\"_blank\">Global dividend ETFs are crushing the S&amp;P 500. 3 ETFs with yields above 5%</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Get ready for a once-in-a-lifetime S&P 500 buying opportunity - Yahoo Finance UK",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9tYkRWNE9ObFlBa21sVndMaVZfY2hSYVlKUWtDdHN1a3JxMjJFM25hempZU2pzQzRqM2FoWGFHNjJ2RFpDQW05cE5xUTM1bU84VGYxaktERmQwWkhkRGRBLUVnbDJzUE1LdFJPZnZpaWtkM0l2ZkJqa3BhdlNOVGs?oc=5",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures dip from record-highs ahead of packed earnings week - Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOcnJtMVpKeTZIQU04NDdNYmFraEpOOWZPRXBKVURJWkF1TVVaMG9kbHpYR3RZRGJVelVxdFBrVTluQW5FRlNqVi1jQXRudDZjOG1pcFJhZUg3VW00ZEwtekEzaTI0TmxMUEZ5cjBCeFZHSXdBVS1YZ2M0V0ppcTJxWjhpOEhsc2daLWRpdk9zRTJJaGZvSmNOVEZhaE5Bdw?oc=5",
       "publisher": "Yahoo Finance UK",
-      "published": "Sun, 12 Apr 2026 07:16:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE9tYkRWNE9ObFlBa21sVndMaVZfY2hSYVlKUWtDdHN1a3JxMjJFM25hempZU2pzQzRqM2FoWGFHNjJ2RFpDQW05cE5xUTM1bU84VGYxaktERmQwWkhkRGRBLUVnbDJzUE1LdFJPZnZpaWtkM0l2ZkJqa3BhdlNOVGs?oc=5\" target=\"_blank\">Get ready for a once-in-a-lifetime S&amp;P 500 buying opportunity</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance UK</font>",
+      "published": "Sun, 17 May 2026 23:27:05 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxOcnJtMVpKeTZIQU04NDdNYmFraEpOOWZPRXBKVURJWkF1TVVaMG9kbHpYR3RZRGJVelVxdFBrVTluQW5FRlNqVi1jQXRudDZjOG1pcFJhZUg3VW00ZEwtekEzaTI0TmxMUEZ5cjBCeFZHSXdBVS1YZ2M0V0ppcTJxWjhpOEhsc2daLWRpdk9zRTJJaGZvSmNOVEZhaE5Bdw?oc=5\" target=\"_blank\">Stock market today: Dow, S&amp;P 500, Nasdaq futures dip from record-highs ahead of packed earnings week</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance UK</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=uk.finance.yahoo.com&sz=64"
     },
     {
-      "title": "S&P 500 Snapshot: Best Week Since November - Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWm1RSWtXRE9rM3pnY0lZdG1UekdvSkV3ZjhvSmJHTDBoN1k0al84dG1CSExlaTBETktmTjFlMmtwU05ybE5Ydm54MG9VRmZYOHBwaW5JZ1ppaHFQX1NOdlhJajJtY0pKOXM1OUc1d1hZOFctaGthekdxbnBianIyT2E0QnNaeFJ3?oc=5",
-      "publisher": "Seeking Alpha",
-      "published": "Sun, 12 Apr 2026 04:30:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWm1RSWtXRE9rM3pnY0lZdG1UekdvSkV3ZjhvSmJHTDBoN1k0al84dG1CSExlaTBETktmTjFlMmtwU05ybE5Ydm54MG9VRmZYOHBwaW5JZ1ppaHFQX1NOdlhJajJtY0pKOXM1OUc1d1hZOFctaGthekdxbnBianIyT2E0QnNaeFJ3?oc=5\" target=\"_blank\">S&amp;P 500 Snapshot: Best Week Since November</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Seeking Alpha</font>",
+      "title": "Nvidia is getting some help as it props up S&P 500 earnings growth - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQUJrd0FDUm9Fd3dubDdicWsyLVpMUV9iRTVHVHk4N05wWlBIOWp3SU5WbnlITzBiN3lJYTdCNzZnNUhzcVdEX0otdWRKYmVEMk1CekVvWHNpbWx6QlBlNEk1NVFXdmI1LTh2X3hCSDhRSFlpQUVmdkF1T0JpbVJPa3ctRzg3d1BVRTgtN0plOU9JUFhVQmVwOXJGTjFKYlZLbG9aQmI0dndUbHd2ZE5ySVlnN0d6aVkyT1E?oc=5",
+      "publisher": "MSN",
+      "published": "Mon, 18 May 2026 02:26:15 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQQUJrd0FDUm9Fd3dubDdicWsyLVpMUV9iRTVHVHk4N05wWlBIOWp3SU5WbnlITzBiN3lJYTdCNzZnNUhzcVdEX0otdWRKYmVEMk1CekVvWHNpbWx6QlBlNEk1NVFXdmI1LTh2X3hCSDhRSFlpQUVmdkF1T0JpbVJPa3ctRzg3d1BVRTgtN0plOU9JUFhVQmVwOXJGTjFKYlZLbG9aQmI0dndUbHd2ZE5ySVlnN0d6aVkyT1E?oc=5\" target=\"_blank\">Nvidia is getting some help as it props up S&amp;P 500 earnings growth</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
     },
     {
-      "title": "Stocks Soar on Ceasefire Hopes: Nasdaq, S&P 500 into Next Week - FOREX.com",
-      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQOGd2c0dGMVMxM240TEJwa3cyNlA4T1J6QzM3RHJPZTd0Q2ZSZmhzWWo0cV9URkhSM2JJa2xuZVlrRWpXQUs1ejNFcEdmVy1sWGlpVUxabTdwYUpGSEtlVmpTVG9lYmVOSFV5bnZtZUNxREVsX2FzNS1TWDFtLXJJdkg3eTZEQkpsakpDanRUaTdSa0F0YVJycWRWbC13a0NMX1dNY2lnN2k0QUs0dEZmQ2hRZmtxWWpoTEHSAboBQVVfeXFMUDhndnNHRjFTMTNuNExCcGt3MjZQOE9SekMzN0RyT2U3dENmUmZoc1lqNHFfVEZIUjNiSWtsbmVZa0VqV0FLNXozRXBHZlctbFhpaVVMWm03cGFKRkhLZVZqU1RvZWJlTkhVeW52bWVDcURFbF9hczUtU1gxbS1ySXZIN3k2REJKbGpKQ2p0VGk3UmtBdGFScnFkVmwtd2tDTF9XTWNpZzdpNEFLNHRGZkNoUWZrcVlqaExB?oc=5",
-      "publisher": "FOREX.com",
-      "published": "Sun, 12 Apr 2026 05:54:09 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxQOGd2c0dGMVMxM240TEJwa3cyNlA4T1J6QzM3RHJPZTd0Q2ZSZmhzWWo0cV9URkhSM2JJa2xuZVlrRWpXQUs1ejNFcEdmVy1sWGlpVUxabTdwYUpGSEtlVmpTVG9lYmVOSFV5bnZtZUNxREVsX2FzNS1TWDFtLXJJdkg3eTZEQkpsakpDanRUaTdSa0F0YVJycWRWbC13a0NMX1dNY2lnN2k0QUs0dEZmQ2hRZmtxWWpoTEHSAboBQVVfeXFMUDhndnNHRjFTMTNuNExCcGt3MjZQOE9SekMzN0RyT2U3dENmUmZoc1lqNHFfVEZIUjNiSWtsbmVZa0VqV0FLNXozRXBHZlctbFhpaVVMWm03cGFKRkhLZVZqU1RvZWJlTkhVeW52bWVDcURFbF9hczUtU1gxbS1ySXZIN3k2REJKbGpKQ2p0VGk3UmtBdGFScnFkVmwtd2tDTF9XTWNpZzdpNEFLNHRGZkNoUWZrcVlqaExB?oc=5\" target=\"_blank\">Stocks Soar on Ceasefire Hopes: Nasdaq, S&amp;P 500 into Next Week</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FOREX.com</font>",
+      "title": "Nvidia is getting some help as it props up S&P 500 earnings growth - MarketWatch",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPS0lXdnYycU4yc29kSy0tWHFVc1lHTUlodXoyNEVkekVocjFFSHZxdEkyVG9PRG5EUklveG94alV0cDhSSTBPMklYZUhCcHRDSlhXRTV5RHBJNTQwcGdGLWFkNG9HVHRxbjM3YVlsdjBOV2RVZHo4Q0VPZThZTlh5bkFibGoxeVBsMU1ZcDlxWHBtQ3gwdGh0QjcxMnlwUUh3aF9jZThrUVRDN2RTZlE?oc=5",
+      "publisher": "MarketWatch",
+      "published": "Sun, 17 May 2026 14:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxPS0lXdnYycU4yc29kSy0tWHFVc1lHTUlodXoyNEVkekVocjFFSHZxdEkyVG9PRG5EUklveG94alV0cDhSSTBPMklYZUhCcHRDSlhXRTV5RHBJNTQwcGdGLWFkNG9HVHRxbjM3YVlsdjBOV2RVZHo4Q0VPZThZTlh5bkFibGoxeVBsMU1ZcDlxWHBtQ3gwdGh0QjcxMnlwUUh3aF9jZThrUVRDN2RTZlE?oc=5\" target=\"_blank\">Nvidia is getting some help as it props up S&amp;P 500 earnings growth</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MarketWatch</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.marketwatch.com&sz=64"
     },
     {
-      "title": "Costco Stock Analysis 2026: Strengths vs. High Valuation | S&P 500 Decline - News and Statistics - IndexBox",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQWdtRFRubGktUERPY2c1LUl6aHhkYlNBYVp2WFZSQVRqSE83LWNtNGxjNGw1SVI3WjVGaFdtQ2JIUWZGVHdzTGtEQWpFanB2OEhLM1JHVGFyM004cDh2R3JObHhnZmZINE9LbnBLSnNiaERkMGgxVU8yZ0RNcW5ZZXVjYmZfWHE2Yk1IbTdaTm0zR1l5Mm9FVl9vRFFZNnh5T21EOA?oc=5",
-      "publisher": "IndexBox",
-      "published": "Sun, 12 Apr 2026 07:40:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxQQWdtRFRubGktUERPY2c1LUl6aHhkYlNBYVp2WFZSQVRqSE83LWNtNGxjNGw1SVI3WjVGaFdtQ2JIUWZGVHdzTGtEQWpFanB2OEhLM1JHVGFyM004cDh2R3JObHhnZmZINE9LbnBLSnNiaERkMGgxVU8yZ0RNcW5ZZXVjYmZfWHE2Yk1IbTdaTm0zR1l5Mm9FVl9vRFFZNnh5T21EOA?oc=5\" target=\"_blank\">Costco Stock Analysis 2026: Strengths vs. High Valuation | S&amp;P 500 Decline - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "title": "Dow Jones Futures Fall, Oil Prices Rise As Trump Says 'Clock Is Ticking' For Iran; Nvidia Earnings Ahead - Investor's Business Daily",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQS3J0eUJwX0hfY1RyVkF1aFZVSFdlckgyNGZmZjUxWVNjRjgzWnYtTDNDZVo3ZFlnVEQ4TDJBV2tJdXVVcjUyd1lrN01OVTFjbHdQdmxsT3hRU2Nrb19oTHFJaHB0LUZBQjVRZjlUYWhNVHJCdHdmZk1NZ1RFX3NGQk00al9NSjZSOWJsX1ZUbE55aWdUaDRFZzBLUGhHcG9ZY0hkYlo1Tm8xd2dUb0Vscl81V0x0V19PVXhKbjRab2VQYUZCTVNF?oc=5",
+      "publisher": "Investor's Business Daily",
+      "published": "Mon, 18 May 2026 04:07:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQS3J0eUJwX0hfY1RyVkF1aFZVSFdlckgyNGZmZjUxWVNjRjgzWnYtTDNDZVo3ZFlnVEQ4TDJBV2tJdXVVcjUyd1lrN01OVTFjbHdQdmxsT3hRU2Nrb19oTHFJaHB0LUZBQjVRZjlUYWhNVHJCdHdmZk1NZ1RFX3NGQk00al9NSjZSOWJsX1ZUbE55aWdUaDRFZzBLUGhHcG9ZY0hkYlo1Tm8xd2dUb0Vscl81V0x0V19PVXhKbjRab2VQYUZCTVNF?oc=5\" target=\"_blank\">Dow Jones Futures Fall, Oil Prices Rise As Trump Says 'Clock Is Ticking' For Iran; Nvidia Earnings Ahead</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investor's Business Daily</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.investors.com&sz=64"
     },
     {
-      "title": "Be Wary of This S&P 500 Stock After Lamb Weston's Surprise Index Drop - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9PYTdWNDVWTXhhaWZoRVVQa0l6NGxDLUpCSEtya3ZaQ0ZKdlZ2aFBCaDROQ2ZKSDZkcVhGSXRjME5maGF2cXNhZ25WNm9RYVZiLTduTlhFUGVWY1pTTE5KeERGNnY0cGJtb0Zac1pqUWFYZ28?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 06:29:55 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9PYTdWNDVWTXhhaWZoRVVQa0l6NGxDLUpCSEtya3ZaQ0ZKdlZ2aFBCaDROQ2ZKSDZkcVhGSXRjME5maGF2cXNhZ25WNm9RYVZiLTduTlhFUGVWY1pTTE5KeERGNnY0cGJtb0Zac1pqUWFYZ28?oc=5\" target=\"_blank\">Be Wary of This S&amp;P 500 Stock After Lamb Weston's Surprise Index Drop</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "title": "S&P 500 shows signs of slowing but no clear top; potential dip then rally expected into June. - Pluang",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE0wdkVlZTk3d2dkNFBScWJacjRlSGhRSmpXWDlBTEJLeUpTRERuYUZPSmN0Q2NnVWNZbUgyeVJmdFlTMzRTYWFDcE5uX01PUlVZTUpFOGVVWWFzblBCa3pJcXZZLUdxX0U5TS1ULXgtWEpIZ2pCUWFnd1dnVQ?oc=5",
+      "publisher": "Pluang",
+      "published": "Sun, 17 May 2026 20:34:19 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE0wdkVlZTk3d2dkNFBScWJacjRlSGhRSmpXWDlBTEJLeUpTRERuYUZPSmN0Q2NnVWNZbUgyeVJmdFlTMzRTYWFDcE5uX01PUlVZTUpFOGVVWWFzblBCa3pJcXZZLUdxX0U5TS1ULXgtWEpIZ2pCUWFnd1dnVQ?oc=5\" target=\"_blank\">S&amp;P 500 shows signs of slowing but no clear top; potential dip then rally expected into June.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pluang</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=pluang.com&sz=64"
     },
     {
-      "title": "US Stock Market LIVE: Dow, S&P 500, Nasdaq Futures Wobble After Wall Street's Rally | NYSE | N18G F1 Tv (W5dborjDyS) - Mshale",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5ETXg3TnlwMEFXdnk3UDFDbXhrSVV6VkJwZ3NaeGpQSy14RkppbnRVUGN3X0JYbVhTbVVkM19zc05qUDVDMEhuTm5hRElYb1FuV0VTdF9BaUpNOE5feXVVY09rNA?oc=5",
-      "publisher": "Mshale",
-      "published": "Sun, 12 Apr 2026 09:44:18 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE5ETXg3TnlwMEFXdnk3UDFDbXhrSVV6VkJwZ3NaeGpQSy14RkppbnRVUGN3X0JYbVhTbVVkM19zc05qUDVDMEhuTm5hRElYb1FuV0VTdF9BaUpNOE5feXVVY09rNA?oc=5\" target=\"_blank\">US Stock Market LIVE: Dow, S&amp;P 500, Nasdaq Futures Wobble After Wall Street's Rally | NYSE | N18G F1 Tv (W5dborjDyS)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mshale</font>",
+      "title": "24h Nürburgring: Major BMW M3 Touring 24H Show in front of a record crowd in the “Green Hell”. - BMW Group",
+      "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPQnBUeE1nUTJsWGRlYXpONWxwM2cyUmEwZDVncDdIdHdudjMxOFhqcXFJY1dGODBQQjlfeGZBVUo0aHhZeXBQSlNramZUWTVVcUN5elAwWHdScmZjYm82WmRjdnJfX2Y0ZGpzV3RfeDJnMzlhbm9HaWhNSTVKYks4N3MyV2ZSamt3NVh6RlVRRlcwLTlpWXVDbFlUeWVhM2ZXMFBaRk51UjJSaWZRTnFfOHRfX0dJYkhmTlZoYVY3enJqbnJRNUJEcVVVRkc5QzRubEQ0M29vemFLOGdJZThpa2NXS0pLTnE2N0p1WjB3UDJyWENOMW5USkdkRng3UzB3dG9FdA?oc=5",
+      "publisher": "BMW Group",
+      "published": "Sun, 17 May 2026 19:19:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihAJBVV95cUxPQnBUeE1nUTJsWGRlYXpONWxwM2cyUmEwZDVncDdIdHdudjMxOFhqcXFJY1dGODBQQjlfeGZBVUo0aHhZeXBQSlNramZUWTVVcUN5elAwWHdScmZjYm82WmRjdnJfX2Y0ZGpzV3RfeDJnMzlhbm9HaWhNSTVKYks4N3MyV2ZSamt3NVh6RlVRRlcwLTlpWXVDbFlUeWVhM2ZXMFBaRk51UjJSaWZRTnFfOHRfX0dJYkhmTlZoYVY3enJqbnJRNUJEcVVVRkc5QzRubEQ0M29vemFLOGdJZThpa2NXS0pLTnE2N0p1WjB3UDJyWENOMW5USkdkRng3UzB3dG9FdA?oc=5\" target=\"_blank\">24h Nürburgring: Major BMW M3 Touring 24H Show in front of a record crowd in the “Green Hell”.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BMW Group</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.press.bmwgroup.com&sz=64"
     },
     {
-      "title": "Global Dividend ETFs Are Crushing the S&P 500. 3 ETFs With Yields Above 5% -- Barrons.com - Moomoo",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNVR2S1dfZFlZR1k5WWtPVHBqblpiWUJ5ZXJwOElBd2dwejBlLXVCRTh2MjNraW9CUHZBT2lrNHlLazZfbkhObVlVSGxYSnVkYkNxQUZuNXNPWHpqbnlITVUyeVV5V1lkRThrZm5xa1kzZjRXZUcydmUyaEU0aWpmbXprWVM2c18zdlFBTVZISEs0NXM?oc=5",
-      "publisher": "Moomoo",
-      "published": "Sun, 12 Apr 2026 06:33:17 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikwFBVV95cUxPNVR2S1dfZFlZR1k5WWtPVHBqblpiWUJ5ZXJwOElBd2dwejBlLXVCRTh2MjNraW9CUHZBT2lrNHlLazZfbkhObVlVSGxYSnVkYkNxQUZuNXNPWHpqbnlITVUyeVV5V1lkRThrZm5xa1kzZjRXZUcydmUyaEU0aWpmbXprWVM2c18zdlFBTVZISEs0NXM?oc=5\" target=\"_blank\">Global Dividend ETFs Are Crushing the S&amp;P 500. 3 ETFs With Yields Above 5% -- Barrons.com</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Moomoo</font>",
+      "title": "Nvidia (NVDA) Drives S&P 500 Rally Amid Concentration Risks - GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObnFnTl9oNjdZN0lySGVRTGNaSjd4ZkJHQ1FXdlNXa05pRzVXaWNvREQ4WkJGMXE5XzFYdE1WVDhmejNuVDYxY05razRhVkcxN2c3MFRZZHBGaEhYWG80LWJKa3dQYWV2c2RzUFlBS2JvSDFVV3l5RFBQRUxTbGFhRGNaNUwtSGl3clJ6aE93V05CbklRYkplNFQwYw?oc=5",
+      "publisher": "GuruFocus",
+      "published": "Sun, 17 May 2026 23:16:21 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxObnFnTl9oNjdZN0lySGVRTGNaSjd4ZkJHQ1FXdlNXa05pRzVXaWNvREQ4WkJGMXE5XzFYdE1WVDhmejNuVDYxY05razRhVkcxN2c3MFRZZHBGaEhYWG80LWJKa3dQYWV2c2RzUFlBS2JvSDFVV3l5RFBQRUxTbGFhRGNaNUwtSGl3clJ6aE93V05CbklRYkplNFQwYw?oc=5\" target=\"_blank\">Nvidia (NVDA) Drives S&amp;P 500 Rally Amid Concentration Risks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">GuruFocus</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.gurufocus.com&sz=64"
     },
     {
-      "title": "If the Top 10 S&P 500 CEO Salaries Were Distributed Equally Among Workers, How Much Money Would Each Person Make? - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZnpKV1o5TEdqdUYyQ1RHSHpSSDF4T2tFQkdmcmdHc0Nua2lrQWdOcVZsY2Z5dlFJQWxBdzRqZFRwSWJNU09iT0d6V2tpc1pWeFlQTWVxWEF5bWRZTHRWNjI5VzF5Z29FcjZ1elQ0ZDNqY1BILUItU3h5ZFNKaFZNdUxhTk9uTlQx?oc=5",
-      "publisher": "Yahoo Finance",
-      "published": "Sun, 12 Apr 2026 10:00:06 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZnpKV1o5TEdqdUYyQ1RHSHpSSDF4T2tFQkdmcmdHc0Nua2lrQWdOcVZsY2Z5dlFJQWxBdzRqZFRwSWJNU09iT0d6V2tpc1pWeFlQTWVxWEF5bWRZTHRWNjI5VzF5Z29FcjZ1elQ0ZDNqY1BILUItU3h5ZFNKaFZNdUxhTk9uTlQx?oc=5\" target=\"_blank\">If the Top 10 S&amp;P 500 CEO Salaries Were Distributed Equally Among Workers, How Much Money Would Each Person Make?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "The Stock Market Just Flashed a Buy Signal. History Says the S&P 500 Will Do This Next. - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1HMExjbzlTejh4RWRjN3FmQVRVNmpfYjRDSWV2eWFjYTR0eUp5d19ORnBGMWVOMGR2Q2tVNXZ0ZzZfS01TZ2xhSVFqamtEQk1RZXRuUWlkN0VCQ0dPa0E5TEJBUFBpS1c5WHRtNksxanpUUDl3QnItblpnVTZ5dw?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 04:26:12 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE1HMExjbzlTejh4RWRjN3FmQVRVNmpfYjRDSWV2eWFjYTR0eUp5d19ORnBGMWVOMGR2Q2tVNXZ0ZzZfS01TZ2xhSVFqamtEQk1RZXRuUWlkN0VCQ0dPa0E5TEJBUFBpS1c5WHRtNksxanpUUDl3QnItblpnVTZ5dw?oc=5\" target=\"_blank\">The Stock Market Just Flashed a Buy Signal. History Says the S&amp;P 500 Will Do This Next.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Will the S&P 500 Crash in 2026? History Offers a Clear Answer - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9wWkx5enQwWEQ5a1U5QV8tSWJRVndNX2k0RlN3Wkh5cTlNbm81czkwX1VtWHdpRm50a0licGZFRHhERVluZHVzdDdwZXVpUzFsLUFYblhyWktvQkQzdC15VC1IZG1vOVJBVHZxNy10LU9ZLUFURFhB?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 03:35:55 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTE9wWkx5enQwWEQ5a1U5QV8tSWJRVndNX2k0RlN3Wkh5cTlNbm81czkwX1VtWHdpRm50a0licGZFRHhERVluZHVzdDdwZXVpUzFsLUFYblhyWktvQkQzdC15VC1IZG1vOVJBVHZxNy10LU9ZLUFURFhB?oc=5\" target=\"_blank\">Will the S&amp;P 500 Crash in 2026? History Offers a Clear Answer</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "A Look At SPX Technologies (SPXC) Valuation After Strong Rally And Rising Earnings Optimism - simplywall.st",
-      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcE9LdmFLTDZXTlNQMTFnN1EyYVh4ZzQ2ajlCOEpub1UyY1RoNDJuY0tHNkRQajJjTklRTVVRVW1ZeDd3TUpuNkFOcmMtbmlCd0lESEN6UnVuSnFTaUxRS3ZUYVp4N2FzSUFSYUpVQnBSTHgwQWE3ZTg4MUlvQVNocnp0a3ZNZUQyRjlUQTlmYWw1NnpxMnhqS2JUb08yUU5vcVg1a2R4c0lOYnRXZ21fR1VhTnJLSFdWRWFXYVhZeWNKeUVjU2ItMjMtMW9GM0F4TWEyM9IB2gFBVV95cUxPZ2txWjhZNVFyMjl3MENwTVpJNG5icmY5WmtLVmxqVlZCV1pkTC1PNFBCbXVHbDBSTWsxalJmODZEVzZLVklZWHVwYzNfT01qWUpJUzItSm05THFDTGVZbU1iZjJkTFlnWS11a1VoYjJJZjhSb29HWEVSbUlZUGluZXJHVXE1djFWemxvaFo1ZU1vS253RHNWajdCeDRIRFJyTW9PN0JGa29Rb0N6LTZmRXg5N2s0LVRGcnYyU1F2OVBybmVHcVVNWGMzYnQ5aFJPMDNSYUt0Z3ZiZw?oc=5",
-      "publisher": "simplywall.st",
-      "published": "Sun, 12 Apr 2026 01:55:23 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxPcE9LdmFLTDZXTlNQMTFnN1EyYVh4ZzQ2ajlCOEpub1UyY1RoNDJuY0tHNkRQajJjTklRTVVRVW1ZeDd3TUpuNkFOcmMtbmlCd0lESEN6UnVuSnFTaUxRS3ZUYVp4N2FzSUFSYUpVQnBSTHgwQWE3ZTg4MUlvQVNocnp0a3ZNZUQyRjlUQTlmYWw1NnpxMnhqS2JUb08yUU5vcVg1a2R4c0lOYnRXZ21fR1VhTnJLSFdWRWFXYVhZeWNKeUVjU2ItMjMtMW9GM0F4TWEyM9IB2gFBVV95cUxPZ2txWjhZNVFyMjl3MENwTVpJNG5icmY5WmtLVmxqVlZCV1pkTC1PNFBCbXVHbDBSTWsxalJmODZEVzZLVklZWHVwYzNfT01qWUpJUzItSm05THFDTGVZbU1iZjJkTFlnWS11a1VoYjJJZjhSb29HWEVSbUlZUGluZXJHVXE1djFWemxvaFo1ZU1vS253RHNWajdCeDRIRFJyTW9PN0JGa29Rb0N6LTZmRXg5N2s0LVRGcnYyU1F2OVBybmVHcVVNWGMzYnQ5aFJPMDNSYUt0Z3ZiZw?oc=5\" target=\"_blank\">A Look At SPX Technologies (SPXC) Valuation After Strong Rally And Rising Earnings Optimism</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">simplywall.st</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "When 'Safe' Becomes Your Biggest Risk - TheStreet Pro",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9qZVNNQ1J4eHdZY1dwUnZsdGViMUMxMEs2eWlBVkFYcWVDZWVFcUQ0ZDhJT18zTUpkektOd1VPbEUzZnJGaGdHQ05UWnZYRTlHTVVfSlM4SUlyUFQ3dzVsbFROZUNSdS1oTXJLM1NGRlB5cHFvampwWWJQYw?oc=5",
-      "publisher": "TheStreet Pro",
-      "published": "Sat, 11 Apr 2026 16:15:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE9qZVNNQ1J4eHdZY1dwUnZsdGViMUMxMEs2eWlBVkFYcWVDZWVFcUQ0ZDhJT18zTUpkektOd1VPbEUzZnJGaGdHQ05UWnZYRTlHTVVfSlM4SUlyUFQ3dzVsbFROZUNSdS1oTXJLM1NGRlB5cHFvampwWWJQYw?oc=5\" target=\"_blank\">When 'Safe' Becomes Your Biggest Risk</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TheStreet Pro</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "NASDAQ, SPX & DOW JONES | US STOCK MARKET PRICE PREDITION TODAY: NEXT MOVE AND TARGETS Jiri Lehecka (TI7Ecsh1Vp) - Mshale",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5pODdyVFRlc295dFdUQnBUeURRSkpSSkhVb3NYeWRfck9vQjJxSnJMNmZudmh5bFd4XzVDUTFibmcxaG5kMDVnRE0wTnVONWgxQlVFM2RjdFEyaW5JMDlYTmhUbw?oc=5",
-      "publisher": "Mshale",
-      "published": "Sun, 12 Apr 2026 02:35:32 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE5pODdyVFRlc295dFdUQnBUeURRSkpSSkhVb3NYeWRfck9vQjJxSnJMNmZudmh5bFd4XzVDUTFibmcxaG5kMDVnRE0wTnVONWgxQlVFM2RjdFEyaW5JMDlYTmhUbw?oc=5\" target=\"_blank\">NASDAQ, SPX & DOW JONES | US STOCK MARKET PRICE PREDITION TODAY: NEXT MOVE AND TARGETS Jiri Lehecka (TI7Ecsh1Vp)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mshale</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "The Cheapest Stock in the S&P 500 Is Up 520% Over the Last Year. Is That Even Possible? - Barron's",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBSZFhiQUMxeUF0U2FkbG5QNzc2ek5yNE8xSEtMQXMzZFdCVE1jQTRxZ3lkQXJlQm1BMmk5WDlSR21waWxUOUlLUk1WaGl5MDVvMFVLN0tVWUttSWNmMWxoZ0hNRFhWTDktUWlaX3dhZDEwYVBObTRpYjBR?oc=5",
-      "publisher": "Barron's",
-      "published": "Sat, 11 Apr 2026 16:40:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiekFVX3lxTFBSZFhiQUMxeUF0U2FkbG5QNzc2ek5yNE8xSEtMQXMzZFdCVE1jQTRxZ3lkQXJlQm1BMmk5WDlSR21waWxUOUlLUk1WaGl5MDVvMFVLN0tVWUttSWNmMWxoZ0hNRFhWTDktUWlaX3dhZDEwYVBObTRpYjBR?oc=5\" target=\"_blank\">The Cheapest Stock in the S&amp;P 500 Is Up 520% Over the Last Year. Is That Even Possible?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Barron's</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "S&P 500: Weekly Surge of 3.9% Approaches Record Levels – What’s the Outlook? - Bitget",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBNNmo3dUFpUl9ZUXl2eWVyMHlqU3M0TnJUQ215ejRoV20zR3RPVFhWVk5LcmQxWUg0ZXV3NFE2TWFQa0pndmgyTktudS1tTF9JcEZYNnBueUtEaS1NbldTSE15b9IBY0FVX3lxTFBNNmo3dUFpUl9ZUXl2eWVyMHlqU3M0TnJUQ215ejRoV20zR3RPVFhWVk5LcmQxWUg0ZXV3NFE2TWFQa0pndmgyTktudS1tTF9JcEZYNnBueUtEaS1NbldTSE15bw?oc=5",
-      "publisher": "Bitget",
-      "published": "Sun, 12 Apr 2026 05:07:49 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFBNNmo3dUFpUl9ZUXl2eWVyMHlqU3M0TnJUQ215ejRoV20zR3RPVFhWVk5LcmQxWUg0ZXV3NFE2TWFQa0pndmgyTktudS1tTF9JcEZYNnBueUtEaS1NbldTSE15b9IBY0FVX3lxTFBNNmo3dUFpUl9ZUXl2eWVyMHlqU3M0TnJUQ215ejRoV20zR3RPVFhWVk5LcmQxWUg0ZXV3NFE2TWFQa0pndmgyTktudS1tTF9JcEZYNnBueUtEaS1NbldTSE15bw?oc=5\" target=\"_blank\">S&amp;P 500: Weekly Surge of 3.9% Approaches Record Levels – What’s the Outlook?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bitget</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Inside SPX’s battle at $0.36 supply zone and what comes next - AMBCrypto",
-      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1xZEhJQ2JKN250NjRkZXRxYUxENDh5OFNDcV9vN1hDYzc3M055MnFacFdPZ0diZ3huWUhHYXRkNlFIU0hmc2fSAY4BQVVfeXFMTkswQXRHemJTMU1qY0R6X2puQkNxalRZQTdPX3d3anVOaDA5cWZOeHdWUXcwQlp6REpnOFpNMkJmVEhCR0RVQ1BpcWFTSHIxQVBTbHVkU1A0dUE3T1NzTHhGMENBTFJJSjRNbHNPZGlOdDVOZWJMc2E4TGJoT0lTM2MtT3hIUHFzX2JiY1ZSZw?oc=5",
-      "publisher": "AMBCrypto",
-      "published": "Sun, 12 Apr 2026 03:00:28 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiRkFVX3lxTE1xZEhJQ2JKN250NjRkZXRxYUxENDh5OFNDcV9vN1hDYzc3M055MnFacFdPZ0diZ3huWUhHYXRkNlFIU0hmc2fSAY4BQVVfeXFMTkswQXRHemJTMU1qY0R6X2puQkNxalRZQTdPX3d3anVOaDA5cWZOeHdWUXcwQlp6REpnOFpNMkJmVEhCR0RVQ1BpcWFTSHIxQVBTbHVkU1A0dUE3T1NzTHhGMENBTFJJSjRNbHNPZGlOdDVOZWJMc2E4TGJoT0lTM2MtT3hIUHFzX2JiY1ZSZw?oc=5\" target=\"_blank\">Inside SPX’s battle at $0.36 supply zone and what comes next</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AMBCrypto</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "SRXH Stock Powers Past S&P 500 As Crypto Pivot Starts Paying Off — Retail Bulls Pile In - Stocktwits",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPVDg5a2hjTGk2U0szb0NIeVZiTldTckgyRWVvMU1kRUREdWNHdWtnQVA4VHoxNGdrblVQUHY4cDNvaGhNbk56bVBGNGZkYTV6dTRqV1phY01mY0QycndJVUNoWW1yNGg3Q2J6Z2pycEVkNXdfTC1QWnhhQ3ZGWjlyZ1plOW0wME11b1NIN3JvQklJYWdFOVNndVZaSE42QVF3bS1QSmhnZlR6LU9aRWN6T2lNZzRWTW5RcVFUZlQtbkdrNW9ucl9QaVBRZFA?oc=5",
+      "title": "S&P 500, Dow, Nasdaq Futures Slip After Trump Says ‘Clock Is Ticking’ For Iran: NOW, IBRX, ONDS, BMNR Stocks In Focus - Stocktwits",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQal9waXNGOUVZRkh5WVI1MEVGb3hVdUZBQW1IdnhoYkdWUFB3YVoyRk1mSS15NzlBV2hCLVdkMkRuSzBDb3ZNSnlmTzl4ZHdNTnBUQ1JZaHhUNHUwSmhGMEtlaVh0TE9lUElYQmtWeE1ZUkFjbzNNblNwWlMxM29BeDQzQTJNUW1qejc2bktRZTEwM1pHLVN1dFRTenFIV2VYQUNTWmNxMl9vVkJwWXF2NGs2UzNJSjJydlNYNURpNjFkZjU0a2tlQ3lFNzhZNkNKcnc?oc=5",
       "publisher": "Stocktwits",
-      "published": "Sun, 12 Apr 2026 01:56:45 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPVDg5a2hjTGk2U0szb0NIeVZiTldTckgyRWVvMU1kRUREdWNHdWtnQVA4VHoxNGdrblVQUHY4cDNvaGhNbk56bVBGNGZkYTV6dTRqV1phY01mY0QycndJVUNoWW1yNGg3Q2J6Z2pycEVkNXdfTC1QWnhhQ3ZGWjlyZ1plOW0wME11b1NIN3JvQklJYWdFOVNndVZaSE42QVF3bS1QSmhnZlR6LU9aRWN6T2lNZzRWTW5RcVFUZlQtbkdrNW9ucl9QaVBRZFA?oc=5\" target=\"_blank\">SRXH Stock Powers Past S&amp;P 500 As Crypto Pivot Starts Paying Off — Retail Bulls Pile In</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Stocktwits</font>",
+      "published": "Mon, 18 May 2026 02:07:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0gFBVV95cUxQal9waXNGOUVZRkh5WVI1MEVGb3hVdUZBQW1IdnhoYkdWUFB3YVoyRk1mSS15NzlBV2hCLVdkMkRuSzBDb3ZNSnlmTzl4ZHdNTnBUQ1JZaHhUNHUwSmhGMEtlaVh0TE9lUElYQmtWeE1ZUkFjbzNNblNwWlMxM29BeDQzQTJNUW1qejc2bktRZTEwM1pHLVN1dFRTenFIV2VYQUNTWmNxMl9vVkJwWXF2NGs2UzNJSjJydlNYNURpNjFkZjU0a2tlQ3lFNzhZNkNKcnc?oc=5\" target=\"_blank\">S&amp;P 500, Dow, Nasdaq Futures Slip After Trump Says ‘Clock Is Ticking’ For Iran: NOW, IBRX, ONDS, BMNR Stocks In Focus</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Stocktwits</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=stocktwits.com&sz=64"
     },
     {
-      "title": "Nvidia Valuation vs. S&P 500: AI Investment Weariness Examined | 2026 Analysis - News and Statistics - IndexBox",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNc1E0b1pVYV8tU3hsVFZTNWloZHZWY1NqYVpKbXJLUWNQUEhRa0lONmtTYXlBSVVzVjBDSjhPemp1OE9kZXhfSER5NnJfQy1yZ1owclN3WENVM0treWU2S2ZVMENvR19OS0Nwd0ZuOVdleGlueFdiNGJTY1QtQzRJeGhQUGJBM2pXT3hVaFA2ZTh0UQ?oc=5",
-      "publisher": "IndexBox",
-      "published": "Sun, 12 Apr 2026 02:01:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNc1E0b1pVYV8tU3hsVFZTNWloZHZWY1NqYVpKbXJLUWNQUEhRa0lONmtTYXlBSVVzVjBDSjhPemp1OE9kZXhfSER5NnJfQy1yZ1owclN3WENVM0treWU2S2ZVMENvR19OS0Nwd0ZuOVdleGlueFdiNGJTY1QtQzRJeGhQUGJBM2pXT3hVaFA2ZTh0UQ?oc=5\" target=\"_blank\">Nvidia Valuation vs. S&amp;P 500: AI Investment Weariness Examined | 2026 Analysis - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "title": "Volatile Chipmaker Stocks Emerge as Key Driver of S&P 500 Rally - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNcWlSdUNhT1NOT0FhZGpUMjZabVlOUGZpNG5TQlRRdTNJMHJrVkd3a1JpQnNrWkhYdFB2YjdaeXJMZ1QtaWxoYzNxRG5NWFdOdGtWSWdEbTJYMGFJS1hyZ2pKZkFYRmdFUXNTcHpDeW9YOTZRZVpnNElnMnc4TVJwdUc1QmFjNXczT2JjV1RKN2J4ck14aFRXWWNKUkdiWmFJR2d2ZzFaZk5ycFdaY24zQUstczQ?oc=5",
+      "publisher": "Bloomberg.com",
+      "published": "Sun, 17 May 2026 13:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitAFBVV95cUxNcWlSdUNhT1NOT0FhZGpUMjZabVlOUGZpNG5TQlRRdTNJMHJrVkd3a1JpQnNrWkhYdFB2YjdaeXJMZ1QtaWxoYzNxRG5NWFdOdGtWSWdEbTJYMGFJS1hyZ2pKZkFYRmdFUXNTcHpDeW9YOTZRZVpnNElnMnc4TVJwdUc1QmFjNXczT2JjV1RKN2J4ck14aFRXWWNKUkdiWmFJR2d2ZzFaZk5ycFdaY24zQUstczQ?oc=5\" target=\"_blank\">Volatile Chipmaker Stocks Emerge as Key Driver of S&amp;P 500 Rally</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bloomberg.com</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.bloomberg.com&sz=64"
     },
     {
-      "title": "Will the Stock Market Crash as the Oil Shock Hits the Economy? History Says the S&P 500 Will Do This Next. - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA3M1RfZkZLemxTRjZ2QzEzNzNEUk4zOTdxWkRRTmtic2xKVUpoS3NsSnV6ZUo1ZXRGLUlyWFBuazhEd1BpdURGdWl6YnBtZVZiRFo3emxMRnNPM1FaT1NaQUItT2F6dE9raXZUT0w0LVM?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 06:12:18 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFA3M1RfZkZLemxTRjZ2QzEzNzNEUk4zOTdxWkRRTmtic2xKVUpoS3NsSnV6ZUo1ZXRGLUlyWFBuazhEd1BpdURGdWl6YnBtZVZiRFo3emxMRnNPM1FaT1NaQUItT2F6dE9raXZUT0w0LVM?oc=5\" target=\"_blank\">Will the Stock Market Crash as the Oil Shock Hits the Economy? History Says the S&amp;P 500 Will Do This Next.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Is the S&P 500 Headed for a Correction Ahead of the Midterm Elections? Here's What History Says Will Happen Before November, and What Comes Next. - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9oa1kwNk1kaTdtaGZweDgwaktIX3JUMXV6YTBWRUM5dlZaT0VMaW5IdlhRY2R5dHV5OHBMLXRfa2FyQVVPdUd5SmpwdzdhOFhMdUpLTm54cDRWS1Q1d2VQdjEwQy1lb3F0b0Jmdmphc2V5aXJVUkRNYWd0Q2t4UQ?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 03:25:51 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE9oa1kwNk1kaTdtaGZweDgwaktIX3JUMXV6YTBWRUM5dlZaT0VMaW5IdlhRY2R5dHV5OHBMLXRfa2FyQVVPdUd5SmpwdzdhOFhMdUpLTm54cDRWS1Q1d2VQdjEwQy1lb3F0b0Jmdmphc2V5aXJVUkRNYWd0Q2t4UQ?oc=5\" target=\"_blank\">Is the S&amp;P 500 Headed for a Correction Ahead of the Midterm Elections? Here's What History Says Will Happen Before November, and What Comes Next.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "$SPDR S&P 500 ETF (SPY.US)$ - Moomoo",
-      "link": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxQdE16ei02Q29LTGJQd1k3LXA2QUh5N293QjljcmFJZXUtUkpwRWswTDNoUVJ2R1BGZ3dLZGxwYm1CUWtQQnBCT2hVZ1RaVWVDZjQtTnFXM0t0Ri0zUVlLOUhRVm5DOHpvTzh1X0FrQkRocFBYalIxNnE5RE9TcFFXalVYZGxXcDhyUGFXeVo5UUJHSll1Q3o4dV9zYlRkWGlKTnVwbnlDS3RyWGtQNW5ncDRZeERXeTFKUHZPOGJlb2E5ZGxBR2x3MjN4WXpaOFc1REIxOS1HUWpsU2FIbDJfRVExLVdlX2dWNzNRbHJJWmZhUFRiZEZLN2ZhSFV2N0xjZWM5X0FYOGlNeXItRTVQWHVraTBJM2phaWZhMDFlcEhUUXRSZ1ZZd2FES2lreFBZYklodkZMWmFNT1N5b3FBVmdYV0NqejJHS0NhVk1uLXkxRm8?oc=5",
+      "title": "The key to the S&P 500's rise or fall lies in semiconductor stocks, with Wall Street fiercely debating whether the rally can 'break through the cycle' and continue. - Moomoo",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tVFdrNmVfSU9BNG55MWQyc2QyLVpjQ1BMZU5WRU9QM09RSzdwODdVYTBBNGVEUmtMc3hBZjU2bS0yeE5wMXVzN2pfc2hRQ0xSUFNhVUVNa295RUp1akZnY0VLYXZEWTF5al9TZE0zUnhpRHkyWnRtZnRWYjN2UjA?oc=5",
       "publisher": "Moomoo",
-      "published": "Sun, 12 Apr 2026 02:32:11 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0wJBVV95cUxQdE16ei02Q29LTGJQd1k3LXA2QUh5N293QjljcmFJZXUtUkpwRWswTDNoUVJ2R1BGZ3dLZGxwYm1CUWtQQnBCT2hVZ1RaVWVDZjQtTnFXM0t0Ri0zUVlLOUhRVm5DOHpvTzh1X0FrQkRocFBYalIxNnE5RE9TcFFXalVYZGxXcDhyUGFXeVo5UUJHSll1Q3o4dV9zYlRkWGlKTnVwbnlDS3RyWGtQNW5ncDRZeERXeTFKUHZPOGJlb2E5ZGxBR2x3MjN4WXpaOFc1REIxOS1HUWpsU2FIbDJfRVExLVdlX2dWNzNRbHJJWmZhUFRiZEZLN2ZhSFV2N0xjZWM5X0FYOGlNeXItRTVQWHVraTBJM2phaWZhMDFlcEhUUXRSZ1ZZd2FES2lreFBZYklodkZMWmFNT1N5b3FBVmdYV0NqejJHS0NhVk1uLXkxRm8?oc=5\" target=\"_blank\">$SPDR S&amp;P 500 ETF (SPY.US)$</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Moomoo</font>",
+      "published": "Mon, 18 May 2026 00:10:06 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE4tVFdrNmVfSU9BNG55MWQyc2QyLVpjQ1BMZU5WRU9QM09RSzdwODdVYTBBNGVEUmtMc3hBZjU2bS0yeE5wMXVzN2pfc2hRQ0xSUFNhVUVNa295RUp1akZnY0VLYXZEWTF5al9TZE0zUnhpRHkyWnRtZnRWYjN2UjA?oc=5\" target=\"_blank\">The key to the S&amp;P 500's rise or fall lies in semiconductor stocks, with Wall Street fiercely debating whether the rally can 'break through the cycle' and continue.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Moomoo</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.moomoo.com&sz=64"
     },
     {
-      "title": "Top-rated S&P 500 stocks heading into earnings - MSN",
-      "link": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOM3lTeUVSNXM2djdEZ042dkxReGRwdWdMcGYxb01OSTF3MjJQUTE0OTN2ejl1QzJXbW9LTjJWMVlYSFN1d01YaGx6dTJGcFdiVFJhMjNEbDdSdGN4UUNienJOaDhvQmNXbThDaXRSOG1obWhzbTBVLXEyX2F6U1JMbjlRbjVObDlrUENqVEI0R25aTjFFcTRuZzdGRGZxZExXQnExV3JneEV5MkRuSHNZblVzZVNLcmhMZ3FqMjRQX2hVNkZPS1lMNE1EWl90cFJERXV1Q3RLRWE1WXp6b0FYbHpmNXhrYVRFSGFGSVlrZjJFWGJWR1Y4dTNJbDd1eWNVbHZEVDJMY1VqRmozMWFmYWxRSl9mRGt0VzBUTENvRzVYVThuakZRUlNMRHNoZ1VBdVVaZDAwai1PbjFEX1hIRERpeUNPcF84RTJ6NGsxb3JULXpNanNTNndR?oc=5",
-      "publisher": "MSN",
-      "published": "Sat, 11 Apr 2026 23:05:32 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi2gJBVV95cUxOM3lTeUVSNXM2djdEZ042dkxReGRwdWdMcGYxb01OSTF3MjJQUTE0OTN2ejl1QzJXbW9LTjJWMVlYSFN1d01YaGx6dTJGcFdiVFJhMjNEbDdSdGN4UUNienJOaDhvQmNXbThDaXRSOG1obWhzbTBVLXEyX2F6U1JMbjlRbjVObDlrUENqVEI0R25aTjFFcTRuZzdGRGZxZExXQnExV3JneEV5MkRuSHNZblVzZVNLcmhMZ3FqMjRQX2hVNkZPS1lMNE1EWl90cFJERXV1Q3RLRWE1WXp6b0FYbHpmNXhrYVRFSGFGSVlrZjJFWGJWR1Y4dTNJbDd1eWNVbHZEVDJMY1VqRmozMWFmYWxRSl9mRGt0VzBUTENvRzVYVThuakZRUlNMRHNoZ1VBdVVaZDAwai1PbjFEX1hIRERpeUNPcF84RTJ6NGsxb3JULXpNanNTNndR?oc=5\" target=\"_blank\">Top-rated S&amp;P 500 stocks heading into earnings</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "title": "Tech Lifted The S&P 500 And Nasdaq To New Highs - Finimize",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSHhrc1N0S3B6eEdXeEZuMnZJaGh5RHBCU1JuampuZWtiZFJnMGNGRVZ0djdjRnVmTzVuUUFuME9mc29xdVdGS2V0T24xaHdMTkxCSGdmc1JvdVFNNzd6dkdDcWljS19VSGdlTTB2SGlwX01pTFdQMHkwdVBvaFBYcw?oc=5",
+      "publisher": "Finimize",
+      "published": "Sun, 17 May 2026 21:07:54 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxPSHhrc1N0S3B6eEdXeEZuMnZJaGh5RHBCU1JuampuZWtiZFJnMGNGRVZ0djdjRnVmTzVuUUFuME9mc29xdVdGS2V0T24xaHdMTkxCSGdmc1JvdVFNNzd6dkdDcWljS19VSGdlTTB2SGlwX01pTFdQMHkwdVBvaFBYcw?oc=5\" target=\"_blank\">Tech Lifted The S&amp;P 500 And Nasdaq To New Highs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Finimize</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=finimize.com&sz=64"
     },
     {
-      "title": "The Case for Owning a Broad Market ETF Instead of Picking Stocks - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB5Z3c5d1N5TXhJMmJLa2t0T1cwbmo4N2JEckREcUdFLW9McVRvbnJMME11VHFOZVNxVE5GOHlKOGd2aDlRSGRIV0dtMWhadl8taHAyc1g1MDkzTGtiYTAwZ0czTldqYTFSb09mWXNQZzlOTmVJVGtjUmtLdS0?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 07:58:24 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTFB5Z3c5d1N5TXhJMmJLa2t0T1cwbmo4N2JEckREcUdFLW9McVRvbnJMME11VHFOZVNxVE5GOHlKOGd2aDlRSGRIV0dtMWhadl8taHAyc1g1MDkzTGtiYTAwZ0czTldqYTFSb09mWXNQZzlOTmVJVGtjUmtLdS0?oc=5\" target=\"_blank\">The Case for Owning a Broad Market ETF Instead of Picking Stocks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "title": "Expro Stock Performance vs S&P 500: Revenue, Margins, and Profitability Review (2026) - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVy02aW5pU1FwT3l6WmZONDFEQzh2cXdsN2E0akpwQktBN2RHY1VqNGxoSGktRVF3UkZIcThmLTR4M0FkZG1SODNyLXIxaGhGeXpvaFRvX1lSV08wbC1kS2ZNVmZyN3BkZGVqY1BhY0h5TW5mQV9LYTR3WkZOeTdfNjMyZnY2U2RyVGQxcjVIVlJBbXZaZHc?oc=5",
+      "publisher": "IndexBox",
+      "published": "Mon, 18 May 2026 01:41:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxOVy02aW5pU1FwT3l6WmZONDFEQzh2cXdsN2E0akpwQktBN2RHY1VqNGxoSGktRVF3UkZIcThmLTR4M0FkZG1SODNyLXIxaGhGeXpvaFRvX1lSV08wbC1kS2ZNVmZyN3BkZGVqY1BhY0h5TW5mQV9LYTR3WkZOeTdfNjMyZnY2U2RyVGQxcjVIVlJBbXZaZHc?oc=5\" target=\"_blank\">Expro Stock Performance vs S&amp;P 500: Revenue, Margins, and Profitability Review (2026) - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
     },
     {
-      "title": "Trading the S&P 500 - FOREX.com",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ua0x6RHpfYVZ1WXJhVlJxckJxWjVEcGdZcmhKclA4Rk9QLUFhWFhsaVItOGxsWThoemFsN1o1M09kcFpGU2hDbXdmRUpDZndOT1dCRllxNXJPVVBqUnNHd3hmLW4wbEI0aW5MUVRqQQ?oc=5",
-      "publisher": "FOREX.com",
-      "published": "Sat, 11 Apr 2026 23:42:12 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE9ua0x6RHpfYVZ1WXJhVlJxckJxWjVEcGdZcmhKclA4Rk9QLUFhWFhsaVItOGxsWThoemFsN1o1M09kcFpGU2hDbXdmRUpDZndOT1dCRllxNXJPVVBqUnNHd3hmLW4wbEI0aW5MUVRqQQ?oc=5\" target=\"_blank\">Trading the S&amp;P 500</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">FOREX.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "The S&P 500 Sank by 5% Last Month, but Here's Why This Super Semiconductor Stock Bucked the Sell-Off - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE41YXhCS1VjMVAyUThta3dvWWk0ZGpzNDdSWERFR1ZCaElZYWI3bkdPQm5kbTJ5UEM0SzZCRzBaQzYwSGFqeEI3MXowNjdvQlZRQmZlbzEtMmEzZXUtWURVOGI4VEZxVE1MSGs3eVl3?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 01:48:09 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE41YXhCS1VjMVAyUThta3dvWWk0ZGpzNDdSWERFR1ZCaElZYWI3bkdPQm5kbTJ5UEM0SzZCRzBaQzYwSGFqeEI3MXowNjdvQlZRQmZlbzEtMmEzZXUtWURVOGI4VEZxVE1MSGs3eVl3?oc=5\" target=\"_blank\">The S&amp;P 500 Sank by 5% Last Month, but Here's Why This Super Semiconductor Stock Bucked the Sell-Off</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "2 Stock-Split Vanguard Index Funds to Buy Now. History Says They Can Crush the S&P 500 as the AI Boom Unfolds. - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9XN1AxTGRGcE9mVVdRRk5hT2g2bXFWSnRLbG10Y3dOTXlYVzlZeHY1SkZzUUtuajVZM0hqaUFiWENVTnBLMzZHSExSVDh6bE90aEZIWXR4akRkOUtkSlpPQk9VZmFQRkNJTEluMTd5QW8xaUJPajJlRXA2X00?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 06:51:17 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifEFVX3lxTE9XN1AxTGRGcE9mVVdRRk5hT2g2bXFWSnRLbG10Y3dOTXlYVzlZeHY1SkZzUUtuajVZM0hqaUFiWENVTnBLMzZHSExSVDh6bE90aEZIWXR4akRkOUtkSlpPQk9VZmFQRkNJTEluMTd5QW8xaUJPajJlRXA2X00?oc=5\" target=\"_blank\">2 Stock-Split Vanguard Index Funds to Buy Now. History Says They Can Crush the S&amp;P 500 as the AI Boom Unfolds.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Q1 Earnings Season Pressures S&P 500 Margins as XRP Flat-Lines and Structured Crypto Yield Emerges - openPR.com",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQcFVYOXhkMndFZkg4dGJFaEFicGhESlFNQVRQRjA5WFBJcmpTd3hUbkZJeXNLcWhJMDlicm9ra1JpMnd3VlZoUG41T2lsSlBoLWl3aVRnS0NPSm80RlUxaEMxb28tckVUMlZodzZkU1FNNHVFdFc1YkpzU1ZsTXRNSWFCejlVRk1jTHNJc052MFN2OFRGUzY1Ny02ZUhLUkE?oc=5",
-      "publisher": "openPR.com",
-      "published": "Sun, 12 Apr 2026 08:38:31 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxQcFVYOXhkMndFZkg4dGJFaEFicGhESlFNQVRQRjA5WFBJcmpTd3hUbkZJeXNLcWhJMDlicm9ra1JpMnd3VlZoUG41T2lsSlBoLWl3aVRnS0NPSm80RlUxaEMxb28tckVUMlZodzZkU1FNNHVFdFc1YkpzU1ZsTXRNSWFCejlVRk1jTHNJc052MFN2OFRGUzY1Ny02ZUhLUkE?oc=5\" target=\"_blank\">Q1 Earnings Season Pressures S&amp;P 500 Margins as XRP Flat-Lines and Structured Crypto Yield Emerges</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">openPR.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "S&P 500 Holds Steady in Weekend Lull as Investors Await Key Economic Data and Fed Signals - AD HOC NEWS",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPSjJta2tDZFM2ZWctTzFBdGVFN3N1aTE4TGdRckxmSzFfcFl0aEpXQ0NWWFZ5MTM0RmpNUGcySWRqYUxCTWNpdGNIT0d5T3RsLUctdlN1QldKbXItSnVlZ0hDVnotZmtFcXBUOWEzVVgtOXNjT3A4OUVTdmNQSldvUGRtbWdUSTNDamVib2NhMWdQb2NJaFlsMEZnXzlEQkEyakZxbGVmay1pQ3o4ZXF0UXZXZUV5cm53V2ZIbW5kTXhaWXhkOW1WSVp3Zw?oc=5",
-      "publisher": "AD HOC NEWS",
-      "published": "Sun, 12 Apr 2026 07:47:21 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiywFBVV95cUxPSjJta2tDZFM2ZWctTzFBdGVFN3N1aTE4TGdRckxmSzFfcFl0aEpXQ0NWWFZ5MTM0RmpNUGcySWRqYUxCTWNpdGNIT0d5T3RsLUctdlN1QldKbXItSnVlZ0hDVnotZmtFcXBUOWEzVVgtOXNjT3A4OUVTdmNQSldvUGRtbWdUSTNDamVib2NhMWdQb2NJaFlsMEZnXzlEQkEyakZxbGVmay1pQ3o4ZXF0UXZXZUV5cm53V2ZIbW5kTXhaWXhkOW1WSVp3Zw?oc=5\" target=\"_blank\">S&amp;P 500 Holds Steady in Weekend Lull as Investors Await Key Economic Data and Fed Signals</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AD HOC NEWS</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Top 2 S&P 500 Stocks to Watch This Week After Nike's Surprise Move - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5NNXVLaWJRbGZzTHRHRXYyQXNJcUloVmtxLUxxVWFscjk1SXdPaW12MG51SEJDOWhFSmctQ0R0OEE1QXVBdTFGQk9mVFNTRWNzVnkxU2ZidV9xSGFQZV81TS01SXY3Zzd3dzZKRmdHVQ?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sat, 11 Apr 2026 21:30:01 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE5NNXVLaWJRbGZzTHRHRXYyQXNJcUloVmtxLUxxVWFscjk1SXdPaW12MG51SEJDOWhFSmctQ0R0OEE1QXVBdTFGQk9mVFNTRWNzVnkxU2ZidV9xSGFQZV81TS01SXY3Zzd3dzZKRmdHVQ?oc=5\" target=\"_blank\">Top 2 S&amp;P 500 Stocks to Watch This Week After Nike's Surprise Move</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Dow & S&P 500 Futures Rise Ahead Of Trump's 'Power Plant Day' Deadline | Stock Market Today Torkham Border (yvF5bktj9a) - Mshale",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3U0hacmR3UnFIWURmQkpYUXVwWVJZcmI1dER3Snd0eXBDbk81c0JyMGhiRjdrZTdNVzlQVmhEenQta2ZnXzhwbjdjOGtFLUVzRnlFV3lFWmNSU2tER3dlVWhITQ?oc=5",
-      "publisher": "Mshale",
-      "published": "Sat, 11 Apr 2026 20:15:27 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3U0hacmR3UnFIWURmQkpYUXVwWVJZcmI1dER3Snd0eXBDbk81c0JyMGhiRjdrZTdNVzlQVmhEenQta2ZnXzhwbjdjOGtFLUVzRnlFV3lFWmNSU2tER3dlVWhITQ?oc=5\" target=\"_blank\">Dow & S&amp;P 500 Futures Rise Ahead Of Trump's 'Power Plant Day' Deadline | Stock Market Today Torkham Border (yvF5bktj9a)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Mshale</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "S&P 500’s Swift Recovery Conceals Oil Turbulence: Upcoming Earnings Need to Demonstrate That Supply Issues Are Short-Lived - Bitget",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5WTzE1YVN6aElzR0pxSmVmSUduQ2p1YzhuejJNRHJneTN6NmpSTTQzVFlPX0k0OVpZRlBwc25wX1FYQUxFRk1mTV9feTJ2NTRJQk9uVVVQT2VHbzdNaGx1dXQ2UdIBY0FVX3lxTE5WTzE1YVN6aElzR0pxSmVmSUduQ2p1YzhuejJNRHJneTN6NmpSTTQzVFlPX0k0OVpZRlBwc25wX1FYQUxFRk1mTV9feTJ2NTRJQk9uVVVQT2VHbzdNaGx1dXQ2UQ?oc=5",
+      "title": "Among this year's top ten gainers in the S&P 500, three are from the optical communication sector. - Bitget",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA3X3NQQWhuNnBXa2c0dU5OZkx4S2x5Yk9aamVfT0kzdUI5WllpcjkwaVJyVG1idWFqMU1VN3NBV0twZEFLanh4d3RndDVTUlFJOGNSZ240NC1WUzRCMzJscE91d9IBY0FVX3lxTFA3X3NQQWhuNnBXa2c0dU5OZkx4S2x5Yk9aamVfT0kzdUI5WllpcjkwaVJyVG1idWFqMU1VN3NBV0twZEFLanh4d3RndDVTUlFJOGNSZ240NC1WUzRCMzJscE91dw?oc=5",
       "publisher": "Bitget",
-      "published": "Sun, 12 Apr 2026 04:16:37 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE5WTzE1YVN6aElzR0pxSmVmSUduQ2p1YzhuejJNRHJneTN6NmpSTTQzVFlPX0k0OVpZRlBwc25wX1FYQUxFRk1mTV9feTJ2NTRJQk9uVVVQT2VHbzdNaGx1dXQ2UdIBY0FVX3lxTE5WTzE1YVN6aElzR0pxSmVmSUduQ2p1YzhuejJNRHJneTN6NmpSTTQzVFlPX0k0OVpZRlBwc25wX1FYQUxFRk1mTV9feTJ2NTRJQk9uVVVQT2VHbzdNaGx1dXQ2UQ?oc=5\" target=\"_blank\">S&amp;P 500’s Swift Recovery Conceals Oil Turbulence: Upcoming Earnings Need to Demonstrate That Supply Issues Are Short-Lived</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bitget</font>",
+      "published": "Mon, 18 May 2026 03:11:57 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTFA3X3NQQWhuNnBXa2c0dU5OZkx4S2x5Yk9aamVfT0kzdUI5WllpcjkwaVJyVG1idWFqMU1VN3NBV0twZEFLanh4d3RndDVTUlFJOGNSZ240NC1WUzRCMzJscE91d9IBY0FVX3lxTFA3X3NQQWhuNnBXa2c0dU5OZkx4S2x5Yk9aamVfT0kzdUI5WllpcjkwaVJyVG1idWFqMU1VN3NBV0twZEFLanh4d3RndDVTUlFJOGNSZ240NC1WUzRCMzJscE91dw?oc=5\" target=\"_blank\">Among this year's top ten gainers in the S&amp;P 500, three are from the optical communication sector.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bitget</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.bitget.com&sz=64"
     },
     {
-      "title": "S&P 500 Recovers 3.6% After White House Tariff Shock While XRP Holds at $1.35 and Crypto Diverges - openPR.com",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNWEdkLUxvN3NrOWN5QWd3VkVCZm5JQnFvM1V6clRYMGN2X05LUnpIMWU3cG5UUjhvcjRLeTR5dUpiN2lveDFYcGhkeEJnc0JiTWpNZ3U3dkUwSDQ2MktRQ1BWcG9zY1hIUTZKQy1KVnlyOWdBWFp0dWpkN09fZnk1U01Ja3ZIN1lPWVlyNjlkbXFsMnZPVVQ3MFBqWWY4UQ?oc=5",
-      "publisher": "openPR.com",
-      "published": "Sun, 12 Apr 2026 07:15:23 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxNWEdkLUxvN3NrOWN5QWd3VkVCZm5JQnFvM1V6clRYMGN2X05LUnpIMWU3cG5UUjhvcjRLeTR5dUpiN2lveDFYcGhkeEJnc0JiTWpNZ3U3dkUwSDQ2MktRQ1BWcG9zY1hIUTZKQy1KVnlyOWdBWFp0dWpkN09fZnk1U01Ja3ZIN1lPWVlyNjlkbXFsMnZPVVQ3MFBqWWY4UQ?oc=5\" target=\"_blank\">S&amp;P 500 Recovers 3.6% After White House Tariff Shock While XRP Holds at $1.35 and Crypto Diverges</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">openPR.com</font>",
+      "title": "Prediction: AI Infrastructure Stocks Will Crush the S&P 500 in 2026 - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUnBLMmVKMzNsRi1wRDJEUU5rLTFtRGk4LUNtSWkyYm8yT2FiTDhxQ1V5VHZJd0VDblgyTlZRWWVFWFgtTmh0bGlaRG52dzdBenJHT2JsVjUxcm5KT2pCZ19iT25iZnRremdkbl83bjFiY0I1R0dPWTc2YjdmSl94TWluNmNuNlo3UkRNV1Vn?oc=5",
+      "publisher": "AOL.com",
+      "published": "Sun, 17 May 2026 23:26:39 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxPUnBLMmVKMzNsRi1wRDJEUU5rLTFtRGk4LUNtSWkyYm8yT2FiTDhxQ1V5VHZJd0VDblgyTlZRWWVFWFgtTmh0bGlaRG52dzdBenJHT2JsVjUxcm5KT2pCZ19iT25iZnRremdkbl83bjFiY0I1R0dPWTc2YjdmSl94TWluNmNuNlo3UkRNV1Vn?oc=5\" target=\"_blank\">Prediction: AI Infrastructure Stocks Will Crush the S&amp;P 500 in 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.aol.com&sz=64"
     },
     {
-      "title": "Oracle (NYSE:ORCL) Gains in S&P 500 on Cloud, AI Push - Kalkine Media",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTGl1T0VUNjNMWnhYZkIyS3RzUklMWkdMYlNHXzNWZTg3Q1JKMkZxN09Bem5WVEY0YU1zYzhRcHdJYnRYRlNzNzFRV0tWWXctUjI5RDhIaVJJZ3lreGtwNFo0eDZ6ZVZGU0Nvc1huMVFiN1BFalYzQnlIU1BUMzhfcEhjeDlVeTRyVzJKWV9IUGcwWFpwWHllVF93?oc=5",
-      "publisher": "Kalkine Media",
-      "published": "Sun, 12 Apr 2026 09:02:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxOTGl1T0VUNjNMWnhYZkIyS3RzUklMWkdMYlNHXzNWZTg3Q1JKMkZxN09Bem5WVEY0YU1zYzhRcHdJYnRYRlNzNzFRV0tWWXctUjI5RDhIaVJJZ3lreGtwNFo0eDZ6ZVZGU0Nvc1huMVFiN1BFalYzQnlIU1BUMzhfcEhjeDlVeTRyVzJKWV9IUGcwWFpwWHllVF93?oc=5\" target=\"_blank\">Oracle (NYSE:ORCL) Gains in S&amp;P 500 on Cloud, AI Push</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Kalkine Media</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "S&P 500 Holds Steady in Narrow Rising Trend Ahead of Q1 2026 Earnings Season - AD HOC NEWS",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQVmc4dnhzeUhybFN6S2tLQjVKODFJa2RmUWIyTGhtbGI2V09IRDktSW1OR0JrXzFYRjV3N01GZU9MZ2pfSHNDbmVMaHd5aUdPaHN1T2JEUnpKVlNOMHFlZWJVMnp2VEFnYWhGaGYwc3ZTT0ZuaFViQ1FWY3pMMmVtZ01FS1dCZnBxVk9sXzIxRzBvaVVYV29fNWw5NmVpSjhzaUlFQWw3OVc3Q0NQXy1UNVFZaEljV3FQWF9mZ0J5OVViQzJJQ1ZhbjZ6d2c?oc=5",
-      "publisher": "AD HOC NEWS",
-      "published": "Sun, 12 Apr 2026 08:20:51 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxQVmc4dnhzeUhybFN6S2tLQjVKODFJa2RmUWIyTGhtbGI2V09IRDktSW1OR0JrXzFYRjV3N01GZU9MZ2pfSHNDbmVMaHd5aUdPaHN1T2JEUnpKVlNOMHFlZWJVMnp2VEFnYWhGaGYwc3ZTT0ZuaFViQ1FWY3pMMmVtZ01FS1dCZnBxVk9sXzIxRzBvaVVYV29fNWw5NmVpSjhzaUlFQWw3OVc3Q0NQXy1UNVFZaEljV3FQWF9mZ0J5OVViQzJJQ1ZhbjZ6d2c?oc=5\" target=\"_blank\">S&amp;P 500 Holds Steady in Narrow Rising Trend Ahead of Q1 2026 Earnings Season</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AD HOC NEWS</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "ODTE Stock Price, News & Analysis - Stock Titan",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1CMm9zaFdXdUJhNXR5SjVuSklQanJkTmtSWG5IcWN3RVRnM1lJUDNXWVJsdzNrM0pKNnhMQ29vbUtVbzBTakRQa1BIUF9JOUZiakZB?oc=5",
-      "publisher": "Stock Titan",
-      "published": "Sat, 11 Apr 2026 22:56:40 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE1CMm9zaFdXdUJhNXR5SjVuSklQanJkTmtSWG5IcWN3RVRnM1lJUDNXWVJsdzNrM0pKNnhMQ29vbUtVbzBTakRQa1BIUF9JOUZiakZB?oc=5\" target=\"_blank\">ODTE Stock Price, News & Analysis</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Stock Titan</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "S&P 500 Holds Steady in Narrow Rising Trend Ahead of Q1 2026 Earnings Season - AD HOC NEWS",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYkYyNG92Rm5PQ3o4UER4UGxHUkMwMWJ2aXdHUjBDQjJQQlRqcXdyb1BTZ1ZoNVI5bGp1Vk41M08zdXZnZUp4S1J6S1pYNEd3MFRQYmM1Y3h4bDNqUUdNSmtBVnZ4M0JVdWJhOVpFWVNUX25xcEtWVlN2ajdsZGpOWlR3UVQ3RmtNREpjQTZXV3NPdGJLaEJLRng3RlFEYWdUNTdJSXFoTTQteEJHcG5IbG5aVEpCSURnRWFvQjNBVkU2a1Rtcm1TX0R5b2c?oc=5",
-      "publisher": "AD HOC NEWS",
-      "published": "Sun, 12 Apr 2026 09:43:29 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxQYkYyNG92Rm5PQ3o4UER4UGxHUkMwMWJ2aXdHUjBDQjJQQlRqcXdyb1BTZ1ZoNVI5bGp1Vk41M08zdXZnZUp4S1J6S1pYNEd3MFRQYmM1Y3h4bDNqUUdNSmtBVnZ4M0JVdWJhOVpFWVNUX25xcEtWVlN2ajdsZGpOWlR3UVQ3RmtNREpjQTZXV3NPdGJLaEJLRng3RlFEYWdUNTdJSXFoTTQteEJHcG5IbG5aVEpCSURnRWFvQjNBVkU2a1Rtcm1TX0R5b2c?oc=5\" target=\"_blank\">S&amp;P 500 Holds Steady in Narrow Rising Trend Ahead of Q1 2026 Earnings Season</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AD HOC NEWS</font>",
-      "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
-      },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
-    },
-    {
-      "title": "Earnings scoreboard: 100% of S&P 500 earnings reports beat expectations and deliver Y/Y growth this week - MSN",
-      "link": "https://news.google.com/rss/articles/CBMipgNBVV95cUxQWkxxREh5dHlnQWVEbXdTYUZ0NTdOcnRlRnpVcGxsT1FfakxJNXpFaGpxQzdoNEl1b1FGMExwMjJ6TTMzeDd4SDR5TmtfY1g3YmhXLWVkMGdXVFhZVWYxM3hhcThNR1ZydHR4cGZPMWlYWmVMR1ZKZzJZankzQmpoeU1jYWhjZzFIakxQcVlDdDVkWGg3QnExbmJCWDdubFhPUXlGaVg4ZmtLaXNUd3hVQTdCVWlQcnN5ZUR2cUNBV3BuSnoxbWRkcG5wV05hMnJkRExGQ1lYbkpBUkRoOUpFODdENVpFNFJNSnljV01zMHBvUWRlSmZSY21laG9pRGFySktJM0dIVzNlNTVjNVY2WjZlNHlqSkZRSDBSS0lXMVlwcTBNcFdQYk5wTGZVeVpqMkJ5NnJjS0RraXF6dWJ3aDVBdnEyNUxCY05BalF4TzVrWkZ2UmMwTkRpMk5EYUNEMHo4RnBrOFlBcjluSUpyLWxYSkU5WDZCbVBvRzFfaXgyVXBrY3FsY0wyVEJ4bUczTERUdFc0c21GcUt5c3dQVThKQ1NCdw?oc=5",
+      "title": "AI chip rally fuels S&P 500 highs as warnings grow - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTnRDTTZ1UXFFcThnVUJ2NmVieDZiQ3UwWFdDd3lYbFRCSlUzWnNUbS1mTmt4N1V5NWZqMVJBakNXVng1anBFYXlZTUN6ZEFILXlKSGlkekx4YWUyLUp1czh3YmlLejJtZ1BZazZ2eDF4YzN0SEF5ZUdnZVVCTVIwbHVvd254SmF2THVQVlV2a3ZUajhrLWdSdmR1N1VBZUlDaTBfWGR0VkowbFU3MDlTVjdIWE5ocE93bDlpR0tFaFV5d201UlBaRnlB?oc=5",
       "publisher": "MSN",
-      "published": "Sat, 11 Apr 2026 19:28:10 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgNBVV95cUxQWkxxREh5dHlnQWVEbXdTYUZ0NTdOcnRlRnpVcGxsT1FfakxJNXpFaGpxQzdoNEl1b1FGMExwMjJ6TTMzeDd4SDR5TmtfY1g3YmhXLWVkMGdXVFhZVWYxM3hhcThNR1ZydHR4cGZPMWlYWmVMR1ZKZzJZankzQmpoeU1jYWhjZzFIakxQcVlDdDVkWGg3QnExbmJCWDdubFhPUXlGaVg4ZmtLaXNUd3hVQTdCVWlQcnN5ZUR2cUNBV3BuSnoxbWRkcG5wV05hMnJkRExGQ1lYbkpBUkRoOUpFODdENVpFNFJNSnljV01zMHBvUWRlSmZSY21laG9pRGFySktJM0dIVzNlNTVjNVY2WjZlNHlqSkZRSDBSS0lXMVlwcTBNcFdQYk5wTGZVeVpqMkJ5NnJjS0RraXF6dWJ3aDVBdnEyNUxCY05BalF4TzVrWkZ2UmMwTkRpMk5EYUNEMHo4RnBrOFlBcjluSUpyLWxYSkU5WDZCbVBvRzFfaXgyVXBrY3FsY0wyVEJ4bUczTERUdFc0c21GcUt5c3dQVThKQ1NCdw?oc=5\" target=\"_blank\">Earnings scoreboard: 100% of S&amp;P 500 earnings reports beat expectations and deliver Y/Y growth this week</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "published": "Mon, 18 May 2026 01:12:18 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiygFBVV95cUxQTnRDTTZ1UXFFcThnVUJ2NmVieDZiQ3UwWFdDd3lYbFRCSlUzWnNUbS1mTmt4N1V5NWZqMVJBakNXVng1anBFYXlZTUN6ZEFILXlKSGlkekx4YWUyLUp1czh3YmlLejJtZ1BZazZ2eDF4YzN0SEF5ZUdnZVVCTVIwbHVvd254SmF2THVQVlV2a3ZUajhrLWdSdmR1N1VBZUlDaTBfWGR0VkowbFU3MDlTVjdIWE5ocE93bDlpR0tFaFV5d201UlBaRnlB?oc=5\" target=\"_blank\">AI chip rally fuels S&amp;P 500 highs as warnings grow</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
     },
     {
-      "title": "Get ready for a once-in-a-lifetime S&P 500 buying opportunity - The Motley Fool UK",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdnRKeUx6MF9BNjBDNGp2VG02VHEwX0ZyS3VMdTh1b2NVU3dTR2VQZXJHZVhnOEZfakdEeVdNbFktRGlMTk56ZjZEZGpjYmtsMzRNZGRNeU9yQUdwTlF2UU80ZmhnWV9IcGFzRWNvb1JlUlpQVEZUV0lNMUNLZnB5anJON1NKTlVNUG5MVEtlaUhMdk5nYS1DWS15aw?oc=5",
-      "publisher": "The Motley Fool UK",
-      "published": "Sun, 12 Apr 2026 07:16:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxPdnRKeUx6MF9BNjBDNGp2VG02VHEwX0ZyS3VMdTh1b2NVU3dTR2VQZXJHZVhnOEZfakdEeVdNbFktRGlMTk56ZjZEZGpjYmtsMzRNZGRNeU9yQUdwTlF2UU80ZmhnWV9IcGFzRWNvb1JlUlpQVEZUV0lNMUNLZnB5anJON1NKTlVNUG5MVEtlaUhMdk5nYS1DWS15aw?oc=5\" target=\"_blank\">Get ready for a once-in-a-lifetime S&amp;P 500 buying opportunity</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Motley Fool UK</font>",
+      "title": "Stock Open Clouded by Inflation Alarm From Bonds: Markets Wrap - Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMVpBdWJ0d19fOE93RUxtc1I4eTgxVnFYU0Jza1U3Yl9oQkIwWmppaW1sTjFvWHBDeXZDWUwxaVQ3anZqMGQ4eEF6ZnJ0c3pZYkFRM2doUWpBMVBuOXduUjBKNldoOHR1b1pENU1jZG1LWmtxdlAyRFBEdjZ2UFRWdTgzRGNKZENRZ01aYURpVHNIX2xvcnAwczdvdzVtV0VYTi0wV3YyMWxiTFh3cTBNYVF3?oc=5",
+      "publisher": "Bloomberg.com",
+      "published": "Sun, 17 May 2026 20:57:22 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNMVpBdWJ0d19fOE93RUxtc1I4eTgxVnFYU0Jza1U3Yl9oQkIwWmppaW1sTjFvWHBDeXZDWUwxaVQ3anZqMGQ4eEF6ZnJ0c3pZYkFRM2doUWpBMVBuOXduUjBKNldoOHR1b1pENU1jZG1LWmtxdlAyRFBEdjZ2UFRWdTgzRGNKZENRZ01aYURpVHNIX2xvcnAwczdvdzVtV0VYTi0wV3YyMWxiTFh3cTBNYVF3?oc=5\" target=\"_blank\">Stock Open Clouded by Inflation Alarm From Bonds: Markets Wrap</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bloomberg.com</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.bloomberg.com&sz=64"
     },
     {
-      "title": "The Vanguard ETF That Could Set You Up for Life if You Buy It in April - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE96MnB1RWVydUEzU2s1ck4tMWJnRjQ4SFBJMXlmbkV1MjhUSGxjcWtyVDNFMDlCNjdSWVk5a3NuNnpSZUxWLU9NWm43amx0aTRuUW84NUxNYlMwSlREdmZlSXpWUDlFNDV4T1o3Y2plT3pxNXN0NUJNai1LZw?oc=5",
+      "title": "Akamai stock leads S&P 500 today as AI deal overshadows earnings. It could be with Anthropic - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPOVFRNVZDdTZZTENNMzJnUGcwWnNidndTWGx2U1hleWJpOHZ4SVl2elg4UWkwWjJfbWVYT1J6aW1wcWhsOUZDTFV1dEV2RllhUE5mYTBrUnF6eXJTeWRGSEZGUWw0Um5LaVZlb09pU2hldnN1T2dqbUdHUmxIR25IVHkwOHJsZ1d0VmxxbXpOb0g3SnFNR01ZZjk1eFlacl92XzY3YmttZU9DN1FLUExxRDRmNnBPRTVhMEMta3FlR25odnA5UHRlbTZUaGQyejhabFN4dGc4Nk94bmR4bXc?oc=5",
+      "publisher": "MSN",
+      "published": "Mon, 18 May 2026 02:33:04 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3gFBVV95cUxPOVFRNVZDdTZZTENNMzJnUGcwWnNidndTWGx2U1hleWJpOHZ4SVl2elg4UWkwWjJfbWVYT1J6aW1wcWhsOUZDTFV1dEV2RllhUE5mYTBrUnF6eXJTeWRGSEZGUWw0Um5LaVZlb09pU2hldnN1T2dqbUdHUmxIR25IVHkwOHJsZ1d0VmxxbXpOb0g3SnFNR01ZZjk1eFlacl92XzY3YmttZU9DN1FLUExxRDRmNnBPRTVhMEMta3FlR25odnA5UHRlbTZUaGQyejhabFN4dGc4Nk94bmR4bXc?oc=5\" target=\"_blank\">Akamai stock leads S&amp;P 500 today as AI deal overshadows earnings. It could be with Anthropic</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Volatile Chipmaker Stocks Emerge as Key Driver of S&P 500 Rally - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPOGxLdHBFcmhtRmRsaGNheTFtOXBzMkw5TmtpR0xNMjlEVTNzLW1tZEd0YTd4NklRajlIQXEwN1pWR0lkUzRlOU9aZmJicUVNR25tOE9xN1dacUJXbV9rZnBoS0J1b2lzb3Z6QjhjYXNncFhnZlVxcE13U3BNN0FMSGpGSkVKd2lmR0NXT1VMT25JTWRKWWFoUkt4eHhWR1R6eWZV?oc=5",
+      "publisher": "Yahoo Finance",
+      "published": "Sun, 17 May 2026 13:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiowFBVV95cUxPOGxLdHBFcmhtRmRsaGNheTFtOXBzMkw5TmtpR0xNMjlEVTNzLW1tZEd0YTd4NklRajlIQXEwN1pWR0lkUzRlOU9aZmJicUVNR25tOE9xN1dacUJXbV9rZnBoS0J1b2lzb3Z6QjhjYXNncFhnZlVxcE13U3BNN0FMSGpGSkVKd2lmR0NXT1VMT25JTWRKWWFoUkt4eHhWR1R6eWZV?oc=5\" target=\"_blank\">Volatile Chipmaker Stocks Emerge as Key Driver of S&amp;P 500 Rally</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=finance.yahoo.com&sz=64"
+    },
+    {
+      "title": "Goldman Sachs Highlights Earnings Momentum Behind S&P 500 Rally - Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQcG9YSjU2RzlMVEc1d0UzdndEQUdVOTdlT01wMks5eWtQLXBfTXVvM3kyR1JnMUY4WlpsT1lIVHFoOXB2bWtkYmZSVlQzS0tsRjFpZEVrNExQX3FmaDRpbmJyQTk5d1VKVWFINEtnOEtmc1RkZXRmd1Q1eWhXSUcyTzRUclZJTGt4Y1lKazhRRVo0VlVqaGc?oc=5",
+      "publisher": "Yahoo Finance UK",
+      "published": "Sun, 17 May 2026 11:59:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilgFBVV95cUxQcG9YSjU2RzlMVEc1d0UzdndEQUdVOTdlT01wMks5eWtQLXBfTXVvM3kyR1JnMUY4WlpsT1lIVHFoOXB2bWtkYmZSVlQzS0tsRjFpZEVrNExQX3FmaDRpbmJyQTk5d1VKVWFINEtnOEtmc1RkZXRmd1Q1eWhXSUcyTzRUclZJTGt4Y1lKazhRRVo0VlVqaGc?oc=5\" target=\"_blank\">Goldman Sachs Highlights Earnings Momentum Behind S&amp;P 500 Rally</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance UK</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=uk.finance.yahoo.com&sz=64"
+    },
+    {
+      "title": "10 Fastest Growing S&P 500 Stocks to Buy Now - Insider Monkey",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZTZhbVNlRHMxblp0d2pUci1Dc2F4ZWNRVDFscV90ZUNxQUhiSnIxQjJJMDhoY200SlY4SFFIQzN1Sl9IWFBEYVl3Uy1SVWE0OV9KWENyejNLNDBBVC1TTk9pUlJtRzRKSW5FeEN2QmdZdVpKa0UtXzlHUDJNY0xjNUpITkxxMW1pYUF5akJUNk7SAZgBQVVfeXFMTkVQTWtqYzA2d1JUOFQ5Y1BybUZLLWxBTHBqVWFpMXpISkNzQzVXc3BoaFhlTVY3YVJ2clp0R0pTVGhPYlZyMkJWVEZuNXp4TnFWSngzampBUzlZeTlDX1ZTdkhDazVqaHlMZkktS1lTeTBEY3BPU2ltWXpLRmN4dTFOMW9hclo0Sml5czZjZHluUFowdnV4TFI?oc=5",
+      "publisher": "Insider Monkey",
+      "published": "Sun, 17 May 2026 22:41:57 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxOZTZhbVNlRHMxblp0d2pUci1Dc2F4ZWNRVDFscV90ZUNxQUhiSnIxQjJJMDhoY200SlY4SFFIQzN1Sl9IWFBEYVl3Uy1SVWE0OV9KWENyejNLNDBBVC1TTk9pUlJtRzRKSW5FeEN2QmdZdVpKa0UtXzlHUDJNY0xjNUpITkxxMW1pYUF5akJUNk7SAZgBQVVfeXFMTkVQTWtqYzA2d1JUOFQ5Y1BybUZLLWxBTHBqVWFpMXpISkNzQzVXc3BoaFhlTVY3YVJ2clp0R0pTVGhPYlZyMkJWVEZuNXp4TnFWSngzampBUzlZeTlDX1ZTdkhDazVqaHlMZkktS1lTeTBEY3BPU2ltWXpLRmN4dTFOMW9hclo0Sml5czZjZHluUFowdnV4TFI?oc=5\" target=\"_blank\">10 Fastest Growing S&amp;P 500 Stocks to Buy Now</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Insider Monkey</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.insidermonkey.com&sz=64"
+    },
+    {
+      "title": "Regeneron Stock Underperforms S&P 500 as Revenue Growth Slows | 2026 Analysis - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUjRjSzRQYlFUaTRnbUJEUlNTOWh3aTByNldMRDZzX3l3aFRwLXBEVXNCc0Y3azJCZUZkeE1fYWVQck5ZUDg5cFhoMDV3MENiNzR0TnU0MU5aanM5a0I0QW9CUWRrUmhTRVFQNVZueXltYnVsQ0RyU0kyRnQtczBMNGwxTnB4ZktqTlVsR0xDX3FMeG5yRE5RbVNORVlyOGM?oc=5",
+      "publisher": "IndexBox",
+      "published": "Mon, 18 May 2026 01:41:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxOUjRjSzRQYlFUaTRnbUJEUlNTOWh3aTByNldMRDZzX3l3aFRwLXBEVXNCc0Y3azJCZUZkeE1fYWVQck5ZUDg5cFhoMDV3MENiNzR0TnU0MU5aanM5a0I0QW9CUWRrUmhTRVFQNVZueXltYnVsQ0RyU0kyRnQtczBMNGwxTnB4ZktqTlVsR0xDX3FMeG5yRE5RbVNORVlyOGM?oc=5\" target=\"_blank\">Regeneron Stock Underperforms S&amp;P 500 as Revenue Growth Slows | 2026 Analysis - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "These were the best and worst S&P 500 stocks in April - MSN",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQX2J0TWNwa3pvWVE2bGpCOEg4YXhJU2REZFpvdkgyeGw2VFZ2bHBWZjUtQWZ5WFgxckhJb1NDTnlkakZFQjZ5LUFiYmZzMl92YllQNkZDWmpWblZaSXc5dlA5Nk9WeXQ0OUVrUXcyWW5yREhsN0kxb0l1QnhGX2NlTC1ENjdPd0pXS1AyRndja0tQd3p6YlJQNEJ3bmlVWlJrbEFYdHhB?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 21:21:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipgFBVV95cUxQX2J0TWNwa3pvWVE2bGpCOEg4YXhJU2REZFpvdkgyeGw2VFZ2bHBWZjUtQWZ5WFgxckhJb1NDTnlkakZFQjZ5LUFiYmZzMl92YllQNkZDWmpWblZaSXc5dlA5Nk9WeXQ0OUVrUXcyWW5yREhsN0kxb0l1QnhGX2NlTC1ENjdPd0pXS1AyRndja0tQd3p6YlJQNEJ3bmlVWlJrbEFYdHhB?oc=5\" target=\"_blank\">These were the best and worst S&amp;P 500 stocks in April</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "NASDAQ, S&P 500 futures take a breather after record rally: Why NVDA, MU, CBRS, FIG, GEMI, ONDS, ASTS are in focus - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWkVSRmFNeUJwTjdmSC1pZ1NXak5LZmgwci1KQjJIM0Z5RG04Q3lLSVMzanpTTnBQcFRLMlU3VGxOSDR3QWZmUktpSjZOUmlCX1FwQk9fOEtjdjlEa0w2OWxOOFl3cE9OenhUZzgyNThzdXZNdjVOMFZMdzhWbFlqblI5TWU0bzRYNW5QOFlsczFVeHhTQkF1YzhTMVhzUEV5UVRCTUFUXzBZNHdpYjRyZG9DVkRWVkRtNEk3bmtGYkt3ellUaHlqZFRrZWFPY0d0WjdsaWoxTFhkc3MwSjZVS0kwOS1Pb2dBbUpiT280TQ?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 23:41:59 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWkVSRmFNeUJwTjdmSC1pZ1NXak5LZmgwci1KQjJIM0Z5RG04Q3lLSVMzanpTTnBQcFRLMlU3VGxOSDR3QWZmUktpSjZOUmlCX1FwQk9fOEtjdjlEa0w2OWxOOFl3cE9OenhUZzgyNThzdXZNdjVOMFZMdzhWbFlqblI5TWU0bzRYNW5QOFlsczFVeHhTQkF1YzhTMVhzUEV5UVRCTUFUXzBZNHdpYjRyZG9DVkRWVkRtNEk3bmtGYkt3ellUaHlqZFRrZWFPY0d0WjdsaWoxTFhkc3MwSjZVS0kwOS1Pb2dBbUpiT280TQ?oc=5\" target=\"_blank\">NASDAQ, S&amp;P 500 futures take a breather after record rally: Why NVDA, MU, CBRS, FIG, GEMI, ONDS, ASTS are in focus</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Nvidia boosts S&P 500 earnings growth with strong AI sales - Crypto Briefing",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9zUlBVTkJJMENLM01EODAzcEFtSEYwN0c2NG4weGcxNlA4UFF1TlNvWjQ4ZVdxVnVqV0xPaTdFeGwzQzhWUGlXcDVNbjdKdExqc0N1eXdiMWUyZXA1TXZCZHZvdkVrcEhOaEE?oc=5",
+      "publisher": "Crypto Briefing",
+      "published": "Sun, 17 May 2026 14:38:43 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiakFVX3lxTE9zUlBVTkJJMENLM01EODAzcEFtSEYwN0c2NG4weGcxNlA4UFF1TlNvWjQ4ZVdxVnVqV0xPaTdFeGwzQzhWUGlXcDVNbjdKdExqc0N1eXdiMWUyZXA1TXZCZHZvdkVrcEhOaEE?oc=5\" target=\"_blank\">Nvidia boosts S&amp;P 500 earnings growth with strong AI sales</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Crypto Briefing</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=cryptobriefing.com&sz=64"
+    },
+    {
+      "title": "5 Fastest Growing S&P 500 Stocks to Buy Now - Insider Monkey",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSzdiRTZqaV96aGRoRnJ3Sm1jZjZ1aDVYc1B0VkxQTkdxR3g4c0Q4RlRyYWlVakhaZzdkVF9Id2p1a0h6RXZPeDlSOVY3dWRscER5MnJWTmNySGxFMmJCdjNmd0x1dGJKSk8wcWgzM2ZWWG1lRDhsV2xWQ3RoT0xZQk9PVXZYNmxNTjRJdVZ3WdIBlwFBVV95cUxNcE9jVkgyQ2lsa19qbEJ2SmI3UHBfY2ZLbjdBV29DazB4OUY4SDdZbTF2OVRGYlNZTWc1Qk1xeDhzNER6TGhHQ0p0THdfbzVidTNoRmRZblI4OVowM08yVjY3SnRVMFVGRWRhZXlwcVpKdlFlZGtsVjlrMXhzU3FqTWRhek5ra3BBYXF6RWtyM1dpN01yZGFV?oc=5",
+      "publisher": "Insider Monkey",
+      "published": "Sun, 17 May 2026 22:11:57 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxOSzdiRTZqaV96aGRoRnJ3Sm1jZjZ1aDVYc1B0VkxQTkdxR3g4c0Q4RlRyYWlVakhaZzdkVF9Id2p1a0h6RXZPeDlSOVY3dWRscER5MnJWTmNySGxFMmJCdjNmd0x1dGJKSk8wcWgzM2ZWWG1lRDhsV2xWQ3RoT0xZQk9PVXZYNmxNTjRJdVZ3WdIBlwFBVV95cUxNcE9jVkgyQ2lsa19qbEJ2SmI3UHBfY2ZLbjdBV29DazB4OUY4SDdZbTF2OVRGYlNZTWc1Qk1xeDhzNER6TGhHQ0p0THdfbzVidTNoRmRZblI4OVowM08yVjY3SnRVMFVGRWRhZXlwcVpKdlFlZGtsVjlrMXhzU3FqTWRhek5ra3BBYXF6RWtyM1dpN01yZGFV?oc=5\" target=\"_blank\">5 Fastest Growing S&amp;P 500 Stocks to Buy Now</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Insider Monkey</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.insidermonkey.com&sz=64"
+    },
+    {
+      "title": "QQQ ETF vs S&P 500: Should You Choose Tech or a Broad-Market Fund? - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVWlsdVlLU1ItdzlrQkNFOGxQR0VMVlpwVzN5aEVkLUg0Y1pNZU4ycnQ2QWE0TmFPeUlnUHM0Si1NUkNTUVE5T2F6c3gyaGFyamVMNV9tRGt0OFNIWjVCRlR2dVlXS0Z5YXF3aFFFQUswRVNaU0ZwTXNveGhnQnZXVEFlX0tGdDVnajhWZnVodw?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 18:52:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxPVWlsdVlLU1ItdzlrQkNFOGxQR0VMVlpwVzN5aEVkLUg0Y1pNZU4ycnQ2QWE0TmFPeUlnUHM0Si1NUkNTUVE5T2F6c3gyaGFyamVMNV9tRGt0OFNIWjVCRlR2dVlXS0Z5YXF3aFFFQUswRVNaU0ZwTXNveGhnQnZXVEFlX0tGdDVnajhWZnVodw?oc=5\" target=\"_blank\">QQQ ETF vs S&amp;P 500: Should You Choose Tech or a Broad-Market Fund? - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "The key to the S&P 500's rise or fall lies in semiconductor stocks, with Wall Street fiercely debating whether the rally can 'break through the cycle' and continue. - 富途牛牛",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1TM3JLSklscGE3VnVuYnJRSU9fX3NPVVJrT1NFMkMxUGExb0d1QU81Q3YtZ2Z1VlU3SVc1NzB2NmFVVFNzSzEzOFZNU2UtUUoycVhhWTNWZ0M5U2dMeWpzMDJuN014VUpONHBaczBXRHFZVG1nbWlvVURoWnhjQQ?oc=5",
+      "publisher": "富途牛牛",
+      "published": "Mon, 18 May 2026 00:10:06 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMifkFVX3lxTE1TM3JLSklscGE3VnVuYnJRSU9fX3NPVVJrT1NFMkMxUGExb0d1QU81Q3YtZ2Z1VlU3SVc1NzB2NmFVVFNzSzEzOFZNU2UtUUoycVhhWTNWZ0M5U2dMeWpzMDJuN014VUpONHBaczBXRHFZVG1nbWlvVURoWnhjQQ?oc=5\" target=\"_blank\">The key to the S&amp;P 500's rise or fall lies in semiconductor stocks, with Wall Street fiercely debating whether the rally can 'break through the cycle' and continue.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">富途牛牛</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=news.futunn.com&sz=64"
+    },
+    {
+      "title": "S&P 500, Dow and Nasdaq drop as inflation angst spurs rate hike fears — TSLA, SBUX, POET, MSFT, NVDA in focus - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiwgNBVV95cUxPdFdXaVJVVzVHLXR6d1l0dFJEd0l2cVp0YWVOVHdMUjMwc0xkcWxFMG1FM0xPemVaZmN6NDVaTVNqeklQRkU1RklHNEE4M1lGSzFfVHZYNk14NUpYWkZGU2R0S0FYUF9XMzBoYno2alFpa0FtZnp6Y244MkxHY2ZCYk8wX0ljcjcwNTNETjlGSC1NVTZCd0RKUWQwUm5UYVZNMWFfNDNtbndrUGotY25fRXMzT1lMWmtOOFB6d2tpSy0tSFlvbEFMZUY1ZHIwd2twdmdEOGNad0NnZzNjWi1BZkktS05YcmxMR0tlTDdxZ1BfaFZnRTZjQ2hodTZIekFtSDJ6aC1Qdlk5LWcyZjRKbGM0RDdrSkpvZDFhUU9uRUVtU1NFNkk1Xzk5REl0Mm44MjNweS1FdW1xdm1jVVFLSE5YcFk4aW95Si1UWHRyaF91VjJQNWVfWlJ6dWY0dmRFNlBnRHpDRkFNQm9RWEtRMjd6VkN1NHRsYXN5U0NwWElUVDgwMnNJanF5SmFQdDZ1MktoTElDSUpNYnRKRkRCdmlVX3pPVGg4WTE1VmEzVDV4UGdSOHJlWU9PcUFsWlRKWWc?oc=5",
+      "publisher": "MSN",
+      "published": "Mon, 18 May 2026 01:18:39 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgNBVV95cUxPdFdXaVJVVzVHLXR6d1l0dFJEd0l2cVp0YWVOVHdMUjMwc0xkcWxFMG1FM0xPemVaZmN6NDVaTVNqeklQRkU1RklHNEE4M1lGSzFfVHZYNk14NUpYWkZGU2R0S0FYUF9XMzBoYno2alFpa0FtZnp6Y244MkxHY2ZCYk8wX0ljcjcwNTNETjlGSC1NVTZCd0RKUWQwUm5UYVZNMWFfNDNtbndrUGotY25fRXMzT1lMWmtOOFB6d2tpSy0tSFlvbEFMZUY1ZHIwd2twdmdEOGNad0NnZzNjWi1BZkktS05YcmxMR0tlTDdxZ1BfaFZnRTZjQ2hodTZIekFtSDJ6aC1Qdlk5LWcyZjRKbGM0RDdrSkpvZDFhUU9uRUVtU1NFNkk1Xzk5REl0Mm44MjNweS1FdW1xdm1jVVFLSE5YcFk4aW95Si1UWHRyaF91VjJQNWVfWlJ6dWY0dmRFNlBnRHpDRkFNQm9RWEtRMjd6VkN1NHRsYXN5U0NwWElUVDgwMnNJanF5SmFQdDZ1MktoTElDSUpNYnRKRkRCdmlVX3pPVGg4WTE1VmEzVDV4UGdSOHJlWU9PcUFsWlRKWWc?oc=5\" target=\"_blank\">S&amp;P 500, Dow and Nasdaq drop as inflation angst spurs rate hike fears — TSLA, SBUX, POET, MSFT, NVDA in focus</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Goldman Sachs Says Strong Q1 Earnings Momentum Is Supporting Fresh S&P 500 Highs - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUTVMVkhzZ2pEVkZtaXBxcjdVVzlGM0VUbHB3cTNiYWZWbDc2MWxiNUY4ZW43WWtyblB2TGtRdzhRYXg4OFJMWThuUVlXd0NzemZTa1VRQ1RXLU9QOXpiNkZLX2R1WW9wQ0NJem1ISmwxR1ZmbjlfT2VERkFLWDJEZ0dYNV9pbFI1RTRFWE5nUHNqemxUTFI1Xw?oc=5",
+      "publisher": "Yahoo Finance",
+      "published": "Sun, 17 May 2026 11:59:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxPUTVMVkhzZ2pEVkZtaXBxcjdVVzlGM0VUbHB3cTNiYWZWbDc2MWxiNUY4ZW43WWtyblB2TGtRdzhRYXg4OFJMWThuUVlXd0NzemZTa1VRQ1RXLU9QOXpiNkZLX2R1WW9wQ0NJem1ISmwxR1ZmbjlfT2VERkFLWDJEZ0dYNV9pbFI1RTRFWE5nUHNqemxUTFI1Xw?oc=5\" target=\"_blank\">Goldman Sachs Says Strong Q1 Earnings Momentum Is Supporting Fresh S&amp;P 500 Highs</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=finance.yahoo.com&sz=64"
+    },
+    {
+      "title": "Dow Jones Futures Due With Treasury Yields, Oil Prices In Focus; Nvidia Earnings Ahead - Investor's Business Daily",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZElmSWgyLUlpRU5nRklES1BBS3hSVXBDU0JJQTlabVJGdDF0R0VHNVJURGw3S0NuaDBWWWhzNGw5Z0dKZ2NOTmNMZlpwUEwyX3V6NUo2VkpRcDQ2SENrMTNiZ1BIZW41TGlnVFpJSHBXY0tZMHhPeEJMcWR2Y2NnYWhSeHM4ZE9zaXJVUTZPbjZPYnlnNjQyQ3JORXFzbktXR0Z3b2w2Z3lRTW16clhiTU1oUQ?oc=5",
+      "publisher": "Investor's Business Daily",
+      "published": "Sun, 17 May 2026 18:16:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxPZElmSWgyLUlpRU5nRklES1BBS3hSVXBDU0JJQTlabVJGdDF0R0VHNVJURGw3S0NuaDBWWWhzNGw5Z0dKZ2NOTmNMZlpwUEwyX3V6NUo2VkpRcDQ2SENrMTNiZ1BIZW41TGlnVFpJSHBXY0tZMHhPeEJMcWR2Y2NnYWhSeHM4ZE9zaXJVUTZPbjZPYnlnNjQyQ3JORXFzbktXR0Z3b2w2Z3lRTW16clhiTU1oUQ?oc=5\" target=\"_blank\">Dow Jones Futures Due With Treasury Yields, Oil Prices In Focus; Nvidia Earnings Ahead</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Investor's Business Daily</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.investors.com&sz=64"
+    },
+    {
+      "title": "Billionaire Bill Miller Beat the S&P 500 for 15 Consecutive Years. Here Are His Fund's Top 3 Ultra-High-Yield Dividend Stocks Now. - The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeGQ5N08zbXh6emxwdWhkblpiZjh5dzFKMXBLQUJ4LURTWlNWRjEzODJwVDJXYUpKM0NhRTJsOVBZUFFBcEVmd05zVEx5WkFmQlBqbVBiSHM4VUZYOWhKR2FMaGFxNXczUkFlUW9UZk5BYk9uTzVNa0tRdG1BVGJXYW5XYWIzQ0hNam1lWmFrNkk3S29nRzBsMw?oc=5",
+      "publisher": "The Motley Fool",
+      "published": "Sun, 17 May 2026 10:52:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxPeGQ5N08zbXh6emxwdWhkblpiZjh5dzFKMXBLQUJ4LURTWlNWRjEzODJwVDJXYUpKM0NhRTJsOVBZUFFBcEVmd05zVEx5WkFmQlBqbVBiSHM4VUZYOWhKR2FMaGFxNXczUkFlUW9UZk5BYk9uTzVNa0tRdG1BVGJXYW5XYWIzQ0hNam1lWmFrNkk3S29nRzBsMw?oc=5\" target=\"_blank\">Billionaire Bill Miller Beat the S&amp;P 500 for 15 Consecutive Years. Here Are His Fund's Top 3 Ultra-High-Yield Dividend Stocks Now.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Motley Fool</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.fool.com&sz=64"
+    },
+    {
+      "title": "S&P 500 rally fueled by options trading and earnings surge as gamma squeeze drives index past 6,500 - Crypto Briefing",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5hZVN2OVA1dzZLcFZ6NkN3dXRRVXdfMXpWeWo0OE05Q3JVMVBLWmV0VTVBT0phUjZWVFQxeXlQQmRkZTZyM2doZHNLTk9qM1NLeng4eDNZZGFHWUtQTk1jOHJuVkJUVXZqaTFuVUZ3?oc=5",
+      "publisher": "Crypto Briefing",
+      "published": "Sun, 17 May 2026 13:54:33 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibkFVX3lxTE5hZVN2OVA1dzZLcFZ6NkN3dXRRVXdfMXpWeWo0OE05Q3JVMVBLWmV0VTVBT0phUjZWVFQxeXlQQmRkZTZyM2doZHNLTk9qM1NLeng4eDNZZGFHWUtQTk1jOHJuVkJUVXZqaTFuVUZ3?oc=5\" target=\"_blank\">S&amp;P 500 rally fueled by options trading and earnings surge as gamma squeeze drives index past 6,500</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Crypto Briefing</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=cryptobriefing.com&sz=64"
+    },
+    {
+      "title": "Nasdaq, S&P 500 futures wake up to CPI jitters as Trump heads to China with tech titans: Why MU, QUBT, ASTS, GME, HIMS, BZFD are in focus - MSN",
+      "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOQVJTUVpFRnNJUVRjRzJpOFZJUi10T243Mk9wVUhETDlTM01KRXFzVVdoT0RBcUU2ZzIwSjhZWkMweE9SOWlsQkxxNERRWmxib3ZyWHFTVVZXTEQ2aWlFakFIOUEzaVNzZkdtWXdlUUlEemEwM3VnTEhXRERmR2djNFJuek80OXZZcFBLeWpqa3NGQVhENnVJQ2h3alRDU2lQV0JHVEhxaTBXcnFCYkh0UGkyM0VPN1UxZGt3dHNiem9NamdJRk84dXhIbTFiVlZzanZfSV9keWRPMFZ6WXp0NzMwc2dWZWhLNWlXcmJhTWFFNzh5cUdIb3Zka2hlRVkzN21BNGE4TGgwUW9xcFBN?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 21:59:35 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwJBVV95cUxOQVJTUVpFRnNJUVRjRzJpOFZJUi10T243Mk9wVUhETDlTM01KRXFzVVdoT0RBcUU2ZzIwSjhZWkMweE9SOWlsQkxxNERRWmxib3ZyWHFTVVZXTEQ2aWlFakFIOUEzaVNzZkdtWXdlUUlEemEwM3VnTEhXRERmR2djNFJuek80OXZZcFBLeWpqa3NGQVhENnVJQ2h3alRDU2lQV0JHVEhxaTBXcnFCYkh0UGkyM0VPN1UxZGt3dHNiem9NamdJRk84dXhIbTFiVlZzanZfSV9keWRPMFZ6WXp0NzMwc2dWZWhLNWlXcmJhTWFFNzh5cUdIb3Zka2hlRVkzN21BNGE4TGgwUW9xcFBN?oc=5\" target=\"_blank\">Nasdaq, S&amp;P 500 futures wake up to CPI jitters as Trump heads to China with tech titans: Why MU, QUBT, ASTS, GME, HIMS, BZFD are in focus</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Prediction: This Unstoppable Vanguard Index Fund Will Crush the S&P 500 (Again) in 2026 - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNY2F6V0JpUHpTSVBGbjBXd0RmMFJaRWd3SHI2S1ZWS1pDQ21GbnctbURndFNvM0p1bVhiVFpvbVpFUlJvSjRrZElpeHdaUGg1ODBHT0ZWNC16T2x1NldpN1VadklSV3FIaV96ZjhFcFF1WVoxdHRJVFNUd0VXUTlaQ3NiRERqSFBwdzliLWkwRQ?oc=5",
       "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 04:48:23 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTE96MnB1RWVydUEzU2s1ck4tMWJnRjQ4SFBJMXlmbkV1MjhUSGxjcWtyVDNFMDlCNjdSWVk5a3NuNnpSZUxWLU9NWm43amx0aTRuUW84NUxNYlMwSlREdmZlSXpWUDlFNDV4T1o3Y2plT3pxNXN0NUJNai1LZw?oc=5\" target=\"_blank\">The Vanguard ETF That Could Set You Up for Life if You Buy It in April</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "published": "Sun, 17 May 2026 15:26:44 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxNY2F6V0JpUHpTSVBGbjBXd0RmMFJaRWd3SHI2S1ZWS1pDQ21GbnctbURndFNvM0p1bVhiVFpvbVpFUlJvSjRrZElpeHdaUGg1ODBHT0ZWNC16T2x1NldpN1VadklSV3FIaV96ZjhFcFF1WVoxdHRJVFNUd0VXUTlaQ3NiRERqSFBwdzliLWkwRQ?oc=5\" target=\"_blank\">Prediction: This Unstoppable Vanguard Index Fund Will Crush the S&amp;P 500 (Again) in 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.aol.com&sz=64"
     },
     {
-      "title": "S&P 500 Rallies 3.6% on the Week Despite Tariff Pressure While Solana (SOL) Holds Bear Flag at $82 - openPR.com",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQU2lWMWxiVGswcmZpZTNPdEMtRlNzZml6Yk5ISjhUQUZzTG9VbURlU3JWVWcyYjJZRldWejVKX0RtYnNTel9UdURzYlFUNzVSdTVOcGlTSTdiV2ZjUFp3VWZrTTNPQkxwTUxEOEJKa1QyLWN4MUlXLWJYREwtdUlwdVdId3paSW1jRDJJa0NnTlZhOTY3R3NMeHhuUG05Zw?oc=5",
-      "publisher": "openPR.com",
-      "published": "Sun, 12 Apr 2026 06:17:15 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxQU2lWMWxiVGswcmZpZTNPdEMtRlNzZml6Yk5ISjhUQUZzTG9VbURlU3JWVWcyYjJZRldWejVKX0RtYnNTel9UdURzYlFUNzVSdTVOcGlTSTdiV2ZjUFp3VWZrTTNPQkxwTUxEOEJKa1QyLWN4MUlXLWJYREwtdUlwdVdId3paSW1jRDJJa0NnTlZhOTY3R3NMeHhuUG05Zw?oc=5\" target=\"_blank\">S&amp;P 500 Rallies 3.6% on the Week Despite Tariff Pressure While Solana (SOL) Holds Bear Flag at $82</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">openPR.com</font>",
+      "title": "Rare S&P 500 Signals: What History Says About This Rally - TipRanks",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNU1NzTUJ1Tk93bXVSa2lGa1phcnRrajVaVjRSRXNTcEREVzd2b3VsbVZLQTcxVlZDU0pRRDl1dHdZZS1fOEt3LW0yVm5iLXhQYjA5RC11STlLSlR4QzVOell4M21QemVIRDZ1WmRxZlRxZUNMNHRKMmxlUDRRWWxSblR1c1BKZnVYY1puSA?oc=5",
+      "publisher": "TipRanks",
+      "published": "Mon, 18 May 2026 04:03:35 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxNU1NzTUJ1Tk93bXVSa2lGa1phcnRrajVaVjRSRXNTcEREVzd2b3VsbVZLQTcxVlZDU0pRRDl1dHdZZS1fOEt3LW0yVm5iLXhQYjA5RC11STlLSlR4QzVOell4M21QemVIRDZ1WmRxZlRxZUNMNHRKMmxlUDRRWWxSblR1c1BKZnVYY1puSA?oc=5\" target=\"_blank\">Rare S&amp;P 500 Signals: What History Says About This Rally</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TipRanks</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.tipranks.com&sz=64"
     },
     {
-      "title": "S&P 500: A Dead Money Era May Be Here, How To Thrive In It (SPX) - Seeking Alpha",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNEVEeHE4akZxT2EyZm1WS3g3NGdKQ05oMVloczEtaDJrZGJpWHBOQmpETVdNWnlOa25TSEllUWN4UnlndWVPZWNMeGUzVGdYbVJQaEJIX3R6NzN2bERkT1YzUGpUTnVQaVhKWDhZOXRNNmFmT1V0VW5SLXdkMnJxMWJiWVFOdjhGeElUTTRLRTRZVEkwSVEyVQ?oc=5",
+      "title": "Underperformers in the S&P 500: J.M. Smucker, Nordson, and Bank of America Analysis - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxON1lRT1hpMlRPRVFabENaSGZESGJlV0tPbkJtcUExNW9pbUZZek5pY3Z2bGdXelE4VElEY3hJajZLZ090WWFuYnVoMXRpZThIT2Q0MExySkk3dmEwWVNObXZmSlNnb0NxNWNWSTZ5bUxVejl4NlNibzU4NzY4REQ2SGY4NzNlMXlPdXdpS1NNb2tkc2Y1cXplX05jc0JpNDhmcVV2V3JBWWwybjNRcEE?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 10:11:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxON1lRT1hpMlRPRVFabENaSGZESGJlV0tPbkJtcUExNW9pbUZZek5pY3Z2bGdXelE4VElEY3hJajZLZ090WWFuYnVoMXRpZThIT2Q0MExySkk3dmEwWVNObXZmSlNnb0NxNWNWSTZ5bUxVejl4NlNibzU4NzY4REQ2SGY4NzNlMXlPdXdpS1NNb2tkc2Y1cXplX05jc0JpNDhmcVV2V3JBWWwybjNRcEE?oc=5\" target=\"_blank\">Underperformers in the S&amp;P 500: J.M. Smucker, Nordson, and Bank of America Analysis - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "Invesco S&P 500 high dividend low volatility ETF declares monthly distribution of $0.2083 - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUWhLaWhCTzhUMUVSemwyMzhmT0t5THJLbjk3c2FIeTA2YzktMkVJcE1aaDczYnRmUXZEVGpscC1Pc1duNW1Sd2doMDBuNEFXZlBhbFQ5Q0lBa1RhTWhKM2FnUjRZWW5yanVsemxaNU1KaE83SXVOXzNBcVdRNEFYNFlfSWhnNFl2N1l1aEFMY0RuMnhQWkluUWtyaEtYbUNjQndGdzFHMWF4ZE9NdGl2eFAxOXU0UEZUdFl0Y0tSUkY1SUd0RHNqa09GZmhBWnRRTDVoNmtmamRETW8?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 21:08:08 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi2wFBVV95cUxOUWhLaWhCTzhUMUVSemwyMzhmT0t5THJLbjk3c2FIeTA2YzktMkVJcE1aaDczYnRmUXZEVGpscC1Pc1duNW1Sd2doMDBuNEFXZlBhbFQ5Q0lBa1RhTWhKM2FnUjRZWW5yanVsemxaNU1KaE83SXVOXzNBcVdRNEFYNFlfSWhnNFl2N1l1aEFMY0RuMnhQWkluUWtyaEtYbUNjQndGdzFHMWF4ZE9NdGl2eFAxOXU0UEZUdFl0Y0tSUkY1SUd0RHNqa09GZmhBWnRRTDVoNmtmamRETW8?oc=5\" target=\"_blank\">Invesco S&amp;P 500 high dividend low volatility ETF declares monthly distribution of $0.2083</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Man Group plc's iShares Core S&P 500 ETF(IVV) Holding History - GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBzZzY3Mm9ZNk5GakJTanZKenRicWZya1BhVkNrcFBaSWJmc01TVmVhRk82UHlUeGNQb1NyWDVjUTAzSWdhVlNJNlFyQzRqbVVDSXE1VkU2Y3k1NmVmbHRPbkpPSFRmSC1KSVh1RjlBOA?oc=5",
+      "publisher": "GuruFocus",
+      "published": "Mon, 18 May 2026 01:40:53 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTFBzZzY3Mm9ZNk5GakJTanZKenRicWZya1BhVkNrcFBaSWJmc01TVmVhRk82UHlUeGNQb1NyWDVjUTAzSWdhVlNJNlFyQzRqbVVDSXE1VkU2Y3k1NmVmbHRPbkpPSFRmSC1KSVh1RjlBOA?oc=5\" target=\"_blank\">Man Group plc's iShares Core S&amp;P 500 ETF(IVV) Holding History</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">GuruFocus</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.gurufocus.com&sz=64"
+    },
+    {
+      "title": "HARBOUR INVESTMENTS, INC.'s iShares S&P 500 Value ETF(IVE) Holding History - GuruFocus",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ORGkycEJ5ODE5NzlyRVNFN0ZiSFZ2NEVrYjE0YkVvRHVjVm5rRDZBZDdlaldsZzF1elBLQXQ1MGxEMkpTaEVjLUVaTVUtMU53Vng4YnJHNHc3NTA0WGxkQkJNWkxWTVNZeENSZGI4ckhFa0REaGgtQlNObHZEUGM?oc=5",
+      "publisher": "GuruFocus",
+      "published": "Mon, 18 May 2026 01:49:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMif0FVX3lxTE5ORGkycEJ5ODE5NzlyRVNFN0ZiSFZ2NEVrYjE0YkVvRHVjVm5rRDZBZDdlaldsZzF1elBLQXQ1MGxEMkpTaEVjLUVaTVUtMU53Vng4YnJHNHc3NTA0WGxkQkJNWkxWTVNZeENSZGI4ckhFa0REaGgtQlNObHZEUGM?oc=5\" target=\"_blank\">HARBOUR INVESTMENTS, INC.'s iShares S&amp;P 500 Value ETF(IVE) Holding History</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">GuruFocus</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.gurufocus.com&sz=64"
+    },
+    {
+      "title": "Should You Invest as the S&P 500 Hits Another New High? Here's What History Says. - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1qOG1GWnF4VjhIMmJaTjZuQkJHRzlicVFzOHBtSDBfb0s1VS14ekMtcFMzSEdUQ3Q2a0ZYcUdFaWpTY0J6QUhzUEV2Nlpqb01mS0tzMTlnbDFHUmMwMVhJdVVOcWdaX2RtQi0xTFduZDVWcXd6b3lmZQ?oc=5",
+      "publisher": "AOL.com",
+      "published": "Sun, 17 May 2026 15:09:54 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE1qOG1GWnF4VjhIMmJaTjZuQkJHRzlicVFzOHBtSDBfb0s1VS14ekMtcFMzSEdUQ3Q2a0ZYcUdFaWpTY0J6QUhzUEV2Nlpqb01mS0tzMTlnbDFHUmMwMVhJdVVOcWdaX2RtQi0xTFduZDVWcXd6b3lmZQ?oc=5\" target=\"_blank\">Should You Invest as the S&amp;P 500 Hits Another New High? Here's What History Says.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.aol.com&sz=64"
+    },
+    {
+      "title": "Why Would Anyone Buy SPYM Instead of QQQ? - The Motley Fool",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZHBXWmRCVC10UVo4a3lYenIyWkxvbnd4ejFndmF0MjdPaDk4cWJaS2NubzZsUVY0Skp3YjdRa0J2Z0FmcU5zengzWnBoZFNiWFR3dmg3UkV1cm9oWV8yWnhzUkpldnZ0aGhRNTZOQVJMdXJzb0RjUGRqVk1MYWR5V1NkZU1TeEQ4ZEo4?oc=5",
+      "publisher": "The Motley Fool",
+      "published": "Sun, 17 May 2026 19:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZHBXWmRCVC10UVo4a3lYenIyWkxvbnd4ejFndmF0MjdPaDk4cWJaS2NubzZsUVY0Skp3YjdRa0J2Z0FmcU5zengzWnBoZFNiWFR3dmg3UkV1cm9oWV8yWnhzUkpldnZ0aGhRNTZOQVJMdXJzb0RjUGRqVk1MYWR5V1NkZU1TeEQ4ZEo4?oc=5\" target=\"_blank\">Why Would Anyone Buy SPYM Instead of QQQ?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Motley Fool</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.fool.com&sz=64"
+    },
+    {
+      "title": "Prosperity Bancshares Stock Down 0.8% Since November 2025 – May 2026 Analysis - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTUtETzU2bXJfNkZ1cmN1X0JwLTRELXVpVDJYS0w0QUc1dlJrX1g5VU1hdmdEeUJtNGprR3h0bXRkaEwtR3JoclpSenNYSTJRMkg3OWN1a0o4dGRINW8zcFBtanZFMVUxR3pxeTlLU0c0bHFQR2EzY3NXbnpma2IyVmZ5U0EtRzhRZU5yTjlrTExaYXhzNWxmZUpfY2FuZm5aZXpJRw?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 20:30:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMipAFBVV95cUxNTUtETzU2bXJfNkZ1cmN1X0JwLTRELXVpVDJYS0w0QUc1dlJrX1g5VU1hdmdEeUJtNGprR3h0bXRkaEwtR3JoclpSenNYSTJRMkg3OWN1a0o4dGRINW8zcFBtanZFMVUxR3pxeTlLU0c0bHFQR2EzY3NXbnpma2IyVmZ5U0EtRzhRZU5yTjlrTExaYXhzNWxmZUpfY2FuZm5aZXpJRw?oc=5\" target=\"_blank\">Prosperity Bancshares Stock Down 0.8% Since November 2025 – May 2026 Analysis - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "The 3 Best S&P 500 Stocks to Buy Now - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5qWHFsSWxSLWpfRGhtRDQ5YUJwZktxMXBiZVVfY1NsVzVweHQtRUhFMzkxOFhaTEFGTWpnZXRBTHFmcDJxbXpBSFdGeG91QjM0UWl6ejR2S1NWQ2x1eHBwWkVUT2ZraS16dnNNTkRiV1I?oc=5",
+      "publisher": "AOL.com",
+      "published": "Sun, 17 May 2026 15:01:18 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTE5qWHFsSWxSLWpfRGhtRDQ5YUJwZktxMXBiZVVfY1NsVzVweHQtRUhFMzkxOFhaTEFGTWpnZXRBTHFmcDJxbXpBSFdGeG91QjM0UWl6ejR2S1NWQ2x1eHBwWkVUT2ZraS16dnNNTkRiV1I?oc=5\" target=\"_blank\">The 3 Best S&amp;P 500 Stocks to Buy Now</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.aol.com&sz=64"
+    },
+    {
+      "title": "Nvidia Q1 FY2027 Earnings Report as Key Catalyst for S&P 500 and AI Market Outlook - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNM1k3aTh4V01DZXh1akNvRXpIZTZGYTBHWk9URE9iSC05aVV5Q0xxY3oxZUlNcFFjUVBBMmlfaXZMYzE1a2Fwek5oT3lNMDJIaG9NWGcyVFdaZV9ZWTEtSmR6RmZ2N1FyR1BNa3B1ajdFS25ZckQ2YVhPVFZ5NGItWlUyRkdNVS1oZHlsczlndVZLZUxEaVZrNg?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 11:31:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxNM1k3aTh4V01DZXh1akNvRXpIZTZGYTBHWk9URE9iSC05aVV5Q0xxY3oxZUlNcFFjUVBBMmlfaXZMYzE1a2Fwek5oT3lNMDJIaG9NWGcyVFdaZV9ZWTEtSmR6RmZ2N1FyR1BNa3B1ajdFS25ZckQ2YVhPVFZ5NGItWlUyRkdNVS1oZHlsczlndVZLZUxEaVZrNg?oc=5\" target=\"_blank\">Nvidia Q1 FY2027 Earnings Report as Key Catalyst for S&amp;P 500 and AI Market Outlook - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "5 Fastest Growing S&P 500 Stocks to Buy Now - Insider Monkey",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNOTc4RzFNN2Y3a2V5VzN2MGxaTnprVUJKQ3NXUnpoVzMzaU1ES3ZGQXVzZ1FDQnpxay1kZG1nY1c1elJmRVEyRHQ3cnRjZUJHRWhXeEJraWtqaC13bnVRTlpHdFR2TXluUVFTQUtuWFVyNm9VVUlTcUx4R2R6cjBsUVdxZERzY3AtLUtvVUdBbU80QQ?oc=5",
+      "publisher": "Insider Monkey",
+      "published": "Mon, 18 May 2026 00:16:46 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxNOTc4RzFNN2Y3a2V5VzN2MGxaTnprVUJKQ3NXUnpoVzMzaU1ES3ZGQXVzZ1FDQnpxay1kZG1nY1c1elJmRVEyRHQ3cnRjZUJHRWhXeEJraWtqaC13bnVRTlpHdFR2TXluUVFTQUtuWFVyNm9VVUlTcUx4R2R6cjBsUVdxZERzY3AtLUtvVUdBbU80QQ?oc=5\" target=\"_blank\">5 Fastest Growing S&amp;P 500 Stocks to Buy Now</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Insider Monkey</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.insidermonkey.com&sz=64"
+    },
+    {
+      "title": "S&P 500, Dow, Nasdaq futures slip after rally as Trump-Xi talks take center stage: NVDA, MU, ONDS, RDW stocks in focus - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSkpwS3JmQ2lwOXZUdEJxVU9GeFJGbXhMQ2QyNW93RHhoQ3VJM1hZZGQwRUU4bDVldXp0WU90NklTbjRfQTE2QW9nZWd5X0pnV1VxSW9XWFlrc0Q4c1lEQnVocmszMmRNM2xkNkV5M3JQVG5kcjRtcllhQzZUVTFGdVFESUF0WUJueG1Vc2E4aTktR1ZGakk0T0dfaEZnalZFU25CeEFGdV9HTGtqbDFRQ3piNGNsd1NLdmJfR095eFJ2d3ZyRDZjLUNmSVgycmhiNzFtenVwaF9JYzZtS1FNaU5NUDZNRTVPalY1eEJuSEdHU1VRX3pN?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 19:59:55 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxQSkpwS3JmQ2lwOXZUdEJxVU9GeFJGbXhMQ2QyNW93RHhoQ3VJM1hZZGQwRUU4bDVldXp0WU90NklTbjRfQTE2QW9nZWd5X0pnV1VxSW9XWFlrc0Q4c1lEQnVocmszMmRNM2xkNkV5M3JQVG5kcjRtcllhQzZUVTFGdVFESUF0WUJueG1Vc2E4aTktR1ZGakk0T0dfaEZnalZFU25CeEFGdV9HTGtqbDFRQ3piNGNsd1NLdmJfR095eFJ2d3ZyRDZjLUNmSVgycmhiNzFtenVwaF9JYzZtS1FNaU5NUDZNRTVPalY1eEJuSEdHU1VRX3pN?oc=5\" target=\"_blank\">S&amp;P 500, Dow, Nasdaq futures slip after rally as Trump-Xi talks take center stage: NVDA, MU, ONDS, RDW stocks in focus</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "iShares Core S&P 500 ETF vs. Invesco QQQ Trust Comparison (2026) - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOR0cweUhwMGpBMzFYMUh1OElJVEZFdHhlRldHelFiRzlVU2FuMlJwSTFnQkZDT045V3Bib080VHNFemMxVkhlSWFteUU4UlU1QndOVnpIMklCelFQN201SG9ybjI4LVpMOXBGY3BHWFU4OEp1TmF1c2hEelJ1clg4MU5ERUxvNG4yRkZLaUZORWhTWE94?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 08:50:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMilAFBVV95cUxOR0cweUhwMGpBMzFYMUh1OElJVEZFdHhlRldHelFiRzlVU2FuMlJwSTFnQkZDT045V3Bib080VHNFemMxVkhlSWFteUU4UlU1QndOVnpIMklCelFQN201SG9ybjI4LVpMOXBGY3BHWFU4OEp1TmF1c2hEelJ1clg4MU5ERUxvNG4yRkZLaUZORWhTWE94?oc=5\" target=\"_blank\">iShares Core S&amp;P 500 ETF vs. Invesco QQQ Trust Comparison (2026) - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "A surprising thing is happening underneath the S&P 500's record run - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcmk0OGZoOTBHQS1tYlV6V05MRGdTZV94YkRnXzM0TGc1SGxYTmVUTnBwU1JIV0RsdmZkV1kxQW9KT2hsRHplMkFiZ25lSFBqVXdqblJublJBOFNhQThScHY4S2ZlblVxSVRhYlNsRDh2Nkh5ZTJjUHNIZkhUeWFQSmI2MWNKdjNSVEVv?oc=5",
+      "publisher": "AOL.com",
+      "published": "Sun, 17 May 2026 16:12:33 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxQcmk0OGZoOTBHQS1tYlV6V05MRGdTZV94YkRnXzM0TGc1SGxYTmVUTnBwU1JIV0RsdmZkV1kxQW9KT2hsRHplMkFiZ25lSFBqVXdqblJublJBOFNhQThScHY4S2ZlblVxSVRhYlNsRDh2Nkh5ZTJjUHNIZkhUeWFQSmI2MWNKdjNSVEVv?oc=5\" target=\"_blank\">A surprising thing is happening underneath the S&amp;P 500's record run</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.aol.com&sz=64"
+    },
+    {
+      "title": "5 Fastest Growing S&P 500 Stocks to Buy Now - Insider Monkey",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRVpvUlFBQUdyZzRpOVN1RTlzTzZuUzRDdUptZmwwTEhjZkVyUk9GY1g1OUlzWXlReHNKMHZYTTFfTFg1czFCT3BkdmNzaGpoXzdBaUc3S2Jkc2N3RktacUJseEZ2bDJJa1p3QmRUdW1SWFVxNU1CN3NNUy1BSGxDODF0UXMtN19EV1dTZGRSSV8?oc=5",
+      "publisher": "Insider Monkey",
+      "published": "Sun, 17 May 2026 23:50:35 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxQRVpvUlFBQUdyZzRpOVN1RTlzTzZuUzRDdUptZmwwTEhjZkVyUk9GY1g1OUlzWXlReHNKMHZYTTFfTFg1czFCT3BkdmNzaGpoXzdBaUc3S2Jkc2N3RktacUJseEZ2bDJJa1p3QmRUdW1SWFVxNU1CN3NNUy1BSGxDODF0UXMtN19EV1dTZGRSSV8?oc=5\" target=\"_blank\">5 Fastest Growing S&amp;P 500 Stocks to Buy Now</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Insider Monkey</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.insidermonkey.com&sz=64"
+    },
+    {
+      "title": "Just 3 Companies Drive 70% of the S&P 500’s 2026 Growth Expectations - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBKQ3NiREZtQ19WcFhXMlBxRkNBREEyOFpRTDhnQ3BHVkItSGtpNDU2V093VnlCYWpwYXFEZGJ6cTNaQ1JZQy0yMzNDWXp3TU05WTdzdmtxTW5PMTJpejd4UHVGSXdVVXRBbmdVRmZDdTdnUU04WC1LQw?oc=5",
+      "publisher": "AOL.com",
+      "published": "Sun, 17 May 2026 16:14:31 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTFBKQ3NiREZtQ19WcFhXMlBxRkNBREEyOFpRTDhnQ3BHVkItSGtpNDU2V093VnlCYWpwYXFEZGJ6cTNaQ1JZQy0yMzNDWXp3TU05WTdzdmtxTW5PMTJpejd4UHVGSXdVVXRBbmdVRmZDdTdnUU04WC1LQw?oc=5\" target=\"_blank\">Just 3 Companies Drive 70% of the S&amp;P 500’s 2026 Growth Expectations</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.aol.com&sz=64"
+    },
+    {
+      "title": "Nvidia Boosts S&P 500 Earnings Growth and Concentration - Let's Data Science",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSEZWU1FaRGJiMU9KMzZDQ196OGhyMW1oOXdjWnlvNUlONTVkM3A0ZFlmbmxCTW1SdGhVVzJOeTA4blhIbGRRM2FVeW95S3NoRWFERTdDRzFmMWkzNlM1Q0hjTGpaTmhEaE9uTTZPOFpFYVFNS1RTbU1VOHJ1Y1RQeDBDSkQ2QXBDeXFDZXphVFNHc3BMZ0wtQWMwWnM?oc=5",
+      "publisher": "Let's Data Science",
+      "published": "Sun, 17 May 2026 14:33:39 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinAFBVV95cUxPSEZWU1FaRGJiMU9KMzZDQ196OGhyMW1oOXdjWnlvNUlONTVkM3A0ZFlmbmxCTW1SdGhVVzJOeTA4blhIbGRRM2FVeW95S3NoRWFERTdDRzFmMWkzNlM1Q0hjTGpaTmhEaE9uTTZPOFpFYVFNS1RTbU1VOHJ1Y1RQeDBDSkQ2QXBDeXFDZXphVFNHc3BMZ0wtQWMwWnM?oc=5\" target=\"_blank\">Nvidia Boosts S&amp;P 500 Earnings Growth and Concentration</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Let's Data Science</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=letsdatascience.com&sz=64"
+    },
+    {
+      "title": "5 Fastest Growing S&P 500 Stocks to Buy Now - Insider Monkey",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONzFxSGJ1VFQxWDhpRGVKTC1tdTlOVHFxZHN0TTFEZTBpX1d4cHpmRUpRZWhPWDU3d0VVZVpJbzVwN0JsMHJiUnNadjNoaXp1UThWTy13aEUyUFd5MVpIbkF3S01uenIzWm1DMFoyZlV3M2ppeWJaUmQ4R0g1RFRLSzJEU2l2M19DSmVxRENjVEdYdw?oc=5",
+      "publisher": "Insider Monkey",
+      "published": "Sun, 17 May 2026 23:24:01 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxONzFxSGJ1VFQxWDhpRGVKTC1tdTlOVHFxZHN0TTFEZTBpX1d4cHpmRUpRZWhPWDU3d0VVZVpJbzVwN0JsMHJiUnNadjNoaXp1UThWTy13aEUyUFd5MVpIbkF3S01uenIzWm1DMFoyZlV3M2ppeWJaUmQ4R0g1RFRLSzJEU2l2M19DSmVxRENjVEdYdw?oc=5\" target=\"_blank\">5 Fastest Growing S&amp;P 500 Stocks to Buy Now</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Insider Monkey</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.insidermonkey.com&sz=64"
+    },
+    {
+      "title": "SPX - Forex Factory",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9EdzZUUmRqbl9VaWlZUFVxTzQwNDZIdnJ1NU5qQk5UZDdRWmtqYjBESEZMYmtKZkgyNDVnRVBwOHFkZzhGa0hMeXVQd2dkdFhF?oc=5",
+      "publisher": "Forex Factory",
+      "published": "Sun, 17 May 2026 06:24:35 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE9EdzZUUmRqbl9VaWlZUFVxTzQwNDZIdnJ1NU5qQk5UZDdRWmtqYjBESEZMYmtKZkgyNDVnRVBwOHFkZzhGa0hMeXVQd2dkdFhF?oc=5\" target=\"_blank\">SPX</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Forex Factory</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.forexfactory.com&sz=64"
+    },
+    {
+      "title": "5 Fastest Growing S&P 500 Stocks to Buy Now - Insider Monkey",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPVnp1TExYeDhnZEppY3B2Vi1ualdfV0xzUVRhYzFKRzNzYzV5eFpUWUlIUlpBVVdLWWo5UUdMX05kRzVsVVpaZUFhbmtrUTQ0azNua1daOGx3QURjVlBVbS14YVByU2lmMzZoV3Z0d1ZWUUs1R1pJcHRHNEdRdFZVV2w1ZFBUMUZEQ2RFTjdIeXM?oc=5",
+      "publisher": "Insider Monkey",
+      "published": "Sun, 17 May 2026 23:03:57 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxPVnp1TExYeDhnZEppY3B2Vi1ualdfV0xzUVRhYzFKRzNzYzV5eFpUWUlIUlpBVVdLWWo5UUdMX05kRzVsVVpaZUFhbmtrUTQ0azNua1daOGx3QURjVlBVbS14YVByU2lmMzZoV3Z0d1ZWUUs1R1pJcHRHNEdRdFZVV2w1ZFBUMUZEQ2RFTjdIeXM?oc=5\" target=\"_blank\">5 Fastest Growing S&amp;P 500 Stocks to Buy Now</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Insider Monkey</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.insidermonkey.com&sz=64"
+    },
+    {
+      "title": "The S&P 500 Just Did Something It’s Only Done 3 Times Before. Why Trump’s AI Rally Is in Danger - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBVZGtKWXpxbE9KZzQzVHhwM3NSa1NkRWVZNllsZkpmY2UyRzRNQnB2VHJHV3hucHd4T1BsQ3NLUk1TaVVTN1l5Z2xEVmlYNWNEQTdqQ29wMWU0Zi14UldaNXQyLTZkVzdyZHZaUmpTQXRtbldER0ow?oc=5",
+      "publisher": "AOL.com",
+      "published": "Sun, 17 May 2026 16:39:17 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBVZGtKWXpxbE9KZzQzVHhwM3NSa1NkRWVZNllsZkpmY2UyRzRNQnB2VHJHV3hucHd4T1BsQ3NLUk1TaVVTN1l5Z2xEVmlYNWNEQTdqQ29wMWU0Zi14UldaNXQyLTZkVzdyZHZaUmpTQXRtbldER0ow?oc=5\" target=\"_blank\">The S&amp;P 500 Just Did Something It’s Only Done 3 Times Before. Why Trump’s AI Rally Is in Danger</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.aol.com&sz=64"
+    },
+    {
+      "title": "Northeast Financial Group Cuts GPIX Stake by 71% in Q1 2026 - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZ3VQY3RRaC01dVlKMXJzbEgtOGc4OGFwMHYwS2JCWmNsMm9nUEJBV0pwYzNUTlY4V1Q3NGhNUWFKLXF1SFJSMEc5RHh6THRyZTk4VG1tZUN6SUd4LTRaNU9TVGxHcEMxaE1aamdrWUljUV9kbkczZ1JnbGRCWThwbWV0VjlSeHhOakJDa0V2S2hXUQ?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 13:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQZ3VQY3RRaC01dVlKMXJzbEgtOGc4OGFwMHYwS2JCWmNsMm9nUEJBV0pwYzNUTlY4V1Q3NGhNUWFKLXF1SFJSMEc5RHh6THRyZTk4VG1tZUN6SUd4LTRaNU9TVGxHcEMxaE1aamdrWUljUV9kbkczZ1JnbGRCWThwbWV0VjlSeHhOakJDa0V2S2hXUQ?oc=5\" target=\"_blank\">Northeast Financial Group Cuts GPIX Stake by 71% in Q1 2026</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "S&P 500 valuation nears dot-com era peak as Buffett-style ETFs gain appeal - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOX2NxVnFYZ3ozb1JMc1FFbmZhb3FSdC1ZUDNoeWhfVzJ3TFJVUzhzYjZaRmpadGEzb2xBZkhhVExGcGlCMUdaR1pYNklmVVAySE1UbWNRWTM2RlZzN0V5YlMtMldoV0N2TUtpTEo2cTlFZEZBR3hoMnFvREF0cmZMa0xHVnpYaVZwWTN0MDFPbHJGQnlHOEM1bDRXa2lLTTZ0VE9CVmJvcldyalEyNkJwc25uQUdzZ0JBbW8yYWxLZC1hODQzb3FhYXY2bWNuVE9WdUxiMVZBTkZOVjJZX0tyQ2ZrRHFYeWVQdkFaRjdFekk2Zy1Ebjln?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 09:09:24 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi9wFBVV95cUxOX2NxVnFYZ3ozb1JMc1FFbmZhb3FSdC1ZUDNoeWhfVzJ3TFJVUzhzYjZaRmpadGEzb2xBZkhhVExGcGlCMUdaR1pYNklmVVAySE1UbWNRWTM2RlZzN0V5YlMtMldoV0N2TUtpTEo2cTlFZEZBR3hoMnFvREF0cmZMa0xHVnpYaVZwWTN0MDFPbHJGQnlHOEM1bDRXa2lLTTZ0VE9CVmJvcldyalEyNkJwc25uQUdzZ0JBbW8yYWxLZC1hODQzb3FhYXY2bWNuVE9WdUxiMVZBTkZOVjJZX0tyQ2ZrRHFYeWVQdkFaRjdFekk2Zy1Ebjln?oc=5\" target=\"_blank\">S&amp;P 500 valuation nears dot-com era peak as Buffett-style ETFs gain appeal</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Nvidia's impact on S&P 500 earnings growth shrinks, with Micron rising as second-largest contributor. - Pluang",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBza0xfNkhzc2g3M2FKWlA4ZnJaZDFydnVfLWVNS1JXM2Y0dlczLTM0TDVhR1BkQ25nMXYydkdWZmZuX3BFeTh1czBETnB3V3VxS3h6TVZPcG9PZzRjUElCLVB4QlFQNVdVUndlTFhLSzZqZ3Y5d0dJ?oc=5",
+      "publisher": "Pluang",
+      "published": "Sun, 17 May 2026 14:35:29 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMid0FVX3lxTFBza0xfNkhzc2g3M2FKWlA4ZnJaZDFydnVfLWVNS1JXM2Y0dlczLTM0TDVhR1BkQ25nMXYydkdWZmZuX3BFeTh1czBETnB3V3VxS3h6TVZPcG9PZzRjUElCLVB4QlFQNVdVUndlTFhLSzZqZ3Y5d0dJ?oc=5\" target=\"_blank\">Nvidia's impact on S&amp;P 500 earnings growth shrinks, with Micron rising as second-largest contributor.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pluang</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=pluang.com&sz=64"
+    },
+    {
+      "title": "Nvidia Is Getting Some Help as It Props up S&P 500 Earnings Growth - Moomoo",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbTdQVmZ1MjhmU1NETzdZWWxnaDdQVXppekhEalpBaG9mYjl3OFFtSnJydnRWalJ5RldLa2VqYVRIcGRmeXVtUTA2YUdhYW9ONFkyamZWV2pkRDZFYzEtT1p3R211Tkxxc1ZacVhpWEc2ZVRnSmJUT0RIUWpSX0RBWExvdlNLY1Q3Vk8xOEFsaw?oc=5",
+      "publisher": "Moomoo",
+      "published": "Sun, 17 May 2026 14:09:36 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijwFBVV95cUxNbTdQVmZ1MjhmU1NETzdZWWxnaDdQVXppekhEalpBaG9mYjl3OFFtSnJydnRWalJ5RldLa2VqYVRIcGRmeXVtUTA2YUdhYW9ONFkyamZWV2pkRDZFYzEtT1p3R211Tkxxc1ZacVhpWEc2ZVRnSmJUT0RIUWpSX0RBWExvdlNLY1Q3Vk8xOEFsaw?oc=5\" target=\"_blank\">Nvidia Is Getting Some Help as It Props up S&amp;P 500 Earnings Growth</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Moomoo</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.moomoo.com&sz=64"
+    },
+    {
+      "title": "Stock market ends week lower: S&P 500 falls 1.24%, Dow drops 537 points on tech selloff, rising yields - eciks.org",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQU18tTmxGeEtrRDV2cFdXVmdPVW9VRlVzdkE4VVotNWxBcmxpTENOb2lRSzdNZ0dOdnlYWWFTaGt2dkhObjNuSzExQ0xkejN0VnFSaGx0blNYaDRGWnYxaTJlRXA2YjJwU0xaaEFaNXY2SVFCeF9WaTBvbXg3VURlSXR0blZUOTRsWlNwdDl0VTc0aUU3OW5rYlBTQThTUkZGb3hUTWY5ZFBzblVIZEE?oc=5",
+      "publisher": "eciks.org",
+      "published": "Sun, 17 May 2026 11:02:18 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQU18tTmxGeEtrRDV2cFdXVmdPVW9VRlVzdkE4VVotNWxBcmxpTENOb2lRSzdNZ0dOdnlYWWFTaGt2dkhObjNuSzExQ0xkejN0VnFSaGx0blNYaDRGWnYxaTJlRXA2YjJwU0xaaEFaNXY2SVFCeF9WaTBvbXg3VURlSXR0blZUOTRsWlNwdDl0VTc0aUU3OW5rYlBTQThTUkZGb3hUTWY5ZFBzblVIZEE?oc=5\" target=\"_blank\">Stock market ends week lower: S&amp;P 500 falls 1.24%, Dow drops 537 points on tech selloff, rising yields</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">eciks.org</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=eciks.org&sz=64"
+    },
+    {
+      "title": "S&P 500 futures fall today while Bitcoin loses $77. - Bitget",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aWFNSelUzelNFMjgtTUJ0T29rVndtY0MzRUJKWXBoVWhuZEV3M2FHUmVUemR2ZndtdFJDT1A1UUNhRmsteTZ5Q24wb0tPMFhBQkY3eENKSWl2MEJ1NFVBWG9yRdIBY0FVX3lxTE9aWFNSelUzelNFMjgtTUJ0T29rVndtY0MzRUJKWXBoVWhuZEV3M2FHUmVUemR2ZndtdFJDT1A1UUNhRmsteTZ5Q24wb0tPMFhBQkY3eENKSWl2MEJ1NFVBWG9yRQ?oc=5",
+      "publisher": "Bitget",
+      "published": "Mon, 18 May 2026 02:46:25 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aWFNSelUzelNFMjgtTUJ0T29rVndtY0MzRUJKWXBoVWhuZEV3M2FHUmVUemR2ZndtdFJDT1A1UUNhRmsteTZ5Q24wb0tPMFhBQkY3eENKSWl2MEJ1NFVBWG9yRdIBY0FVX3lxTE9aWFNSelUzelNFMjgtTUJ0T29rVndtY0MzRUJKWXBoVWhuZEV3M2FHUmVUemR2ZndtdFJDT1A1UUNhRmsteTZ5Q24wb0tPMFhBQkY3eENKSWl2MEJ1NFVBWG9yRQ?oc=5\" target=\"_blank\">S&amp;P 500 futures fall today while Bitcoin loses $77.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Bitget</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.bitget.com&sz=64"
+    },
+    {
+      "title": "Billionaire Bill Miller Beat the S&P 500 for 15 Consecutive Years. Here Are His Fund's Top 3 Ultra-High-Yield Dividend Stocks Now. - Yahoo Finance",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWHhIaEc5NFlnQU9DZzAyZjU1R2xDUm5NMl82V1FocVN1czMzS3RhaldKUk5JaFYtcmVBMmNWV3dUbFZRZHY1aHp4djcxTXV0M2hYQWV5elV4UUFPVUNjUHFMdktwd3pEQWNEZTFsR3liUjU5V2pRbkdvTHVIODh0b2w2UGpIZzVOY21vVUl6T3M0aTk0Zkd0RkVicw?oc=5",
+      "publisher": "Yahoo Finance",
+      "published": "Sun, 17 May 2026 10:12:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxOWHhIaEc5NFlnQU9DZzAyZjU1R2xDUm5NMl82V1FocVN1czMzS3RhaldKUk5JaFYtcmVBMmNWV3dUbFZRZHY1aHp4djcxTXV0M2hYQWV5elV4UUFPVUNjUHFMdktwd3pEQWNEZTFsR3liUjU5V2pRbkdvTHVIODh0b2w2UGpIZzVOY21vVUl6T3M0aTk0Zkd0RkVicw?oc=5\" target=\"_blank\">Billionaire Bill Miller Beat the S&amp;P 500 for 15 Consecutive Years. Here Are His Fund's Top 3 Ultra-High-Yield Dividend Stocks Now.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Yahoo Finance</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=finance.yahoo.com&sz=64"
+    },
+    {
+      "title": "BMW M3 Touring Grabs Class Win At 2026 Nürburgring 24 Hours - bmwblog",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZHVxUGp6cUUwaFVsbEZQZ3U4XzI0SzFlR1VDU1FBbXJYS3d6QVhEWWZNQmlvV05sLXMwem5YR3ZpaG51Ym1uTDg3dnpmbExKVGRjekdVRW4taVJGNTJMMlJYYzhHRXd2Z0I3aHBtbEFCU2RPMVBvOExSVmx5UUI1d29VSUphVWl3?oc=5",
+      "publisher": "bmwblog",
+      "published": "Sun, 17 May 2026 19:31:56 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZHVxUGp6cUUwaFVsbEZQZ3U4XzI0SzFlR1VDU1FBbXJYS3d6QVhEWWZNQmlvV05sLXMwem5YR3ZpaG51Ym1uTDg3dnpmbExKVGRjekdVRW4taVJGNTJMMlJYYzhHRXd2Z0I3aHBtbEFCU2RPMVBvOExSVmx5UUI1d29VSUphVWl3?oc=5\" target=\"_blank\">BMW M3 Touring Grabs Class Win At 2026 Nürburgring 24 Hours</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">bmwblog</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.bmwblog.com&sz=64"
+    },
+    {
+      "title": "US S&P 500 Spot Index Ideas — FXPRO:USSPX500 - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1fU0RzUFVSRUJGekpHZDBNLUVqaDJscy1xRUdOaTI2aUhIeTE2ZVdfc3hJTXpYajNxQ2J4VndudFpuZlB3VWU4N3pzZEwxRDNLSldOVHZKSEtiOWpmMDB3M1BXTDFiTEZQdTdR?oc=5",
+      "publisher": "TradingView",
+      "published": "Sun, 17 May 2026 07:32:07 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE1fU0RzUFVSRUJGekpHZDBNLUVqaDJscy1xRUdOaTI2aUhIeTE2ZVdfc3hJTXpYajNxQ2J4VndudFpuZlB3VWU4N3pzZEwxRDNLSldOVHZKSEtiOWpmMDB3M1BXTDFiTEZQdTdR?oc=5\" target=\"_blank\">US S&amp;P 500 Spot Index Ideas — FXPRO:USSPX500</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.tradingview.com&sz=64"
+    },
+    {
+      "title": "SPYG Has Beaten SPYV by 390% Over a Decade and the Reason Matters More Than You Think - 24/7 Wall St.",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVzhna1VUUHF6S1VmZ0ZLUC1KWlQybFdnalpmOVRqLV9ZeUZ5SVEwN3hLc0lQNjFqcS00U2ZLQ2xSWG9yZWVnS0Y1aVZVQ2VCTGdoTFFrWkpTaEQ5VGVVaWdERVA4cENSaFVxZjdEVXY3M3RPcVZ1endxN2Y0ZHp2MFM4MjFnRTA2NzhOWm1WYVBCUXB0RFVySDZ6ZXVuRldjV1VCQ1I3bFhtNVZuQUl0c0NzN0dKMURQSENMNE1SM1RiTEJpS3Vn?oc=5",
+      "publisher": "24/7 Wall St.",
+      "published": "Sun, 17 May 2026 14:05:18 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxQVzhna1VUUHF6S1VmZ0ZLUC1KWlQybFdnalpmOVRqLV9ZeUZ5SVEwN3hLc0lQNjFqcS00U2ZLQ2xSWG9yZWVnS0Y1aVZVQ2VCTGdoTFFrWkpTaEQ5VGVVaWdERVA4cENSaFVxZjdEVXY3M3RPcVZ1endxN2Y0ZHp2MFM4MjFnRTA2NzhOWm1WYVBCUXB0RFVySDZ6ZXVuRldjV1VCQ1I3bFhtNVZuQUl0c0NzN0dKMURQSENMNE1SM1RiTEJpS3Vn?oc=5\" target=\"_blank\">SPYG Has Beaten SPYV by 390% Over a Decade and the Reason Matters More Than You Think</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">24/7 Wall St.</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=247wallst.com&sz=64"
+    },
+    {
+      "title": "Billionaire Bill Miller Beat the S&P 500 for 15 Consecutive Years. Here Are His Fund's Top 3 Ultra-High-Yield Dividend Stocks Now. - The Globe and Mail",
+      "link": "https://news.google.com/rss/articles/CBMirwJBVV95cUxOWDlWLWVfZXdzLWVVamxIQnZyQzRWV1JjSkJtMkhWT19Wa1d0RTExdThubWdSWWkyNjdSb25rRVQ5Z0Q1TWd3RW5SU2QtLVl1dkpRN1gwcnBsUko5LVFZRnlJZHJXNExqOHZmQTRKaENPNDNxSkNDNU1mYkg5RDliYy1DMElhRjcyXzRWMXpodXlUSVF1empLZ2FNM3Y2Q3lDV2IxTm1RRTZfWm1jcEYwMzgzRTA1X0tYQWViODh3X1N0OUY2MWt2YVM2cDJWVHpEdUtQU0VDZlFtMnppM1lzeFE1bWYtVEk0YlVYT2lYMElpR0R5RUZIZFJ5enJ1TFAwc1ZpeXhuMVptc2kwMk41bkp5TU5nYThlXzF6alN6amtHaXRtUkg0TWJYU1luajQ?oc=5",
+      "publisher": "The Globe and Mail",
+      "published": "Sun, 17 May 2026 10:12:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirwJBVV95cUxOWDlWLWVfZXdzLWVVamxIQnZyQzRWV1JjSkJtMkhWT19Wa1d0RTExdThubWdSWWkyNjdSb25rRVQ5Z0Q1TWd3RW5SU2QtLVl1dkpRN1gwcnBsUko5LVFZRnlJZHJXNExqOHZmQTRKaENPNDNxSkNDNU1mYkg5RDliYy1DMElhRjcyXzRWMXpodXlUSVF1empLZ2FNM3Y2Q3lDV2IxTm1RRTZfWm1jcEYwMzgzRTA1X0tYQWViODh3X1N0OUY2MWt2YVM2cDJWVHpEdUtQU0VDZlFtMnppM1lzeFE1bWYtVEk0YlVYT2lYMElpR0R5RUZIZFJ5enJ1TFAwc1ZpeXhuMVptc2kwMk41bkp5TU5nYThlXzF6alN6amtHaXRtUkg0TWJYU1luajQ?oc=5\" target=\"_blank\">Billionaire Bill Miller Beat the S&amp;P 500 for 15 Consecutive Years. Here Are His Fund's Top 3 Ultra-High-Yield Dividend Stocks Now.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Globe and Mail</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.theglobeandmail.com&sz=64"
+    },
+    {
+      "title": "Morning Wrap: ASX 200 to fall, S&P 500 and Nasdaq tumble as tech slump and yields soar - Market Index",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOc2x1QmRPTXJmS1MzdTFvaGNzWkZiU3BPbGNZMVFnVzVkczhueTFQbEhGZ3E3TTZFOV9ZcHhLVUF2Vm5wT3NTcDVnS1FuQVdDbmhWWHU5SGtlNm5XZzZOOWlYLU1yQVFhTXFZNkxoRmVjSEU3VDJiRDVQblJzZFlRVzVrcE9uYW0wMFJWampHVDJqQTFUYmdYV1ZWeFNvNGcxRDFVUDJ6ODFFUmtI?oc=5",
+      "publisher": "Market Index",
+      "published": "Sun, 17 May 2026 22:49:30 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMirAFBVV95cUxOc2x1QmRPTXJmS1MzdTFvaGNzWkZiU3BPbGNZMVFnVzVkczhueTFQbEhGZ3E3TTZFOV9ZcHhLVUF2Vm5wT3NTcDVnS1FuQVdDbmhWWHU5SGtlNm5XZzZOOWlYLU1yQVFhTXFZNkxoRmVjSEU3VDJiRDVQblJzZFlRVzVrcE9uYW0wMFJWampHVDJqQTFUYmdYV1ZWeFNvNGcxRDFVUDJ6ODFFUmtI?oc=5\" target=\"_blank\">Morning Wrap: ASX 200 to fall, S&amp;P 500 and Nasdaq tumble as tech slump and yields soar</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Market Index</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.marketindex.com.au&sz=64"
+    },
+    {
+      "title": "Volatile chipmaker stocks emerge as key driver of S&P 500 rally - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPb05WLU8yeGFlalhWWmpKcFZRenh3azdrdVRheE5LbTByc1V6NF8zN0taZElPNk9lajl6RjJZZTVqUkYyYm03QWxXTWhGdkJCbkxHdHg0RV9mcGNGUHRCbEQ3anRwS2lzQ1MweVJpZFNpZU15bjM1ZkFscTNiNExTbVdQcFljLXNxX1E3dVNtSHQyUldsNVFOcXY2U3lGVHhzWkFxYXlpMDJIR25ENmFrTnctY29pUU5xVjA2WXdGS0ZaeUtLQW8zNlRyNlhfTXBZbTJjbjlVb3k?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 13:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi2AFBVV95cUxPb05WLU8yeGFlalhWWmpKcFZRenh3azdrdVRheE5LbTByc1V6NF8zN0taZElPNk9lajl6RjJZZTVqUkYyYm03QWxXTWhGdkJCbkxHdHg0RV9mcGNGUHRCbEQ3anRwS2lzQ1MweVJpZFNpZU15bjM1ZkFscTNiNExTbVdQcFljLXNxX1E3dVNtSHQyUldsNVFOcXY2U3lGVHhzWkFxYXlpMDJIR25ENmFrTnctY29pUU5xVjA2WXdGS0ZaeUtLQW8zNlRyNlhfTXBZbTJjbjlVb3k?oc=5\" target=\"_blank\">Volatile chipmaker stocks emerge as key driver of S&amp;P 500 rally</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "S&P 500 Weekly Review: US Benchmark Retreats 1.24% from Record High as Tech Profit-Taking and Oil Surge Combine - BBN Times",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOX2MyRzgyeHp3OThnSnhqZWhLRUprSjd2RHdoOVpESWJkSWlYY3RweWh4OTZsRHVqVlBEeVlsSVZKQkwyUXE4ZkZZY3p1a1k4ZmRYaHBBNmhQMDZuRmFFWEc2WEUtd293eWx5YVZiVmwzWWFHYmxVVkNjWEJfTGcyb1c3cUE4SVVUa2ZucWp1SWZpa1R1SEE0XzZGNXNJeFNWcl9KSGFPZllCQlZYLS1aZnBCbkZIT2dvZUxhMlZFX29JNDBSN1JQS0dLTi1Ob0VVblh0Z0RYYzI3ZzBzV0lENTBCYw?oc=5",
+      "publisher": "BBN Times",
+      "published": "Sun, 17 May 2026 19:33:54 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi4wFBVV95cUxOX2MyRzgyeHp3OThnSnhqZWhLRUprSjd2RHdoOVpESWJkSWlYY3RweWh4OTZsRHVqVlBEeVlsSVZKQkwyUXE4ZkZZY3p1a1k4ZmRYaHBBNmhQMDZuRmFFWEc2WEUtd293eWx5YVZiVmwzWWFHYmxVVkNjWEJfTGcyb1c3cUE4SVVUa2ZucWp1SWZpa1R1SEE0XzZGNXNJeFNWcl9KSGFPZllCQlZYLS1aZnBCbkZIT2dvZUxhMlZFX29JNDBSN1JQS0dLTi1Ob0VVblh0Z0RYYzI3ZzBzV0lENTBCYw?oc=5\" target=\"_blank\">S&amp;P 500 Weekly Review: US Benchmark Retreats 1.24% from Record High as Tech Profit-Taking and Oil Surge Combine</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BBN Times</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.bbntimes.com&sz=64"
+    },
+    {
+      "title": "StockStory Analysis: Kura Sushi, Xerox, and SPX Technologies Growth Stock Report - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUUVVR2xPVF94U1AyVy1EQWtON3k0cm4tNVlRcXhGUmV2eHIzUHRPbEN1c1JyVHNsb0lWLTdUZ0NQODRWU2NLOHFLUGUtTWZjUDBBTlFrcW8tTlhValcyZFJXVEp5S0lPTmRkRkF5ZnBNQ1ZnTjQ2NkFYZFBKVEtrU0NtLVBsNHM1WHI3cmRnS18?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 10:50:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikAFBVV95cUxPUUVVR2xPVF94U1AyVy1EQWtON3k0cm4tNVlRcXhGUmV2eHIzUHRPbEN1c1JyVHNsb0lWLTdUZ0NQODRWU2NLOHFLUGUtTWZjUDBBTlFrcW8tTlhValcyZFJXVEp5S0lPTmRkRkF5ZnBNQ1ZnTjQ2NkFYZFBKVEtrU0NtLVBsNHM1WHI3cmRnS18?oc=5\" target=\"_blank\">StockStory Analysis: Kura Sushi, Xerox, and SPX Technologies Growth Stock Report - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "S&P 500, Dow and Nasdaq drop as inflation angst spurs rate hike fears — TSLA, SBUX, POET, MSFT, NVDA in focus - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiwwNBVV95cUxPRHdGVExRdVNNRTF5RGlJTGF5MFZycVUtVHNCZzhfY2JNbzF1RWlPSnpNX1JFQ213NmtnX3RWbTIwQTJwRG1kZVhTcmdNSHNCQzBDSUNLZzByY2h3NGpQMWlweEhxeTliUzc2UWZWeDF2b2lwNkRpdDB4cTJRel85eGJwZm1zTTZ4WTJOTk0xVjI5MldQVER0d1c0Wmp4aWd3REhDc2xVSUFpbkFNLS1RVTk1YWpWTGs4VG1WT3pfVmhMMm85Vk5qUWFMb1Jmd29URV85LUE1MXJiSFFlczc1ZDNCRmxyeTUxM1U1M2Fiak1iX25SNXpDaWtTeEF6WV91VTdEZEJEUTl1clJlcENXRDBiNGVpLXZwczZ0N2pJNU1wOWltR2tWZXhSNFJtRlZyXzVpU3hOUUxXNzg1RmkzTlp6c0daZTNNbFJmaFlBWldsQmFwN0NHVEYzcHpvR3diX1J2b3NwWVBqbEwydzU0S2pOUVNpY0p0ejBBWFBnZEppR25mcG1mSEdweDQ4emN6cGlnZ1VkWk0wUFBBa3ZCWU1ELVMxS1BrRmxCMFhnV2NmTUoybnRZdlFZRlZJRFc5MUxz?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 13:36:44 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwwNBVV95cUxPRHdGVExRdVNNRTF5RGlJTGF5MFZycVUtVHNCZzhfY2JNbzF1RWlPSnpNX1JFQ213NmtnX3RWbTIwQTJwRG1kZVhTcmdNSHNCQzBDSUNLZzByY2h3NGpQMWlweEhxeTliUzc2UWZWeDF2b2lwNkRpdDB4cTJRel85eGJwZm1zTTZ4WTJOTk0xVjI5MldQVER0d1c0Wmp4aWd3REhDc2xVSUFpbkFNLS1RVTk1YWpWTGs4VG1WT3pfVmhMMm85Vk5qUWFMb1Jmd29URV85LUE1MXJiSFFlczc1ZDNCRmxyeTUxM1U1M2Fiak1iX25SNXpDaWtTeEF6WV91VTdEZEJEUTl1clJlcENXRDBiNGVpLXZwczZ0N2pJNU1wOWltR2tWZXhSNFJtRlZyXzVpU3hOUUxXNzg1RmkzTlp6c0daZTNNbFJmaFlBWldsQmFwN0NHVEYzcHpvR3diX1J2b3NwWVBqbEwydzU0S2pOUVNpY0p0ejBBWFBnZEppR25mcG1mSEdweDQ4emN6cGlnZ1VkWk0wUFBBa3ZCWU1ELVMxS1BrRmxCMFhnV2NmTUoybnRZdlFZRlZJRFc5MUxz?oc=5\" target=\"_blank\">S&amp;P 500, Dow and Nasdaq drop as inflation angst spurs rate hike fears — TSLA, SBUX, POET, MSFT, NVDA in focus</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Wall Street rally masks rising number of oversold S&P 500 stocks - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWkZScXlOT09OLTZjNS1wa00tdkFBcnBvSFJyS0dJc2g2Z0Rkcld5eVZMV05WWXFlVGxObTBrOUQtWGJMcjJfc0l0X19FZGVjbGNobllmVlFTWjRoTTNtY2EzQmphRjZ0alUzblpmanVaT014bENxODNIR2Q3QUVyOGhvT0FMcnV6cGljV1d4X2lBZS1mdVVlWTVFdEVxa1NISjVmZHoxYXR2S1lOM2NlNmZMakVxRGpBOEE?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 10:20:43 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiugFBVV95cUxNWkZScXlOT09OLTZjNS1wa00tdkFBcnBvSFJyS0dJc2g2Z0Rkcld5eVZMV05WWXFlVGxObTBrOUQtWGJMcjJfc0l0X19FZGVjbGNobllmVlFTWjRoTTNtY2EzQmphRjZ0alUzblpmanVaT014bENxODNIR2Q3QUVyOGhvT0FMcnV6cGljV1d4X2lBZS1mdVVlWTVFdEVxa1NISjVmZHoxYXR2S1lOM2NlNmZMakVxRGpBOEE?oc=5\" target=\"_blank\">Wall Street rally masks rising number of oversold S&amp;P 500 stocks</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "NASDAQ and S&P 500 reach record highs following AMD earnings - MSN",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPNW9vUVptV0dqOWdFazRDQlFpRGNIajFNOFVnWGZibzN2Sm9GbGthMWdYc2VfeTBTdFp0MjJwbjdYcVZUN1RiZDRSUVJYR0xQU1o5aGRYemg5a1MzRDBnb0pmTi0wQU1nSTFTSUc1OVQzQ3BnUm9KN2h0eFFvZXBDd01JYlQzSXlRaFZXQzljbkdabjhBSWRSLVU0VzZMYy1nUFc5aE04ZHpXempGcTZfaEx3?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 12:34:03 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxPNW9vUVptV0dqOWdFazRDQlFpRGNIajFNOFVnWGZibzN2Sm9GbGthMWdYc2VfeTBTdFp0MjJwbjdYcVZUN1RiZDRSUVJYR0xQU1o5aGRYemg5a1MzRDBnb0pmTi0wQU1nSTFTSUc1OVQzQ3BnUm9KN2h0eFFvZXBDd01JYlQzSXlRaFZXQzljbkdabjhBSWRSLVU0VzZMYy1nUFc5aE04ZHpXempGcTZfaEx3?oc=5\" target=\"_blank\">NASDAQ and S&amp;P 500 reach record highs following AMD earnings</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "S&P 500 records weekly gains following strong jobs report, defying geopolitical jitters - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbWlrU0MwcWx6dXdTZkpVcjlvbHN1R0wxUEpFbkV1S1NVMUt1RlVhVmpaY3pRMC1EU0x6OHNiMnFiZTlEYUpfSFR0cU1zaXpfREpxN3RRZlY5aW9DTm1FYzVvRDVyWHhYazc3ZHpSdFFFa1dzSjhWTllidzN0MHotYkFTSXJ6TldxZWc5RkFiMmNMb2htTFB1d1hrNTZxNWwxUjFJNFotWjV1UDdrNnY2SmY2bU9QRVBYSW1tUkthUnA1MzdsdTI5NjJrRmlscHhxSHo1UA?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 10:01:19 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxQbWlrU0MwcWx6dXdTZkpVcjlvbHN1R0wxUEpFbkV1S1NVMUt1RlVhVmpaY3pRMC1EU0x6OHNiMnFiZTlEYUpfSFR0cU1zaXpfREpxN3RRZlY5aW9DTm1FYzVvRDVyWHhYazc3ZHpSdFFFa1dzSjhWTllidzN0MHotYkFTSXJ6TldxZWc5RkFiMmNMb2htTFB1d1hrNTZxNWwxUjFJNFotWjV1UDdrNnY2SmY2bU9QRVBYSW1tUkthUnA1MzdsdTI5NjJrRmlscHhxSHo1UA?oc=5\" target=\"_blank\">S&amp;P 500 records weekly gains following strong jobs report, defying geopolitical jitters</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Black Stone Minerals Stock Holds Flat Near $13.51, Underperforms S&P 500 | Analysis - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPX3V5R294LU9WRDJ0cVZHb0oyTkt6dmJhODZOUkJUT3o2TFBkWlo5OU5GX0xRUnhnaVNxU0tLV0thU0g0bktpb1FfWkJRY1hsa2VMSkk0d2tZQ2Uzb0VFZUJqMUFHU3ZyTi14aWp5YTZTbFBOUURpN1U1Wnpod3ZvcmI0b0hLeGlGWmpDQTRPN3N5Q0NqdUJsRnp3?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 09:31:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPX3V5R294LU9WRDJ0cVZHb0oyTkt6dmJhODZOUkJUT3o2TFBkWlo5OU5GX0xRUnhnaVNxU0tLV0thU0g0bktpb1FfWkJRY1hsa2VMSkk0d2tZQ2Uzb0VFZUJqMUFHU3ZyTi14aWp5YTZTbFBOUURpN1U1Wnpod3ZvcmI0b0hLeGlGWmpDQTRPN3N5Q0NqdUJsRnp3?oc=5\" target=\"_blank\">Black Stone Minerals Stock Holds Flat Near $13.51, Underperforms S&amp;P 500 | Analysis - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "Over half of S&P 500 firms saw stock drops after AI-related layoffs, averaging a 25% decline. - Pluang",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNOC1wS25KcDJJM0F0Rmxiclp3eHRpOGo4bVByc1djMV80cDl2alp2MjBDRkY1Y05EbXc2eUp5NTdGV0FKU2xmWUxXeWc2RVZkUjFablNSNEFGQWp5NnBibXNVUXV1LUtGNUl4ay02SUh6ek4yOEFaR0VSU2p2TGFVaw?oc=5",
+      "publisher": "Pluang",
+      "published": "Sun, 17 May 2026 14:35:40 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxNOC1wS25KcDJJM0F0Rmxiclp3eHRpOGo4bVByc1djMV80cDl2alp2MjBDRkY1Y05EbXc2eUp5NTdGV0FKU2xmWUxXeWc2RVZkUjFablNSNEFGQWp5NnBibXNVUXV1LUtGNUl4ay02SUh6ek4yOEFaR0VSU2p2TGFVaw?oc=5\" target=\"_blank\">Over half of S&amp;P 500 firms saw stock drops after AI-related layoffs, averaging a 25% decline.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Pluang</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=pluang.com&sz=64"
+    },
+    {
+      "title": "Treasury Yields Are Testing The AI Equity Rally (SPX) - Seeking Alpha",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQcU5xdHR5ZWswNlp6dVlhYmNqc01kRE9qaFBqVFROdTRDdU9HX0loVlF0bnA3elRxOTgzdEROUDF5bjktZ0FNa0JUNmNFcDVQVWJnekVvWGtmbGwyZlRKMDRpVDB0bmxBMEN4SVFZdkZzT1AwWU5uNmtlTTFjSmZla1pNdVIyTE1INTBtNkNEYWx6U1E2TExZMzVxM1NranJXSmM3dnhiemsyS1ppTlcteThodw?oc=5",
       "publisher": "Seeking Alpha",
-      "published": "Sat, 11 Apr 2026 12:30:00 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimAFBVV95cUxPNEVEeHE4akZxT2EyZm1WS3g3NGdKQ05oMVloczEtaDJrZGJpWHBOQmpETVdNWnlOa25TSEllUWN4UnlndWVPZWNMeGUzVGdYbVJQaEJIX3R6NzN2bERkT1YzUGpUTnVQaVhKWDhZOXRNNmFmT1V0VW5SLXdkMnJxMWJiWVFOdjhGeElUTTRLRTRZVEkwSVEyVQ?oc=5\" target=\"_blank\">S&amp;P 500: A Dead Money Era May Be Here, How To Thrive In It (SPX)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Seeking Alpha</font>",
+      "published": "Sun, 17 May 2026 08:14:20 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxQcU5xdHR5ZWswNlp6dVlhYmNqc01kRE9qaFBqVFROdTRDdU9HX0loVlF0bnA3elRxOTgzdEROUDF5bjktZ0FNa0JUNmNFcDVQVWJnekVvWGtmbGwyZlRKMDRpVDB0bmxBMEN4SVFZdkZzT1AwWU5uNmtlTTFjSmZla1pNdVIyTE1INTBtNkNEYWx6U1E2TExZMzVxM1NranJXSmM3dnhiemsyS1ppTlcteThodw?oc=5\" target=\"_blank\">Treasury Yields Are Testing The AI Equity Rally (SPX)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Seeking Alpha</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=seekingalpha.com&sz=64"
     },
     {
-      "title": "S&P 500 Sell-Off: 1 Vanguard ETF I'm Loading Up On Right Now - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5lbExpalczMHV3M1BzTUxHOUExYzgzRWM0RnduUDBJTWxzeHJkYW4tTnFQLU9YbElaQkRhakV1SXJ6cGl4dE8xY0FtanZhN2hzUUxQMXduVWFJVXhGUUY5S3dOUzY5bXZ6WkxJQg?oc=5",
+      "title": "Market Euphoria Index - MEI - Predict Market Tops & Bottoms — Indicator by brian7683 - TradingView",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQLU9iRURTNVJEa3loZXFjSXU3Rjd6QkJRWjdlUTZGY1RhYk5kWFdCZDNfUnQyM0RDUVBLWUhaUGFSRUpiNFNsWlB2ZDlyVWRMaHQ1azNRSmdERldvRUppejZhQjlsZHRJT2tyX0poYjNyYXJkR3IxMWlMV0xSTk5FM3NLRDhtdlQ0SGx1M3c3RHpTdllsRTgwTnZfbm4tTjg?oc=5",
+      "publisher": "TradingView",
+      "published": "Mon, 18 May 2026 03:32:32 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxQLU9iRURTNVJEa3loZXFjSXU3Rjd6QkJRWjdlUTZGY1RhYk5kWFdCZDNfUnQyM0RDUVBLWUhaUGFSRUpiNFNsWlB2ZDlyVWRMaHQ1azNRSmdERldvRUppejZhQjlsZHRJT2tyX0poYjNyYXJkR3IxMWlMV0xSTk5FM3NLRDhtdlQ0SGx1M3c3RHpTdllsRTgwTnZfbm4tTjg?oc=5\" target=\"_blank\">Market Euphoria Index - MEI - Predict Market Tops & Bottoms — Indicator by brian7683</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">TradingView</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.tradingview.com&sz=64"
+    },
+    {
+      "title": "Phil Rosen: S&P 500 sets 18 record highs in 2026 as AI trade accelerates - Traders Union",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRVhXS1ZfTU5ZY1E0QWp4Y3RpM2hKblRJR2JNX0xTRk5Gcm40bER2UWJSdGFyM0s4RThzd2hpR242dzBtNzRjSGhnMFJ4ZktGSWhlRHFDTTJVZW1lTmNBVXp4eW5JMU95aHZrdVczUloyZUhONlVpS1c4aThfNTlGUHJNSndNdnJa?oc=5",
+      "publisher": "Traders Union",
+      "published": "Sun, 17 May 2026 16:48:53 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiAFBVV95cUxPRVhXS1ZfTU5ZY1E0QWp4Y3RpM2hKblRJR2JNX0xTRk5Gcm40bER2UWJSdGFyM0s4RThzd2hpR242dzBtNzRjSGhnMFJ4ZktGSWhlRHFDTTJVZW1lTmNBVXp4eW5JMU95aHZrdVczUloyZUhONlVpS1c4aThfNTlGUHJNSndNdnJa?oc=5\" target=\"_blank\">Phil Rosen: S&amp;P 500 sets 18 record highs in 2026 as AI trade accelerates</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Traders Union</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=tradersunion.com&sz=64"
+    },
+    {
+      "title": "Northeast Financial Cuts Its GPIX Stake by $12 Million -- What Income Investors Should Know - The Globe and Mail",
+      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPSTc2c3dWX2JjVU1nT2JIaTViamVydjRhc2xCRDZhR2ZiZEw0WGR2RjdqZ3Vmd2hIeFR1MGFJSGVMLUVsV2NNa252aUpodVdwcHRXNzVrbXd2NVV0UUZUOEVoUlNqZEpPaW9xWnNiaXhnMGNtaTE1ZjN1WUw1Zkx5MW9na2FyTmRreVo4NW9TSkQ5S29qVVllYnQtXzhqMzF3Q0dUdlpVQl9WdjZheGhJNDlXdERTQkJOeklTWkR0Sk5KMk5LYVFDYWd5dHdoZkhsOW9ydkJvdzhHWWM5eTBTVnhHbkd1M3ZxaUFOQWs4LUQ4b0JOTk13NHNPMVRua28?oc=5",
+      "publisher": "The Globe and Mail",
+      "published": "Sun, 17 May 2026 11:37:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxPSTc2c3dWX2JjVU1nT2JIaTViamVydjRhc2xCRDZhR2ZiZEw0WGR2RjdqZ3Vmd2hIeFR1MGFJSGVMLUVsV2NNa252aUpodVdwcHRXNzVrbXd2NVV0UUZUOEVoUlNqZEpPaW9xWnNiaXhnMGNtaTE1ZjN1WUw1Zkx5MW9na2FyTmRreVo4NW9TSkQ5S29qVVllYnQtXzhqMzF3Q0dUdlpVQl9WdjZheGhJNDlXdERTQkJOeklTWkR0Sk5KMk5LYVFDYWd5dHdoZkhsOW9ydkJvdzhHWWM5eTBTVnhHbkd1M3ZxaUFOQWs4LUQ4b0JOTk13NHNPMVRua28?oc=5\" target=\"_blank\">Northeast Financial Cuts Its GPIX Stake by $12 Million -- What Income Investors Should Know</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Globe and Mail</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.theglobeandmail.com&sz=64"
+    },
+    {
+      "title": "Howard Marks Warned Me About S&P 500 Valuations: I Ignored Him and My Portfolio Doubled - AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5UY3VTTEFqcUZmZGZlZzBLR3ZmZEFnakNRYjU1WWdpUFl5SWR1NWxGRS1RUFFFNnlLczhWYjRxSmpTQVpiZVJiUkQ4U0lGQWl1dmIzVDktdHp3bjF5NTFnRk0xaHdxZ1Zqd2wtM2xaaXJHVTZ4RHBYNA?oc=5",
       "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 00:26:33 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE5lbExpalczMHV3M1BzTUxHOUExYzgzRWM0RnduUDBJTWxzeHJkYW4tTnFQLU9YbElaQkRhakV1SXJ6cGl4dE8xY0FtanZhN2hzUUxQMXduVWFJVXhGUUY5S3dOUzY5bXZ6WkxJQg?oc=5\" target=\"_blank\">S&amp;P 500 Sell-Off: 1 Vanguard ETF I'm Loading Up On Right Now</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "published": "Sun, 17 May 2026 08:06:05 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMieEFVX3lxTE5UY3VTTEFqcUZmZGZlZzBLR3ZmZEFnakNRYjU1WWdpUFl5SWR1NWxGRS1RUFFFNnlLczhWYjRxSmpTQVpiZVJiUkQ4U0lGQWl1dmIzVDktdHp3bjF5NTFnRk0xaHdxZ1Zqd2wtM2xaaXJHVTZ4RHBYNA?oc=5\" target=\"_blank\">Howard Marks Warned Me About S&amp;P 500 Valuations: I Ignored Him and My Portfolio Doubled</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.aol.com&sz=64"
     },
     {
-      "title": "S&P 500 Rallies 3.6% During Tariff Week While Chainlink (LINK) CCIP Processes $18B Monthly Volume - openPR.com",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQWjgzMVBBajNVYWlHNzdJWFdjUkJJbkNpVTRYTDcta2pqNjI5TFdPQUx5eWtuQ0NyWEIwRDVxWF85dm9VbWdycjZLVHpTSGxyT0tiV3dUbnpnSVpsbzlBeDY4TUpWQnYxanY3LTZMN1poMEhwV1czTUdxejUwSTdaQS16STZxcVA0d1FRd0tIZHBZX0prR0hwMFdEVQ?oc=5",
-      "publisher": "openPR.com",
-      "published": "Sun, 12 Apr 2026 05:54:12 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimwFBVV95cUxQWjgzMVBBajNVYWlHNzdJWFdjUkJJbkNpVTRYTDcta2pqNjI5TFdPQUx5eWtuQ0NyWEIwRDVxWF85dm9VbWdycjZLVHpTSGxyT0tiV3dUbnpnSVpsbzlBeDY4TUpWQnYxanY3LTZMN1poMEhwV1czTUdxejUwSTdaQS16STZxcVA0d1FRd0tIZHBZX0prR0hwMFdEVQ?oc=5\" target=\"_blank\">S&amp;P 500 Rallies 3.6% During Tariff Week While Chainlink (LINK) CCIP Processes $18B Monthly Volume</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">openPR.com</font>",
+      "title": "Industrial REITs top S&P 500 with decades of steady gains - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNFRSTG1sWlJxQUh6V19YTmE2Mk85Y3dQLXdPVVI4MTFXOVppS0h2UTNscWpwS0QxQWQ0T2drcldlQjFPcFgyWHhCVm94T2ptT1V0ZzZfY1BFU1BxaExiWm1lUG5GSl9ldFk5NDFnNlBQQThxMHE3UG9YeGhUM0Q2U1lpcjlXSm5hV1gzb3B2cnlCVWxJd3ZmNFpkYkVUZlFhTlFaUFZBNjVoVXkzcnJoUGs4RTdJRjZfTjZCZGJfSDVESW5rX3VZWTJJa1liR2lDdEN3?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 05:21:18 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi0wFBVV95cUxNNFRSTG1sWlJxQUh6V19YTmE2Mk85Y3dQLXdPVVI4MTFXOVppS0h2UTNscWpwS0QxQWQ0T2drcldlQjFPcFgyWHhCVm94T2ptT1V0ZzZfY1BFU1BxaExiWm1lUG5GSl9ldFk5NDFnNlBQQThxMHE3UG9YeGhUM0Q2U1lpcjlXSm5hV1gzb3B2cnlCVWxJd3ZmNFpkYkVUZlFhTlFaUFZBNjVoVXkzcnJoUGs4RTdJRjZfTjZCZGJfSDVESW5rX3VZWTJJa1liR2lDdEN3?oc=5\" target=\"_blank\">Industrial REITs top S&amp;P 500 with decades of steady gains</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
     },
     {
-      "title": "S&P 500 Holds Steady in Narrow Rising Trend Ahead of Q1 2026 Earnings Season - AD HOC NEWS",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPc2VTbWFSaGxUQkJaTHVmOGFTMlJUWnJlSkxHR0RyOFZNVUxac1ZmNy1DOUhyQUd2NXVlMEtkeDRaaUZXRExXdUppTzZZMXM1aFE2MXZBMFFIc3F6MVBhTmZZWkRtNDNfRk8tZmZKZVpJZmdRNUNuZS1kU255TVJ3V2N6UE8xdEFkQjZkQXUzUmJvSjg0c1J6LWVXNHZveHdOWjdSaGYzSC1NVHM4bHJCSllYTXZYLXBfTlktSmpUeGpLb3JoRE50V3pkVm0?oc=5",
+      "title": "S&P 500 Today: Wall Street's Benchmark Rises on Tech Strength Despite Hot PPI Data - BBN Times",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUjZIV0JSTFFWcmxhZzhrSW9pMXZ2ckJhSVJJY3YyMjRZNzFncFFTdmZyN3dXWW1WRHM0T3ZpUWNCY0V1cl9BRUNJUnlKYXBEaE0xZGhNbnNjaTBydmNGQThwUHVlTzRaZ1RLY3BqUlJDcmdFSU9WajZLX1Npb1BTNTBSTC1DRi1QUnE0RVhkMmkxemdwNmNRZXZhTkZZdmZYUFNoVldzeHM4TGxDN3M4WkYxd0ZoRjA?oc=5",
+      "publisher": "BBN Times",
+      "published": "Sun, 17 May 2026 17:18:17 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQUjZIV0JSTFFWcmxhZzhrSW9pMXZ2ckJhSVJJY3YyMjRZNzFncFFTdmZyN3dXWW1WRHM0T3ZpUWNCY0V1cl9BRUNJUnlKYXBEaE0xZGhNbnNjaTBydmNGQThwUHVlTzRaZ1RLY3BqUlJDcmdFSU9WajZLX1Npb1BTNTBSTC1DRi1QUnE0RVhkMmkxemdwNmNRZXZhTkZZdmZYUFNoVldzeHM4TGxDN3M4WkYxd0ZoRjA?oc=5\" target=\"_blank\">S&amp;P 500 Today: Wall Street's Benchmark Rises on Tech Strength Despite Hot PPI Data</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BBN Times</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.bbntimes.com&sz=64"
+    },
+    {
+      "title": "The Bull Case For SPX Technologies (SPXC) Could Change Following Strong Q1 Results And Capacity Expansion Plans - simplywall.st",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTTVqVVBwRldBeTl4NWhHa25RNGE4eTZaR0lyX3dVN1NIZzVhalpLZnhJeXIzUjIwcW92dHdxZ3hXUFltVHpXaWdKbWxVSG1HZHp4X2RxekU1X29hYjRHRXVwT0FnWFNtNFZmWUQ0NTlnV2pxWWs0a0pRbFA5WjVoM01TVVM5QWhuaXkwaVdYZ0VqSWtLdFJqOWtpeld1WUJ6T0JPVERHTS1zV1BoOWthUnNBVW5CaERNLTVuR3U0Zk92eUE3RGFZa0FKUVhFYWExbWY5N9IB2gFBVV95cUxNZDR3MDB3amNVZWV6SW4ycnE3TktnWllscjFJbTJsWHBVT0VNTmdEcFZWanRWY0s2b0QzVkpYdDNMejlrMlpUMzNsT25IZHNxdmcxN1h4emoyQlNZcWx5NVUtZnFLdlVhN080dERSeGFITGpMbUh5bC1fWklnS1pQcUwzMlVGdWNyemxwUFRNQ0EyQnNrRjQtcHZjdlpMVUpqSzFIUHlGNDFPYTRsU2ZjUjVVT19Xbk1TbkMxWWtXZWlsX05nRFROY2R4X2FKWmt3OGlLdVFxTGdsQQ?oc=5",
+      "publisher": "simplywall.st",
+      "published": "Sun, 17 May 2026 05:27:29 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi1AFBVV95cUxNTTVqVVBwRldBeTl4NWhHa25RNGE4eTZaR0lyX3dVN1NIZzVhalpLZnhJeXIzUjIwcW92dHdxZ3hXUFltVHpXaWdKbWxVSG1HZHp4X2RxekU1X29hYjRHRXVwT0FnWFNtNFZmWUQ0NTlnV2pxWWs0a0pRbFA5WjVoM01TVVM5QWhuaXkwaVdYZ0VqSWtLdFJqOWtpeld1WUJ6T0JPVERHTS1zV1BoOWthUnNBVW5CaERNLTVuR3U0Zk92eUE3RGFZa0FKUVhFYWExbWY5N9IB2gFBVV95cUxNZDR3MDB3amNVZWV6SW4ycnE3TktnWllscjFJbTJsWHBVT0VNTmdEcFZWanRWY0s2b0QzVkpYdDNMejlrMlpUMzNsT25IZHNxdmcxN1h4emoyQlNZcWx5NVUtZnFLdlVhN080dERSeGFITGpMbUh5bC1fWklnS1pQcUwzMlVGdWNyemxwUFRNQ0EyQnNrRjQtcHZjdlpMVUpqSzFIUHlGNDFPYTRsU2ZjUjVVT19Xbk1TbkMxWWtXZWlsX05nRFROY2R4X2FKWmt3OGlLdVFxTGdsQQ?oc=5\" target=\"_blank\">The Bull Case For SPX Technologies (SPXC) Could Change Following Strong Q1 Results And Capacity Expansion Plans</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">simplywall.st</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=simplywall.st&sz=64"
+    },
+    {
+      "title": "Nicolet Bankshares Stock Performance and Key Financial Metrics | 2026 Update - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMTlQUTR2SEJJdEF1cGZMX1B6SDNKak9aWEVkM1dCZk9ZMUItVnV3bTJjakRMY1hRU1kxZV9xc1hHNWE0eUNWMnRPdnpBV1BfQkhSWnFhQjlGOUJPblRWMmhrTGtwOWxQNEU5ZUdEdV96MzAzLUpBQ2pxcmVfVzViMTU3TmphaEIzdy1R?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 10:31:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMTlQUTR2SEJJdEF1cGZMX1B6SDNKak9aWEVkM1dCZk9ZMUItVnV3bTJjakRMY1hRU1kxZV9xc1hHNWE0eUNWMnRPdnpBV1BfQkhSWnFhQjlGOUJPblRWMmhrTGtwOWxQNEU5ZUdEdV96MzAzLUpBQ2pxcmVfVzViMTU3TmphaEIzdy1R?oc=5\" target=\"_blank\">Nicolet Bankshares Stock Performance and Key Financial Metrics | 2026 Update - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "How Industrial REITs Outperform the S&P 500 During 2026 Inflation Challenges - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRXNSaFR3Z0dNRy1zWlZMRG9DTUc1dGZadC1YNHdwR0VLM1hma3ZMbmRYSlBDQWJYUGM2djJEVk5iOEVpNlRxd05oT0hRWVZNUWdzaEtVaUlsVnZiN2ZXdlc2bHNLWWNWVkVoQnNZWkdKYkVPYUhSREI2RnUtVzlMbE51N2laVWNfemVyWXpqRjRQUEpDa0RoT3RR?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 06:00:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMimgFBVV95cUxPRXNSaFR3Z0dNRy1zWlZMRG9DTUc1dGZadC1YNHdwR0VLM1hma3ZMbmRYSlBDQWJYUGM2djJEVk5iOEVpNlRxd05oT0hRWVZNUWdzaEtVaUlsVnZiN2ZXdlc2bHNLWWNWVkVoQnNZWkdKYkVPYUhSREI2RnUtVzlMbE51N2laVWNfemVyWXpqRjRQUEpDa0RoT3RR?oc=5\" target=\"_blank\">How Industrial REITs Outperform the S&amp;P 500 During 2026 Inflation Challenges - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "Coterra Energy stock (US22052L1044): sharp S&P 500 sell-off puts resilient cash-flow story to the te - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNDlUZ2dUcmRscG1URURBN012RXU4U3h0dGNvTGFsQ1RwNW1Ta1R3UVB4dXNtWXRUYnRISHJCdGgxWkxOS0lQek54WWpzclFCUWpRUjhQbFVHMFFwaktaclhYV2dWTzdkWkNvZkxUcDJkVlVDQmRaMWtpMjhfUEtnVVA3MnlyYzNnYkUzZjhmVDR2bHRwN0hFNTVGcmdPdURvaGtIMFJiUjJmLWZ4VXRIWU5BeEczUEY1YThjR3FiMHBTZw?oc=5",
       "publisher": "AD HOC NEWS",
-      "published": "Sun, 12 Apr 2026 10:15:43 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPc2VTbWFSaGxUQkJaTHVmOGFTMlJUWnJlSkxHR0RyOFZNVUxac1ZmNy1DOUhyQUd2NXVlMEtkeDRaaUZXRExXdUppTzZZMXM1aFE2MXZBMFFIc3F6MVBhTmZZWkRtNDNfRk8tZmZKZVpJZmdRNUNuZS1kU255TVJ3V2N6UE8xdEFkQjZkQXUzUmJvSjg0c1J6LWVXNHZveHdOWjdSaGYzSC1NVHM4bHJCSllYTXZYLXBfTlktSmpUeGpLb3JoRE50V3pkVm0?oc=5\" target=\"_blank\">S&amp;P 500 Holds Steady in Narrow Rising Trend Ahead of Q1 2026 Earnings Season</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AD HOC NEWS</font>",
+      "published": "Sun, 17 May 2026 23:16:14 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxQNDlUZ2dUcmRscG1URURBN012RXU4U3h0dGNvTGFsQ1RwNW1Ta1R3UVB4dXNtWXRUYnRISHJCdGgxWkxOS0lQek54WWpzclFCUWpRUjhQbFVHMFFwaktaclhYV2dWTzdkWkNvZkxUcDJkVlVDQmRaMWtpMjhfUEtnVVA3MnlyYzNnYkUzZjhmVDR2bHRwN0hFNTVGcmdPdURvaGtIMFJiUjJmLWZ4VXRIWU5BeEczUEY1YThjR3FiMHBTZw?oc=5\" target=\"_blank\">Coterra Energy stock (US22052L1044): sharp S&amp;P 500 sell-off puts resilient cash-flow story to the te</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AD HOC NEWS</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.ad-hoc-news.de&sz=64"
     },
     {
-      "title": "S&P 500 Rallies 3.6% on Tariff News but Hedera (HBAR) Enterprise Partners Signal a Bigger Shift - openPR.com",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNLUdaZWstazlMQWU0U2FLNHNsTUNhcGx3WU5WdERLWkZONXhHaWhPaVhiUDdidFFVNFdQVTFQSlNZQ1B3cUhpV3c2bnJkZFNuQ0t6Y1RPNUs2aFNzaDVpbW90cGlUTjJSQ25oOFhzV3ZheldfMnkwNnFDWENIaEM5UmI3emVMb1ZvbVdndUE3eXJtUHlZeHFSNzZLWUF3UQ?oc=5",
-      "publisher": "openPR.com",
-      "published": "Sun, 12 Apr 2026 06:15:04 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMingFBVV95cUxNLUdaZWstazlMQWU0U2FLNHNsTUNhcGx3WU5WdERLWkZONXhHaWhPaVhiUDdidFFVNFdQVTFQSlNZQ1B3cUhpV3c2bnJkZFNuQ0t6Y1RPNUs2aFNzaDVpbW90cGlUTjJSQ25oOFhzV3ZheldfMnkwNnFDWENIaEM5UmI3emVMb1ZvbVdndUE3eXJtUHlZeHFSNzZLWUF3UQ?oc=5\" target=\"_blank\">S&amp;P 500 Rallies 3.6% on Tariff News but Hedera (HBAR) Enterprise Partners Signal a Bigger Shift</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">openPR.com</font>",
+      "title": "1 no-brainer S&P 500 Vanguard ETF to buy right now for less than $1,000 - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeVNfQVRuWVM4akJjRlNocFJpY1BfdnNrYzVxekoyOF81MzZuQWh6eGNSX3JrOXBXelFhZEVNbHRsRHd1bF9LZzlKal9OQVYwTDRoM3hfY2VUdVhHVDRTNWlIbWM2RUZXMWt0UzlTTy1NX0d6V3BKbXRHZThGUFpEd3BCLXM2azBxWW1CdWFyQ25FeVJORmthMGZ2WnFfRkZMQVU1V1RZUkZlcVpDMW5LN2pFNFlZMVpJakxyV3p1SktrQQ?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 18:51:28 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeVNfQVRuWVM4akJjRlNocFJpY1BfdnNrYzVxekoyOF81MzZuQWh6eGNSX3JrOXBXelFhZEVNbHRsRHd1bF9LZzlKal9OQVYwTDRoM3hfY2VUdVhHVDRTNWlIbWM2RUZXMWt0UzlTTy1NX0d6V3BKbXRHZThGUFpEd3BCLXM2azBxWW1CdWFyQ25FeVJORmthMGZ2WnFfRkZMQVU1V1RZUkZlcVpDMW5LN2pFNFlZMVpJakxyV3p1SktrQQ?oc=5\" target=\"_blank\">1 no-brainer S&amp;P 500 Vanguard ETF to buy right now for less than $1,000</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
     },
     {
-      "title": "S&P 500 Holds Steady in Narrow Rising Trend Ahead of Q1 2026 Earnings Season - AD HOC NEWS",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbGJzaVc2X1hKQy1wTW9RVVJBR21PbXhqZURsMElBY29aYkJRWk01SEpvRW5RazVLV2JNbnpEMkRubEx4bnUzcWhDRVJJdUI2aC1uWHl6RkZyU1ZLTDhFVGdjVVRLY05lRVV4YnZraklLT0JWaFY0ZnJNeWpqYXVlSTh0NFB0b004S3ZFSkZkWG5NS2ZFcXdqUUhGNTJkcHh5MGJtSWJKTUNVMjRKcXVRSHpRWU52STk5NUV0a01PT1NjZ1FXTXNLNFRGam8?oc=5",
+      "title": "Vanguard S&P 500 Index ETF declares CAD 0.3691 dividend - MSN",
+      "link": "https://news.google.com/rss/articles/CBMizwJBVV95cUxQRTZBVTZKZWpPTUdRODFYUV9xYjFYUTFrRUp1WjBiT0NRNTV2VGFQUGNmbS1xSVJXam9XQm9zUDQ5TnpiSFZTOVBxQWk3NmowRGxaZWV0djhUTzFPYkNDNU1ldkswWVJTekxCV0k4RGdhTWtIUHdWVHpTT1BaTTZTUkpPSy1UQV8teEtfR0VDd1ZrVk5jcGpBa19CR1lWTnE0S05TSnVxVTEwRUhBczBtamhpcWxIUkhFUUNRMG0tUHp4Xzc3d2FWQ1VIb0xKUXFVaEVPbjcxSTlMdzJxS2NCd1RnMEhqLW83bU1QMk5NV0YyYTFIQjJ3ZG9kSWRScl9DQVdnOHRtaC1mUGk1UmRCWkNhanhXbHluYVBUakkwS09GeW80ZTJjYUgxeHQwZE9kRjdROVRpZV9RbnNvQ0JidEczb2tsRzdDZDEwNEw5QQ?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 08:15:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizwJBVV95cUxQRTZBVTZKZWpPTUdRODFYUV9xYjFYUTFrRUp1WjBiT0NRNTV2VGFQUGNmbS1xSVJXam9XQm9zUDQ5TnpiSFZTOVBxQWk3NmowRGxaZWV0djhUTzFPYkNDNU1ldkswWVJTekxCV0k4RGdhTWtIUHdWVHpTT1BaTTZTUkpPSy1UQV8teEtfR0VDd1ZrVk5jcGpBa19CR1lWTnE0S05TSnVxVTEwRUhBczBtamhpcWxIUkhFUUNRMG0tUHp4Xzc3d2FWQ1VIb0xKUXFVaEVPbjcxSTlMdzJxS2NCd1RnMEhqLW83bU1QMk5NV0YyYTFIQjJ3ZG9kSWRScl9DQVdnOHRtaC1mUGk1UmRCWkNhanhXbHluYVBUakkwS09GeW80ZTJjYUgxeHQwZE9kRjdROVRpZV9RbnNvQ0JidEczb2tsRzdDZDEwNEw5QQ?oc=5\" target=\"_blank\">Vanguard S&amp;P 500 Index ETF declares CAD 0.3691 dividend</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Dow, S&P 500, Nasdaq futures slip as Trump calls Iran’s peace proposal ‘totally unacceptable’ — MU, SNDK, MRAM, MLTX stocks in focus - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi3gNBVV95cUxPYkxOWmU3SDNoWWNiRkRJd3pfMkdHZ3NMWlZLVjFXMlVTOFFXZF9MMWRQMUJZb0JIbEg0T094YXlybUJHS3k0MlJnZDlHd080QXBuNnA3TEN4WndyT3p1cnZST25PMzQ0QklwZjRSMUtENnoyNnZsYWszYi1WUnVob2xjZk4ybmdrTmlNSng3VnN0emxMT0Flb0FxeFpFQVpNSEpKbHhlVHFKQS0xZ2ZXb0xPLTBVWldKWTdMcTQ5NVhCZWtOLURtYllXT3UxVU54YUNKZWxYUi16WlVTWDFqUnh2VzJHaFpjdXFpRVNzcmJ1Tll5ZjI1bVJZdHZSUnM2b1RZSnI5LXlMS2xuR0pLa00yNS0zZzdleTZEcTV6QldjQnZfS2FYOHdvNEtJVW4tX2VYUU1aYWkzd1pnWFFYSkxleDhzbDFKcGlxZVBHMm94aV9pOEI4SDhGY2RpWHhpWV83QzRDSVRGWVZxems1eDJvb1RLc0lOeTNNTTBMZ1hYODdWUWloUTdGbFRZbjdxUmludlJOTFVHWnI3OG1iWS1Wc25ZWTg5N24wNHA0ektqdHQyOFpZNXk3Zl9fY0lUTnNONkVFbWFNNnBkanNBSVVCbVNPaDNGd3VDOTRn?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 08:11:06 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi3gNBVV95cUxPYkxOWmU3SDNoWWNiRkRJd3pfMkdHZ3NMWlZLVjFXMlVTOFFXZF9MMWRQMUJZb0JIbEg0T094YXlybUJHS3k0MlJnZDlHd080QXBuNnA3TEN4WndyT3p1cnZST25PMzQ0QklwZjRSMUtENnoyNnZsYWszYi1WUnVob2xjZk4ybmdrTmlNSng3VnN0emxMT0Flb0FxeFpFQVpNSEpKbHhlVHFKQS0xZ2ZXb0xPLTBVWldKWTdMcTQ5NVhCZWtOLURtYllXT3UxVU54YUNKZWxYUi16WlVTWDFqUnh2VzJHaFpjdXFpRVNzcmJ1Tll5ZjI1bVJZdHZSUnM2b1RZSnI5LXlMS2xuR0pLa00yNS0zZzdleTZEcTV6QldjQnZfS2FYOHdvNEtJVW4tX2VYUU1aYWkzd1pnWFFYSkxleDhzbDFKcGlxZVBHMm94aV9pOEI4SDhGY2RpWHhpWV83QzRDSVRGWVZxems1eDJvb1RLc0lOeTNNTTBMZ1hYODdWUWloUTdGbFRZbjdxUmludlJOTFVHWnI3OG1iWS1Wc25ZWTg5N24wNHA0ektqdHQyOFpZNXk3Zl9fY0lUTnNONkVFbWFNNnBkanNBSVVCbVNPaDNGd3VDOTRn?oc=5\" target=\"_blank\">Dow, S&amp;P 500, Nasdaq futures slip as Trump calls Iran’s peace proposal ‘totally unacceptable’ — MU, SNDK, MRAM, MLTX stocks in focus</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "First Financial Bankshares Underperforms S&P 500 with Modest 2.4% Return - News and Statistics - IndexBox",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbm5oTHpyM0dpMy0yWkVya3l5b1E0cFBQR1piaUZTNnBtenNOVzMxOUU4bHF1VXd4SG9fZE0zMi15Uzg5cTg1d3dIaVdjQWVnamhta3dKcWN4T3EtLWZ1STVPa2hQbHZLTWN2RVNHclNiTWhSR3laUzh4eTgwUlVlUlkwVDZaSEplQmRMNS00ZmNycThaS2VEeXFUTUJaWFVjdmhCZGMwd2dXUQ?oc=5",
+      "publisher": "IndexBox",
+      "published": "Sun, 17 May 2026 05:51:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbm5oTHpyM0dpMy0yWkVya3l5b1E0cFBQR1piaUZTNnBtenNOVzMxOUU4bHF1VXd4SG9fZE0zMi15Uzg5cTg1d3dIaVdjQWVnamhta3dKcWN4T3EtLWZ1STVPa2hQbHZLTWN2RVNHclNiTWhSR3laUzh4eTgwUlVlUlkwVDZaSEplQmRMNS00ZmNycThaS2VEeXFUTUJaWFVjdmhCZGMwd2dXUQ?oc=5\" target=\"_blank\">First Financial Bankshares Underperforms S&amp;P 500 with Modest 2.4% Return - News and Statistics</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">IndexBox</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.indexbox.io&sz=64"
+    },
+    {
+      "title": "Dow, S&P 500, Nasdaq futures rise after Trump’s 10-day Iran pause: Why META, DJT, U, KOD, MDGL are trending after-hours - MSN",
+      "link": "https://news.google.com/rss/articles/CBMikgNBVV95cUxPcHFfdlo1U21aakFad0laRWpTZEE2ajJJelZzakFVY3dtc05PTktQVmZaT0pNSWJzWFBiSzgwNGxfRzV6SGpHRWxvb0xPVUVVVHFkZ3ZydzhJdjlSS1ZUdE00MUQ2UFZrWmltelNNZmRZZ3JNTDJTajhvWF9GVHh1NmpoM1FqT2FiN2l0MURqMG9QdURVb2NxLURWQ0U3Z1plRkdkMURYUlNFVHBSaG02RHpKS0ktdWtfblBEZXNSLWZxR0otcTFibFhveWt6WC1NZ3RBTktTZzNxRkI3Tm5EUElTLVJUZDdCVFAxVzEzR0M1M014aFVYS05HXzItV2hvdl9lRXFEN1Nab2ZCN01nRnZvdU1UZV9BVXhnTmlKdGRsSVVlbjBqY3NSZ1g3Um93REJUMkM4Q0R5ZFVDVEJlSEI2THJKd0lDRVpLY0l6aC1ueDNDamt0M3VXRERsclFQdl9EWFZ3ZHpJdjI3SVdOQV9jTmhOX0NNdU5FX09wRHRqSmhUamhTMFIzSFVQcXhhS1E?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 08:52:57 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMikgNBVV95cUxPcHFfdlo1U21aakFad0laRWpTZEE2ajJJelZzakFVY3dtc05PTktQVmZaT0pNSWJzWFBiSzgwNGxfRzV6SGpHRWxvb0xPVUVVVHFkZ3ZydzhJdjlSS1ZUdE00MUQ2UFZrWmltelNNZmRZZ3JNTDJTajhvWF9GVHh1NmpoM1FqT2FiN2l0MURqMG9QdURVb2NxLURWQ0U3Z1plRkdkMURYUlNFVHBSaG02RHpKS0ktdWtfblBEZXNSLWZxR0otcTFibFhveWt6WC1NZ3RBTktTZzNxRkI3Tm5EUElTLVJUZDdCVFAxVzEzR0M1M014aFVYS05HXzItV2hvdl9lRXFEN1Nab2ZCN01nRnZvdU1UZV9BVXhnTmlKdGRsSVVlbjBqY3NSZ1g3Um93REJUMkM4Q0R5ZFVDVEJlSEI2THJKd0lDRVpLY0l6aC1ueDNDamt0M3VXRERsclFQdl9EWFZ3ZHpJdjI3SVdOQV9jTmhOX0NNdU5FX09wRHRqSmhUamhTMFIzSFVQcXhhS1E?oc=5\" target=\"_blank\">Dow, S&amp;P 500, Nasdaq futures rise after Trump’s 10-day Iran pause: Why META, DJT, U, KOD, MDGL are trending after-hours</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Vanguard S&P 500 ETF (VOO): The smartest investment you can make today - MSN",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaHNTWHFqamExQU9FbHpZVjlQNDJjaXpRejg5dWhOcWVzbWZSbDNiSW5RWGhWRW1WUm1SXzE1dFRzT1lpNEl2ckhjSm1hOEljQmdyS0dWcDREekctMXVDemZOMlZYN3pJUVY3dFI4Qkk3cDdEbmk3OHdGbHBBT1I4VXl6NUJIY29UQ2trVmpfTFZ3cE9KOFo0NjU3MnpmS0NFdWxILS1hMkJTazFDQXJkNDM0NzhsMloz?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 17:22:08 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiuAFBVV95cUxPaHNTWHFqamExQU9FbHpZVjlQNDJjaXpRejg5dWhOcWVzbWZSbDNiSW5RWGhWRW1WUm1SXzE1dFRzT1lpNEl2ckhjSm1hOEljQmdyS0dWcDREekctMXVDemZOMlZYN3pJUVY3dFI4Qkk3cDdEbmk3OHdGbHBBT1I4VXl6NUJIY29UQ2trVmpfTFZ3cE9KOFo0NjU3MnpmS0NFdWxILS1hMkJTazFDQXJkNDM0NzhsMloz?oc=5\" target=\"_blank\">Vanguard S&amp;P 500 ETF (VOO): The smartest investment you can make today</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "The S&P 500 barely yields 2%. These 3 dividend stocks under $30 are doing much better than that - MSN",
+      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRTN4TEtXSE5aSjFvRndfYWpqQW5CN214VUhuV0xsTndmblVCamIxa0FnbzNYOHgwZlBUTGdpaE93em12cDdOcHF3WEpyeWFVWnNGZzVoeVdadzJmSGlBekZWQ1JWR1hEamhUMHFGWEx2SXRsdGtyUlhJMXpNTjlSZ2d2a044bnR2cmFjWk1kSFRPbHN6MDBzOFIteE9Wc1NudXNzdTh3Z3U3c3NSaUVfdHdxVVB4YXExd1VCT3J2Zmw0bEUyR3BHWV9PTVFTSEdJblJsT3ZMTkNhT2ZobEpvWEstVWQ5Q29kX1VV?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 18:38:35 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxQRTN4TEtXSE5aSjFvRndfYWpqQW5CN214VUhuV0xsTndmblVCamIxa0FnbzNYOHgwZlBUTGdpaE93em12cDdOcHF3WEpyeWFVWnNGZzVoeVdadzJmSGlBekZWQ1JWR1hEamhUMHFGWEx2SXRsdGtyUlhJMXpNTjlSZ2d2a044bnR2cmFjWk1kSFRPbHN6MDBzOFIteE9Wc1NudXNzdTh3Z3U3c3NSaUVfdHdxVVB4YXExd1VCT3J2Zmw0bEUyR3BHWV9PTVFTSEdJblJsT3ZMTkNhT2ZobEpvWEstVWQ5Q29kX1VV?oc=5\" target=\"_blank\">The S&amp;P 500 barely yields 2%. These 3 dividend stocks under $30 are doing much better than that</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "Prediction: May 21 Will Be a Huge Day for the Stock Market. Here's What You Need to Know. - The Globe and Mail",
+      "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPaHNsUDBBQmlxRzZONmo1amk5U2hxUUJONmR3UjRvMUZYaW5GUmhzcU54eGs1NTJiNlVQVGQxUDF4cEdZYVhCQXVwZC1jdHVjWkduZ1FiWEN2V1pfZTFraF9OcTg2cmRCUXVhdmZrZElNdzM5ZmNjX0pYOXU0eDk2U1lwM1JsVHNsR0NwQi1JaW52TE9WM0U0NFZLNTBEUGZBcklIYlg4ejhsUW9vMGoyejc2Nmo1Z19YRUxHVGtkdzJmODJFY2stRk5yM2kteDlNWjExMGlNU1cwTVREamV5d3BFWlhjUFhJMnltd25lc3JlZnlyOVNvcE1KaUo1SnRNT1Mw?oc=5",
+      "publisher": "The Globe and Mail",
+      "published": "Sun, 17 May 2026 08:33:58 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwJBVV95cUxPaHNsUDBBQmlxRzZONmo1amk5U2hxUUJONmR3UjRvMUZYaW5GUmhzcU54eGs1NTJiNlVQVGQxUDF4cEdZYVhCQXVwZC1jdHVjWkduZ1FiWEN2V1pfZTFraF9OcTg2cmRCUXVhdmZrZElNdzM5ZmNjX0pYOXU0eDk2U1lwM1JsVHNsR0NwQi1JaW52TE9WM0U0NFZLNTBEUGZBcklIYlg4ejhsUW9vMGoyejc2Nmo1Z19YRUxHVGtkdzJmODJFY2stRk5yM2kteDlNWjExMGlNU1cwTVREamV5d3BFWlhjUFhJMnltd25lc3JlZnlyOVNvcE1KaUo1SnRNT1Mw?oc=5\" target=\"_blank\">Prediction: May 21 Will Be a Huge Day for the Stock Market. Here's What You Need to Know.</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">The Globe and Mail</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=www.theglobeandmail.com&sz=64"
+    },
+    {
+      "title": "SPX Technologies stock (US7846351044): strong Q1 momentum and capacity expansion keep growth story i - AD HOC NEWS",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQbnBTTXpFVlRvVFRoN0p5SWdYbW5xVFo2cXVZdGtGT2EycGQ4NGxVUUJZOVBObmh2NzJ0Q2dmLTB5VUNSbVBZQ05rc3BQbTFJZHdoZllIVlQ4U0ZEU0FlMHFHM0RCRS10ajllWHE0NXdfZktKWXVuUjQ2dmkweW9IRlBsVHB5TVM3MDV5bUEtSHhPOTZ2bTlqQ2szQnp6RGl6X2FGOHRRaW1XMzU1UEFvaGQ0b2o0cmNCX3dUT3VZZFYwdlg5?oc=5",
       "publisher": "AD HOC NEWS",
-      "published": "Sun, 12 Apr 2026 09:53:17 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxNbGJzaVc2X1hKQy1wTW9RVVJBR21PbXhqZURsMElBY29aYkJRWk01SEpvRW5RazVLV2JNbnpEMkRubEx4bnUzcWhDRVJJdUI2aC1uWHl6RkZyU1ZLTDhFVGdjVVRLY05lRVV4YnZraklLT0JWaFY0ZnJNeWpqYXVlSTh0NFB0b004S3ZFSkZkWG5NS2ZFcXdqUUhGNTJkcHh5MGJtSWJKTUNVMjRKcXVRSHpRWU52STk5NUV0a01PT1NjZ1FXTXNLNFRGam8?oc=5\" target=\"_blank\">S&amp;P 500 Holds Steady in Narrow Rising Trend Ahead of Q1 2026 Earnings Season</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AD HOC NEWS</font>",
+      "published": "Sun, 17 May 2026 22:26:21 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMixAFBVV95cUxQbnBTTXpFVlRvVFRoN0p5SWdYbW5xVFo2cXVZdGtGT2EycGQ4NGxVUUJZOVBObmh2NzJ0Q2dmLTB5VUNSbVBZQ05rc3BQbTFJZHdoZllIVlQ4U0ZEU0FlMHFHM0RCRS10ajllWHE0NXdfZktKWXVuUjQ2dmkweW9IRlBsVHB5TVM3MDV5bUEtSHhPOTZ2bTlqQ2szQnp6RGl6X2FGOHRRaW1XMzU1UEFvaGQ0b2o0cmNCX3dUT3VZZFYwdlg5?oc=5\" target=\"_blank\">SPX Technologies stock (US7846351044): strong Q1 momentum and capacity expansion keep growth story i</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AD HOC NEWS</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.ad-hoc-news.de&sz=64"
     },
     {
-      "title": "Meet the 2 Formerly Down-and-Out Stocks That Are Outperforming the S&P 500 This Year. Are They Still a Buy? - AOL.com",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBkX1NvRWJNWlY4b0tGbkluWXNOTlpNd1NqNFhjQWVsZWhpcWMtaERsQmI5YVdlX3RpcDQ5VlVNdWtuOHViOTJydkkydmpNQzNveGJNX0F6Q2ltYzlwelFtckRZQjk1WkNsTl9iSXQzajFiVzd5dGZUOWl5SQ?oc=5",
-      "publisher": "AOL.com",
-      "published": "Sun, 12 Apr 2026 00:47:05 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMie0FVX3lxTFBkX1NvRWJNWlY4b0tGbkluWXNOTlpNd1NqNFhjQWVsZWhpcWMtaERsQmI5YVdlX3RpcDQ5VlVNdWtuOHViOTJydkkydmpNQzNveGJNX0F6Q2ltYzlwelFtckRZQjk1WkNsTl9iSXQzajFiVzd5dGZUOWl5SQ?oc=5\" target=\"_blank\">Meet the 2 Formerly Down-and-Out Stocks That Are Outperforming the S&amp;P 500 This Year. Are They Still a Buy?</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AOL.com</font>",
+      "title": "AI-fueled momentum rally risks fading as history signals softer S&P 500 returns ahead: Report - BusinessLine",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNOGt2cEVvdHlHaWRFYzQ5amRaN25Pbk5yYzVrUjVNQlB2ZXBhd25VZWdnd2xmaExiU3Zfem5FNWVWVzJZT0dpTGIxTDdLM2gxRF9TdjhLU1BKSjBXd0QwSUVsUEI5Y1FMRUgzV282X3ZpNG5yOXdFRXlWNzVYSjdJbV85RzV3cXVsSVNNNl9HR0ktUVF1NHhxUXNhRkxoNEhNVmpmVVdTdVpHZ19SMXNZQVRaOThzS05JRjcxczMwdVVzSHRwYktoZy1PWnZNQU03WkxVRjlMMlZtV21MLUQ2bnN2eUh2S1N4eXVPR1ViQdIB9gFBVV95cUxOZG5wVzhEeEVHVWVQbmtPS2FpS1FkVGRiOWVkY1A1TGFZdy1kUGZKLWRPalFWRjUwU2FDNVFpeXBTemVzYlZud05uTzJfaDBGUHhLLTRCSHZLbEl3blFWMzN1eHFIUklXenhYVGVwdVNqMTF1MnF6OFVqZ193dFVNMHRLQzBRTVNtZDZYSnY5ZkgwbjNobDVBTnpyamJ1OXg1X2tQd2IyaUVTa19PWXNwalJKUlBnRU9ST2lFWUNOblZCUHpNR25rRWdhQ3IxR1JtclNMcGJ5TGN1b1ZxR3hCUUVsQXdQbi0xeENDalBMLWh2REkyU2c?oc=5",
+      "publisher": "BusinessLine",
+      "published": "Sun, 17 May 2026 09:38:27 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMi7wFBVV95cUxNOGt2cEVvdHlHaWRFYzQ5amRaN25Pbk5yYzVrUjVNQlB2ZXBhd25VZWdnd2xmaExiU3Zfem5FNWVWVzJZT0dpTGIxTDdLM2gxRF9TdjhLU1BKSjBXd0QwSUVsUEI5Y1FMRUgzV282X3ZpNG5yOXdFRXlWNzVYSjdJbV85RzV3cXVsSVNNNl9HR0ktUVF1NHhxUXNhRkxoNEhNVmpmVVdTdVpHZ19SMXNZQVRaOThzS05JRjcxczMwdVVzSHRwYktoZy1PWnZNQU03WkxVRjlMMlZtV21MLUQ2bnN2eUh2S1N4eXVPR1ViQdIB9gFBVV95cUxOZG5wVzhEeEVHVWVQbmtPS2FpS1FkVGRiOWVkY1A1TGFZdy1kUGZKLWRPalFWRjUwU2FDNVFpeXBTemVzYlZud05uTzJfaDBGUHhLLTRCSHZLbEl3blFWMzN1eHFIUklXenhYVGVwdVNqMTF1MnF6OFVqZ193dFVNMHRLQzBRTVNtZDZYSnY5ZkgwbjNobDVBTnpyamJ1OXg1X2tQd2IyaUVTa19PWXNwalJKUlBnRU9ST2lFWUNOblZCUHpNR25rRWdhQ3IxR1JtclNMcGJ5TGN1b1ZxR3hCUUVsQXdQbi0xeENDalBMLWh2REkyU2c?oc=5\" target=\"_blank\">AI-fueled momentum rally risks fading as history signals softer S&amp;P 500 returns ahead: Report</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BusinessLine</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.thehindubusinessline.com&sz=64"
     },
     {
-      "title": "S&P 500 Holds Steady in Quiet Weekend Trading Amid Tariff Uncertainty and Fed Watch - AD HOC NEWS",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQmlNSVpNc0V2VzROSDE5RVYtWHM5UlZpdnRrNUQyX0J1c1IyajVIc3BEMVk1VkVFYXVaSHY4MWFLNEZnQll0WE9hUk1peE9IYVV6amZnenZWbFVnZkxwMlllTUd2cmtLUzc0OHNHRUstc3lIQzFYVUp1cy0yclJnaU5IcWRGekZ4RWN6SlVkZTVKQncwekpuT3hUemI2alR3M2VLN20wUWh2OVRKSWtXVEMyNnNjSVhubmVuNlRmY1lSdDVoMFl6QnFMYzA?oc=5",
-      "publisher": "AD HOC NEWS",
-      "published": "Sun, 12 Apr 2026 10:51:31 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxOQmlNSVpNc0V2VzROSDE5RVYtWHM5UlZpdnRrNUQyX0J1c1IyajVIc3BEMVk1VkVFYXVaSHY4MWFLNEZnQll0WE9hUk1peE9IYVV6amZnenZWbFVnZkxwMlllTUd2cmtLUzc0OHNHRUstc3lIQzFYVUp1cy0yclJnaU5IcWRGekZ4RWN6SlVkZTVKQncwekpuT3hUemI2alR3M2VLN20wUWh2OVRKSWtXVEMyNnNjSVhubmVuNlRmY1lSdDVoMFl6QnFMYzA?oc=5\" target=\"_blank\">S&amp;P 500 Holds Steady in Quiet Weekend Trading Amid Tariff Uncertainty and Fed Watch</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">AD HOC NEWS</font>",
+      "title": "SPDR S&P 500 ETF Trust Tokenized ETF (Hyperliquid) Price Today in United States | SPY to USD Live Price & Chart - Binance",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONmdvbkNlMDBjMnVsQ05zXzhVNHQ1ZURlVDUzZXotbkJ5ejZWZm04dEpmNjNITGh1c2ZkSUdEWEJfV1hudlVfbHp4R0ZnSlVJNkZsdTlqdzFaeUhlSGJ5eFowZVRWVmJhT3FmNG9PLS1UZmpxWWh0N21iSW9xdjZqTTE0TUVXaDg?oc=5",
+      "publisher": "Binance",
+      "published": "Sun, 17 May 2026 06:40:00 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMihwFBVV95cUxONmdvbkNlMDBjMnVsQ05zXzhVNHQ1ZURlVDUzZXotbkJ5ejZWZm04dEpmNjNITGh1c2ZkSUdEWEJfV1hudlVfbHp4R0ZnSlVJNkZsdTlqdzFaeUhlSGJ5eFowZVRWVmJhT3FmNG9PLS1UZmpxWWh0N21iSW9xdjZqTTE0TUVXaDg?oc=5\" target=\"_blank\">SPDR S&amp;P 500 ETF Trust Tokenized ETF (Hyperliquid) Price Today in United States | SPY to USD Live Price & Chart</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Binance</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.binance.com&sz=64"
     },
     {
-      "title": "S&P 500 Rallies 3.6% on the Week but Tariff Shock Pushes Capital Toward Structured Digital Yield - openPR.com",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSE55Y0FKNGcya3NkSDdpNE5xYTg0eTNEYWJ0UzV4T1dMczB0N01qd1hoVmhNSmc0cHpDSVprZGpDQ0ktVm9CRFpPZWs4aEdILTl5WWJaQVFHejRsTGRVX2ZkT0JDMWxDc00tSTFqVmRJa1RWREZzLUQxYm13SzdGLWQwNTlDUWV1LXZ6MTdYemdQa0I2U1U2UEtJOUoyS0VK?oc=5",
-      "publisher": "openPR.com",
-      "published": "Sun, 12 Apr 2026 05:56:26 GMT",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMioAFBVV95cUxNSE55Y0FKNGcya3NkSDdpNE5xYTg0eTNEYWJ0UzV4T1dMczB0N01qd1hoVmhNSmc0cHpDSVprZGpDQ0ktVm9CRFpPZWs4aEdILTl5WWJaQVFHejRsTGRVX2ZkT0JDMWxDc00tSTFqVmRJa1RWREZzLUQxYm13SzdGLWQwNTlDUWV1LXZ6MTdYemdQa0I2U1U2UEtJOUoyS0VK?oc=5\" target=\"_blank\">S&amp;P 500 Rallies 3.6% on the Week but Tariff Shock Pushes Capital Toward Structured Digital Yield</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">openPR.com</font>",
+      "title": "Goldman Sachs says Amazon and Google distorted S&P 500 earnings growth numbers - MSN",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMnhyeDNnQkhxVGJEdmtYRjVxWUMxMTJibWxENEM3QmxFODczc3BUc0dTRW1mdnBfUHBoX0R0NEZrMkQ3VTNnMGJhQTl4RGpMQzFUTE51a0lLazhjQXRSSU1fNTkzb1dEZllBaGNoWjhRcW94WFpIYmpQTzVGTHVqcnBzOVVOVndESUJYRTJGS0RmOThKbEdYdGZMSndOVDFwMjVzOENmOXQzNTZKSHJGdkpxN2g3Y3YxeXFjeGNKbkVOaGtBMTNPbHZzV3M?oc=5",
+      "publisher": "MSN",
+      "published": "Sun, 17 May 2026 05:35:22 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPMnhyeDNnQkhxVGJEdmtYRjVxWUMxMTJibWxENEM3QmxFODczc3BUc0dTRW1mdnBfUHBoX0R0NEZrMkQ3VTNnMGJhQTl4RGpMQzFUTE51a0lLazhjQXRSSU1fNTkzb1dEZllBaGNoWjhRcW94WFpIYmpQTzVGTHVqcnBzOVVOVndESUJYRTJGS0RmOThKbEdYdGZMSndOVDFwMjVzOENmOXQzNTZKSHJGdkpxN2g3Y3YxeXFjeGNKbkVOaGtBMTNPbHZzV3M?oc=5\" target=\"_blank\">Goldman Sachs says Amazon and Google distorted S&amp;P 500 earnings growth numbers</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">MSN</font>",
       "thumbnail": {
-        "type": "og_image",
-        "url": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300-rw"
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
       },
-      "favicon": "https://www.google.com/s2/favicons?domain=news.google.com&sz=64"
+      "favicon": "https://www.google.com/s2/favicons?domain=www.msn.com&sz=64"
+    },
+    {
+      "title": "James E. Thorne: S&P 500 could reach 10,000 in 2027 - Traders Union",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQQktUWHdQeFJVS0hTZW5KTThGWGxyOWZMYW81eXFqbGFnUENxV2lwQzhqbzRYcVhLcHMwNVU3c09NOWhMVDJNVHZYR2hoTEZPYi04eFNYVlRjY0k4YWtXME1WTmNwNlM1WUQ2U1NDTGlYcXdlRUtBYTg5c05kLUJ1WVI0RkY3U0phb29fRWhB?oc=5",
+      "publisher": "Traders Union",
+      "published": "Sun, 17 May 2026 11:44:16 GMT",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMijgFBVV95cUxQQktUWHdQeFJVS0hTZW5KTThGWGxyOWZMYW81eXFqbGFnUENxV2lwQzhqbzRYcVhLcHMwNVU3c09NOWhMVDJNVHZYR2hoTEZPYi04eFNYVlRjY0k4YWtXME1WTmNwNlM1WUQ2U1NDTGlYcXdlRUtBYTg5c05kLUJ1WVI0RkY3U0phb29fRWhB?oc=5\" target=\"_blank\">James E. Thorne: S&amp;P 500 could reach 10,000 in 2027</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">Traders Union</font>",
+      "thumbnail": {
+        "type": "publisher_icon",
+        "url": "https://lh3.googleusercontent.com/-DR60l-K8vnyi99NZovm9HlXyZwQ85GMDxiwJWzoasZYCUrPuUM_P_4Rb7ei03j-0nRs0c4F=w64"
+      },
+      "favicon": "https://www.google.com/s2/favicons?domain=tradersunion.com&sz=64"
     }
   ]
 }
