@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useCallback } from 'react'
 import Globe from 'globe.gl'
 import { useGlobeData } from '../hooks/useGlobeData'
 import { getCountryColor, getPointOfView, ISO2_TO_ISO3, ISO3_TO_ISO2, COUNTRY_INDEX_MAP, COUNTRY_NAMES } from '../utils/globeUtils'
@@ -264,6 +264,19 @@ export default function GlobeView() {
     }
   }, [g.chartHeight, g.selectedCountry])
 
+  const navigateToCountry = useCallback((iso2) => {
+    const iso3   = ISO2_TO_ISO3[iso2]
+    if (!iso3) return
+    const feature = g.countriesFeatRef.current.find(f => f.properties.ISO_A3 === iso3)
+    if (feature && globeRef.current) {
+      g.setIsZooming(true); g.setSelectedCountry(iso2); g.loadCountryData(iso2)
+      const { povLat, povLng, altitude, centerLat, centerLng } = getPointOfView(feature)
+      g.setSelectedPoint({ lat: centerLat, lng: centerLng })
+      globeRef.current.pointOfView({ lat: povLat, lng: povLng, altitude }, 1500)
+      setTimeout(() => g.setIsZooming(false), 1500)
+    }
+  }, [g])
+
   const handleSearchSubmit = e => {
     e.preventDefault()
     if (!g.searchQuery.trim()) return
@@ -273,18 +286,14 @@ export default function GlobeView() {
     )
     if (found) {
       const [iso2] = found
-      const iso3   = ISO2_TO_ISO3[iso2]
-      const feature = g.countriesFeatRef.current.find(f => f.properties.ISO_A3 === iso3)
-      if (feature && globeRef.current) {
-        g.setIsZooming(true); g.setSelectedCountry(iso2); g.loadCountryData(iso2)
-        const { povLat, povLng, altitude, centerLat, centerLng } = getPointOfView(feature)
-        g.setSelectedPoint({ lat: centerLat, lng: centerLng })
-        globeRef.current.pointOfView({ lat: povLat, lng: povLng, altitude }, 1500)
-        setTimeout(() => g.setIsZooming(false), 1500)
-        g.setIsSearchOpen(false); g.setSearchQuery('')
-      }
+      navigateToCountry(iso2)
+      g.setIsSearchOpen(false); g.setSearchQuery('')
     }
   }
+
+  const handleCountrySelect = useCallback((iso2) => {
+    navigateToCountry(iso2)
+  }, [navigateToCountry])
 
   if (g.loading) return (
     <div className="w-full h-full flex items-center justify-center bg-background">
@@ -323,6 +332,8 @@ export default function GlobeView() {
             searchQuery={g.searchQuery}
             setSearchQuery={g.setSearchQuery}
             onSearchSubmit={handleSearchSubmit}
+            countries={Object.entries(COUNTRY_NAMES)}
+            onCountrySelect={handleCountrySelect}
           />
 
           <GlobeLegend 

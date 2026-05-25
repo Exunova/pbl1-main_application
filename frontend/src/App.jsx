@@ -4,6 +4,7 @@ import logo from './logo.ico'
 import { Globe, LayoutGrid, BarChart3, PieChart, User, Minus, Square, X, RefreshCcw } from 'lucide-react'
 import GlobeView from './pages/GlobeView'
 import { ScrapingProvider, useScraping } from './contexts/ScrapingContext'
+import { RefreshProvider } from './contexts/RefreshContext'
 import ScreenerView from './pages/ScreenerView'
 import CompareView from './pages/CompareView'
 import PortfolioView from './pages/PortfolioView'
@@ -119,7 +120,8 @@ export default function App() {
 
   return (
     <ScrapingProvider>
-      <div className={`flex flex-col h-screen w-screen bg-background overflow-hidden relative text-text selection:bg-text/20 selection:text-text ${theme}`}>
+      <RefreshProvider>
+        <div className={`flex flex-col h-screen w-screen bg-background overflow-hidden relative text-text selection:bg-text/20 selection:text-text ${theme}`}>
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-[0.03] pointer-events-none mix-blend-overlay"></div>
         <Titlebar theme={theme} onThemeToggle={nextTheme} />
         <main className="flex-1 overflow-hidden relative z-10">
@@ -132,6 +134,7 @@ export default function App() {
           </Routes>
         </main>
       </div>
+      </RefreshProvider>
     </ScrapingProvider>
   )
 }

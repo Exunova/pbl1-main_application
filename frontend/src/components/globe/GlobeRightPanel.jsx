@@ -74,14 +74,16 @@ export default function GlobeRightPanel({
         </div>
 
         {/* Economic Calendar */}
-        <div className="p-5">
-          <span className="text-[11px] font-bold text-muted tracking-widest uppercase block mb-3">Economic Calendar</span>
-          {panelLoading ? (
+        {panelLoading ? (
+          <div className="p-5 border-t border-border">
+            <span className="text-[11px] font-bold text-muted tracking-widest uppercase block mb-3">Economic Calendar</span>
             <div className="text-xs text-muted">Loading…</div>
-          ) : (
+          </div>
+        ) : (
+          <div className="border-t border-border">
             <EconomicCalendar events={calendarEvents} loading={false} />
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   )

@@ -21,20 +21,20 @@ export default function EconomicCalendar({ country, events: propEvents, loading 
   const IMPACT_COLORS = { high: '#ef4444', medium: '#f59e0b', low: '#94a3b8' }
 
   if (loading) return (
-    <div className="p-3 text-xs text-white/40">Loading calendar...</div>
+    <div className="p-5 text-xs text-muted">Loading calendar...</div>
   )
 
   if (!filteredEvents.length) return (
-    <div className="p-3 text-xs text-white/40">No economic events</div>
+    <div className="p-5 text-xs text-muted">No economic events</div>
   )
 
   return (
-  <div className="p-3">
-    <h3 className="text-xs font-bold text-muted uppercase mb-2">
+  <div className="p-5">
+    <span className="text-[11px] font-bold text-muted tracking-widest uppercase block mb-3">
       Economic Calendar
-    </h3>
+    </span>
 
-    <div className="space-y-1.5 max-h-48 overflow-y-auto">
+    <div className="space-y-1.5">
       {filteredEvents.map((ev, i) => (
         <div key={i} className="bg-card rounded p-2 text-xs">
           

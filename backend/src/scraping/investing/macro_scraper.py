@@ -131,6 +131,39 @@ def close_watchlist_onboarding(page):
         return False
 
 
+def close_onboarding_overlay(page):
+    """Dismiss any survey/onboarding modal that blocks interaction."""
+    try:
+        page.keyboard.press("Escape")
+        time.sleep(0.5)
+    except Exception:
+        pass
+
+    try:
+        dialogs = page.query_selector_all("[data-floating-ui-portal]")
+        for dialog in dialogs:
+            close_selectors = [
+                "button:has-text('Skip')",
+                "button:has-text('Not now')",
+                "button:has-text('No thanks')",
+                "[aria-label='Close']",
+                "button:has-text('Close')",
+            ]
+            for sel in close_selectors:
+                try:
+                    btn = dialog.query_selector(sel)
+                    if btn and btn.is_visible():
+                        btn.click(force=True)
+                        time.sleep(0.5)
+                        logger.info("Closed onboarding overlay")
+                        return True
+                except Exception:
+                    continue
+        return False
+    except Exception:
+        return False
+
+
 def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
     if output_dir is None:
         output_dir = os.path.join(os.path.dirname(__file__), "..", "..", "..", "..", "data")
@@ -169,91 +202,93 @@ def scrape_calendar(from_date, to_date, countries=None, output_dir=None):
         close_watchlist_onboarding(page)
         time.sleep(0.5)
 
-        logger.info("Opening filters and setting dates...")
-        if not click_show_filters(page):
-            logger.error("Could not open filters panel")
-            return []
-        time.sleep(1)
+        logger.info("Calendar loaded, scraping visible events...")
+        time.sleep(5)
 
-        if not open_custom_dates(page):
-            logger.error("Could not open custom dates")
-            return []
-        time.sleep(2)
+        from_dt = datetime.strptime(from_date, "%m/%d/%Y")
+        to_dt = datetime.strptime(to_date, "%m/%d/%Y")
+        total_days = (to_dt - from_dt).days + 1
 
-        set_dates(page, from_date, to_date)
-        time.sleep(1)
+        all_events = []
+        for day_offset in range(total_days):
+            current_date = from_dt + timedelta(days=day_offset)
+            date_str = current_date.strftime("%m/%d/%Y")
 
-        if not apply_dates(page):
-            logger.error("Could not apply dates")
-            return []
-
-        logger.info("Waiting for data to load...")
-        time.sleep(8)
-
-        rows = page.query_selector_all("tr.datatable-v2_row__hkEus")
-        logger.info(f"Found {len(rows)} rows")
-
-        events = []
-        for row in rows:
-            try:
-                row_id = row.get_attribute("id") or ""
-                if not row_id or "--" in row_id:
-                    continue
-
-                country_code = find_country_code(row_id)
-                if not country_code:
-                    continue
-
-                if countries and country_code not in countries:
-                    continue
-
-                text = row.inner_text()
-                if "Holiday" in text or "holiday" in text:
-                    continue
-
-                time_div = row.query_selector("td > div")
-                time_text = ""
-                if time_div:
-                    t = time_div.inner_text().strip()
-                    if t and t not in ["All Day"]:
-                        time_text = t
-
-                event_link = row.query_selector("td a.text-link")
-                name = event_link.inner_text().strip() if event_link else ""
-                if not name:
-                    continue
-
-                all_tds = row.query_selector_all("td")
-                actual, forecast, previous = "", "", ""
-
-                if len(all_tds) >= 8:
-                    actual = all_tds[5].inner_text().strip()
-                    forecast = all_tds[6].inner_text().strip()
-                    previous = all_tds[7].inner_text().strip()
-
-                impact = parse_impact(row)
-                cfg = ALL_COUNTRIES.get(country_code, {"currency": "UNK"})
-
-                events.append(
-                    {
-                        "name": name,
-                        "date": from_date,
-                        "time": time_text,
-                        "impact": impact,
-                        "actual": actual,
-                        "forecast": forecast,
-                        "previous": previous,
-                        "currency": cfg.get("currency", "UNK"),
-                    }
+            if day_offset > 0:
+                logger.info(f"  Navigating to next day ({date_str})...")
+                close_onboarding_overlay(page)
+                click_tomorrow = (
+                    "() => { const btns = document.querySelectorAll('button');"
+                    " for (const b of btns) {"
+                    " if (b.textContent.includes('Tomorrow')) { b.click(); break; } } }"
                 )
-                logger.info(f"  [{country_code}] {time_text} - {name}")
+                page.evaluate(click_tomorrow)
+                time.sleep(4)
+                close_onboarding_overlay(page)
 
-            except Exception as e:
-                logger.debug(f"Error: {e}")
-                continue
+            rows = page.query_selector_all("tr.datatable-v2_row__hkEus")
+            logger.info(f"[{date_str}] Found {len(rows)} rows")
+
+            for row in rows:
+                try:
+                    row_id = row.get_attribute("id") or ""
+                    if not row_id or "--" in row_id:
+                        continue
+
+                    country_code = find_country_code(row_id)
+                    if not country_code:
+                        continue
+
+                    if countries and country_code not in countries:
+                        continue
+
+                    text = row.inner_text()
+                    if "Holiday" in text or "holiday" in text:
+                        continue
+
+                    time_div = row.query_selector("td > div")
+                    time_text = ""
+                    if time_div:
+                        t = time_div.inner_text().strip()
+                        if t and t not in ["All Day"]:
+                            time_text = t
+
+                    event_link = row.query_selector("td a.text-link")
+                    name = event_link.inner_text().strip() if event_link else ""
+                    if not name:
+                        continue
+
+                    all_tds = row.query_selector_all("td")
+                    actual, forecast, previous = "", "", ""
+
+                    if len(all_tds) >= 8:
+                        actual = all_tds[5].inner_text().strip()
+                        forecast = all_tds[6].inner_text().strip()
+                        previous = all_tds[7].inner_text().strip()
+
+                    impact = parse_impact(row)
+                    cfg = ALL_COUNTRIES.get(country_code, {"currency": "UNK"})
+
+                    all_events.append(
+                        {
+                            "name": name,
+                            "date": date_str,
+                            "time": time_text,
+                            "impact": impact,
+                            "actual": actual,
+                            "forecast": forecast,
+                            "previous": previous,
+                            "currency": cfg.get("currency", "UNK"),
+                        }
+                    )
+                    logger.info(f"  [{country_code}] {time_text} - {name}")
+
+                except Exception as e:
+                    logger.debug(f"Error: {e}")
+                    continue
 
         browser.close()
-        return events
+        return all_events
 
 
 def click_show_filters(page):
@@ -336,10 +371,13 @@ def set_dates(page, from_date, to_date):
             start_input.click(force=True)
         except:
             page.evaluate("arguments[0].click()", start_input)
-        start_input.fill("")
-        time.sleep(0.2)
-        start_input.type(f"{month}/{day}/{year}")
         time.sleep(0.3)
+        start_input = page.query_selector("#date-picker-start-day")
+        if start_input:
+            start_input.fill("")
+            time.sleep(0.2)
+            start_input.type(f"{month}/{day}/{year}")
+            time.sleep(0.3)
 
     month, day, year = to_date.split("/")
     end_input = page.query_selector("#date-picker-end-day")
@@ -348,10 +386,13 @@ def set_dates(page, from_date, to_date):
             end_input.click(force=True)
         except:
             page.evaluate("arguments[0].click()", end_input)
-        end_input.fill("")
-        time.sleep(0.2)
-        end_input.type(f"{month}/{day}/{year}")
         time.sleep(0.3)
+        end_input = page.query_selector("#date-picker-end-day")
+        if end_input:
+            end_input.fill("")
+            time.sleep(0.2)
+            end_input.type(f"{month}/{day}/{year}")
+            time.sleep(0.3)
 
 
 def apply_dates(page):

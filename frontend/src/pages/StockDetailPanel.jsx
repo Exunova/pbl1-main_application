@@ -4,6 +4,7 @@ import {
   ResponsiveContainer, ReferenceLine, Cell
 } from 'recharts'
 import { ChevronLeft, TrendingUp, TrendingDown } from 'lucide-react'
+import { useRefreshTick } from '../contexts/RefreshContext'
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -113,11 +114,12 @@ export default function StockDetailPanel({ stock, onClose }) {
   const [tab, setTab] = useState('overview')
   const [chartType, setChartType] = useState('candlestick')
   const [timeframe, setTimeframe] = useState('15m')
-  const [yScale, setYScale] = useState('auto')   // 'auto' | 'tight' | 'full'
+  const [yScale, setYScale] = useState('auto')
   const [companyData, setCompanyData] = useState(null)
   const [ohlcvData, setOhlcvData] = useState([])
   const [loading, setLoading] = useState(true)
   const [ohlcvLoading, setOhlcvLoading] = useState(true)
+  const refreshTick = useRefreshTick()
 
   // Fetch real data
   useEffect(() => {
@@ -154,6 +156,24 @@ export default function StockDetailPanel({ stock, onClose }) {
 
     return () => { cancelled = true }
   }, [stock.ticker])
+
+  useEffect(() => {
+    if (!window.api) return
+    let cancelled = false
+    window.api.fetchCompany(stock.ticker).then(d => {
+      if (!cancelled) {
+        const respData = d?.data || d
+        setCompanyData(respData)
+      }
+    }).catch(() => {})
+    window.api.fetchOHLCV(stock.ticker).then(d => {
+      if (!cancelled) {
+        const respData = d?.data || d
+        setOhlcvData(respData?.ohlcv_15m || [])
+      }
+    }).catch(() => {})
+    return () => { cancelled = true }
+  }, [refreshTick])
 
   // ── Derived values ────────────────────────────────────────────────────────
 

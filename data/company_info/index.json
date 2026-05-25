@@ -1,8 +1,8 @@
 {
   "ticker": "index",
   "market": "US",
-  "scraped_at": "2026-05-18 11:52:47.182595",
-  "updated_at": "2026-05-18T11:52:47.182604",
+  "scraped_at": "2026-05-25 07:52:10.358130",
+  "updated_at": "2026-05-25T07:52:10.358136",
   "info": {
     "identity": {
       "longName": "CYBER HORNET S&P 500",
@@ -21,26 +21,26 @@
     },
     "price": {
       "currentPrice": null,
-      "previousClose": 70.73,
+      "previousClose": 70.24,
       "open": null,
       "dayHigh": null,
       "dayLow": null,
       "bid": null,
       "ask": null,
       "fiftyTwoWeekHigh": 70.73,
-      "fiftyTwoWeekLow": 54.7,
-      "fiftyDayAverage": 65.2206,
-      "twoHundredDayAverage": 63.99115,
+      "fiftyTwoWeekLow": 55.51,
+      "fiftyDayAverage": 65.8624,
+      "twoHundredDayAverage": 64.25195,
       "volume": null,
       "averageVolume": 0,
       "averageVolume10days": 0,
-      "regularMarketChangePercent": -1.2158914,
+      "regularMarketChangePercent": 0.37015945,
       "52WeekChange": null
     },
     "valuation": {
       "marketCap": null,
       "enterpriseValue": null,
-      "trailingPE": 28.756878,
+      "trailingPE": 29.01617,
       "forwardPE": null,
       "priceToBook": null,
       "priceToSalesTrailing12Months": null,

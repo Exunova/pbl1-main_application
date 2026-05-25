@@ -2,8 +2,135 @@
   "country": "UK",
   "name": "United Kingdom",
   "currency": "GBP",
-  "scraped_at": "2026-05-11 08:46:15.420216",
-  "updated_at": "2026-05-11T08:46:15.420226",
-  "event_count": 0,
-  "events": []
+  "scraped_at": "2026-05-25 08:35:32.713247",
+  "updated_at": "2026-05-25T08:35:32.713249",
+  "event_count": 14,
+  "events": [
+    {
+      "name": "BRC Shop Price Index (YoY)",
+      "date": "05/26/2026",
+      "time": "06:01UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.1%",
+      "previous": "1.0%"
+    },
+    {
+      "name": "CBI Distributive Trades Survey  (May)",
+      "date": "05/26/2026",
+      "time": "17:00UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "-52",
+      "previous": "-68"
+    },
+    {
+      "name": "BRC Shop Price Index (YoY)",
+      "date": "05/27/2026",
+      "time": "06:01UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.1%",
+      "previous": "1.0%"
+    },
+    {
+      "name": "CBI Distributive Trades Survey  (May)",
+      "date": "05/27/2026",
+      "time": "17:00UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "-52",
+      "previous": "-68"
+    },
+    {
+      "name": "BRC Shop Price Index (YoY)",
+      "date": "05/28/2026",
+      "time": "06:01UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.1%",
+      "previous": "1.0%"
+    },
+    {
+      "name": "CBI Distributive Trades Survey  (May)",
+      "date": "05/28/2026",
+      "time": "17:00UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "-52",
+      "previous": "-68"
+    },
+    {
+      "name": "BRC Shop Price Index (YoY)",
+      "date": "05/29/2026",
+      "time": "06:01UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.1%",
+      "previous": "1.0%"
+    },
+    {
+      "name": "CBI Distributive Trades Survey  (May)",
+      "date": "05/29/2026",
+      "time": "17:00UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "-52",
+      "previous": "-68"
+    },
+    {
+      "name": "BRC Shop Price Index (YoY)",
+      "date": "05/30/2026",
+      "time": "06:01UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.1%",
+      "previous": "1.0%"
+    },
+    {
+      "name": "CBI Distributive Trades Survey  (May)",
+      "date": "05/30/2026",
+      "time": "17:00UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "-52",
+      "previous": "-68"
+    },
+    {
+      "name": "BRC Shop Price Index (YoY)",
+      "date": "05/31/2026",
+      "time": "06:01UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.1%",
+      "previous": "1.0%"
+    },
+    {
+      "name": "CBI Distributive Trades Survey  (May)",
+      "date": "05/31/2026",
+      "time": "17:00UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "-52",
+      "previous": "-68"
+    },
+    {
+      "name": "BRC Shop Price Index (YoY)",
+      "date": "06/01/2026",
+      "time": "06:01UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.1%",
+      "previous": "1.0%"
+    },
+    {
+      "name": "CBI Distributive Trades Survey  (May)",
+      "date": "06/01/2026",
+      "time": "17:00UK",
+      "impact": "high",
+      "actual": "",
+      "forecast": "-52",
+      "previous": "-68"
+    }
+  ]
 }

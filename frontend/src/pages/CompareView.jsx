@@ -3,6 +3,7 @@ import { MARKETS } from '../data/mockData'
 import MarketHeatmap from '../components/MarketHeatmap'
 import { ComposedChart, Line, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts'
 import NewsPanel from '../components/compare/NewsPanel'
+import { useRefreshTick } from '../contexts/RefreshContext'
 
 export default function CompareView() {
   const [idx1, setIdx1] = useState('US')
@@ -12,6 +13,7 @@ export default function CompareView() {
   const [tickerData, setTickerData] = useState({})
   const [selectedNewsRegion, setSelectedNewsRegion] = useState(null)
   const [error, setError] = useState(null)
+  const refreshTick = useRefreshTick()
   
   const regions = Object.keys(MARKETS)
   const IDX1_COLOR = '#ffffff'
@@ -59,6 +61,57 @@ export default function CompareView() {
     
     return () => { cancelled = true }
   }, [])
+
+  useEffect(() => {
+    const allTickers = Object.values(MARKETS).flatMap(m => m.tickers)
+    let cancelled = false
+    
+    Promise.all([
+      window.api.fetchCompanies(allTickers).catch(() => null),
+      window.api.fetchOHLCV(MARKETS[idx1].index).catch(() => null),
+      window.api.fetchOHLCV(MARKETS[idx2].index).catch(() => null),
+    ]).then(([companies, ohlcv1, ohlcv2]) => {
+      if (cancelled) return
+      if (companies) {
+        const td = {}
+        const dataMap = companies?.data || companies
+        if (dataMap) {
+          Object.entries(dataMap).forEach(([t, d]) => {
+            if (!d?.info?.price) return
+            const cur = d.info.price.currentPrice
+            const prv = d.info.price.previousClose
+            const builtIn = d.info.price.regularMarketChangePercent
+            let chgPct = 0
+            if (builtIn != null) chgPct = builtIn
+            else if (cur && prv) chgPct = ((cur - prv) / prv) * 100
+            td[t] = { change_pct: chgPct, marketCap: d.info.price.marketCap || 0 }
+          })
+        }
+        setTickerData(td)
+      }
+      const d1 = ohlcv1
+      const d2 = ohlcv2
+      if (d1 || d2) {
+        const c1 = [...((d1?.ohlcv_15m || d1?.data?.ohlcv_15m) || [])].sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''))
+        const c2 = [...((d2?.ohlcv_15m || d2?.data?.ohlcv_15m) || [])].sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''))
+        const base1 = c1.find(c => c.close != null)?.close || 1
+        const base2 = c2.find(c => c.close != null)?.close || 1
+        const c1ByTs = {}; c1.forEach(c => { if (c?.timestamp) c1ByTs[c.timestamp] = c.close })
+        const c2ByTs = {}; c2.forEach(c => { if (c?.timestamp) c2ByTs[c.timestamp] = c.close })
+        const allTs = Array.from(new Set([...Object.keys(c1ByTs), ...Object.keys(c2ByTs)])).sort()
+        let lastV1 = base1; let lastV2 = base2
+        const merged = []
+        for (const ts of allTs) {
+          if (c1ByTs[ts] !== undefined) lastV1 = c1ByTs[ts]
+          if (c2ByTs[ts] !== undefined) lastV2 = c2ByTs[ts]
+          merged.push({ ts: ts.slice(5, 16), v1: (lastV1 / base1) * 100, v2: (lastV2 / base2) * 100, v1_high: lastV1 > lastV2 ? [lastV2, lastV1] : [lastV2, lastV2], v1_low: lastV2 > lastV1 ? [lastV1, lastV2] : [lastV1, lastV1] })
+        }
+        setChartData(merged)
+      }
+    }).catch(() => {})
+
+    return () => { cancelled = true }
+  }, [refreshTick, idx1, idx2])
 
   useEffect(() => {
     if (!window.api) {

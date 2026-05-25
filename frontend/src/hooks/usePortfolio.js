@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { ambilPnl, formatChange } from '../utils/portfolioUtils'
+import { useRefreshTick } from '../contexts/RefreshContext'
 
 export function usePortfolio() {
   const [positions, setPositions] = useState([])
@@ -14,6 +15,20 @@ export function usePortfolio() {
   const [sharesError, setSharesError] = useState(false)
   const [errorMessage, setErrorMessage] = useState('')
   const [deleteTarget, setDeleteTarget] = useState(null)
+  const refreshTick = useRefreshTick()
+
+  const refreshPortfolio = () => {
+    if (!window.api) return
+    Promise.all([
+      window.api.getPositions().catch(() => []),
+      window.api.fetchPnL().catch(() => null),
+      window.api.getScrapedTickers().catch(() => [])
+    ]).then(([positionsResult, pnlResult, tickersResult]) => {
+      setPositions(positionsResult?.positions || [])
+      setPnlData(pnlResult)
+      if (tickersResult) setAvailableTickers(tickersResult)
+    })
+  }
 
   useEffect(() => {
     if (!window.api) return
@@ -28,6 +43,11 @@ export function usePortfolio() {
       setIsInitialLoad(false)
     })
   }, [])
+
+  useEffect(() => {
+    if (isInitialLoad) return
+    refreshPortfolio()
+  }, [refreshTick])
 
   const [forexPrompt, setForexPrompt] = useState(null)
 

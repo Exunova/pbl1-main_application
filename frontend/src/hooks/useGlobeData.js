@@ -119,6 +119,27 @@ export function useGlobeData() {
     return () => { cancelled = true; };
   }, [selectedCountry]);
 
+  useEffect(() => {
+    if (!selectedCountry || !window.api) return;
+
+    const intervalId = setInterval(async () => {
+      try {
+        const [macroData, newsData, indices] = await Promise.all([
+          window.api.fetchMacro(selectedCountry),
+          window.api.fetchNews(selectedCountry),
+          window.api.fetchIndices(),
+        ]);
+        setCalendarEvents(macroData?.events || []);
+        setNewsArticles(newsData?.articles || []);
+        if (indices) setIndicesData(indices);
+      } catch (err) {
+        console.debug('Background refresh error:', err);
+      }
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, [selectedCountry]);
+
   // Resize chart and panel handlers logic
   useEffect(() => {
     if (!isResizing && !isResizingPanel) return

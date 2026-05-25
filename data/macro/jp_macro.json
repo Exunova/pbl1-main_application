@@ -2,8 +2,261 @@
   "country": "JP",
   "name": "Japan",
   "currency": "JPY",
-  "scraped_at": "2026-05-11 08:18:58.137731",
-  "updated_at": "2026-05-11T08:18:58.137737",
-  "event_count": 0,
-  "events": []
+  "scraped_at": "2026-05-25 08:35:32.712005",
+  "updated_at": "2026-05-25T08:35:32.712008",
+  "event_count": 28,
+  "events": [
+    {
+      "name": "BoJ Core CPI (YoY)",
+      "date": "05/26/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.7%",
+      "previous": "2.5%"
+    },
+    {
+      "name": "Leading Index (MoM) (Mar)",
+      "date": "05/26/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.3%",
+      "previous": "1.3%"
+    },
+    {
+      "name": "Leading Index  (Mar)",
+      "date": "05/26/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "114.5",
+      "previous": "113.3"
+    },
+    {
+      "name": "Coincident Indicator (MoM) (Mar)",
+      "date": "05/26/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "0.3%",
+      "previous": "-1.8%"
+    },
+    {
+      "name": "BoJ Core CPI (YoY)",
+      "date": "05/27/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.7%",
+      "previous": "2.5%"
+    },
+    {
+      "name": "Leading Index (MoM) (Mar)",
+      "date": "05/27/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.3%",
+      "previous": "1.3%"
+    },
+    {
+      "name": "Leading Index  (Mar)",
+      "date": "05/27/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "114.5",
+      "previous": "113.3"
+    },
+    {
+      "name": "Coincident Indicator (MoM) (Mar)",
+      "date": "05/27/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "0.3%",
+      "previous": "-1.8%"
+    },
+    {
+      "name": "BoJ Core CPI (YoY)",
+      "date": "05/28/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.7%",
+      "previous": "2.5%"
+    },
+    {
+      "name": "Leading Index (MoM) (Mar)",
+      "date": "05/28/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.3%",
+      "previous": "1.3%"
+    },
+    {
+      "name": "Leading Index  (Mar)",
+      "date": "05/28/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "114.5",
+      "previous": "113.3"
+    },
+    {
+      "name": "Coincident Indicator (MoM) (Mar)",
+      "date": "05/28/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "0.3%",
+      "previous": "-1.8%"
+    },
+    {
+      "name": "BoJ Core CPI (YoY)",
+      "date": "05/29/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.7%",
+      "previous": "2.5%"
+    },
+    {
+      "name": "Leading Index (MoM) (Mar)",
+      "date": "05/29/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.3%",
+      "previous": "1.3%"
+    },
+    {
+      "name": "Leading Index  (Mar)",
+      "date": "05/29/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "114.5",
+      "previous": "113.3"
+    },
+    {
+      "name": "Coincident Indicator (MoM) (Mar)",
+      "date": "05/29/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "0.3%",
+      "previous": "-1.8%"
+    },
+    {
+      "name": "BoJ Core CPI (YoY)",
+      "date": "05/30/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.7%",
+      "previous": "2.5%"
+    },
+    {
+      "name": "Leading Index (MoM) (Mar)",
+      "date": "05/30/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.3%",
+      "previous": "1.3%"
+    },
+    {
+      "name": "Leading Index  (Mar)",
+      "date": "05/30/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "114.5",
+      "previous": "113.3"
+    },
+    {
+      "name": "Coincident Indicator (MoM) (Mar)",
+      "date": "05/30/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "0.3%",
+      "previous": "-1.8%"
+    },
+    {
+      "name": "BoJ Core CPI (YoY)",
+      "date": "05/31/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.7%",
+      "previous": "2.5%"
+    },
+    {
+      "name": "Leading Index (MoM) (Mar)",
+      "date": "05/31/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.3%",
+      "previous": "1.3%"
+    },
+    {
+      "name": "Leading Index  (Mar)",
+      "date": "05/31/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "114.5",
+      "previous": "113.3"
+    },
+    {
+      "name": "Coincident Indicator (MoM) (Mar)",
+      "date": "05/31/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "0.3%",
+      "previous": "-1.8%"
+    },
+    {
+      "name": "BoJ Core CPI (YoY)",
+      "date": "06/01/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.7%",
+      "previous": "2.5%"
+    },
+    {
+      "name": "Leading Index (MoM) (Mar)",
+      "date": "06/01/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "1.3%",
+      "previous": "1.3%"
+    },
+    {
+      "name": "Leading Index  (Mar)",
+      "date": "06/01/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "114.5",
+      "previous": "113.3"
+    },
+    {
+      "name": "Coincident Indicator (MoM) (Mar)",
+      "date": "06/01/2026",
+      "time": "12:00JP",
+      "impact": "high",
+      "actual": "",
+      "forecast": "0.3%",
+      "previous": "-1.8%"
+    }
+  ]
 }
