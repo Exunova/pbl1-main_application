@@ -12,6 +12,7 @@ export default function GlobeView() {
   const containerRef = useRef(null)
   const globeRef = useRef(null)
   const selectedRef = useRef(null)
+  const mousePosRef = useRef({ x: 0, y: 0 })
 
   const g = useGlobeData()
 
@@ -123,7 +124,7 @@ export default function GlobeView() {
         controls.autoRotate = false
         setTimeout(() => g.setIsZooming(false), 1500)
       })
-      .onPolygonHover((polygon, event) => {
+      .onPolygonHover((polygon) => {
         if (!selectedRef.current) controls.autoRotate = !polygon
         if (containerRef.current)
           containerRef.current.style.cursor = polygon ? 'pointer' : 'default'
@@ -138,8 +139,7 @@ export default function GlobeView() {
             content = { country: mapEntry.name, name: idx.name, current_price: idx.current_price, change_pct: idx.change_pct }
           }
           const rect  = containerRef.current?.getBoundingClientRect()
-          const clX   = event?.clientX ?? 0
-          const clY   = event?.clientY ?? 0
+          const { x: clX, y: clY } = mousePosRef.current
           g.setTooltip({ visible: true, x: rect ? clX - rect.left : 0, y: rect ? clY - rect.top : 0, content })
         } else {
           g.setTooltip(prev => ({ ...prev, visible: false }))
@@ -321,6 +321,9 @@ export default function GlobeView() {
             style={{
               right:  g.selectedCountry && !g.isZooming ? `${g.panelWidth}px` : '0px',
               bottom: g.selectedCountry && !g.isZooming ? `${g.chartHeight}px` : '0px',
+            }}
+            onMouseMove={e => {
+              mousePosRef.current = { x: e.clientX, y: e.clientY }
             }}
           />
 

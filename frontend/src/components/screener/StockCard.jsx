@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { LineChart, Line, ResponsiveContainer } from 'recharts'
+import { LineChart, Line, YAxis, ResponsiveContainer } from 'recharts'
 import { TrendingUp, TrendingDown } from 'lucide-react'
 
 export default function StockCard({ stock, onClick }) {
@@ -36,8 +36,9 @@ export default function StockCard({ stock, onClick }) {
     return () => { cancelled = true }
   }, [stock.ticker])
 
-  const displayPrice = liveData?.price ?? parseFloat(String(stock.price).replace(/,/g, '')) ?? 0
-  const displayChange = liveData?.changePct ?? stock.change
+  const rawPrice = liveData?.price ?? parseFloat(String(stock.price).replace(/,/g, '')) ?? 0
+  const displayPrice = Number.isFinite(rawPrice) ? rawPrice : 0
+  const displayChange = liveData?.changePct ?? stock.change ?? 0
   const isUp = displayChange >= 0
   const color = isUp ? 'var(--success)' : 'var(--danger)'
 
@@ -50,6 +51,13 @@ export default function StockCard({ stock, onClick }) {
   }, [stock.ticker, displayPrice])
 
   const chartData = sparkline.length > 0 ? sparkline : fallbackSparkline
+
+  const safeChartData = useMemo(() => {
+    if (!chartData || chartData.length === 0) {
+      return [{ i: 0, v: displayPrice || 100 }]
+    }
+    return chartData.filter(d => d != null && Number.isFinite(d.v))
+  }, [chartData, displayPrice])
 
   return (
   <div
@@ -87,7 +95,8 @@ export default function StockCard({ stock, onClick }) {
 
     <div className="h-10 w-full opacity-80 group-hover:opacity-100 transition-opacity">
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={chartData}>
+        <LineChart data={safeChartData}>
+          <YAxis domain={[(dataMin) => (typeof dataMin === 'number' ? dataMin * 0.98 : 0), (dataMax) => (typeof dataMax === 'number' ? dataMax * 1.02 : 1)]} hide />
           <Line
             type="monotone"
             dataKey="v"

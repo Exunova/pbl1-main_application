@@ -97,7 +97,7 @@ export default function StockDetailModal({ ticker, onClose }) {
               <div>Sector: {data.info?.identity?.sector || '—'}</div>
               <div>Industry: {data.info?.identity?.industry || '—'}</div>
               <div>Price: {data.info?.price?.currentPrice ? `$${data.info.price.currentPrice}` : '—'}</div>
-              <div>Market Cap: {data.info?.price?.marketCap ? `${(data.info.price.marketCap / 1e12).toFixed(2)}T` : '—'}</div>
+              <div>Market Cap: {data.info?.valuation?.marketCap ? `${(data.info.valuation.marketCap / 1e12).toFixed(2)}T` : '—'}</div>
               <div>P/E: {data.info?.valuation?.trailingPE || '—'}</div>
               <div>Dividend: {data.info?.dividend?.dividendYield ? `${data.info.dividend.dividendYield.toFixed(2)}%` : '—'}</div>
               <div>Analyst: {data.info?.analyst?.recommendationKey || '—'}</div>

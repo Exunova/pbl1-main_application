@@ -121,9 +121,9 @@ class CompanyInfoScraper(BaseScraper):
             "tickers": {}
         }
 
-        for market, tickers in MARKETS.items():
+        for market, market_data in MARKETS.items():
             print(f"\n[Market: {market}]")
-            for ticker in tickers:
+            for ticker in market_data.get("tickers", []):
                 print(f"  Scraping {ticker}...", end=" ")
                 ticker_filename = to_filename(ticker)
 

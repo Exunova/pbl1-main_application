@@ -51,7 +51,7 @@ export default function GlobeBottomChart({
            <ResponsiveContainer width="100%" height="100%">
              <LineChart data={chartData} margin={{ top: 0, right: 10, left: 0, bottom: 0 }}>
                <XAxis dataKey="time" hide />
-               <YAxis domain={['dataMin - 10', 'dataMax + 10']} hide />
+               <YAxis domain={[dataMin => dataMin * 0.99, dataMax => dataMax * 1.01]} hide />
                <Tooltip
                  content={({ active, payload }) => {
                    if (active && payload?.length) {

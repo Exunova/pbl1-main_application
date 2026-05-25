@@ -50,6 +50,18 @@ const Candlestick = (props) => {
   )
 }
 
+function formatCandleTime(ts) {
+  if (!ts) return ''
+  try {
+    const d = new Date(ts)
+    if (isNaN(d.getTime())) return ''
+    return d.toLocaleString('en-US', {
+      month: 'short', day: 'numeric',
+      hour: '2-digit', minute: '2-digit',
+    })
+  } catch { return '' }
+}
+
 const CandleTooltip = ({ active, payload }) => {
   if (!active || !payload?.length) return null
   const d = payload[0]?.payload
@@ -57,6 +69,9 @@ const CandleTooltip = ({ active, payload }) => {
   const isUp = d.close >= d.open
   return (
     <div style={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 0, padding: '8px 12px', fontSize: 11 }}>
+      <div style={{ color: '#4b5563', fontSize: 10, marginBottom: 6, borderBottom: '0.5px solid var(--border)', paddingBottom: 4 }}>
+        {formatCandleTime(d.timestamp)}
+      </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'auto auto', gap: '2px 12px' }}>
         <span style={{ color: '#6b7280' }}>O</span><span style={{ color: '#696b6e' }}>{fmt(d.open, 0)}</span>
         <span style={{ color: '#6b7280' }}>H</span><span style={{ color: "var(--success)" }}>{fmt(d.high, 0)}</span>
@@ -175,6 +190,38 @@ export default function StockDetailPanel({ stock, onClose }) {
     return () => { cancelled = true }
   }, [refreshTick])
 
+  // ── Poll when background scrape is in progress ────────────────────────────
+  const pollRef = useRef(null)
+  const pollCountRef = useRef(0)
+  useEffect(() => {
+    if (!companyData?.loading || !window.api) return
+
+    pollCountRef.current = 0
+    pollRef.current = setInterval(() => {
+      pollCountRef.current += 1
+      if (pollCountRef.current > 20) {
+        clearInterval(pollRef.current)
+        pollRef.current = null
+        return
+      }
+      window.api.fetchCompany(stock.ticker).then(d => {
+        const respData = d?.data || d
+        if (!respData?.loading) {
+          setCompanyData(respData)
+          clearInterval(pollRef.current)
+          pollRef.current = null
+        }
+      }).catch(() => {})
+    }, 3000)
+
+    return () => {
+      if (pollRef.current) {
+        clearInterval(pollRef.current)
+        pollRef.current = null
+      }
+    }
+  }, [companyData?.loading, stock.ticker])
+
   // ── Derived values ────────────────────────────────────────────────────────
 
   const info = companyData?.info || {}
@@ -182,8 +229,9 @@ export default function StockDetailPanel({ stock, onClose }) {
   const valuation = info.valuation || {}
   const dividend = info.dividend || {}
   const analyst = info.analyst || {}
-  const identity = info.identity || {}
-  const financials = companyData?.financials?.income_statement || {}
+const identity = info.identity || {}
+const ownership = info.ownership || {}
+const financials = companyData?.financials?.income_statement || {}
 
   // Fallback to stock mock data
   const stockPrice = priceInfo.currentPrice ?? parseFloat(String(stock.price).replace(/,/g, '')) ?? 0
@@ -203,6 +251,7 @@ export default function StockDetailPanel({ stock, onClose }) {
     if (ohlcvData.length > 0) {
       return ohlcvData.map((c, i) => ({
         index: i, time: i,
+        timestamp: c.timestamp,
         open: c.open, high: c.high, low: c.low, close: c.close, volume: c.volume || 0,
       }))
     }
@@ -214,7 +263,8 @@ export default function StockDetailPanel({ stock, onClose }) {
       const close = base + move
       const high = Math.max(base, close) + Math.random() * base * 0.004
       const low = Math.min(base, close) - Math.random() * base * 0.004
-      const d = { index: i, time: i, open: +base.toFixed(2), high: +high.toFixed(2), low: +low.toFixed(2), close: +close.toFixed(2), volume: Math.random() * 10000 + 5000 }
+      const ts = new Date(Date.now() - (120 - i) * 15 * 60 * 1000).toISOString()
+      const d = { index: i, time: i, timestamp: ts, open: +base.toFixed(2), high: +high.toFixed(2), low: +low.toFixed(2), close: +close.toFixed(2), volume: Math.random() * 10000 + 5000 }
       base = close
       return d
     })
@@ -291,22 +341,24 @@ export default function StockDetailPanel({ stock, onClose }) {
   // ── Y-axis domain ──────────────────────────────────────────────────────────
 
   const yDomain = useMemo(() => {
-    if (yScale === 'tight') {
-      const closes = visibleData.map(d => d.close)
-      if (!closes.length) return ['auto', 'auto']
-      const mn = Math.min(...visibleData.map(d => d.low))
-      const mx = Math.max(...visibleData.map(d => d.high))
-      const pad = (mx - mn) * 0.05
+    if (yScale === 'tight' || yScale === 'full') {
+      const src = yScale === 'tight' ? visibleData : candleData
+      if (!src.length) return ['auto', 'auto']
+      let mn, mx
+      if (chartType === 'line') {
+        const closes = src.map(d => d.close).filter(v => v != null)
+        if (!closes.length) return ['auto', 'auto']
+        mn = Math.min(...closes)
+        mx = Math.max(...closes)
+      } else {
+        mn = Math.min(...src.map(d => d.low).filter(v => v != null))
+        mx = Math.max(...src.map(d => d.high).filter(v => v != null))
+      }
+      const pad = (mx - mn) * (yScale === 'tight' ? 0.05 : 0.03)
       return [+(mn - pad).toFixed(2), +(mx + pad).toFixed(2)]
     }
-    if (yScale === 'full') {
-      const mn = Math.min(...candleData.map(d => d.low))
-      const mx = Math.max(...candleData.map(d => d.high))
-      const pad = (mx - mn) * 0.03
-      return [+(mn - pad).toFixed(2), +(mx + pad).toFixed(2)]
-    }
-    return ['auto', 'auto']  // 'auto'
-  }, [yScale, visibleData, candleData])
+    return ['auto', 'auto']
+  }, [yScale, visibleData, candleData, chartType])
 
   // MA50
   const ma50 = useMemo(() => {
@@ -509,7 +561,6 @@ export default function StockDetailPanel({ stock, onClose }) {
                   <ComposedChart data={visibleData} margin={{ top: 8, right: 8, left: -10, bottom: 0 }}>
                     <XAxis dataKey="index" hide />
                     <YAxis yAxisId="price" domain={yDomain} tick={{ fontSize: 9, fill: 'var(--muted)', fontFamily: "'Fira Code', monospace" }} orientation="right" width={58} tickFormatter={v => v.toLocaleString()} axisLine={{ stroke: 'var(--border)' }} tickLine={false} />
-                    <YAxis yAxisId="volume" orientation="left" hide domain={[0, dataMax => dataMax * 5]} />
                     <Tooltip contentStyle={{ background: 'var(--surface)', border: '0.5px solid var(--border)', borderRadius: 0, fontSize: 11 }} />
                     {ma50 && <ReferenceLine y={ma50} stroke="#3b82f6" strokeDasharray="4 3" strokeWidth={0.8} />}
                     <Line type="monotone" dataKey="close" stroke="#22c55e" strokeWidth={1.8} dot={false} isAnimationActive={false} />
@@ -536,7 +587,7 @@ export default function StockDetailPanel({ stock, onClose }) {
           {/* Footer metrics */}
           <div style={{ padding: '8px 14px', borderTop: '0.5px solid var(--border)', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 6, flexShrink: 0, background: 'var(--background)' }}>
             {[
-              { label: 'Market Cap', value: formatBig(priceInfo.marketCap), color: '#e2e8f0' },
+              { label: 'Market Cap', value: formatBig(valuation.marketCap), color: '#e2e8f0' },
               { label: 'Volume', value: formatBig(priceInfo.volume), color: '#e2e8f0' },
               { label: 'P/E (TTM)', value: valuation.trailingPE ? valuation.trailingPE.toFixed(1) + 'x' : (stock.pe ? stock.pe + 'x' : '—'), color: '#60a5fa' },
               { label: 'Div Yield', value: dividend.dividendYield ? pct(dividend.dividendYield) : (stock.div || '—'), color: '#fbbf24' },
@@ -593,12 +644,12 @@ export default function StockDetailPanel({ stock, onClose }) {
 
                 <SectionLabel>Valuation</SectionLabel>
                 <InfoGrid rows={[
-                  { label: 'Market Cap', value: formatBig(priceInfo.marketCap) },
+                  { label: 'Market Cap', value: formatBig(valuation.marketCap) },
                   { label: 'P/E (TTM)', value: valuation.trailingPE ? valuation.trailingPE.toFixed(1) + 'x' : (stock.pe ? stock.pe + 'x' : '—') },
                   { label: 'Forward P/E', value: valuation.forwardPE ? valuation.forwardPE.toFixed(1) + 'x' : '—' },
                   { label: 'EPS (TTM)', value: valuation.trailingEps ? fmt(valuation.trailingEps, 2) : '—' },
                   { label: 'Price/Book', value: valuation.priceToBook ? valuation.priceToBook.toFixed(2) + 'x' : '—' },
-                  { label: 'Beta', value: valuation.beta ? valuation.beta.toFixed(2) : '—' },
+                  { label: 'Beta', value: ownership.beta ? ownership.beta.toFixed(2) : '—' },
                 ]} />
 
                 <SectionLabel>Dividend</SectionLabel>

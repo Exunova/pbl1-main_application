@@ -69,22 +69,41 @@ class WatchlistHandler(BasePageHandler):
         ohlcv_data = self.read_cache_file("ohlcv", fname)
         if ohlcv_data and ohlcv_data.get("ohlcv_15m"):
             candles = ohlcv_data["ohlcv_15m"]
-            first_close = candles[0].get("close")
-            last_close = candles[-1].get("close")
-            if first_close and last_close:
-                chg_pct = ((last_close - first_close) / first_close) * 100
-                info = {"price": {
-                    "currentPrice": last_close,
-                    "previousClose": first_close,
-                    "regularMarketChangePercent": chg_pct,
-                    "marketCap": None,
-                }}
-                # Merge any cached identity data (company name, sector, etc.)
-                if cached and cached.get("info", {}).get("identity"):
-                    info["identity"] = cached["info"]["identity"]
-                result = {"ticker": ticker, "info": info}
-                self.cache_set(f"company:{ticker}", result)
-                return result
+            if candles:
+                first = candles[0]
+                last = candles[-1]
+                first_close = first.get("close")
+                last_close = last.get("close")
+                if first_close and last_close:
+                    closes = [c.get("close") for c in candles if c.get("close") is not None]
+                    highs = [c.get("high") for c in candles if c.get("high") is not None]
+                    lows = [c.get("low") for c in candles if c.get("low") is not None]
+                    volumes = [c.get("volume") for c in candles if c.get("volume") is not None]
+
+                    chg_pct = ((last_close - first_close) / first_close) * 100
+
+                    info = {"price": {
+                        "currentPrice": last_close,
+                        "previousClose": first_close,
+                        "open": last.get("open"),
+                        "dayLow": last.get("low"),
+                        "dayHigh": last.get("high"),
+                        "volume": last.get("volume"),
+                        "fiftyTwoWeekLow": min(lows) if lows else None,
+                        "fiftyTwoWeekHigh": max(highs) if highs else None,
+                        "fiftyDayAverage": round(sum(closes[-50:]) / len(closes[-50:]), 2) if len(closes) >= 50 else None,
+                        "twoHundredDayAverage": round(sum(closes) / len(closes), 2) if closes else None,
+                        "averageVolume": round(sum(volumes) / len(volumes)) if volumes else None,
+                        "averageVolume10days": round(sum(volumes[-10:]) / len(volumes[-10:])) if len(volumes) >= 10 else None,
+                        "regularMarketChangePercent": round(chg_pct, 2),
+                        "marketCap": None,
+                    }}
+                    # Merge any cached identity data (company name, sector, etc.)
+                    if cached and cached.get("info", {}).get("identity"):
+                        info["identity"] = cached["info"]["identity"]
+                    result = {"ticker": ticker, "info": info}
+                    self.cache_set(f"company:{ticker}", result)
+                    return result
 
         self.trigger_scrape_in_bg("company_info")
         return {"ticker": ticker, "info": {}, "loading": True}

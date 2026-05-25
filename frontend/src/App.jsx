@@ -9,6 +9,7 @@ import ScreenerView from './pages/ScreenerView'
 import CompareView from './pages/CompareView'
 import PortfolioView from './pages/PortfolioView'
 import ProfileView from './pages/ProfileView'
+import ErrorBoundary from './components/ErrorBoundary'
 
 const THEMES = ['dark', 'light', 'auto']
 
@@ -126,11 +127,11 @@ export default function App() {
         <Titlebar theme={theme} onThemeToggle={nextTheme} />
         <main className="flex-1 overflow-hidden relative z-10">
           <Routes>
-            <Route path="/" element={<GlobeView />} />
-            <Route path="/screener" element={<ScreenerView />} />
-            <Route path="/compare" element={<CompareView />} />
-            <Route path="/portfolio" element={<PortfolioView />} />
-            <Route path="/profile" element={<ProfileView theme={theme} onThemeToggle={nextTheme} />} />
+            <Route path="/" element={<ErrorBoundary><GlobeView /></ErrorBoundary>} />
+            <Route path="/screener" element={<ErrorBoundary><ScreenerView /></ErrorBoundary>} />
+            <Route path="/compare" element={<ErrorBoundary><CompareView /></ErrorBoundary>} />
+            <Route path="/portfolio" element={<ErrorBoundary><PortfolioView /></ErrorBoundary>} />
+            <Route path="/profile" element={<ErrorBoundary><ProfileView theme={theme} onThemeToggle={nextTheme} /></ErrorBoundary>} />
           </Routes>
         </main>
       </div>

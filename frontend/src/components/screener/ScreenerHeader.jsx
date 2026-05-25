@@ -1,5 +1,5 @@
 import React from 'react'
-import { Search } from 'lucide-react'
+import { Search, X } from 'lucide-react'
 import { MARKETS } from '../../data/mockData'
 import { COUNTRY_NAMES } from '../../utils/screenerUtils'
 
@@ -23,8 +23,16 @@ export default function ScreenerHeader({ region, search, setSearch, availableTic
             placeholder="Search ticker..."
             value={search}
             onChange={e => setSearch(e.target.value)}
-            className="bg-surface border border-border pl-9 pr-4 py-2.5 text-xs text-text placeholder:text-muted/50 outline-none focus:border-white transition-colors w-64 uppercase tracking-wider"
+            className="bg-surface border border-border pl-9 pr-9 py-2.5 text-xs text-text placeholder:text-muted/50 outline-none focus:border-white transition-colors w-64 uppercase tracking-wider"
           />
+          {search && (
+            <button
+              onClick={() => setSearch('')}
+              className="absolute right-2 top-1/2 -translate-y-1/2 text-muted hover:text-text transition-colors p-0.5"
+            >
+              <X size={14} />
+            </button>
+          )}
         </div>
       </div>
     </div>

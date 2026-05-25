@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { MARKETS } from '../data/mockData'
 import MarketHeatmap from '../components/MarketHeatmap'
 import { ComposedChart, Line, Area, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts'
@@ -13,22 +13,32 @@ export default function CompareView() {
   const [tickerData, setTickerData] = useState({})
   const [selectedNewsRegion, setSelectedNewsRegion] = useState(null)
   const [error, setError] = useState(null)
+  const [warning, setWarning] = useState(null)
   const refreshTick = useRefreshTick()
   
   const regions = Object.keys(MARKETS)
   const IDX1_COLOR = '#ffffff'
   const IDX2_COLOR = '#a1a1aa'
 
-  const pickDifferentRegion = (selected) => regions.find(region => region !== selected) || selected
+  const showWarning = (msg) => {
+    setWarning(msg)
+    setTimeout(() => setWarning(null), 3000)
+  }
 
   const handleIdx1Change = (value) => {
+    if (value === idx2) {
+      showWarning('Please choose different index!')
+      return
+    }
     setIdx1(value)
-    if (value === idx2) setIdx2(pickDifferentRegion(value))
   }
 
   const handleIdx2Change = (value) => {
+    if (value === idx1) {
+      showWarning('Please choose different index!')
+      return
+    }
     setIdx2(value)
-    if (value === idx1) setIdx1(pickDifferentRegion(value))
   }
 
   useEffect(() => {
@@ -48,7 +58,7 @@ export default function CompareView() {
           if (!d?.info?.price) return
           const cur = d.info.price.currentPrice
           const prv = d.info.price.previousClose
-          const mcap = d.info.price.marketCap || (Math.random() * 500 + 100)
+          const mcap = d.info.valuation?.marketCap || (Math.random() * 500 + 100)
           const builtIn = d.info.price.regularMarketChangePercent
           let chgPct = 0
           if (builtIn != null) chgPct = builtIn
@@ -65,53 +75,29 @@ export default function CompareView() {
   useEffect(() => {
     const allTickers = Object.values(MARKETS).flatMap(m => m.tickers)
     let cancelled = false
-    
-    Promise.all([
-      window.api.fetchCompanies(allTickers).catch(() => null),
-      window.api.fetchOHLCV(MARKETS[idx1].index).catch(() => null),
-      window.api.fetchOHLCV(MARKETS[idx2].index).catch(() => null),
-    ]).then(([companies, ohlcv1, ohlcv2]) => {
+
+    window.api.fetchCompanies(allTickers).then(companies => {
       if (cancelled) return
-      if (companies) {
-        const td = {}
-        const dataMap = companies?.data || companies
-        if (dataMap) {
-          Object.entries(dataMap).forEach(([t, d]) => {
-            if (!d?.info?.price) return
-            const cur = d.info.price.currentPrice
-            const prv = d.info.price.previousClose
-            const builtIn = d.info.price.regularMarketChangePercent
-            let chgPct = 0
-            if (builtIn != null) chgPct = builtIn
-            else if (cur && prv) chgPct = ((cur - prv) / prv) * 100
-            td[t] = { change_pct: chgPct, marketCap: d.info.price.marketCap || 0 }
-          })
-        }
-        setTickerData(td)
+      if (!companies) return
+      const td = {}
+      const dataMap = companies?.data || companies
+      if (dataMap) {
+        Object.entries(dataMap).forEach(([t, d]) => {
+          if (!d?.info?.price) return
+          const cur = d.info.price.currentPrice
+          const prv = d.info.price.previousClose
+          const builtIn = d.info.price.regularMarketChangePercent
+          let chgPct = 0
+          if (builtIn != null) chgPct = builtIn
+          else if (cur && prv) chgPct = ((cur - prv) / prv) * 100
+          td[t] = { change_pct: chgPct, marketCap: d.info.valuation?.marketCap || 0 }
+        })
       }
-      const d1 = ohlcv1
-      const d2 = ohlcv2
-      if (d1 || d2) {
-        const c1 = [...((d1?.ohlcv_15m || d1?.data?.ohlcv_15m) || [])].sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''))
-        const c2 = [...((d2?.ohlcv_15m || d2?.data?.ohlcv_15m) || [])].sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''))
-        const base1 = c1.find(c => c.close != null)?.close || 1
-        const base2 = c2.find(c => c.close != null)?.close || 1
-        const c1ByTs = {}; c1.forEach(c => { if (c?.timestamp) c1ByTs[c.timestamp] = c.close })
-        const c2ByTs = {}; c2.forEach(c => { if (c?.timestamp) c2ByTs[c.timestamp] = c.close })
-        const allTs = Array.from(new Set([...Object.keys(c1ByTs), ...Object.keys(c2ByTs)])).sort()
-        let lastV1 = base1; let lastV2 = base2
-        const merged = []
-        for (const ts of allTs) {
-          if (c1ByTs[ts] !== undefined) lastV1 = c1ByTs[ts]
-          if (c2ByTs[ts] !== undefined) lastV2 = c2ByTs[ts]
-          merged.push({ ts: ts.slice(5, 16), v1: (lastV1 / base1) * 100, v2: (lastV2 / base2) * 100, v1_high: lastV1 > lastV2 ? [lastV2, lastV1] : [lastV2, lastV2], v1_low: lastV2 > lastV1 ? [lastV1, lastV2] : [lastV1, lastV1] })
-        }
-        setChartData(merged)
-      }
+      setTickerData(td)
     }).catch(() => {})
 
     return () => { cancelled = true }
-  }, [refreshTick, idx1, idx2])
+  }, [refreshTick])
 
   useEffect(() => {
     if (!window.api) {
@@ -154,7 +140,24 @@ export default function CompareView() {
       console.error('[CompareView] fetchOHLCV error:', e)
       setLoading(false)
     })
-  }, [idx1, idx2])
+  }, [refreshTick, idx1, idx2])
+
+  // Explicit Y-axis domain that accounts for array-valued Area data (v1_high, v1_low)
+  const yDomain = useMemo(() => {
+    if (!chartData.length) return ['auto', 'auto']
+    let mn = Infinity, mx = -Infinity
+    for (const d of chartData) {
+      for (const v of [d.v1, d.v2, ...(Array.isArray(d.v1_high) ? d.v1_high : []), ...(Array.isArray(d.v1_low) ? d.v1_low : [])]) {
+        if (typeof v === 'number' && isFinite(v)) {
+          if (v < mn) mn = v
+          if (v > mx) mx = v
+        }
+      }
+    }
+    if (!isFinite(mn) || !isFinite(mx)) return ['auto', 'auto']
+    const pad = (mx - mn) * 0.05 || 1
+    return [mn - pad, mx + pad]
+  }, [chartData])
 
   return (
     <div className="flex h-full w-full bg-background text-text overflow-hidden relative">
@@ -172,7 +175,10 @@ export default function CompareView() {
               {regions.map(r => <option key={r} value={r} className="bg-surface text-text">{MARKETS[r].label}</option>)}
             </select>
           </div>
-          <span className="text-muted text-xs font-bold tracking-widest px-2 shrink-0">VS</span>
+          {warning
+            ? <span className="text-red-400 text-xs font-bold tracking-widest px-2 shrink-0 whitespace-nowrap">{warning}</span>
+            : <span className="text-muted text-xs font-bold tracking-widest px-2 shrink-0">VS</span>
+          }
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 shrink-0" style={{ background: IDX2_COLOR }} />
             <select value={idx2} onChange={e => handleIdx2Change(e.target.value)}
@@ -196,7 +202,7 @@ export default function CompareView() {
                       <XAxis dataKey="ts" tick={{ fill: 'var(--muted)', fontSize: 10, fontFamily: "'Fira Code', monospace" }}
                         tickLine={false} axisLine={{ stroke: 'var(--border)' }} minTickGap={30} />
                       <YAxis tick={{ fill: 'var(--muted)', fontSize: 10, fontFamily: "'Fira Code', monospace" }}
-                        tickLine={false} axisLine={{ stroke: 'var(--border)' }} domain={['auto', 'auto']} orientation="right" />
+                        tickLine={false} axisLine={{ stroke: 'var(--border)' }} domain={yDomain} orientation="right" />
                       <Tooltip contentStyle={{ background: 'var(--surface)', border: '1px solid var(--border)', color: 'var(--text)', fontSize: 11, fontFamily: "'Fira Code', monospace" }}
                         labelStyle={{ color: 'var(--muted)' }}
                         formatter={(val, name, entry) => {
