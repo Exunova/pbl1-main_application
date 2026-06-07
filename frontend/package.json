@@ -12,7 +12,8 @@
     "vite:dev": "vite --port 5173",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "build:exe": "electron-builder"
   },
   "dependencies": {
     "better-sqlite3": "^12.8.0",
