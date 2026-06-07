@@ -74,7 +74,8 @@ MACRO_TTL_SECONDS = 86400
 def load_cookies():
     """Load cookies from Netscape format cookies.txt file."""
     cookies = []
-    cookies_file = os.path.join(os.path.dirname(__file__), "..", "cookies.txt")
+    # Use path relative to this file - works in both dev and frozen modes
+    cookies_file = os.path.join(os.path.dirname(__file__), "cookies.txt")
     if not os.path.exists(cookies_file):
         logger.warning(f"Cookies file not found: {cookies_file}")
         return cookies

@@ -1,4 +1,5 @@
 import os
+import sys
 
 # =============================================================================
 # SCRAPING TOGGLE
@@ -8,11 +9,15 @@ SCRAPING_ENABLED = True   # change this to False to turn off all scraping
 # =============================================================================
 # PATH SETUP
 # =============================================================================
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-APP_DIR = os.path.dirname(BASE_DIR)
-ROOT_DIR = os.path.dirname(APP_DIR)
+def _get_project_root():
+    """Get project root, handling frozen executables."""
+    if getattr(sys, 'frozen', False):
+        return os.path.expanduser("~/.mapro")
+    return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+ROOT_DIR = _get_project_root()
 DATA_DIR = os.path.join(ROOT_DIR, 'data')
-CACHE_DB = os.path.join(APP_DIR, 'cache.db')
+CACHE_DB = os.path.join(ROOT_DIR, 'cache.db')
 
 # =============================================================================
 # SCRAPER CONSTANTS

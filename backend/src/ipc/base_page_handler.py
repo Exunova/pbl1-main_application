@@ -1,5 +1,6 @@
 import os
 import json
+import sys
 import threading
 from abc import ABC, abstractmethod
 from typing import Optional
@@ -9,6 +10,13 @@ from backend.src.config import SCRAPING_ENABLED
 
 
 db = CacheDatabase()
+
+
+def _get_project_root():
+    """Get project root, handling frozen executables."""
+    if getattr(sys, 'frozen', False):
+        return os.path.expanduser("~/.mapro")
+    return os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))
 
 
 class BasePageHandler(ABC):
@@ -23,8 +31,7 @@ class BasePageHandler(ABC):
         ...
 
     def get_data_path(self, category: str, filename: str) -> str:
-        base = os.path.abspath(__file__)
-        project_root = os.path.normpath(os.path.join(os.path.dirname(base), "..", "..", ".."))
+        project_root = _get_project_root()
         data_dir = os.environ.get(
             "DATA_DIR",
             os.path.join(project_root, "data"),

@@ -259,10 +259,10 @@ export default function GlobeView() {
       const t = setTimeout(() => {
         globeRef.current?.width(containerRef.current.clientWidth)
         globeRef.current?.height(containerRef.current.clientHeight)
-      }, 50)
+      }, 800) // 800ms timeout to wait for CSS transition (700ms) to complete
       return () => clearTimeout(t)
     }
-  }, [g.chartHeight, g.selectedCountry])
+  }, [g.chartHeight, g.panelWidth, g.selectedCountry])
 
   const navigateToCountry = useCallback((iso2) => {
     const iso3   = ISO2_TO_ISO3[iso2]

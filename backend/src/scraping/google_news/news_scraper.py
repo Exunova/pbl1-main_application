@@ -12,18 +12,18 @@ Logo strategy:
   obtain the real publisher logo — zero extra HTTP requests, always correct.
 """
 
-import feedparser
-import requests
 import json
-import time
 import os
 from datetime import datetime
 from urllib.parse import urlparse
+
+import feedparser
+import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-from backend.src.scraping.base_scraper import BaseScraper
 from backend.src.config import NEWS_FEEDS
+from backend.src.scraping.base_scraper import BaseScraper
 
 NEWS_TTL_SECONDS = 7200  # 2 hours
 
@@ -34,9 +34,8 @@ HEADERS = {
 session = requests.Session()
 retry = Retry(connect=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504])
 adapter = HTTPAdapter(max_retries=retry)
-session.mount('http://', adapter)
-session.mount('https://', adapter)
-
+session.mount("http://", adapter)
+session.mount("https://", adapter)
 
 
 def get_publisher_logo(publisher_domain):
@@ -80,15 +79,17 @@ def parse_feed(market, config):
 
             logo = get_publisher_logo(publisher_domain)
 
-            articles.append({
-                "title": entry.get("title", ""),
-                "link": link,
-                "publisher": publisher,
-                "published": entry.get("published", ""),
-                "summary": entry.get("summary", ""),
-                "thumbnail": logo,
-                "favicon": logo["url"],
-            })
+            articles.append(
+                {
+                    "title": entry.get("title", ""),
+                    "link": link,
+                    "publisher": publisher,
+                    "published": entry.get("published", ""),
+                    "summary": entry.get("summary", ""),
+                    "thumbnail": logo,
+                    "favicon": logo["url"],
+                }
+            )
 
         return articles
     except Exception as e:
@@ -143,12 +144,12 @@ def _parse_published(published_str):
         return datetime.min
     try:
         # Try ISO format first
-        return datetime.fromisoformat(published_str.replace('Z', '+00:00'))
+        return datetime.fromisoformat(published_str.replace("Z", "+00:00"))
     except Exception:
         pass
     try:
         # Try feedparser common formats
-        return datetime.strptime(published_str.split('.')[0], '%Y-%m-%d %H:%M:%S')
+        return datetime.strptime(published_str.split(".")[0], "%Y-%m-%d %H:%M:%S")
     except Exception:
         pass
     return datetime.min
@@ -182,7 +183,9 @@ class NewsScraper(BaseScraper):
                 merged_articles = merge_articles(existing_news, new_articles)
 
                 # FIX #2: Sort all articles descending by published timestamp (newest first)
-                merged_articles.sort(key=lambda a: _parse_published(a.get("published", "")), reverse=True)
+                merged_articles.sort(
+                    key=lambda a: _parse_published(a.get("published", "")), reverse=True
+                )
 
                 news_data = {
                     "market": market,
@@ -190,7 +193,7 @@ class NewsScraper(BaseScraper):
                     "scraped_at": str(datetime.now()),
                     "updated_at": datetime.now().isoformat(),
                     "article_count": len(merged_articles),
-                    "articles": merged_articles
+                    "articles": merged_articles,
                 }
                 self._cache_db.cache_set(f"news:{market}", news_data)
 
@@ -198,7 +201,7 @@ class NewsScraper(BaseScraper):
 
             summary["markets"][market] = {
                 "label": config["label"],
-                "article_count": news_data.get("article_count", 0)
+                "article_count": news_data.get("article_count", 0),
             }
 
         save_json(summary, output_dir, "_summary.json")

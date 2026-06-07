@@ -1,10 +1,16 @@
 """Base storage interface for data storage modules."""
 
 import os
+import sys
 from abc import ABC, abstractmethod
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ROOT_DIR = os.path.dirname(BASE_DIR)
+def _get_project_root():
+    """Get project root, handling frozen executables."""
+    if getattr(sys, 'frozen', False):
+        return os.path.expanduser("~/.mapro")
+    return os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+ROOT_DIR = _get_project_root()
 DATA_DIR = os.path.join(ROOT_DIR, 'data')
 
 

@@ -1,9 +1,16 @@
 """Scraping error logging utility."""
 
 import os
+import sys
 from datetime import datetime
 
-LOG_FILE = os.path.join(os.path.dirname(__file__), "scraping_errors.log")
+def _get_log_dir():
+    """Get log directory, handling frozen executables."""
+    if getattr(sys, 'frozen', False):
+        return os.path.expanduser("~/.mapro")
+    return os.path.dirname(__file__)
+
+LOG_FILE = os.path.join(_get_log_dir(), "scraping_errors.log")
 
 
 def log_scraping_error(

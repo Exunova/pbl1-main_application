@@ -1,5 +1,6 @@
 appId: com.mapro.app
 productName: MAPRO
+icon: build/icon.ico
 directories:
   buildResources: build
 files:
@@ -9,11 +10,13 @@ extraResources:
     to: backend
     filter:
       - "**/*"
-  - from: dist/backend-venv
-    to: backend-venv
-    filter:
-      - "**/*"
+  - from: ../dist/ipc_main.exe
+    to: python-bin/ipc_main.exe
+  - from: ../backend/src/scraping/cookies.txt
+    to: scraping/cookies.txt
 asar: true
+asarUnpack:
+  - python-bin/**
 win:
   target:
     - target: nsis

@@ -1,11 +1,23 @@
 import sqlite3
 import json
 import os
+import sys
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
 
-APP_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+def _get_app_dir():
+    """Get the app directory, handling PyInstaller frozen executables."""
+    if getattr(sys, 'frozen', False):
+        # Running as frozen exe - use user data directory
+        user_dir = os.path.expanduser("~/.mapro")
+        os.makedirs(user_dir, exist_ok=True)
+        return user_dir
+    # Running as regular Python script
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+
+APP_DIR = _get_app_dir()
 CACHE_DB = os.environ.get('Cache_DB', os.path.join(APP_DIR, 'cache.db'))
 
 
